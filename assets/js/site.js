@@ -37,9 +37,9 @@ function generateCard(data) {
                 <svg class="bd-placeholder-img card-img-top" width="100%" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Source Icon" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>${data.name} Source Icon</title>`;
     if (data.iconUrl) {
-        html += `<img src="${data.iconUrl}" width="100%" height="100%"></img>`;
+        html += `<img src="${data.iconUrl}" width="auto" height="auto"></img>`;
     } else {
-        html += '<rect width="100%" height="100%" fill="#55595c"></rect>';
+        html += '<rect width="auto" height="auto" fill="#55595c"></rect>';
     }
     html +=`<text x="50%" y="50%" fill="#eceeef" dy=".3em">${data.name}</text>
                 </svg>
