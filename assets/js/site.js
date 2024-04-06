@@ -11,7 +11,7 @@ function isRelativeUrl(url) {
 }
 function getAbsoluteUrl(url, baseUrl) {
     if (isRelativeUrl(url)) {
-        url.replace("./", baseUrl)
+        return url.replace("./", baseUrl);
     }
     return url;
 }
