@@ -33,17 +33,17 @@ function generateCard(data) {
     /*  */
     let html = `
         <div class="col">
-            <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="auto" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Source Icon" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>${data.name} Source Icon</title>`;
+            <div class="card shadow-sm">`;
     if (data.iconUrl) {
-        html += `<img src="${data.iconUrl}" width="auto" height="auto"></img>`;
+        html += `<img alt="${data.name}" src="${data.iconUrl}" width="auto" height="auto"></img>`;
     } else {
-        html += '<rect width="auto" height="auto" fill="#55595c"></rect>';
+        html += `<svg class="bd-placeholder-img card-img-top" width="auto" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Source Icon" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <title>${data.name} Source Icon</title>
+        <rect width="auto" height="auto" fill="#55595c"></rect>
+        <text x="50%" y="50%" fill="#eceeef" dy=".3em">${data.name}</text>
+        </svg>`;
     }
-    html +=`<text x="50%" y="50%" fill="#eceeef" dy=".3em">${data.name}</text>
-                </svg>
-                <div class="card-body">
+    html +=`<div class="card-body">
                     <p class="card-text">${data.description}</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
