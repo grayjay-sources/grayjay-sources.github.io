@@ -39,7 +39,7 @@ function generateCard(data) {
                     <p class="card-text">${data.description}</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                        <a href="${installUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Install</button></a>
+                        <a href="${installUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Install</button></a>&nbsp;
                         <a href="${data.repositoryUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Source</button></a>
                         </div>
                         <small class="text-body-secondary">${data.author}</small>
