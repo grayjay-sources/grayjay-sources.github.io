@@ -77,10 +77,10 @@ async function populateCardsContainer(url) {
         data.forEach(item => {
             const fixedItem = fixData(item);
             const showNsfw = isQueryParamSet("nsfw");
-            if (!showNsfw && fixedItem.nsfw)
-                continue;
-            const cardHtml = generateCard(fixedItem);
-            cardsContainer.innerHTML += cardHtml;
+            if (showNsfw || !fixedItem.nsfw) {
+                const cardHtml = generateCard(fixedItem);
+                cardsContainer.innerHTML += cardHtml;
+            }
         });
     } catch (error) {
         console.error('Error fetching data:', error);
