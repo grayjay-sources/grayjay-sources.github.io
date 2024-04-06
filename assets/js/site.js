@@ -23,6 +23,7 @@ function fixData(data) {
             }
         }
     }
+    console.log(data);
     return data;
 }
 function generateCard(data) {
