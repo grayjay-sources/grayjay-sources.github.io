@@ -619,7 +619,7 @@
         "repositoryUrl": "https://github.com/netux/grayjay-source-youtube/tree/with-dearrow",
         "scriptUrl": "./YoutubeScript.js",
         "version": 168,
-        "iconUrl": "https://github.com/netux/grayjay-source-youtube/raw/with-dearrow/youtube.png",
+        "iconUrl": "https://raw.githubusercontent.com/netux/grayjay-source-youtube/52deb90661442a29767b755645d86b9965cc7da5/youtube_dearrow.png",
         "id": "35ae969a-a7db-11ed-afa1-0242ac120002",
         "scriptSignature": "",
         "scriptPublicKey": "",
