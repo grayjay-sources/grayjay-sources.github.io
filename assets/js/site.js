@@ -3,6 +3,10 @@ function removeLast(inputString, separator) {
     if (lastIndex > 0) return inputString.substring(0, lastIndex);
     else return "";
 }
+function isQueryParamSet(paramName) {
+    const searchParams = new URLSearchParams(window.location.search);
+    return searchParams.has(paramName);
+}
 function isRelativeUrl(url) {
     return url.startsWith("./");
 }
@@ -72,6 +76,9 @@ async function populateCardsContainer(url) {
         cardsContainer.innerHTML = "";
         data.forEach(item => {
             const fixedItem = fixData(item);
+            const showNsfw = isQueryParamSet("nsfw");
+            if (!showNsfw && fixedItem.nsfw)
+                continue;
             const cardHtml = generateCard(fixedItem);
             cardsContainer.innerHTML += cardHtml;
         });
