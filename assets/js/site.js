@@ -12,8 +12,8 @@ function generateCard(data) {
             <div class="card shadow-sm">
                 <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #43484b;"></rect>
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #dddad6;">${data.name}</text>
+                    <img width="100%" height="100%" fill="#55595c" src="${data.iconUrl}"></img>
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">${data.name}</text>
                 </svg>
                 <div class="card-body">
                     <p class="card-text">${data.description}</p>
