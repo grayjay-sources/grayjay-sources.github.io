@@ -28,12 +28,15 @@ function fixData(data) {
 function generateCard(data) {
     const sourceUrlEncoded = encodeURIComponent(data.sourceUrl);
     const installUrl = `grayjay://plugin/${data.sourceUrl}`;
+    /*
+    <rect width="100%" height="100%" fill="#55595c"></rect>
+    */
     const html = `
         <div class="col">
             <div class="card shadow-sm">
                 <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
-                    <!--rect width="100%" height="100%" fill="#55595c"--><img src="${data.iconUrl} width="40%" height="40%""></img><!--/rect-->
+                    <img src="${data.iconUrl} width="40%" height="40%"></img>
                     <text x="50%" y="50%" fill="#eceeef" dy=".3em">${data.name}</text>
                 </svg>
                 <div class="card-body">
