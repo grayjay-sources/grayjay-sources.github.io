@@ -28,6 +28,7 @@ function fixData(data) {
 function generateCard(data) {
     const sourceUrlEncoded = encodeURIComponent(data.sourceUrl);
     const installUrl = `grayjay://plugin/${data.sourceUrl}`;
+    const repoUrl = data.repositoryUrl ?? data.baseUrl;
     /*
     <rect width="100%" height="100%" fill="#55595c"></rect>
     */
@@ -44,7 +45,7 @@ function generateCard(data) {
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                         <a href="${installUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Install</button></a>&nbsp;
-                        <a href="${data.repositoryUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Source</button></a>
+                        <a href="${repoUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Source</button></a>
                         </div>
                         <small class="text-body-secondary">${data.author}</small>
                     </div>
