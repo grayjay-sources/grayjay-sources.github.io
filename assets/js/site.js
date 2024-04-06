@@ -34,7 +34,7 @@ function generateCard(data) {
     let html = `
         <div class="col">
             <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Source Icon" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <svg class="bd-placeholder-img card-img-top" width="auto" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Source Icon" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>${data.name} Source Icon</title>`;
     if (data.iconUrl) {
         html += `<img src="${data.iconUrl}" width="auto" height="auto"></img>`;
