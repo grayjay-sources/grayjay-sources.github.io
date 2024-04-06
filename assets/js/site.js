@@ -1,3 +1,33 @@
+function removeLast(inputString, separator) {
+    var lastIndex = inputString.lastIndexOf(separator);
+    if (lastIndex > 0) {
+        return inputString.substring(0, lastIndex);
+    } else {
+        return "";
+    }
+}
+function isRelativeUrl(url) {
+    return url.startsWith("./");
+}
+function getAbsoluteUrl(url, baseUrl) {
+    if (isRelativeUrl(url)) {
+        url.replace("./", baseUrl)
+    }
+    return url;
+}
+function fixData(data) {
+    data["baseUrl"] = removeLast(data.sourceUrl, "/") + "/";
+    for (const [key, value] of Object.entries(data)) {
+        if (key.toLowerCase().includes("url")) {
+            if (Array.isArray(value)) continue;
+            if (isRelativeUrl(value)) {
+                data[key+"_"] = value;
+                data[key] = getAbsoluteUrl(value, data["baseUrl"]);
+            }
+        }
+    }
+    return data;
+}
 function generateCard(data) {
     const html = `
         <div class="col">
@@ -29,7 +59,8 @@ async function populateCardsContainer(url) {
         const cardsContainer = document.getElementById('cards-container');
         cardsContainer.innerHTML = "";
         data.forEach(item => {
-            const cardHtml = generateCard(item);
+            const fixedItem = fixData(item);
+            const cardHtml = generateCard(fixedItem);
             cardsContainer.innerHTML += cardHtml;
         });
     } catch (error) {
