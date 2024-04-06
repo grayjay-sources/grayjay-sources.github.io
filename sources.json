@@ -87,7 +87,7 @@
         "description": "Sermons from nifb",
         "author": "Stuart Houston",
         "authorUrl": "https://github.com/skytunnel",
-        "repositoryUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/dev",
+        "repositoryUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/tree/dev",
         "sourceUrl": "./config.js",
         "scriptUrl": "./script.js",
         "version": 1,
