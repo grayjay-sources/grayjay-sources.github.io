@@ -1,10 +1,7 @@
 function removeLast(inputString, separator) {
     var lastIndex = inputString.lastIndexOf(separator);
-    if (lastIndex > 0) {
-        return inputString.substring(0, lastIndex);
-    } else {
-        return "";
-    }
+    if (lastIndex > 0) return inputString.substring(0, lastIndex);
+    else return "";
 }
 function isRelativeUrl(url) {
     return url.startsWith("./");
@@ -29,19 +26,20 @@ function fixData(data) {
     return data;
 }
 function generateCard(data) {
+    const installUrl = `grayjay://plugin/${encodeURIComponent(data.sourceUrl)}`;
     const html = `
         <div class="col">
             <div class="card shadow-sm">
                 <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"><img src="${data.iconUrl}"></img></rect>
+                    <rect width="100%" height="100%" fill="#55595c"><img src="${data.iconUrl} width="100%" height="100%""></img></rect>
                     <text x="50%" y="50%" fill="#eceeef" dy=".3em">${data.name}</text>
                 </svg>
                 <div class="card-body">
                     <p class="card-text">${data.description}</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                        <a href="grayjay://plugin/${encodeURIComponent(data.sourceUrl)}" target="_blank" rel="noopener noreferrer"><<button type="button" class="btn btn-sm btn-outline-secondary">Install</button></a>
+                        <a href="${installUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Install</button></a>
                         <a href="${data.repositoryUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Source</button></a>
                         </div>
                         <small class="text-body-secondary">${data.author}</small>
