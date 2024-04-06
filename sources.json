@@ -800,7 +800,8 @@
         "allowEval": false,
         "allowUrls": [
             "www.pornhub.com"
-        ]
+        ],
+        "nsfw": true
     },
     {
         "name": "Youtube SB",
