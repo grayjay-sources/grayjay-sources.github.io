@@ -564,38 +564,6 @@
         "primaryClaimFieldType": 1
     },
     {
-        "name": "Crunchyroll",
-        "description": "Crunchyroll plugin",
-        "author": "DeltaEvo",
-        "authorUrl": "https://github.com/DeltaEvo",
-        "sourceUrl": "https://DeltaEvo.github.io/GrayjayCrunchyroll/CrunchyrollConfig.json",
-        "repositoryUrl": "https://github.com/DeltaEvo/GrayjayCrunchyroll",
-        "scriptUrl": "./CrunchyrollScript.js",
-        "version": 3,
-        "iconUrl": "./crunchyroll.png",
-        "id": "3af73d7b-05bc-4a1b-a142-8a8377fc9c5b",
-        "scriptSignature": "",
-        "scriptPublicKey": "",
-        "packages": [
-            "Http"
-        ],
-        "allowEval": false,
-        "allowUrls": [
-            "www.crunchyroll.com",
-            "static.crunchyroll.com",
-            "cr-play-service.prd.crunchyrollsvc.com",
-            "v.vrv.co"
-        ],
-        "authentication": {
-            "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
-            "loginUrl": "https://sso.crunchyroll.com/login",
-            "cookiesToFind": [
-                "etp_rt"
-            ],
-            "cookiesExclOthers": true
-        }
-    },
-    {
         "name": "Wien.gv.at Videos",
         "description": "Videos der Stadt Wien",
         "author": "Matthias Porges",
@@ -1013,85 +981,5 @@
         "allowUrls": [
             "api.cda.pl"
         ]
-    },
-    {
-        "name": "Odysee",
-        "description": "A video platform running on the LBRY blockchain, owned by LBRY.",
-        "author": "FUTO",
-        "authorUrl": "https://futo.org",
-        "platformUrl": "https://odysee.com",
-        "sourceUrl": "https://plugins.grayjay.app/Odysee/OdyseeConfig.json",
-        "repositoryUrl": "https://futo.org",
-        "scriptUrl": "./OdyseeScript.js",
-        "version": 35,
-        "iconUrl": "./odysee.png",
-        "id": "1c05bfc3-08b9-42d0-93d3-6d52e0fd34d8",
-        "scriptSignature": "PnG+cRbLuXFQdIwpHeUeOznKE8Hn0uFhsn+B+Ehb7oteuCkr4N0tLFGZBKLcIE7DVLtt3FCcGZ0SLcQz9HUh5PZ0a5y/2QlBaNAzxub/8MtWR9FbhOl157CjMPOm3spDoBGelQurUj94o5l/Z10+uMbZalXXabywe8ebP5Tw78/+15rPkkINviJ5/iyV84+D6HIVja7ugagt5zaOYu0t3/70VDu95cQAW5IciENG+tkhTaTLl0dGXJHmHQktzQUybu7sgui7n5HUSNMoSboHvcgGpxwpnhizw3mzmXEDRJdhR6qenNTBfrGpWvpI8aqSw3drkTsv1VmdfQniAY8Aag==",
-        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
-        "packages": [
-            "Http"
-        ],
-        "allowEval": false,
-        "allowUrls": [
-            "api.na-backend.odysee.com",
-            "odysee.com",
-            "api.odysee.com",
-            "lighthouse.odysee.tv",
-            "cdn.lbryplayer.xyz",
-            "player.odycdn.com",
-            "comments.odysee.tv"
-        ],
-        "supportedClaimTypes": [
-            3
-        ]
-    },
-    {
-        "name": "Odysee",
-        "description": "A video platform running on the LBRY blockchain, owned by LBRY.",
-        "author": "FUTO",
-        "authorUrl": "https://futo.org",
-        "platformUrl": "https://odysee.com",
-        "sourceUrl": "https://plugins.grayjay.app/Odysee/OdyseeConfig.json",
-        "repositoryUrl": "https://futo.org",
-        "scriptUrl": "./YTMusicScript.js",
-        "version": 35,
-        "iconUrl": "./odysee.png",
-        "id": "1c05bfc3-08b9-42d0-93d3-6d52e0fd34d8",
-        "scriptSignature": "",
-        "scriptPublicKey": "",
-        "packages": [
-            "Http"
-        ],
-        "allowEval": false,
-        "allowUrls": [
-            "everywhere"
-        ],
-        "supportedClaimTypes": [
-            3
-        ]
-    },
-    {
-        "name": "PeerTube",
-        "description": "A plugin that adds PeerTube as a source",
-        "author": "FUTO",
-        "authorUrl": "https://futo.org",
-        "sourceUrl": "https://plugins.grayjay.app/PeerTube/PeerTubeConfig.json",
-        "repositoryUrl": "https://futo.org",
-        "scriptUrl": "./PeerTubeScript.js",
-        "version": 14,
-        "iconUrl": "./peertube.png",
-        "id": "1c291164-294c-4c2d-800d-7bc6d31d0019",
-        "scriptSignature": "YKO/jMicPZFLnJI5LfiOUh8avfQhVzsHztKqOsP9whFAWbVHxqirLCI93gvVBxrphya0s5kwauIcrSe7D3hQQYgI3S3ElxdE8m75MhysA5ktL9IbQL20lEpGDTNIp0toEWEgvkKCGWX4VfLiWBtATK0KMTI6kmPiBcnaYKrLEiGsepvPHhWAQW1mRch+/D8YR/jIG5jMv38AbxhW2P0ktr7CBcPkh73zFuTxAwvX/SDYL3B7x1qgZI82TXpdfaVvxNOjOHEnzlRVWkLSKLepAbxosfmX7LHz15lwUXFXH4kL3HvdpCyPNpNsvPsd2HuiRUBWqsQLnleD53Lw7tiu9A==",
-        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
-        "packages": [
-            "Http"
-        ],
-        "allowEval": false,
-        "allowUrls": [
-            "everywhere"
-        ],
-        "constants": {
-            "baseUrl": "https://peertube.futo.org"
-        }
     }
 ]
