@@ -961,7 +961,7 @@
         "repositoryUrl": "https://github.com/PiotrekB416/GrayJay-CDA",
         "scriptUrl": "./CdaScript.js",
         "version": 1,
-        "iconUrl": "./sample.png",
+        "iconUrl": "https://grayjay.app/images/webclip.png",
         "id": "15901e70-7590-42e4-b67d-8a13ae77726e",
         "scriptSignature": "",
         "scriptPublicKey": "",
