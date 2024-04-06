@@ -1,12 +1,4 @@
 function generateCard(data) {
-    // Assuming the data object has the following structure:
-    // {
-    //     title: 'Card Title',
-    //     text: 'Card Text',
-    //     time: '9 mins'
-    // }
-
-    // Generate the HTML
     const html = `
         <div class="col">
             <div class="card shadow-sm">
@@ -28,37 +20,22 @@ function generateCard(data) {
             </div>
         </div>
     `;
-
-    // Return the generated HTML
     return html;
 }
-
-// Function to fetch JSON data and populate the cards container
 async function populateCardsContainer(url) {
     try {
-        // Fetch JSON data from the provided URL
         const response = await fetch(url);
-        // Parse the JSON data
         const data = await response.json();
-
-        // Get the cards container element
         const cardsContainer = document.getElementById('cards-container');
-
         cardsContainer.innerHTML = "";
-
-        // Loop through the data and generate cards
         data.forEach(item => {
-            // Assuming the data object has the necessary properties for generateCard
             const cardHtml = generateCard(item);
-            // Insert the generated card HTML into the cards container
             cardsContainer.innerHTML += cardHtml;
         });
     } catch (error) {
         console.error('Error fetching data:', error);
     }
 }
-
-// Call the function on page load
 document.addEventListener('DOMContentLoaded', () => {
     const url = 'https://raw.githubusercontent.com/grayjay-sources/repo/main/sources.json';
     populateCardsContainer(url);
