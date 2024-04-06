@@ -616,10 +616,10 @@
         "authorUrl": "https://futo.org",
         "platformUrl": "https://youtube.com",
         "sourceUrl": "https://github.com/netux/grayjay-source-youtube/releases/latest/download/YoutubeConfig.json",
-        "repositoryUrl": "https://github.com/netux/grayjay-source-youtube/blob/with-dearrow",
+        "repositoryUrl": "https://github.com/netux/grayjay-source-youtube/tree/with-dearrow",
         "scriptUrl": "./YoutubeScript.js",
         "version": 168,
-        "iconUrl": "./youtube.png",
+        "iconUrl": "https://github.com/netux/grayjay-source-youtube/raw/with-dearrow/youtube.png",
         "id": "35ae969a-a7db-11ed-afa1-0242ac120002",
         "scriptSignature": "",
         "scriptPublicKey": "",
@@ -784,18 +784,19 @@
         "description": "Basic PornHub plugin for Grayjay",
         "author": "mr. X",
         "authorUrl": "",
-        "sourceUrl": "",
-        "repositoryUrl": "",
+         
+        "sourceUrl": "https://github.com/paaspaas00/pornhubGrayjay/raw/main/PornhubConfig.json",
+        "repositoryUrl": "https://github.com/paaspaas00/pornhubGrayjay/",
         "scriptUrl": "./PornhubScript.js",
         "version": 1,
+         
         "iconUrl": "./pornhub.png",
         "id": "dce06efc-862e-11ee-b9d1-0242ac120002",
+         
         "scriptSignature": "",
         "scriptPublicKey": "",
-        "packages": [
-            "Http",
-            "DOMParser"
-        ],
+        "packages": ["Http", "DOMParser"],
+         
         "allowEval": false,
         "allowUrls": [
             "www.pornhub.com"

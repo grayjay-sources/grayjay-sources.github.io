@@ -27,7 +27,7 @@ function fixData(data) {
     return data;
 }
 function generateCard(data) {
-    const sourceUrlEncoded = encodeURIComponent(data.sourceUrl);
+    // const sourceUrlEncoded = encodeURIComponent(data.sourceUrl);
     const installUrl = `grayjay://plugin/${data.sourceUrl}`;
     const repoUrl = data.repositoryUrl ?? data.configUrl;
     /* <rect width="100%" height="100%" fill="#55595c"></rect> */
