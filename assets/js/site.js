@@ -34,7 +34,7 @@ function generateCard(data) {
         <div class="col">
             <div class="card shadow-sm">
                 <svg class="bd-placeholder-img card-img-top" width="100%" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Source Icon" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Source Icon</title>
+                    <title>${data.name} Source Icon</title>
                     <img src="${data.iconUrl}" width="100%" height="100%"></img>
                     <text x="50%" y="50%" fill="#eceeef" dy=".3em">${data.name}</text>
                 </svg>
