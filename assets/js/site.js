@@ -37,7 +37,8 @@ function generateCard(data) {
     /*  */
     let html = `
         <div class="col">
-            <div class="card shadow-sm">`;
+            <div class="card shadow-sm">
+            <div class="card-header">${data.name}</div>`;
     if (data.iconUrl) {
         html += `<img alt="${data.name}" src="${data.iconUrl}" width="auto" height="auto"></img>`;
     } else {
