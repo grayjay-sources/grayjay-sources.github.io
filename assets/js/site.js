@@ -40,7 +40,7 @@ function generateCard(data) {
         html += `<svg class="bd-placeholder-img card-img-top" width="auto" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Source Icon" preserveAspectRatio="xMidYMid slice" focusable="false">
         <title>${data.name} Source Icon</title>
         <rect width="auto" height="auto" fill="#55595c"></rect>
-        <text x="50%" y="50%" fill="#eceeef" dy=".3em">${data.name}</text>
+        <text x="50%" y="50%" fill="#eceeef" dy=".3em"><b>${data.name}</b></text>
         </svg>`;
     }
     html +=`<div class="card-body">
