@@ -4,6 +4,7 @@
 		"description": "CDA plugin",
 		"author": "Piotr Bartoszewicz",
 		"authorUrl": "https://github.com/PiotrekB416",
+		"platformUrl": "https://cda.pl",
 		"sourceUrl": "https://piotrekb416.github.io/GrayJay-CDA/CdaConfig.json",
 		"repositoryUrl": "https://github.com/PiotrekB416/GrayJay-CDA",
 		"scriptUrl": "./CdaScript.js",

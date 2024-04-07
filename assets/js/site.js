@@ -35,6 +35,8 @@ function generateQrCode(url) {
     return `<img class="source-qrcode" alt="QR Code" src="${qr.toDataURL()}" style="display:none"></img>`;
 }
 function getFavicon(url, size=128) {
+    console.log(url);
+    if (!url.startsWith("http")) { url = `http://${url}`}
     url = new URL(url);
     return `https://www.google.com/s2/favicons?domain=${url.hostname}&sz=${size}`;
 }
@@ -45,7 +47,7 @@ function generateCard(data) {
     const repoUrl = data.repositoryUrl ?? data.configUrl;
     if (!data.iconUrl) {
         if (data.platformUrl) { data.iconUrl = getFavicon(data.platformUrl); }
-        if (!data.iconUrl) { data.iconUrl = getFavicon(data.allowUrls[0]); }
+        else { data.iconUrl = getFavicon(data.allowUrls[0]); }
     }
     /*  */
     let html = `
