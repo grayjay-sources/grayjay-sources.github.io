@@ -61,8 +61,7 @@ function generateCard(data) {
         <text x="50%" y="50%" fill="#eceeef" dy=".3em"><b>${data.name}</b></text>
         </svg>`;
     }
-        html += generateQrCode(installUrl);
-    }
+    html += generateQrCode(installUrl);
     html +=`<div class="card-body">
                     <p class="card-text">${data.description}</p>
                     <div class="d-flex justify-content-between align-items-center">
