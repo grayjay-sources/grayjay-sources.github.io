@@ -38,7 +38,7 @@ function getFavicon(url, size=128) {
     console.log(url);
     if (!url.startsWith("http")) { url = `http://${url}`}
     url = new URL(url);
-    return `https://www.google.com/s2/favicons?domain=${url.hostname}&sz=${size}`;
+    return `https://www.google.com/s2/favicons?domain=${url.hostname}&sz=${size}`; // `https://icons.adguard.org/icon?domain=${url.hostname}`
 }
 function generateCard(data) {
     const sourceUrlEncoded = encodeURIComponent(data.sourceUrl);
