@@ -55,7 +55,7 @@ function generateCard(data) {
             <div class="card shadow-sm">
             <div class="card-header"><b>${data.name}</b></div>`;
     if (data.iconUrl) {
-        html += `<img class="source-icon" alt="${data.name}" src="${data.iconUrl}" width="auto" height="auto"></img>`;
+        html += `<img class="source-icon" alt="${data.name}" src="${data.iconUrl}" width="auto" height="auto" style="display:block"></img>`;
     } else {
         html += `<svg class="bd-placeholder-img card-img-top" width="auto" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Source Icon" preserveAspectRatio="xMidYMid slice" focusable="false">
         <title>${data.name} Source Icon</title>
@@ -97,7 +97,30 @@ async function populateCardsContainer(url) {
         console.error('Error fetching data:', error);
     }
 }
+function toggleQRCodes() {
+    const firstSourceIcon = document.getElementsByClassName('source-icon')[0];
+    const sourceIconStyle = firstSourceIcon.getAttribute('style');
+    if (sourceIconStyle == "display:block") {
+        document.querySelectorAll('.source-icon').forEach(element => {
+            element.setAttribute('style', 'display:none');
+          });
+          document.querySelectorAll('.source-qrcode').forEach(element => {
+              element.setAttribute('style', 'display:block');
+          });
+    } else {
+        document.querySelectorAll('.source-icon').forEach(element => {
+            element.setAttribute('style', 'display:block');
+          });
+          document.querySelectorAll('.source-qrcode').forEach(element => {
+              element.setAttribute('style', 'display:none');
+          });
+    }
+}
 document.addEventListener('DOMContentLoaded', () => {
     const url = 'https://raw.githubusercontent.com/grayjay-sources/repo/main/sources.json';
     populateCardsContainer(url);
+    document.querySelectorAll('#bd-qrcodes')
+      .forEach(toggle => {
+        toggle.addEventListener('click', toggleQRCodes)
+      })
 });
