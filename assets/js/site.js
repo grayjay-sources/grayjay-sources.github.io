@@ -32,7 +32,7 @@ function fixData(data) {
 }
 function generateQrCode(url) {
     var qr = new QRious({ value: url });
-    return `<img alt="QR Code" src="${qr.toDataURL()}"></img>`;
+    return `<img class="source-qrcode" alt="QR Code" src="${qr.toDataURL()}" style="display:none"></img>`;
 }
 function generateCard(data) {
     // const sourceUrlEncoded = encodeURIComponent(data.sourceUrl);
@@ -44,8 +44,8 @@ function generateCard(data) {
             <div class="card shadow-sm">
             <div class="card-header"><b>${data.name}</b></div>`;
     if (data.iconUrl) {
-        html += `<img alt="${data.name}" src="${data.iconUrl}" width="auto" height="auto"></img>`;
-    } else {
+        html += `<img class="source-icon" alt="${data.name}" src="${data.iconUrl}" width="auto" height="auto"></img>`;
+    }
         // html += `<svg class="bd-placeholder-img card-img-top" width="auto" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Source Icon" preserveAspectRatio="xMidYMid slice" focusable="false">
         // <title>${data.name} Source Icon</title>
         // <rect width="auto" height="auto" fill="#55595c"></rect>
