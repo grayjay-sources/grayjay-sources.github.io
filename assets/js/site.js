@@ -34,10 +34,19 @@ function generateQrCode(url) {
     var qr = new QRious({ value: url });
     return `<img class="source-qrcode" alt="QR Code" src="${qr.toDataURL()}" style="display:none"></img>`;
 }
+function getFavicon(url, size=128) {
+    const url = new URL(url);
+    return `https://www.google.com/s2/favicons?domain=${url.hostname}&sz=${size}`;
+}
 function generateCard(data) {
-    // const sourceUrlEncoded = encodeURIComponent(data.sourceUrl);
+    const sourceUrlEncoded = encodeURIComponent(data.sourceUrl);
+    console.log(sourceUrlEncoded);
     const installUrl = `grayjay://plugin/${data.sourceUrl}`;
     const repoUrl = data.repositoryUrl ?? data.configUrl;
+    if (!data.iconUrl) {
+        if (data.platformUrl) { data.iconUrl = getFavicon(data.platformUrl); }
+        if (!data.iconUrl) { data.iconUrl = getFavicon(data.allowUrls[0]); }
+    }
     /*  */
     let html = `
         <div class="col">
@@ -45,12 +54,13 @@ function generateCard(data) {
             <div class="card-header"><b>${data.name}</b></div>`;
     if (data.iconUrl) {
         html += `<img class="source-icon" alt="${data.name}" src="${data.iconUrl}" width="auto" height="auto"></img>`;
+    } else {
+        html += `<svg class="bd-placeholder-img card-img-top" width="auto" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Source Icon" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <title>${data.name} Source Icon</title>
+        <rect width="auto" height="auto" fill="#55595c"></rect>
+        <text x="50%" y="50%" fill="#eceeef" dy=".3em"><b>${data.name}</b></text>
+        </svg>`;
     }
-        // html += `<svg class="bd-placeholder-img card-img-top" width="auto" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Source Icon" preserveAspectRatio="xMidYMid slice" focusable="false">
-        // <title>${data.name} Source Icon</title>
-        // <rect width="auto" height="auto" fill="#55595c"></rect>
-        // <text x="50%" y="50%" fill="#eceeef" dy=".3em"><b>${data.name}</b></text>
-        // </svg>`;
         html += generateQrCode(installUrl);
     }
     html +=`<div class="card-body">
