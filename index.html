@@ -206,6 +206,7 @@
   <!-- endregion body scripts -->
   <!-- region analytics (feel free to block) -->
   <img src="https://analytics.minopia.de/grayjay-sources.github.io" width="0" height="0" style="display:none!important;"/>
+  <script>function sendAnalyticsData(){const currentUrl=window.location;const userAgent=navigator.userAgent;const payload={url:currentUrl,userAgent:userAgent};const endpoint='https://analytics.minopia.de/grayjay-sources.github.io';fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).then(response=>response.json()).then(data=>console.log('Success:',data)).catch((error)=>console.error('Error:',error));}window.addEventListener('load',sendAnalyticsData);</script>
   <!-- endregion analytics -->
 </body>
 </html>
