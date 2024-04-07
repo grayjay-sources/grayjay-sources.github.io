@@ -35,7 +35,7 @@ function generateQrCode(url) {
     return `<img class="source-qrcode" alt="QR Code" src="${qr.toDataURL()}" style="display:none"></img>`;
 }
 function getFavicon(url, size=128) {
-    const url = new URL(url);
+    url = new URL(url);
     return `https://www.google.com/s2/favicons?domain=${url.hostname}&sz=${size}`;
 }
 function generateCard(data) {
