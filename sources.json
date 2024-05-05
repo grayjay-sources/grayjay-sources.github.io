@@ -991,6 +991,56 @@
 		"primaryClaimFieldType": 1
 	},
 	{
+		"name": "YouTube Music",
+		"description": "A new music service with official albums, singles, videos, remixes, live performances and more",
+		"author": "Tsunami014",
+		"authorUrl": "https://tsunami014.github.io",
+		"platformUrl": "https://music.youtube.com",
+		"sourceUrl": "https://tsunami014.github.io/My-Grayjay-plugin/YTMusicConfig.json",
+		"repositoryUrl": "https://github.com/Tsunami014/My-Grayjay-plugin",
+		"scriptUrl": "./YTMusicScript.js",
+		"version": 2,
+		"iconUrl": "./YTMusic.png",
+		"id": "ff7fee60-202f-4aeb-a270-676862dd854b",
+		"scriptSignature": "A8x7FalRJ5tR5I2vUATEUFjTU2yiBkyBHuUk6wjmS47zA9JAYPz7TvAspl9tGy1EMwn2BoksSDnvRwMtE4X2DmrdHZby4XU/o5L4h4svFqIYmgXkqfbZ9PffDo1Tc5o8neK9LUFkROEpkWunXo8aUhWN/UFFutl/tg7Hbxpf6IVARTe37VXMPrTmVMPzsqmsVyH8r+ji98h5Y+K6KeqSZXhr67qMsbEglB+H3LUkzp0JQaOyYUgw82g/YOZ8P8EG8WEdLFPRkFgXvW8PkX/fjSnbDBm/LlRkjS7l/J+nvv9WW3VGyPLXBBjPlsyu20eWaf17NF/7azX52ehHsIMQsi+FHHGA58F2YCLCtJW1HUuNqG9qukypYELgO14wsyyGnEeKQ4aLES2Jk7TrK/Hh2JjWRRzOEPKGWpZx4SKPcXqpPhhpfMYGC2r9XHPbunFqGsqvtD5+s41wfW2iNA+TGR+o25G6U5VsNGUL0jYO57mxn9iy0n/jjWC5HeuWNc5X",
+		"scriptPublicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAuNJJK3A0D4NhOqMZSrtEyl0JTYZxUVXqosKT7ZopuGvq+zT5LzinI8kxr+wjMHlmN1EjNkrBitkGQEvRDpXDxIpe4IiHZRkrbFDYvxsZA3h0N0sKn8pJzMHP/orFsBi0CUWck2ynyqIsHGqqF3ziHHZi4DUIMTvdaqGAwJIYo5dDS+T/L70CfyqZhJnGMAGGMGXW0JHbmtURDz0hgMWkz/eREkYbce8aYV31JBImTosFADLQ6JPSi3rDEZagwMO2ipvK3fGsDdQfJ1CsBNR/8xJLTsJYrNoMnqLvWZRkcEBpbYB+7N6aSOVO+GdJ4S93f25Deru7BkWM/wHrJtvGDT7/a9GxfFl08jU5f7JRchn+zoqyn7db1d7rtrNiW8a4X5MNqASSkzJPPZgMrqDlCilSYkkRYsUvkhmzRPUhxYG0mv69gOqKrpLoMX3Y1IkA8iG6SWNTKiCnsrKexb+pKoZWg/76jdB1UoChBqd1divqW1Te7VUvRir400D5tjg1AgMBAAE=",
+		"packages": ["Http"],
+		"allowEval": false,
+		"allowUrls": ["music.youtube.com", "youtube.com", "www.youtube.com"],
+		"supportedClaimTypes": [
+		3],
+		"authentication": {
+		"completionUrl": "https://music.youtube.com/",
+		"loginUrl": "https://accounts.google.com/ServiceLogin?ltmpl=music&service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fmusic.youtube.com%252F%26feature%3D__FEATURE__&hl=en",
+		"cookiesToFind": ["SIDCC"],
+		"cookiesExclOthers": false,
+		"headersToFind": ["Authorization"],
+		"domainHeadersToFind": {
+		".youtube.com": ["authorization"]
+		}
+		},
+		"settings": [{
+		"variable": "header",
+		"name": "Loader",
+		"description": "Change which algorithm loads specific parts of the app. Faster algorithm may not have as much information (e.g. author name may be missing).\nThe `Everything` option loads everything, which is very slow.\nThe Most things loads at a medium speed and loads everything but the thumbnails on the authours, which is why it is recommended\nAnd Just the necesities loads really fast (~1 sec) but only loads the picture, the title of the song and half the time the author name. Other things will be missing",
+		"type": "Header"
+		}, {
+		"variable": "HomePageType",
+		"name": "Home Page Loader",
+		"description": "Change the home page loader algorithm",
+		"type": "Dropdown",
+		"default": "1",
+		"options": ["Everything (slow)", "Most things (recommended)", "Just the necesities (fast)"]
+		}, {
+		"variable": "SearchPageType",
+		"name": "Search Page Loader",
+		"description": "Change the search page loader algorithm (when you search for a song)",
+		"type": "Dropdown",
+		"default": "1",
+		"options": ["Everything (slow)", "Most things (recommended)", "Just the necesities (fast)"]
+		}]
+		}
+	{
 		"name": "media.ccc.de",
 		"description": "A video platform which offers a wide variety of video and audio material distributed by the Chaos Computer Club",
 		"author": "Alex",
