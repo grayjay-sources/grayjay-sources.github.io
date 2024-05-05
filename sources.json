@@ -1039,7 +1039,7 @@
 		"default": "1",
 		"options": ["Everything (slow)", "Most things (recommended)", "Just the necesities (fast)"]
 		}]
-		}
+		},
 	{
 		"name": "media.ccc.de",
 		"description": "A video platform which offers a wide variety of video and audio material distributed by the Chaos Computer Club",
