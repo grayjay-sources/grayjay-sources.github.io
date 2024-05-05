@@ -48,8 +48,6 @@
 		"version": 1,
 		"iconUrl": "",
 		"id": "15901e70-7590-42e4-b67d-8a13ae77726e",
-		"scriptSignature": "",
-		"scriptPublicKey": "",
 		"packages": [
 			"Http",
 			"Utilities"
@@ -77,8 +75,6 @@
 		"version": 3,
 		"iconUrl": "./crunchyroll.png",
 		"id": "3af73d7b-05bc-4a1b-a142-8a8377fc9c5b",
-		"scriptSignature": "",
-		"scriptPublicKey": "",
 		"packages": [
 			"Http"
 		],
@@ -109,8 +105,6 @@
 		"version": 1,
 		"iconUrl": "https://www.godresource.com/Images/Logos/GRLogo.jpg",
 		"id": "482834c5-bba1-409e-a08b-4fb61d9e4232",
-		"scriptSignature": "<ommitted>",
-		"scriptPublicKey": "<ommitted>",
 		"packages": [
 			"Http"
 		],
@@ -170,8 +164,6 @@
 		"version": 23,
 		"iconUrl": "./mediathek.png",
 		"id": "da5e25de-1a2d-22df-1612-be89ed1adee6",
-		"scriptSignature": "",
-		"scriptPublicKey": "",
 		"packages": [
 			"Http"
 		],
