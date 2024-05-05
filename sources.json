@@ -1,5 +1,42 @@
 [
 	{
+		  "name": "BiliBili (CN)",
+		  "description": "BiliBili (CN) is the biggest video platform in China\n\nLogin to access higher video quality, subtitles, and premium content",
+		  "author": "FUTO",
+		  "authorUrl": "https://futo.org",
+		  "platformUrl": "https://bilibili.com",
+		  "sourceUrl": "https://plugins.grayjay.app/Bilibili/BiliBiliConfig.json",
+		  "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/bilibili",
+		  "scriptUrl": "./BiliBiliScript.js",
+		  "version": 9,
+		  "iconUrl": "./BiliBiliIcon.png",
+		  "id": "cf8ea74d-ad9b-489e-a083-539b6aa8648c",
+		  "scriptSignature": "Bwj0Q+fU+zWyWuRbi805vmBaMmmpPeHxBdKgGVOX1EsFTEeKydjGduvp9z1WaqQjadHT/AgeclXJW3v1vhAP/msF3Iht/0w2r/GIiejhh2I+4F6MPE5w6CHH+vUrMhQORkN54kkSPImK+Haglz+xAa7eojc9pbJr04pKp4INBtifDTTENjn6uHKjlcTSTjVL7iwsH71Pkkus0PWgpgMGt1kQRV/JpmB5EdSUjz2WpAh9HcNuBDLxUmCHq3sHBXVM+1lbkze8qYx3H85ITg/ojEduDnEt8tIlDuajL8o6alzjhqfX4Y60ADFGMPz4VvONqx+61mQABxodTnCKh265tQ==",
+		  "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+		  "packages": [
+		    "Http",
+		    "Utilities"
+		  ],
+		  "allowEval": false,
+		  "allowUrls": [
+		    "www.bilibili.com",
+		    "api.bilibili.com",
+		    "s1.hdslb.com",
+		    "live.bilibili.com",
+		    "s.search.bilibili.com",
+		    "aisubtitle.hdslb.com",
+		    "d1--ov-gotcha05.bilivideo.com",
+		    "d1--ov-gotcha07.bilivideo.com"
+		  ],
+		  "authentication": {
+		    "loginUrl": "https://passport.bilibili.com/h5-app/passport/login",
+		    "cookiesToFind": [
+		      "SESSDATA"
+		    ],
+		    "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
+		  }
+	},
+	{
 		"name": "CDA",
 		"description": "CDA plugin",
 		"author": "Piotr Bartoszewicz",
