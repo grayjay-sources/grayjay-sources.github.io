@@ -302,7 +302,19 @@
     ],
     "constants": {
       "baseUrl": "https://peertube.futo.org"
-    }
+    },
+    "_customButtons": [
+      {
+        "text": "Custom",
+        "url": "https://pluginhost.grayjay.app/peertube",
+        "classes": "btn-secondary"
+      },
+      {
+        "text": "Instances",
+        "url": "https://grayjay-peertube.github.io/",
+        "classes": "btn-secondary"
+      }
+    ]
   },
   {
     "name": "Pietsmiet.de",

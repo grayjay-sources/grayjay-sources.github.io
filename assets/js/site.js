@@ -70,7 +70,12 @@ function generateCard(data) {
                         <div class="btn-group">
                         <a href="${installUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-primary">Install</button></a>&nbsp;
                         <a href="${repoUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Source</button></a>
-                        </div>
+    `;
+    if (data._customButtons) {
+        data._customButtons.forEach(btn => {
+            html += `<a href="${btn.url}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm ${btn.classes}">${btn.text}</button></a>&nbsp;`;
+        });
+            html += `</div>
                         <small class="text-body-secondary">${data.author}</small>
                     </div>
                 </div>
