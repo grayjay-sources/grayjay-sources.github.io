@@ -95,6 +95,29 @@
     }
   },
   {
+    "name": "DeviantArt",
+    "description": "DeviantArt plugin",
+    "author": "CQIT",
+    "authorUrl": "https://github.com/CodeQualIT",
+    "platformUrl": "https://www.deviantart.com",
+    "sourceUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/blob/master/DAConfig.json",
+    "repositoryUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart",
+    "scriptUrl": "./DAScript.js",
+    "version": 1,
+    "iconUrl": "https://raw.githubusercontent.com/CodeQualIT/grayjay-source-deviantart/master/DALogo.png",
+    "id": "a82a6e4d-4e91-466e-8c46-d7895654e2d1",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      "www.deviantart.com"
+    ]
+  },
+  {
     "name": "God Resource (Unofficial)",
     "description": "Sermons from nifb",
     "author": "Stuart Houston",
@@ -1096,30 +1119,6 @@
     "allowEval": false,
     "allowUrls": [
       "everywhere"
-    ]
-  },
-  {
-    "name": "DeviantArt",
-    "description": "DeviantArt plugin",
-    "author": "CQIT",
-    "authorUrl": "https://github.com/CodeQualIT",
-  
-    "platformUrl": "https://www.deviantart.com",
-    "sourceUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/blob/master/DAConfig.json",
-    "repositoryUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart",
-    "scriptUrl": "./DAScript.js",
-    "version": 1,
-    
-    "iconUrl": "https://raw.githubusercontent.com/CodeQualIT/grayjay-source-deviantart/master/DALogo.png",
-    "id": "a82a6e4d-4e91-466e-8c46-d7895654e2d1",
-    
-    "scriptSignature": "",
-    "scriptPublicKey": "",
-    "packages": ["Http", "DOMParser"],
-    
-    "allowEval": false,
-    "allowUrls": [
-      "www.deviantart.com"
     ]
   }
 ]
