@@ -1110,7 +1110,7 @@
     "scriptUrl": "./DAScript.js",
     "version": 1,
     
-    "iconUrl": "./DALogo.png",
+    "iconUrl": "https://raw.githubusercontent.com/CodeQualIT/grayjay-source-deviantart/master/DALogo.png",
     "id": "a82a6e4d-4e91-466e-8c46-d7895654e2d1",
     
     "scriptSignature": "",
