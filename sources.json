@@ -100,7 +100,7 @@
     "author": "CQIT",
     "authorUrl": "https://github.com/CodeQualIT",
     "platformUrl": "https://www.deviantart.com",
-    "sourceUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/blob/master/DAConfig.json",
+    "sourceUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/raw/master/DAConfig.json",
     "repositoryUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart",
     "scriptUrl": "./DAScript.js",
     "version": 1,
