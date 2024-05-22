@@ -73,7 +73,7 @@ function generateCard(data) {
     `;
     if (data._customButtons) {
         data._customButtons.forEach(btn => {
-            html += `<a href="${btn.url}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm ${btn.classes}">${btn.text}</button></a>&nbsp;`;
+            html += `&nbsp;<a href="${btn.url}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm ${btn.classes}">${btn.text}</button></a>`;
         });
     }
             html += `</div>
