@@ -72,6 +72,7 @@ function generateCard(data) {
                         <a href="${repoUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Source</button></a>
     `;
     if (data._customButtons) {
+        html += `<br>`;
         data._customButtons.forEach(btn => {
             html += `&nbsp;<a href="${btn.url}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm ${btn.classes}">${btn.text}</button></a>`;
         });
