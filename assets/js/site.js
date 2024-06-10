@@ -16,6 +16,24 @@ function getAbsoluteUrl(url, baseUrl) {
     }
     return url;
 }
+function getSourceFeeds(data, key) {
+    let urls = [];
+    data.forEach(item => {
+        if (item.hasOwnProperty(key)) urls.push(item[key])
+        else console.warn(`Source ${item.name} has no ${key}`)
+    });
+    console.log('URLs:', urls); // Log encoded URLs
+    const urlCount = urls.length;
+    const baseUrl = "https://rssmerge.onrender.com"; // Use the current page's origin as the base URL
+    console.log('Base URL:', baseUrl); // Log base URL
+    const params = new URLSearchParams({
+      title: `${urlCount} ${key}`,
+      urls: urls.join(',')
+    }).toString();
+    const finalUrl = `${baseUrl}/?${params}`;
+    console.log('Final URL:', finalUrl); // Log final URL
+    return finalUrl;
+}
 function fixData(data) {
     data["baseUrl"] = removeLast(data.sourceUrl, "/") + "/";
     for (const [key, value] of Object.entries(data)) {
@@ -100,6 +118,8 @@ async function populateCardsContainer(url) {
                 cardsContainer.innerHTML += cardHtml;
             }
         });
+        getSourceFeeds(data, "commitFeedUrl");
+        getSourceFeeds(data, "releaseFeedUrl");
     } catch (error) {
         console.error('Error fetching data:', error);
     }
