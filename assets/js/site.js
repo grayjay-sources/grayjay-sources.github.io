@@ -104,6 +104,27 @@ function generateCard(data) {
     `;
     return html;
 }
+async function addNavbarItem(text, url, spacer = false) {
+    const navbarMenu = document.querySelector("body > header > div.navbar.navbar-dark.bg-dark.shadow-sm > div > li > ul");
+
+    if (spacer) {
+        const hrElement = document.createElement('hr');
+        hrElement.className = 'dropdown-divider';
+        const listItemElement = document.createElement('li');
+        listItemElement.appendChild(hrElement);
+        navbarMenu.appendChild(listItemElement);
+    }
+
+    const anchorElement = document.createElement('a');
+    anchorElement.className = 'dropdown-item';
+    anchorElement.target = '_blank';
+    anchorElement.rel = 'noopener noreferrer';
+    anchorElement.href = url;
+    anchorElement.textContent = text;
+    const listItemElement = document.createElement('li');
+    listItemElement.appendChild(anchorElement);
+    navbarMenu.appendChild(listItemElement);
+}
 async function populateCardsContainer(url) {
     try {
         const response = await fetch(url);
@@ -118,8 +139,10 @@ async function populateCardsContainer(url) {
                 cardsContainer.innerHTML += cardHtml;
             }
         });
-        getSourceFeeds(data, "commitFeedUrl");
-        getSourceFeeds(data, "releaseFeedUrl");
+        const commitFeedsUrl = getSourceFeeds(data, "commitFeedUrl");
+        addNavbarItem("Source Commits RSS Feed", commitFeedsUrl, true);
+        const releaseFeedsUrl = getSourceFeeds(data, "releaseFeedUrl");
+        addNavbarItem("Sources Releases RSS Feed", releaseFeedsUrl);
     } catch (error) {
         console.error('Error fetching data:', error);
     }
