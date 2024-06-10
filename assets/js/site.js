@@ -19,8 +19,8 @@ function getAbsoluteUrl(url, baseUrl) {
 function getSourceFeeds(data, key) {
     let urls = [];
     data.forEach(item => {
-        if (item.hasOwnProperty(key)) urls.push(item[key])
-        else console.warn(`Source ${item.name} has no ${key}`)
+        if (item.hasOwnProperty(key)) urls.push(encodeURI(item[key]));
+        else console.warn(`Source ${item.name} has no ${key}`);
     });
     console.log('URLs:', urls); // Log encoded URLs
     const urlCount = urls.length;
