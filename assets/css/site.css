@@ -70,8 +70,7 @@
   border-radius: 50%;
   border-color: black;
   font-weight: 600;
-  height: 50px;
-  width: 40px;
+  min-height: 2.5em;
 }
 
 .btn-qr-primary:hover {
