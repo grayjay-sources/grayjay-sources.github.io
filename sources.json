@@ -1,6 +1,6 @@
 [
   {
-    "name": "BiliBili (CN)",
+    "name": "BiliBili",
     "description": "BiliBili (CN) is the biggest video platform in China\n\nLogin to access higher video quality, subtitles, and premium content",
     "author": "FUTO",
     "authorUrl": "https://futo.org",
@@ -420,7 +420,7 @@
     ]
   },
   {
-    "name": "Kick (Beta)",
+    "name": "Kick",
     "description": "A live streaming platform, backed by Stake.com.",
     "author": "FUTO",
     "authorUrl": "https://futo.org",
@@ -506,7 +506,7 @@
     ]
   },
   {
-    "name": "Nebula (Beta)",
+    "name": "Nebula",
     "description": "A subscription-based video platform, co-owned by Standard Broadcast LLC and various creators.",
     "author": "FUTO",
     "authorUrl": "https://futo.org",
@@ -823,7 +823,7 @@
     }
   },
   {
-    "name": "Twitch (Beta)",
+    "name": "Twitch",
     "description": "One of the biggest livestreaming platforms, owned by Amazon.",
     "author": "FUTO",
     "authorUrl": "https://futo.org",
