@@ -68,12 +68,17 @@
 
 .btn-qr-primary {
   border-radius: 50%;
-  background-color: black;
-  border-color: white;
+  border-color: black;
   font-weight: 600;
   height: 50px;
   width: 40px;
 }
+
+.btn-qr-primary:hover {
+  background-color: black;
+  color: white;
+}
+
 /* .fab-container {
   z-index: 1500;
   display: flex;
@@ -154,3 +159,21 @@
   color: white;
   padding-top: 6px;
 } */
+
+
+img.source-icon, img.source-qrcode {
+  max-height: 15em;
+  min-height: 15em;
+  min-width: 15em;
+  max-width: 15em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+}
+
+.card-text {
+  max-height: 4em;
+  min-height: 4em;
+  text-overflow: ellipsis;
+  margin-bottom: 4em;
+}
