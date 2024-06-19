@@ -67,6 +67,8 @@ function generateCard(data) {
         if (data.platformUrl) { data.iconUrl = getFavicon(data.platformUrl); }
         else { data.iconUrl = getFavicon(data.allowUrls[0]); }
     }
+    let author = data.author;
+    if (author === "FUTO") author = `<b>${data.author}</b>`
     /*  */
     let html = `
         <div class="col">
