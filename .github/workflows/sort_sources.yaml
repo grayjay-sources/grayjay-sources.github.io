@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'sources.json'
+  workflow_dispatch:
 
 jobs:
   sort-json:
