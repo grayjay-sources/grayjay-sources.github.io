@@ -1,28 +1,22 @@
 name: Autosort sources.json
 
 on:
-  push:
+  workflow_dispatch:
+  # push:
+  pull_request:
     paths:
       - 'sources.json'
-  workflow_dispatch:
-  pull_request:
-    branches: [ main ]
 
 jobs:
   validate-and-sort:
     runs-on: ubuntu-latest
 
     steps:
+    
+    - name: Configure Git User
+      run: git config --global user.email "action@github.com" && git config --global user.name "GitHub Action"
     - name: Checkout repository
       uses: actions/checkout@v2
-
-    # - name: Set up Node.js
-    #   uses: actions/setup-node@v2
-    #   with:
-    #     node-version: '14'
-
-    # - name: Install dependencies
-    #   run: npm ci
 
     - name: Validate and Sort JSON
       uses: yakubique/json-utils@v1.6
@@ -34,3 +28,8 @@ jobs:
         to_file: 'true'
         input: 'sources.json'
 
+    - name: Commit and Push Sorted JSON
+      run: |
+        git add sources.json
+        git commit -m "Sort sources.json"
+        git push
