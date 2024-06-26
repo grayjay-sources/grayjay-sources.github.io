@@ -5,23 +5,30 @@ on:
     paths:
       - 'sources.json'
   workflow_dispatch:
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  sort-json:
+  validate-and-sort:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      
-      # Optional: Use this if you want to commit and push the sorted JSON back to the repository
-      # - name: Commit and Push Sorted JSON
-      #   run: |
-      #     git config --global user.email "action@github.com"
-      #     git config --global user.name "GitHub Action"
-      #     git add sources.json
-      #     git commit -m "Sort JSON array by name key"
-      #     git push
 
-      - name: Sort JSON file
-        run: |
-          jq '.[] | sort_by(.name)' sources.json > sorted_sources.json && mv sorted_sources.json sources.json
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Validate and Sort JSON
+      uses: marketplaces/actions/json-utils@v1
+      with:
+        path-to-json: 'sources.json'
+        action: 'sort'
+        type: "nested-json"
+        key: "name"
+
