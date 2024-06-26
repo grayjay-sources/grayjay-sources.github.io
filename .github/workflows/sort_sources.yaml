@@ -1,0 +1,26 @@
+name: Autosort sources.json
+
+on:
+  push:
+    paths:
+      - 'sources.json'
+
+jobs:
+  sort-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      # Optional: Use this if you want to commit and push the sorted JSON back to the repository
+      # - name: Commit and Push Sorted JSON
+      #   run: |
+      #     git config --global user.email "action@github.com"
+      #     git config --global user.name "GitHub Action"
+      #     git add sources.json
+      #     git commit -m "Sort JSON array by name key"
+      #     git push
+
+      - name: Sort JSON file
+        run: |
+          jq '.[] | sort_by(.name)' sources.json > sorted_sources.json && mv sorted_sources.json sources.json
