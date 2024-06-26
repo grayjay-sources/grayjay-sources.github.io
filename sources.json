@@ -1,5 +1,29 @@
 [
   {
+    "name": "Bandcamp",
+    "description": "Bandcamp is an American online audio distribution platform founded in 2007.",
+    "author": "rom",
+    "authorUrl": "https://rom.dog/",
+    "sourceUrl": "https://raw.githubusercontent.com/romdotdog/grayjay-bandcamp/main/config.json",
+    "repositoryUrl": "https://github.com/romdotdog/grayjay-bandcamp",
+    "commitFeedUrl": "https://github.com/romdotdog/grayjay-bandcamp/commits/main.atom",
+    "scriptUrl": "https://raw.githubusercontent.com/romdotdog/grayjay-bandcamp/main/index.js",
+    "version": 1,
+    "iconUrl": "./icon.png",
+    "id": "b3a35316-6c86-4d6a-92a7-be82029ad6b9",
+    "scriptSignature": "<omitted>",
+    "scriptPublicKey": "<omitted>",
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      "everywhere"
+    ],
+    "releaseFeedUrl": "https://github.com/romdotdog/grayjay-bandcamp/releases.atom"
+  },
+  {
     "name": "BiliBili",
     "description": "BiliBili (CN) is the biggest video platform in China\n\nLogin to access higher video quality, subtitles, and premium content",
     "author": "FUTO",
@@ -12,13 +36,18 @@
     "version": 9,
     "iconUrl": "./BiliBiliIcon.png",
     "id": "cf8ea74d-ad9b-489e-a083-539b6aa8648c",
-    "scriptSignature": "Bwj0Q+fU+zWyWuRbi805vmBaMmmpPeHxBdKgGVOX1EsFTEeKydjGduvp9z1WaqQjadHT/AgeclXJW3v1vhAP/msF3Iht/0w2r/GIiejhh2I+4F6MPE5w6CHH+vUrMhQORkN54kkSPImK+Haglz+xAa7eojc9pbJr04pKp4INBtifDTTENjn6uHKjlcTSTjVL7iwsH71Pkkus0PWgpgMGt1kQRV/JpmB5EdSUjz2WpAh9HcNuBDLxUmCHq3sHBXVM+1lbkze8qYx3H85ITg/ojEduDnEt8tIlDuajL8o6alzjhqfX4Y60ADFGMPz4VvONqx+61mQABxodTnCKh265tQ==",
-    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "packages": [
       "Http",
       "Utilities"
     ],
     "allowEval": false,
+    "authentication": {
+      "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+      "loginUrl": "https://passport.bilibili.com/h5-app/passport/login",
+      "cookiesToFind": [
+        "SESSDATA"
+      ]
+    },
     "allowUrls": [
       "www.bilibili.com",
       "api.bilibili.com",
@@ -29,23 +58,17 @@
       "d1--ov-gotcha05.bilivideo.com",
       "d1--ov-gotcha07.bilivideo.com"
     ],
-    "authentication": {
-      "loginUrl": "https://passport.bilibili.com/h5-app/passport/login",
-      "cookiesToFind": [
-        "SESSDATA"
-      ],
-      "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
-    },
     "tags": [
       "official"
-    ]
+    ],
+    "scriptSignature": "Bwj0Q+fU+zWyWuRbi805vmBaMmmpPeHxBdKgGVOX1EsFTEeKydjGduvp9z1WaqQjadHT/AgeclXJW3v1vhAP/msF3Iht/0w2r/GIiejhh2I+4F6MPE5w6CHH+vUrMhQORkN54kkSPImK+Haglz+xAa7eojc9pbJr04pKp4INBtifDTTENjn6uHKjlcTSTjVL7iwsH71Pkkus0PWgpgMGt1kQRV/JpmB5EdSUjz2WpAh9HcNuBDLxUmCHq3sHBXVM+1lbkze8qYx3H85ITg/ojEduDnEt8tIlDuajL8o6alzjhqfX4Y60ADFGMPz4VvONqx+61mQABxodTnCKh265tQ==",
+    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB"
   },
   {
     "name": "CDA",
     "description": "CDA plugin",
     "author": "Piotr Bartoszewicz",
     "authorUrl": "https://github.com/PiotrekB416",
-    "platformUrl": "https://cda.pl",
     "sourceUrl": "https://piotrekb416.github.io/GrayJay-CDA/CdaConfig.json",
     "repositoryUrl": "https://github.com/PiotrekB416/GrayJay-CDA",
     "commitFeedUrl": "https://github.com/PiotrekB416/GrayJay-CDA/commits/main.atom",
@@ -59,6 +82,9 @@
       "Utilities"
     ],
     "allowEval": false,
+    "allowUrls": [
+      "api.cda.pl"
+    ],
     "authentication": {
       "userAgent": "pl.cda 1.0",
       "loginUrl": "https://piotrekb416.github.io/GrayJay-CDA/login.html",
@@ -66,9 +92,7 @@
         "Authorization"
       ]
     },
-    "allowUrls": [
-      "api.cda.pl"
-    ],
+    "platformUrl": "https://cda.pl",
     "tags": [
       "unknown"
     ]
@@ -403,7 +427,6 @@
     "sourceUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/raw/master/DAConfig.json",
     "repositoryUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart",
     "commitFeedUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/commits/master.atom",
-    "releaseFeedUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/releases.atom",
     "scriptUrl": "./DAScript.js",
     "version": 1,
     "iconUrl": "https://raw.githubusercontent.com/CodeQualIT/grayjay-source-deviantart/master/DALogo.png",
@@ -417,6 +440,28 @@
     "allowEval": false,
     "allowUrls": [
       "www.deviantart.com"
+    ],
+    "releaseFeedUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/releases.atom"
+  },
+  {
+    "name": "God Resource (Unofficial)",
+    "description": "Sermons from nifb",
+    "author": "Stuart Houston",
+    "authorUrl": "https://github.com/skytunnel",
+    "sourceUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/tree/dev/config.js",
+    "repositoryUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/tree/dev",
+    "commitFeedUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/commits/dev.atom",
+    "releaseFeedUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/releases.atom",
+    "scriptUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/tree/dev/script.js",
+    "version": 1,
+    "iconUrl": "https://www.godresource.com/Images/Logos/GRLogo.jpg",
+    "id": "482834c5-bba1-409e-a08b-4fb61d9e4232",
+    "packages": [
+      "Http"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      "everywhere"
     ]
   },
   {
@@ -424,16 +469,13 @@
     "description": "A live streaming platform, backed by Stake.com.",
     "author": "FUTO",
     "authorUrl": "https://futo.org",
-    "platformUrl": "https://kick.com",
     "sourceUrl": "https://plugins.grayjay.app/Kick/KickConfig.json",
+    "scriptUrl": "./KickScript.js",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/kick",
     "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/kick/-/commits/master?format=atom",
-    "scriptUrl": "./KickScript.js",
     "version": 10,
     "iconUrl": "./kick.png",
     "id": "4a78c2ff-c20f-43ac-8f75-34515df1d320",
-    "scriptSignature": "kw8JJupiKjfkCPCM+yHnGnEXGRpx+tsODMd5zyBh8rDgXQR1CDtXCUIegbFBnsz33tYSrHLJHCDQ0I6s1xkD8Ww7usYV3lSaDnvzx867vpnV9sTBSiEALl883+OdGFiZ6E2+AkOyPJ04a7KjWIJ3otzGo3YMTJLR8QvGbDLQkXusGrDXkhfKRTR/aVpc+D/bRYUDcb+hMfE5pPT8BenmF28chIilh9tO9JRs92PcK1YTqT3qNC/ZWJl9I5u7Vi81bwyZLSYRk8BJEEhfwP83vcVaaegPkD7b2IeOlbhpesC5iOGUn0VfECUuqGe3qfK0JjnAH8znEeB8e47FzZuxGw==",
-    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "packages": [
       "Http"
     ],
@@ -442,6 +484,9 @@
       "kick.com",
       "search.kick.com"
     ],
+    "platformUrl": "https://kick.com",
+    "scriptSignature": "kw8JJupiKjfkCPCM+yHnGnEXGRpx+tsODMd5zyBh8rDgXQR1CDtXCUIegbFBnsz33tYSrHLJHCDQ0I6s1xkD8Ww7usYV3lSaDnvzx867vpnV9sTBSiEALl883+OdGFiZ6E2+AkOyPJ04a7KjWIJ3otzGo3YMTJLR8QvGbDLQkXusGrDXkhfKRTR/aVpc+D/bRYUDcb+hMfE5pPT8BenmF28chIilh9tO9JRs92PcK1YTqT3qNC/ZWJl9I5u7Vi81bwyZLSYRk8BJEEhfwP83vcVaaegPkD7b2IeOlbhpesC5iOGUn0VfECUuqGe3qfK0JjnAH8znEeB8e47FzZuxGw==",
+    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "authentication": {
       "userAgent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36",
       "loginUrl": "https://kick.com/",
@@ -468,7 +513,6 @@
     "sourceUrl": "https://windowsfreak.github.io/Mediathek/MediathekConfig.json",
     "repositoryUrl": "https://github.com/windowsfreak/Mediathek/tree/main",
     "commitFeedUrl": "https://github.com/windowsfreak/Mediathek/commits/main.atom",
-    "releaseFeedUrl": "https://github.com/windowsfreak/Mediathek/releases.atom",
     "scriptUrl": "./MediathekScript.js",
     "version": 23,
     "iconUrl": "./mediathek.png",
@@ -482,28 +526,8 @@
       "akamaihd.net",
       "utstreaming.zdf.de",
       "everywhere"
-    ]
-  },
-  {
-    "name": "God Resource (Unofficial)",
-    "description": "Sermons from nifb",
-    "author": "Stuart Houston",
-    "authorUrl": "https://github.com/skytunnel",
-    "sourceUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/tree/dev/config.js",
-    "scriptUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/tree/dev/script.js",
-    "repositoryUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/tree/dev",
-    "commitFeedUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/commits/dev.atom",
-    "releaseFeedUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/releases.atom",
-    "version": 1,
-    "iconUrl": "https://www.godresource.com/Images/Logos/GRLogo.jpg",
-    "id": "482834c5-bba1-409e-a08b-4fb61d9e4232",
-    "packages": [
-      "Http"
     ],
-    "allowEval": false,
-    "allowUrls": [
-      "everywhere"
-    ]
+    "releaseFeedUrl": "https://github.com/windowsfreak/Mediathek/releases.atom"
   },
   {
     "name": "Nebula",
@@ -530,6 +554,9 @@
       "nebula.app",
       "users.api.nebula.app"
     ],
+    "supportedClaimTypes": [
+      19
+    ],
     "authentication": {
       "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
       "loginUrl": "https://nebula.tv/login",
@@ -540,10 +567,7 @@
         "nebula_auth.apiToken"
       ],
       "completionUrl": "https://users.api.nebula.app/api/v1/authorization/"
-    },
-    "supportedClaimTypes": [
-      19
-    ]
+    }
   },
   {
     "name": "Odysee",
@@ -582,7 +606,6 @@
     "description": "Patreon is a subscription platform allowing creators to release membership only content.",
     "author": "FUTO",
     "authorUrl": "https://futo.org",
-    "platformUrl": "https://patreon.com",
     "sourceUrl": "https://plugins.grayjay.app/Patreon/PatreonConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/patreon",
     "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/patreon/-/commits/master?format=atom",
@@ -601,6 +624,7 @@
       "www.patreon.com",
       "patreon.com"
     ],
+    "platformUrl": "https://patreon.com",
     "authentication": {
       "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
       "loginUrl": "https://www.patreon.com/login",
@@ -619,9 +643,9 @@
     "author": "FUTO",
     "authorUrl": "https://futo.org",
     "sourceUrl": "https://plugins.grayjay.app/PeerTube/PeerTubeConfig.json",
+    "scriptUrl": "./PeerTubeScript.js",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/peertube",
     "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/peertube/-/commits/master?format=atom",
-    "scriptUrl": "./PeerTubeScript.js",
     "version": 14,
     "iconUrl": "./peertube.png",
     "id": "1c291164-294c-4c2d-800d-7bc6d31d0019",
@@ -656,10 +680,10 @@
     "author": "Bluscream",
     "authorUrl": "https://bluscream.github.io",
     "sourceUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/config.json",
-    "scriptUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
     "repositoryUrl": "https://github.com/Bluscream/grayjay-source-pietsmietde/tree/master",
     "commitFeedUrl": "https://github.com/Bluscream/grayjay-source-pietsmietde/commits/master.atom",
     "releaseFeedUrl": "https://github.com/Bluscream/grayjay-source-pietsmietde/releases.atom",
+    "scriptUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
     "version": 9,
     "iconUrl": "https://yt3.ggpht.com/-nm49M5AVi64/AAAAAAAAAAI/AAAAAAAAAAA/h0Scy91ZiZQ/s900-c-k-no-rj-c0xffffff/photo.jpg",
     "id": "82b8fefc-24ae-11ee-be56-0242aa120002",
@@ -687,7 +711,6 @@
     "sourceUrl": "https://github.com/paaspaas00/pornhubGrayjay/raw/main/PornhubConfig.json",
     "repositoryUrl": "https://github.com/paaspaas00/pornhubGrayjay/tree/main",
     "commitFeedUrl": "https://github.com/paaspaas00/pornhubGrayjay/commits/main.atom",
-    "releaseFeedUrl": "https://github.com/paaspaas00/pornhubGrayjay/releases.atom",
     "scriptUrl": "./PornhubScript.js",
     "version": 1,
     "iconUrl": "./pornhub.png",
@@ -702,6 +725,7 @@
     "allowUrls": [
       "www.pornhub.com"
     ],
+    "releaseFeedUrl": "https://github.com/paaspaas00/pornhubGrayjay/releases.atom",
     "nsfw": true
   },
   {
@@ -709,7 +733,6 @@
     "description": "A plugin that adds Rumble as a source",
     "author": "FUTO",
     "authorUrl": "https://futo.org",
-    "platformUrl": "https://rumble.com",
     "sourceUrl": "https://plugins.grayjay.app/Rumble/RumbleConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/rumble",
     "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/rumble/-/commits/master?format=atom",
@@ -727,6 +750,7 @@
     "allowUrls": [
       "rumble.com"
     ],
+    "platformUrl": "https://rumble.com",
     "authentication": {
       "loginUrl": "https://rumble.com/login.php",
       "cookiesToFind": [
@@ -761,8 +785,8 @@
     "name": "SoundCloud",
     "description": "One of the biggest music distribution platforms, Privately owned",
     "author": "FUTO",
-    "platformUrl": "https://soundcloud.com",
     "authorUrl": "https://futo.org",
+    "platformUrl": "https://soundcloud.com",
     "sourceUrl": "https://plugins.grayjay.app/Soundcloud/SoundcloudConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/soundcloud",
     "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/soundcloud/-/commits/master?format=atom",
@@ -815,11 +839,11 @@
       "open.spotifycdn.com"
     ],
     "authentication": {
+      "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
       "loginUrl": "https://accounts.spotify.com/en/login",
       "cookiesToFind": [
         "sp_dc"
-      ],
-      "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
+      ]
     }
   },
   {
@@ -827,7 +851,6 @@
     "description": "One of the biggest livestreaming platforms, owned by Amazon.",
     "author": "FUTO",
     "authorUrl": "https://futo.org",
-    "platformUrl": "https://twitch.tv",
     "sourceUrl": "https://plugins.grayjay.app/Twitch/TwitchConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/twitch",
     "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/twitch/-/commits/master?format=atom",
@@ -846,6 +869,7 @@
       "twitch.tv",
       "usher.ttvnw.net"
     ],
+    "platformUrl": "https://twitch.tv",
     "authentication": {
       "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.3",
       "loginUrl": "https://www.twitch.tv/login",
@@ -868,7 +892,6 @@
     "author": "dw5",
     "authorUrl": "https://dw5.github.io",
     "sourceUrl": "https://dw5.github.io/grayjay-Vanillo/VanilloConfig.json",
-    "websiteUrl": "https://dw5.github.io",
     "repositoryUrl": "https://github.com/dw5/grayjay-Vanillo/tree/master",
     "commitFeedUrl": "https://github.com/dw5/grayjay-Vanillo/commits/master.atom",
     "releaseFeedUrl": "https://github.com/dw5/grayjay-Vanillo/releases.atom",
@@ -885,6 +908,7 @@
     "allowUrls": [
       "everywhere"
     ],
+    "websiteUrl": "https://dw5.github.io",
     "constants": {
       "baseUrl": "https://api.vanillo.tv"
     }
@@ -893,11 +917,11 @@
     "name": "Wien.gv.at Videos",
     "description": "Videos der Stadt Wien",
     "author": "Matthias Porges",
+    "commitFeedUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/commits/master.atom",
+    "releaseFeedUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases.atom",
     "authorUrl": "https://nether.at",
     "sourceUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases/download/current/WienAtVideosConfig.json",
     "repositoryUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/",
-    "commitFeedUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/commits/master.atom",
-    "releaseFeedUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases.atom",
     "scriptUrl": "./WienAtVideosScript.js",
     "version": 1,
     "iconUrl": "./Stadt_Wien_Wappen.png",
@@ -919,53 +943,78 @@
     "name": "YouTube Music",
     "description": "A new music service with official albums, singles, videos, remixes, live performances and more",
     "author": "Tsunami014",
-    "commitFeedUrl": "https://github.com/Tsunami014/My-Grayjay-plugin/commits/main.atom",
-    "releaseFeedUrl": "https://github.com/Tsunami014/My-Grayjay-plugin/releases.atom",
     "authorUrl": "https://tsunami014.github.io",
     "platformUrl": "https://music.youtube.com",
     "sourceUrl": "https://tsunami014.github.io/My-Grayjay-plugin/YTMusicConfig.json",
     "repositoryUrl": "https://github.com/Tsunami014/My-Grayjay-plugin",
+    "commitFeedUrl": "https://github.com/Tsunami014/My-Grayjay-plugin/commits/main.atom",
     "scriptUrl": "./YTMusicScript.js",
     "version": 2,
     "iconUrl": "https://github.com/Tsunami014/Grayjay-plugins/blob/main/YTMusic.png?raw=true",
     "id": "ff7fee60-202f-4aeb-a270-676862dd854b",
     "scriptSignature": "A8x7FalRJ5tR5I2vUATEUFjTU2yiBkyBHuUk6wjmS47zA9JAYPz7TvAspl9tGy1EMwn2BoksSDnvRwMtE4X2DmrdHZby4XU/o5L4h4svFqIYmgXkqfbZ9PffDo1Tc5o8neK9LUFkROEpkWunXo8aUhWN/UFFutl/tg7Hbxpf6IVARTe37VXMPrTmVMPzsqmsVyH8r+ji98h5Y+K6KeqSZXhr67qMsbEglB+H3LUkzp0JQaOyYUgw82g/YOZ8P8EG8WEdLFPRkFgXvW8PkX/fjSnbDBm/LlRkjS7l/J+nvv9WW3VGyPLXBBjPlsyu20eWaf17NF/7azX52ehHsIMQsi+FHHGA58F2YCLCtJW1HUuNqG9qukypYELgO14wsyyGnEeKQ4aLES2Jk7TrK/Hh2JjWRRzOEPKGWpZx4SKPcXqpPhhpfMYGC2r9XHPbunFqGsqvtD5+s41wfW2iNA+TGR+o25G6U5VsNGUL0jYO57mxn9iy0n/jjWC5HeuWNc5X",
     "scriptPublicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAuNJJK3A0D4NhOqMZSrtEyl0JTYZxUVXqosKT7ZopuGvq+zT5LzinI8kxr+wjMHlmN1EjNkrBitkGQEvRDpXDxIpe4IiHZRkrbFDYvxsZA3h0N0sKn8pJzMHP/orFsBi0CUWck2ynyqIsHGqqF3ziHHZi4DUIMTvdaqGAwJIYo5dDS+T/L70CfyqZhJnGMAGGMGXW0JHbmtURDz0hgMWkz/eREkYbce8aYV31JBImTosFADLQ6JPSi3rDEZagwMO2ipvK3fGsDdQfJ1CsBNR/8xJLTsJYrNoMnqLvWZRkcEBpbYB+7N6aSOVO+GdJ4S93f25Deru7BkWM/wHrJtvGDT7/a9GxfFl08jU5f7JRchn+zoqyn7db1d7rtrNiW8a4X5MNqASSkzJPPZgMrqDlCilSYkkRYsUvkhmzRPUhxYG0mv69gOqKrpLoMX3Y1IkA8iG6SWNTKiCnsrKexb+pKoZWg/76jdB1UoChBqd1divqW1Te7VUvRir400D5tjg1AgMBAAE=",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["music.youtube.com", "youtube.com", "www.youtube.com"],
-    "supportedClaimTypes": [
-    3],
+    "allowUrls": [
+      "music.youtube.com",
+      "youtube.com",
+      "www.youtube.com"
+    ],
+    "settings": [
+      {
+        "variable": "header",
+        "name": "Loader",
+        "description": "Change which algorithm loads specific parts of the app. Faster algorithm may not have as much information (e.g. author name may be missing).\nThe `Everything` option loads everything, which is very slow.\nThe Most things loads at a medium speed and loads everything but the thumbnails on the authours, which is why it is recommended\nAnd Just the necesities loads really fast (~1 sec) but only loads the picture, the title of the song and half the time the author name. Other things will be missing",
+        "type": "Header"
+      },
+      {
+        "variable": "HomePageType",
+        "name": "Home Page Loader",
+        "description": "Change the home page loader algorithm",
+        "type": "Dropdown",
+        "default": "1",
+        "options": [
+          "Everything (slow)",
+          "Most things (recommended)",
+          "Just the necesities (fast)"
+        ]
+      },
+      {
+        "variable": "SearchPageType",
+        "name": "Search Page Loader",
+        "description": "Change the search page loader algorithm (when you search for a song)",
+        "type": "Dropdown",
+        "default": "1",
+        "options": [
+          "Everything (slow)",
+          "Most things (recommended)",
+          "Just the necesities (fast)"
+        ]
+      }
+    ],
     "authentication": {
       "completionUrl": "https://music.youtube.com/",
       "loginUrl": "https://accounts.google.com/ServiceLogin?ltmpl=music&service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fmusic.youtube.com%252F%26feature%3D__FEATURE__&hl=en",
-      "cookiesToFind": ["SIDCC"],
-      "cookiesExclOthers": false,
-      "headersToFind": ["Authorization"],
+      "headersToFind": [
+        "Authorization"
+      ],
       "domainHeadersToFind": {
-        ".youtube.com": ["authorization"]
-      }
+        ".youtube.com": [
+          "authorization"
+        ]
+      },
+      "cookiesToFind": [
+        "SIDCC"
+      ],
+      "cookiesExclOthers": false
     },
-    "settings": [{
-      "variable": "header",
-      "name": "Loader",
-      "description": "Change which algorithm loads specific parts of the app. Faster algorithm may not have as much information (e.g. author name may be missing).\nThe `Everything` option loads everything, which is very slow.\nThe Most things loads at a medium speed and loads everything but the thumbnails on the authours, which is why it is recommended\nAnd Just the necesities loads really fast (~1 sec) but only loads the picture, the title of the song and half the time the author name. Other things will be missing",
-      "type": "Header"
-    }, {
-      "variable": "HomePageType",
-      "name": "Home Page Loader",
-      "description": "Change the home page loader algorithm",
-      "type": "Dropdown",
-      "default": "1",
-      "options": ["Everything (slow)", "Most things (recommended)", "Just the necesities (fast)"]
-    }, {
-      "variable": "SearchPageType",
-      "name": "Search Page Loader",
-      "description": "Change the search page loader algorithm (when you search for a song)",
-      "type": "Dropdown",
-      "default": "1",
-      "options": ["Everything (slow)", "Most things (recommended)", "Just the necesities (fast)"]
-    }]
+    "supportedClaimTypes": [
+      3
+    ],
+    "releaseFeedUrl": "https://github.com/Tsunami014/My-Grayjay-plugin/releases.atom"
   },
   {
     "name": "Youtube",
@@ -974,9 +1023,9 @@
     "authorUrl": "https://futo.org",
     "platformUrl": "https://youtube.com",
     "sourceUrl": "https://plugins.grayjay.app/Youtube/YoutubeConfig.json",
+    "scriptUrl": "./YoutubeScript.js",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/youtube",
     "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/youtube/-/commits/master?format=atom",
-    "scriptUrl": "./YoutubeScript.js",
     "version": 168,
     "iconUrl": "./youtube.png",
     "id": "35ae969a-a7db-11ed-afa1-0242ac120002",
@@ -1125,10 +1174,10 @@
     "authorUrl": "https://github.com/pantsufan/grayspon",
     "platformUrl": "https://youtube.com",
     "sourceUrl": "https://pantsufan.github.io/grayspon/YoutubeConfig.json",
-    "scriptUrl": "https://pantsufan.github.io/grayspon/YoutubeScript.js",
     "repositoryUrl": "https://github.com/pantsufan/grayspon",
     "commitFeedUrl": "https://github.com/pantsufan/grayspon/commits/main.atom",
     "releaseFeedUrl": "https://github.com/pantsufan/grayspon/releases.atom",
+    "scriptUrl": "https://pantsufan.github.io/grayspon/YoutubeScript.js",
     "version": 168,
     "iconUrl": "https://sponsor.ajay.app/LogoSponsorBlock256px.png",
     "id": "73b80cf3-8fa5-4969-a5a0-03713d80aeb4",
@@ -1275,12 +1324,11 @@
     "description": "One of the biggest video platforms owned by Google - now with DeArrow support (Requires a <a href=\"https://github.com/netux/grayjay-android/\">custom GrayJay version</a>)",
     "author": "FUTO + netux",
     "authorUrl": "https://futo.org",
-    "platformUrl": "https://youtube.com",
     "sourceUrl": "https://github.com/netux/grayjay-source-youtube/releases/latest/download/YoutubeConfig.json",
+    "scriptUrl": "./YoutubeScript.js",
     "repositoryUrl": "https://github.com/netux/grayjay-source-youtube/tree/with-dearrow",
     "commitFeedUrl": "https://github.com/netux/grayjay-source-youtube/commits/with-dearrow.atom",
     "releaseFeedUrl": "https://github.com/netux/grayjay-source-youtube/releases.atom",
-    "scriptUrl": "./YoutubeScript.js",
     "version": 168,
     "iconUrl": "https://raw.githubusercontent.com/netux/grayjay-source-youtube/52deb90661442a29767b755645d86b9965cc7da5/youtube_dearrow.png",
     "id": "35ae969a-a7db-11ed-afa1-0242ac120002",
@@ -1290,7 +1338,6 @@
       "Http",
       "Utilities"
     ],
-    "subscriptionRateLimit": 140,
     "allowEval": false,
     "allowUrls": [
       "youtube.com",
@@ -1308,6 +1355,8 @@
       "returnyoutubedislikeapi.com",
       "sponsor.ajay.app"
     ],
+    "platformUrl": "https://youtube.com",
+    "subscriptionRateLimit": 140,
     "settings": [
       {
         "variable": "authChannels",
@@ -1448,10 +1497,9 @@
     "author": "Alex",
     "authorUrl": "https://github.com/Alex-451",
     "sourceUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/MediaCccConfig.json",
-    "scriptUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/src/MediaCccScript.js",
     "repositoryUrl": "https://github.com/Alex-451/grayjay-media.ccc-plugin",
     "commitFeedUrl": "https://github.com/Alex-451/grayjay-media.ccc-plugin/commits/main.atom",
-    "releaseFeedUrl": "https://github.com/Alex-451/grayjay-media.ccc-plugin/releases.atom",
+    "scriptUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/src/MediaCccScript.js",
     "version": 1,
     "iconUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/MediaCccLogo.png",
     "id": "ccc221a2-4845-4ecf-9fa4-8b12958d2455",
@@ -1463,18 +1511,18 @@
     "allowEval": false,
     "allowUrls": [
       "everywhere"
-    ]
+    ],
+    "releaseFeedUrl": "https://github.com/Alex-451/grayjay-media.ccc-plugin/releases.atom"
   },
   {
     "name": "ニコニコ (niconico)",
     "description": "日本最大級の動画サービス、ニコニコ（niconico）。",
     "author": "FUTO",
     "authorUrl": "https://futo.org",
-    "platformUrl": "https://www.nicovideo.jp/",
     "sourceUrl": "https://plugins.grayjay.app/Niconico/NicoConfig.json",
+    "scriptUrl": "./NicoScript.js",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico",
     "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/commits/master?format=atom",
-    "scriptUrl": "./NicoScript.js",
     "version": 1,
     "iconUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/raw/main/niconico.png?ref_type=heads&inline=false",
     "id": "94c86b48-eee9-4d49-9f2e-56c8e650936a",
@@ -1487,6 +1535,7 @@
     "allowUrls": [
       "everywhere"
     ],
+    "platformUrl": "https://www.nicovideo.jp/",
     "authentication": {
       "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
       "loginUrl": "https://account.nicovideo.jp/login?site=niconico&next_url=%2F&sec=header_pc&cmnhd_ref=device%3Dpc%26site%3Dniconico%26pos%3Dheader_login%26page%3Dtop",
@@ -1497,31 +1546,5 @@
     "supportedClaimTypes": [
       21
     ]
-  },
-  {
-    "name": "Bandcamp",
-    "description": "Bandcamp is an American online audio distribution platform founded in 2007.",
-    "author": "rom",
-    "authorUrl": "https://rom.dog/",
-    "sourceUrl": "https://raw.githubusercontent.com/romdotdog/grayjay-bandcamp/main/config.json",
-    "scriptUrl": "https://raw.githubusercontent.com/romdotdog/grayjay-bandcamp/main/index.js",
-    "repositoryUrl": "https://github.com/romdotdog/grayjay-bandcamp",
-    "commitFeedUrl": "https://github.com/romdotdog/grayjay-bandcamp/commits/main.atom",
-    "releaseFeedUrl": "https://github.com/romdotdog/grayjay-bandcamp/releases.atom",
-  
-    "version": 1,
-  
-    "iconUrl": "./icon.png",
-  
-    "id": "b3a35316-6c86-4d6a-92a7-be82029ad6b9",
-  
-    "scriptSignature": "<omitted>",
-    "scriptPublicKey": "<omitted>",
-  
-    "packages": ["Http", "DOMParser"],
-  
-    "allowEval": false,
-  
-    "allowUrls": ["everywhere"]
   }
 ]
