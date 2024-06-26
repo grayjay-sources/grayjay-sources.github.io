@@ -1489,5 +1489,64 @@
     "allowUrls": [
       "everywhere"
     ]
+  },
+  {
+    "name": "ニコニコ (niconico)",
+    "description": "日本最大級の動画サービス、ニコニコ（niconico）。",
+    "author": "FUTO",
+    "authorUrl": "https://futo.org",
+    "platformUrl": "https://www.nicovideo.jp/",
+    "sourceUrl": "https://plugins.grayjay.app/Niconico/NicoConfig.json",
+    "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico",
+    "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/commits/master?format=atom",
+    "scriptUrl": "./NicoScript.js",
+    "version": 1,
+    "iconUrl": "./niconico.png",
+    "id": "94c86b48-eee9-4d49-9f2e-56c8e650936a",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+      "Http"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      "everywhere"
+    ],
+    "authentication": {
+      "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
+      "loginUrl": "https://account.nicovideo.jp/login?site=niconico&next_url=%2F&sec=header_pc&cmnhd_ref=device%3Dpc%26site%3Dniconico%26pos%3Dheader_login%26page%3Dtop",
+      "cookiesToFind": [
+        "user_session"
+      ]
+    },
+    "supportedClaimTypes": [
+      21
+    ]
+  },
+  {
+    "name": "Bandcamp",
+    "description": "Bandcamp is an American online audio distribution platform founded in 2007.",
+    "author": "rom",
+    "authorUrl": "https://rom.dog/",
+    "sourceUrl": "https://raw.githubusercontent.com/romdotdog/grayjay-bandcamp/main/config.json",
+    "scriptUrl": "https://raw.githubusercontent.com/romdotdog/grayjay-bandcamp/main/index.js",
+    "repositoryUrl": "https://github.com/romdotdog/grayjay-bandcamp",
+    "commitFeedUrl": "https://github.com/romdotdog/grayjay-bandcamp/commits/main.atom",
+    "releaseFeedUrl": "https://github.com/romdotdog/grayjay-bandcamp/releases.atom",
+  
+    "version": 1,
+  
+    "iconUrl": "./icon.png",
+  
+    "id": "b3a35316-6c86-4d6a-92a7-be82029ad6b9",
+  
+    "scriptSignature": "<omitted>",
+    "scriptPublicKey": "<omitted>",
+  
+    "packages": ["Http", "DOMParser"],
+  
+    "allowEval": false,
+  
+    "allowUrls": ["everywhere"]
   }
 ]
