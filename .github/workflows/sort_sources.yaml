@@ -25,10 +25,12 @@ jobs:
       run: npm ci
 
     - name: Validate and Sort JSON
-      uses: marketplaces/actions/json-utils@v1
+      uses: yakubique/json-utils@v1.6
       with:
-        path-to-json: 'sources.json'
         action: 'sort'
         type: "nested-json"
         key: "name"
+        from_file: 'true'
+        to_file: 'true'
+        path-to-json: 'sources.json'
 
