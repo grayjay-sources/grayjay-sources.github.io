@@ -32,5 +32,5 @@ jobs:
         key: "name"
         from_file: 'true'
         to_file: 'true'
-        path-to-json: 'sources.json'
+        input: 'sources.json'
 
