@@ -15,6 +15,7 @@ jobs:
     
     - name: Configure Git User
       run: git config --global user.email "action@github.com" && git config --global user.name "GitHub Action"
+
     - name: Checkout repository
       uses: actions/checkout@v2
 
