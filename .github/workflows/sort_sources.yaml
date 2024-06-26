@@ -27,6 +27,7 @@ jobs:
         from_file: 'true'
         to_file: 'true'
         input: 'sources.json'
+        output: 'sources.json'
 
     - name: Commit and Push Sorted JSON
       run: |
