@@ -847,6 +847,39 @@
     }
   },
   {
+    "name": "TikTok",
+    "description": "Watch millions of short-form videos on TikTok",
+    "author": "FUTO",
+    "authorUrl": "https://futo.org",
+    "sourceUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/raw/main/build/TikTokConfig.json",
+    "repositoryUrl": "https://github.com/futo-org/grayjay-plugin-tiktok",
+    "commitFeedUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/commits/main.atom",
+    "scriptUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/raw/main/build/TikTokScript.js",
+    "version": 1,
+    "iconUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/blob/main/build/TikTokIcon.png",
+    "id": "37b3aed3-24b8-4717-8388-dfc439908bf8",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+      "Http"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      "www.tiktok.com"
+    ],
+    "platformUrl": "https://tiktok.com",
+    "authentication": {
+      "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+      "loginUrl": "https://www.tiktok.com/login",
+      "cookiesToFind": [
+        "sid_guard"
+      ]
+    },
+    "sourceUrl_": "https://plugins.grayjay.app/TikTok/TikTokConfig.json",
+    "releaseFeedUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/releases.atom",
+    "allowAllHttpHeaderAccess": true
+  },
+  {
     "name": "Twitch",
     "description": "One of the biggest livestreaming platforms, owned by Amazon.",
     "author": "FUTO",
@@ -890,11 +923,11 @@
     "name": "Vanillo",
     "description": "Vanillo",
     "author": "dw5",
+    "commitFeedUrl": "https://github.com/dw5/grayjay-Vanillo/commits/master.atom",
+    "releaseFeedUrl": "https://github.com/dw5/grayjay-Vanillo/releases.atom",
     "authorUrl": "https://dw5.github.io",
     "sourceUrl": "https://dw5.github.io/grayjay-Vanillo/VanilloConfig.json",
     "repositoryUrl": "https://github.com/dw5/grayjay-Vanillo/tree/master",
-    "commitFeedUrl": "https://github.com/dw5/grayjay-Vanillo/commits/master.atom",
-    "releaseFeedUrl": "https://github.com/dw5/grayjay-Vanillo/releases.atom",
     "scriptUrl": "./VanilloScript.js",
     "version": 5,
     "iconUrl": "./vanillo192.png",
@@ -917,11 +950,10 @@
     "name": "Wien.gv.at Videos",
     "description": "Videos der Stadt Wien",
     "author": "Matthias Porges",
-    "commitFeedUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/commits/master.atom",
-    "releaseFeedUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases.atom",
     "authorUrl": "https://nether.at",
     "sourceUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases/download/current/WienAtVideosConfig.json",
     "repositoryUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/",
+    "commitFeedUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/commits/master.atom",
     "scriptUrl": "./WienAtVideosScript.js",
     "version": 1,
     "iconUrl": "./Stadt_Wien_Wappen.png",
@@ -937,7 +969,8 @@
       "www.wien.gv.at",
       "ms01.w24.at",
       "ms02.w24.at"
-    ]
+    ],
+    "releaseFeedUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases.atom"
   },
   {
     "name": "YouTube Music",
@@ -946,9 +979,9 @@
     "authorUrl": "https://tsunami014.github.io",
     "platformUrl": "https://music.youtube.com",
     "sourceUrl": "https://tsunami014.github.io/My-Grayjay-plugin/YTMusicConfig.json",
+    "scriptUrl": "./YTMusicScript.js",
     "repositoryUrl": "https://github.com/Tsunami014/My-Grayjay-plugin",
     "commitFeedUrl": "https://github.com/Tsunami014/My-Grayjay-plugin/commits/main.atom",
-    "scriptUrl": "./YTMusicScript.js",
     "version": 2,
     "iconUrl": "https://github.com/Tsunami014/Grayjay-plugins/blob/main/YTMusic.png?raw=true",
     "id": "ff7fee60-202f-4aeb-a270-676862dd854b",
@@ -1023,9 +1056,9 @@
     "authorUrl": "https://futo.org",
     "platformUrl": "https://youtube.com",
     "sourceUrl": "https://plugins.grayjay.app/Youtube/YoutubeConfig.json",
-    "scriptUrl": "./YoutubeScript.js",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/youtube",
     "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/youtube/-/commits/master?format=atom",
+    "scriptUrl": "./YoutubeScript.js",
     "version": 168,
     "iconUrl": "./youtube.png",
     "id": "35ae969a-a7db-11ed-afa1-0242ac120002",
@@ -1172,12 +1205,11 @@
     "description": "Fork with full SponsorBlock",
     "author": "pantsufan",
     "authorUrl": "https://github.com/pantsufan/grayspon",
-    "platformUrl": "https://youtube.com",
     "sourceUrl": "https://pantsufan.github.io/grayspon/YoutubeConfig.json",
+    "scriptUrl": "https://pantsufan.github.io/grayspon/YoutubeScript.js",
     "repositoryUrl": "https://github.com/pantsufan/grayspon",
     "commitFeedUrl": "https://github.com/pantsufan/grayspon/commits/main.atom",
     "releaseFeedUrl": "https://github.com/pantsufan/grayspon/releases.atom",
-    "scriptUrl": "https://pantsufan.github.io/grayspon/YoutubeScript.js",
     "version": 168,
     "iconUrl": "https://sponsor.ajay.app/LogoSponsorBlock256px.png",
     "id": "73b80cf3-8fa5-4969-a5a0-03713d80aeb4",
@@ -1187,7 +1219,6 @@
       "Http",
       "Utilities"
     ],
-    "subscriptionRateLimit": 140,
     "allowEval": false,
     "allowUrls": [
       "youtube.com",
@@ -1205,6 +1236,8 @@
       "returnyoutubedislikeapi.com",
       "sponsor.ajay.app"
     ],
+    "platformUrl": "https://youtube.com",
+    "subscriptionRateLimit": 140,
     "settings": [
       {
         "variable": "authChannels",
@@ -1325,10 +1358,10 @@
     "author": "FUTO + netux",
     "authorUrl": "https://futo.org",
     "sourceUrl": "https://github.com/netux/grayjay-source-youtube/releases/latest/download/YoutubeConfig.json",
-    "scriptUrl": "./YoutubeScript.js",
     "repositoryUrl": "https://github.com/netux/grayjay-source-youtube/tree/with-dearrow",
     "commitFeedUrl": "https://github.com/netux/grayjay-source-youtube/commits/with-dearrow.atom",
     "releaseFeedUrl": "https://github.com/netux/grayjay-source-youtube/releases.atom",
+    "scriptUrl": "./YoutubeScript.js",
     "version": 168,
     "iconUrl": "https://raw.githubusercontent.com/netux/grayjay-source-youtube/52deb90661442a29767b755645d86b9965cc7da5/youtube_dearrow.png",
     "id": "35ae969a-a7db-11ed-afa1-0242ac120002",
@@ -1497,10 +1530,9 @@
     "author": "Alex",
     "authorUrl": "https://github.com/Alex-451",
     "sourceUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/MediaCccConfig.json",
+    "scriptUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/src/MediaCccScript.js",
     "repositoryUrl": "https://github.com/Alex-451/grayjay-media.ccc-plugin",
     "commitFeedUrl": "https://github.com/Alex-451/grayjay-media.ccc-plugin/commits/main.atom",
-    "releaseFeedUrl": "https://github.com/Alex-451/grayjay-media.ccc-plugin/releases.atom",
-    "scriptUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/src/MediaCccScript.js",
     "version": 1,
     "iconUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/MediaCccLogo.png",
     "id": "ccc221a2-4845-4ecf-9fa4-8b12958d2455",
@@ -1512,18 +1544,20 @@
     "allowEval": false,
     "allowUrls": [
       "everywhere"
-    ]
+    ],
+    "releaseFeedUrl": "https://github.com/Alex-451/grayjay-media.ccc-plugin/releases.atom"
   },
   {
     "name": "ニコニコ (niconico)",
     "description": "日本最大級の動画サービス、ニコニコ（niconico）。",
     "author": "FUTO",
     "authorUrl": "https://futo.org",
+    "platformUrl": "https://www.nicovideo.jp/",
     "sourceUrl_": "https://plugins.grayjay.app/Niconico/NicoConfig.json",
     "sourceUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/raw/main/NicoConfig.json?ref_type=heads",
-    "scriptUrl": "./NicoScript.js",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico",
     "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/commits/master?format=atom",
+    "scriptUrl": "./NicoScript.js",
     "version": 1,
     "iconUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/raw/main/niconico.png?ref_type=heads&inline=false",
     "id": "94c86b48-eee9-4d49-9f2e-56c8e650936a",
@@ -1536,43 +1570,15 @@
     "allowUrls": [
       "everywhere"
     ],
-    "platformUrl": "https://www.nicovideo.jp/",
     "authentication": {
-      "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
       "loginUrl": "https://account.nicovideo.jp/login?site=niconico&next_url=%2F&sec=header_pc&cmnhd_ref=device%3Dpc%26site%3Dniconico%26pos%3Dheader_login%26page%3Dtop",
       "cookiesToFind": [
         "user_session"
-      ]
+      ],
+      "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36"
     },
     "supportedClaimTypes": [
       21
     ]
-  },
-  {
-    "name": "TikTok",
-    "description": "Watch millions of short-form videos on TikTok",
-    "author": "FUTO",
-    "authorUrl": "https://futo.org",
-    "platformUrl": "https://tiktok.com",
-    "sourceUrl_": "https://plugins.grayjay.app/TikTok/TikTokConfig.json",
-    "sourceUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/raw/main/build/TikTokConfig.json",
-    "repositoryUrl": "https://github.com/futo-org/grayjay-plugin-tiktok",
-    "commitFeedUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/commits/main.atom",
-    "releaseFeedUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/releases.atom",
-    "scriptUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/raw/main/build/TikTokScript.js",
-    "version": 1,
-    "iconUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/blob/main/build/TikTokIcon.png",
-    "id": "37b3aed3-24b8-4717-8388-dfc439908bf8",
-    "scriptSignature": "",
-    "scriptPublicKey": "",
-    "packages": ["Http"],
-    "allowEval": false,
-    "allowUrls": ["www.tiktok.com"],
-    "allowAllHttpHeaderAccess": true,
-    "authentication": {
-      "loginUrl": "https://www.tiktok.com/login",
-      "cookiesToFind": ["sid_guard"],
-      "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
-    }
   }
 ]
