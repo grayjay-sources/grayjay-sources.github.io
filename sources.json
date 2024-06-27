@@ -1355,7 +1355,7 @@
   {
     "name": "Youtube with DeArrow",
     "description": "One of the biggest video platforms owned by Google - now with DeArrow support (Requires a <a href=\"https://github.com/netux/grayjay-android/\">custom GrayJay version</a>)",
-    "author": "FUTO + netux",
+    "author": "netux",
     "authorUrl": "https://futo.org",
     "sourceUrl": "https://github.com/netux/grayjay-source-youtube/releases/latest/download/YoutubeConfig.json",
     "repositoryUrl": "https://github.com/netux/grayjay-source-youtube/tree/with-dearrow",
