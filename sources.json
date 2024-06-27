@@ -856,7 +856,7 @@
     "commitFeedUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/commits/main.atom",
     "scriptUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/raw/main/build/TikTokScript.js",
     "version": 1,
-    "iconUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/blob/main/build/TikTokIcon.png",
+    "iconUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/raw/main/build/TikTokIcon.png",
     "id": "37b3aed3-24b8-4717-8388-dfc439908bf8",
     "scriptSignature": "",
     "scriptPublicKey": "",
