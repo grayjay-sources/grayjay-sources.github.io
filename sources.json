@@ -1031,7 +1031,6 @@
     "name": "Vanillo",
     "description": "Vanillo",
     "author": "dw5",
-    "baseUrl": "https://api.vanillo.tv",
     "commitFeedUrl": "https://github.com/dw5/grayjay-Vanillo/commits/master.atom",
     "releaseFeedUrl": "https://github.com/dw5/grayjay-Vanillo/releases.atom",
     "authorUrl": "https://dw5.github.io",
@@ -1050,6 +1049,9 @@
     "allowUrls": [
       "everywhere"
     ],
+    "constants": {
+      "baseUrl": "https://api.vanillo.tv"
+    },
     "websiteUrl": "https://dw5.github.io",
     "_tags": [
       "unofficial",
