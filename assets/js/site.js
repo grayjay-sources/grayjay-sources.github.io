@@ -140,13 +140,16 @@ async function populateCardsContainer(url) {
             const fixedItem = fixData(item);
             const tags = fixedItem._tags?? [];
         
-            // Determine visibility based on query parameters
-            const shouldHideNsfw =!isQueryParamSet("nsfw") && tags.includes("nsfw");
-            const shouldHideNonWorking = isQueryParamSet("working") &&!tags.includes("working");
-            const shouldHideNonOfficial = isQueryParamSet("official") &&!tags.includes("official");
-        
-            // Insert filtering logic here
-            if (!shouldHideNsfw ||!shouldHideNonWorking ||!shouldHideNonOfficial) {
+            // const shouldHideNsfw =!isQueryParamSet("nsfw") && tags.includes("nsfw");
+            // const shouldHideNonWorking = isQueryParamSet("working") &&!tags.includes("working");
+            // const shouldHideNonOfficial = isQueryParamSet("official") &&!tags.includes("official");
+            // if (!shouldHideNsfw ||!shouldHideNonWorking ||!shouldHideNonOfficial) {
+            //     const cardHtml = generateCard(fixedItem);
+            //     cardsContainer.innerHTML += cardHtml;
+            // }
+
+            const showNsfw = isQueryParamSet("nsfw");
+            if (showNsfw || !tags.includes("nsfw")) {
                 const cardHtml = generateCard(fixedItem);
                 cardsContainer.innerHTML += cardHtml;
             }
