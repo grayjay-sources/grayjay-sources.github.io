@@ -21,6 +21,7 @@ jobs:
 
     - name: Validate and Sort JSON
       uses: yakubique/json-utils@v1.6
+      id: sorted_sources
       with:
         action: 'sort'
         type: "nested-json"
@@ -28,10 +29,10 @@ jobs:
         from_file: 'true'
         to_file: 'true'
         input: 'sources.json'
-        output: 'sources.json'
 
     - name: Commit and Push Sorted JSON
       run: |
+        cp "${{ steps.sorted_sources.outputs.result }} sources.json
         git add sources.json
         git commit -m "Sort sources.json"
         git push
