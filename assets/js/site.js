@@ -149,9 +149,9 @@ async function populateCardsContainer(url) {
                 cardsContainer.innerHTML += cardHtml;
             }
         });
-        const commitFeedsUrl = getSourceFeeds(data, "commitFeedUrl");
+        const commitFeedsUrl = getSourceFeeds(data, "commits");
         addNavbarItem("Source Commits RSS Feed", commitFeedsUrl, true);
-        const releaseFeedsUrl = getSourceFeeds(data, "releaseFeedUrl");
+        const releaseFeedsUrl = getSourceFeeds(data, "releases");
         addNavbarItem("Sources Releases RSS Feed", releaseFeedsUrl);
     } catch (error) {
         console.error('Error fetching data:', error);
