@@ -832,8 +832,7 @@
         "_feeds": {
             "commits": "https://github.com/paaspaas00/pornhubGrayjay/commits/main.atom",
             "releases": "https://github.com/paaspaas00/pornhubGrayjay/releases.atom"
-        },
-        "nsfw": true
+        }
     },
     {
         "name": "Rumble",
