@@ -136,23 +136,21 @@ async function populateCardsContainer(url) {
         cardsContainer.innerHTML = "";
         data.forEach(item => {
             const fixedItem = fixData(item);
-        
-            // Ensure 'tags' is treated as an array; otherwise, default to an empty array
             const tags = fixedItem.tags?? [];
         
-            // Determine visibility based on query parameters and tags
-            const shouldShowNsfw = isQueryParamSet("nsfw"); // Show all items if "nsfw" is set
-            const shouldShowWorking = isQueryParamSet("working") && tags.includes("working"); // Only show items with "working" tag if "working" is set
-            const shouldShowOfficial = isQueryParamSet("official") && tags.includes("official"); // Only show items with "official" tag if "official" is set
+            // Determine visibility based on query parameters
+            const shouldShowNsfw = isQueryParamSet("nsfw");
+            const shouldHideNonWorking = isQueryParamSet("working") &&!tags.includes("working");
+            const shouldHideNonOfficial = isQueryParamSet("official") &&!tags.includes("official");
         
-            // Adjusted logic to meet new requirements and handle missing 'tags'
-            if ((shouldShowNsfw || shouldShowWorking || shouldShowOfficial) && 
-                (!shouldShowNsfw || (shouldShowWorking && shouldShowOfficial)) &&
-              !(shouldShowNsfw &&!shouldShowWorking &&!shouldShowOfficial)) { // Exclude NSFW content unless specifically requested
+            // Simplified logic to decide whether to show the item
+            if ((shouldShowNsfw || shouldHideNonWorking || shouldHideNonOfficial) && 
+               !(shouldShowNsfw && shouldHideNonWorking && shouldHideNonOfficial)) {
                 const cardHtml = generateCard(fixedItem);
                 cardsContainer.innerHTML += cardHtml;
             }
         });
+        
         const commitFeedsUrl = getSourceFeeds(data, "commits");
         addNavbarItem("Source Commits RSS Feed", commitFeedsUrl, true);
         const releaseFeedsUrl = getSourceFeeds(data, "releases");
