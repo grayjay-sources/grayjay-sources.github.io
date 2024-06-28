@@ -6,7 +6,6 @@
         "authorUrl": "https://rom.dog/",
         "sourceUrl": "https://raw.githubusercontent.com/romdotdog/grayjay-bandcamp/main/config.json",
         "repositoryUrl": "https://github.com/romdotdog/grayjay-bandcamp",
-        "commitFeedUrl": "https://github.com/romdotdog/grayjay-bandcamp/commits/main.atom",
         "scriptUrl": "https://raw.githubusercontent.com/romdotdog/grayjay-bandcamp/main/index.js",
         "version": 1,
         "iconUrl": "./icon.png",
@@ -26,7 +25,10 @@
         ],
         "scriptSignature": "<omitted>",
         "scriptPublicKey": "<omitted>",
-        "releaseFeedUrl": "https://github.com/romdotdog/grayjay-bandcamp/releases.atom"
+        "_feeds": {
+            "commits": "https://github.com/romdotdog/grayjay-bandcamp/commits/main.atom",
+            "releases": "https://github.com/romdotdog/grayjay-bandcamp/releases.atom"
+        }
     },
     {
         "name": "BiliBili",
@@ -35,7 +37,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://plugins.grayjay.app/Bilibili/BiliBiliConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/bilibili",
-        "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/bilibili/-/commits/master?format=atom",
         "scriptUrl": "./BiliBiliScript.js",
         "version": 9,
         "iconUrl": "./BiliBiliIcon.png",
@@ -69,6 +70,9 @@
             "cookiesToFind": [
                 "SESSDATA"
             ]
+        },
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/bilibili/-/commits/master?format=atom"
         }
     },
     {
@@ -78,7 +82,6 @@
         "authorUrl": "https://github.com/PiotrekB416",
         "sourceUrl": "https://piotrekb416.github.io/GrayJay-CDA/CdaConfig.json",
         "repositoryUrl": "https://github.com/PiotrekB416/GrayJay-CDA",
-        "commitFeedUrl": "https://github.com/PiotrekB416/GrayJay-CDA/commits/main.atom",
         "scriptUrl": "./CdaScript.js",
         "version": 1,
         "iconUrl": "",
@@ -97,7 +100,6 @@
             "unknown",
             "polish"
         ],
-        "releaseFeedUrl": "https://github.com/PiotrekB416/GrayJay-CDA/releases.atom",
         "platformUrl": "https://cda.pl",
         "authentication": {
             "loginUrl": "https://piotrekb416.github.io/GrayJay-CDA/login.html",
@@ -105,6 +107,10 @@
             "headersToFind": [
                 "Authorization"
             ]
+        },
+        "_feeds": {
+            "commits": "https://github.com/PiotrekB416/GrayJay-CDA/commits/main.atom",
+            "releases": "https://github.com/PiotrekB416/GrayJay-CDA/releases.atom"
         }
     },
     {
@@ -114,7 +120,6 @@
         "authorUrl": "https://github.com/DeltaEvo",
         "sourceUrl": "https://DeltaEvo.github.io/GrayjayCrunchyroll/CrunchyrollConfig.json",
         "repositoryUrl": "https://github.com/DeltaEvo/GrayjayCrunchyroll",
-        "commitFeedUrl": "https://github.com/DeltaEvo/GrayjayCrunchyroll/commits/main.atom",
         "scriptUrl": "./CrunchyrollScript.js",
         "version": 3,
         "iconUrl": "./crunchyroll.png",
@@ -134,7 +139,6 @@
             "maintained",
             "working"
         ],
-        "releaseFeedUrl": "https://github.com/DeltaEvo/GrayjayCrunchyroll/releases.atom",
         "authentication": {
             "loginUrl": "https://sso.crunchyroll.com/login",
             "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
@@ -142,6 +146,10 @@
                 "etp_rt"
             ],
             "cookiesExclOthers": true
+        },
+        "_feeds": {
+            "commits": "https://github.com/DeltaEvo/GrayjayCrunchyroll/commits/main.atom",
+            "releases": "https://github.com/DeltaEvo/GrayjayCrunchyroll/releases.atom"
         }
     },
     {
@@ -151,7 +159,6 @@
         "authorUrl": "https://craftwithstefan.com/",
         "sourceUrl": "https://stefancruz.github.io/GrayjayDailymotion/DailymotionConfig.json",
         "repositoryUrl": "https://github.com/stefancruz/GrayjayDailymotion",
-        "commitFeedUrl": "https://github.com/stefancruz/GrayjayDailymotion/commits/master.atom",
         "scriptUrl": "./DailymotionScript.js",
         "version": 1,
         "iconUrl": "./DailymotionIcon.png",
@@ -174,7 +181,6 @@
         ],
         "scriptSignature": "vComgqFSVyHFYujRoqTS8pzb480YeNDgjy8pXEQswDlu8P497RFXesCycYEWTSN6C3SQpn0x3WlUnTL8PdN2UFUYnrM0KrcVsIuvrdZ9vIkGaHZerkWcYyvIP4qVwvRtyJxWKBvafTXDp6W34Am3rEI4IOxCqRJrFCg5RTDTqT7ToXJVDTJuI5vHHCVhh27/j/TKrG4iAMTUgcnsUsCo+qTx55uXHc2UDhAbg4FmkVWqdsQOlFQt/AiUz+579NxGabNv2TOFPZ/GO9Sb3PwErSYSJPhVYbYiRp7W+iPPWtWOx+xTq4w7yw+3QFxetny6XuzTNU2p8vNxXLDk9hF9sQ==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwrBXc5lMXrDD4y5GLT1rnxq64nmmBcE19lvIWL/o+wTK6jebmlQss4CrpH2Pkw8cwczcA4aHQKN8+ThveJFMBxW57gf30odKrAglvvPAv9Rm9D0BZZ501jBXvz+2Rt7su/ICN97JNabjeniAxWBGgr+It3gwvgGAXmWo9FcGfPTooy+g7lErDx5S9Hy/W83b/L3Q64Ytcb4ed0zi6pfZhgpXW0ZJxiZSJRPj6JusTJclPd4OHnl6EwAL979PloyKT0EjMgMX89LAsgctJzSOJkWcQnsbcWV3SE87GyFN4/4Py+GEvvZLKv/iWhY9Dhw9G7j3hy+3QPpHd5L3KSXC4wIDAQAB",
-        "releaseFeedUrl": "https://github.com/stefancruz/GrayjayDailymotion/releases.atom",
         "platformUrl": "dailymotion.com",
         "settings": [
             {
@@ -436,7 +442,11 @@
                     "Zimbabwe"
                 ]
             }
-        ]
+        ],
+        "_feeds": {
+            "commits": "https://github.com/stefancruz/GrayjayDailymotion/commits/master.atom",
+            "releases": "https://github.com/stefancruz/GrayjayDailymotion/releases.atom"
+        }
     },
     {
         "name": "DeviantArt",
@@ -445,7 +455,6 @@
         "authorUrl": "https://github.com/CodeQualIT",
         "sourceUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/raw/master/DAConfig.json",
         "repositoryUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart",
-        "commitFeedUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/commits/master.atom",
         "scriptUrl": "./DAScript.js",
         "version": 1,
         "iconUrl": "https://raw.githubusercontent.com/CodeQualIT/grayjay-source-deviantart/master/DALogo.png",
@@ -465,8 +474,11 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
-        "releaseFeedUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/releases.atom",
-        "platformUrl": "https://www.deviantart.com"
+        "platformUrl": "https://www.deviantart.com",
+        "_feeds": {
+            "commits": "https://github.com/CodeQualIT/grayjay-source-deviantart/commits/master.atom",
+            "releases": "https://github.com/CodeQualIT/grayjay-source-deviantart/releases.atom"
+        }
     },
     {
         "name": "God Resource (Unofficial)",
@@ -475,7 +487,6 @@
         "authorUrl": "https://github.com/skytunnel",
         "sourceUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/tree/dev/config.js",
         "repositoryUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/tree/dev",
-        "commitFeedUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/commits/dev.atom",
         "scriptUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/tree/dev/script.js",
         "version": 1,
         "iconUrl": "https://www.godresource.com/Images/Logos/GRLogo.jpg",
@@ -492,7 +503,10 @@
             "unmaintained",
             "unknown"
         ],
-        "releaseFeedUrl": "https://github.com/skytunnel/GodResourcePluginUnoffical/releases.atom"
+        "_feeds": {
+            "commits": "https://github.com/skytunnel/GodResourcePluginUnoffical/commits/dev.atom",
+            "releases": "https://github.com/skytunnel/GodResourcePluginUnoffical/releases.atom"
+        }
     },
     {
         "name": "Kick",
@@ -501,7 +515,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://plugins.grayjay.app/Kick/KickConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/kick",
-        "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/kick/-/commits/master?format=atom",
         "scriptUrl": "./KickScript.js",
         "version": 10,
         "iconUrl": "./kick.png",
@@ -538,7 +551,10 @@
         },
         "supportedClaimTypes": [
             16
-        ]
+        ],
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/kick/-/commits/master?format=atom"
+        }
     },
     {
         "name": "MediathekView",
@@ -547,7 +563,6 @@
         "authorUrl": "https://8bj.de",
         "sourceUrl": "https://windowsfreak.github.io/Mediathek/MediathekConfig.json",
         "repositoryUrl": "https://github.com/windowsfreak/Mediathek/tree/main",
-        "commitFeedUrl": "https://github.com/windowsfreak/Mediathek/commits/main.atom",
         "scriptUrl": "./MediathekScript.js",
         "version": 23,
         "iconUrl": "./mediathek.png",
@@ -568,7 +583,10 @@
             "broken",
             "german"
         ],
-        "releaseFeedUrl": "https://github.com/windowsfreak/Mediathek/releases.atom"
+        "_feeds": {
+            "commits": "https://github.com/windowsfreak/Mediathek/commits/main.atom",
+            "releases": "https://github.com/windowsfreak/Mediathek/releases.atom"
+        }
     },
     {
         "name": "Nebula",
@@ -577,7 +595,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://plugins.grayjay.app/Nebula/NebulaConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/nebula",
-        "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/nebula/-/commits/master?format=atom",
         "scriptUrl": "./NebulaScript.js",
         "version": 9,
         "iconUrl": "./nebula.png",
@@ -614,7 +631,10 @@
         },
         "supportedClaimTypes": [
             19
-        ]
+        ],
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/nebula/-/commits/master?format=atom"
+        }
     },
     {
         "name": "Odysee",
@@ -623,7 +643,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://plugins.grayjay.app/Odysee/OdyseeConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/odysee",
-        "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/odysee/-/commits/master?format=atom",
         "scriptUrl": "./OdyseeScript.js",
         "version": 35,
         "iconUrl": "./odysee.png",
@@ -651,7 +670,10 @@
         "platformUrl": "https://odysee.com",
         "supportedClaimTypes": [
             3
-        ]
+        ],
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/odysee/-/commits/master?format=atom"
+        }
     },
     {
         "name": "Patreon",
@@ -660,7 +682,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://plugins.grayjay.app/Patreon/PatreonConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/patreon",
-        "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/patreon/-/commits/master?format=atom",
         "scriptUrl": "./PatreonScript.js",
         "version": 13,
         "iconUrl": "./patreon_logo.png",
@@ -693,7 +714,10 @@
         },
         "supportedClaimTypes": [
             12
-        ]
+        ],
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/patreon/-/commits/master?format=atom"
+        }
     },
     {
         "name": "PeerTube",
@@ -702,7 +726,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://plugins.grayjay.app/PeerTube/PeerTubeConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/peertube",
-        "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/peertube/-/commits/master?format=atom",
         "scriptUrl": "./PeerTubeScript.js",
         "version": 14,
         "iconUrl": "./peertube.png",
@@ -735,7 +758,10 @@
                 "url": "https://grayjay-peertube.github.io/",
                 "classes": "btn-secondary"
             }
-        ]
+        ],
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/peertube/-/commits/master?format=atom"
+        }
     },
     {
         "name": "Pietsmiet.de",
@@ -744,7 +770,6 @@
         "authorUrl": "https://bluscream.github.io",
         "sourceUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/config.json",
         "repositoryUrl": "https://github.com/Bluscream/grayjay-source-pietsmietde/tree/master",
-        "commitFeedUrl": "https://github.com/Bluscream/grayjay-source-pietsmietde/commits/master.atom",
         "scriptUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
         "version": 9,
         "iconUrl": "https://i.vgy.me/eHA2U5.png",
@@ -771,8 +796,11 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
-        "releaseFeedUrl": "https://github.com/Bluscream/grayjay-source-pietsmietde/releases.atom",
-        "iconUrl_": "https://yt3.ggpht.com/-nm49M5AVi64/AAAAAAAAAAI/AAAAAAAAAAA/h0Scy91ZiZQ/s900-c-k-no-rj-c0xffffff/photo.jpg"
+        "iconUrl_": "https://yt3.ggpht.com/-nm49M5AVi64/AAAAAAAAAAI/AAAAAAAAAAA/h0Scy91ZiZQ/s900-c-k-no-rj-c0xffffff/photo.jpg",
+        "_feeds": {
+            "commits": "https://github.com/Bluscream/grayjay-source-pietsmietde/commits/master.atom",
+            "releases": "https://github.com/Bluscream/grayjay-source-pietsmietde/releases.atom"
+        }
     },
     {
         "name": "PornHub",
@@ -781,7 +809,6 @@
         "authorUrl": "",
         "sourceUrl": "https://github.com/paaspaas00/pornhubGrayjay/raw/main/PornhubConfig.json",
         "repositoryUrl": "https://github.com/paaspaas00/pornhubGrayjay/tree/main",
-        "commitFeedUrl": "https://github.com/paaspaas00/pornhubGrayjay/commits/main.atom",
         "scriptUrl": "./PornhubScript.js",
         "version": 1,
         "iconUrl": "./pornhub.png",
@@ -802,8 +829,11 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
-        "releaseFeedUrl": "https://github.com/paaspaas00/pornhubGrayjay/releases.atom",
-        "nsfw": true
+        "nsfw": true,
+        "_feeds": {
+            "commits": "https://github.com/paaspaas00/pornhubGrayjay/commits/main.atom",
+            "releases": "https://github.com/paaspaas00/pornhubGrayjay/releases.atom"
+        }
     },
     {
         "name": "Rumble",
@@ -812,7 +842,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://plugins.grayjay.app/Rumble/RumbleConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/rumble",
-        "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/rumble/-/commits/master?format=atom",
         "scriptUrl": "./RumbleScript.js",
         "version": 44,
         "iconUrl": "./rumble.png",
@@ -841,7 +870,10 @@
         },
         "supportedClaimTypes": [
             4
-        ]
+        ],
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/rumble/-/commits/master?format=atom"
+        }
     },
     {
         "name": "Sample",
@@ -850,7 +882,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://github.com/Bluscream/GrayJay/raw/master/sources/grayjay-sample/SampleConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/sample",
-        "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/sample/-/commits/master?format=atom",
         "scriptUrl": "./SampleScript.js",
         "version": 23,
         "iconUrl": "https://grayjay.app/images/webclip.png",
@@ -867,7 +898,10 @@
             "development"
         ],
         "scriptSignature": "",
-        "scriptPublicKey": ""
+        "scriptPublicKey": "",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/sample/-/commits/master?format=atom"
+        }
     },
     {
         "name": "SoundCloud",
@@ -876,7 +910,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://plugins.grayjay.app/Soundcloud/SoundcloudConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/soundcloud",
-        "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/soundcloud/-/commits/master?format=atom",
         "scriptUrl": "./SoundcloudScript.js",
         "version": 13,
         "iconUrl": "./soundcloud.png",
@@ -901,7 +934,10 @@
         "platformUrl": "https://soundcloud.com",
         "supportedClaimTypes": [
             17
-        ]
+        ],
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/soundcloud/-/commits/master?format=atom"
+        }
     },
     {
         "name": "Spotify",
@@ -910,7 +946,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://plugins.grayjay.app/Spotify/SpotifyConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/spotify",
-        "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/spotify/-/commits/master?format=atom",
         "scriptUrl": "./SpotifyScript.js",
         "version": 1,
         "iconUrl": "./SpotifyIcon.png",
@@ -942,6 +977,9 @@
             "cookiesToFind": [
                 "sp_dc"
             ]
+        },
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/spotify/-/commits/master?format=atom"
         }
     },
     {
@@ -951,7 +989,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/raw/main/build/TikTokConfig.json",
         "repositoryUrl": "https://github.com/futo-org/grayjay-plugin-tiktok",
-        "commitFeedUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/commits/main.atom",
         "scriptUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/raw/main/build/TikTokScript.js",
         "version": 1,
         "iconUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/raw/main/build/TikTokIcon.png",
@@ -970,7 +1007,6 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
-        "releaseFeedUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/releases.atom",
         "platformUrl": "https://tiktok.com",
         "authentication": {
             "loginUrl": "https://www.tiktok.com/login",
@@ -980,7 +1016,11 @@
             ]
         },
         "sourceUrl_": "https://plugins.grayjay.app/TikTok/TikTokConfig.json",
-        "allowAllHttpHeaderAccess": true
+        "allowAllHttpHeaderAccess": true,
+        "_feeds": {
+            "commits": "https://github.com/futo-org/grayjay-plugin-tiktok/commits/main.atom",
+            "releases": "https://github.com/futo-org/grayjay-plugin-tiktok/releases.atom"
+        }
     },
     {
         "name": "Twitch",
@@ -989,7 +1029,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://plugins.grayjay.app/Twitch/TwitchConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/twitch",
-        "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/twitch/-/commits/master?format=atom",
         "scriptUrl": "./TwitchScript.js",
         "version": 14,
         "iconUrl": "./twitch.png",
@@ -1025,7 +1064,10 @@
         },
         "supportedClaimTypes": [
             14
-        ]
+        ],
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/twitch/-/commits/master?format=atom"
+        }
     },
     {
         "name": "Vanillo",
@@ -1034,7 +1076,6 @@
         "authorUrl": "https://dw5.github.io",
         "sourceUrl": "https://dw5.github.io/grayjay-Vanillo/VanilloConfig.json",
         "repositoryUrl": "https://github.com/dw5/grayjay-Vanillo/tree/master",
-        "commitFeedUrl": "https://github.com/dw5/grayjay-Vanillo/commits/master.atom",
         "scriptUrl": "./VanilloScript.js",
         "version": 5,
         "iconUrl": "./vanillo192.png",
@@ -1053,11 +1094,14 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
-        "releaseFeedUrl": "https://github.com/dw5/grayjay-Vanillo/releases.atom",
         "constants": {
             "baseUrl": "https://api.vanillo.tv"
         },
-        "websiteUrl": "https://dw5.github.io"
+        "websiteUrl": "https://dw5.github.io",
+        "_feeds": {
+            "commits": "https://github.com/dw5/grayjay-Vanillo/commits/master.atom",
+            "releases": "https://github.com/dw5/grayjay-Vanillo/releases.atom"
+        }
     },
     {
         "name": "Wien.gv.at Videos",
@@ -1066,7 +1110,6 @@
         "authorUrl": "https://nether.at",
         "sourceUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases/download/current/WienAtVideosConfig.json",
         "repositoryUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/",
-        "commitFeedUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/commits/master.atom",
         "scriptUrl": "./WienAtVideosScript.js",
         "version": 1,
         "iconUrl": "./Stadt_Wien_Wappen.png",
@@ -1088,7 +1131,10 @@
         ],
         "scriptSignature": "ph0JkQ9xzV4rCy5R6OcptMuFZGoqj6cn9P/u638EehwFsD0UNEMxKNManuqSXokU+E4G6HhvTF+1bg1hFhYc6vvQan4wYWpUDDxfPsYdlFJovsszLMdSXAwd2u8z1sPDWpVmK/onlO8AQhcWzm5jIyMo5HwCAo6fqa0J1rPwc4a4YhMSaFqTEctgqEluPlFBxcoqMqjp4569Ug3XmgpqXnyJ6DAIL953yNYULv7omj7rk8zpLhxT3eZOz3853MEvZzqrvUsdiB9m9aI00WpBFKXPH2IyEHM/kzSKY6W+MWysWt+KZ4tPX83VD3uT37T1pynIk7FUBZ2mZXjCHKrFWw==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxoV9LKqeVZ+7aGirjUrMh0SXhu+qnWSCev4VQCEmjO0BR2sIkJGmflCHQBtt49qrQsBPiu+dWWGTiFPwg9T5E7+rLQ9ccOHWNKOX14o2+ZO+cad6p4xSzIcOHWCDNw1IbTLDYNa9E/cpp/Df6fIEzDqq5Ht8cus1vzmUKpRK4xkF/E2lTXb+i91a7UMEEv+VM63HmmHJnxrB69kbgmk7MqQWacAgE9Fp2y1MxYC5SLh0gZMH6OrLm4GjIPRqf/OLS7EqqfV9BhnstMCQWz2hsk+SUSvxQ34IkHqUN3tMNloamDx+/feFbUdh81yhI1kBV7Omem9b0XwMiu6SiCG6cQIDAQAB",
-        "releaseFeedUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases.atom"
+        "_feeds": {
+            "commits": "https://github.com/Matti-Koopa/grayjay_wienat_videos/commits/master.atom",
+            "releases": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases.atom"
+        }
     },
     {
         "name": "YouTube Music",
@@ -1097,7 +1143,6 @@
         "authorUrl": "https://tsunami014.github.io",
         "sourceUrl": "https://tsunami014.github.io/My-Grayjay-plugin/YTMusicConfig.json",
         "repositoryUrl": "https://github.com/Tsunami014/My-Grayjay-plugin",
-        "commitFeedUrl": "https://github.com/Tsunami014/My-Grayjay-plugin/commits/main.atom",
         "scriptUrl": "./YTMusicScript.js",
         "version": 2,
         "iconUrl": "https://github.com/Tsunami014/Grayjay-plugins/blob/main/YTMusic.png?raw=true",
@@ -1118,7 +1163,6 @@
         ],
         "scriptSignature": "A8x7FalRJ5tR5I2vUATEUFjTU2yiBkyBHuUk6wjmS47zA9JAYPz7TvAspl9tGy1EMwn2BoksSDnvRwMtE4X2DmrdHZby4XU/o5L4h4svFqIYmgXkqfbZ9PffDo1Tc5o8neK9LUFkROEpkWunXo8aUhWN/UFFutl/tg7Hbxpf6IVARTe37VXMPrTmVMPzsqmsVyH8r+ji98h5Y+K6KeqSZXhr67qMsbEglB+H3LUkzp0JQaOyYUgw82g/YOZ8P8EG8WEdLFPRkFgXvW8PkX/fjSnbDBm/LlRkjS7l/J+nvv9WW3VGyPLXBBjPlsyu20eWaf17NF/7azX52ehHsIMQsi+FHHGA58F2YCLCtJW1HUuNqG9qukypYELgO14wsyyGnEeKQ4aLES2Jk7TrK/Hh2JjWRRzOEPKGWpZx4SKPcXqpPhhpfMYGC2r9XHPbunFqGsqvtD5+s41wfW2iNA+TGR+o25G6U5VsNGUL0jYO57mxn9iy0n/jjWC5HeuWNc5X",
         "scriptPublicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAuNJJK3A0D4NhOqMZSrtEyl0JTYZxUVXqosKT7ZopuGvq+zT5LzinI8kxr+wjMHlmN1EjNkrBitkGQEvRDpXDxIpe4IiHZRkrbFDYvxsZA3h0N0sKn8pJzMHP/orFsBi0CUWck2ynyqIsHGqqF3ziHHZi4DUIMTvdaqGAwJIYo5dDS+T/L70CfyqZhJnGMAGGMGXW0JHbmtURDz0hgMWkz/eREkYbce8aYV31JBImTosFADLQ6JPSi3rDEZagwMO2ipvK3fGsDdQfJ1CsBNR/8xJLTsJYrNoMnqLvWZRkcEBpbYB+7N6aSOVO+GdJ4S93f25Deru7BkWM/wHrJtvGDT7/a9GxfFl08jU5f7JRchn+zoqyn7db1d7rtrNiW8a4X5MNqASSkzJPPZgMrqDlCilSYkkRYsUvkhmzRPUhxYG0mv69gOqKrpLoMX3Y1IkA8iG6SWNTKiCnsrKexb+pKoZWg/76jdB1UoChBqd1divqW1Te7VUvRir400D5tjg1AgMBAAE=",
-        "releaseFeedUrl": "https://github.com/Tsunami014/My-Grayjay-plugin/releases.atom",
         "platformUrl": "https://music.youtube.com",
         "authentication": {
             "loginUrl": "https://accounts.google.com/ServiceLogin?ltmpl=music&service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fmusic.youtube.com%252F%26feature%3D__FEATURE__&hl=en",
@@ -1170,7 +1214,11 @@
         ],
         "supportedClaimTypes": [
             3
-        ]
+        ],
+        "_feeds": {
+            "commits": "https://github.com/Tsunami014/My-Grayjay-plugin/commits/main.atom",
+            "releases": "https://github.com/Tsunami014/My-Grayjay-plugin/releases.atom"
+        }
     },
     {
         "name": "Youtube",
@@ -1179,7 +1227,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://plugins.grayjay.app/Youtube/YoutubeConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/youtube",
-        "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/youtube/-/commits/master?format=atom",
         "scriptUrl": "./YoutubeScript.js",
         "version": 168,
         "iconUrl": "./youtube.png",
@@ -1326,7 +1373,10 @@
                 "GOOGLE_ABUSE_EXEMPTION"
             ]
         },
-        "primaryClaimFieldType": 1
+        "primaryClaimFieldType": 1,
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/youtube/-/commits/master?format=atom"
+        }
     },
     {
         "name": "Youtube SB",
@@ -1335,7 +1385,6 @@
         "authorUrl": "https://github.com/pantsufan/grayspon",
         "sourceUrl": "https://pantsufan.github.io/grayspon/YoutubeConfig.json",
         "repositoryUrl": "https://github.com/pantsufan/grayspon",
-        "commitFeedUrl": "https://github.com/pantsufan/grayspon/commits/main.atom",
         "scriptUrl": "https://pantsufan.github.io/grayspon/YoutubeScript.js",
         "version": 168,
         "iconUrl": "https://sponsor.ajay.app/LogoSponsorBlock256px.png",
@@ -1368,7 +1417,6 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
-        "releaseFeedUrl": "https://github.com/pantsufan/grayspon/releases.atom",
         "platformUrl": "https://youtube.com",
         "authentication": {
             "loginUrl": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fchannel_switcher&hl=en&ec=65620",
@@ -1483,7 +1531,11 @@
                 "GOOGLE_ABUSE_EXEMPTION"
             ]
         },
-        "primaryClaimFieldType": 1
+        "primaryClaimFieldType": 1,
+        "_feeds": {
+            "commits": "https://github.com/pantsufan/grayspon/commits/main.atom",
+            "releases": "https://github.com/pantsufan/grayspon/releases.atom"
+        }
     },
     {
         "name": "Youtube with DeArrow",
@@ -1492,7 +1544,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://github.com/netux/grayjay-source-youtube/releases/latest/download/YoutubeConfig.json",
         "repositoryUrl": "https://github.com/netux/grayjay-source-youtube/tree/with-dearrow",
-        "commitFeedUrl": "https://github.com/netux/grayjay-source-youtube/commits/with-dearrow.atom",
         "scriptUrl": "./YoutubeScript.js",
         "version": 168,
         "iconUrl": "https://raw.githubusercontent.com/netux/grayjay-source-youtube/52deb90661442a29767b755645d86b9965cc7da5/youtube_dearrow.png",
@@ -1525,7 +1576,6 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
-        "releaseFeedUrl": "https://github.com/netux/grayjay-source-youtube/releases.atom",
         "platformUrl": "https://youtube.com",
         "authentication": {
             "loginUrl": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fchannel_switcher&hl=en&ec=65620",
@@ -1660,7 +1710,11 @@
                 "GOOGLE_ABUSE_EXEMPTION"
             ]
         },
-        "primaryClaimFieldType": 1
+        "primaryClaimFieldType": 1,
+        "_feeds": {
+            "commits": "https://github.com/netux/grayjay-source-youtube/commits/with-dearrow.atom",
+            "releases": "https://github.com/netux/grayjay-source-youtube/releases.atom"
+        }
     },
     {
         "name": "media.ccc.de",
@@ -1669,7 +1723,6 @@
         "authorUrl": "https://github.com/Alex-451",
         "sourceUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/MediaCccConfig.json",
         "repositoryUrl": "https://github.com/Alex-451/grayjay-media.ccc-plugin",
-        "commitFeedUrl": "https://github.com/Alex-451/grayjay-media.ccc-plugin/commits/main.atom",
         "scriptUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/src/MediaCccScript.js",
         "version": 1,
         "iconUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/MediaCccLogo.png",
@@ -1688,7 +1741,10 @@
         ],
         "scriptSignature": "<ommitted>",
         "scriptPublicKey": "<ommitted>",
-        "releaseFeedUrl": "https://github.com/Alex-451/grayjay-media.ccc-plugin/releases.atom"
+        "_feeds": {
+            "commits": "https://github.com/Alex-451/grayjay-media.ccc-plugin/commits/main.atom",
+            "releases": "https://github.com/Alex-451/grayjay-media.ccc-plugin/releases.atom"
+        }
     },
     {
         "name": "\u30cb\u30b3\u30cb\u30b3 (niconico)",
@@ -1697,7 +1753,6 @@
         "authorUrl": "https://futo.org",
         "sourceUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/raw/main/NicoConfig.json?ref_type=heads",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico",
-        "commitFeedUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/commits/master?format=atom",
         "scriptUrl": "./NicoScript.js",
         "version": 1,
         "iconUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/raw/main/niconico.png?ref_type=heads&inline=false",
@@ -1726,6 +1781,9 @@
         "supportedClaimTypes": [
             21
         ],
-        "sourceUrl_": "https://plugins.grayjay.app/Niconico/NicoConfig.json"
+        "sourceUrl_": "https://plugins.grayjay.app/Niconico/NicoConfig.json",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/commits/master?format=atom"
+        }
     }
 ]
