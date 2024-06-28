@@ -37,6 +37,8 @@ function getSourceFeeds(data, key) {
 }
 function fixData(data) {
     data["baseUrl"] = removeLast(data.sourceUrl, "/") + "/";
+    if (!data.hasOwnProperty("_feeds")) data["_feeds"] = {};
+    if (!data.hasOwnProperty("_tags")) data["_tags"] = {}
     for (const [key, value] of Object.entries(data)) {
         if (key.toLowerCase().includes("url")) {
             if (Array.isArray(value)) continue;
@@ -136,7 +138,7 @@ async function populateCardsContainer(url) {
         cardsContainer.innerHTML = "";
         data.forEach(item => {
             const fixedItem = fixData(item);
-            const tags = fixedItem.tags?? [];
+            const tags = fixedItem._tags?? [];
         
             // Determine visibility based on query parameters
             const shouldShowNsfw = isQueryParamSet("nsfw");
