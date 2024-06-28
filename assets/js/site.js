@@ -141,17 +141,17 @@ async function populateCardsContainer(url) {
             const tags = fixedItem._tags?? [];
         
             // Determine visibility based on query parameters
-            const shouldShowNsfw = isQueryParamSet("nsfw");
+            const shouldHideNsfw =!isQueryParamSet("nsfw") && tags.includes("nsfw");
             const shouldHideNonWorking = isQueryParamSet("working") &&!tags.includes("working");
             const shouldHideNonOfficial = isQueryParamSet("official") &&!tags.includes("official");
         
-            // Simplified logic to decide whether to show the item
-            if ((shouldShowNsfw || !shouldHideNonWorking || !shouldHideNonOfficial) && 
-               !(shouldShowNsfw && !shouldHideNonWorking && !shouldHideNonOfficial)) {
+            // Insert filtering logic here
+            if (!shouldHideNsfw ||!shouldHideNonWorking ||!shouldHideNonOfficial) {
                 const cardHtml = generateCard(fixedItem);
                 cardsContainer.innerHTML += cardHtml;
             }
         });
+        
         
         const commitFeedsUrl = getSourceFeeds(data, "commits");
         addNavbarItem("Source Commits RSS Feed", commitFeedsUrl, true);
