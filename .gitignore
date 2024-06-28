@@ -8,3 +8,4 @@ vendor/
 # python/
 sources.out.json
 # .vscode/launch.json
+*.pyc
