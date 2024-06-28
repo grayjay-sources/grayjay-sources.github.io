@@ -21,7 +21,12 @@
     "allowUrls": [
       "everywhere"
     ],
-    "releaseFeedUrl": "https://github.com/romdotdog/grayjay-bandcamp/releases.atom"
+    "releaseFeedUrl": "https://github.com/romdotdog/grayjay-bandcamp/releases.atom",
+    "_tags": [
+      "unofficial",
+      "maintained",
+      "working"
+    ]
   },
   {
     "name": "BiliBili",
@@ -58,11 +63,13 @@
       "d1--ov-gotcha05.bilivideo.com",
       "d1--ov-gotcha07.bilivideo.com"
     ],
-    "tags": [
-      "official"
-    ],
     "scriptSignature": "Bwj0Q+fU+zWyWuRbi805vmBaMmmpPeHxBdKgGVOX1EsFTEeKydjGduvp9z1WaqQjadHT/AgeclXJW3v1vhAP/msF3Iht/0w2r/GIiejhh2I+4F6MPE5w6CHH+vUrMhQORkN54kkSPImK+Haglz+xAa7eojc9pbJr04pKp4INBtifDTTENjn6uHKjlcTSTjVL7iwsH71Pkkus0PWgpgMGt1kQRV/JpmB5EdSUjz2WpAh9HcNuBDLxUmCHq3sHBXVM+1lbkze8qYx3H85ITg/ojEduDnEt8tIlDuajL8o6alzjhqfX4Y60ADFGMPz4VvONqx+61mQABxodTnCKh265tQ==",
-    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB"
+    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
+    ]
   },
   {
     "name": "CDA",
@@ -93,8 +100,11 @@
       ]
     },
     "platformUrl": "https://cda.pl",
-    "tags": [
-      "unknown"
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "unknown",
+      "polish"
     ]
   },
   {
@@ -127,7 +137,12 @@
         "etp_rt"
       ],
       "cookiesExclOthers": true
-    }
+    },
+    "_tags": [
+      "unofficial",
+      "maintained",
+      "working"
+    ]
   },
   {
     "name": "Dailymotion",
@@ -416,6 +431,11 @@
           "Zimbabwe"
         ]
       }
+    ],
+    "_tags": [
+      "unofficial",
+      "maintained",
+      "working"
     ]
   },
   {
@@ -441,7 +461,12 @@
     "allowUrls": [
       "www.deviantart.com"
     ],
-    "releaseFeedUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/releases.atom"
+    "releaseFeedUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/releases.atom",
+    "_tags": [
+      "unofficial",
+      "maintained",
+      "working"
+    ]
   },
   {
     "name": "God Resource (Unofficial)",
@@ -462,6 +487,11 @@
     "allowEval": false,
     "allowUrls": [
       "everywhere"
+    ],
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "unknown"
     ]
   },
   {
@@ -503,6 +533,11 @@
     },
     "supportedClaimTypes": [
       16
+    ],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
     ]
   },
   {
@@ -527,7 +562,13 @@
       "utstreaming.zdf.de",
       "everywhere"
     ],
-    "releaseFeedUrl": "https://github.com/windowsfreak/Mediathek/releases.atom"
+    "releaseFeedUrl": "https://github.com/windowsfreak/Mediathek/releases.atom",
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "broken",
+      "german"
+    ]
   },
   {
     "name": "Nebula",
@@ -567,7 +608,13 @@
         "nebula_auth.apiToken"
       ],
       "completionUrl": "https://users.api.nebula.app/api/v1/authorization/"
-    }
+    },
+    "_tags": [
+      "official",
+      "maintained",
+      "working",
+      "paid content"
+    ]
   },
   {
     "name": "Odysee",
@@ -599,6 +646,11 @@
     ],
     "supportedClaimTypes": [
       3
+    ],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
     ]
   },
   {
@@ -635,6 +687,12 @@
     },
     "supportedClaimTypes": [
       12
+    ],
+    "_tags": [
+      "official",
+      "maintained",
+      "working",
+      "paid content"
     ]
   },
   {
@@ -672,6 +730,11 @@
         "url": "https://grayjay-peertube.github.io/",
         "classes": "btn-secondary"
       }
+    ],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
     ]
   },
   {
@@ -702,6 +765,13 @@
       "data-c53e1346fa.pietsmiet.de",
       "static-cdn.jtvnw.net",
       "pietcdn.de"
+    ],
+    "_tags": [
+      "unofficial",
+      "maintained",
+      "working",
+      "missing features",
+      "german"
     ]
   },
   {
@@ -727,7 +797,13 @@
       "www.pornhub.com"
     ],
     "releaseFeedUrl": "https://github.com/paaspaas00/pornhubGrayjay/releases.atom",
-    "nsfw": true
+    "nsfw": true,
+    "_tags": [
+      "unofficial",
+      "maintained",
+      "working",
+      "nsfw"
+    ]
   },
   {
     "name": "Rumble",
@@ -760,6 +836,11 @@
     },
     "supportedClaimTypes": [
       4
+    ],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
     ]
   },
   {
@@ -780,7 +861,13 @@
       "Http"
     ],
     "allowEval": false,
-    "allowUrls": []
+    "allowUrls": [],
+    "_tags": [
+      "official",
+      "maintained",
+      "broken",
+      "development"
+    ]
   },
   {
     "name": "SoundCloud",
@@ -809,6 +896,11 @@
     ],
     "supportedClaimTypes": [
       17
+    ],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
     ]
   },
   {
@@ -845,7 +937,12 @@
       "cookiesToFind": [
         "sp_dc"
       ]
-    }
+    },
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
+    ]
   },
   {
     "name": "TikTok",
@@ -878,7 +975,12 @@
     },
     "sourceUrl_": "https://plugins.grayjay.app/TikTok/TikTokConfig.json",
     "releaseFeedUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/releases.atom",
-    "allowAllHttpHeaderAccess": true
+    "allowAllHttpHeaderAccess": true,
+    "_tags": [
+      "official",
+      "maintained",
+      "wip"
+    ]
   },
   {
     "name": "Twitch",
@@ -918,12 +1020,18 @@
     },
     "supportedClaimTypes": [
       14
+    ],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
     ]
   },
   {
     "name": "Vanillo",
     "description": "Vanillo",
     "author": "dw5",
+    "baseUrl": "https://api.vanillo.tv",
     "commitFeedUrl": "https://github.com/dw5/grayjay-Vanillo/commits/master.atom",
     "releaseFeedUrl": "https://github.com/dw5/grayjay-Vanillo/releases.atom",
     "authorUrl": "https://dw5.github.io",
@@ -943,9 +1051,11 @@
       "everywhere"
     ],
     "websiteUrl": "https://dw5.github.io",
-    "constants": {
-      "baseUrl": "https://api.vanillo.tv"
-    }
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "unknown"
+    ]
   },
   {
     "name": "Wien.gv.at Videos",
@@ -971,7 +1081,12 @@
       "ms01.w24.at",
       "ms02.w24.at"
     ],
-    "releaseFeedUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases.atom"
+    "releaseFeedUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases.atom",
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "broken"
+    ]
   },
   {
     "name": "YouTube Music",
@@ -1048,7 +1163,12 @@
     "supportedClaimTypes": [
       3
     ],
-    "releaseFeedUrl": "https://github.com/Tsunami014/My-Grayjay-plugin/releases.atom"
+    "releaseFeedUrl": "https://github.com/Tsunami014/My-Grayjay-plugin/releases.atom",
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "unknown"
+    ]
   },
   {
     "name": "Youtube",
@@ -1199,7 +1319,12 @@
     "supportedClaimTypes": [
       2
     ],
-    "primaryClaimFieldType": 1
+    "primaryClaimFieldType": 1,
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
+    ]
   },
   {
     "name": "Youtube SB",
@@ -1351,7 +1476,12 @@
     "supportedClaimTypes": [
       2
     ],
-    "primaryClaimFieldType": 1
+    "primaryClaimFieldType": 1,
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "unknown"
+    ]
   },
   {
     "name": "Youtube with DeArrow",
@@ -1523,7 +1653,12 @@
     "supportedClaimTypes": [
       2
     ],
-    "primaryClaimFieldType": 1
+    "primaryClaimFieldType": 1,
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "unknown"
+    ]
   },
   {
     "name": "media.ccc.de",
@@ -1546,7 +1681,12 @@
     "allowUrls": [
       "everywhere"
     ],
-    "releaseFeedUrl": "https://github.com/Alex-451/grayjay-media.ccc-plugin/releases.atom"
+    "releaseFeedUrl": "https://github.com/Alex-451/grayjay-media.ccc-plugin/releases.atom",
+    "_tags": [
+      "unofficial",
+      "broken",
+      "unmaintained"
+    ]
   },
   {
     "name": "ニコニコ (niconico)",
@@ -1580,6 +1720,10 @@
     },
     "supportedClaimTypes": [
       21
+    ],
+    "_tags": [
+      "official",
+      "working"
     ]
   }
 ]
