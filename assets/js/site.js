@@ -136,15 +136,19 @@ async function populateCardsContainer(url) {
         cardsContainer.innerHTML = "";
         data.forEach(item => {
             const fixedItem = fixData(item);
+        
+            // Ensure 'tags' is treated as an array; otherwise, default to an empty array
             const tags = fixedItem.tags?? [];
+        
             // Determine visibility based on query parameters and tags
             const shouldShowNsfw = isQueryParamSet("nsfw"); // Show all items if "nsfw" is set
-            const shouldShowWorking = isQueryParamSet("working") && fixedItem.tags.includes("working"); // Only show items with "working" tag if "working" is set
-            const shouldShowOfficial = isQueryParamSet("official") && fixedItem.tags.includes("official"); // Only show items with "official" tag if "official" is set
-            // Adjusted logic to meet new requirements
+            const shouldShowWorking = isQueryParamSet("working") && tags.includes("working"); // Only show items with "working" tag if "working" is set
+            const shouldShowOfficial = isQueryParamSet("official") && tags.includes("official"); // Only show items with "official" tag if "official" is set
+        
+            // Adjusted logic to meet new requirements and handle missing 'tags'
             if ((shouldShowNsfw || shouldShowWorking || shouldShowOfficial) && 
                 (!shouldShowNsfw || (shouldShowWorking && shouldShowOfficial)) &&
-               !(shouldShowNsfw &&!shouldShowWorking &&!shouldShowOfficial)) { // Exclude NSFW content unless specifically requested
+              !(shouldShowNsfw &&!shouldShowWorking &&!shouldShowOfficial)) { // Exclude NSFW content unless specifically requested
                 const cardHtml = generateCard(fixedItem);
                 cardsContainer.innerHTML += cardHtml;
             }
