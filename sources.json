@@ -63,6 +63,9 @@
         ],
         "scriptSignature": "Bwj0Q+fU+zWyWuRbi805vmBaMmmpPeHxBdKgGVOX1EsFTEeKydjGduvp9z1WaqQjadHT/AgeclXJW3v1vhAP/msF3Iht/0w2r/GIiejhh2I+4F6MPE5w6CHH+vUrMhQORkN54kkSPImK+Haglz+xAa7eojc9pbJr04pKp4INBtifDTTENjn6uHKjlcTSTjVL7iwsH71Pkkus0PWgpgMGt1kQRV/JpmB5EdSUjz2WpAh9HcNuBDLxUmCHq3sHBXVM+1lbkze8qYx3H85ITg/ojEduDnEt8tIlDuajL8o6alzjhqfX4Y60ADFGMPz4VvONqx+61mQABxodTnCKh265tQ==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/bilibili/-/commits/master?format=atom"
+        },
         "platformUrl": "https://bilibili.com",
         "authentication": {
             "loginUrl": "https://passport.bilibili.com/h5-app/passport/login",
@@ -70,9 +73,6 @@
             "cookiesToFind": [
                 "SESSDATA"
             ]
-        },
-        "_feeds": {
-            "commits": "https://gitlab.futo.org/videostreaming/plugins/bilibili/-/commits/master?format=atom"
         }
     },
     {
@@ -100,6 +100,10 @@
             "unknown",
             "polish"
         ],
+        "_feeds": {
+            "commits": "https://github.com/PiotrekB416/GrayJay-CDA/commits/main.atom",
+            "releases": "https://github.com/PiotrekB416/GrayJay-CDA/releases.atom"
+        },
         "platformUrl": "https://cda.pl",
         "authentication": {
             "loginUrl": "https://piotrekb416.github.io/GrayJay-CDA/login.html",
@@ -107,10 +111,6 @@
             "headersToFind": [
                 "Authorization"
             ]
-        },
-        "_feeds": {
-            "commits": "https://github.com/PiotrekB416/GrayJay-CDA/commits/main.atom",
-            "releases": "https://github.com/PiotrekB416/GrayJay-CDA/releases.atom"
         }
     },
     {
@@ -139,6 +139,10 @@
             "maintained",
             "working"
         ],
+        "_feeds": {
+            "commits": "https://github.com/DeltaEvo/GrayjayCrunchyroll/commits/main.atom",
+            "releases": "https://github.com/DeltaEvo/GrayjayCrunchyroll/releases.atom"
+        },
         "authentication": {
             "loginUrl": "https://sso.crunchyroll.com/login",
             "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
@@ -146,10 +150,6 @@
                 "etp_rt"
             ],
             "cookiesExclOthers": true
-        },
-        "_feeds": {
-            "commits": "https://github.com/DeltaEvo/GrayjayCrunchyroll/commits/main.atom",
-            "releases": "https://github.com/DeltaEvo/GrayjayCrunchyroll/releases.atom"
         }
     },
     {
@@ -181,6 +181,10 @@
         ],
         "scriptSignature": "vComgqFSVyHFYujRoqTS8pzb480YeNDgjy8pXEQswDlu8P497RFXesCycYEWTSN6C3SQpn0x3WlUnTL8PdN2UFUYnrM0KrcVsIuvrdZ9vIkGaHZerkWcYyvIP4qVwvRtyJxWKBvafTXDp6W34Am3rEI4IOxCqRJrFCg5RTDTqT7ToXJVDTJuI5vHHCVhh27/j/TKrG4iAMTUgcnsUsCo+qTx55uXHc2UDhAbg4FmkVWqdsQOlFQt/AiUz+579NxGabNv2TOFPZ/GO9Sb3PwErSYSJPhVYbYiRp7W+iPPWtWOx+xTq4w7yw+3QFxetny6XuzTNU2p8vNxXLDk9hF9sQ==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwrBXc5lMXrDD4y5GLT1rnxq64nmmBcE19lvIWL/o+wTK6jebmlQss4CrpH2Pkw8cwczcA4aHQKN8+ThveJFMBxW57gf30odKrAglvvPAv9Rm9D0BZZ501jBXvz+2Rt7su/ICN97JNabjeniAxWBGgr+It3gwvgGAXmWo9FcGfPTooy+g7lErDx5S9Hy/W83b/L3Q64Ytcb4ed0zi6pfZhgpXW0ZJxiZSJRPj6JusTJclPd4OHnl6EwAL979PloyKT0EjMgMX89LAsgctJzSOJkWcQnsbcWV3SE87GyFN4/4Py+GEvvZLKv/iWhY9Dhw9G7j3hy+3QPpHd5L3KSXC4wIDAQAB",
+        "_feeds": {
+            "commits": "https://github.com/stefancruz/GrayjayDailymotion/commits/master.atom",
+            "releases": "https://github.com/stefancruz/GrayjayDailymotion/releases.atom"
+        },
         "platformUrl": "dailymotion.com",
         "settings": [
             {
@@ -442,11 +446,7 @@
                     "Zimbabwe"
                 ]
             }
-        ],
-        "_feeds": {
-            "commits": "https://github.com/stefancruz/GrayjayDailymotion/commits/master.atom",
-            "releases": "https://github.com/stefancruz/GrayjayDailymotion/releases.atom"
-        }
+        ]
     },
     {
         "name": "DeviantArt",
@@ -474,11 +474,11 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
-        "platformUrl": "https://www.deviantart.com",
         "_feeds": {
             "commits": "https://github.com/CodeQualIT/grayjay-source-deviantart/commits/master.atom",
             "releases": "https://github.com/CodeQualIT/grayjay-source-deviantart/releases.atom"
-        }
+        },
+        "platformUrl": "https://www.deviantart.com"
     },
     {
         "name": "God Resource (Unofficial)",
@@ -534,6 +534,9 @@
         ],
         "scriptSignature": "kw8JJupiKjfkCPCM+yHnGnEXGRpx+tsODMd5zyBh8rDgXQR1CDtXCUIegbFBnsz33tYSrHLJHCDQ0I6s1xkD8Ww7usYV3lSaDnvzx867vpnV9sTBSiEALl883+OdGFiZ6E2+AkOyPJ04a7KjWIJ3otzGo3YMTJLR8QvGbDLQkXusGrDXkhfKRTR/aVpc+D/bRYUDcb+hMfE5pPT8BenmF28chIilh9tO9JRs92PcK1YTqT3qNC/ZWJl9I5u7Vi81bwyZLSYRk8BJEEhfwP83vcVaaegPkD7b2IeOlbhpesC5iOGUn0VfECUuqGe3qfK0JjnAH8znEeB8e47FzZuxGw==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/kick/-/commits/master?format=atom"
+        },
         "platformUrl": "https://kick.com",
         "authentication": {
             "loginUrl": "https://kick.com/",
@@ -551,10 +554,7 @@
         },
         "supportedClaimTypes": [
             16
-        ],
-        "_feeds": {
-            "commits": "https://gitlab.futo.org/videostreaming/plugins/kick/-/commits/master?format=atom"
-        }
+        ]
     },
     {
         "name": "MediathekView",
@@ -617,6 +617,9 @@
         ],
         "scriptSignature": "lJHDRC9q931YWPL53Q462DfBZ2bGy+gM1MUEttLDPWBH/AP11rzQ3BdIZdLCaV2YOUGBlD/YJPglyisFsFhtO8K2qDpb3+iYUZAPMxrAx+hyR6s+d27DZ32kLwWpQzYOn9BI1Fem9DPzTN8D2Uckz8bj64DmttMuheDXR2zkcj972gapefXVg5lnATOXIRNuqFi/P7LT6Je44fdCl7LJQWwNdW7ARYdA3Uer+1xaOHBuP/qi/heTUR2hxVqNLnykwGc2jFGs0dxUGAV3on0t7BaImLdO2e150Tjsq2VIEaQ/4Srwq0T4HvuC4JqD8nR6kzmCzIVEiQ5lksWYGyRSGw==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/nebula/-/commits/master?format=atom"
+        },
         "platformUrl": "https://nebula.tv",
         "authentication": {
             "loginUrl": "https://nebula.tv/login",
@@ -631,10 +634,7 @@
         },
         "supportedClaimTypes": [
             19
-        ],
-        "_feeds": {
-            "commits": "https://gitlab.futo.org/videostreaming/plugins/nebula/-/commits/master?format=atom"
-        }
+        ]
     },
     {
         "name": "Odysee",
@@ -667,13 +667,13 @@
         ],
         "scriptSignature": "PnG+cRbLuXFQdIwpHeUeOznKE8Hn0uFhsn+B+Ehb7oteuCkr4N0tLFGZBKLcIE7DVLtt3FCcGZ0SLcQz9HUh5PZ0a5y/2QlBaNAzxub/8MtWR9FbhOl157CjMPOm3spDoBGelQurUj94o5l/Z10+uMbZalXXabywe8ebP5Tw78/+15rPkkINviJ5/iyV84+D6HIVja7ugagt5zaOYu0t3/70VDu95cQAW5IciENG+tkhTaTLl0dGXJHmHQktzQUybu7sgui7n5HUSNMoSboHvcgGpxwpnhizw3mzmXEDRJdhR6qenNTBfrGpWvpI8aqSw3drkTsv1VmdfQniAY8Aag==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/odysee/-/commits/master?format=atom"
+        },
         "platformUrl": "https://odysee.com",
         "supportedClaimTypes": [
             3
-        ],
-        "_feeds": {
-            "commits": "https://gitlab.futo.org/videostreaming/plugins/odysee/-/commits/master?format=atom"
-        }
+        ]
     },
     {
         "name": "Patreon",
@@ -703,6 +703,9 @@
         ],
         "scriptSignature": "NT1bVw4mp3jb7n7S2e/8e90P2MpBIPmrclVl435m8BXmKjP3Yfs4BWd8QaHIJvKysMvIpmgezh2zi9yzs6PisxIQ2RU1w03TSrLUfazE4WkkxZQ28jlBX2wqaxpphmJAaQwU0pek2rfb/m/UNsIGfAkPgS6jWol9ST/MOk9s6PVbGma8QYkYSnLoZd3MuPnQSnjM15jq5wsTRcBs80IUsy2xQzVGjH1NrQAMJ5f8qVrz1ep30+JUs/I6AVx3X7qteixQUVjceJtBMyo3hYpa7Q20TVQ2eOLpaf5rOROsBR+VEBXCOe7hrotE5mMe3CngAV9xY1KRt2o+ErkGH1lpWQ==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/patreon/-/commits/master?format=atom"
+        },
         "platformUrl": "https://patreon.com",
         "authentication": {
             "loginUrl": "https://www.patreon.com/login",
@@ -714,10 +717,7 @@
         },
         "supportedClaimTypes": [
             12
-        ],
-        "_feeds": {
-            "commits": "https://gitlab.futo.org/videostreaming/plugins/patreon/-/commits/master?format=atom"
-        }
+        ]
     },
     {
         "name": "PeerTube",
@@ -744,6 +744,9 @@
         ],
         "scriptSignature": "YKO/jMicPZFLnJI5LfiOUh8avfQhVzsHztKqOsP9whFAWbVHxqirLCI93gvVBxrphya0s5kwauIcrSe7D3hQQYgI3S3ElxdE8m75MhysA5ktL9IbQL20lEpGDTNIp0toEWEgvkKCGWX4VfLiWBtATK0KMTI6kmPiBcnaYKrLEiGsepvPHhWAQW1mRch+/D8YR/jIG5jMv38AbxhW2P0ktr7CBcPkh73zFuTxAwvX/SDYL3B7x1qgZI82TXpdfaVvxNOjOHEnzlRVWkLSKLepAbxosfmX7LHz15lwUXFXH4kL3HvdpCyPNpNsvPsd2HuiRUBWqsQLnleD53Lw7tiu9A==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/peertube/-/commits/master?format=atom"
+        },
         "constants": {
             "baseUrl": "https://peertube.futo.org"
         },
@@ -758,10 +761,7 @@
                 "url": "https://grayjay-peertube.github.io/",
                 "classes": "btn-secondary"
             }
-        ],
-        "_feeds": {
-            "commits": "https://gitlab.futo.org/videostreaming/plugins/peertube/-/commits/master?format=atom"
-        }
+        ]
     },
     {
         "name": "Pietsmiet.de",
@@ -796,11 +796,11 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
-        "iconUrl_": "https://yt3.ggpht.com/-nm49M5AVi64/AAAAAAAAAAI/AAAAAAAAAAA/h0Scy91ZiZQ/s900-c-k-no-rj-c0xffffff/photo.jpg",
         "_feeds": {
             "commits": "https://github.com/Bluscream/grayjay-source-pietsmietde/commits/master.atom",
             "releases": "https://github.com/Bluscream/grayjay-source-pietsmietde/releases.atom"
-        }
+        },
+        "iconUrl_": "https://yt3.ggpht.com/-nm49M5AVi64/AAAAAAAAAAI/AAAAAAAAAAA/h0Scy91ZiZQ/s900-c-k-no-rj-c0xffffff/photo.jpg"
     },
     {
         "name": "PornHub",
@@ -829,11 +829,11 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
-        "nsfw": true,
         "_feeds": {
             "commits": "https://github.com/paaspaas00/pornhubGrayjay/commits/main.atom",
             "releases": "https://github.com/paaspaas00/pornhubGrayjay/releases.atom"
-        }
+        },
+        "nsfw": true
     },
     {
         "name": "Rumble",
@@ -861,6 +861,9 @@
         ],
         "scriptSignature": "ef1Qbv89/Ak8NGk3Qy6eZFq0+/FlDxFUUT0o+4HSUIK4AWtyVh7TDFvTcYule/cWrKGdYWfPe74jwIEbiCQNDeTdbw8+syb8OBYb5z5RCsF9o4fRJWN09f432JzYRM0ZXDXbBYXa+dxrsdEVVW5pCTkepcJj3BnMWLBFP/o8/GtrcbaGd4b55u23XBGlmUjuLWotgEfqKdKpbLoFz5J429Y4Ijhbj7gGOU0xdye4h8JUAmS4JdjU7mT2CxuFghVLunpofyXPmxrpBIBG51dB4qiSMXr84pNqvIsnwZzNJl1YhAfasUlTXwNoxuJGI9pbLu47yetOzwfyRYfiCGuk7A==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/rumble/-/commits/master?format=atom"
+        },
         "platformUrl": "https://rumble.com",
         "authentication": {
             "loginUrl": "https://rumble.com/login.php",
@@ -870,10 +873,7 @@
         },
         "supportedClaimTypes": [
             4
-        ],
-        "_feeds": {
-            "commits": "https://gitlab.futo.org/videostreaming/plugins/rumble/-/commits/master?format=atom"
-        }
+        ]
     },
     {
         "name": "Sample",
@@ -931,13 +931,13 @@
         ],
         "scriptSignature": "qS7hkOL2/LoMqEMzctmA/GqGAvlUnScAy/+vvVLCHL+AIoYyiN1b2acbcH3Xk5K7W/n0icPCHGugJohvNbmw0XYwQbBAQjuIeyfhy6bH06UZR2BkQbCWKHaE5GEXb9OcenKCJEjxsMczH8d8uIgnTaSKKVy9eD7Df9wRutYy95Q/HDl4gcZtrjiQBxEfd34VbT+yr962M/b0xdtZv4+NN101qP/srBYUYAtPoiAutG6GRbMi77rXY5TzvrIEFGpKdLEeRoppboX9D4+V1KtLmkfXKMjj8glflI/d/ZRsOYapFVrcjX47qFqlly6D7RCoBp2C6CWCswRe6Ln8745nDg==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/soundcloud/-/commits/master?format=atom"
+        },
         "platformUrl": "https://soundcloud.com",
         "supportedClaimTypes": [
             17
-        ],
-        "_feeds": {
-            "commits": "https://gitlab.futo.org/videostreaming/plugins/soundcloud/-/commits/master?format=atom"
-        }
+        ]
     },
     {
         "name": "Spotify",
@@ -970,6 +970,9 @@
         ],
         "scriptSignature": "alfxnZVZEoQH5g21L+kdowM+r4WBdGLlihhzgDDCg/oVjOpvtj+LN25A5/Yv9htAy3xCqGX1d0FaIt9Xto2TAejZKQ9ndmlxowbPXnrk690cU6jc4R8CDGZCqaqwv12zzAN1QsmPJtwfTKDd0yCOYiWggIJnhvTsgV+8qEr8MCYdwAqYRolCs/FhxvLgHL0k2cwmv1DEJKJbXKlJrYmzcz+Nsia0bQueHsN4+SHXiK929cbDzkHi2FOS9uHRP7+1QFbthjlKNKu+xucRL0kM9bvrt1tOUwcdhBFqWRzHF29KiEwtY9wCXE9MaWT+LkDDnTqVIljJzXqyN/zicUp+XA==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/spotify/-/commits/master?format=atom"
+        },
         "platformUrl": "https://spotify.com",
         "authentication": {
             "loginUrl": "https://accounts.spotify.com/en/login",
@@ -977,9 +980,6 @@
             "cookiesToFind": [
                 "sp_dc"
             ]
-        },
-        "_feeds": {
-            "commits": "https://gitlab.futo.org/videostreaming/plugins/spotify/-/commits/master?format=atom"
         }
     },
     {
@@ -1007,6 +1007,10 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
+        "_feeds": {
+            "commits": "https://github.com/futo-org/grayjay-plugin-tiktok/commits/main.atom",
+            "releases": "https://github.com/futo-org/grayjay-plugin-tiktok/releases.atom"
+        },
         "platformUrl": "https://tiktok.com",
         "authentication": {
             "loginUrl": "https://www.tiktok.com/login",
@@ -1016,11 +1020,7 @@
             ]
         },
         "sourceUrl_": "https://plugins.grayjay.app/TikTok/TikTokConfig.json",
-        "allowAllHttpHeaderAccess": true,
-        "_feeds": {
-            "commits": "https://github.com/futo-org/grayjay-plugin-tiktok/commits/main.atom",
-            "releases": "https://github.com/futo-org/grayjay-plugin-tiktok/releases.atom"
-        }
+        "allowAllHttpHeaderAccess": true
     },
     {
         "name": "Twitch",
@@ -1049,6 +1049,9 @@
         ],
         "scriptSignature": "EGzRCCkSdQABDUCBQZlSlFvZ6vH1zf8ZrmyqpeVU5NshUtkhNfs6aHW828GQLk2pzfVXxh7Y8edIgvIJKm11dKdmhgZPXx7r/1hFVE5PnFoOjc3b5lAUmNqVmhjK/WaavEMbxoUmlM8Pw5DOmpCiBDbMWAzjYDb9K/AScalEVeRlq69RO4vM6k8Mh+1ThlZIr+Yh1t2v335QH67IOYxV+OwJuWSuXtRUWSeqqKcsJCsPPDW8c3eMfGmQ/mBaFoBYLn61BOaJpjDmAnBIdoF9WWoEpjgkZOPJBybHbDD5IWTTr7N74MtEppWqsGpBPHAPQYaTLIXll9xazEfjrJno8w==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/twitch/-/commits/master?format=atom"
+        },
         "platformUrl": "https://twitch.tv",
         "authentication": {
             "loginUrl": "https://www.twitch.tv/login",
@@ -1064,10 +1067,7 @@
         },
         "supportedClaimTypes": [
             14
-        ],
-        "_feeds": {
-            "commits": "https://gitlab.futo.org/videostreaming/plugins/twitch/-/commits/master?format=atom"
-        }
+        ]
     },
     {
         "name": "Vanillo",
@@ -1094,14 +1094,14 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
-        "constants": {
-            "baseUrl": "https://api.vanillo.tv"
-        },
-        "websiteUrl": "https://dw5.github.io",
         "_feeds": {
             "commits": "https://github.com/dw5/grayjay-Vanillo/commits/master.atom",
             "releases": "https://github.com/dw5/grayjay-Vanillo/releases.atom"
-        }
+        },
+        "constants": {
+            "baseUrl": "https://api.vanillo.tv"
+        },
+        "websiteUrl": "https://dw5.github.io"
     },
     {
         "name": "Wien.gv.at Videos",
@@ -1163,6 +1163,10 @@
         ],
         "scriptSignature": "A8x7FalRJ5tR5I2vUATEUFjTU2yiBkyBHuUk6wjmS47zA9JAYPz7TvAspl9tGy1EMwn2BoksSDnvRwMtE4X2DmrdHZby4XU/o5L4h4svFqIYmgXkqfbZ9PffDo1Tc5o8neK9LUFkROEpkWunXo8aUhWN/UFFutl/tg7Hbxpf6IVARTe37VXMPrTmVMPzsqmsVyH8r+ji98h5Y+K6KeqSZXhr67qMsbEglB+H3LUkzp0JQaOyYUgw82g/YOZ8P8EG8WEdLFPRkFgXvW8PkX/fjSnbDBm/LlRkjS7l/J+nvv9WW3VGyPLXBBjPlsyu20eWaf17NF/7azX52ehHsIMQsi+FHHGA58F2YCLCtJW1HUuNqG9qukypYELgO14wsyyGnEeKQ4aLES2Jk7TrK/Hh2JjWRRzOEPKGWpZx4SKPcXqpPhhpfMYGC2r9XHPbunFqGsqvtD5+s41wfW2iNA+TGR+o25G6U5VsNGUL0jYO57mxn9iy0n/jjWC5HeuWNc5X",
         "scriptPublicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAuNJJK3A0D4NhOqMZSrtEyl0JTYZxUVXqosKT7ZopuGvq+zT5LzinI8kxr+wjMHlmN1EjNkrBitkGQEvRDpXDxIpe4IiHZRkrbFDYvxsZA3h0N0sKn8pJzMHP/orFsBi0CUWck2ynyqIsHGqqF3ziHHZi4DUIMTvdaqGAwJIYo5dDS+T/L70CfyqZhJnGMAGGMGXW0JHbmtURDz0hgMWkz/eREkYbce8aYV31JBImTosFADLQ6JPSi3rDEZagwMO2ipvK3fGsDdQfJ1CsBNR/8xJLTsJYrNoMnqLvWZRkcEBpbYB+7N6aSOVO+GdJ4S93f25Deru7BkWM/wHrJtvGDT7/a9GxfFl08jU5f7JRchn+zoqyn7db1d7rtrNiW8a4X5MNqASSkzJPPZgMrqDlCilSYkkRYsUvkhmzRPUhxYG0mv69gOqKrpLoMX3Y1IkA8iG6SWNTKiCnsrKexb+pKoZWg/76jdB1UoChBqd1divqW1Te7VUvRir400D5tjg1AgMBAAE=",
+        "_feeds": {
+            "commits": "https://github.com/Tsunami014/My-Grayjay-plugin/commits/main.atom",
+            "releases": "https://github.com/Tsunami014/My-Grayjay-plugin/releases.atom"
+        },
         "platformUrl": "https://music.youtube.com",
         "authentication": {
             "loginUrl": "https://accounts.google.com/ServiceLogin?ltmpl=music&service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fmusic.youtube.com%252F%26feature%3D__FEATURE__&hl=en",
@@ -1214,11 +1218,7 @@
         ],
         "supportedClaimTypes": [
             3
-        ],
-        "_feeds": {
-            "commits": "https://github.com/Tsunami014/My-Grayjay-plugin/commits/main.atom",
-            "releases": "https://github.com/Tsunami014/My-Grayjay-plugin/releases.atom"
-        }
+        ]
     },
     {
         "name": "Youtube",
@@ -1259,6 +1259,9 @@
         ],
         "scriptSignature": "LAzUy5sHRLEOtwIlkajsHmv+IgaQFAwDGbALGGY1P59OosMZiG9dS3bfBTESKT2Q3WKNaZKLSr7mPYZRPeaDvX8YnpBPiCAZp49zHsDzomFgm4+xOQcZUx5lLPA8dcakPl5OQsCKlIYZKteO6i/Jz2s4YQKJAUr8GeUSUnrPxA961kK7fvcLNKc6LMBw9HzTFdMcY6uSqS3yp2Ul34GsV2rWWdq0aSmN3QFewJwYYENnXnhS/kT+Youl6kTuDOxCCF5QYWgm4q1RcjVYL001M7wIPofPa+oaFi3XJenQGu+x6zWgcrTiOl96NTXse1rhxSQLQSEOBqNbu6ovKBx+tA==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/youtube/-/commits/master?format=atom"
+        },
         "platformUrl": "https://youtube.com",
         "authentication": {
             "loginUrl": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fchannel_switcher&hl=en&ec=65620",
@@ -1373,10 +1376,7 @@
                 "GOOGLE_ABUSE_EXEMPTION"
             ]
         },
-        "primaryClaimFieldType": 1,
-        "_feeds": {
-            "commits": "https://gitlab.futo.org/videostreaming/plugins/youtube/-/commits/master?format=atom"
-        }
+        "primaryClaimFieldType": 1
     },
     {
         "name": "Youtube SB",
@@ -1417,6 +1417,10 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
+        "_feeds": {
+            "commits": "https://github.com/pantsufan/grayspon/commits/main.atom",
+            "releases": "https://github.com/pantsufan/grayspon/releases.atom"
+        },
         "platformUrl": "https://youtube.com",
         "authentication": {
             "loginUrl": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fchannel_switcher&hl=en&ec=65620",
@@ -1531,11 +1535,7 @@
                 "GOOGLE_ABUSE_EXEMPTION"
             ]
         },
-        "primaryClaimFieldType": 1,
-        "_feeds": {
-            "commits": "https://github.com/pantsufan/grayspon/commits/main.atom",
-            "releases": "https://github.com/pantsufan/grayspon/releases.atom"
-        }
+        "primaryClaimFieldType": 1
     },
     {
         "name": "Youtube with DeArrow",
@@ -1576,6 +1576,10 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
+        "_feeds": {
+            "commits": "https://github.com/netux/grayjay-source-youtube/commits/with-dearrow.atom",
+            "releases": "https://github.com/netux/grayjay-source-youtube/releases.atom"
+        },
         "platformUrl": "https://youtube.com",
         "authentication": {
             "loginUrl": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fchannel_switcher&hl=en&ec=65620",
@@ -1710,11 +1714,7 @@
                 "GOOGLE_ABUSE_EXEMPTION"
             ]
         },
-        "primaryClaimFieldType": 1,
-        "_feeds": {
-            "commits": "https://github.com/netux/grayjay-source-youtube/commits/with-dearrow.atom",
-            "releases": "https://github.com/netux/grayjay-source-youtube/releases.atom"
-        }
+        "primaryClaimFieldType": 1
     },
     {
         "name": "media.ccc.de",
@@ -1770,6 +1770,9 @@
         ],
         "scriptSignature": "",
         "scriptPublicKey": "",
+        "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/commits/master?format=atom"
+        },
         "platformUrl": "https://www.nicovideo.jp/",
         "authentication": {
             "loginUrl": "https://account.nicovideo.jp/login?site=niconico&next_url=%2F&sec=header_pc&cmnhd_ref=device%3Dpc%26site%3Dniconico%26pos%3Dheader_login%26page%3Dtop",
@@ -1781,9 +1784,6 @@
         "supportedClaimTypes": [
             21
         ],
-        "sourceUrl_": "https://plugins.grayjay.app/Niconico/NicoConfig.json",
-        "_feeds": {
-            "commits": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/commits/master?format=atom"
-        }
+        "sourceUrl_": "https://plugins.grayjay.app/Niconico/NicoConfig.json"
     }
 ]
