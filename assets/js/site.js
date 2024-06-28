@@ -138,8 +138,8 @@ async function populateCardsContainer(url) {
         cardsContainer.innerHTML = "";
         data.forEach(item => {
             const fixedItem = fixData(item);
-            const tags = fixedItem._tags?? [];
-        
+            const tags = fixedItem["_tags"] ?? [];
+            console.log(tags);
             // const shouldHideNsfw =!isQueryParamSet("nsfw") && tags.includes("nsfw");
             // const shouldHideNonWorking = isQueryParamSet("working") &&!tags.includes("working");
             // const shouldHideNonOfficial = isQueryParamSet("official") &&!tags.includes("official");
@@ -148,8 +148,7 @@ async function populateCardsContainer(url) {
             //     cardsContainer.innerHTML += cardHtml;
             // }
 
-            const showNsfw = isQueryParamSet("nsfw");
-            if (showNsfw || !tags.includes("nsfw")) {
+            if (isQueryParamSet("nsfw") || !tags.includes("nsfw")) {
                 const cardHtml = generateCard(fixedItem);
                 cardsContainer.innerHTML += cardHtml;
             }
