@@ -146,8 +146,8 @@ async function populateCardsContainer(url) {
             const shouldHideNonOfficial = isQueryParamSet("official") &&!tags.includes("official");
         
             // Simplified logic to decide whether to show the item
-            if ((shouldShowNsfw || shouldHideNonWorking || shouldHideNonOfficial) && 
-               !(shouldShowNsfw && shouldHideNonWorking && shouldHideNonOfficial)) {
+            if ((shouldShowNsfw || !shouldHideNonWorking || !shouldHideNonOfficial) && 
+               !(shouldShowNsfw && !shouldHideNonWorking && !shouldHideNonOfficial)) {
                 const cardHtml = generateCard(fixedItem);
                 cardsContainer.innerHTML += cardHtml;
             }
