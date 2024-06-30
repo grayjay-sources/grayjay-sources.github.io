@@ -32,7 +32,7 @@ jobs:
 
     - name: Commit and Push Sorted JSON
       run: |
-        cp "${{ steps.sorted_sources.outputs.result }} sources.json
+        cp "${{ steps.sorted_sources.outputs.result }}" sources.json
         git add sources.json
         git commit -m "Sort sources.json"
         git push
