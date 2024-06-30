@@ -30,9 +30,12 @@ jobs:
         to_file: 'true'
         input: 'sources.json'
 
-    - name: Commit and Push Sorted JSON
+    - name: Move sorted JSON
       run: |
         cp "${{ steps.sorted_sources.outputs.result }}" sources.json
         git add sources.json
-        git commit -m "Sort sources.json"
-        git push
+        # git commit -m "Sort sources.json"
+        # git push
+
+    - name: Push sorted JSON
+      uses: stefanzweifel/git-auto-commit-action@v5
