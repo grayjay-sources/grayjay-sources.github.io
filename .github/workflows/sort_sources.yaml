@@ -20,9 +20,10 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Validate and Sort JSON
-      uses: yakubique/json-utils@v1.6
+      uses: yakubique/json-utils@v1.7
       id: sorted_sources
       with:
+        space: 4 # indent
         action: 'sort'
         type: "nested-json"
         key: "name"
