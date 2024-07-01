@@ -29,6 +29,7 @@ jobs:
       with:
         base-url-path: https://grayjay-sources.github.io/
         sitemap-format: xml
+        additional-extensions: doc docx ppt pptx xls xlsx html htm
 
     - name: Output stats
       run: |
@@ -43,7 +44,7 @@ jobs:
     #     # git commit -m "Sort sources.json"
     #     # git push
 
-    - name: Push sorted JSON
+    - name: Push sitemap.xml
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "Generate Sitemap"
