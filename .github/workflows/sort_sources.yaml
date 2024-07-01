@@ -2,7 +2,9 @@ name: Autosort sources.json
 
 on:
   workflow_dispatch:
-  # push:
+  push:
+    paths:
+      - 'sources.json'
   pull_request:
     paths:
       - 'sources.json'
