@@ -18,19 +18,8 @@
       "iconUrl",
       "id",
       "packages",
-      "allowEval",
       "allowUrls",
-      "_tags",
-      "scriptSignature",
-      "scriptPublicKey",
-      "_feeds",
       "platformUrl",
-      "authentication",
-      "settings",
-      "supportedClaimTypes",
-      "subscriptionRateLimit",
-      "captcha",
-      "primaryClaimFieldType"
     ],
     "properties": {
       "name": {
@@ -112,9 +101,7 @@
             "minLength": 1
           }
         },
-        "required": [
-          "commits"
-        ]
+        "required": []
       },
       "platformUrl": {
         "type": "string",
@@ -154,18 +141,9 @@
           },
           "domainHeadersToFind": {
             "type": "object",
-            "properties": {
-              ".youtube.com": {
-                "type": "array",
-                "items": {
-                  "required": [],
-                  "properties": {}
-                }
-              }
+            "properties": {}
             },
-            "required": [
-              ".youtube.com"
-            ]
+            "required": []
           },
           "loginWarning": {
             "type": "string",
@@ -188,14 +166,7 @@
         "uniqueItems": true,
         "minItems": 1,
         "items": {
-          "required": [
-            "variable",
-            "name",
-            "description",
-            "type",
-            "default",
-            "dependency"
-          ],
+          "required": [],
           "properties": {
             "variable": {
               "type": "string",
@@ -261,11 +232,7 @@
             }
           }
         },
-        "required": [
-          "userAgent",
-          "captchaUrl",
-          "cookiesToFind"
-        ]
+        "required": []
       },
       "primaryClaimFieldType": {
         "type": "number"
