@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://grayjay-sources.github.io/</loc>
-  <lastmod>2024-04-12T08:50:16+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://grayjay-sources.github.io/</loc>
+<lastmod>2024-06-19T21:31:11+01:00</lastmod>
 </url>
 <url>
-  <loc>https://grayjay-sources.github.io/?nsfw</loc>
-  <lastmod>2024-04-12T08:50:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://grayjay-sources.github.io/googlee9879a763c198f4c.html</loc>
+<lastmod>2024-04-11T11:33:34+02:00</lastmod>
+</url>
+<url>
+<loc>https://grayjay-sources.github.io/repo/</loc>
+<lastmod>2024-04-07T03:20:20+02:00</lastmod>
 </url>
 </urlset>
