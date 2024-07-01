@@ -24,7 +24,19 @@ jobs:
       with:
         ref: ${{ github.head_ref }}
 
-    - name: Validate and Sort JSON
+    - name: Validate JSON
+      uses: walbo/validate-json@v1.1.0
+      with:
+        files: sources.json
+        schema: sources.schema.json
+        schema-version: draft-04
+        print-valid-files: false
+        fail-on-missing-schema: false
+        strict: false
+        allow-matching-properties: true
+        allow-union-types: true
+
+    - name: Sort JSON
       uses: yakubique/json-utils@v1.7
       id: sorted_sources
       with:
