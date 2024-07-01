@@ -11,13 +11,16 @@ jobs:
   validate-and-sort:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
-    
     - name: Configure Git User
       run: git config --global user.email "action@github.com" && git config --global user.name "GitHub Action"
 
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v4
+      with:
+        ref: ${{ github.head_ref }}
 
     - name: Validate and Sort JSON
       uses: yakubique/json-utils@v1.7
