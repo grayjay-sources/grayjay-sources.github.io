@@ -1,0 +1,85 @@
+name: sources.json
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'sources.json'
+  pull_request:
+    paths:
+      - 'sources.json'
+
+jobs:
+  validate-and-sort:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+
+    - uses: actions/checkout@main
+      with:
+        fetch-depth: 0
+        ref: ${{ github.head_ref }}
+
+    - name: Schema (walbo/validate-json)
+      continue-on-error: true
+      uses: walbo/validate-json@main
+      with:
+        files: sources.json
+        schema: sources.schema.json
+        schema-version: draft-07
+        allow-union-types: true
+        strict: true
+        allow-matching-properties: false
+        fail-on-missing-schema: true
+        # print-valid-files: false
+
+    - name: Schema (cardinalby/schema-validator-action)
+      continue-on-error: true
+      uses: cardinalby/schema-validator-action@master
+      with:
+        file: sources.json
+        schema: sources.schema.json
+        fixSchemas: true
+
+    - name: Schema (dsanders11/json-schema-validate-action)
+      continue-on-error: true
+      uses: dsanders11/json-schema-validate-action@main
+      with:
+        files: sources.json
+        schema: sources.schema.json
+
+    - name: Schema (ammarlakis/action-ajv)
+      continue-on-error: true
+      uses: ammarlakis/action-ajv@master
+      with:
+        data: sources.json
+        schema: sources.schema.json
+        allErrors: true
+        verbose: true
+
+    - name: Sort
+      continue-on-error: true
+      uses: yakubique/json-utils@main
+      id: sorted_sources
+      with:
+        space: 4 # indent
+        action: 'sort'
+        type: "nested-json"
+        key: "name"
+        from_file: 'true'
+        to_file: 'true'
+        input: 'sources.json'
+
+    - name: Move sorted JSON
+      continue-on-error: true
+      run: |
+        cp "${{ steps.sorted_sources.outputs.result }}" sources.json
+
+    - name: Push sorted JSON
+      continue-on-error: true
+      uses: stefanzweifel/git-auto-commit-action@master
+      with:
+        commit_message: "[bot] Sort sources.json"
