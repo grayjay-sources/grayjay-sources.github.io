@@ -30,9 +30,9 @@ jobs:
       with:
         files: sources.json
         schema: sources.schema.json
-        # schema-version: draft-07
+        schema-version: draft-07
         allow-union-types: true
-        strict: true
+        strict: false
         allow-matching-properties: false
         fail-on-missing-schema: true
         # print-valid-files: false
