@@ -3,10 +3,10 @@ name: Validate changed Github workflows
   workflow_dispatch: null
   push:
     paths:
-      - '/sources.json'
+      - '.github/workflows/**.yml'
   pull_request:
     paths:
-      - '/sources.json'
+      - '.github/workflows/**.yml'
 permissions: read-all
 jobs:
   validate:
@@ -19,16 +19,9 @@ jobs:
     steps:
       - uses: actions/checkout@main
         with:
-          fetch-depth: 0
-      - name: Check for any changed workflows
-        id: check-for-changed-workflows
-        uses: tj-actions/changed-files@main
-        with:
-          files: |
-            .github/workflows/**.yml
+          fetch-depth: 0            
       - name: Validate workflows
         continue-on-error: true
-        if: steps.check-for-changed-workflows.outputs.any_changed == 'true'
         uses: dsanders11/json-schema-validate-action@main
         with:
           schema: https://json.schemastore.org/github-workflow.json

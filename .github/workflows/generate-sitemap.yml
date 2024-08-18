@@ -23,15 +23,8 @@ jobs:
         fetch-depth: 0
         ref: ${{ github.head_ref }}
 
-    - name: Check for any changed html files
-      id: check-for-changed-html
-      uses: tj-actions/changed-files@main
-      with:
-        files: '*.html'
-
     - name: Generate the sitemap
       continue-on-error: true
-      if: steps.check-for-changed-html.outputs.any_changed == 'true'
       id: sitemap
       uses: cicirello/generate-sitemap@v1
       with:
@@ -41,7 +34,6 @@ jobs:
 
     - name: Output stats
       continue-on-error: true
-      if: steps.check-for-changed-html.outputs.any_changed == 'true'
       run: |
         echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
         echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
@@ -56,7 +48,6 @@ jobs:
 
     - name: Push sitemap.xml
       continue-on-error: true
-      if: steps.check-for-changed-html.outputs.any_changed == 'true'
       uses: stefanzweifel/git-auto-commit-action@master
       with:
         commit_message: "[bot] Generate sitemap.xml"

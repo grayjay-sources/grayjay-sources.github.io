@@ -25,15 +25,8 @@ jobs:
         fetch-depth: 0
         ref: ${{ github.head_ref }}
 
-    - name: Check for any changed html files
-      id: check-for-changed-sources
-      uses: tj-actions/changed-files@main
-      with:
-        files: '/sources.json'
-
     - name: Sort JSON
       continue-on-error: true
-      if: steps.check-for-changed-sources.outputs.any_changed == 'true'
       uses: yakubique/json-utils@main
       id: sorted_sources
       with:
@@ -46,7 +39,7 @@ jobs:
         input: 'sources.json'
 
     - name: Move sorted JSON
-      if: steps.check-for-changed-sources.outputs.any_changed == 'true'
+      continue-on-error: true
       run: |
         cp "${{ steps.sorted_sources.outputs.result }}" sources.json
         git add sources.json
@@ -54,7 +47,6 @@ jobs:
         # git push
 
     - name: Push sorted JSON
-      if: steps.check-for-changed-sources.outputs.any_changed == 'true'
       continue-on-error: true
       uses: stefanzweifel/git-auto-commit-action@master
       with:
