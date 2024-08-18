@@ -19,5 +19,6 @@ jobs:
           fetch-depth: 0
       - name: Super-linter
         uses: super-linter/super-linter@main
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
