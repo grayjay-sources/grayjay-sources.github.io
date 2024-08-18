@@ -1744,6 +1744,34 @@
             "commits": "https://github.com/Alex-451/grayjay-media.ccc-plugin/commits/main.atom",
             "releases": "https://github.com/Alex-451/grayjay-media.ccc-plugin/releases.atom"
         }
+        },
+    {
+        "name": "Floatplane",
+        "description": "A content creation and video streaming website created by Floatplane Media Inc. and Linus Media Group.",
+        "author": "VoxelPrismatic",
+        "authorUrl": "https://github.com/voxelprismatic",
+        "sourceUrl": "https://raw.githubusercontent.com/VoxelPrismatic/grayjay-floatplane/main/FloatplaneConfig.json",
+        "repositoryUrl": "https://github.com/VoxelPrismatic/grayjay-floatplane/",
+        "scriptUrl": "https://raw.githubusercontent.com/VoxelPrismatic/grayjay-floatplane/main/FloatplaneScript.js",
+        "version": 1,
+        "iconUrl": "https://raw.githubusercontent.com/VoxelPrismatic/grayjay-floatplane/main/floatplane.png",
+        "id": "d8643244-633f-4c71-9f45-215b2387dc2c",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+		"www.floatplane.com",
+		"floatplane.com"
+	],
+        "_tags": [
+        ],
+        "scriptSignature": "<ommitted>",
+        "scriptPublicKey": "<ommitted>",
+        "_feeds": {
+            "commits": "https://github.com/VoxelPrismatic/grayjay-floatplane/commits/main.atom",
+            "releases": "https://github.com/VoxelPrismatic/grayjay-floatplane/releases.atom"
+        }
     },
     {
         "name": "ニコニコ (niconico)",
