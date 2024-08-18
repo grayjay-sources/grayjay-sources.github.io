@@ -18,7 +18,8 @@ jobs:
 
     steps:
 
-    - uses: actions/checkout@main
+    - name: Pull
+      uses: actions/checkout@main
       with:
         fetch-depth: 0
         ref: ${{ github.head_ref }}
@@ -73,12 +74,13 @@ jobs:
         to_file: 'true'
         input: 'sources.json'
 
-    - name: Move sorted JSON
+    - name: Move sorted
       continue-on-error: true
       run: |
         cp "${{ steps.sorted_sources.outputs.result }}" sources.json
+        git add sources.json
 
-    - name: Push sorted JSON
+    - name: Push sorted
       continue-on-error: true
       uses: stefanzweifel/git-auto-commit-action@master
       with:
