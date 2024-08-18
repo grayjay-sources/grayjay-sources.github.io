@@ -18,12 +18,20 @@ jobs:
 
     steps:
 
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@main
       with:
+        fetch-depth: 0
         ref: ${{ github.head_ref }}
-        fetch-depth: 0 
+
+    - name: Check for any changed html files
+      id: check-for-changed-html
+      uses: tj-actions/changed-files@main
+      with:
+        files: '*.html'
 
     - name: Generate the sitemap
+      continue-on-error: true
+      if: steps.check-for-changed-html.outputs.any_changed == 'true'
       id: sitemap
       uses: cicirello/generate-sitemap@v1
       with:
@@ -32,6 +40,8 @@ jobs:
         additional-extensions: doc docx ppt pptx xls xlsx html htm
 
     - name: Output stats
+      continue-on-error: true
+      if: steps.check-for-changed-html.outputs.any_changed == 'true'
       run: |
         echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
         echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
@@ -46,11 +56,12 @@ jobs:
 
     - name: Push sitemap.xml
       continue-on-error: true
-      uses: stefanzweifel/git-auto-commit-action@v5
+      if: steps.check-for-changed-html.outputs.any_changed == 'true'
+      uses: stefanzweifel/git-auto-commit-action@master
       with:
         commit_message: "[bot] Generate sitemap.xml"
     # - name: Create Pull Request
-    #   uses: peter-evans/create-pull-request@v3
+    #   uses: peter-evans/create-pull-request@main
     #   with:
     #     # github-token: ${{ secrets.GITHUB_TOKEN }}
     #     title: "Automated sitemap update"

@@ -1,8 +1,12 @@
-name: Validate JSON Schemas
+name: Validate JSON Schemas (cardinalby)
 'on':
   workflow_dispatch: null
-  pull_request: null
-  push: null
+  push:
+    paths:
+      - '/sources.json'
+  pull_request:
+    paths:
+      - '/sources.json'
 permissions: read-all
 jobs:
   validate:

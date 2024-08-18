@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'sources.json'
+      - '/sources.json'
   pull_request:
     paths:
-      - 'sources.json'
+      - '/sources.json'
 
 jobs:
   validate-and-sort:
@@ -20,24 +20,21 @@ jobs:
     - name: Configure Git User
       run: git config --global user.email "action@github.com" && git config --global user.name "GitHub Action"
 
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@main
       with:
+        fetch-depth: 0
         ref: ${{ github.head_ref }}
 
-    # - name: Validate JSON
-    #   uses: walbo/validate-json@v1.1.0
-    #   with:
-    #     files: sources.json
-    #     schema: sources.schema.json
-    #     schema-version: draft-04
-    #     print-valid-files: false
-    #     fail-on-missing-schema: false
-    #     strict: false
-    #     allow-matching-properties: true
-    #     allow-union-types: true
+    - name: Check for any changed html files
+      id: check-for-changed-sources
+      uses: tj-actions/changed-files@main
+      with:
+        files: '/sources.json'
 
     - name: Sort JSON
-      uses: yakubique/json-utils@v1.7
+      continue-on-error: true
+      if: steps.check-for-changed-sources.outputs.any_changed == 'true'
+      uses: yakubique/json-utils@main
       id: sorted_sources
       with:
         space: 4 # indent
@@ -49,6 +46,7 @@ jobs:
         input: 'sources.json'
 
     - name: Move sorted JSON
+      if: steps.check-for-changed-sources.outputs.any_changed == 'true'
       run: |
         cp "${{ steps.sorted_sources.outputs.result }}" sources.json
         git add sources.json
@@ -56,7 +54,8 @@ jobs:
         # git push
 
     - name: Push sorted JSON
+      if: steps.check-for-changed-sources.outputs.any_changed == 'true'
       continue-on-error: true
-      uses: stefanzweifel/git-auto-commit-action@v5
+      uses: stefanzweifel/git-auto-commit-action@master
       with:
         commit_message: "[bot] Sort sources.json"

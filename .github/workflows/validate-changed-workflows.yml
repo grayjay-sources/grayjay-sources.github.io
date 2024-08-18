@@ -1,11 +1,15 @@
 name: Validate changed Github workflows
 'on':
   workflow_dispatch: null
-  pull_request: null
-  push: null
+  push:
+    paths:
+      - '/sources.json'
+  pull_request:
+    paths:
+      - '/sources.json'
 permissions: read-all
 jobs:
-  validate-changed-github-actions-workflows:
+  validate:
     name: Validate GitHub Actions workflows
     permissions:
       contents: read

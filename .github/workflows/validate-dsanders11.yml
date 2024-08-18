@@ -1,7 +1,12 @@
 name: Validate JSON Schemas (dsanders11)
 'on':
   workflow_dispatch: null
-  push: null
+  push:
+    paths:
+      - '/sources.json'
+  pull_request:
+    paths:
+      - '/sources.json'
 permissions: read-all
 jobs:
   validate:
