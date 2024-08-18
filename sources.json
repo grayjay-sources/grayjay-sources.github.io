@@ -449,6 +449,38 @@
         ]
     },
     {
+        "name": "DeviantArt",
+        "description": "DeviantArt plugin",
+        "author": "CQIT",
+        "authorUrl": "https://github.com/CodeQualIT",
+        "sourceUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/raw/master/DAConfig.json",
+        "repositoryUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart",
+        "scriptUrl": "./DAScript.js",
+        "version": 1,
+        "iconUrl": "https://raw.githubusercontent.com/CodeQualIT/grayjay-source-deviantart/master/DALogo.png",
+        "id": "a82a6e4d-4e91-466e-8c46-d7895654e2d1",
+        "packages": [
+            "Http",
+            "DOMParser"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "www.deviantart.com"
+        ],
+        "_tags": [
+            "unofficial",
+            "maintained",
+            "working"
+        ],
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "_feeds": {
+            "commits": "https://github.com/CodeQualIT/grayjay-source-deviantart/commits/master.atom",
+            "releases": "https://github.com/CodeQualIT/grayjay-source-deviantart/releases.atom"
+        },
+        "platformUrl": "https://www.deviantart.com"
+    },
+    {
         "name": "Floatplane",
         "description": "A content creation and video streaming website created by Floatplane Media Inc. and Linus Media Group.",
         "author": "VoxelPrismatic",
@@ -505,39 +537,6 @@
             "releases": "https://github.com/skytunnel/GodResourcePluginUnoffical/releases.atom"
         }
     },
-    
-{
-    "name": "DeviantArt",
-    "description": "DeviantArt plugin",
-    "author": "CQIT",
-    "authorUrl": "https://github.com/CodeQualIT",
-    "sourceUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/raw/master/DAConfig.json",
-    "repositoryUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart",
-    "scriptUrl": "./DAScript.js",
-    "version": 1,
-    "iconUrl": "https://raw.githubusercontent.com/CodeQualIT/grayjay-source-deviantart/master/DALogo.png",
-    "id": "a82a6e4d-4e91-466e-8c46-d7895654e2d1",
-    "packages": [
-        "Http",
-        "DOMParser"
-    ],
-    "allowEval": false,
-    "allowUrls": [
-        "www.deviantart.com"
-    ],
-    "_tags": [
-        "unofficial",
-        "maintained",
-        "working"
-    ],
-    "scriptSignature": "",
-    "scriptPublicKey": "",
-    "_feeds": {
-        "commits": "https://github.com/CodeQualIT/grayjay-source-deviantart/commits/master.atom",
-        "releases": "https://github.com/CodeQualIT/grayjay-source-deviantart/releases.atom"
-    },
-    "platformUrl": "https://www.deviantart.com"
-},
     {
         "name": "Kick",
         "description": "A live streaming platform, backed by Stake.com.",
