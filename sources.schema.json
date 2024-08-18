@@ -19,53 +19,24 @@
                     "type": "string"
                 },
                 "authorUrl": {
-                    "type": "string",
-                    "qt-uri-protocols": [
-                        "https"
-                    ]
+                    "type": "string"
                 },
                 "sourceUrl": {
                     "type": "string",
-                    "format": "uri",
-                    "qt-uri-protocols": [
-                        "https"
-                    ],
-                    "qt-uri-extensions": [
-                        ".js",
-                        ".json"
-                    ]
+                    "format": "uri"
                 },
                 "repositoryUrl": {
                     "type": "string",
-                    "format": "uri",
-                    "qt-uri-protocols": [
-                        "https"
-                    ],
-                    "qt-uri-extensions": [
-                        ".ccc-plugin"
-                    ]
+                    "format": "uri"
                 },
                 "scriptUrl": {
-                    "type": "string",
-                    "qt-uri-protocols": [
-                        "https"
-                    ],
-                    "qt-uri-extensions": [
-                        ".js"
-                    ]
+                    "type": "string"
                 },
                 "version": {
                     "type": "integer"
                 },
                 "iconUrl": {
-                    "type": "string",
-                    "qt-uri-protocols": [
-                        "https"
-                    ],
-                    "qt-uri-extensions": [
-                        ".jpg",
-                        ".png"
-                    ]
+                    "type": "string"
                 },
                 "id": {
                     "type": "string",
@@ -102,10 +73,7 @@
                     "$ref": "#/definitions/Feeds"
                 },
                 "platformUrl": {
-                    "type": "string",
-                    "qt-uri-protocols": [
-                        "https"
-                    ]
+                    "type": "string"
                 },
                 "authentication": {
                     "$ref": "#/definitions/Authentication"
@@ -133,33 +101,18 @@
                 },
                 "iconUrl_": {
                     "type": "string",
-                    "format": "uri",
-                    "qt-uri-protocols": [
-                        "https"
-                    ],
-                    "qt-uri-extensions": [
-                        ".jpg"
-                    ]
+                    "format": "uri"
                 },
                 "sourceUrl_": {
                     "type": "string",
-                    "format": "uri",
-                    "qt-uri-protocols": [
-                        "https"
-                    ],
-                    "qt-uri-extensions": [
-                        ".json"
-                    ]
+                    "format": "uri"
                 },
                 "allowAllHttpHeaderAccess": {
                     "type": "boolean"
                 },
                 "websiteUrl": {
                     "type": "string",
-                    "format": "uri",
-                    "qt-uri-protocols": [
-                        "https"
-                    ]
+                    "format": "uri"
                 },
                 "subscriptionRateLimit": {
                     "type": "integer"
@@ -183,10 +136,7 @@
                 },
                 "url": {
                     "type": "string",
-                    "format": "uri",
-                    "qt-uri-protocols": [
-                        "https"
-                    ]
+                    "format": "uri"
                 },
                 "classes": {
                     "type": "string"
@@ -201,23 +151,11 @@
             "properties": {
                 "commits": {
                     "type": "string",
-                    "format": "uri",
-                    "qt-uri-protocols": [
-                        "https"
-                    ],
-                    "qt-uri-extensions": [
-                        ".atom"
-                    ]
+                    "format": "uri"
                 },
                 "releases": {
                     "type": "string",
-                    "format": "uri",
-                    "qt-uri-protocols": [
-                        "https"
-                    ],
-                    "qt-uri-extensions": [
-                        ".atom"
-                    ]
+                    "format": "uri"
                 }
             },
             "required": [],
@@ -229,14 +167,7 @@
             "properties": {
                 "loginUrl": {
                     "type": "string",
-                    "format": "uri",
-                    "qt-uri-protocols": [
-                        "https"
-                    ],
-                    "qt-uri-extensions": [
-                        ".html",
-                        ".php"
-                    ]
+                    "format": "uri"
                 },
                 "userAgent": {
                     "type": "string"
@@ -258,10 +189,7 @@
                 },
                 "completionUrl": {
                     "type": "string",
-                    "format": "uri",
-                    "qt-uri-protocols": [
-                        "https"
-                    ]
+                    "format": "uri"
                 },
                 "loginButton": {
                     "type": "string"
@@ -322,10 +250,7 @@
             "properties": {
                 "baseUrl": {
                     "type": "string",
-                    "format": "uri",
-                    "qt-uri-protocols": [
-                        "https"
-                    ]
+                    "format": "uri"
                 }
             },
             "required": [],
@@ -367,17 +292,8 @@
             "title": "Setting"
         },
         "Default": {
-            "anyOf": [
-                {
-                    "type": "string",
-                    "format": "boolean"
-                },
-                {
-                    "type": "string",
-                    "format": "integer"
-                }
-            ],
-            "title": "Default"
+            "type": "string",
+            "title": "Default Value"
         },
         "Package": {
             "type": "string",
@@ -396,6 +312,30 @@
                 "Boolean"
             ],
             "title": "Type"
+        },
+        "BoolOrString": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+             "$ref": "#/definitions/BoolString"
+            }
+          ]
+        },
+        "BoolString": {
+          "type": "string",
+          "pattern": "^(TRUE|True|true|FALSE|False|false|YES|Yes|yes|NO|No|no|ON|On|on|OFF|Off|off|0|1|ENABLED|Enabled|enabled|DISABLED|Disabled|disabled|ENABLE|Enable|enable|DISABLE|Disable|disable)$"
+        },
+        "NullOrString": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
         }
     }
 }

@@ -1,0 +1,23 @@
+name: Lint all files
+'on':
+  workflow_dispatch: null
+  pull_request: null
+  push: null
+permissions: read-all
+jobs:
+  build:
+    name: Lint
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+      - name: Super-linter
+        uses: super-linter/super-linter@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

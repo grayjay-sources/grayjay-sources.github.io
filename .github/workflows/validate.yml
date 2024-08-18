@@ -1,0 +1,17 @@
+name: Validate JSON Schemas
+'on':
+  workflow_dispatch: null
+  pull_request: null
+  push: null
+permissions: read-all
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: Validate sources.json
+        uses: cardinalby/schema-validator-action@master
+        with:
+          file: sources.json
+          schema: sources.schema.json
+          fixSchemas: true

@@ -1,0 +1,16 @@
+name: Validate JSON Schemas (dsanders11)
+'on':
+  workflow_dispatch: null
+permissions: read-all
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+      - name: Validate sources.json
+        uses: dsanders11/json-schema-validate-action@main
+        with:
+          files: sources.json
+          schema: sources.schema.json
