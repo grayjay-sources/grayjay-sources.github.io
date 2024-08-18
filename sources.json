@@ -1765,20 +1765,13 @@
 		"floatplane.com"
 	],
         "_tags": [
-            "unofficial",
-            "broken",
-            "unmaintained"
         ],
         "scriptSignature": "<ommitted>",
         "scriptPublicKey": "<ommitted>",
-Jun 28, 2024
-convert feeds
         "_feeds": {
             "commits": "https://github.com/VoxelPrismatic/grayjay-floatplane/commits/main.atom",
             "releases": "https://github.com/VoxelPrismatic/grayjay-floatplane/releases.atom"
         }
-Jun 28, 2024
-o.O
     },
     {
         "name": "ニコニコ (niconico)",
