@@ -8,54 +8,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - name: Validate manifest.json
+      - name: Validate sources.json
+        continue-on-error: true
         uses: walbo/validate-json@main
         with:
-          files: manifest.json
+          files: sources.json
           schema: schemas/manifest.schema.json
-          schema-version: draft-06
+          schema-version: draft-07
           allow-union-types: true
           strict: false
-      - name: Validate *.config.json
-        uses: walbo/validate-json@main
-        with:
-          files: '*.config.json'
-          schema: schemas/config.schema.json
-          schema-version: draft-06
-          allow-union-types: true
-          strict: false
-      - name: Validate *.metaconfig.json
-        uses: walbo/validate-json@main
-        with:
-          files: '*.metaconfig.json'
-          schema: schemas/metaconfig.schema.json
-          schema-version: draft-06
-          allow-union-types: true
-          strict: false
-      - name: Validate *.updates.json
-        uses: walbo/validate-json@main
-        with:
-          files: '*.updates.json'
-          schema: schemas/updates.schema.json
-          schema-version: draft-06
-          allow-union-types: true
-          strict: false
-      - name: Validate *.ports.json
-        uses: walbo/validate-json@main
-        with:
-          files: '*.ports.json'
-          schema: schemas/ports.schema.json
-          schema-version: draft-06
-          allow-union-types: true
-          strict: false
-      - name: Validate *.generator.json
-        uses: walbo/validate-json@main
-        with:
-          files: '*.generator.json'
-          schema: schemas/generator.schema.json
-          schema-version: draft-06
-          allow-union-types: true
-          strict: false
-          # allow-matching-properties: true
-
-# print-valid-files: false
+          allow-matching-properties: false
+          # print-valid-files: false

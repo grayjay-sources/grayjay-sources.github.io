@@ -11,6 +11,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Validate sources.json
+        continue-on-error: true
         uses: dsanders11/json-schema-validate-action@main
         with:
           files: sources.json

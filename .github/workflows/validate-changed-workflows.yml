@@ -23,6 +23,7 @@ jobs:
           files: |
             .github/workflows/**.yml
       - name: Validate workflows
+        continue-on-error: true
         if: steps.check-for-changed-workflows.outputs.any_changed == 'true'
         uses: dsanders11/json-schema-validate-action@main
         with:

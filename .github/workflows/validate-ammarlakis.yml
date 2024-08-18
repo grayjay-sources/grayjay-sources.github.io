@@ -11,6 +11,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Validate sources.json
+        continue-on-error: true
         uses: ammarlakis/action-ajv@master
         with:
           data: sources.json

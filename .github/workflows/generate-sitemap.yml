@@ -45,6 +45,7 @@ jobs:
     #     # git push
 
     - name: Push sitemap.xml
+      continue-on-error: true
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "[bot] Generate sitemap.xml"
