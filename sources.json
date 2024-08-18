@@ -499,7 +499,9 @@
             "www.floatplane.com",
             "floatplane.com"
         ],
-        "_tags": [],
+        "_tags": [
+            "working"
+        ],
         "scriptSignature": "<ommitted>",
         "scriptPublicKey": "<ommitted>",
         "_feeds": {
