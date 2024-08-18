@@ -1,6 +1,7 @@
 name: Validate JSON Schemas (Walbo)
 'on':
   workflow_dispatch: null
+  push: null
 permissions: read-all
 jobs:
   validate:

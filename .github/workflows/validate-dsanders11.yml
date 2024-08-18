@@ -1,6 +1,7 @@
 name: Validate JSON Schemas (dsanders11)
 'on':
   workflow_dispatch: null
+  push: null
 permissions: read-all
 jobs:
   validate:
