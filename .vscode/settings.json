@@ -1,18 +1,14 @@
 {
-    "json.schemas": [
-        {
-            "fileMatch": [
-                "sources.json"
-            ],
-            "url": "file:///C:/Users/blusc/AppData/Local/Temp/grayjay-sources.github.io/sources.schema.json"
-        }
-    ],
-    "json.schemas.remote": [
-        {
-            "fileMatch": [
-                "sources.json"
-            ],
-            "url": "https://github.com/grayjay-sources/grayjay-sources.github.io/raw/main/sources.schema.json"
-        }
-    ]
+  "json.schemas": [
+    {
+      "fileMatch": ["sources.json"],
+      "url": "file:///C:/Users/blusc/AppData/Local/Temp/grayjay-sources.github.io/sources.schema.json"
+    }
+  ],
+  "json.schemas.remote": [
+    {
+      "fileMatch": ["sources.json"],
+      "url": "https://github.com/grayjay-sources/grayjay-sources.github.io/raw/main/sources.schema.json"
+    }
+  ]
 }

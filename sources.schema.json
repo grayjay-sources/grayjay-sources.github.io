@@ -1,341 +1,333 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "type": "array",
-    "items": {
-        "$ref": "#/definitions/Source"
-    },
-    "definitions": {
-        "Source": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "description": {
-                    "type": "string"
-                },
-                "author": {
-                    "type": "string"
-                },
-                "authorUrl": {
-                    "type": "string"
-                },
-                "sourceUrl": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "repositoryUrl": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "scriptUrl": {
-                    "type": "string"
-                },
-                "version": {
-                    "type": "integer"
-                },
-                "iconUrl": {
-                    "type": "string"
-                },
-                "id": {
-                    "type": "string",
-                    "format": "uuid"
-                },
-                "packages": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Package"
-                    }
-                },
-                "allowEval": {
-                    "type": "boolean"
-                },
-                "allowUrls": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "_tags": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "scriptSignature": {
-                    "type": "string"
-                },
-                "scriptPublicKey": {
-                    "type": "string"
-                },
-                "_feeds": {
-                    "$ref": "#/definitions/Feeds"
-                },
-                "platformUrl": {
-                    "type": "string"
-                },
-                "authentication": {
-                    "$ref": "#/definitions/Authentication"
-                },
-                "settings": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Setting"
-                    }
-                },
-                "supportedClaimTypes": {
-                    "type": "array",
-                    "items": {
-                        "type": "integer"
-                    }
-                },
-                "constants": {
-                    "$ref": "#/definitions/Constants"
-                },
-                "_customButtons": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/CustomButton"
-                    }
-                },
-                "iconUrl_": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "sourceUrl_": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "allowAllHttpHeaderAccess": {
-                    "type": "boolean"
-                },
-                "websiteUrl": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "subscriptionRateLimit": {
-                    "type": "integer"
-                },
-                "captcha": {
-                    "$ref": "#/definitions/CAPTCHA"
-                },
-                "primaryClaimFieldType": {
-                    "type": "integer"
-                }
-            },
-            "required": [],
-            "title": "Source"
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Source"
+  },
+  "definitions": {
+    "Source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
         },
-        "CustomButton": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "text": {
-                    "type": "string"
-                },
-                "url": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "classes": {
-                    "type": "string"
-                }
-            },
-            "required": [],
-            "title": "CustomButton"
+        "description": {
+          "type": "string"
         },
-        "Feeds": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "commits": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "releases": {
-                    "type": "string",
-                    "format": "uri"
-                }
-            },
-            "required": [],
-            "title": "Feeds"
+        "author": {
+          "type": "string"
         },
-        "Authentication": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "loginUrl": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "userAgent": {
-                    "type": "string"
-                },
-                "cookiesToFind": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "headersToFind": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "cookiesExclOthers": {
-                    "type": "boolean"
-                },
-                "completionUrl": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "loginButton": {
-                    "type": "string"
-                },
-                "domainHeadersToFind": {
-                    "$ref": "#/definitions/DomainHeadersToFind"
-                },
-                "loginWarning": {
-                    "type": "string"
-                }
-            },
-            "required": [],
-            "title": "Authentication"
+        "authorUrl": {
+          "type": "string"
         },
-        "DomainHeadersToFind": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                ".twitch.tv": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                ".youtube.com": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                }
-            },
-            "required": [],
-            "title": "DomainHeadersToFind"
-        },
-        "CAPTCHA": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "userAgent": {
-                    "type": "string"
-                },
-                "captchaUrl": {
-                    "type": "null"
-                },
-                "cookiesToFind": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                }
-            },
-            "required": [],
-            "title": "CAPTCHA"
-        },
-        "Constants": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "baseUrl": {
-                    "type": "string",
-                    "format": "uri"
-                }
-            },
-            "required": [],
-            "title": "Constants"
-        },
-        "Setting": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "variable": {
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "description": {
-                    "type": "string"
-                },
-                "type": {
-                    "$ref": "#/definitions/Type"
-                },
-                "default": {
-                    "$ref": "#/definitions/Default"
-                },
-                "options": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "warningDialog": {
-                    "type": "string"
-                },
-                "dependency": {
-                    "type": "string"
-                }
-            },
-            "required": [],
-            "title": "Setting"
-        },
-        "Default": {
-            "type": "string",
-            "title": "Default Value"
-        },
-        "Package": {
-            "type": "string",
-            "enum": [
-                "Http",
-                "DOMParser",
-                "Utilities"
-            ],
-            "title": "Package"
-        },
-        "Type": {
-            "type": "string",
-            "enum": [
-                "Dropdown",
-                "Header",
-                "Boolean"
-            ],
-            "title": "Type"
-        },
-        "BoolOrString": {
-          "anyOf": [
-            {
-              "type": "boolean"
-            },
-            {
-             "$ref": "#/definitions/BoolString"
-            }
-          ]
-        },
-        "BoolString": {
+        "sourceUrl": {
           "type": "string",
-          "pattern": "^(TRUE|True|true|FALSE|False|false|YES|Yes|yes|NO|No|no|ON|On|on|OFF|Off|off|0|1|ENABLED|Enabled|enabled|DISABLED|Disabled|disabled|ENABLE|Enable|enable|DISABLE|Disable|disable)$"
+          "format": "uri"
         },
-        "NullOrString": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
+        "repositoryUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "scriptUrl": {
+          "type": "string"
+        },
+        "version": {
+          "type": "integer"
+        },
+        "iconUrl": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "packages": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Package"
+          }
+        },
+        "allowEval": {
+          "type": "boolean"
+        },
+        "allowUrls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scriptSignature": {
+          "type": "string"
+        },
+        "scriptPublicKey": {
+          "type": "string"
+        },
+        "_feeds": {
+          "$ref": "#/definitions/Feeds"
+        },
+        "platformUrl": {
+          "type": "string"
+        },
+        "authentication": {
+          "$ref": "#/definitions/Authentication"
+        },
+        "settings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Setting"
+          }
+        },
+        "supportedClaimTypes": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "constants": {
+          "$ref": "#/definitions/Constants"
+        },
+        "_customButtons": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CustomButton"
+          }
+        },
+        "iconUrl_": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sourceUrl_": {
+          "type": "string",
+          "format": "uri"
+        },
+        "allowAllHttpHeaderAccess": {
+          "type": "boolean"
+        },
+        "websiteUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "subscriptionRateLimit": {
+          "type": "integer"
+        },
+        "captcha": {
+          "$ref": "#/definitions/CAPTCHA"
+        },
+        "primaryClaimFieldType": {
+          "type": "integer"
         }
+      },
+      "required": [],
+      "title": "Source"
+    },
+    "CustomButton": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "classes": {
+          "type": "string"
+        }
+      },
+      "required": [],
+      "title": "CustomButton"
+    },
+    "Feeds": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "commits": {
+          "type": "string",
+          "format": "uri"
+        },
+        "releases": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [],
+      "title": "Feeds"
+    },
+    "Authentication": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "loginUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "userAgent": {
+          "type": "string"
+        },
+        "cookiesToFind": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "headersToFind": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "cookiesExclOthers": {
+          "type": "boolean"
+        },
+        "completionUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "loginButton": {
+          "type": "string"
+        },
+        "domainHeadersToFind": {
+          "$ref": "#/definitions/DomainHeadersToFind"
+        },
+        "loginWarning": {
+          "type": "string"
+        }
+      },
+      "required": [],
+      "title": "Authentication"
+    },
+    "DomainHeadersToFind": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        ".twitch.tv": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        ".youtube.com": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [],
+      "title": "DomainHeadersToFind"
+    },
+    "CAPTCHA": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "userAgent": {
+          "type": "string"
+        },
+        "captchaUrl": {
+          "type": "null"
+        },
+        "cookiesToFind": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [],
+      "title": "CAPTCHA"
+    },
+    "Constants": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "baseUrl": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [],
+      "title": "Constants"
+    },
+    "Setting": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "variable": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/definitions/Type"
+        },
+        "default": {
+          "$ref": "#/definitions/Default"
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "warningDialog": {
+          "type": "string"
+        },
+        "dependency": {
+          "type": "string"
+        }
+      },
+      "required": [],
+      "title": "Setting"
+    },
+    "Default": {
+      "type": "string",
+      "title": "Default Value"
+    },
+    "Package": {
+      "type": "string",
+      "enum": ["Http", "DOMParser", "Utilities"],
+      "title": "Package"
+    },
+    "Type": {
+      "type": "string",
+      "enum": ["Dropdown", "Header", "Boolean"],
+      "title": "Type"
+    },
+    "BoolOrString": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "$ref": "#/definitions/BoolString"
+        }
+      ]
+    },
+    "BoolString": {
+      "type": "string",
+      "pattern": "^(TRUE|True|true|FALSE|False|false|YES|Yes|yes|NO|No|no|ON|On|on|OFF|Off|off|0|1|ENABLED|Enabled|enabled|DISABLED|Disabled|disabled|ENABLE|Enable|enable|DISABLE|Disable|disable)$"
+    },
+    "NullOrString": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
     }
+  }
 }

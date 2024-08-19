@@ -1,9 +1,8 @@
-from dataclasses import dataclass
 import json
-from typing import List, Optional, Any, Union, TypeVar, Callable, Type, cast
+from dataclasses import dataclass
 from enum import Enum
+from typing import Any, Callable, List, Optional, Type, TypeVar, Union, cast
 from uuid import UUID
-
 
 T = TypeVar("T")
 EnumT = TypeVar("EnumT", bound=Enum)
@@ -72,18 +71,26 @@ class DomainHeadersToFind:
     youtube_com: Optional[List[str]] = None
 
     @staticmethod
-    def from_dict(obj: Any) -> 'DomainHeadersToFind':
+    def from_dict(obj: Any) -> "DomainHeadersToFind":
         assert isinstance(obj, dict)
-        twitch_tv = from_union([lambda x: from_list(from_str, x), from_none], obj.get(".twitch.tv"))
-        youtube_com = from_union([lambda x: from_list(from_str, x), from_none], obj.get(".youtube.com"))
+        twitch_tv = from_union(
+            [lambda x: from_list(from_str, x), from_none], obj.get(".twitch.tv")
+        )
+        youtube_com = from_union(
+            [lambda x: from_list(from_str, x), from_none], obj.get(".youtube.com")
+        )
         return DomainHeadersToFind(twitch_tv, youtube_com)
 
     def to_dict(self) -> dict:
         result: dict = {}
         if self.twitch_tv is not None:
-            result[".twitch.tv"] = from_union([lambda x: from_list(from_str, x), from_none], self.twitch_tv)
+            result[".twitch.tv"] = from_union(
+                [lambda x: from_list(from_str, x), from_none], self.twitch_tv
+            )
         if self.youtube_com is not None:
-            result[".youtube.com"] = from_union([lambda x: from_list(from_str, x), from_none], self.youtube_com)
+            result[".youtube.com"] = from_union(
+                [lambda x: from_list(from_str, x), from_none], self.youtube_com
+            )
         return result
 
 
@@ -100,18 +107,36 @@ class Authentication:
     login_warning: Optional[str] = None
 
     @staticmethod
-    def from_dict(obj: Any) -> 'Authentication':
+    def from_dict(obj: Any) -> "Authentication":
         assert isinstance(obj, dict)
         login_url = from_str(obj.get("loginUrl"))
         user_agent = from_union([from_str, from_none], obj.get("userAgent"))
-        cookies_to_find = from_union([lambda x: from_list(from_str, x), from_none], obj.get("cookiesToFind"))
-        headers_to_find = from_union([lambda x: from_list(from_str, x), from_none], obj.get("headersToFind"))
-        cookies_excl_others = from_union([from_bool, from_none], obj.get("cookiesExclOthers"))
+        cookies_to_find = from_union(
+            [lambda x: from_list(from_str, x), from_none], obj.get("cookiesToFind")
+        )
+        headers_to_find = from_union(
+            [lambda x: from_list(from_str, x), from_none], obj.get("headersToFind")
+        )
+        cookies_excl_others = from_union(
+            [from_bool, from_none], obj.get("cookiesExclOthers")
+        )
         completion_url = from_union([from_str, from_none], obj.get("completionUrl"))
         login_button = from_union([from_str, from_none], obj.get("loginButton"))
-        domain_headers_to_find = from_union([DomainHeadersToFind.from_dict, from_none], obj.get("domainHeadersToFind"))
+        domain_headers_to_find = from_union(
+            [DomainHeadersToFind.from_dict, from_none], obj.get("domainHeadersToFind")
+        )
         login_warning = from_union([from_str, from_none], obj.get("loginWarning"))
-        return Authentication(login_url, user_agent, cookies_to_find, headers_to_find, cookies_excl_others, completion_url, login_button, domain_headers_to_find, login_warning)
+        return Authentication(
+            login_url,
+            user_agent,
+            cookies_to_find,
+            headers_to_find,
+            cookies_excl_others,
+            completion_url,
+            login_button,
+            domain_headers_to_find,
+            login_warning,
+        )
 
     def to_dict(self) -> dict:
         result: dict = {}
@@ -119,19 +144,32 @@ class Authentication:
         if self.user_agent is not None:
             result["userAgent"] = from_union([from_str, from_none], self.user_agent)
         if self.cookies_to_find is not None:
-            result["cookiesToFind"] = from_union([lambda x: from_list(from_str, x), from_none], self.cookies_to_find)
+            result["cookiesToFind"] = from_union(
+                [lambda x: from_list(from_str, x), from_none], self.cookies_to_find
+            )
         if self.headers_to_find is not None:
-            result["headersToFind"] = from_union([lambda x: from_list(from_str, x), from_none], self.headers_to_find)
+            result["headersToFind"] = from_union(
+                [lambda x: from_list(from_str, x), from_none], self.headers_to_find
+            )
         if self.cookies_excl_others is not None:
-            result["cookiesExclOthers"] = from_union([from_bool, from_none], self.cookies_excl_others)
+            result["cookiesExclOthers"] = from_union(
+                [from_bool, from_none], self.cookies_excl_others
+            )
         if self.completion_url is not None:
-            result["completionUrl"] = from_union([from_str, from_none], self.completion_url)
+            result["completionUrl"] = from_union(
+                [from_str, from_none], self.completion_url
+            )
         if self.login_button is not None:
             result["loginButton"] = from_union([from_str, from_none], self.login_button)
         if self.domain_headers_to_find is not None:
-            result["domainHeadersToFind"] = from_union([lambda x: to_class(DomainHeadersToFind, x), from_none], self.domain_headers_to_find)
+            result["domainHeadersToFind"] = from_union(
+                [lambda x: to_class(DomainHeadersToFind, x), from_none],
+                self.domain_headers_to_find,
+            )
         if self.login_warning is not None:
-            result["loginWarning"] = from_union([from_str, from_none], self.login_warning)
+            result["loginWarning"] = from_union(
+                [from_str, from_none], self.login_warning
+            )
         return result
 
 
@@ -142,7 +180,7 @@ class CAPTCHA:
     cookies_to_find: List[str]
 
     @staticmethod
-    def from_dict(obj: Any) -> 'CAPTCHA':
+    def from_dict(obj: Any) -> "CAPTCHA":
         assert isinstance(obj, dict)
         user_agent = from_str(obj.get("userAgent"))
         captcha_url = from_none(obj.get("captchaUrl"))
@@ -162,7 +200,7 @@ class Constants:
     base_url: str
 
     @staticmethod
-    def from_dict(obj: Any) -> 'Constants':
+    def from_dict(obj: Any) -> "Constants":
         assert isinstance(obj, dict)
         base_url = from_str(obj.get("baseUrl"))
         return Constants(base_url)
@@ -180,7 +218,7 @@ class CustomButton:
     classes: str
 
     @staticmethod
-    def from_dict(obj: Any) -> 'CustomButton':
+    def from_dict(obj: Any) -> "CustomButton":
         assert isinstance(obj, dict)
         text = from_str(obj.get("text"))
         url = from_str(obj.get("url"))
@@ -219,17 +257,36 @@ class Setting:
     dependency: Optional[str] = None
 
     @staticmethod
-    def from_dict(obj: Any) -> 'Setting':
+    def from_dict(obj: Any) -> "Setting":
         assert isinstance(obj, dict)
         variable = from_str(obj.get("variable"))
         name = from_str(obj.get("name"))
         description = from_str(obj.get("description"))
         type = TypeEnum(obj.get("type"))
-        default = from_union([from_none, lambda x: from_union([from_stringified_bool, lambda x: int(x)], from_str(x))], obj.get("default"))
-        options = from_union([lambda x: from_list(from_str, x), from_none], obj.get("options"))
+        default = from_union(
+            [
+                from_none,
+                lambda x: from_union(
+                    [from_stringified_bool, lambda x: int(x)], from_str(x)
+                ),
+            ],
+            obj.get("default"),
+        )
+        options = from_union(
+            [lambda x: from_list(from_str, x), from_none], obj.get("options")
+        )
         warning_dialog = from_union([from_str, from_none], obj.get("warningDialog"))
         dependency = from_union([from_str, from_none], obj.get("dependency"))
-        return Setting(variable, name, description, type, default, options, warning_dialog, dependency)
+        return Setting(
+            variable,
+            name,
+            description,
+            type,
+            default,
+            options,
+            warning_dialog,
+            dependency,
+        )
 
     def to_dict(self) -> dict:
         result: dict = {}
@@ -238,11 +295,26 @@ class Setting:
         result["description"] = from_str(self.description)
         result["type"] = to_enum(TypeEnum, self.type)
         if self.default is not None:
-            result["default"] = from_union([lambda x: from_none((lambda x: is_type(type(None), x))(x)), lambda x: from_str((lambda x: str((lambda x: is_type(bool, x))(x)).lower())(x)), lambda x: from_str((lambda x: str((lambda x: is_type(int, x))(x)))(x))], self.default)
+            result["default"] = from_union(
+                [
+                    lambda x: from_none((lambda x: is_type(type(None), x))(x)),
+                    lambda x: from_str(
+                        (lambda x: str((lambda x: is_type(bool, x))(x)).lower())(x)
+                    ),
+                    lambda x: from_str(
+                        (lambda x: str((lambda x: is_type(int, x))(x)))(x)
+                    ),
+                ],
+                self.default,
+            )
         if self.options is not None:
-            result["options"] = from_union([lambda x: from_list(from_str, x), from_none], self.options)
+            result["options"] = from_union(
+                [lambda x: from_list(from_str, x), from_none], self.options
+            )
         if self.warning_dialog is not None:
-            result["warningDialog"] = from_union([from_str, from_none], self.warning_dialog)
+            result["warningDialog"] = from_union(
+                [from_str, from_none], self.warning_dialog
+            )
         if self.dependency is not None:
             result["dependency"] = from_union([from_str, from_none], self.dependency)
         return result
@@ -254,7 +326,7 @@ class Feeds:
     releases: Optional[str]
 
     @staticmethod
-    def from_dict(obj: Any) -> 'Feeds':
+    def from_dict(obj: Any) -> "Feeds":
         assert isinstance(obj, dict)
         commits = from_union([from_str, from_none], obj.get("commits"))
         releases = from_union([from_str, from_none], obj.get("releases"))
@@ -304,7 +376,7 @@ class SourceListElement:
     feeds: Optional[Feeds] = None
 
     @staticmethod
-    def from_dict(obj: Any) -> 'SourceListElement':
+    def from_dict(obj: Any) -> "SourceListElement":
         assert isinstance(obj, dict)
         name = from_str(obj.get("name"))
         description = from_str(obj.get("description"))
@@ -321,23 +393,75 @@ class SourceListElement:
         allow_urls = from_list(from_str, obj.get("allowUrls"))
         tags = from_list(from_str, obj.get("_tags"))
         script_signature = from_union([from_str, from_none], obj.get("scriptSignature"))
-        script_public_key = from_union([from_str, from_none], obj.get("scriptPublicKey"))
+        script_public_key = from_union(
+            [from_str, from_none], obj.get("scriptPublicKey")
+        )
         platform_url = from_union([from_str, from_none], obj.get("platformUrl"))
-        authentication = from_union([Authentication.from_dict, from_none], obj.get("authentication"))
-        settings = from_union([lambda x: from_list(Setting.from_dict, x), from_none], obj.get("settings"))
-        supported_claim_types = from_union([lambda x: from_list(from_int, x), from_none], obj.get("supportedClaimTypes"))
+        authentication = from_union(
+            [Authentication.from_dict, from_none], obj.get("authentication")
+        )
+        settings = from_union(
+            [lambda x: from_list(Setting.from_dict, x), from_none], obj.get("settings")
+        )
+        supported_claim_types = from_union(
+            [lambda x: from_list(from_int, x), from_none],
+            obj.get("supportedClaimTypes"),
+        )
         constants = from_union([Constants.from_dict, from_none], obj.get("constants"))
-        custom_buttons = from_union([lambda x: from_list(CustomButton.from_dict, x), from_none], obj.get("_customButtons"))
+        custom_buttons = from_union(
+            [lambda x: from_list(CustomButton.from_dict, x), from_none],
+            obj.get("_customButtons"),
+        )
         source_list_icon_url = from_union([from_str, from_none], obj.get("iconUrl_"))
         nsfw = from_union([from_bool, from_none], obj.get("nsfw"))
-        source_list_source_url = from_union([from_str, from_none], obj.get("sourceUrl_"))
-        allow_all_http_header_access = from_union([from_bool, from_none], obj.get("allowAllHttpHeaderAccess"))
+        source_list_source_url = from_union(
+            [from_str, from_none], obj.get("sourceUrl_")
+        )
+        allow_all_http_header_access = from_union(
+            [from_bool, from_none], obj.get("allowAllHttpHeaderAccess")
+        )
         website_url = from_union([from_str, from_none], obj.get("websiteUrl"))
-        subscription_rate_limit = from_union([from_int, from_none], obj.get("subscriptionRateLimit"))
+        subscription_rate_limit = from_union(
+            [from_int, from_none], obj.get("subscriptionRateLimit")
+        )
         captcha = from_union([CAPTCHA.from_dict, from_none], obj.get("captcha"))
-        primary_claim_field_type = from_union([from_int, from_none], obj.get("primaryClaimFieldType"))
+        primary_claim_field_type = from_union(
+            [from_int, from_none], obj.get("primaryClaimFieldType")
+        )
         feeds = Feeds.from_dict(obj.get("_feeds"))
-        return SourceListElement(name, description, author, author_url, source_url, repository_url, script_url, version, icon_url, id, packages, allow_eval, allow_urls, tags, script_signature, script_public_key, platform_url, authentication, settings, supported_claim_types, constants, custom_buttons, source_list_icon_url, nsfw, source_list_source_url, allow_all_http_header_access, website_url, subscription_rate_limit, captcha, primary_claim_field_type, feeds)
+        return SourceListElement(
+            name,
+            description,
+            author,
+            author_url,
+            source_url,
+            repository_url,
+            script_url,
+            version,
+            icon_url,
+            id,
+            packages,
+            allow_eval,
+            allow_urls,
+            tags,
+            script_signature,
+            script_public_key,
+            platform_url,
+            authentication,
+            settings,
+            supported_claim_types,
+            constants,
+            custom_buttons,
+            source_list_icon_url,
+            nsfw,
+            source_list_source_url,
+            allow_all_http_header_access,
+            website_url,
+            subscription_rate_limit,
+            captcha,
+            primary_claim_field_type,
+            feeds,
+        )
 
     def to_dict(self) -> dict:
         result: dict = {}
@@ -357,59 +481,99 @@ class SourceListElement:
         if self.tags is not None:
             result["_tags"] = from_list(from_str, self.tags)
         if self.script_signature is not None:
-            result["scriptSignature"] = from_union([from_str, from_none], self.script_signature)
+            result["scriptSignature"] = from_union(
+                [from_str, from_none], self.script_signature
+            )
         if self.script_public_key is not None:
-            result["scriptPublicKey"] = from_union([from_str, from_none], self.script_public_key)
+            result["scriptPublicKey"] = from_union(
+                [from_str, from_none], self.script_public_key
+            )
         if self.feeds is not None:
             result["_feeds"] = Feeds.to_dict(self.feeds)
         if self.platform_url is not None:
             result["platformUrl"] = from_union([from_str, from_none], self.platform_url)
         if self.authentication is not None:
-            result["authentication"] = from_union([lambda x: to_class(Authentication, x), from_none], self.authentication)
+            result["authentication"] = from_union(
+                [lambda x: to_class(Authentication, x), from_none], self.authentication
+            )
         if self.settings is not None:
-            result["settings"] = from_union([lambda x: from_list(lambda x: to_class(Setting, x), x), from_none], self.settings)
+            result["settings"] = from_union(
+                [lambda x: from_list(lambda x: to_class(Setting, x), x), from_none],
+                self.settings,
+            )
         if self.supported_claim_types is not None:
-            result["supportedClaimTypes"] = from_union([lambda x: from_list(from_int, x), from_none], self.supported_claim_types)
+            result["supportedClaimTypes"] = from_union(
+                [lambda x: from_list(from_int, x), from_none],
+                self.supported_claim_types,
+            )
         if self.constants is not None:
-            result["constants"] = from_union([lambda x: to_class(Constants, x), from_none], self.constants)
+            result["constants"] = from_union(
+                [lambda x: to_class(Constants, x), from_none], self.constants
+            )
         if self.custom_buttons is not None:
-            result["_customButtons"] = from_union([lambda x: from_list(lambda x: to_class(CustomButton, x), x), from_none], self.custom_buttons)
+            result["_customButtons"] = from_union(
+                [
+                    lambda x: from_list(lambda x: to_class(CustomButton, x), x),
+                    from_none,
+                ],
+                self.custom_buttons,
+            )
         if self.source_list_icon_url is not None:
-            result["iconUrl_"] = from_union([from_str, from_none], self.source_list_icon_url)
+            result["iconUrl_"] = from_union(
+                [from_str, from_none], self.source_list_icon_url
+            )
         if self.nsfw is not None:
             result["nsfw"] = from_union([from_bool, from_none], self.nsfw)
         if self.source_list_source_url is not None:
-            result["sourceUrl_"] = from_union([from_str, from_none], self.source_list_source_url)
+            result["sourceUrl_"] = from_union(
+                [from_str, from_none], self.source_list_source_url
+            )
         if self.allow_all_http_header_access is not None:
-            result["allowAllHttpHeaderAccess"] = from_union([from_bool, from_none], self.allow_all_http_header_access)
+            result["allowAllHttpHeaderAccess"] = from_union(
+                [from_bool, from_none], self.allow_all_http_header_access
+            )
         if self.website_url is not None:
             result["websiteUrl"] = from_union([from_str, from_none], self.website_url)
         if self.subscription_rate_limit is not None:
-            result["subscriptionRateLimit"] = from_union([from_int, from_none], self.subscription_rate_limit)
+            result["subscriptionRateLimit"] = from_union(
+                [from_int, from_none], self.subscription_rate_limit
+            )
         if self.captcha is not None:
-            result["captcha"] = from_union([lambda x: to_class(CAPTCHA, x), from_none], self.captcha)
+            result["captcha"] = from_union(
+                [lambda x: to_class(CAPTCHA, x), from_none], self.captcha
+            )
         if self.primary_claim_field_type is not None:
-            result["primaryClaimFieldType"] = from_union([from_int, from_none], self.primary_claim_field_type)
+            result["primaryClaimFieldType"] = from_union(
+                [from_int, from_none], self.primary_claim_field_type
+            )
         return result
 
 
 def source_list_from_dict(s: Any) -> List[SourceListElement]:
     return from_list(SourceListElement.from_dict, s)
+
+
 def source_list_to_dict(x: List[SourceListElement]) -> Any:
     return from_list(lambda x: to_class(SourceListElement, x), x)
 
+
 def source_list_from_file(json_path: str) -> List[SourceListElement]:
-    with open(json_path, 'r', encoding='utf-8') as file:
+    with open(json_path, "r", encoding="utf-8") as file:
         data = json.load(file)
     return source_list_from_dict(data)
+
+
 def source_list_to_file(json_path: str, source_list: List[SourceListElement], indent=4):
     data = source_list_to_dict(source_list)
-    with open(json_path, 'w', encoding='utf-8') as file:
+    with open(json_path, "w", encoding="utf-8") as file:
         json.dump(data, file, indent=indent)
 
+
 def dict_from_file(json_path: str) -> List[SourceListElement]:
-    with open(json_path, 'r', encoding='utf-8') as file:
+    with open(json_path, "r", encoding="utf-8") as file:
         return json.load(file)
+
+
 def dict_to_file(json_path: str, data: dict, indent=4):
-    with open(json_path, 'w', encoding='utf-8') as file:
+    with open(json_path, "w", encoding="utf-8") as file:
         json.dump(data, file, indent=indent)
