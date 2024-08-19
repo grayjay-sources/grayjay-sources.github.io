@@ -12,20 +12,20 @@ jobs:
       statuses: write
       actions: write
     steps:
-      # - name: Create Token
-      #   id: create_token
-      #   uses: tibdex/github-app-token@v2.1.0
-      #   with:
-      #     app_id: ${{ secrets.APP_ID }}
-      #     private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - name: Create Token
+        id: create_token
+        uses: tibdex/github-app-token@v2.1.0
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Checkout code
         continue-on-error: true
         uses: actions/checkout@main
         with:
           fetch-depth: 0
-          # token: ${{ steps.create_token.outputs.token }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+          token: ${{ steps.create_token.outputs.token }}
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
       - name: Super-linter
         continue-on-error: true
         uses: super-linter/super-linter@main
