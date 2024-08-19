@@ -1,6 +1,7 @@
-name: Lint all files
+name: Lint changed files
 "on":
-  workflow_dispatch: null
+  pull_request: null
+  push: null
 jobs:
   build:
     name: Lint
@@ -30,7 +31,7 @@ jobs:
         uses: super-linter/super-linter@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_ALL_CODEBASE: false
           ENABLE_GITHUB_ACTIONS_STEP_SUMMARY: false
           SAVE_SUPER_LINTER_SUMMARY: false
           SAVE_SUPER_LINTER_OUTPUT: false
