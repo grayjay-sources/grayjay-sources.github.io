@@ -23,6 +23,7 @@ jobs:
         uses: actions/checkout@main
         with:
           fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref || github.head_ref || github.ref }}
           token: ${{ steps.create_token.outputs.token }}
         # env:
         #   GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
@@ -89,6 +90,7 @@ jobs:
         continue-on-error: true
         uses: stefanzweifel/git-auto-commit-action@master
         with:
+          branch: ${{ github.event.pull_request.head.ref || github.head_ref || github.ref }}
           commit_message: "[bot/no ci/super-linter] fix formatting\n\nskip-checks: true"
         # env:
         #   GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
