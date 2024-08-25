@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@main
         with:
           fetch-depth: 0
-          ref: ${{ github.head_ref }}
+          ref: ${{ github.event.pull_request.head.ref || github.head_ref || github.ref }}
 
       - name: Schema (walbo/validate-json)
         continue-on-error: true
@@ -83,4 +83,5 @@ jobs:
         continue-on-error: true
         uses: stefanzweifel/git-auto-commit-action@master
         with:
+          branch: ${{ github.event.pull_request.head.ref || github.head_ref || github.ref }}
           commit_message: "[bot/no ci/json-utils] Sort sources.json\n\nskip-checks: true"
