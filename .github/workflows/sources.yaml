@@ -6,8 +6,6 @@ on:
     paths:
       - "sources.json"
   pull_request_target:
-    types:
-      - opened
     paths:
       - "sources.json"
 
