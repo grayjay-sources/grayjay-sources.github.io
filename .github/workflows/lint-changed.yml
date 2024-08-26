@@ -4,6 +4,7 @@ name: Lint changed files
   pull_request_target:
     types:
       - opened
+      - synchronize
 jobs:
   build:
     name: Lint
