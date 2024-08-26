@@ -1,7 +1,9 @@
 name: Lint changed files
 "on":
-  pull_request: null
   push: null
+  pull_request_target:
+    types:
+      - opened
 jobs:
   build:
     name: Lint

@@ -5,7 +5,9 @@ on:
   push:
     paths:
       - "sources.json"
-  pull_request:
+  pull_request_target:
+    types:
+      - opened
     paths:
       - "sources.json"
 
