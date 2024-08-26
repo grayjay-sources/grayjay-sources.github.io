@@ -2,6 +2,9 @@ name: Lint changed files
 "on":
   push: null
   pull_request_target:
+    types:
+      - opened
+      - synchronize
 jobs:
   build:
     name: Lint
