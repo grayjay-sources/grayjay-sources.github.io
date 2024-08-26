@@ -1043,6 +1043,40 @@
         }
     },
     {
+        "name": "TikTok (Commmunity)",
+        "description": "Watch millions of short-form videos on TikTok, this is an unofficial community plugin",
+        "author": "IntegerOverflow",
+        "authorUrl": "https://github.com/IntegerOverfl0w",
+        "sourceUrl": "https://integeroverfl0w.github.io/grayjay-tiktok/TiktokConfig.json",
+        "repositoryUrl": "https://github.com/IntegerOverfl0w/grayjay-tiktok",
+        "scriptUrl": "https://integeroverfl0w.github.io/grayjay-tiktok/TiktokScript.js",
+        "version": 3,
+        "iconUrl": "https://integeroverfl0w.github.io/grayjay-tiktok/tiktok.png",
+        "id": "905bbae8-da0f-4b1a-a35b-527eb337c976",
+        "packages": [
+            "Http",
+            "DOMParser"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "everywhere"
+        ],
+        "_tags": [
+            "unofficial",
+            "maintained",
+            "wip"
+        ],
+        "scriptSignature": "a2HeFaKzRW/sMwBrdagRti/vf1QF+ce47jJJTwH3iKIBdbpyAKR0QFr1xvnpEXIXKN6kBG1M9q3Eqpiyp4ztSaNUYSISXojfuP5hGh18/xfsahrW6a3PXHnQr8hPkl2tnAK7w/f62usVFilsTfhl13lpP/oeggCUE05xy/noSjBiDFdlIckh2V/sq3Dref8WpJtyaJIS/iQ3Ckq9r4aMSf0Y7rC9sNBwA0G0sJ0BQ4MQbjN08RzDAwAkwsHUqsJDLql7nQC8g/Bfnz3OmcoqHn+kcoplvIYMrv2SxQdQjFqvKBX71JRsGRJLhukfGsBgISvoVbTlz90fMY1uSMojYA==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuIEFVvy+lLHB4cQoSQu4c/4i+pdjP5RH7CxgIMIs4kqjTf6hh0smO55GVN9Cer18j2pixEPNV5i4P+9iMsrg5bK4TVhbbsCm6UIUf4ohzTr/h0pmRRjNxe6EhFEiWCQSSyNYDeTLgYstxhYO4hsZFYJ5VW8HRw7vQ7LHUwkexJ2GB3SKhtQQy9yQnWaFtaQnAW+hsUZYrQ8AQzUSihoOtrullMpv00hucgs7UybpLW2JAG7De7RbglO2r/wr9ZB6HiGAnWNOx7av5qDJIQFH4C7y9YDHdziMx3QgW+P0xwtNajFig9vM6x0HJtWnpFaKqAlmhU/AWLfwf7OEDTNRjQIDAQAB",
+        "_feeds": {
+            "commits": "https://github.com/integeroverfl0w/grayjay-tiktok/commits/main.atom",
+            "releases": "https://github.com/integeroverfl0w/grayjay-tiktok/releases.atom"
+        },
+        "platformUrl": "https://tiktok.com",
+        "sourceUrl_": "https://integeroverfl0w.github.io/grayjay-tiktok/TiktokConfig.json",
+        "allowAllHttpHeaderAccess": true
+    },
+    {
         "name": "TikTok (Unreleased)",
         "description": "Watch millions of short-form videos on TikTok",
         "author": "FUTO",
@@ -1080,40 +1114,6 @@
             ]
         },
         "sourceUrl_": "https://plugins.grayjay.app/TikTok/TikTokConfig.json",
-        "allowAllHttpHeaderAccess": true
-    },
-    {
-        "name": "TikTok (Commmunity)",
-        "description": "Watch millions of short-form videos on TikTok, this is an unofficial community plugin",
-        "author": "IntegerOverflow",
-        "authorUrl": "https://github.com/IntegerOverfl0w",
-        "sourceUrl": "https://integeroverfl0w.github.io/grayjay-tiktok/TiktokConfig.json",
-        "repositoryUrl": "https://github.com/IntegerOverfl0w/grayjay-tiktok",
-        "scriptUrl": "https://integeroverfl0w.github.io/grayjay-tiktok/TiktokScript.js",
-        "version": 3,
-        "iconUrl": "https://integeroverfl0w.github.io/grayjay-tiktok/tiktok.png",
-        "id": "905bbae8-da0f-4b1a-a35b-527eb337c976",
-        "packages": [
-            "Http",
-            "DOMParser"
-        ],
-        "allowEval": false,
-        "allowUrls": [
-            "everywhere"
-        ],
-        "_tags": [
-            "unofficial",
-            "maintained",
-            "wip"
-        ],
-        "scriptSignature": "a2HeFaKzRW/sMwBrdagRti/vf1QF+ce47jJJTwH3iKIBdbpyAKR0QFr1xvnpEXIXKN6kBG1M9q3Eqpiyp4ztSaNUYSISXojfuP5hGh18/xfsahrW6a3PXHnQr8hPkl2tnAK7w/f62usVFilsTfhl13lpP/oeggCUE05xy/noSjBiDFdlIckh2V/sq3Dref8WpJtyaJIS/iQ3Ckq9r4aMSf0Y7rC9sNBwA0G0sJ0BQ4MQbjN08RzDAwAkwsHUqsJDLql7nQC8g/Bfnz3OmcoqHn+kcoplvIYMrv2SxQdQjFqvKBX71JRsGRJLhukfGsBgISvoVbTlz90fMY1uSMojYA==",
-        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuIEFVvy+lLHB4cQoSQu4c/4i+pdjP5RH7CxgIMIs4kqjTf6hh0smO55GVN9Cer18j2pixEPNV5i4P+9iMsrg5bK4TVhbbsCm6UIUf4ohzTr/h0pmRRjNxe6EhFEiWCQSSyNYDeTLgYstxhYO4hsZFYJ5VW8HRw7vQ7LHUwkexJ2GB3SKhtQQy9yQnWaFtaQnAW+hsUZYrQ8AQzUSihoOtrullMpv00hucgs7UybpLW2JAG7De7RbglO2r/wr9ZB6HiGAnWNOx7av5qDJIQFH4C7y9YDHdziMx3QgW+P0xwtNajFig9vM6x0HJtWnpFaKqAlmhU/AWLfwf7OEDTNRjQIDAQAB",
-        "_feeds": {
-            "commits": "https://github.com/integeroverfl0w/grayjay-tiktok/commits/main.atom",
-            "releases": "https://github.com/integeroverfl0w/grayjay-tiktok/releases.atom"
-        },
-        "platformUrl": "https://tiktok.com",
-        "sourceUrl_": "https://integeroverfl0w.github.io/grayjay-tiktok/TiktokConfig.json",
         "allowAllHttpHeaderAccess": true
     },
     {
