@@ -27,6 +27,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref || github.head_ref || github.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name || github.head_ref.repo.full_name || github.ref.repo.full_name }}
           token: ${{ steps.create_token.outputs.token || secrets.WORKFLOW_TOKEN }}
       - name: Super-linter
         uses: super-linter/super-linter@main
