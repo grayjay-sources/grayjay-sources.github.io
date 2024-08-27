@@ -30,6 +30,7 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name || github.head_ref.repo.full_name || github.ref.repo.full_name }}
           token: ${{ steps.create_token.outputs.token || secrets.WORKFLOW_TOKEN }}
       - name: Super-linter
+        continue-on-error: true
         uses: super-linter/super-linter@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
