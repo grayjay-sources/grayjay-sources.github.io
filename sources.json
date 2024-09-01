@@ -215,7 +215,7 @@
         "allowUrls": [
             "dailymotion.com",
             "*.dailymotion.com",
-            ".dailymotion.com".
+            ".dailymotion.com",
             "graphql.api.dailymotion.com",
             "vod.cf.dmcdn.net",
             "*.dmcdn.net",
