@@ -227,7 +227,6 @@
             "maintained",
             "working"
         ],
-        "scriptSignature": "MeLvuvX/SgRRMVBVyg0sSo9yV7HKcXK8/x3Kkc8a2tSRe/KBSOTmddgORkyQ4R89OQxY2BAi30HE0YXCEDRgm6J1S6giVU1t/Xn27ymkSrLqO/LmTn6Hw2V+3D8tzD33u8RjkcpY2wonOB4LSh7PWSAutkSxKklLhXgwm594lsyiJdGyE1WBltcuwkDIf8Uqh+hxlpVaWThg5OYSLNPbF6uejm4KjtDvwu80FOodMKc28KPJgvBq8sdHOPC7qmAe24E1cvoyAFCzZWuDbUMtTKkqDRV3SjEbTOztGNwD+w3i6b50Bgqht58La7v+GyGWxTxMcFumPPlcGnK/qVbNuA==",
         "scriptSignature": "",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
         "_feeds": {
@@ -496,7 +495,7 @@
             }
         ]
     },
-        {
+    {
         "name": "Dailymotion  (Commmunity)",
         "description": "The latest news, sports, music and entertainment videos on Dailymotion",
         "author": "Stefan Cruz",
