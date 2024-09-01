@@ -461,7 +461,7 @@
         "description": "The latest news, sports, music and entertainment videos on Dailymotion",
         "author": "Futo",
         "authorUrl": "https://futo.org",
-        "sourceUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/raw/main/NicoConfig.json",
+        "sourceUrl": "https://gitlab.futo.org/videostreaming/plugins/dailymotion/-/raw/main/DailymotionConfig.json",
         "sourceUrl_": "https://plugins.grayjay.app/Dailymotion/DailymotionConfig.json",
         "scriptUrl": "./DailymotionScript.js",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/dailymotion",
