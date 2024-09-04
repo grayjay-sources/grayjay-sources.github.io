@@ -33,9 +33,9 @@ function setParams (params) {
     const [key, value] = params.split('=')
     setParam(key, value)
   }
-  console.log(`New URL: ${url}`);
-  window.location.replace(url);
-  window.location.href = url;
+  console.log(`New URL: ${url}`)
+  window.location.replace(url)
+  window.location.href = url
 }
 
 function getSourceFeeds (data, key) {
@@ -87,16 +87,21 @@ function getFavicon (url, size = 128) {
   url = new URL(url)
   return `https://www.google.com/s2/favicons?domain=${url.hostname}&sz=${size}` // `https://icons.adguard.org/icon?domain=${url.hostname}`
 }
-function itemShouldBeFilteredAccordingTo(item, key) {
-  const result = item.hasOwnProperty('_tags') && !isQueryParamSet(key) && item._tags.includes(key);
-  if (result) console.warn(`Item ${item.name} filtered by ${key}`);
-  return result;
+function itemShouldBeFilteredAccordingTo (item, key) {
+  const result =
+    item.hasOwnProperty('_tags') &&
+    !isQueryParamSet(key) &&
+    item._tags.includes(key)
+  if (result) console.warn(`Item ${item.name} filtered by ${key}`)
+  return result
 }
-function itemShouldBeFiltered(item) { 
-  return itemShouldBeFilteredAccordingTo(item, 'archived')
-        || itemShouldBeFilteredAccordingTo(item, 'nsfw')
+function itemShouldBeFiltered (item) {
+  return (
+    itemShouldBeFilteredAccordingTo(item, 'archived') ||
+    itemShouldBeFilteredAccordingTo(item, 'nsfw')
+  )
 }
-function generateCard(data) {
+function generateCard (data) {
   const sourceUrlEncoded = encodeURIComponent(data.sourceUrl)
   console.log(sourceUrlEncoded)
   const installUrl = `grayjay://plugin/${data.sourceUrl}`
@@ -183,7 +188,7 @@ function filterItems (items) {
     return !Array.from(hiddenTags).some((tag) => itemTags.has(tag))
   })
 }
-async function populateCardsContainer(url) {
+async function populateCardsContainer (url) {
   try {
     const response = await fetch(url)
     const data = await response.json()
@@ -194,10 +199,10 @@ async function populateCardsContainer(url) {
     //   'archived': 'archived'
     // }
     data.forEach((item) => {
-      item = fixData(item);
-      const cardHtml = generateCard(item);
-      cardsContainer.innerHTML += cardHtml;
-    });
+      item = fixData(item)
+      const cardHtml = generateCard(item)
+      cardsContainer.innerHTML += cardHtml
+    })
 
     const commitFeedsUrl = getSourceFeeds(data, 'commits')
     addNavbarItem('Source Commits RSS Feed', commitFeedsUrl, true)
