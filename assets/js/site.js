@@ -33,7 +33,7 @@ function setParams(params) {
     const [key, value] = params.split('=');
     setParam(key, value);
   }
-  window.location.assign(url);
+  window.location.href = url;
 }
 
 function getSourceFeeds(data, key) {
