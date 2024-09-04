@@ -1,22 +1,42 @@
-function removeLast (inputString, separator) {
+function removeLast(inputString, separator) {
   const lastIndex = inputString.lastIndexOf(separator)
   if (lastIndex > 0) return inputString.substring(0, lastIndex)
   else return ''
 }
-function isQueryParamSet (paramName) {
+function isQueryParamSet(paramName) {
   const searchParams = new URLSearchParams(window.location.search)
   return searchParams.has(paramName)
 }
-function isRelativeUrl (url) {
+function isRelativeUrl(url) {
   return url.startsWith('./')
 }
-function getAbsoluteUrl (url, baseUrl) {
+function getAbsoluteUrl(url, baseUrl) {
   if (isRelativeUrl(url)) {
     return url.replace('./', baseUrl)
   }
   return url
 }
-function getSourceFeeds (data, key) {
+function setParams(params) {
+  const url = new URL(window.location.href);
+  const setParam = (key, value) => {
+    if (value !== undefined && value !== null) {
+      url.searchParams.set(key, value.toString());
+    } else /* if (!url.searchParams.has(key)) */ {
+      url.searchParams.set(key, 1);
+    }
+  };
+  if (Array.isArray(params)) {
+    params.forEach(setParam);
+  } else if (typeof params === 'object' && params !== null) {
+    Object.entries(params).forEach(setParam);
+  } else if (typeof params === 'string') {
+    const [key, value] = params.split('=');
+    setParam(key, value);
+  }
+  window.location.assign(url);
+}
+
+function getSourceFeeds(data, key) {
   const urls = []
   data.forEach((item) => {
     if (!item.hasOwnProperty('_feeds')) return
@@ -35,7 +55,7 @@ function getSourceFeeds (data, key) {
   console.log('Final URL:', finalUrl) // Log final URL
   return finalUrl
 }
-function fixData (data) {
+function fixData(data) {
   data.baseUrl = removeLast(data.sourceUrl, '/') + '/'
   if (!data.hasOwnProperty('_feeds')) data._feeds = {}
   if (!data.hasOwnProperty('_tags')) data._tags = {}
@@ -51,11 +71,11 @@ function fixData (data) {
   console.log(data)
   return data
 }
-function generateQrCode (url) {
+function generateQrCode(url) {
   const qr = new QRious({ value: url })
   return `<img class="source-qrcode" alt="QR Code" src="${qr.toDataURL()}" style="display:none"></img>`
 }
-function getFavicon (url, size = 128) {
+function getFavicon(url, size = 128) {
   console.log(url)
   if (!url.startsWith('http')) {
     url = `http://${url}`
@@ -63,7 +83,7 @@ function getFavicon (url, size = 128) {
   url = new URL(url)
   return `https://www.google.com/s2/favicons?domain=${url.hostname}&sz=${size}` // `https://icons.adguard.org/icon?domain=${url.hostname}`
 }
-function generateCard (data) {
+function generateCard(data) {
   const sourceUrlEncoded = encodeURIComponent(data.sourceUrl)
   console.log(sourceUrlEncoded)
   const installUrl = `grayjay://plugin/${data.sourceUrl}`
@@ -114,7 +134,7 @@ function generateCard (data) {
     `
   return html
 }
-async function addNavbarItem (text, url, spacer = false) {
+async function addNavbarItem(text, url, spacer = false) {
   const navbarMenu = document.querySelector(
     'body > header > div.navbar.navbar-dark.bg-dark.shadow-sm > div > li > ul'
   )
@@ -137,29 +157,41 @@ async function addNavbarItem (text, url, spacer = false) {
   listItemElement.appendChild(anchorElement)
   navbarMenu.appendChild(listItemElement)
 }
-async function populateCardsContainer (url) {
+function filterItems(items) { // Function to filter items based on hidden tags
+  return items.filter((item) => {
+    const itemTags = new Set((item._tags || []).map(tag => tag.toLowerCase()));
+    if (hiddenTags.has('*')) {
+      return false;
+    }
+    return !Array.from(hiddenTags).some(tag => itemTags.has(tag));
+  });
+}
+function itemShouldBeFilteredAccordingTo(item, key) {
+  const result = !isQueryParamSet(key) && item._tags.includes(key);
+  if (result) console.warn(`Item ${item.name} filtered by ${key}`);
+  return result;
+}
+async function populateCardsContainer(url) {
   try {
     const response = await fetch(url)
     const data = await response.json()
     const cardsContainer = document.getElementById('cards-container')
     cardsContainer.innerHTML = ''
+    // hidden_tags = {
+    //   'nsfw': 'nsfw', // tag: url query param
+    //   'archived': 'archived'
+    // }
     data.forEach((item) => {
-      const fixedItem = fixData(item)
-      const tags = fixedItem._tags ?? []
-      console.log(tags)
-      // const shouldHideNsfw =!isQueryParamSet("nsfw") && tags.includes("nsfw");
-      // const shouldHideNonWorking = isQueryParamSet("working") &&!tags.includes("working");
-      // const shouldHideNonOfficial = isQueryParamSet("official") &&!tags.includes("official");
-      // if (!shouldHideNsfw ||!shouldHideNonWorking ||!shouldHideNonOfficial) {
-      //     const cardHtml = generateCard(fixedItem);
-      //     cardsContainer.innerHTML += cardHtml;
-      // }
-
-      if (isQueryParamSet('nsfw') || !tags.includes('nsfw')) {
-        const cardHtml = generateCard(fixedItem)
-        cardsContainer.innerHTML += cardHtml
+      item = fixData(item);
+      if (
+        item.hasOwnProperty('_tags') &&
+        !itemShouldBeFilteredAccordingTo(item, 'archived') &&
+        !itemShouldBeFilteredAccordingTo(item, 'nsfw')
+      ) {
+        const cardHtml = generateCard(item);
+        cardsContainer.innerHTML += cardHtml;
       }
-    })
+    });
 
     const commitFeedsUrl = getSourceFeeds(data, 'commits')
     addNavbarItem('Source Commits RSS Feed', commitFeedsUrl, true)
@@ -169,7 +201,7 @@ async function populateCardsContainer (url) {
     console.error('Error fetching data:', error)
   }
 }
-function toggleQRCodes () {
+function toggleQRCodes() {
   const firstSourceIcon = document.getElementsByClassName('source-icon')[0]
   const sourceIconStyle = firstSourceIcon.getAttribute('style')
   if (sourceIconStyle == 'display:block') {
