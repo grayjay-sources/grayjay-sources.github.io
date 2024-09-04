@@ -1,3 +1,8 @@
+filters = {
+  'nsfw': 'NSFW',
+  'archived': 'Archived'
+}
+
 function removeLast (inputString, separator) {
   const lastIndex = inputString.lastIndexOf(separator)
   if (lastIndex > 0) return inputString.substring(0, lastIndex)
@@ -16,26 +21,29 @@ function getAbsoluteUrl (url, baseUrl) {
   }
   return url
 }
-function setParams (params) {
-  const url = new URL(window.location.href)
+function setParams (params, navigate = true) {
+  const url = new URL(window.location.href);
   const setParam = (key, value) => {
     if (value !== undefined && value !== null) {
-      url.searchParams.set(key, value.toString())
+      url.searchParams.set(key, value.toString());
     } /* if (!url.searchParams.has(key)) */ else {
-      url.searchParams.set(key, 1)
+      url.searchParams.set(key, 1);
     }
   }
   if (Array.isArray(params)) {
-    params.forEach(setParam)
+    params.forEach(setParam);
   } else if (typeof params === 'object' && params !== null) {
-    Object.entries(params).forEach(setParam)
+    Object.entries(params).forEach(setParam);
   } else if (typeof params === 'string') {
-    const [key, value] = params.split('=')
-    setParam(key, value)
+    const [key, value] = params.split('=');
+    setParam(key, value);
   }
-  console.log(`New URL: ${url}`)
-  window.location.replace(url)
-  window.location.href = url
+  console.log(`New URL: ${url}`);
+  if (navigate) {
+    window.location.href = url;
+    window.location.replace(url);
+  }
+  return url;
 }
 
 function getSourceFeeds (data, key) {
@@ -194,10 +202,6 @@ async function populateCardsContainer (url) {
     const data = await response.json()
     const cardsContainer = document.getElementById('cards-container')
     cardsContainer.innerHTML = ''
-    // hidden_tags = {
-    //   'nsfw': 'nsfw', // tag: url query param
-    //   'archived': 'archived'
-    // }
     data.forEach((item) => {
       item = fixData(item)
       const cardHtml = generateCard(item)
@@ -231,10 +235,18 @@ function toggleQRCodes () {
     })
   }
 }
+function generateFilters(filters) {
+  console.warn(filters);
+  html = "";
+  Object.entries(filters).forEach((filter) => {
+    html += `<a href="${setParams(filter[0], false)}" '>Show ${filter[1]} modules</a></br>`;
+  })
+  return html;
+}
 document.addEventListener('DOMContentLoaded', () => {
-  const url =
-    'https://raw.githubusercontent.com/grayjay-sources/repo/main/sources.json'
-  populateCardsContainer(url)
+  const url = 'https://raw.githubusercontent.com/grayjay-sources/repo/main/sources.json';
+  populateCardsContainer(url);
+  document.getElementById("footerLinks").innerHTML += generateFilters(filters);
   document.querySelectorAll('#bd-qrcodes').forEach((toggle) => {
     toggle.addEventListener('click', toggleQRCodes)
   })
