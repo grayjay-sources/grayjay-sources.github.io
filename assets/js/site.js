@@ -33,6 +33,8 @@ function setParams(params) {
     const [key, value] = params.split('=');
     setParam(key, value);
   }
+  console.log(`New URL: ${url}`);
+  window.location.replace(url);
   window.location.href = url;
 }
 
@@ -83,6 +85,15 @@ function getFavicon(url, size = 128) {
   url = new URL(url)
   return `https://www.google.com/s2/favicons?domain=${url.hostname}&sz=${size}` // `https://icons.adguard.org/icon?domain=${url.hostname}`
 }
+function itemShouldBeFilteredAccordingTo(item, key) {
+  const result = item.hasOwnProperty('_tags') && !isQueryParamSet(key) && item._tags.includes(key);
+  if (result) console.warn(`Item ${item.name} filtered by ${key}`);
+  return result;
+}
+function itemShouldBeFiltered(item) { 
+  return itemShouldBeFilteredAccordingTo(item, 'archived')
+        || itemShouldBeFilteredAccordingTo(item, 'nsfw')
+}
 function generateCard(data) {
   const sourceUrlEncoded = encodeURIComponent(data.sourceUrl)
   console.log(sourceUrlEncoded)
@@ -97,9 +108,10 @@ function generateCard(data) {
   }
   let author = data.author
   if (author === 'FUTO') author = `<b>${data.author}</b>`
+  data.hidden = itemShouldBeFiltered(data) ? 'style="display:none"' : 'style="display:block"'
   /*  */
   let html = `
-        <div class="col">
+        <div class="col" ${data.hidden}>
             <div class="card shadow-sm">
             <div class="card-header"><b>${data.name}</b></div>`
   if (data.iconUrl) {
@@ -166,11 +178,6 @@ function filterItems(items) { // Function to filter items based on hidden tags
     return !Array.from(hiddenTags).some(tag => itemTags.has(tag));
   });
 }
-function itemShouldBeFilteredAccordingTo(item, key) {
-  const result = !isQueryParamSet(key) && item._tags.includes(key);
-  if (result) console.warn(`Item ${item.name} filtered by ${key}`);
-  return result;
-}
 async function populateCardsContainer(url) {
   try {
     const response = await fetch(url)
@@ -183,14 +190,8 @@ async function populateCardsContainer(url) {
     // }
     data.forEach((item) => {
       item = fixData(item);
-      if (
-        item.hasOwnProperty('_tags') &&
-        !itemShouldBeFilteredAccordingTo(item, 'archived') &&
-        !itemShouldBeFilteredAccordingTo(item, 'nsfw')
-      ) {
-        const cardHtml = generateCard(item);
-        cardsContainer.innerHTML += cardHtml;
-      }
+      const cardHtml = generateCard(item);
+      cardsContainer.innerHTML += cardHtml;
     });
 
     const commitFeedsUrl = getSourceFeeds(data, 'commits')
