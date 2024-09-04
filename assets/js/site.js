@@ -110,10 +110,10 @@ function generateCard(data) {
   }
   let author = data.author
   if (author === 'FUTO') author = `<b>${data.author}</b>`
-  data.hidden = itemShouldBeFiltered(data) ? 'style="display:none"' : 'style="display:block"'
+  data.hidden = itemShouldBeFiltered(data) ? ' hidden' : ''
   /*  */
   let html = `
-        <div class="col" ${data.hidden}>
+        <div class="col${data.hidden}">
             <div class="card shadow-sm">
             <div class="card-header"><b>${data.name}</b></div>`
   if (data.iconUrl) {
