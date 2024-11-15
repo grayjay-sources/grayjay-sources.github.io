@@ -2191,5 +2191,36 @@
             21
         ],
         "sourceUrl_": "https://plugins.grayjay.app/Niconico/NicoConfig.json"
-    }
+    },
+{
+  "name": "HeroHero",
+  "description": "A place for creators. Build your community. Earn from subscriptions. (neoficiální plugin)",
+  "author": "Pavel Žůrek",
+  "authorUrl": "https://github.com/PavelZurek",
+  "sourceUrl": "https://pavelzurek.github.io/grayjay-plugin-for-herohero/heroheroConfig.json",
+  "repositoryUrl": "https://github.com/PavelZurek/grayjay-plugin-for-herohero",
+  "scriptUrl": "./heroheroScript.js",
+  "version": 1,
+  "iconUrl": "./heroheroIcon.png",
+  "id": "00b74d1a-f052-4ccf-b8de-9f5623efc685",
+  "scriptPublicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA3bw+UjuEwXI/emCx7Ic54m/UtIXyQJ5BcFbzsN6+SbYRIrm2EUW2RUWMscQUkvu0fz9sh/3l5trS0jPYMBR1F77aZ9f76yE9bjiu590LIzLVcnc+nFyzYytn0PbSZg4Ienv7dzytpPRUHsBWqdR+w9zSByebY47pI4nxC9OeoKXCw/29I7kNzPYHlfIdM/0OqARR8UKWb8cUuw89esZVHaotJYczZJ/uJMM/dyWLFaN04HnMIg1WmYml7L3XrrtfrxrSC3xBndkCTn7BmW3tcFXTphLHXSAA+/UzfN/kk6OgnTZZpsQk8oq71KbxQWpZyi4ztKjhk+xadNgb5D5Tin1iqqAw0hHMHyB0g37+o8VQmy2E6azfo5aiIGl+Tu6SkHjTmHVUFoZIUA++iLA1ARpWm8VO3tkQUpLqdKhJdRpfKiwuCe9jVf+1m0e/QMrKAzs36XNTBbpptUUzrB9l92szjhGHZxaJ+ESh/7ZsaG0cC5xFnVItC8PbwLHXQQH9AgMBAAE=",
+  "scriptSignature": "sfJuZrbkM+GG4E4Z0daEiUe17+5hP0WResLnjBdJ+HzcEBz5nEVrVbutcsAWnHW1g3QEYYSwg060U8BETzclQIz2sdox70d6Bt3+mpYbD4+7On7Tr0jDTf6j5WFbot4XNcLw8issZ1Xt8aL/H7af3pfOIJitPMl8V4yTEKgjkCPI/8+sENuXzAqYUdeTbljh46FbxP6MbjiXXhWiEhHvUDGhhXI3h/YzPdlqupne6z9E9pfyL4K8WU1OW8dUf+wOX39FRpUFrI6K89kOqTEYF74jpm7B0wuREkGwokb3XdDF4M5TaXFx1SMPb/qNgkIxu2MBzEfqVWGdKPaMAyMpbhe8JgGkB9xRTvmialzNS2Gq6S6aJ5xMZkEyRFNfkHfzCkWu/tCJJlh9F3mgv6FJ5EkN+mNoFRbnyrwD4UxgRZcWAPHoFRh7oUlvZlvFuZornTXiUd/ue9S+1TTncnK44mFKg5folEQ5PlNfxYdFuZCy9db6Ek4mZ5eBe2pChKPS",
+  "packages": [
+    "Http"
+  ],
+  "allowEval": false,
+  "allowUrls": [
+    "svc-prod.herohero.co"
+  ],
+  "authentication": {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
+    "loginUrl": "https://herohero.co/",
+    "cookiesToFind": ["accessToken2"]
+  },
+        "_tags": [
+            "unofficial",
+            "untested"
+        ],
+}
+
 ]
