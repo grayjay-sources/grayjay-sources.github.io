@@ -11,7 +11,7 @@
         "platformUrl": "https://podcasts.apple.com/",
         "description": "One of the biggest podcast indexes owned by Apple",
         "author": "Futo",
-        "sourceUrl": "https://gitlab.futo.org/videostreaming/plugins/apple-podcasts/-/raw/master/ApplePodcastsConfig.json",
+        "sourceUrl": "https://plugins.grayjay.app/ApplePodcasts/ApplePodcastsConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/apple-podcasts",
         "scriptUrl": "./ApplePodcastsScript.js",
         "version": 8,
