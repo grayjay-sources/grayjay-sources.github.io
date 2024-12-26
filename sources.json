@@ -11,7 +11,7 @@
         "platformUrl": "https://podcasts.apple.com/",
         "description": "One of the biggest podcast indexes owned by Apple",
         "author": "Futo",
-        "sourceUrl": "https://gitlab.futo.org/videostreaming/plugins/apple-podcasts/-/raw/master/ApplePodcastsConfig.json",
+        "sourceUrl": "https://plugins.grayjay.app/ApplePodcasts/ApplePodcastsConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/apple-podcasts",
         "scriptUrl": "./ApplePodcastsScript.js",
         "version": 8,
@@ -19,8 +19,8 @@
         "authorUrl": "https://futo.org",
         "id": "89ae4889-0420-4d16-ad6c-19c776b28f99",
         "subscriptionRateLimit": 10,
-        "scriptSignature": "",
-        "scriptPublicKey": "",
+        "scriptSignature": "SpheP1iuUxHa0alARXiL012oXvfZCD/ARGsgi2w5ZfHZoD9ET3en4QxIe1Cb0eBpEBr/X2/efyRQ4x1/qSrplvMSfYxvvEevE6cZZp9ZFop9PCq9d1KEmNo6Vmy9Yf8gNvauQikc63Tri77i/+r9QLfbVJQCPX0Oa3VaHjkl0DpMh32BKWxvgm0Z7vwV6pIXD/v/XnvTTLYY6Z3HQzsQ9tXn5zBeJa9qf5nM/KxY21IgIed64Ulp96jfOBMP9YNPiBZC3H9Y8PmR15Gso586btzxI27dyVf5kJp0uSNsL86xNnVkProFw19toh17pDvAKQ2G753FKizKXjgmLodCVQ==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
         "packages": [
             "Http"
         ],
