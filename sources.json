@@ -1399,7 +1399,7 @@
         "description": "GrayJay source for Pietsmiet.de",
         "author": "Bluscream",
         "authorUrl": "https://bluscream.github.io",
-        "sourceUrl": "https://github.com/grayjay-sources/grayjay-source-pietsmietde/raw/refs/heads/master/build/config.json",
+        "sourceUrl": "https://github.com/grayjay-sources/grayjay-source-pietsmietde/releases/latest/download/config.json",
         "repositoryUrl": "https://github.com/grayjay-sources/grayjay-source-pietsmietde/tree/master",
         "scriptUrl": "https://github.com/grayjay-sources/grayjay-source-pietsmietde/releases/latest/download/script.js",
         "version": 9,
