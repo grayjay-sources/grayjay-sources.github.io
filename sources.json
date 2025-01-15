@@ -2415,11 +2415,11 @@
         "description": "日本最大級の動画サービス、ニコニコ（niconico）。",
         "author": "FUTO",
         "authorUrl": "https://futo.org",
-        "sourceUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/raw/main/NicoConfig.json",
+        "sourceUrl": "https://plugins.grayjay.app/Niconico/NiconicoConfig.json",
         "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico",
-        "scriptUrl": "./NicoScript.js",
+        "scriptUrl": "./NiconicoScript.js",
         "version": 1,
-        "iconUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/raw/main/niconico.png?ref_type=heads&inline=false",
+        "iconUrl": "./NiconicoIcon.png",
         "id": "94c86b48-eee9-4d49-9f2e-56c8e650936a",
         "packages": [
             "Http"
@@ -2432,8 +2432,8 @@
             "official",
             "working"
         ],
-        "scriptSignature": "",
-        "scriptPublicKey": "",
+        "scriptSignature": "NEyiuxXb4myrZVD5GbLiRo7q93YN3A8W2R990wlkTUOjgnxjYkbCyGjGLbKekKlzEkjP9R8ILBJw6xMrTz1ampkwgCCLaks5uNvIQGZ9hO+H5iZhJ1U1bdhuKfRsI+/iySvWLPs+ntQ28xbSl9pN0ZRR+0/c2cPK7KIC0vHQCy7nSgl4mON6K/UvAN65IkrPV2QbPh7miYELjTxFuf177nCA0piIRzQWobs0J9MnQHbFZfc6H23Q6gxrNS0kICEojorw9gb/w6XXvTVuRlub1XtaXl3f1tv8892doJE6//dGGvwZRxDrgMcnIDUdVSJ4O5zMoZxRJ2PNHqvfenoZIQ==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
         "_feeds": {
             "commits": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/commits/master?format=atom"
         },
@@ -2448,6 +2448,6 @@
         "supportedClaimTypes": [
             21
         ],
-        "sourceUrl_": "https://plugins.grayjay.app/Niconico/NicoConfig.json"
+        "sourceUrl_": "https://plugins.grayjay.app/Niconico/NiconicoConfig.json"
     }
 ]
