@@ -1,70 +1,6 @@
 [
     {
         "_tags": [
-            "unofficial",
-            "untested"
-        ],
-        "_feeds": {
-            "commits": "https://github.com/AlexisBlade2001/Grayjay-DLive/commits/main.atom",
-            "releases": "https://github.com/AlexisBlade2001/Grayjay-DLive/releases.atom"
-        },
-  "name": "DLive",
-  "description": "A decentralized live streaming platform.",
-  "author": "AlexisBlade2001",
-  "authorUrl": "https://github.com/AlexisBlade2001",
-
-  "platformUrl": "https://dlive.tv",
-  "sourceUrl": "https://github.com/AlexisBlade2001/Grayjay-DLive/raw/refs/heads/main/DLiveConfig.json",
-  "repositoryUrl": "https://github.com/AlexisBlade2001/grayjay-dlive",
-  "scriptUrl": "https://github.com/AlexisBlade2001/Grayjay-DLive/raw/refs/heads/main/DLiveScript.js",
-  "version": 1,
-
-  "iconUrl": "https://github.com/AlexisBlade2001/Grayjay-DLive/raw/refs/heads/main/DLiveIcon.png",
-
-  "id": "06b0c2b1-67b6-4cb3-bf8f-8bf191dac0f3",
-
-  "scriptSignature": "",
-  "scriptPublicKey": "",
-
-  "packages": ["Http", "DOMParser"],
-
-  "allowEval": false,
-  "allowUrls": [
-    "graphigo.prd.dlive.tv",
-    "graphigostream.prd.dlive.tv",
-
-    "api.dlive.tv",
-    "api-ws.dlive.tv",
-
-    "d.live",
-    "dlive.tv",
-
-    "dlive-android.firebaseio.com",
-    "dlive-android.firebaseapp.com",
-    "dlive-android.firebasestorage.app",
-
-    "image.dlivecdn.com",
-    "images.prd.dlivecdn.com",
-    "images-sihv2.prd.dlivecdn.com",
-
-    "live.prd.dlive.tv",
-    "livestreamb.prdv3.dlivecdn.com",
-
-    "videos.prd.dlivecdn.com",
-
-    "playback.prd.dlivecdn.com"
-  ],
-  "authentication": {
-    "loginUrl": "https://dlive.tv/m/home",
-		"headersToFind": ["Authorization"],
-		"domainHeadersToFind": {
-			".dlive.tv": ["authorization"]
-		},
-    "loginButton": "#genius > .application--wrap > div:nth-child(1) > nav > div > div:nth-child(5) > div:nth-child(5) > div > .nav-login-legal > .nav-login-legal-menu > .btn-group > .loginIn"
-  }
-},
-    {
-        "_tags": [
             "official",
             "working"
         ],
@@ -485,6 +421,64 @@
                 "etp_rt"
             ],
             "cookiesExclOthers": true
+        }
+    },
+    {
+        "_tags": [
+            "unofficial",
+            "untested"
+        ],
+        "_feeds": {
+            "commits": "https://github.com/AlexisBlade2001/Grayjay-DLive/commits/main.atom",
+            "releases": "https://github.com/AlexisBlade2001/Grayjay-DLive/releases.atom"
+        },
+        "name": "DLive",
+        "description": "A decentralized live streaming platform.",
+        "author": "AlexisBlade2001",
+        "authorUrl": "https://github.com/AlexisBlade2001",
+        "platformUrl": "https://dlive.tv",
+        "sourceUrl": "https://github.com/AlexisBlade2001/Grayjay-DLive/raw/refs/heads/main/DLiveConfig.json",
+        "repositoryUrl": "https://github.com/AlexisBlade2001/grayjay-dlive",
+        "scriptUrl": "https://github.com/AlexisBlade2001/Grayjay-DLive/raw/refs/heads/main/DLiveScript.js",
+        "version": 1,
+        "iconUrl": "https://github.com/AlexisBlade2001/Grayjay-DLive/raw/refs/heads/main/DLiveIcon.png",
+        "id": "06b0c2b1-67b6-4cb3-bf8f-8bf191dac0f3",
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": [
+            "Http",
+            "DOMParser"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "graphigo.prd.dlive.tv",
+            "graphigostream.prd.dlive.tv",
+            "api.dlive.tv",
+            "api-ws.dlive.tv",
+            "d.live",
+            "dlive.tv",
+            "dlive-android.firebaseio.com",
+            "dlive-android.firebaseapp.com",
+            "dlive-android.firebasestorage.app",
+            "image.dlivecdn.com",
+            "images.prd.dlivecdn.com",
+            "images-sihv2.prd.dlivecdn.com",
+            "live.prd.dlive.tv",
+            "livestreamb.prdv3.dlivecdn.com",
+            "videos.prd.dlivecdn.com",
+            "playback.prd.dlivecdn.com"
+        ],
+        "authentication": {
+            "loginUrl": "https://dlive.tv/m/home",
+            "headersToFind": [
+                "Authorization"
+            ],
+            "domainHeadersToFind": {
+                ".dlive.tv": [
+                    "authorization"
+                ]
+            },
+            "loginButton": "#genius > .application--wrap > div:nth-child(1) > nav > div > div:nth-child(5) > div:nth-child(5) > div > .nav-login-legal > .nav-login-legal-menu > .btn-group > .loginIn"
         }
     },
     {
