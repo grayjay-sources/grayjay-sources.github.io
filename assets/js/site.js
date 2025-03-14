@@ -3,8 +3,8 @@ filters = {
   archived: 'Archived'
 }
 
-function varExists(value) {
-  return value !== undefined && value !== null && value !== '' && value !== 0;
+function varExists (value) {
+  return value !== undefined && value !== null && value !== '' && value !== 0
 }
 function removeLast (inputString, separator) {
   if (inputString === undefined || inputString === null) return ''
@@ -52,36 +52,36 @@ function setParams (params, navigate = true) {
 }
 
 function getSourceFeeds (data, key) {
-  const urls = [];
+  const urls = []
   data.forEach((item) => {
-    if (!item.hasOwnProperty('_feeds')) return;
+    if (!item.hasOwnProperty('_feeds')) return
     if (item._feeds.hasOwnProperty(key)) {
-      urls.push(encodeURI(item._feeds[key]));
+      urls.push(encodeURI(item._feeds[key]))
     }
     // else console.warn(`Source ${item.name} has no ${key}`);
-  });
-  console.log('URLs:', urls); // Log encoded URLs
-  const urlCount = urls.length;
-  const baseUrl = 'https://rssmerge.onrender.com'; // Use the current page's origin as the base URL
-  console.log('Base URL:', baseUrl); // Log base URL
+  })
+  console.log('URLs:', urls) // Log encoded URLs
+  const urlCount = urls.length
+  const baseUrl = 'https://rssmerge.onrender.com' // Use the current page's origin as the base URL
+  console.log('Base URL:', baseUrl) // Log base URL
   const params = new URLSearchParams({
     title: `${urlCount} ${key}`,
     urls: urls.join(',')
-  }).toString();
-  const finalUrl = `${baseUrl}/?${params}`;
-  console.log('Final URL:', finalUrl); // Log final URL
-  return finalUrl;
+  }).toString()
+  const finalUrl = `${baseUrl}/?${params}`
+  console.log('Final URL:', finalUrl) // Log final URL
+  return finalUrl
 }
 function fixData (data) {
-  if (varExists(data.scriptUrl)) data.baseUrl = removeLast(data.sourceUrl, '/') + '/';
-  if (!data.hasOwnProperty('_feeds')) data._feeds = {};
-  if (!data.hasOwnProperty('_tags')) data._tags = {};
+  if (varExists(data.scriptUrl)) { data.baseUrl = removeLast(data.sourceUrl, '/') + '/' }
+  if (!data.hasOwnProperty('_feeds')) data._feeds = {}
+  if (!data.hasOwnProperty('_tags')) data._tags = {}
   for (const [key, value] of Object.entries(data)) {
     if (key.toLowerCase().includes('url')) {
-      if (Array.isArray(value)) continue;
+      if (Array.isArray(value)) continue
       if (isRelativeUrl(value)) {
-        data[key + '_'] = value;
-        data[key] = getAbsoluteUrl(value, data.baseUrl);
+        data[key + '_'] = value
+        data[key] = getAbsoluteUrl(value, data.baseUrl)
       }
     }
   }
@@ -115,12 +115,12 @@ function itemShouldBeFiltered (item) {
   )
 }
 function generateCard (data) {
-  let sourceUrlEncoded, installUrl;
+  let sourceUrlEncoded, installUrl
   if (varExists(data.sourceUrl)) {
     sourceUrlEncoded = encodeURIComponent(data.sourceUrl)
-    console.log(sourceUrlEncoded);
+    console.log(sourceUrlEncoded)
     // if (isNotEmpty(data.scriptUrl)) {
-      installUrl = `grayjay://plugin/${data.sourceUrl}`
+    installUrl = `grayjay://plugin/${data.sourceUrl}`
     // }
   }
   const repoUrl = data.repositoryUrl ?? data.configUrl
@@ -148,13 +148,13 @@ function generateCard (data) {
         <text x="50%" y="50%" fill="#eceeef" dy=".3em"><b>${data.name}</b></text>
         </svg>`
   }
-  if (varExists(installUrl)) html += generateQrCode(installUrl);
+  if (varExists(installUrl)) html += generateQrCode(installUrl)
   html += `<div class="card-body">
               <p class="card-text">${data.description}</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">`;
-  if (varExists(installUrl)) html += `<a href="${installUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-primary">Install</button></a>&nbsp;`;
-  html +=                            `<a href="${repoUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Source</button></a>`;
+                  <div class="btn-group">`
+  if (varExists(installUrl)) { html += `<a href="${installUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-primary">Install</button></a>&nbsp;` }
+  html += `<a href="${repoUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Source</button></a>`
   if (data._customButtons) {
     html += '<br>'
     data._customButtons.forEach((btn) => {
