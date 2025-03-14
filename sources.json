@@ -1202,11 +1202,9 @@
         "description": "Open-source video server",
         "author": "Awlexus",
         "authorUrl": "https://github.com/Awlexus",
-        "sourceUrl": "",
         "repositoryUrl": "https://github.com/Awlexus/grayjay-jellyfin-plugin",
-        "scriptUrl": "0.1.0",
         "version": 5,
-        "iconUrl": "https://jellyfin.org/images/favicon.ico",
+        "iconUrl": "https://grayjay-jellyfin-plugin.fly.dev/images/jellyfin-logo.png",
         "id": "82b8fefc-24aa-11ee-be56-0242af120ff0",
         "packages": [
             "Http"
@@ -1217,10 +1215,9 @@
         ],
         "_tags": [
             "unofficial",
-            "unknown"
+            "unknown",
+            "generator"
         ],
-        "scriptSignature": "",
-        "scriptPublicKey": "",
         "_feeds": {
             "commits": "https://github.com/Awlexus/grayjay-jellyfin-plugin/commits/master.atom",
             "releases": "https://github.com/Awlexus/grayjay-jellyfin-plugin/releases.atom"
@@ -1466,7 +1463,7 @@
         "_tags": [
             "official",
             "maintained",
-            "working"
+            "generator"
         ],
         "scriptSignature": "YKO/jMicPZFLnJI5LfiOUh8avfQhVzsHztKqOsP9whFAWbVHxqirLCI93gvVBxrphya0s5kwauIcrSe7D3hQQYgI3S3ElxdE8m75MhysA5ktL9IbQL20lEpGDTNIp0toEWEgvkKCGWX4VfLiWBtATK0KMTI6kmPiBcnaYKrLEiGsepvPHhWAQW1mRch+/D8YR/jIG5jMv38AbxhW2P0ktr7CBcPkh73zFuTxAwvX/SDYL3B7x1qgZI82TXpdfaVvxNOjOHEnzlRVWkLSKLepAbxosfmX7LHz15lwUXFXH4kL3HvdpCyPNpNsvPsd2HuiRUBWqsQLnleD53Lw7tiu9A==",
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
