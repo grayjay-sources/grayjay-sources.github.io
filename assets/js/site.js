@@ -4,7 +4,9 @@ filters = {
 }
 
 function removeLast (inputString, separator) {
-  const lastIndex = inputString.lastIndexOf(separator)
+  if (inputString === undefined || inputString === null) return '';
+  if (separator === undefined || separator === null) return '';
+  const lastIndex = inputString.lastIndexOf(separator);
   if (lastIndex > 0) return inputString.substring(0, lastIndex)
   else return ''
 }
@@ -68,7 +70,7 @@ function getSourceFeeds (data, key) {
   return finalUrl
 }
 function fixData (data) {
-  data.baseUrl = removeLast(data.sourceUrl, '/') + '/'
+  data.baseUrl = (data.sourceUrl ? removeLast(data.sourceUrl, '/') : '') + '/'
   if (!data.hasOwnProperty('_feeds')) data._feeds = {}
   if (!data.hasOwnProperty('_tags')) data._tags = {}
   for (const [key, value] of Object.entries(data)) {
