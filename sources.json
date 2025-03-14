@@ -1206,7 +1206,7 @@
         "repositoryUrl": "https://github.com/Awlexus/grayjay-jellyfin-plugin",
         "scriptUrl": "0.1.0",
         "version": 5,
-        "iconUrl": "https://jellyfin.org/images/logo.svg",
+        "iconUrl": "https://jellyfin.org/images/favicon.ico",
         "id": "82b8fefc-24aa-11ee-be56-0242af120ff0",
         "packages": [
             "Http"
