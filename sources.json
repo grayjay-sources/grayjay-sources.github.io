@@ -1826,6 +1826,43 @@
         "websiteUrl": "https://dw5.github.io"
     },
     {
+        "name": "Jellyfin",
+        "description": "Open-source video server",
+        "author": "Awlexus",
+        "authorUrl": "https://github.com/Awlexus",
+        "sourceUrl": "",
+        "repositoryUrl": "https://github.com/Awlexus/grayjay-jellyfin-plugin",
+        "scriptUrl": "0.1.0",
+        "version": 5,
+        "iconUrl": "https://jellyfin.org/images/logo.svg",
+        "id": "82b8fefc-24aa-11ee-be56-0242af120ff0",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "everywhere"
+        ],
+        "_tags": [
+            "unofficial",
+            "unknown"
+        ],
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "_feeds": {
+            "commits": "https://github.com/Awlexus/grayjay-jellyfin-plugin/commits/master.atom",
+            "releases": "https://github.com/Awlexus/grayjay-jellyfin-plugin/releases.atom"
+        },
+        "websiteUrl": "https://grayjay-jellyfin-plugin.fly.dev",
+        "_customButtons": [
+            {
+                "text": "Custom",
+                "url": "https://grayjay-jellyfin-plugin.fly.dev",
+                "classes": "btn-secondary"
+            }
+        ]
+    },
+    {
         "name": "Wien.gv.at Videos",
         "description": "Videos der Stadt Wien",
         "author": "Matthias Porges",
