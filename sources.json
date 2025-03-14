@@ -1204,7 +1204,8 @@
         "authorUrl": "https://github.com/Awlexus",
         "repositoryUrl": "https://github.com/Awlexus/grayjay-jellyfin-plugin",
         "version": 5,
-        "iconUrl": "https://grayjay-jellyfin-plugin.fly.dev/images/jellyfin-logo.png",
+        "iconUrl": "https://static-00.iconduck.com/assets.00/jellyfin-icon-2048x2048-n3v9lj7i.png",
+        "iconUrl_": "https://grayjay-jellyfin-plugin.fly.dev/images/jellyfin-logo.png",
         "id": "82b8fefc-24aa-11ee-be56-0242af120ff0",
         "packages": [
             "Http"
