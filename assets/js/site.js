@@ -73,7 +73,9 @@ function getSourceFeeds (data, key) {
   return finalUrl
 }
 function fixData (data) {
-  if (varExists(data.scriptUrl)) { data.baseUrl = removeLast(data.sourceUrl, '/') + '/' }
+  if (varExists(data.scriptUrl)) {
+    data.baseUrl = removeLast(data.sourceUrl, '/') + '/'
+  }
   if (!data.hasOwnProperty('_feeds')) data._feeds = {}
   if (!data.hasOwnProperty('_tags')) data._tags = {}
   for (const [key, value] of Object.entries(data)) {
@@ -153,7 +155,9 @@ function generateCard (data) {
               <p class="card-text">${data.description}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">`
-  if (varExists(installUrl)) { html += `<a href="${installUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-primary">Install</button></a>&nbsp;` }
+  if (varExists(installUrl)) {
+    html += `<a href="${installUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-primary">Install</button></a>&nbsp;`
+  }
   html += `<a href="${repoUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Source</button></a>`
   if (data._customButtons) {
     html += '<br>'
