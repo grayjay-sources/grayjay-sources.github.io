@@ -1,6 +1,29 @@
 [
     {
         "_tags": [
+            "unofficial",
+            "unknown"
+        ],
+	"name": "Bandcamp",
+	"description": "Bandcamp is an American online music distributor",
+	"author": "William Vigolo",
+	"authorUrl": "https://williamvds.me",
+	"sourceUrl": "https://git.sr.ht/~williamvds/bandcamp-grayjay-plugin/blob/master/BandcampConfig.json",
+	"repositoryUrl": "https://git.sr.ht/~williamvds/bandcamp-grayjay-plugin",
+	"scriptUrl": "./BandcampScript.js",
+	"version": 3,
+	"iconUrl": "./logo.png",
+	"id": "04a188d3-9a46-4358-9599-1ddfcc83aae0",
+	"scriptSignature": "ObIgf32kLZGI78SR7CIUH2/tdikOWFk+k1VEUMTevvygAV1wfu5w0xE5NuGfS5NajMlexchgaYaHSc95vv4MTCHosySqNOj7FMH0ClAPhkea9DvcMtAjDsMEjppe0mAWeZaSa1uFD/+vEmKbuQGz5r+I628HfLYH1QhmC43vMd0zt1dFxGJNSaBPz2Hps5fD37MFXK9Aat8J6QGCr6aZ1dolJotfW7lgHWxF9x5HxPL0ZYDTBm0wbOPIhKUoyjLvo/WqNTo4XQvXqquoP6LwKaVOpeKCVyEAHukD8uJLoN8pUuAfYJrqtvDrKHsKoDTWbA0z81R4cMXeJPaEoFqepL7M46K+kemaHEgdHBzYc+mi+xiqlhX3CNwO2D8ltapjAMylrOwuhaABBhEb0f+3iAOVdaH2TxgxvhA5zcemMzQrlgoYXBuVv9efcJ9muYP0t1RuG3xQ35ETyVjuiTjqYCh1UfSZZpJag0JLiK6S99/sveba+DyidVhBAb9ztgGAOYX0leqe3aUAUSsr4cteNvyTWUW0No1ZfrvwsXE0HOHVcTAb53Hseg2Xn2jefKi4aP1JPmkSzzjfbagj7EoF6NDObxkIFf2otm2wXqeeZlcmMGL5FrVhGHKan5MStTLP4HR3SMWH8udKd+AFeTLEyObA73Wi6z6ySMczlBgoTkA=",
+	"scriptPublicKey": "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA6YFYu5pKrKFqJ3Lez6tYUIU+rx9nfpimbPrRqGNwHgx2H/wXEMFrSwTp/cZipccJhqJM/ElBYTI8Z8bUowpkHFfFnwFfOHR+XCLx2deKyR9CJTsLoe0jhjRGwkFc25oeToO8gkvkoYbGH1nk+Ri5qAFNPDPxnTmmtnHyUCIVOWHTc9nrSaXNslUekz2NEpIXzvVq99L9ZdXBe61Pz7jFGJyn9Y7yTrah+unP+eC1mTMYaAz7JiuqM8sZULjk/CbBBOXnjA482/I3PbDJqgH76fIxhGwUtWaTaaAMtOS8/zaxBeL7MNalGIIG73ogu9S+4/miMOsXunMmtk2oP60EE/CFiKyZTS3peXS3MtcarNj2KKkOV03c1zqERXoUkanVBriinWLhAqwC6+sFAhyK9PBs4uNQU/mF+mmdW9aukMKqEKgqwxqmlpow0GpIZGWg8cQmrQoj41OX/ZElOEHD0B7sAUHzO0RyW3oAyMorjORyONmsobBG+Ssiop3hu/NnuVyApqWtsTBAZpo4GrW6kAWcahWUQVgg+be5dP4gDBdvgnk0ptTyDE5YyXtDINUF14hi5ZRZ8o+2WOqtbQuhmkyB0x+at1+AA+g4fbrtCbYCN/ETjAExY7ZnwE9Rre/0TtvRk9pe05EYNmVg9USWyhKudUwI5XvVBx8f8+LceScCAwEAAQ==",
+	"packages": ["Http"],
+	"allowEval": false,
+	"allowUrls": [
+		"everywhere"
+	]
+},
+    {
+        "_tags": [
             "official",
             "working"
         ],
