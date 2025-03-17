@@ -1,6 +1,58 @@
 [
     {
         "_tags": [
+            "unofficial",
+            "wip",
+            "nsfw"
+        ],
+        "_feeds": {
+            "commits": "https://github.com/grayjay-sources/grayjay-source-chaturbate/commits/main.atom",
+            "releases": "https://github.com/grayjay-sources/grayjay-source-chaturbate/releases.atom"
+        },
+        "name": "Chaturbate",
+        "description": "GrayJay source for Chaturbate",
+        "author": "Bluscream",
+        "authorUrl": "https://bluscream.github.io",
+        "platformUrl": "https://chaturbate.com",
+        "tags": [],
+        "nsfw": true,
+        "sourceUrl": "https://github.com/grayjay-sources/grayjay-source-chaturbate/releases/latest/download/config.json",
+        "repositoryUrl": "https://github.com/grayjay-sources/grayjay-source-chaturbate",
+        "scriptUrl": "./script.js",
+        "changelogUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-chaturbate/master/changelog.md",
+        "version": 1,
+        "iconUrl": "https://theme.zdassets.com/theme_assets/9047795/0a1509944ae68221459023756a55d2ada890acfd.png",
+        "id": "82b8fefc-24ae-11ee-aa56-0242aa120002",
+        "packages": [
+            "Http",
+            "Utilities"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "chaturbate.com",
+            "www.chaturbate.com",
+            "*.chaturbate.com",
+            "*.live.mmcdn.com",
+            "web.static.mmcdn.com",
+            "nwr.static.mmcdn.com",
+            "realtime.pa.highwebmedia.com",
+            "api.minopia.de"
+        ],
+        "subscriptionRateLimit": 120,
+        "authentication": {
+            "loginUrl": "https://chaturbate.com/auth/login/",
+            "cookiesToFind": [
+                "XSRF-TOKEN",
+                "psde_auth3"
+            ],
+            "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+            "loginWarning": "Login does not work (yet)."
+        },
+        "settings": [
+        ]
+    },
+    {
+        "_tags": [
             "official",
             "working"
         ],
@@ -1319,7 +1371,7 @@
         "author": "nuthug",
         "authorUrl": "https://raw.githubusercontent.com/Nutstone/",
         "sourceUrl": "https://nutstone.github.io/grayjay-manhuafast-plugin/ManhuaFastConfig.json",
-        "repositoryUrl": "https://nutstone.github.io/grayjay-manhuafast-plugin/",
+        "repositoryUrl": "https://github.com/nutstone/grayjay-manhuafast-plugin",
         "scriptUrl": "./ManhuaFastScript.js",
         "version": 1,
         "iconUrl": "./d7dfe5ef-4332-4ffa-b890-1b703d22ca0d.png",
