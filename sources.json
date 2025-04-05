@@ -1595,7 +1595,7 @@
         ]
     },
     {
-        "name": "Pietsmiet.de",
+        "name": "Pietsmiet.de (Discontinued)",
         "description": "GrayJay source for Pietsmiet.de",
         "author": "Bluscream",
         "authorUrl": "https://bluscream.github.io",
@@ -1620,9 +1620,11 @@
         ],
         "_tags": [
             "unofficial",
-            "maintained",
-            "working",
+            "unmaintained",
             "missing features",
+            "discontinued",
+            "offline",
+            "archived",
             "german"
         ],
         "scriptSignature": "",
