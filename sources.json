@@ -5,6 +5,39 @@
             "working"
         ],
         "_feeds": {
+            "commits": "https://gitlab.futo.org/videostreaming/plugins/tedtalks/-/commits/master?format=atom"
+        },
+  "name": "Ted Talks (Alpha)",
+  "platformUrl": "https://www.ted.com/talks",
+  "description": "TED Talks are influential videos from expert speakers on education, business, science, tech and creativity",
+  "author": "Futo",
+  "authorUrl": "https://futo.org",
+  "sourceUrl": "https://plugins.grayjay.app/TedTalks/TedTalksConfig.json",
+  "scriptUrl": "./TedTalksScript.js",
+  "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/tedtalks",
+  "version": 1,
+  "iconUrl": "./TedTalksIcon.png",
+  "id": "8d029a7f-5507-4e36-8bd8-c19a3b77d383",
+  "scriptSignature": "Phcur3JUJCbakYfIynlTaCU0bMeu1G32onbg2pKJaeEy4dMolrjCXgKhJWgaoecXxaAY2atV/P2Vmey6Qtj07+/2JT8AYmSQ8FZwisbREsal+EU1eJa5mkvUEEtlNKjwkOmmndHX7EWglqT/acS7nKrC49VdSF8Oph0/SEqaqsrYVJeRyJGM/6lTn2E7633QIJIAoEqZiXumgkYx/OUAXofeV7EV/mw0sjVp148ZVjFekXdRF97SEYEofXqZ+kCS/k/13V2qrhLRCeNwUNUZ33WsR3lj18EXhAKLsxtXGWwCFjKQYzw1W9Xv7yuiE1gYlCHPmpKmd6CemYJ0OOThbA==",
+  "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+  "maxDownloadParallelism": 1,
+  "subscriptionRateLimit": 10,
+  "changelog": {},
+  "packages": [
+    "Http",
+    "DOMParser"
+  ],
+  "allowUrls": [
+    ".ted.com"
+  ],
+  "settings": []
+},
+    {
+        "_tags": [
+            "official",
+            "working"
+        ],
+        "_feeds": {
             "commits": "https://gitlab.futo.org/videostreaming/plugins/apple-podcasts/-/commits/master?format=atom"
         },
         "name": "Apple Podcasts",
