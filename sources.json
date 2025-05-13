@@ -1882,44 +1882,52 @@
         "allowAllHttpHeaderAccess": true
     },
     {
-        "name": "TikTok (Unreleased)",
-        "description": "Watch millions of short-form videos on TikTok",
-        "author": "FUTO",
-        "authorUrl": "https://futo.org",
-        "sourceUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/raw/main/build/TikTokConfig.json",
-        "repositoryUrl": "https://github.com/futo-org/grayjay-plugin-tiktok",
-        "scriptUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/raw/main/build/TikTokScript.js",
-        "version": 1,
-        "iconUrl": "https://github.com/futo-org/grayjay-plugin-tiktok/raw/main/build/TikTokIcon.png",
-        "id": "37b3aed3-24b8-4717-8388-dfc439908bf8",
-        "packages": [
-            "Http"
-        ],
-        "allowEval": false,
-        "allowUrls": [
-            "www.tiktok.com"
-        ],
+  "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
+  "name": "TikTok",
+  "description": "Watch millions of short-form videos on TikTok",
+  "author": "FUTO",
+  "authorUrl": "https://futo.org",
+  "platformUrl": "https://tiktok.com",
+  "sourceUrl": "https://plugins.grayjay.app/TikTok/TikTokConfig.json",
+  "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/tiktok",
+  "scriptUrl": "./TikTokScript.js",
+  "version": 3,
+  "iconUrl": "./TikTokIcon.png",
+  "id": "37b3aed3-24b8-4717-8388-dfc439908bf8",
+  "scriptSignature": "BWjHu1C2IZlqMQdof9ldf466hdEsQph5Woh0DGJ9sI6Q/PAFNm2v8hqgiJwF2yvu7Fqmj3wR1bUxx9ScAL4nN+4Qa/VEil/JKuGQp0gQpIWeyuRhgmpxpdoqX2rHhOjKRaTTDOVffQ/Kp8wubNrKq0i1ElthzU39dMuQ6ymGnnjuxh1xEfP+aQDv2aKBXZ/WBHcGVEtjwOBpzetUuKr6tJGcWK+Mc4+bynT+36v7R+7imdVtJ/LelNC3pFz6YQsO9SAZTdo946iRXFIub2Rv/xmucmZKPZY0iJJ4n/kazdazuMBLpR5N/n5NofHPfmtoJQJaiEoaaZ3pHKkBHfE6nQ==",
+  "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+  "packages": [
+    "Http",
+    "Utilities"
+  ],
+  "allowEval": false,
+  "allowAllHttpHeaderAccess": true,
+  "allowUrls": [
+    "www.tiktok.com",
+    "lf16-tiktok-web.tiktokcdn-us.com",
+    "webcast.us.tiktok.com",
+    "mcs.tiktokw.us",
+    "v16-webapp-prime.us.tiktok.com",
+    "mssdk.tiktokw.us"
+  ],
+  "authentication": {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36",
+    "loginUrl": "https://www.tiktok.com/login",
+    "cookiesToFind": [
+      "ttwid",
+      "sessionid"
+    ]
+  },
         "_tags": [
             "official",
             "maintained",
             "wip"
         ],
-        "scriptSignature": "",
-        "scriptPublicKey": "",
         "_feeds": {
             "commits": "https://github.com/futo-org/grayjay-plugin-tiktok/commits/main.atom",
             "releases": "https://github.com/futo-org/grayjay-plugin-tiktok/releases.atom"
         },
-        "platformUrl": "https://tiktok.com",
-        "authentication": {
-            "loginUrl": "https://www.tiktok.com/login",
-            "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
-            "cookiesToFind": [
-                "sid_guard"
-            ]
-        },
         "sourceUrl_": "https://plugins.grayjay.app/TikTok/TikTokConfig.json",
-        "allowAllHttpHeaderAccess": true
     },
     {
         "name": "Twitch",
