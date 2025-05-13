@@ -1,5 +1,56 @@
 [
     {
+  "name": "Curiosity Stream (Alpha)",
+  "platformUrl": "https://curiositystream.com",
+  "description": "Curiosity Stream has thousands of documentaries that enlighten, entertain & inspire. What are you curious about?",
+  "author": "FUTO",
+  "authorUrl": "https://futo.org",
+  "sourceUrl": "https://plugins.grayjay.app/CuriosityStream/CuriosityStreamConfig.json",
+  "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/curiositystream",
+  "scriptUrl": "./CuriosityStreamScript.js",
+  "version": 12,
+  "iconUrl": "./CuriosityStreamIcon.png",
+  "id": "273b6523-5438-44e2-9f5d-78e0325a8fd9",
+  "scriptSignature": "Ol7ts2wjRUIVD5rTSxJu6jeXuFpBYT0N27/SqOYk5H5QKQWrcbxXr5bFOnGn/+ww/H4mK4tn6FL9L2c/ncGAu6iROrUdk/rMM6ZxegOjkrwhatwrViWiG6RCRCZHCiQJM7+8Ddg1Hi3Y1SmD2g1r0oBrmTG7vGdjUhzv9xR4JbBbayLDbvPSeFXVPfz2CT7zphEC8YOCNo+gSgmhVzmpbp0P+ZUSK6nMF7CFM0sSuo5FLrIVBtw/IpJm8i5yewIrMhU2ERl9EqrgwCdAq8c8K2OJHBnXTzI+3DB5q+TcP5zz/GqoVPy5MUAEobo7aY+GSNooRYOj02KmYNhr0A69Ew==",
+  "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+  "packages": [
+    "Http",
+    "DOMParser"
+  ],
+  "allowEval": false,
+  "allowUrls": [
+    ".curiositystream.com"
+  ],
+  "authentication": {
+    "loginUrl": "https://curiositystream.com/login?redirect=/",
+    "completionUrl": "https://api.curiositystream.com/v1/media?*",
+    "headersToFind": [
+      "x-auth-token"
+    ],
+    "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
+  },
+  "settings": [
+    {
+      "variable": "curiositystreamActivity",
+      "name": "Provide Curiosity Stream Activity",
+      "description": "Share watch activity with Curiosity Stream",
+      "type": "Boolean",
+      "default": "true"
+    }
+  ],
+  "changelog": {
+    "1": [
+      "Initial release of CuriosityStream plugin",
+      "Support for browsing, searching, and playing documentaries",
+      "Category-based content organization"
+    ],
+    "2": [
+      "Use series as channels;",
+      "Improve support for desktop;"
+    ]
+  }
+},
+    {
         "_tags": [
             "official",
             "working"
