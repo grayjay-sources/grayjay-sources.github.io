@@ -77,7 +77,7 @@ function fixData (data) {
     data.baseUrl = removeLast(data.sourceUrl, '/') + '/'
   }
   if (!data.hasOwnProperty('_feeds')) data._feeds = {}
-  if (!data.hasOwnProperty('_tags')) data._tags = {}
+  if (!data.hasOwnProperty('_tags')) data._tags = []
   for (const [key, value] of Object.entries(data)) {
     if (key.toLowerCase().includes('url')) {
       if (Array.isArray(value)) continue
@@ -104,7 +104,7 @@ function getFavicon (url, size = 128) {
 }
 function itemShouldBeFilteredAccordingTo (item, key) {
   const result =
-    item.hasOwnProperty('_tags') &&
+    Array.isArray(item._tags) &&
     !isQueryParamSet(key) &&
     item._tags.includes(key)
   if (result) console.warn(`Item ${item.name} filtered by ${key}`)
