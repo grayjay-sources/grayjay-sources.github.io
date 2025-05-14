@@ -500,6 +500,10 @@
         }
     },
     {
+        "_tags": [
+            "official",
+            "working"
+        ],
         "name": "Curiosity Stream (Alpha)",
         "platformUrl": "https://curiositystream.com",
         "description": "Curiosity Stream has thousands of documentaries that enlighten, entertain & inspire. What are you curious about?",
