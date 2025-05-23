@@ -1,5 +1,169 @@
 [
     {
+  "name": "Crunchyroll (Alpha)",
+  "description": "Watch the latest anime on Crunchyroll",
+  "author": "FUTO",
+  "authorUrl": "https://futo.org",
+  "platformUrl": "https://crunchyroll.com",
+  "sourceUrl": "https://plugins.grayjay.app/Crunchyroll/CrunchyrollConfig.json",
+  "scriptUrl": "./CrunchyrollScript.js",
+  "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/crunchyroll",
+  "version": 11,
+  "iconUrl": "./CrunchyrollIcon.png",
+  "id": "9bb33039-8580-48d4-9849-21319ae845a4",
+  "scriptSignature": "rM3KBPp/y4+pEuFloftlS/bCq5sdm6PJNFIPXP+fx2s5Xnmj++h9lfe5/BE584hSQzb7zFrJPhewx6zxnFiJWw40iqPBhppmRzEkYeJskZrCKsw0BHlzt22yrlNt6wrsw5Hzv4WlKagZUDTrorhgB+4dJN8aMWPw6kyzGEHIPZJidoN1zB/MTCKStpafTdQ2oX8c7wUV3cF2tA89N1hXtQEtF8k4eWBrKuzNvXy/6Q6Ib6hFg1vAaC3iqaSHi1le+t3oNXJsPI95YRZ6s1YyfqbyBSwCGKahM4H3aGLuaXrQoNh2YlvTnOoAAeUodignM+v+O7UhhxktAVolaoaKVg==",
+  "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+  "packages": [
+    "Http",
+    "Utilities"
+  ],
+  "allowEval": false,
+  "allowUrls": [
+    ".crunchyroll.com",
+    "cr-play-service.prd.crunchyrollsvc.com",
+    "cr-license-proxy.prd.crunchyrollsvc.com",
+    "v.vrv.co"
+  ],
+  "authentication": {
+    "loginUrl": "https://sso.crunchyroll.com/login",
+    "cookiesToFind": [
+      "etp_rt"
+    ],
+    "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
+  },
+  "settings": [
+    {
+      "variable": "premiumContentUnavailableIndex",
+      "name": "Premium Content Unavailable",
+      "description": "How to handle premiun content not available to current user",
+      "type": "Dropdown",
+      "default": "0",
+      "options": [
+        "As regular content",
+        "As locked Content",
+        "Hide"
+      ]
+    },
+    {
+      "variable": "localeIndex",
+      "name": "Display Language",
+      "description": "",
+      "type": "Dropdown",
+      "default": "0",
+      "options": [
+        "en-US - English",
+        "en-IN - English (India)",
+        "id-ID - Bahasa Indonesia",
+        "ms-MY - Bahasa Melayu",
+        "ca-ES - Català",
+        "de-DE - Deutsch",
+        "es-419 - Español (América Latina)",
+        "es-ES - Español (España)",
+        "fr-FR - Français",
+        "it-IT - Italiano",
+        "pl-PL - Polski",
+        "pt-BR - Português (Brasil)",
+        "pt-PT - Português (Portugal)",
+        "vi-VN - Tiếng Việt",
+        "tr-TR - Türkçe",
+        "ru-RU - Русский",
+        "ar-SA - العربية",
+        "hi-IN - हिंदी",
+        "ta-IN - தமிழ்",
+        "te-IN - తెలుగు",
+        "zh-CN - 中文 (普通话)",
+        "zh-HK - 中文 (粵語)",
+        "zh-TW - 中文 (國語)",
+        "ko-KR - 한국어",
+        "th-TH - ไทย"
+      ]
+    },
+    {
+      "variable": "preferredAudioLanguageOptionIndex",
+      "name": "Audio Language",
+      "description": "Preferred audio language for the videos",
+      "type": "Dropdown",
+      "default": "0",
+      "options": [
+        "Original",
+        "en-US - English",
+        "en-IN - English (India)",
+        "id-ID - Bahasa Indonesia",
+        "ms-MY - Bahasa Melayu",
+        "ca-ES - Català",
+        "de-DE - Deutsch",
+        "es-419 - Español (América Latina)",
+        "es-ES - Español (España)",
+        "fr-FR - Français",
+        "it-IT - Italiano",
+        "pl-PL - Polski",
+        "pt-BR - Português (Brasil)",
+        "pt-PT - Português (Portugal)",
+        "vi-VN - Tiếng Việt",
+        "tr-TR - Türkçe",
+        "ru-RU - Русский",
+        "ar-SA - العربية",
+        "hi-IN - हिंदी",
+        "ta-IN - தமிழ்",
+        "te-IN - తెలుగు",
+        "zh-CN - 中文 (普通话)",
+        "zh-HK - 中文 (粵語)",
+        "zh-TW - 中文 (國語)",
+        "ko-KR - 한국어",
+        "th-TH - ไทย"
+      ]
+    },
+    {
+      "variable": "subtitlesLanguageOptionIndex",
+      "name": "Subtitles/CC Language",
+      "description": "",
+      "type": "Dropdown",
+      "default": "0",
+      "options": [
+        "en-US - English",
+        "en-IN - English (India)",
+        "id-ID - Bahasa Indonesia",
+        "ms-MY - Bahasa Melayu",
+        "ca-ES - Català",
+        "de-DE - Deutsch",
+        "es-419 - Español (América Latina)",
+        "es-ES - Español (España)",
+        "fr-FR - Français",
+        "it-IT - Italiano",
+        "pl-PL - Polski",
+        "pt-BR - Português (Brasil)",
+        "pt-PT - Português (Portugal)",
+        "vi-VN - Tiếng Việt",
+        "tr-TR - Türkçe",
+        "ru-RU - Русский",
+        "ar-SA - العربية",
+        "hi-IN - हिंदी",
+        "ta-IN - தமிழ்",
+        "te-IN - తెలుగు",
+        "zh-CN - 中文 (普通话)",
+        "zh-HK - 中文 (粵語)",
+        "zh-TW - 中文 (國語)",
+        "ko-KR - 한국어",
+        "th-TH - ไทย",
+        "None"
+      ]
+    }
+  ],
+  "changelog": {
+    "4": [
+      "Add pagination to content and creators search;"
+    ],
+    "7": [
+      "Add setting to set preferred subtitle;"
+    ]
+  },
+    "_tags": [
+        "official",
+        "untested"
+    ]
+}
+,
+    {
         "_tags": [
             "official",
             "working"
