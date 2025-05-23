@@ -461,7 +461,7 @@
         "settings": []
     },
     {
-        "name": "Crunchyroll",
+        "name": "Crunchyroll (Community)",
         "description": "Crunchyroll plugin",
         "author": "DeltaEvo",
         "authorUrl": "https://github.com/DeltaEvo",
@@ -484,7 +484,8 @@
         "_tags": [
             "unofficial",
             "maintained",
-            "working"
+            "working",
+            "archived"
         ],
         "_feeds": {
             "commits": "https://github.com/DeltaEvo/GrayjayCrunchyroll/commits/main.atom",
