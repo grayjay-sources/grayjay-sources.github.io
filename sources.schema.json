@@ -218,20 +218,8 @@
     },
     "DomainHeadersToFind": {
       "type": "object",
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
-        ".twitch.tv": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        ".youtube.com": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
       },
       "required": [],
       "title": "DomainHeadersToFind"
