@@ -21,6 +21,13 @@
         "authorUrl": {
           "type": "string"
         },
+        "maxDownloadParallelism": {
+          "type": "integer"
+        },
+        "changelogUrl": {
+          "type": "string",
+          "format": "uri"
+        },
         "sourceUrl": {
           "type": "string",
           "format": "uri"
@@ -30,13 +37,15 @@
           "format": "uri"
         },
         "scriptUrl": {
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         },
         "version": {
           "type": "integer"
         },
         "iconUrl": {
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         },
         "id": {
           "type": "string",
@@ -113,6 +122,9 @@
         "websiteUrl": {
           "type": "string",
           "format": "uri"
+        },
+        "changelog": {
+          "type": "string"
         },
         "subscriptionRateLimit": {
           "type": "integer"
