@@ -1,79 +1,5 @@
 [
     {
-    "_tags": [
-        "unofficial",
-        "untested"
-    ],
-    "_feeds": {
-    },
-    "name": "Dropout",
-    "description": "Independent, ad-free, uncensored comedy.",
-    "author": "Michael Braun",
-    "authorUrl": "https://github.com/BRNMan",
-    "platformUrl": "https://www.dropout.tv",
-    "sourceUrl": "https://github.com/BRNMan/Dropout-Grayjay-Plugin/releases/latest/download/config.json",
-    "repositoryUrl": "https://github.com/BRNMan/Dropout-Grayjay-Plugin",
-    "scriptUrl": "./script.js",
-    "version": 3,
-    "iconUrl": "./icon.png",
-    "id": "0b2d28e0-d645-4169-829f-8961a6169e68",
-    "packages": [
-        "Http"
-    ],
-    "allowEval": false,
-    "allowUrls": [
-        "www.dropout.tv",
-        "api.vhx.com",
-        "api.vhx.tv"
-    ],
-    "authentication": {
-        "loginUrl": "https://www.dropout.tv/login",
-        "cookiesToFind": [
-            "_session",
-            "_device"
-        ]
-    },
-    "scriptSignature": "nAAahtnzDeevU/7c16SLiML/UdKsq4a3yt2385dM8GG/xrNlOOCqbj2GEFBrXNDUghTQAMttH5dVX+0iLzSxg5rGu4dmZrZusWXMtRq+2z7jtFx+tb/LwQBqIesfOi6C8v1x+Azz5H+dYkmO4OzIeOhk1GsCp5R09ZTbXabOAc6tMlJfpaXCDdqYfbAAEsaekFco6jQnUq1K4ueCEnFSmpwvuNJGscOTkWpfwdi4JSSFB15e0JThbnBxPa+MaiamUGe4Xhd5AZT4h1jmnBlKLCUy5IbySIX067NH1q2TPlxoPnelxG5Tt6eHHSaKbE0KARXA2FbMAQZs6gYNglA+cg==",
-    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn8YLDcaY1Ua6WCehGWaLbnPjbGXOxUDXcS7tB60UZskdmTt3cO3rj8g9YKJ1IdMvFoMmMuHqSgOnIdEUF+dYiQBYG/+ehVkYmRXVAO5WM1pgmn1HKeahXxH5XxLAiBbwbdCgQSj/dcbTodSDqlJReTHWtTF5pwFEMzp3JjMCiWgbLW7hEF44vMvbQ83LM/b9D2f73kd71UG7Fj+1NfbKfkRuaclMLTSyI+j9E17i7DKFRyJ62bIJrWT1pYzWZtAX8Zo56Bb0keBYsiGWRnSNVgvMrnO00mihr+XZwuGOUk+rBPuNK5bCbYxEzRdqzJ729nCqcBfRcMABnpK+iLhprQIDAQAB"
-},
-    {
-    "_tags": [
-        "unofficial",
-        "untested"
-    ],
-    "_feeds": {
-    },
-    "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
-    "name": "Vimeo",
-    "description": "an up and comming platform",
-    "author": "Kai DeLorenzo",
-    "authorUrl": "https://gitlab.com/kaidelorenzo",
-    "platformUrl": "https://vimeo.com",
-    "sourceUrl": "https://gitlab.com/kaidelorenzo/grayjay-vimeo-plugin/-/releases/permalink/latest/downloads/src/config.json",
-    "repositoryUrl": "https://gitlab.com/kaidelorenzo/grayjay-vimeo-plugin",
-    "scriptUrl": "./script.js",
-    "version": 3,
-    "iconUrl": "./icon.png",
-    "id": "29c6b4d5-f006-402a-8ba0-97125643df63",
-    "packages": [
-        "Http"
-    ],
-    "allowEval": false,
-    "allowUrls": [
-        "vimeo.com",
-        "api.vimeo.com",
-        "player.vimeo.com"
-    ],
-    "authentication": {
-        "loginUrl": "https://vimeo.com/login",
-        "cookiesToFind": [
-            "vimeo"
-        ]
-    },
-    "scriptSignature": "RS1urloXNwx08DcSwnvAI56M0Qmgp3XQdsk4O1fKMzUq134+YvTcnNAhrOdEGwbMqBfEu7usoiAxKr2Iu9qMLNH2EZiT9u3R2eODKjW7g+wKdMLGYt3GARDc5aKqyZ+IkTdH1ItvHA5+LZ0yr3sG9BHwWJL5Kr6EnK2H0ScyCTITmxGPyj1wsLqBUBxhB5kFy4BPvTGKx3pYYLZDfXm8SfcdDS+b6jDkUtjU0vuYIT9fZ9Bk/BIhY6oqVa+M6caITFRNipPvfpIgZys3GHIDQbuNDzB5z1hasmB5FQqJtrpsEibJ48ib+wyBeTLsOVaw/ZrjRWuwyllGrUap0vNQxA==",
-    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx3XblavsQV/ct8b2EdJmSgiMWPv5evi7MTmpToBoSeqcYYmoqC9y4Fwx40Mg4nYWmC8h3u/dOUnR8XYezESU2KsGhUabyiOAozJs4qjAa1eB6v+v1R+eBK43pThzJLKN+3HwXgScF5qO4z9+HzU0T9tVhURHxi+NfjDBNWGYYpWAAlZa88cT4enzfyCmCfAHabQ+nF32gvmrlijZCNa5V4bpbKKhbaFbsSPO6n4DL3gETiwHTrqM/D88a06+PJM/JFZ5ZF5OJUQ2JO0qze/EX227VUpSSfq/OIR084x9rJEVvZvtSVkeREmVK+OdY3XP9VTOfdeiq3MXFP4dbWp7ewIDAQAB"
-},
-    {
         "_tags": [
             "official",
             "working"
@@ -1478,6 +1404,42 @@
         "platformUrl": "https://www.deviantart.com"
     },
     {
+        "_tags": [
+            "unofficial",
+            "untested"
+        ],
+        "_feeds": {},
+        "name": "Dropout",
+        "description": "Independent, ad-free, uncensored comedy.",
+        "author": "Michael Braun",
+        "authorUrl": "https://github.com/BRNMan",
+        "platformUrl": "https://www.dropout.tv",
+        "sourceUrl": "https://github.com/BRNMan/Dropout-Grayjay-Plugin/releases/latest/download/config.json",
+        "repositoryUrl": "https://github.com/BRNMan/Dropout-Grayjay-Plugin",
+        "scriptUrl": "./script.js",
+        "version": 3,
+        "iconUrl": "./icon.png",
+        "id": "0b2d28e0-d645-4169-829f-8961a6169e68",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "www.dropout.tv",
+            "api.vhx.com",
+            "api.vhx.tv"
+        ],
+        "authentication": {
+            "loginUrl": "https://www.dropout.tv/login",
+            "cookiesToFind": [
+                "_session",
+                "_device"
+            ]
+        },
+        "scriptSignature": "nAAahtnzDeevU/7c16SLiML/UdKsq4a3yt2385dM8GG/xrNlOOCqbj2GEFBrXNDUghTQAMttH5dVX+0iLzSxg5rGu4dmZrZusWXMtRq+2z7jtFx+tb/LwQBqIesfOi6C8v1x+Azz5H+dYkmO4OzIeOhk1GsCp5R09ZTbXabOAc6tMlJfpaXCDdqYfbAAEsaekFco6jQnUq1K4ueCEnFSmpwvuNJGscOTkWpfwdi4JSSFB15e0JThbnBxPa+MaiamUGe4Xhd5AZT4h1jmnBlKLCUy5IbySIX067NH1q2TPlxoPnelxG5Tt6eHHSaKbE0KARXA2FbMAQZs6gYNglA+cg==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn8YLDcaY1Ua6WCehGWaLbnPjbGXOxUDXcS7tB60UZskdmTt3cO3rj8g9YKJ1IdMvFoMmMuHqSgOnIdEUF+dYiQBYG/+ehVkYmRXVAO5WM1pgmn1HKeahXxH5XxLAiBbwbdCgQSj/dcbTodSDqlJReTHWtTF5pwFEMzp3JjMCiWgbLW7hEF44vMvbQ83LM/b9D2f73kd71UG7Fj+1NfbKfkRuaclMLTSyI+j9E17i7DKFRyJ62bIJrWT1pYzWZtAX8Zo56Bb0keBYsiGWRnSNVgvMrnO00mihr+XZwuGOUk+rBPuNK5bCbYxEzRdqzJ729nCqcBfRcMABnpK+iLhprQIDAQAB"
+    },
+    {
         "name": "Floatplane",
         "description": "A content creation and video streaming website created by Floatplane Media Inc. and Linus Media Group.",
         "author": "VoxelPrismatic",
@@ -2302,6 +2264,42 @@
             "baseUrl": "https://api.vanillo.tv"
         },
         "websiteUrl": "https://dw5.github.io"
+    },
+    {
+        "_tags": [
+            "unofficial",
+            "untested"
+        ],
+        "_feeds": {},
+        "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
+        "name": "Vimeo",
+        "description": "an up and comming platform",
+        "author": "Kai DeLorenzo",
+        "authorUrl": "https://gitlab.com/kaidelorenzo",
+        "platformUrl": "https://vimeo.com",
+        "sourceUrl": "https://gitlab.com/kaidelorenzo/grayjay-vimeo-plugin/-/releases/permalink/latest/downloads/src/config.json",
+        "repositoryUrl": "https://gitlab.com/kaidelorenzo/grayjay-vimeo-plugin",
+        "scriptUrl": "./script.js",
+        "version": 3,
+        "iconUrl": "./icon.png",
+        "id": "29c6b4d5-f006-402a-8ba0-97125643df63",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "vimeo.com",
+            "api.vimeo.com",
+            "player.vimeo.com"
+        ],
+        "authentication": {
+            "loginUrl": "https://vimeo.com/login",
+            "cookiesToFind": [
+                "vimeo"
+            ]
+        },
+        "scriptSignature": "RS1urloXNwx08DcSwnvAI56M0Qmgp3XQdsk4O1fKMzUq134+YvTcnNAhrOdEGwbMqBfEu7usoiAxKr2Iu9qMLNH2EZiT9u3R2eODKjW7g+wKdMLGYt3GARDc5aKqyZ+IkTdH1ItvHA5+LZ0yr3sG9BHwWJL5Kr6EnK2H0ScyCTITmxGPyj1wsLqBUBxhB5kFy4BPvTGKx3pYYLZDfXm8SfcdDS+b6jDkUtjU0vuYIT9fZ9Bk/BIhY6oqVa+M6caITFRNipPvfpIgZys3GHIDQbuNDzB5z1hasmB5FQqJtrpsEibJ48ib+wyBeTLsOVaw/ZrjRWuwyllGrUap0vNQxA==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx3XblavsQV/ct8b2EdJmSgiMWPv5evi7MTmpToBoSeqcYYmoqC9y4Fwx40Mg4nYWmC8h3u/dOUnR8XYezESU2KsGhUabyiOAozJs4qjAa1eB6v+v1R+eBK43pThzJLKN+3HwXgScF5qO4z9+HzU0T9tVhURHxi+NfjDBNWGYYpWAAlZa88cT4enzfyCmCfAHabQ+nF32gvmrlijZCNa5V4bpbKKhbaFbsSPO6n4DL3gETiwHTrqM/D88a06+PJM/JFZ5ZF5OJUQ2JO0qze/EX227VUpSSfq/OIR084x9rJEVvZvtSVkeREmVK+OdY3XP9VTOfdeiq3MXFP4dbWp7ewIDAQAB"
     },
     {
         "name": "Wien.gv.at Videos",
