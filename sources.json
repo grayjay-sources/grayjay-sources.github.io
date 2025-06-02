@@ -1,6 +1,74 @@
 [
     {
         "_tags": [
+            "unofficial",
+            "untested"
+        ],
+        "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
+        "name": "Floatplane",
+        "description": "A content creation and video streaming website created by Floatplane Media Inc. and Linus Media Group.",
+        "author": "kaidelorenzo",
+        "authorUrl": "https://github.com/kaidelorenzo",
+        "platformUrl": "https://floatplane.com",
+        "sourceUrl": "https://github.com/kaidelorenzo/grayjay-floatplane/releases/latest/download/config.json",
+        "repositoryUrl": "https://github.com/kaidelorenzo/grayjay-floatplane",
+        "scriptUrl": "./script.js",
+        "version": 3,
+        "iconUrl": "./icon.png",
+        "id": "d8643244-633f-4c71-9f45-215b2387dc2c",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "www.floatplane.com",
+            "floatplane.com",
+            "cdn-vod-drm0.floatplane.com",
+            "cdn-vod-drm1.floatplane.com",
+            "cdn-vod-drm2.floatplane.com",
+            "cdn-vod-drm3.floatplane.com",
+            "cdn-vod-drm4.floatplane.com",
+            "cdn-vod-drm5.floatplane.com",
+            "cdn-vod-drm6.floatplane.com",
+            "cdn-vod-drm7.floatplane.com",
+            "cdn-vod-drm8.floatplane.com",
+            "cdn-vod-drm9.floatplane.com"
+        ],
+        "settings": [
+            {
+                "variable": "stream_format",
+                "name": "Stream format",
+                "description": "This will reduce clutter in the source selector, especially if there are lots of attachments",
+                "type": "Dropdown",
+                "default": "0",
+                "options": [
+                    "HLS",
+                    "Legacy HLS",
+                    "Flat MP4"
+                ]
+            },
+            {
+                "variable": "log_toasts",
+                "name": "Toast Logging",
+                "description": "Will log details in toasts",
+                "type": "Boolean",
+                "default": "false"
+            }
+        ],
+        "authentication": {
+            "loginUrl": "https://www.floatplane.com/login",
+            "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+            "cookiesToFind": [
+                "sails.sid",
+                "muxData"
+            ],
+            "loginWarning": "Login and then open a video. Try using Discord login"
+        },
+        "scriptSignature": "Wb0PIEDWr1Y/kfPY260owVyLiZ0QUzDfeMt1I7gsLUH/NFHaz7gUBf4ovse1jm0fA1ozG9daQXYK0oylvGkJmwS+TpBuiIIuH2cf+7rg9sJ1BZRUTJkSqix04z8ivC1nGrsDE9q3g85TnRmioDy581EomqHtVzIkDNH5GHb//LBOctBsDel4egOR0vwMQGA+vPvu0i3L4fSfHQ+8X0tvSFm4IpGAU9nEl1b8Wg3gnTzj21nsk9ykpmR0AMQWNSgDsufM8JpOT1dBTlmM2+roa4u4sAiZOZ2Ven3jMcGx5jJfA208eYM/zSAbQHGRHhuhf8m4r+tOHjhUJ2m6KINZVg==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx3XblavsQV/ct8b2EdJmSgiMWPv5evi7MTmpToBoSeqcYYmoqC9y4Fwx40Mg4nYWmC8h3u/dOUnR8XYezESU2KsGhUabyiOAozJs4qjAa1eB6v+v1R+eBK43pThzJLKN+3HwXgScF5qO4z9+HzU0T9tVhURHxi+NfjDBNWGYYpWAAlZa88cT4enzfyCmCfAHabQ+nF32gvmrlijZCNa5V4bpbKKhbaFbsSPO6n4DL3gETiwHTrqM/D88a06+PJM/JFZ5ZF5OJUQ2JO0qze/EX227VUpSSfq/OIR084x9rJEVvZvtSVkeREmVK+OdY3XP9VTOfdeiq3MXFP4dbWp7ewIDAQAB"
+    },
+    {
+        "_tags": [
             "official",
             "working"
         ],
@@ -1440,7 +1508,7 @@
         "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn8YLDcaY1Ua6WCehGWaLbnPjbGXOxUDXcS7tB60UZskdmTt3cO3rj8g9YKJ1IdMvFoMmMuHqSgOnIdEUF+dYiQBYG/+ehVkYmRXVAO5WM1pgmn1HKeahXxH5XxLAiBbwbdCgQSj/dcbTodSDqlJReTHWtTF5pwFEMzp3JjMCiWgbLW7hEF44vMvbQ83LM/b9D2f73kd71UG7Fj+1NfbKfkRuaclMLTSyI+j9E17i7DKFRyJ62bIJrWT1pYzWZtAX8Zo56Bb0keBYsiGWRnSNVgvMrnO00mihr+XZwuGOUk+rBPuNK5bCbYxEzRdqzJ729nCqcBfRcMABnpK+iLhprQIDAQAB"
     },
     {
-        "name": "Floatplane",
+        "name": "Floatplane (Discontinued)",
         "description": "A content creation and video streaming website created by Floatplane Media Inc. and Linus Media Group.",
         "author": "VoxelPrismatic",
         "authorUrl": "https://github.com/voxelprismatic",
@@ -1459,7 +1527,8 @@
             "floatplane.com"
         ],
         "_tags": [
-            "working"
+            "untested",
+            "archived"
         ],
         "scriptSignature": "<ommitted>",
         "scriptPublicKey": "<ommitted>",
