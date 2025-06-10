@@ -2003,7 +2003,6 @@
         ],
         "_tags": [
             "unofficial",
-            "maintained",
             "working",
             "nsfw"
         ],
@@ -2427,6 +2426,11 @@
         }
     },
     {
+        "_tags": [
+            "unofficial",
+            "working",
+            "nsfw"
+        ],
         "name": "XNXX",
         "description": "XNXX video platform plugin for Grayjay",
         "platformUrl": "https://www.xnxx.com",
@@ -2451,6 +2455,11 @@
         ]
     },
     {
+        "_tags": [
+            "unofficial",
+            "working",
+            "nsfw"
+        ],
         "name": "XVideos",
         "description": "XVideos video platform plugin for Grayjay",
         "platformUrl": "https://www.xvideos.com",
