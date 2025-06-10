@@ -1,92 +1,5 @@
 [
     {
-
-    "name": "Brighteon",
-
-    "description": "A video platform focused on freedom of expression.",
-
-    "platformUrl": "https://brighteon.com",
-
-    "author": "GreyPluginDev",
-
-    "authorUrl": "https://github.com/GreyPluginDev",
-
-    "sourceUrl": "https://grayjay-plugin-brighteon.pages.dev/BrighteonConfig.json",
-
-    "repositoryUrl": "https://github.com/GreyPluginDev/grayjay-plugin-brighteon",
-
-    "scriptUrl": "./BrighteonScript.js",
-
-    "version": 1,
-
-    "iconUrl": "./BrighteonIcon.png",
-
-    "id": "9d10d388-e685-477d-a794-50d237257d84",
-
-    "scriptSignature": "",
-
-    "scriptPublicKey": "",
-
-    "packages": ["Http"],
-
-    "allowEval": false,
-
-    "allowUrls": [
-
-      ".brighteon.com"
-
-    ],
-
-    "settings": []
-
-  },{
-  "name": "XNXX",
-  "description": "XNXX video platform plugin for Grayjay",
-  "platformUrl": "https://www.xnxx.com",
-  "author": "GreyPluginDev",
-  "authorUrl": "https://github.com/GreyPluginDev",
-  "sourceUrl": "https://grayjay-plugin-xnxx.pages.dev/XNXXConfig.json",
-  "repositoryUrl": "https://github.com/GreyPluginDev/grayjay-plugin-xnxx",
-  "scriptUrl": "./XNXXScript.js",
-  "version": 1,
-  "iconUrl": "./icon.png",
-  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
-  "scriptSignature": "",
-  "scriptPublicKey": "",
-  "packages": [
-    "Http"
-  ],
-  "allowEval": false,
-  "allowUrls": [
-    ".xn-app1.com",
-    ".xnxx-cdn.com",
-    ".xnxx.com"
-  ]
-},{
-  "name": "XVideos",
-  "description": "XVideos video platform plugin for Grayjay",
-  "platformUrl": "https://www.xvideos.com",
-  "author": "GreyPluginDev",
-  "authorUrl": "https://github.com/GreyPluginDev",
-  "sourceUrl": "https://grayjay-plugin-xvideos.pages.dev/XVideosConfig.json",
-  "repositoryUrl": "https://github.com/GreyPluginDev/grayjay-plugin-xvideos",
-  "scriptUrl": "./XVideosScript.js",
-  "version": 2,
-  "iconUrl": "./icon.png",
-  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567891",
-  "scriptSignature": "",
-  "scriptPublicKey": "",
-  "packages": [
-    "Http"
-  ],
-  "allowEval": false,
-  "allowUrls": [
-    ".xv-app1.com",
-    ".cdn77-pic.xvideos-cdn.com",
-    ".xvideos.com"
-  ]
-},
-    {
         "_tags": [
             "official",
             "working"
@@ -457,6 +370,29 @@
                 "sessionid"
             ]
         }
+    },
+    {
+        "name": "Brighteon",
+        "description": "A video platform focused on freedom of expression.",
+        "platformUrl": "https://brighteon.com",
+        "author": "GreyPluginDev",
+        "authorUrl": "https://github.com/GreyPluginDev",
+        "sourceUrl": "https://grayjay-plugin-brighteon.pages.dev/BrighteonConfig.json",
+        "repositoryUrl": "https://github.com/GreyPluginDev/grayjay-plugin-brighteon",
+        "scriptUrl": "./BrighteonScript.js",
+        "version": 1,
+        "iconUrl": "./BrighteonIcon.png",
+        "id": "9d10d388-e685-477d-a794-50d237257d84",
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            ".brighteon.com"
+        ],
+        "settings": []
     },
     {
         "name": "CDA",
@@ -2489,6 +2425,54 @@
             "commits": "https://github.com/Matti-Koopa/grayjay_wienat_videos/commits/master.atom",
             "releases": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases.atom"
         }
+    },
+    {
+        "name": "XNXX",
+        "description": "XNXX video platform plugin for Grayjay",
+        "platformUrl": "https://www.xnxx.com",
+        "author": "GreyPluginDev",
+        "authorUrl": "https://github.com/GreyPluginDev",
+        "sourceUrl": "https://grayjay-plugin-xnxx.pages.dev/XNXXConfig.json",
+        "repositoryUrl": "https://github.com/GreyPluginDev/grayjay-plugin-xnxx",
+        "scriptUrl": "./XNXXScript.js",
+        "version": 1,
+        "iconUrl": "./icon.png",
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            ".xn-app1.com",
+            ".xnxx-cdn.com",
+            ".xnxx.com"
+        ]
+    },
+    {
+        "name": "XVideos",
+        "description": "XVideos video platform plugin for Grayjay",
+        "platformUrl": "https://www.xvideos.com",
+        "author": "GreyPluginDev",
+        "authorUrl": "https://github.com/GreyPluginDev",
+        "sourceUrl": "https://grayjay-plugin-xvideos.pages.dev/XVideosConfig.json",
+        "repositoryUrl": "https://github.com/GreyPluginDev/grayjay-plugin-xvideos",
+        "scriptUrl": "./XVideosScript.js",
+        "version": 2,
+        "iconUrl": "./icon.png",
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567891",
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            ".xv-app1.com",
+            ".cdn77-pic.xvideos-cdn.com",
+            ".xvideos.com"
+        ]
     },
     {
         "name": "YouTube Music",
