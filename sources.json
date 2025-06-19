@@ -1,70 +1,79 @@
 [
     {
-    "_tags": [
-        "unofficial",
-        "untested"
-    ],
-    "name": "Adventures in Odyssey Club",
-    "description": "Subscription service for the award-winning, original audio drama series enjoyed by the whole family.",
-    "author": "CATEIN",
-    "authorUrl": "https://catein.xyz",
-    "sourceUrl": "https://raw.githubusercontent.com/CATEIN/adventures-in-odyssey-club-plugin/refs/heads/main/AdventuresInOdysseyClubConfig.json",
-    "repositoryUrl": "https://github.com/CATEIN/adventures-in-odyssey-club-plugin",
-    "scriptUrl": "./AIOScript.js",
-    "version": 4,
-    "iconUrl": "./AIOC.png",
-    "id": "62e186ef-160d-46d7-9953-74fe84d11b40",
-    "scriptSignature": "",
-    "scriptPublicKey": "",
-    "packages": ["Http"],
-    "allowEval": false,
-    "allowUrls": ["fotf.my.site.com"],
-    "authentication": {
-      "loginUrl": "https://app.adventuresinodyssey.com/signin",
-      "domainHeadersToFind": { 
-        "fotf.my.site.com": ["Authorization", "x-viewer-id", "x-pin"]
-      },
-      "cookiesToFind": ["idccsrf"],
-      "loginWarning": "You must select a profile with a PIN for authentication to complete."
-    },
-    "settings": [
-        {
-            "variable": "fetchRandomEpisode",
-            "name": "Randomizer via Recommended",
-            "description": "Puts a random episode at the top of recommendations (Recommendations may take longer to load)",
-            "type": "Boolean",
-            "default": "false"
+        "_tags": [
+            "unofficial",
+            "untested"
+        ],
+        "name": "Adventures in Odyssey Club",
+        "description": "Subscription service for the award-winning, original audio drama series enjoyed by the whole family.",
+        "author": "CATEIN",
+        "authorUrl": "https://catein.xyz",
+        "sourceUrl": "https://raw.githubusercontent.com/CATEIN/adventures-in-odyssey-club-plugin/refs/heads/main/AdventuresInOdysseyClubConfig.json",
+        "repositoryUrl": "https://github.com/CATEIN/adventures-in-odyssey-club-plugin",
+        "scriptUrl": "./AIOScript.js",
+        "version": 4,
+        "iconUrl": "./AIOC.png",
+        "id": "62e186ef-160d-46d7-9953-74fe84d11b40",
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "fotf.my.site.com"
+        ],
+        "authentication": {
+            "loginUrl": "https://app.adventuresinodyssey.com/signin",
+            "domainHeadersToFind": {
+                "fotf.my.site.com": [
+                    "Authorization",
+                    "x-viewer-id",
+                    "x-pin"
+                ]
+            },
+            "cookiesToFind": [
+                "idccsrf"
+            ],
+            "loginWarning": "You must select a profile with a PIN for authentication to complete."
         },
-        {
-          "variable": "secretVariable",
-          "name": "Enable Experimental Ambient Playback Rerouting",
-          "description": "Only enable if you are not logged in",
-          "type": "Boolean",
-          "default": "false"
-      }
-      ],
-    "changelog": {
-        "4" : [
-            "No longer using allowUrls: everywhere",
-            "Renamed the plugin to Adventures in Odyssey Club"
+        "settings": [
+            {
+                "variable": "fetchRandomEpisode",
+                "name": "Randomizer via Recommended",
+                "description": "Puts a random episode at the top of recommendations (Recommendations may take longer to load)",
+                "type": "Boolean",
+                "default": "false"
+            },
+            {
+                "variable": "secretVariable",
+                "name": "Enable Experimental Ambient Playback Rerouting",
+                "description": "Only enable if you are not logged in",
+                "type": "Boolean",
+                "default": "false"
+            }
         ],
-        "3" : [
-            "Another update yay!",
-            "AIOC channel now displays albums as playlists",
-            "Added support for listening to free episodes and podcasts",
-            "Radio episodes now appear on the channel for non logged in users",
-            "Added settings"
-        ],
-        "2" : [
-            "Hi Jonny and Kevin. If you recived this message, I have successfully updated the plugin. If you are not Jonny or Kevin... hello",
-            "Audio now displays a thumbnail.",
-            "contentGroupings should now work as playlists",
-            "maybe a slightly better search",
-            "Upload date now appears on subscriptions"
-        ]
-    }
-
-  },
+        "changelog": {
+            "2": [
+                "Hi Jonny and Kevin. If you recived this message, I have successfully updated the plugin. If you are not Jonny or Kevin... hello",
+                "Audio now displays a thumbnail.",
+                "contentGroupings should now work as playlists",
+                "maybe a slightly better search",
+                "Upload date now appears on subscriptions"
+            ],
+            "3": [
+                "Another update yay!",
+                "AIOC channel now displays albums as playlists",
+                "Added support for listening to free episodes and podcasts",
+                "Radio episodes now appear on the channel for non logged in users",
+                "Added settings"
+            ],
+            "4": [
+                "No longer using allowUrls: everywhere",
+                "Renamed the plugin to Adventures in Odyssey Club"
+            ]
+        }
+    },
     {
         "_tags": [
             "official",
