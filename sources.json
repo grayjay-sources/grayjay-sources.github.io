@@ -1,197 +1,4 @@
 [
-        {
-  "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
-  "name": "Trovo (Beta)",
-  "description": "A gaming-centric live streaming platform, part of Tencent's portfolio.",
-  "author": "AlexisBlade2001",
-  "authorUrl": "https://github.com/AlexisBlade2001",
-  "platformUrl": "https://trovo.live",
-  "sourceUrl": "https://alexisblade2001.github.io/Grayjay-Plugins/Trovo/TrovoConfig.json",
-  "repositoryUrl": "https://github.com/AlexisBlade2001/Grayjay-Trovo",
-  "scriptUrl": "./TrovoScript.js",
-  "version": 1,
-  "iconUrl": "./TrovoIcon.png",
-  "id": "362458b3-f453-4f7b-b468-08591e580f89",
-  "scriptSignature": "HgW/KarigyzkHonaLgRP+vkOHHP6f5xpQ3hzogJ7PG/KjjNWJuiwrnTOQJuFzwDeHfOFD4zNsc0VQaiwggzPGpmCut4poIq12e5HWCvn4sEf5ttO280qOU0wnkVikp3qjgwoKZMMFZ548Cy7ER3TOPsEK9dnsLx2ZjSpMQN9a5KZpbnOlzApfh87SFt+l+3PgHxAWnJJ0q4u0c1o0kNm/8KXkRtqB1vz09PfZNyOIvF5oT0RlWERonSkwIgufdB2bk9Ao4C5gd04MuJsh3DmTtSeftqYMKcKTivSxKAyQCvuyQaOXe0cXR1GF18esSrqOWBUURTiSVlxRN8Wm1jO3XLMnidZNLPNnuHN95yCp+DGXr5KrwpYjCCA6xZ83iuUR7QtJOFN83bO6qo86cJyuOu1+n+8eVlEhlIsO4B3zjmM7MeDXk5ahZcRU20H2xeHHZs9hmr1+bnAMXXX7jmT5wSc6mhjssNB1CDRXZBr4Vvs4C7tOGfsx36KDUqHj426Uvo8PfQpvhzc7RzbhqUZ1lg6RYBKLrXivbsPRqAnhGoMroGZ8GPgQn5H5eXsPci7+JyLiMWhhVEGfBfbJAn2hWDKwyx9eIKYKumVu5s1290/tLCi9LKfR7UyGViqzmmEufHqbzsNWyIpuGI/doGzdz93aDSg1wG2rCrDW1h9hgk=",
-  "scriptPublicKey": "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAr63Yf0gjJG8rV9IhtUQgxzryQCtacKfdaErLBC4sOhcnHEqWYJoAHGytGggRSyuGZoJFX2Ovd/8bH0YRT1e1oWMgSZFHQ0k3UE94G2Jw1jmmFvZEaMVxDW7RLkkvqYlXBNDLdkxfbyZepKV5mM4Fd5kbueAdfWdhsl5FhlqHCH10kudewcFq4WBTwQW1chsdkI0Iqrgwqzs5vH5cpphxzXUb+V6rtOUystpFwsEXb6m1Kzl0Uy/9AWTdT9JJJ7H88ycO6d6xX9UUjOXCwMWHxPcZ6UVPN2Plr8UBTJvF0uaYkDhNn0rzEe7NiJ8gUmrT0UJB2E5cYv4I4eTGp6RTwKe7UVCGEo8S7vQ0yPjxk8+dta+V6ECvg7VV1Ic00dfYqPsWPsZJ/xkJLeXIeXhjDNLm0pebr6W6bXkVPvS9PcYMoId+YpghojnPnzo/vmAIo4aS90G1zwmCNonv4suy2Kl48Pxz2OO0YepTuAZxJA6vrPcHxqbeAcAvfpk9PXLRmxD/eoiTsJusxkP5h6Z00gWJiFNNSntOShaGfCtloumqFHi5HIDiipo6KvIBvSYFaK0vlcFjdk0cAkMskuGP8B98zlMP5s9C19/uC6WsDmX1oQ0tNRIifBzg1QE0RuvvfqjI3/W4MqmKllbkwj/Pl/irIaeHsTK/+bwko/jK460CAwEAAQ==",
-  "packages": [
-    "Http",
-    "DOMParser"
-  ],
-  "allowEval": false,
-  "allowUrls": [
-    "astatic.trovocdn.net",
-    "trovo.live",
-    "cdn.trovo.live",
-    "intlsdk.trovo.live",
-    "pubsub.trovo.live",
-    "aegis.trovo.live",
-    "open-api.trovo.live",
-    "api.trovo.live",
-    "api-web.trovo.live",
-    "api-web-backup.trovo.live",
-    "fr-api-web.trovo.live",
-    "fr-api-web-backup.trovo.live",
-    "sv-api-web.trovo.live",
-    "sv-api-web-backup.trovo.live",
-    "cfgapi.trovo.live",
-    "chat.trovo.live",
-    "chat-backup.trovo.live",
-    "fr-chat.trovo.live",
-    "fr-chat-backup.trovo.live",
-    "sv-chat.trovo.live",
-    "sv-chat-backup.trovo.live",
-    "custom-file.trovo.live",
-    "img.trovo.live",
-    "vod.trovo.live",
-    "player.trovo.live",
-    "headicon.trovo.live",
-    "livecover.trovo.live",
-    "liveplay.trovo.live",
-    "liveplay2.trovocdn.net",
-    "static.trovo.live",
-    "tdm.trovo.live:8013",
-    "playback.livepeer.studio",
-    "playtimeshift.trovo.live"
-  ],
-  "authentication": {
-    "loginUrl": "https://cdn.trovo.live/page/login-page.html",
-    "headersToFind": [
-      "Authorization",
-      "Cookie"
-    ],
-    "cookiesToFind": [
-      "uid",
-      "openid",
-      "pgg_pvid",
-      "token",
-      "tokenInfos",
-      "channel"
-    ]
-  },
-  "settings": [
-    {
-      "variable": "allowMatureTag",
-      "name": "Allow Mature Content",
-      "description": "Allow searching and watching of mature content",
-      "type": "Boolean",
-      "default": "true"
-    },
-    {
-      "variable": "shouldIncludeChannelClips",
-      "name": "Show channel clips",
-      "description": "",
-      "type": "Boolean",
-      "default": "false"
-    }
-  ],
-  "changelog": {
-    "1": [
-      "Feature: Comments are working. oh, SubComments too."
-    ],
-    "0": [
-      "Initial Release",
-      "Feature: Search Support [Suggestions, Contents(Lives) and Channels]",
-      "Feature: Content Support [Lives(Experimental), Clips, VODs and Uploads]",
-      "Feature: Channel Support [Channel Details, Lives, VODs, Uploads and Clips(Disabled by default, need to come up with a better way to handle them)]",
-      "Issue: Almost everything related to the Follower Count doesn't work, it is not available in the API calls for some reason. The only exception is while Searching."
-    ]
-  }
-}
-,{
-  "name": "Genius Lyrics",
-  "description": "Fetch lyrics from Genius.com",
-  "author": "georgesygelakis",
-  "authorUrl": "https://github.com/georgesygelakis",
-  "platformUrl": "https://genius.com",
-  "version": 2,
-  "iconUrl": "https://i.pinimg.com/originals/48/a0/9f/48a09fb46e00022a692e459b917a2848.jpg",
-  "id": "genius-lyrics",
-  "scriptUrl": "./GeniusLyricsPlugin.js",
-  "packages": ["Http"],
-  "allowEval": false,
-  "allowUrls": ["https://genius.com/*", "https://api.genius.com/*"],
-  "supportedActions": ["getLyrics"]
-},{
-    "name": "Librivox Audiobooks",
-    "platformUrl": "https://librivox.org/",
-    "description": "Free public domain audiobooks read by volunteers from around the world",
-    "author": "Vijay Prema",
-    "authorUrl": "https://futo.org",
-    "repositoryUrl": "https://github.com/vijay-prema/librivox-grayjay",
-    "sourceUrl": "https://raw.githubusercontent.com/vijay-prema/librivox-grayjay/refs/heads/main/LibrivoxConfig.json",
-    "scriptUrl": "./LibrivoxScript.js",
-    "version": 3,
-    "iconUrl": "./LibrivoxIcon.png",
-    "id": "971285f6-289a-40da-8df8-97aedb905927",
-    "subscriptionRateLimit": 10,
-    "scriptSignature": "",
-    "scriptPublicKey": "",
-    "packages": [
-        "Http"
-    ],
-    "allowEval": false,
-    "allowUrls": [
-        "librivox.org",
-        "archive.org"
-    ],
-    "settings": [
-        {
-            "variable": "allowExplicit",
-            "name": "Allow Explicit Content",
-            "description": "Allow listening to audiobooks with explicit content warnings",
-            "type": "Boolean",
-            "default": "true"
-        },
-        {
-            "variable": "preferredLanguage",
-            "name": "Preferred Language",
-            "description": "Select your preferred language for audiobook results",
-            "type": "Dropdown",
-            "default": "0",
-            "options": [
-                "English",
-                "French",
-                "German",
-                "Spanish",
-                "Italian",
-                "Portuguese",
-                "Dutch",
-                "All Languages"
-            ]
-        },
-        {
-            "variable": "contentRecommendationOptionIndex",
-            "name": "Content recommendations source",
-            "description": "Select the source of content recommendations",
-            "type": "Dropdown",
-            "default": "0",
-            "options": [
-                "Popular audiobooks",
-                "Recently added audiobooks"
-            ]
-        }
-    ],
-    "authentication": null,
-    "changelog": {
-        "1": [
-            "Initial release: Support for Librivox audiobooks",
-            "Search audiobooks by title, author, or genre",
-            "Browse popular and recently added audiobooks",
-            "Support for multiple languages",
-            "Chapter-based navigation for audiobooks"
-        ],
-        "2": [
-            "Audiobook are now returned as playlists with chapters"
-        ],
-        "3": [
-            "Revert playlist approach and try something else"
-        ],
-        "4": [
-            "Added thumbnail support for audiobooks and authors"
-        ]
-    }
-},
     {
         "_tags": [
             "unofficial",
@@ -1829,6 +1636,28 @@
         }
     },
     {
+        "name": "Genius Lyrics",
+        "description": "Fetch lyrics from Genius.com",
+        "author": "georgesygelakis",
+        "authorUrl": "https://github.com/georgesygelakis",
+        "platformUrl": "https://genius.com",
+        "version": 2,
+        "iconUrl": "https://i.pinimg.com/originals/48/a0/9f/48a09fb46e00022a692e459b917a2848.jpg",
+        "id": "genius-lyrics",
+        "scriptUrl": "./GeniusLyricsPlugin.js",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "https://genius.com/*",
+            "https://api.genius.com/*"
+        ],
+        "supportedActions": [
+            "getLyrics"
+        ]
+    },
+    {
         "name": "God Resource (Unofficial)",
         "description": "Sermons from nifb",
         "author": "Stuart Houston",
@@ -1970,6 +1799,86 @@
         "supportedClaimTypes": [
             16
         ]
+    },
+    {
+        "name": "Librivox Audiobooks",
+        "platformUrl": "https://librivox.org/",
+        "description": "Free public domain audiobooks read by volunteers from around the world",
+        "author": "Vijay Prema",
+        "authorUrl": "https://futo.org",
+        "repositoryUrl": "https://github.com/vijay-prema/librivox-grayjay",
+        "sourceUrl": "https://raw.githubusercontent.com/vijay-prema/librivox-grayjay/refs/heads/main/LibrivoxConfig.json",
+        "scriptUrl": "./LibrivoxScript.js",
+        "version": 3,
+        "iconUrl": "./LibrivoxIcon.png",
+        "id": "971285f6-289a-40da-8df8-97aedb905927",
+        "subscriptionRateLimit": 10,
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "librivox.org",
+            "archive.org"
+        ],
+        "settings": [
+            {
+                "variable": "allowExplicit",
+                "name": "Allow Explicit Content",
+                "description": "Allow listening to audiobooks with explicit content warnings",
+                "type": "Boolean",
+                "default": "true"
+            },
+            {
+                "variable": "preferredLanguage",
+                "name": "Preferred Language",
+                "description": "Select your preferred language for audiobook results",
+                "type": "Dropdown",
+                "default": "0",
+                "options": [
+                    "English",
+                    "French",
+                    "German",
+                    "Spanish",
+                    "Italian",
+                    "Portuguese",
+                    "Dutch",
+                    "All Languages"
+                ]
+            },
+            {
+                "variable": "contentRecommendationOptionIndex",
+                "name": "Content recommendations source",
+                "description": "Select the source of content recommendations",
+                "type": "Dropdown",
+                "default": "0",
+                "options": [
+                    "Popular audiobooks",
+                    "Recently added audiobooks"
+                ]
+            }
+        ],
+        "authentication": null,
+        "changelog": {
+            "1": [
+                "Initial release: Support for Librivox audiobooks",
+                "Search audiobooks by title, author, or genre",
+                "Browse popular and recently added audiobooks",
+                "Support for multiple languages",
+                "Chapter-based navigation for audiobooks"
+            ],
+            "2": [
+                "Audiobook are now returned as playlists with chapters"
+            ],
+            "3": [
+                "Revert playlist approach and try something else"
+            ],
+            "4": [
+                "Added thumbnail support for audiobooks and authors"
+            ]
+        }
     },
     {
         "_tags": [
@@ -2629,6 +2538,105 @@
         "platformUrl": "https://tiktok.com",
         "sourceUrl_": "https://integeroverfl0w.github.io/grayjay-tiktok/TiktokConfig.json",
         "allowAllHttpHeaderAccess": true
+    },
+    {
+        "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
+        "name": "Trovo (Beta)",
+        "description": "A gaming-centric live streaming platform, part of Tencent's portfolio.",
+        "author": "AlexisBlade2001",
+        "authorUrl": "https://github.com/AlexisBlade2001",
+        "platformUrl": "https://trovo.live",
+        "sourceUrl": "https://alexisblade2001.github.io/Grayjay-Plugins/Trovo/TrovoConfig.json",
+        "repositoryUrl": "https://github.com/AlexisBlade2001/Grayjay-Trovo",
+        "scriptUrl": "./TrovoScript.js",
+        "version": 1,
+        "iconUrl": "./TrovoIcon.png",
+        "id": "362458b3-f453-4f7b-b468-08591e580f89",
+        "scriptSignature": "HgW/KarigyzkHonaLgRP+vkOHHP6f5xpQ3hzogJ7PG/KjjNWJuiwrnTOQJuFzwDeHfOFD4zNsc0VQaiwggzPGpmCut4poIq12e5HWCvn4sEf5ttO280qOU0wnkVikp3qjgwoKZMMFZ548Cy7ER3TOPsEK9dnsLx2ZjSpMQN9a5KZpbnOlzApfh87SFt+l+3PgHxAWnJJ0q4u0c1o0kNm/8KXkRtqB1vz09PfZNyOIvF5oT0RlWERonSkwIgufdB2bk9Ao4C5gd04MuJsh3DmTtSeftqYMKcKTivSxKAyQCvuyQaOXe0cXR1GF18esSrqOWBUURTiSVlxRN8Wm1jO3XLMnidZNLPNnuHN95yCp+DGXr5KrwpYjCCA6xZ83iuUR7QtJOFN83bO6qo86cJyuOu1+n+8eVlEhlIsO4B3zjmM7MeDXk5ahZcRU20H2xeHHZs9hmr1+bnAMXXX7jmT5wSc6mhjssNB1CDRXZBr4Vvs4C7tOGfsx36KDUqHj426Uvo8PfQpvhzc7RzbhqUZ1lg6RYBKLrXivbsPRqAnhGoMroGZ8GPgQn5H5eXsPci7+JyLiMWhhVEGfBfbJAn2hWDKwyx9eIKYKumVu5s1290/tLCi9LKfR7UyGViqzmmEufHqbzsNWyIpuGI/doGzdz93aDSg1wG2rCrDW1h9hgk=",
+        "scriptPublicKey": "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAr63Yf0gjJG8rV9IhtUQgxzryQCtacKfdaErLBC4sOhcnHEqWYJoAHGytGggRSyuGZoJFX2Ovd/8bH0YRT1e1oWMgSZFHQ0k3UE94G2Jw1jmmFvZEaMVxDW7RLkkvqYlXBNDLdkxfbyZepKV5mM4Fd5kbueAdfWdhsl5FhlqHCH10kudewcFq4WBTwQW1chsdkI0Iqrgwqzs5vH5cpphxzXUb+V6rtOUystpFwsEXb6m1Kzl0Uy/9AWTdT9JJJ7H88ycO6d6xX9UUjOXCwMWHxPcZ6UVPN2Plr8UBTJvF0uaYkDhNn0rzEe7NiJ8gUmrT0UJB2E5cYv4I4eTGp6RTwKe7UVCGEo8S7vQ0yPjxk8+dta+V6ECvg7VV1Ic00dfYqPsWPsZJ/xkJLeXIeXhjDNLm0pebr6W6bXkVPvS9PcYMoId+YpghojnPnzo/vmAIo4aS90G1zwmCNonv4suy2Kl48Pxz2OO0YepTuAZxJA6vrPcHxqbeAcAvfpk9PXLRmxD/eoiTsJusxkP5h6Z00gWJiFNNSntOShaGfCtloumqFHi5HIDiipo6KvIBvSYFaK0vlcFjdk0cAkMskuGP8B98zlMP5s9C19/uC6WsDmX1oQ0tNRIifBzg1QE0RuvvfqjI3/W4MqmKllbkwj/Pl/irIaeHsTK/+bwko/jK460CAwEAAQ==",
+        "packages": [
+            "Http",
+            "DOMParser"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "astatic.trovocdn.net",
+            "trovo.live",
+            "cdn.trovo.live",
+            "intlsdk.trovo.live",
+            "pubsub.trovo.live",
+            "aegis.trovo.live",
+            "open-api.trovo.live",
+            "api.trovo.live",
+            "api-web.trovo.live",
+            "api-web-backup.trovo.live",
+            "fr-api-web.trovo.live",
+            "fr-api-web-backup.trovo.live",
+            "sv-api-web.trovo.live",
+            "sv-api-web-backup.trovo.live",
+            "cfgapi.trovo.live",
+            "chat.trovo.live",
+            "chat-backup.trovo.live",
+            "fr-chat.trovo.live",
+            "fr-chat-backup.trovo.live",
+            "sv-chat.trovo.live",
+            "sv-chat-backup.trovo.live",
+            "custom-file.trovo.live",
+            "img.trovo.live",
+            "vod.trovo.live",
+            "player.trovo.live",
+            "headicon.trovo.live",
+            "livecover.trovo.live",
+            "liveplay.trovo.live",
+            "liveplay2.trovocdn.net",
+            "static.trovo.live",
+            "tdm.trovo.live:8013",
+            "playback.livepeer.studio",
+            "playtimeshift.trovo.live"
+        ],
+        "authentication": {
+            "loginUrl": "https://cdn.trovo.live/page/login-page.html",
+            "headersToFind": [
+                "Authorization",
+                "Cookie"
+            ],
+            "cookiesToFind": [
+                "uid",
+                "openid",
+                "pgg_pvid",
+                "token",
+                "tokenInfos",
+                "channel"
+            ]
+        },
+        "settings": [
+            {
+                "variable": "allowMatureTag",
+                "name": "Allow Mature Content",
+                "description": "Allow searching and watching of mature content",
+                "type": "Boolean",
+                "default": "true"
+            },
+            {
+                "variable": "shouldIncludeChannelClips",
+                "name": "Show channel clips",
+                "description": "",
+                "type": "Boolean",
+                "default": "false"
+            }
+        ],
+        "changelog": {
+            "0": [
+                "Initial Release",
+                "Feature: Search Support [Suggestions, Contents(Lives) and Channels]",
+                "Feature: Content Support [Lives(Experimental), Clips, VODs and Uploads]",
+                "Feature: Channel Support [Channel Details, Lives, VODs, Uploads and Clips(Disabled by default, need to come up with a better way to handle them)]",
+                "Issue: Almost everything related to the Follower Count doesn't work, it is not available in the API calls for some reason. The only exception is while Searching."
+            ],
+            "1": [
+                "Feature: Comments are working. oh, SubComments too."
+            ]
+        }
     },
     {
         "name": "Twitch",
