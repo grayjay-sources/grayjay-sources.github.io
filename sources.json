@@ -2031,7 +2031,10 @@
         ]
     },
     {
-        "_tags": ["unofficial","nsfw"],
+        "_tags": [
+            "unofficial",
+            "nsfw"
+        ],
         "name": "PHUB",
         "description": "PHub plugin",
         "author": "Djupz",
