@@ -1,31 +1,5 @@
 [
     {
-	"name": "PHUB",
-	"description": "PHub plugin",
-	"author": "Djupz",
-	"authorUrl": "https://github.com/Djupz",
-
-	"platformUrl": "https://www.pornhub.com/",
-	"sourceUrl": "https://github.com/Djupz/grayjay-source-ph/raw/master/phConfig.json",
-	"repositoryUrl": "https://github.com/Djupz/grayjay-source-ph",
-	"scriptUrl": "./phScript.js",
-	"version": 3,
-	
-	"iconUrl": "./phLogo.png",
-	"id": "a82a6e4d-4e91-466e-8c46-d7895654e2d0",
-	
-	"scriptSignature": "",
-	"scriptPublicKey": "",
-	"packages": ["Http"],
-	
-	"allowEval": false,
-	"allowUrls": [
-		"www.pornhub.com",
-		"pornhub.com"
-	]
-
-    },
-    {
         "_tags": [
             "unofficial",
             "untested"
@@ -1952,6 +1926,29 @@
         "platformUrl": "https://odysee.com",
         "supportedClaimTypes": [
             3
+        ]
+    },
+    {
+        "name": "PHUB",
+        "description": "PHub plugin",
+        "author": "Djupz",
+        "authorUrl": "https://github.com/Djupz",
+        "platformUrl": "https://www.pornhub.com/",
+        "sourceUrl": "https://github.com/Djupz/grayjay-source-ph/raw/master/phConfig.json",
+        "repositoryUrl": "https://github.com/Djupz/grayjay-source-ph",
+        "scriptUrl": "./phScript.js",
+        "version": 3,
+        "iconUrl": "./phLogo.png",
+        "id": "a82a6e4d-4e91-466e-8c46-d7895654e2d0",
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "www.pornhub.com",
+            "pornhub.com"
         ]
     },
     {
