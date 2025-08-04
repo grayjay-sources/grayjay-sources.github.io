@@ -1,69 +1,5 @@
 [
     {
-    "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
-    "name": "Sauceplus",
-    "description": "A content creation and video streaming website created by Open Sauce Inc.",
-    "author": "Acidcoke",
-    "authorUrl": "https://github.com/acidcoke",
-    "platformUrl": "https://sauceplus.com",
-    "sourceUrl": "https://github.com/acidcoke/grayjay-sauceplus/releases/latest/download/config.json",
-    "repositoryUrl": "https://github.com/acidcoke/grayjay-sauceplus",
-    "scriptUrl": "./script.js",
-    "version": 3,
-    "iconUrl": "./icon.png",
-    "id": "d8643244-633f-4c71-9f45-215b2387dc2c",
-    "packages": [
-        "Http"
-    ],
-    "allowEval": false,
-    "allowUrls": [
-        "www.sauceplus.com",
-        "sauceplus.com",
-        "cdn-vod-drm0.sauceplus.com",
-        "cdn-vod-drm1.sauceplus.com",
-        "cdn-vod-drm2.sauceplus.com",
-        "cdn-vod-drm3.sauceplus.com",
-        "cdn-vod-drm4.sauceplus.com",
-        "cdn-vod-drm5.sauceplus.com",
-        "cdn-vod-drm6.sauceplus.com",
-        "cdn-vod-drm7.sauceplus.com",
-        "cdn-vod-drm8.sauceplus.com",
-        "cdn-vod-drm9.sauceplus.com"
-    ],
-    "settings": [
-        {
-            "variable": "stream_format",
-            "name": "Stream format",
-            "description": "This will reduce clutter in the source selector, especially if there are lots of attachments",
-            "type": "Dropdown",
-            "default": "0",
-            "options": [
-                "HLS",
-                "Legacy HLS",
-                "Flat MP4"
-            ]
-        },
-        {
-            "variable": "log_toasts",
-            "name": "Toast Logging",
-            "description": "Will log details in toasts",
-            "type": "Boolean",
-            "default": "false"
-        }
-    ],
-    "authentication": {
-        "loginUrl": "https://www.sauceplus.com/login",
-        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
-        "cookiesToFind": [
-            "sails.sid",
-            "muxData"
-        ],
-        "loginWarning": "Login and then open a video. Try using Discord login"
-    },
-    "scriptSignature": "KFa9VHdIFzJyqqS3XeKa/rJBCF7YHOd0CblqQSl8IG/NItj4AnkS/k2NVrCUgetZEOa38dftIyT87Yl6vWeN3lCC9sN+TnFpL772j30BDTMhlUoUy9R8tv5sQC2hMu2WJ+m+qlhn7ipIkulmQ4RU8G6lbnqXrXH9oB7hsCkrhLCT7mkuOjJNopuKhux0KtVaeXcEeHMzEPIMs15ZKLdxniBAeeKwJ4GTDZGdYIF3D8C/BmRyrRp9wKfCwUO+a76iWaCm8k/C1WxVwdondGodFBvTaZhIK9JeMvkoSW7v9GWhVzynPekaLGDaV/RWBLLy0Wyd3f635UcF36uyKq+9MQ==",
-    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy14D03XDtfojoBHN1S42tMQ73Tz4PzzyXvtlLBOj58QkR4aDRPEHnnw0qWI7dLWWCidabyTYSv5/Uo+zg/99KypLzEPxTLezYH8DV+hzx2or7i3aW1VQATjVv0pb5of6DHDeQPQP5NFjaqWzND0MpYwfniyvqqB3a8ZmU8VWjCkn8rd8+todiQ1rDCCkkeOHcnHjUY0BX8L8vhiMVa+fjDeXF2nLz87KRaigcpAhMGbmUVk2jmmHyEoQteSN7huXWfFP0FqLB+Gz7ikGyfTi+/Eh0SO+Jw2vuvXXl+qIP2+5IdCtQDbjLKPQz5xEfCd10TPkGuSOB5ASff1s2tD5ZwIDAQAB"
-},
-    {
         "_tags": [
             "unofficial",
             "untested"
@@ -2242,6 +2178,70 @@
         "_feeds": {
             "commits": "https://gitlab.futo.org/videostreaming/plugins/sample/-/commits/master?format=atom"
         }
+    },
+    {
+        "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
+        "name": "Sauceplus",
+        "description": "A content creation and video streaming website created by Open Sauce Inc.",
+        "author": "Acidcoke",
+        "authorUrl": "https://github.com/acidcoke",
+        "platformUrl": "https://sauceplus.com",
+        "sourceUrl": "https://github.com/acidcoke/grayjay-sauceplus/releases/latest/download/config.json",
+        "repositoryUrl": "https://github.com/acidcoke/grayjay-sauceplus",
+        "scriptUrl": "./script.js",
+        "version": 3,
+        "iconUrl": "./icon.png",
+        "id": "d8643244-633f-4c71-9f45-215b2387dc2c",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "www.sauceplus.com",
+            "sauceplus.com",
+            "cdn-vod-drm0.sauceplus.com",
+            "cdn-vod-drm1.sauceplus.com",
+            "cdn-vod-drm2.sauceplus.com",
+            "cdn-vod-drm3.sauceplus.com",
+            "cdn-vod-drm4.sauceplus.com",
+            "cdn-vod-drm5.sauceplus.com",
+            "cdn-vod-drm6.sauceplus.com",
+            "cdn-vod-drm7.sauceplus.com",
+            "cdn-vod-drm8.sauceplus.com",
+            "cdn-vod-drm9.sauceplus.com"
+        ],
+        "settings": [
+            {
+                "variable": "stream_format",
+                "name": "Stream format",
+                "description": "This will reduce clutter in the source selector, especially if there are lots of attachments",
+                "type": "Dropdown",
+                "default": "0",
+                "options": [
+                    "HLS",
+                    "Legacy HLS",
+                    "Flat MP4"
+                ]
+            },
+            {
+                "variable": "log_toasts",
+                "name": "Toast Logging",
+                "description": "Will log details in toasts",
+                "type": "Boolean",
+                "default": "false"
+            }
+        ],
+        "authentication": {
+            "loginUrl": "https://www.sauceplus.com/login",
+            "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+            "cookiesToFind": [
+                "sails.sid",
+                "muxData"
+            ],
+            "loginWarning": "Login and then open a video. Try using Discord login"
+        },
+        "scriptSignature": "KFa9VHdIFzJyqqS3XeKa/rJBCF7YHOd0CblqQSl8IG/NItj4AnkS/k2NVrCUgetZEOa38dftIyT87Yl6vWeN3lCC9sN+TnFpL772j30BDTMhlUoUy9R8tv5sQC2hMu2WJ+m+qlhn7ipIkulmQ4RU8G6lbnqXrXH9oB7hsCkrhLCT7mkuOjJNopuKhux0KtVaeXcEeHMzEPIMs15ZKLdxniBAeeKwJ4GTDZGdYIF3D8C/BmRyrRp9wKfCwUO+a76iWaCm8k/C1WxVwdondGodFBvTaZhIK9JeMvkoSW7v9GWhVzynPekaLGDaV/RWBLLy0Wyd3f635UcF36uyKq+9MQ==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy14D03XDtfojoBHN1S42tMQ73Tz4PzzyXvtlLBOj58QkR4aDRPEHnnw0qWI7dLWWCidabyTYSv5/Uo+zg/99KypLzEPxTLezYH8DV+hzx2or7i3aW1VQATjVv0pb5of6DHDeQPQP5NFjaqWzND0MpYwfniyvqqB3a8ZmU8VWjCkn8rd8+todiQ1rDCCkkeOHcnHjUY0BX8L8vhiMVa+fjDeXF2nLz87KRaigcpAhMGbmUVk2jmmHyEoQteSN7huXWfFP0FqLB+Gz7ikGyfTi+/Eh0SO+Jw2vuvXXl+qIP2+5IdCtQDbjLKPQz5xEfCd10TPkGuSOB5ASff1s2tD5ZwIDAQAB"
     },
     {
         "name": "SoundCloud",
