@@ -4,42 +4,6 @@
             "unofficial",
             "untested"
         ],
-	"name": "Newgrounds",
-	"description": "One of the most well known online communities",
-	"author": "Lofiat",
-	"authorUrl": "https://www.github.com/Loafiat",
-	
-	"sourceUrl": "https://github.com/Loafiat/NewgroundsPlugin/",
-	"repositoryUrl": "https://github.com/Loafiat/NewgroundsPlugin/NewgroundsConfig.json",
-	"scriptUrl": "./NewgroundsScript.js",
-	"version": 9,
-	
-	"iconUrl": "./Newgrounds.png",
-	"id": "002c7f46-5a93-492d-b5e3-91b621993be8",
-	
-	"scriptSignature": "",
-	"scriptPublicKey": "",
-	"packages": ["Http", "DOMParser"],
-	"authentication": {
-		"loginUrl": "https://www.newgrounds.com/passport/mode/iframe",
-		"userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
-		"cookiesToFind": [
-			"passport-auth"
-		],
-		"loginWarning": "Does not exit automatically"
-	},
-	
-	"allowEval": false,
-	"allowUrls": [
-		"everywhere"
-	]
-}
-,
-    {
-        "_tags": [
-            "unofficial",
-            "untested"
-        ],
         "name": "Adventures in Odyssey Club",
         "description": "Subscription service for the award-winning, original audio drama series enjoyed by the whole family.",
         "author": "CATEIN",
@@ -2025,6 +1989,40 @@
         },
         "supportedClaimTypes": [
             19
+        ]
+    },
+    {
+        "_tags": [
+            "unofficial",
+            "untested"
+        ],
+        "name": "Newgrounds",
+        "description": "One of the most well known online communities",
+        "author": "Lofiat",
+        "authorUrl": "https://www.github.com/Loafiat",
+        "sourceUrl": "https://github.com/Loafiat/NewgroundsPlugin/",
+        "repositoryUrl": "https://github.com/Loafiat/NewgroundsPlugin/NewgroundsConfig.json",
+        "scriptUrl": "./NewgroundsScript.js",
+        "version": 9,
+        "iconUrl": "./Newgrounds.png",
+        "id": "002c7f46-5a93-492d-b5e3-91b621993be8",
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": [
+            "Http",
+            "DOMParser"
+        ],
+        "authentication": {
+            "loginUrl": "https://www.newgrounds.com/passport/mode/iframe",
+            "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+            "cookiesToFind": [
+                "passport-auth"
+            ],
+            "loginWarning": "Does not exit automatically"
+        },
+        "allowEval": false,
+        "allowUrls": [
+            "everywhere"
         ]
     },
     {
