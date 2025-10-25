@@ -75,6 +75,36 @@
         }
     },
     {
+        "name": "Aparat",
+        "description": "Aparat is Iran's leading video sharing platform",
+        "platformUrl": "https://www.aparat.com",
+        "version": 1,
+        "author": "Stefan Cruz",
+        "authorUrl": "",
+        "repositoryUrl": "https://github.com/stefancruz/grayjay-plugin-aparat",
+        "sourceUrl": "https://stefancruz.github.io/grayjay-plugin-aparat/AparatConfig.json",
+        "scriptUrl": "./AparatScript.js",
+        "iconUrl": "https://stefancruz.github.io/grayjay-plugin-aparat/AparatIcon.png",
+        "id": "a8f7e2d1-4b3c-4e5f-8a9b-1c2d3e4f5a6b",
+        "scriptSignature": "JU3+BJsNLIBDNlOprqf4Z/iQ+CJcBUxJj2ZYlgfy52ikBw9dtRBgVvYJikbvWuht35Q269NwBrLI1eJbBff34PYvErcYLyDcivnLMxoU0x+O/nWQthUs7azccY/gdDCwrb2jBFGIX3RopsU99nNI3NoB2/hrbt12/DJYGi7ZhgEJkNWU2pT+FTYbGplMmkc0cYVJfclwdQdyCdRGF00rL4Og4yIvtaHgK0A2HzwhELpTlpCyKZxaB9P2T2aYLjPl3Xo63SvZyKVwAielQhfppo8gCG3lFG/T9skc49ApH1i9Rk+ro6H91rOGukINMDNTFgAi0rZ+D782qDBeg7X37g==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs5shGUhmdmWJtDag0oDSV8KiCvAOmXBOxAVzWQs4uxLJ7IG6p99YlyTHnEi3B1VuIhUz/FcSkL7g/f20JQweNLTCOGlUR44+5dbaP8ZlfdbAmXYwie7nNKJX6rnXw+G9u9QQ1DBQZttIlX+d6acwldAqftVA+GUiN5uHWgtAHnFkTNZMSF3h4vq1ucJdF1CpWcPRW74/S4r841Afs29CAICtcduDoTaX4v4b/wrzDw0coYaEwlk2Gb8rRuD7ZV7G+Df1yZtFWhnMB7VhiHGxxIqoVEFoTZ5/FNhw0HAiMlWPowxInm/zwyI0HunDFB3gwilsPBtnA1WvOvbChVh5fQIDAQAB",
+        "packages": [
+            "Http"
+        ],
+        "allowUrls": [
+            "www.aparat.com",
+            "shorts.aparat.com",
+            "static.cdn.asset.aparat.com",
+            "static.cdn.asset.aparat.cloud",
+            "live.cdn.asset.aparat.com"
+        ],
+        "constants": {
+            "BASE_URL": "https://www.aparat.com",
+            "API_BASE": "https://www.aparat.com/api/fa/v1"
+        },
+        "settings": []
+    },
+    {
         "_tags": [
             "official",
             "working"
@@ -3772,35 +3802,5 @@
             21
         ],
         "sourceUrl_": "https://plugins.grayjay.app/Niconico/NiconicoConfig.json"
-    },
-    {
-        "name": "Aparat",
-        "description": "Aparat is Iran's leading video sharing platform",
-        "platformUrl": "https://www.aparat.com",
-        "version": 1,
-        "author": "Stefan Cruz",
-        "authorUrl": "",
-        "repositoryUrl": "https://github.com/stefancruz/grayjay-plugin-aparat",
-        "sourceUrl": "https://stefancruz.github.io/grayjay-plugin-aparat/AparatConfig.json",
-        "scriptUrl": "./AparatScript.js",
-        "iconUrl": "https://stefancruz.github.io/grayjay-plugin-aparat/AparatIcon.png",
-        "id": "a8f7e2d1-4b3c-4e5f-8a9b-1c2d3e4f5a6b",
-        "scriptSignature": "JU3+BJsNLIBDNlOprqf4Z/iQ+CJcBUxJj2ZYlgfy52ikBw9dtRBgVvYJikbvWuht35Q269NwBrLI1eJbBff34PYvErcYLyDcivnLMxoU0x+O/nWQthUs7azccY/gdDCwrb2jBFGIX3RopsU99nNI3NoB2/hrbt12/DJYGi7ZhgEJkNWU2pT+FTYbGplMmkc0cYVJfclwdQdyCdRGF00rL4Og4yIvtaHgK0A2HzwhELpTlpCyKZxaB9P2T2aYLjPl3Xo63SvZyKVwAielQhfppo8gCG3lFG/T9skc49ApH1i9Rk+ro6H91rOGukINMDNTFgAi0rZ+D782qDBeg7X37g==",
-        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs5shGUhmdmWJtDag0oDSV8KiCvAOmXBOxAVzWQs4uxLJ7IG6p99YlyTHnEi3B1VuIhUz/FcSkL7g/f20JQweNLTCOGlUR44+5dbaP8ZlfdbAmXYwie7nNKJX6rnXw+G9u9QQ1DBQZttIlX+d6acwldAqftVA+GUiN5uHWgtAHnFkTNZMSF3h4vq1ucJdF1CpWcPRW74/S4r841Afs29CAICtcduDoTaX4v4b/wrzDw0coYaEwlk2Gb8rRuD7ZV7G+Df1yZtFWhnMB7VhiHGxxIqoVEFoTZ5/FNhw0HAiMlWPowxInm/zwyI0HunDFB3gwilsPBtnA1WvOvbChVh5fQIDAQAB",
-        "packages": [
-            "Http"
-        ],
-        "allowUrls": [
-            "www.aparat.com",
-            "shorts.aparat.com",
-            "static.cdn.asset.aparat.com",
-            "static.cdn.asset.aparat.cloud",
-            "live.cdn.asset.aparat.com"
-        ],
-        "constants": {
-            "BASE_URL": "https://www.aparat.com",
-            "API_BASE": "https://www.aparat.com/api/fa/v1"
-        },
-        "settings": []
     }
 ]
