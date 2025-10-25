@@ -9,6 +9,7 @@ jobs:
   build:
     name: Lint
     runs-on: ubuntu-latest
+    if: ${{ !endsWith(github.actor, '[bot]') }}
     permissions:
       contents: write
       packages: read
