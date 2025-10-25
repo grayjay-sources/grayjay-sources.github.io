@@ -1801,6 +1801,161 @@
         ]
     },
     {
+        "name": "LibriVox (Alpha)",
+        "description": "Acoustical liberation of books in the public domain",
+        "author": "Stefan Cruz",
+        "authorUrl": "",
+        "platformUrl": "https://librivox.org/",
+        "sourceUrl": "https://grayjay-plugin-librivox.craftwithstefan.com/LibriVoxConfig.json",
+        "repositoryUrl": "https://github.com/stefancruz/grayjay-plugin-librivox",
+        "scriptUrl": "./LibriVoxScript.js",
+        "version": 27,
+        "iconUrl": "https://grayjay-plugin-librivox.craftwithstefan.com/LibriVoxIcon.png",
+        "id": "5c2f78d4-6eec-4f3f-b25b-28d885aeb147",
+        "scriptSignature": "EfmgQguYiroY4frnp9oW3MEx3haSbjQALa/kOKxgeOnvrzRCdKBne9DQJEhPruMvMZmbJnKCoOpIhHRSmFW4JBR5HtP0nn5Oa8+oK46iqbeA13t3qZ5rkzNyPB7/hsBZ7rjCs1ZNWsf5KOfdrabPEaDo1rqywtpGx+Wbr1FK0Rioz3OtXzKtX3ktrd3DvSZGjM+ZE7y7qsmnOWoWBCt1zdVioR6q3keV7HOMGcOYV0Jt1FaJM5I8dpGBPmRRL0dcuHiuaqCL9BDLOxf4fC0gdy1BjZuH0ImUQvAzFcI6SzqM75tS9NVv493O6Smn+foq8nplzgA/vPO/kURPG9nV0A==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs5shGUhmdmWJtDag0oDSV8KiCvAOmXBOxAVzWQs4uxLJ7IG6p99YlyTHnEi3B1VuIhUz/FcSkL7g/f20JQweNLTCOGlUR44+5dbaP8ZlfdbAmXYwie7nNKJX6rnXw+G9u9QQ1DBQZttIlX+d6acwldAqftVA+GUiN5uHWgtAHnFkTNZMSF3h4vq1ucJdF1CpWcPRW74/S4r841Afs29CAICtcduDoTaX4v4b/wrzDw0coYaEwlk2Gb8rRuD7ZV7G+Df1yZtFWhnMB7VhiHGxxIqoVEFoTZ5/FNhw0HAiMlWPowxInm/zwyI0HunDFB3gwilsPBtnA1WvOvbChVh5fQIDAQAB",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "constants": {
+            "baseUrl": "https://librivox-api.craftwithstefan.com"
+        },
+        "allowUrls": [
+            ".librivox.org",
+            ".archive.org",
+            "librivox-api.craftwithstefan.com"
+        ],
+        "settings": [
+            {
+                "variable": "homeHeader",
+                "name": "Home",
+                "description": "",
+                "type": "Header"
+            },
+            {
+                "variable": "languageOptionIndex",
+                "name": "Language",
+                "description": "",
+                "type": "Dropdown",
+                "default": "0",
+                "options": [
+                    "All",
+                    "Ancient Greek",
+                    "Arabic",
+                    "Bisaya/Cebuano",
+                    "Bulgarian",
+                    "Cantonese Chinese",
+                    "Catalan",
+                    "Chinese",
+                    "Church Slavonic",
+                    "Croatian",
+                    "Czech",
+                    "Danish",
+                    "Dholuo/Luo",
+                    "Dutch",
+                    "English",
+                    "Esperanto",
+                    "Finnish",
+                    "French",
+                    "German",
+                    "Greek",
+                    "Hebrew",
+                    "Hindi",
+                    "Hungarian",
+                    "Indonesian",
+                    "Irish",
+                    "Italian",
+                    "Japanese",
+                    "Javanese",
+                    "Korean",
+                    "Latin",
+                    "Latvian",
+                    "Luxembourgish",
+                    "Macedonian",
+                    "Maori",
+                    "Middle English",
+                    "Multilingual",
+                    "Norwegian",
+                    "Old English",
+                    "Persian/Farsi",
+                    "Polish",
+                    "Portuguese",
+                    "Romanian",
+                    "Russian",
+                    "Sanskrit",
+                    "Spanish",
+                    "Swedish",
+                    "Tagalog",
+                    "Tamil",
+                    "Telugu",
+                    "Ukrainian",
+                    "Urdu"
+                ]
+            },
+            {
+                "variable": "genreOptionIndex",
+                "name": "Genre",
+                "description": "",
+                "type": "Dropdown",
+                "default": "0",
+                "options": [
+                    "All",
+                    "Action & Adventure Fiction",
+                    "Biography & Autobiography",
+                    "Children's Fiction",
+                    "Children's Non-fiction",
+                    "Classics (Greek & Latin Antiquity)",
+                    "Comedy",
+                    "Crime & Mystery Fiction",
+                    "Detective Fiction",
+                    "Drama",
+                    "Dramatic Readings",
+                    "Essays & Short Works",
+                    "Fantasy Fiction",
+                    "Fiction",
+                    "Gothic Fiction",
+                    "Historical Fiction",
+                    "Horror & Ghost Stories",
+                    "Humor",
+                    "Humorous Fiction",
+                    "Literary Fiction",
+                    "Memoirs",
+                    "Multi-version",
+                    "Music",
+                    "Nature",
+                    "Non-fiction",
+                    "Philosophy",
+                    "Poetry",
+                    "Published 1800 -1900",
+                    "Published 1900 -2000",
+                    "Published before 1800",
+                    "Romance",
+                    "Satire",
+                    "Science",
+                    "Science Fiction",
+                    "Short Stories",
+                    "Short works",
+                    "Suspense",
+                    "Thriller",
+                    "Travel & Geography"
+                ]
+            }
+        ],
+        "changelog": {
+            "26": [
+                "Fix: Authors thumbnails when available;"
+            ],
+            "27": [
+                "Add: Genre setting for filtering home feed;",
+                "Add: Genre and Language search filters (can override default settings);",
+                "Add: Search within author/reader channels with language and genre filters;",
+                "Add: Support more platforms (IMDB, Library of Congress, BookBrainz, StoryGraph, Italian National Library, and German National Library) in author links when available;",
+                "Fix: Show track count in author channel playlists;"
+            ]
+        }
+    },
+    {
         "name": "Librivox Audiobooks",
         "platformUrl": "https://librivox.org/",
         "description": "Free public domain audiobooks read by volunteers from around the world",
@@ -1941,6 +2096,90 @@
         "_feeds": {
             "commits": "https://github.com/windowsfreak/Mediathek/commits/main.atom",
             "releases": "https://github.com/windowsfreak/Mediathek/releases.atom"
+        }
+    },
+    {
+        "_tags": [
+            "official",
+            "working"
+        ],
+        "name": "Mixcloud (Alpha)",
+        "platformUrl": "https://www.mixcloud.com",
+        "description": "Listen to the best DJs and radio presenters in the world for free.",
+        "author": "FUTO",
+        "authorUrl": "https://futo.org",
+        "sourceUrl": "https://plugins.grayjay.app/Mixcloud/MixcloudConfig.json",
+        "scriptUrl": "./MixcloudScript.js",
+        "iconUrl": "https://plugins.grayjay.app/Mixcloud/MixcloudIcon.png",
+        "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/mixcloud",
+        "version": 8,
+        "id": "84331338-b045-419c-88e4-c86036f4cbf5",
+        "scriptSignature": "ENHFesArWTME54KvrBsUS5QUzMYwdJehTjhsKSuQWxOzrmkegv0IOS26ED/2TU9lkMPmv3Rj8AUCD38r0zLTgK/E5uTi8Gc6tu98SnR2F0fKRGOdKzHTMJLgqfXxTe2g58GC0nf6bxQzYlOpdKQSOp1a6Kp8IpK19HslFpyWIXovRFSx238P9pPAaY/ySFYjIQ1ew2vy9H8DHoNZv4LfSWsUu9u2LS85Ydmv7CY51GFstumMKwaLS+iwUQa3cCNiTBwCXTtn8T4c6FGOib5HH499J9cXc8TuBZ5ZYwKDwLgEWORFMqEvh+rPVA30hpvmBfhILBblOhx8NOZgeirxAA==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            ".mixcloud.com",
+            ".mixcloud.stream"
+        ],
+        "maxDownloadParallelism": 1,
+        "authentication": {
+            "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
+            "loginUrl": "https://www.mixcloud.com/login/?next=%2Fhome%2Ffor-you%2F",
+            "completionUrl": "https://www.mixcloud.com/home/for-you/",
+            "cookiesToFind": [
+                "csrftoken",
+                "mx_t",
+                "c"
+            ]
+        },
+        "changelog": {
+            "1": [
+                "Home with live streams;",
+                "Search shows;",
+                "Search creators;",
+                "Creator details with live streams and audio content;",
+                "Audio streams;",
+                "Comments;",
+                "Live chat;",
+                "Content recommendation;"
+            ],
+            "2": [
+                "Improvement: Add channel platform playlists (History, Favorites, Reposts, Tracks);",
+                "Improvement: Add channel custom playlists;",
+                "Improvement: Improve plugin's logo resolution;",
+                "Improvement: Use channel videos as recommendations for livestreams;",
+                "Improvement: Support encrypted sources;"
+            ],
+            "3": [
+                "Improvement: Add login support;",
+                "Improvement: Import user playlists (favorites, history, reposts, listen-later and custom playlists);",
+                "Improvement: Import user subscriptions;",
+                "Improvement: Add creator's country and city in channel description;",
+                "Fix: Add missing date in video details;",
+                "Fix: Add live and upload content description;",
+                "Fix: Play preview uploads;"
+            ],
+            "4": [
+                "Fix: Deep-linking to playlists;",
+                "Code improvements;",
+                "Improvement: Improve handling Radios with multiple DJs;",
+                "Improvement: Include an hyperlink in the track description to the Dj channel when playing for a Radio;"
+            ],
+            "5": [
+                "Fix: Content recommendations for live streams;"
+            ],
+            "6": [
+                "Improvement: Fix relationship between DJs and Radios in content description;"
+            ],
+            "7": [
+                "Improvement: Add exclusive subscriber-only content support;"
+            ],
+            "8": [
+                "Fix: Not show toast for preview content when user is already subscribed artist;"
+            ]
         }
     },
     {
@@ -3533,244 +3772,5 @@
             21
         ],
         "sourceUrl_": "https://plugins.grayjay.app/Niconico/NiconicoConfig.json"
-    },
-    {
-        "name": "LibriVox (Alpha)",
-        "description": "Acoustical liberation of books in the public domain",
-        "author": "Stefan Cruz",
-        "authorUrl": "",
-        "platformUrl": "https://librivox.org/",
-        "sourceUrl": "https://grayjay-plugin-librivox.craftwithstefan.com/LibriVoxConfig.json",
-        "repositoryUrl": "https://github.com/stefancruz/grayjay-plugin-librivox",
-        "scriptUrl": "./LibriVoxScript.js",
-        "version": 27,
-        "iconUrl": "https://grayjay-plugin-librivox.craftwithstefan.com/LibriVoxIcon.png",
-        "id": "5c2f78d4-6eec-4f3f-b25b-28d885aeb147",
-        "scriptSignature": "EfmgQguYiroY4frnp9oW3MEx3haSbjQALa/kOKxgeOnvrzRCdKBne9DQJEhPruMvMZmbJnKCoOpIhHRSmFW4JBR5HtP0nn5Oa8+oK46iqbeA13t3qZ5rkzNyPB7/hsBZ7rjCs1ZNWsf5KOfdrabPEaDo1rqywtpGx+Wbr1FK0Rioz3OtXzKtX3ktrd3DvSZGjM+ZE7y7qsmnOWoWBCt1zdVioR6q3keV7HOMGcOYV0Jt1FaJM5I8dpGBPmRRL0dcuHiuaqCL9BDLOxf4fC0gdy1BjZuH0ImUQvAzFcI6SzqM75tS9NVv493O6Smn+foq8nplzgA/vPO/kURPG9nV0A==",
-        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs5shGUhmdmWJtDag0oDSV8KiCvAOmXBOxAVzWQs4uxLJ7IG6p99YlyTHnEi3B1VuIhUz/FcSkL7g/f20JQweNLTCOGlUR44+5dbaP8ZlfdbAmXYwie7nNKJX6rnXw+G9u9QQ1DBQZttIlX+d6acwldAqftVA+GUiN5uHWgtAHnFkTNZMSF3h4vq1ucJdF1CpWcPRW74/S4r841Afs29CAICtcduDoTaX4v4b/wrzDw0coYaEwlk2Gb8rRuD7ZV7G+Df1yZtFWhnMB7VhiHGxxIqoVEFoTZ5/FNhw0HAiMlWPowxInm/zwyI0HunDFB3gwilsPBtnA1WvOvbChVh5fQIDAQAB",
-        "packages": [
-            "Http"
-        ],
-        "allowEval": false,
-        "constants": {
-            "baseUrl": "https://librivox-api.craftwithstefan.com"
-        },
-        "allowUrls": [
-            ".librivox.org",
-            ".archive.org",
-            "librivox-api.craftwithstefan.com"
-        ],
-        "settings": [
-            {
-                "variable": "homeHeader",
-                "name": "Home",
-                "description": "",
-                "type": "Header"
-            },
-            {
-                "variable": "languageOptionIndex",
-                "name": "Language",
-                "description": "",
-                "type": "Dropdown",
-                "default": "0",
-                "options": [
-                    "All",
-                    "Ancient Greek",
-                    "Arabic",
-                    "Bisaya/Cebuano",
-                    "Bulgarian",
-                    "Cantonese Chinese",
-                    "Catalan",
-                    "Chinese",
-                    "Church Slavonic",
-                    "Croatian",
-                    "Czech",
-                    "Danish",
-                    "Dholuo/Luo",
-                    "Dutch",
-                    "English",
-                    "Esperanto",
-                    "Finnish",
-                    "French",
-                    "German",
-                    "Greek",
-                    "Hebrew",
-                    "Hindi",
-                    "Hungarian",
-                    "Indonesian",
-                    "Irish",
-                    "Italian",
-                    "Japanese",
-                    "Javanese",
-                    "Korean",
-                    "Latin",
-                    "Latvian",
-                    "Luxembourgish",
-                    "Macedonian",
-                    "Maori",
-                    "Middle English",
-                    "Multilingual",
-                    "Norwegian",
-                    "Old English",
-                    "Persian/Farsi",
-                    "Polish",
-                    "Portuguese",
-                    "Romanian",
-                    "Russian",
-                    "Sanskrit",
-                    "Spanish",
-                    "Swedish",
-                    "Tagalog",
-                    "Tamil",
-                    "Telugu",
-                    "Ukrainian",
-                    "Urdu"
-                ]
-            },
-            {
-                "variable": "genreOptionIndex",
-                "name": "Genre",
-                "description": "",
-                "type": "Dropdown",
-                "default": "0",
-                "options": [
-                    "All",
-                    "Action & Adventure Fiction",
-                    "Biography & Autobiography",
-                    "Children's Fiction",
-                    "Children's Non-fiction",
-                    "Classics (Greek & Latin Antiquity)",
-                    "Comedy",
-                    "Crime & Mystery Fiction",
-                    "Detective Fiction",
-                    "Drama",
-                    "Dramatic Readings",
-                    "Essays & Short Works",
-                    "Fantasy Fiction",
-                    "Fiction",
-                    "Gothic Fiction",
-                    "Historical Fiction",
-                    "Horror & Ghost Stories",
-                    "Humor",
-                    "Humorous Fiction",
-                    "Literary Fiction",
-                    "Memoirs",
-                    "Multi-version",
-                    "Music",
-                    "Nature",
-                    "Non-fiction",
-                    "Philosophy",
-                    "Poetry",
-                    "Published 1800 -1900",
-                    "Published 1900 -2000",
-                    "Published before 1800",
-                    "Romance",
-                    "Satire",
-                    "Science",
-                    "Science Fiction",
-                    "Short Stories",
-                    "Short works",
-                    "Suspense",
-                    "Thriller",
-                    "Travel & Geography"
-                ]
-            }
-        ],
-        "changelog": {
-            "26": [
-                "Fix: Authors thumbnails when available;"
-            ],
-            "27": [
-                "Add: Genre setting for filtering home feed;",
-                "Add: Genre and Language search filters (can override default settings);",
-                "Add: Search within author/reader channels with language and genre filters;",
-                "Add: Support more platforms (IMDB, Library of Congress, BookBrainz, StoryGraph, Italian National Library, and German National Library) in author links when available;",
-                "Fix: Show track count in author channel playlists;"
-            ]
-        }
-    },
-    {
-        "_tags": [
-            "official",
-            "working"
-        ],
-        "name": "Mixcloud (Alpha)",
-        "platformUrl": "https://www.mixcloud.com",
-        "description": "Listen to the best DJs and radio presenters in the world for free.",
-        "author": "FUTO",
-        "authorUrl": "https://futo.org",
-        "sourceUrl": "https://plugins.grayjay.app/Mixcloud/MixcloudConfig.json",
-        "scriptUrl": "./MixcloudScript.js",
-        "iconUrl": "https://plugins.grayjay.app/Mixcloud/MixcloudIcon.png",
-        "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/mixcloud",
-        "version": 8,
-        "id": "84331338-b045-419c-88e4-c86036f4cbf5",
-        "scriptSignature": "ENHFesArWTME54KvrBsUS5QUzMYwdJehTjhsKSuQWxOzrmkegv0IOS26ED/2TU9lkMPmv3Rj8AUCD38r0zLTgK/E5uTi8Gc6tu98SnR2F0fKRGOdKzHTMJLgqfXxTe2g58GC0nf6bxQzYlOpdKQSOp1a6Kp8IpK19HslFpyWIXovRFSx238P9pPAaY/ySFYjIQ1ew2vy9H8DHoNZv4LfSWsUu9u2LS85Ydmv7CY51GFstumMKwaLS+iwUQa3cCNiTBwCXTtn8T4c6FGOib5HH499J9cXc8TuBZ5ZYwKDwLgEWORFMqEvh+rPVA30hpvmBfhILBblOhx8NOZgeirxAA==",
-        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
-        "packages": [
-            "Http"
-        ],
-        "allowEval": false,
-        "allowUrls": [
-            ".mixcloud.com",
-            ".mixcloud.stream"
-        ],
-        "maxDownloadParallelism": 1,
-        "authentication": {
-            "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
-            "loginUrl": "https://www.mixcloud.com/login/?next=%2Fhome%2Ffor-you%2F",
-            "completionUrl": "https://www.mixcloud.com/home/for-you/",
-            "cookiesToFind": [
-                "csrftoken",
-                "mx_t",
-                "c"
-            ]
-        },
-        "changelog": {
-            "1": [
-                "Home with live streams;",
-                "Search shows;",
-                "Search creators;",
-                "Creator details with live streams and audio content;",
-                "Audio streams;",
-                "Comments;",
-                "Live chat;",
-                "Content recommendation;"
-            ],
-            "2": [
-                "Improvement: Add channel platform playlists (History, Favorites, Reposts, Tracks);",
-                "Improvement: Add channel custom playlists;",
-                "Improvement: Improve plugin's logo resolution;",
-                "Improvement: Use channel videos as recommendations for livestreams;",
-                "Improvement: Support encrypted sources;"
-            ],
-            "3": [
-                "Improvement: Add login support;",
-                "Improvement: Import user playlists (favorites, history, reposts, listen-later and custom playlists);",
-                "Improvement: Import user subscriptions;",
-                "Improvement: Add creator's country and city in channel description;",
-                "Fix: Add missing date in video details;",
-                "Fix: Add live and upload content description;",
-                "Fix: Play preview uploads;"
-            ],
-            "4": [
-                "Fix: Deep-linking to playlists;",
-                "Code improvements;",
-                "Improvement: Improve handling Radios with multiple DJs;",
-                "Improvement: Include an hyperlink in the track description to the Dj channel when playing for a Radio;"
-            ],
-            "5": [
-                "Fix: Content recommendations for live streams;"
-            ],
-            "6": [
-                "Improvement: Fix relationship between DJs and Radios in content description;"
-            ],
-            "7": [
-                "Improvement: Add exclusive subscriber-only content support;"
-            ],
-            "8": [
-                "Fix: Not show toast for preview content when user is already subscribed artist;"
-            ]
-        }
     }
 ]
