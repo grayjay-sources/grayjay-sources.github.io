@@ -62,21 +62,21 @@
     }
   },
   {
-    "_tags": ["unofficial", "untested"],
+    "_tags": ["unofficial", "german", "streaming", "anime"],
     "name": "Aniworld",
     "description": "Aniworld.to integration for Grayjay",
-    "author": "Zerophire",
-    "authorUrl": "https://ahwnis.com",
+    "author": "Zerophire, Bluscream, Cursor.AI",
+    "authorUrl": "https://github.com/Bluscream",
     "platformUrl": "https://aniworld.to",
-    "sourceUrl": "https://github.com/Hoell08/Grayjay-Aniworld-plugin/blob/main/AniworldConfig.json",
-    "repositoryUrl": "https://github.com/Hoell08/Grayjay-Aniworld-plugin",
+    "sourceUrl": "https://raw.githubusercontent.com/grayjay-sources/Grayjay-Aniworld-plugin/main/AniworldConfig.json",
+    "repositoryUrl": "https://github.com/grayjay-sources/Grayjay-Aniworld-plugin",
     "scriptUrl": "./AniworldScript.js",
     "version": 1,
     "iconUrl": "./AniworldIcon.png",
     "id": "ac3f49ee-f398-5cf4-ac1b-ca1aace76c83",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http"],
+    "packages": ["Http", "DOMParser"],
     "allowEval": false,
     "allowUrls": ["aniworld.to"],
     "supportedClaimTypes": [3],
@@ -91,19 +91,6 @@
     "changelog": {
       "1": ["Initial version: Basic search, series listing"]
     }
-  },
-  {
-    "_tags": ["unofficial", "german", "streaming"],
-    "name": "Aniworld",
-    "description": "Aniworld.to integration for GrayJay - German anime streaming",
-    "author": "Zerophire, Bluscream, Cursor.AI",
-    "authorUrl": "https://github.com/Bluscream",
-    "platformUrl": "https://aniworld.to",
-    "sourceUrl": "https://raw.githubusercontent.com/grayjay-sources/Grayjay-Aniworld-plugin/main/AniworldConfig.json",
-    "repositoryUrl": "https://github.com/grayjay-sources/Grayjay-Aniworld-plugin",
-    "version": 1,
-    "id": "ac3f49ee-f398-5cf4-ac1b-ca1aace76c83",
-    "packages": ["Http", "DOMParser"]
   },
   {
     "name": "Aparat",
@@ -2266,31 +2253,64 @@
     "supportedClaimTypes": [4]
   },
   {
-    "_tags": ["unofficial", "german", "streaming"],
+    "_tags": ["unofficial", "german", "streaming", "tv-series"],
     "name": "S.to",
-    "description": "S.to integration for GrayJay - German series streaming",
-    "author": "Bluscream, Cursor.AI",
+    "description": "S.to integration for Grayjay - German TV Series Streaming",
+    "author": "Zerophire, Bluscream, Cursor.AI",
     "authorUrl": "https://github.com/Bluscream",
     "platformUrl": "https://s.to",
     "sourceUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-sto/main/StoConfig.json",
     "repositoryUrl": "https://github.com/Bluscream/grayjay-source-sto",
+    "scriptUrl": "./StoScript.js",
     "version": 1,
-    "id": "7f3c8b4e-9a2d-4e5f-8c1b-3d6a9e2f1b4c",
-    "packages": ["Http", "DOMParser"]
+    "iconUrl": "./StoIcon.png",
+    "id": "sto-german-series-streaming",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": ["Http", "DOMParser"],
+    "allowEval": false,
+    "allowUrls": ["s.to"],
+    "supportedClaimTypes": [3],
+    "authentication": {
+      "loginUrl": "https://s.to/login",
+      "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+      "domainHeadersToFind": {
+        "s.to": []
+      }
+    },
+    "settings": [],
+    "changelog": {
+      "1": ["Initial version: Basic search, series listing, episode browsing"]
+    }
   },
   {
-    "_tags": ["unofficial", "generator", "german"],
+    "_tags": ["unofficial", "generator", "german", "framework"],
     "name": "S.to-like Framework Generator",
-    "description": "Universal generator for German streaming sites using S.to/Aniworld framework - Create custom plugins",
+    "description": "Universal generator for German streaming sites using S.to/Aniworld framework - Create custom plugins for any compatible site",
     "author": "Bluscream, Cursor.AI",
     "authorUrl": "https://github.com/Bluscream",
     "platformUrl": "https://bluscream.github.io/grayjay-source-sto-like/",
     "sourceUrl": "https://bluscream.github.io/grayjay-source-sto-like/",
     "repositoryUrl": "https://github.com/Bluscream/grayjay-source-sto-like",
+    "scriptUrl": "./StoLikeScript.js",
     "version": 1,
+    "iconUrl": "./docs/sto-like-icon.svg",
     "id": "8e4d9c5a-1b3f-4e2c-9d8a-7f6e5c4b3a2d",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
     "packages": ["Http", "DOMParser"],
-    "note": "Visit the generator page to create your custom plugin"
+    "allowEval": false,
+    "supportedClaimTypes": [3],
+    "settings": [],
+    "changelog": {
+      "1": [
+        "Initial generator release",
+        "Web-based plugin creation",
+        "QR code generation",
+        "Support for custom base URLs"
+      ]
+    },
+    "note": "⚠️ This is a generator tool! Visit https://bluscream.github.io/grayjay-source-sto-like/ to create your custom plugin"
   },
   {
     "name": "Sample",
