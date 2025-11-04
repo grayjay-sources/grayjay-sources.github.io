@@ -90,6 +90,11 @@
     "settings": [],
     "changelog": {
       "1": ["Initial version: Basic search, series listing"]
+    },
+    "_installUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-aniworld/main/config.json",
+    "_feeds": {
+      "commits": "https://github.com/grayjay-sources/grayjay-source-aniworld/commits/main.atom",
+      "releases": "https://github.com/grayjay-sources/grayjay-source-aniworld/releases.atom"
     }
   },
   {
@@ -507,8 +512,8 @@
     "author": "Bluscream",
     "authorUrl": "https://bluscream.github.io",
     "platformUrl": "https://chaturbate.com",
-    "tags": [],
-    "nsfw": true,
+    "_tags": ["unofficial", "wip", "nsfw", "streaming", "adult"],
+    "_nsfw": true,
     "sourceUrl": "https://github.com/grayjay-sources/grayjay-source-chaturbate/releases/latest/download/config.json",
     "repositoryUrl": "https://github.com/grayjay-sources/grayjay-source-chaturbate",
     "scriptUrl": "./script.js",
@@ -529,6 +534,11 @@
       "api.minopia.de"
     ],
     "subscriptionRateLimit": 120,
+    "_installUrl": "https://github.com/grayjay-sources/grayjay-source-chaturbate/releases/latest/download/config.json",
+    "_feeds": {
+      "commits": "https://github.com/grayjay-sources/grayjay-source-chaturbate/commits/main.atom",
+      "releases": "https://github.com/grayjay-sources/grayjay-source-chaturbate/releases.atom"
+    },
     "authentication": {
       "loginUrl": "https://chaturbate.com/auth/login/",
       "cookiesToFind": ["XSRF-TOKEN", "psde_auth3"],
@@ -2281,6 +2291,11 @@
     "settings": [],
     "changelog": {
       "1": ["Initial version: Basic search, series listing, episode browsing"]
+    },
+    "_installUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-sto/main/config.json",
+    "_feeds": {
+      "commits": "https://github.com/grayjay-sources/grayjay-source-sto/commits/main.atom",
+      "releases": "https://github.com/grayjay-sources/grayjay-source-sto/releases.atom"
     }
   },
   {
@@ -2311,7 +2326,11 @@
       ]
     },
     "note": "⚠️ This is a generator tool! Visit https://grayjay-sources.github.io/grayjay-source-sto-like/ to create your custom plugin",
-    "_generatorUrl": "https://grayjay-sources.github.io/grayjay-source-sto-like/"
+    "_generatorUrl": "https://grayjay-sources.github.io/grayjay-source-sto-like/",
+    "_feeds": {
+      "commits": "https://github.com/grayjay-sources/grayjay-source-sto-like/commits/main.atom",
+      "releases": "https://github.com/grayjay-sources/grayjay-source-sto-like/releases.atom"
+    }
   },
   {
     "name": "Sample",
