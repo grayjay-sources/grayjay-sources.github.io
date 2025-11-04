@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to report a bug! Please provide as much detail as possible.
-        
+
   - type: textarea
     id: description
     attributes:
@@ -16,7 +16,7 @@ body:
       placeholder: Describe the issue you're experiencing
     validations:
       required: true
-      
+
   - type: textarea
     id: reproduce
     attributes:
@@ -29,7 +29,7 @@ body:
         4. See error
     validations:
       required: true
-      
+
   - type: textarea
     id: expected
     attributes:
@@ -38,7 +38,7 @@ body:
       placeholder: Describe what should happen
     validations:
       required: true
-      
+
   - type: textarea
     id: actual
     attributes:
@@ -47,7 +47,7 @@ body:
       placeholder: Describe what actually happens
     validations:
       required: true
-      
+
   - type: dropdown
     id: affected-area
     attributes:
@@ -62,7 +62,7 @@ body:
         - Other
     validations:
       required: true
-      
+
   - type: input
     id: source-affected
     attributes:
@@ -71,7 +71,7 @@ body:
       placeholder: e.g., YouTube Source v1.0.0
     validations:
       required: false
-      
+
   - type: dropdown
     id: browser
     attributes:
@@ -86,7 +86,7 @@ body:
         - Other
     validations:
       required: false
-      
+
   - type: input
     id: browser-version
     attributes:
@@ -95,7 +95,7 @@ body:
       placeholder: e.g., 118.0.5993.70
     validations:
       required: false
-      
+
   - type: dropdown
     id: device
     attributes:
@@ -107,7 +107,7 @@ body:
         - Tablet
     validations:
       required: false
-      
+
   - type: input
     id: os
     attributes:
@@ -116,7 +116,7 @@ body:
       placeholder: e.g., Windows 11, macOS Sonoma, Android 14
     validations:
       required: false
-      
+
   - type: textarea
     id: screenshots
     attributes:
@@ -125,7 +125,7 @@ body:
       placeholder: Drag and drop images here
     validations:
       required: false
-      
+
   - type: textarea
     id: logs
     attributes:
@@ -135,7 +135,7 @@ body:
       render: shell
     validations:
       required: false
-      
+
   - type: textarea
     id: additional
     attributes:
@@ -144,7 +144,7 @@ body:
       placeholder: Any other information that might be helpful
     validations:
       required: false
-      
+
   - type: checkboxes
     id: terms
     attributes:

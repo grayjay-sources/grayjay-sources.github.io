@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for submitting a source! Please provide the following information to help us review and add your source.
-        
+
   - type: input
     id: source-name
     attributes:
@@ -16,7 +16,7 @@ body:
       placeholder: e.g., YouTube Source
     validations:
       required: true
-      
+
   - type: input
     id: platform
     attributes:
@@ -25,7 +25,7 @@ body:
       placeholder: e.g., YouTube, Twitch, Vimeo
     validations:
       required: true
-      
+
   - type: input
     id: version
     attributes:
@@ -34,7 +34,7 @@ body:
       placeholder: e.g., 1.0.0
     validations:
       required: true
-      
+
   - type: dropdown
     id: source-type
     attributes:
@@ -48,7 +48,7 @@ body:
         - Mixed/Other
     validations:
       required: true
-      
+
   - type: input
     id: repository-url
     attributes:
@@ -57,7 +57,7 @@ body:
       placeholder: https://github.com/username/source-name
     validations:
       required: false
-      
+
   - type: input
     id: source-file-url
     attributes:
@@ -66,7 +66,7 @@ body:
       placeholder: https://example.com/source.grayjay
     validations:
       required: true
-      
+
   - type: textarea
     id: description
     attributes:
@@ -79,7 +79,7 @@ body:
         - Any limitations or known issues
     validations:
       required: true
-      
+
   - type: textarea
     id: features
     attributes:
@@ -93,7 +93,7 @@ body:
         - ❌ Live streaming (not yet supported)
     validations:
       required: true
-      
+
   - type: dropdown
     id: tested
     attributes:
@@ -106,7 +106,7 @@ body:
         - Untested/Alpha
     validations:
       required: true
-      
+
   - type: input
     id: author-name
     attributes:
@@ -115,7 +115,7 @@ body:
       placeholder: e.g., Bluscream
     validations:
       required: true
-      
+
   - type: input
     id: contact
     attributes:
@@ -124,7 +124,7 @@ body:
       placeholder: e.g., GitHub username, Discord, email
     validations:
       required: false
-      
+
   - type: dropdown
     id: license
     attributes:
@@ -140,7 +140,7 @@ body:
         - Proprietary/No License
     validations:
       required: true
-      
+
   - type: textarea
     id: dependencies
     attributes:
@@ -152,7 +152,7 @@ body:
         - None
     validations:
       required: false
-      
+
   - type: textarea
     id: configuration
     attributes:
@@ -161,7 +161,7 @@ body:
       placeholder: Describe any setup steps users need to take
     validations:
       required: false
-      
+
   - type: textarea
     id: additional
     attributes:
@@ -170,7 +170,7 @@ body:
       placeholder: Add screenshots, demo videos, or any other helpful information
     validations:
       required: false
-      
+
   - type: checkboxes
     id: checklist
     attributes:
