@@ -1,0 +1,202 @@
+name: Update Sources from Configs
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (do not commit changes)"
+        required: false
+        default: "false"
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  update-sources:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Update sources from configs
+        run: |
+          python << 'EOF'
+          import json
+          import requests
+          import re
+          from urllib.parse import urlparse
+
+          print("Loading sources.json...")
+          with open('sources.json', 'r', encoding='utf-8') as f:
+              sources = json.load(f)
+
+          updated_count = 0
+          error_count = 0
+
+          for idx, source in enumerate(sources):
+              source_url = source.get('sourceUrl')
+              if not source_url:
+                  print(f"⚠️  {source.get('name', 'Unknown')}: No sourceUrl")
+                  continue
+                  
+              print(f"\n📦 Processing: {source.get('name')} ({idx + 1}/{len(sources)})")
+              print(f"   URL: {source_url}")
+              
+              # Initialize _tags if not present
+              if '_tags' not in source:
+                  source['_tags'] = []
+              
+              # Remove 'not-found' tag if it exists (will re-add if still 404)
+              source['_tags'] = [tag for tag in source['_tags'] if tag != 'not-found']
+              
+              try:
+                  # Fetch the config
+                  response = requests.get(source_url, timeout=10)
+                  
+                  if response.status_code == 404:
+                      print(f"   ❌ 404 Not Found")
+                      if 'not-found' not in source['_tags']:
+                          source['_tags'].append('not-found')
+                      error_count += 1
+                      continue
+                      
+                  if response.status_code != 200:
+                      print(f"   ⚠️  HTTP {response.status_code}")
+                      error_count += 1
+                      continue
+                      
+                  config = response.json()
+                  print(f"   ✅ Config fetched")
+                  
+                  # Fields to update from config (only if present in config)
+                  update_fields = [
+                      'name', 'description', 'author', 'authorUrl', 
+                      'platformUrl', 'scriptUrl', 'version', 'iconUrl',
+                      'scriptSignature', 'scriptPublicKey', 'packages',
+                      'allowEval', 'allowUrls', 'supportedClaimTypes',
+                      'authentication', 'settings', 'changelog', 'constants',
+                      'subscriptionRateLimit', 'primaryClaimFieldType'
+                  ]
+                  
+                  updated_fields = []
+                  for field in update_fields:
+                      if field in config:
+                          if source.get(field) != config[field]:
+                              source[field] = config[field]
+                              updated_fields.append(field)
+                  
+                  if updated_fields:
+                      print(f"   📝 Updated: {', '.join(updated_fields)}")
+                      updated_count += 1
+                  else:
+                      print(f"   ℹ️  No changes needed")
+                      
+                  # Add _installUrl if not present
+                  if '_installUrl' not in source and source_url.endswith('.json'):
+                      source['_installUrl'] = source_url
+                      print(f"   ➕ Added _installUrl")
+                      
+              except requests.exceptions.Timeout:
+                  print(f"   ⏱️  Timeout")
+                  error_count += 1
+              except requests.exceptions.RequestException as e:
+                  print(f"   ❌ Error: {str(e)}")
+                  error_count += 1
+              except json.JSONDecodeError:
+                  print(f"   ❌ Invalid JSON")
+                  error_count += 1
+              except Exception as e:
+                  print(f"   ❌ Unexpected error: {str(e)}")
+                  error_count += 1
+              
+              # Generate _feeds based on repositoryUrl if not present
+              repo_url = source.get('repositoryUrl')
+              if repo_url and '_feeds' not in source:
+                  # Parse GitHub/GitLab URLs
+                  github_match = re.match(r'https?://github\.com/([^/]+)/([^/]+)', repo_url)
+                  gitlab_match = re.match(r'https?://gitlab\.com/([^/]+)/([^/]+)', repo_url)
+                  
+                  if github_match:
+                      owner, repo = github_match.groups()
+                      repo = repo.rstrip('/')
+                      # Detect default branch (assume main, could be master)
+                      branch = 'main'  # Could make API call to detect, but main is most common now
+                      source['_feeds'] = {
+                          'commits': f"https://github.com/{owner}/{repo}/commits/{branch}.atom",
+                          'releases': f"https://github.com/{owner}/{repo}/releases.atom"
+                      }
+                      print(f"   ➕ Added _feeds for GitHub repo")
+                  elif gitlab_match:
+                      owner, repo = gitlab_match.groups()
+                      repo = repo.rstrip('/')
+                      source['_feeds'] = {
+                          'commits': f"https://gitlab.com/{owner}/{repo}/-/commits/master?format=atom",
+                          'releases': f"https://gitlab.com/{owner}/{repo}/-/releases.atom"
+                      }
+                      print(f"   ➕ Added _feeds for GitLab repo")
+
+          # Save updated sources.json
+          print(f"\n{'='*60}")
+          print(f"✅ Updated: {updated_count} sources")
+          print(f"❌ Errors: {error_count} sources")
+          print(f"{'='*60}\n")
+
+          with open('sources.json', 'w', encoding='utf-8') as f:
+              json.dump(sources, f, indent=4, ensure_ascii=False)
+
+          print("✅ sources.json saved")
+          EOF
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet sources.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "ℹ️  No changes detected"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "✅ Changes detected"
+          fi
+
+      - name: Commit changes
+        if: ${{ steps.check_changes.outputs.changed == 'true' && github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add sources.json
+          git commit -m "[bot/update-from-configs] Auto-update sources from their config files
+
+          - Fetched latest config from each sourceUrl
+          - Updated changed fields (version, description, packages, etc.)
+          - Added _installUrl where missing
+          - Auto-generated _feeds from repositoryUrl
+          - Tagged unreachable sources with 'not-found'
+
+          This is an automated update from the update-sources-from-configs workflow."
+
+      - name: Push changes
+        if: ${{ steps.check_changes.outputs.changed == 'true' && github.event.inputs.dry_run != 'true' }}
+        run: |
+          git push
+
+      - name: Summary
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            echo "🔍 DRY RUN MODE - No changes were committed"
+          elif [ "${{ steps.check_changes.outputs.changed }}" = "true" ]; then
+            echo "✅ Changes committed and pushed"
+          else
+            echo "ℹ️  No changes to commit"
+          fi
