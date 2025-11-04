@@ -94,7 +94,8 @@ for ($idx = 0; $idx -lt $total; $idx++) {
                     $valueChanged = $false
                     if ($null -eq $sourceValue -and $null -ne $configValue) {
                         $valueChanged = $true
-                    } elseif ($null -ne $sourceValue -and $null -ne $configValue) {
+                    }
+                    elseif ($null -ne $sourceValue -and $null -ne $configValue) {
                         $configJson = $configValue | ConvertTo-Json -Depth 10 -Compress
                         $sourceJson = $sourceValue | ConvertTo-Json -Depth 10 -Compress
                         if ($configJson -ne $sourceJson) {
@@ -112,7 +113,8 @@ for ($idx = 0; $idx -lt $total; $idx++) {
             if ($updatedFields.Count -gt 0) {
                 Write-Host "   📝 Updated: $($updatedFields -join ', ')" -ForegroundColor Cyan
                 $updatedCount++
-            } else {
+            }
+            else {
                 Write-Host "   ℹ️  No changes needed" -ForegroundColor Gray
             }
             
@@ -124,7 +126,8 @@ for ($idx = 0; $idx -lt $total; $idx++) {
             }
         }
         
-    } catch [System.Net.WebException] {
+    }
+    catch [System.Net.WebException] {
         $statusCode = [int]$_.Exception.Response.StatusCode
         if ($statusCode -eq 404) {
             Write-Host "   ❌ 404 Not Found" -ForegroundColor Red
@@ -132,11 +135,13 @@ for ($idx = 0; $idx -lt $total; $idx++) {
                 $source._tags += 'not-found'
             }
             $errorCount++
-        } else {
+        }
+        else {
             Write-Host "   ⚠️  HTTP $statusCode" -ForegroundColor Yellow
             $errorCount++
         }
-    } catch {
+    }
+    catch {
         Write-Host "   ❌ Error: $($_.Exception.Message)" -ForegroundColor Red
         $errorCount++
     }
@@ -151,7 +156,7 @@ for ($idx = 0; $idx -lt $total; $idx++) {
             $branch = 'main'  # Default to main
             
             $feeds = [PSCustomObject]@{
-                commits = "https://github.com/$owner/$repo/commits/$branch.atom"
+                commits  = "https://github.com/$owner/$repo/commits/$branch.atom"
                 releases = "https://github.com/$owner/$repo/releases.atom"
             }
             $source | Add-Member -NotePropertyName "_feeds" -NotePropertyValue $feeds -Force
@@ -164,7 +169,7 @@ for ($idx = 0; $idx -lt $total; $idx++) {
             $repo = $Matches[2].TrimEnd('/')
             
             $feeds = [PSCustomObject]@{
-                commits = "https://gitlab.com/$owner/$repo/-/commits/master?format=atom"
+                commits  = "https://gitlab.com/$owner/$repo/-/commits/master?format=atom"
                 releases = "https://gitlab.com/$owner/$repo/-/releases.atom"
             }
             $source | Add-Member -NotePropertyName "_feeds" -NotePropertyValue $feeds -Force
@@ -185,7 +190,8 @@ if (-not $DryRun) {
     Write-Host "`n💾 Saving sources.json..." -ForegroundColor White
     $sources | ConvertTo-Json -Depth 100 | Set-Content $sourcesPath -Encoding UTF8
     Write-Host "✅ sources.json saved successfully" -ForegroundColor Green
-} else {
+}
+else {
     Write-Host "`n🔍 DRY RUN - No changes saved" -ForegroundColor Yellow
 }
 
