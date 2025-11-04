@@ -3534,6 +3534,78 @@
         "_installUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases/download/current/WienAtVideosConfig.json"
     },
     {
+        "_tags": ["unofficial", "wip", "german", "tv", "streaming"],
+        "name": "Joyn",
+        "description": "Joyn streaming platform - German entertainment and live TV",
+        "author": "Bluscream, Cursor.AI",
+        "authorUrl": "https://github.com/Bluscream",
+        "platformUrl": "https://joyn.de",
+        "sourceUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-joyn/main/config.json",
+        "repositoryUrl": "https://github.com/grayjay-sources/grayjay-source-joyn",
+        "scriptUrl": "./script.js",
+        "version": 1,
+        "iconUrl": "./icon.png",
+        "id": "joyn-streaming-platform",
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": ["Http", "DOMParser"],
+        "allowEval": false,
+        "allowUrls": ["joyn.de", "www.joyn.de", "*.joyn.de"],
+        "supportedClaimTypes": [3],
+        "authentication": {
+            "loginUrl": "https://www.joyn.de/login",
+            "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+            "domainHeadersToFind": {
+                "joyn.de": []
+            }
+        },
+        "settings": [],
+        "changelog": {
+            "1": ["Initial version: Basic plugin structure"]
+        },
+        "_installUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-joyn/main/config.json",
+        "_feeds": {
+            "commits": "https://github.com/grayjay-sources/grayjay-source-joyn/commits/main.atom",
+            "releases": "https://github.com/grayjay-sources/grayjay-source-joyn/releases.atom"
+        }
+    },
+    {
+        "_tags": ["unofficial", "wip", "sports", "wrestling", "entertainment"],
+        "name": "WWE Network",
+        "description": "WWE Network - Professional wrestling streaming service",
+        "author": "Bluscream, Cursor.AI",
+        "authorUrl": "https://github.com/Bluscream",
+        "platformUrl": "https://watch.wwe.com",
+        "sourceUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-wwe-network/main/config.json",
+        "repositoryUrl": "https://github.com/grayjay-sources/grayjay-source-wwe-network",
+        "scriptUrl": "./script.js",
+        "version": 1,
+        "iconUrl": "./icon.png",
+        "id": "wwe-network-streaming",
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": ["Http", "DOMParser"],
+        "allowEval": false,
+        "allowUrls": ["wwe.com", "www.wwe.com", "watch.wwe.com", "*.wwe.com"],
+        "supportedClaimTypes": [3],
+        "authentication": {
+            "loginUrl": "https://watch.wwe.com/signin",
+            "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+            "domainHeadersToFind": {
+                "wwe.com": []
+            }
+        },
+        "settings": [],
+        "changelog": {
+            "1": ["Initial version: Basic plugin structure"]
+        },
+        "_installUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-wwe-network/main/config.json",
+        "_feeds": {
+            "commits": "https://github.com/grayjay-sources/grayjay-source-wwe-network/commits/main.atom",
+            "releases": "https://github.com/grayjay-sources/grayjay-source-wwe-network/releases.atom"
+        }
+    },
+    {
         "_tags": [
             "unofficial",
             "working",
