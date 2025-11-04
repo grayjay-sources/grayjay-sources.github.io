@@ -118,7 +118,8 @@ for ($idx = 0; $idx -lt $total; $idx++) {
                         # Use Add-Member for new properties, direct assignment for existing
                         if (-not $propertyExists) {
                             $source | Add-Member -NotePropertyName $field -NotePropertyValue $configValue -Force
-                        } else {
+                        }
+                        else {
                             $source.$field = $configValue
                         }
                         $updatedFields += $field
@@ -206,15 +207,21 @@ Write-Host "`n💾 Saving sources.json..." -ForegroundColor White
 $sources | ConvertTo-Json -Depth 100 | Set-Content $sourcesPath -Encoding UTF8
 Write-Host "✅ sources.json saved successfully" -ForegroundColor Green
 
-if ($Push) {
-    # Check if there are any changes to commit
-    Write-Host "`n🔍 Checking for changes..." -ForegroundColor White
-    Push-Location (Join-Path $PSScriptRoot "..")
-    $diffResult = git diff --quiet sources.json
-    $hasChanges = $LASTEXITCODE -ne 0
+# Check if there are any changes
+Write-Host "`n🔍 Checking for changes..." -ForegroundColor White
+Push-Location (Join-Path $PSScriptRoot "..")
+$diffResult = git diff --quiet sources.json
+$hasChanges = $LASTEXITCODE -ne 0
 
-    if ($hasChanges) {
-        Write-Host "📝 Changes detected, committing..." -ForegroundColor Cyan
+if ($hasChanges) {
+    Write-Host "📝 Changes detected" -ForegroundColor Cyan
+    
+    # Show diff stats
+    $diffStats = git diff --stat sources.json
+    Write-Host "   $diffStats" -ForegroundColor Gray
+    
+    if ($Push) {
+        Write-Host "`n📤 Committing and pushing changes..." -ForegroundColor Cyan
         
         # Stage sources.json
         try {
@@ -247,7 +254,7 @@ if ($Push) {
         }
         
         # Push changes
-        Write-Host "`n📤 Pushing changes to remote..." -ForegroundColor White
+        Write-Host "`n📤 Pushing to remote..." -ForegroundColor White
         try {
             $pushOutput = git push 2>&1
             Write-Host "   $pushOutput" -ForegroundColor Gray
@@ -261,14 +268,14 @@ if ($Push) {
         }
     }
     else {
-        Write-Host "ℹ️  No changes to commit" -ForegroundColor Gray
+        Write-Host "`n💡 Changes saved locally. Use -Push flag to commit and push" -ForegroundColor Yellow
     }
-
-    Pop-Location
 }
 else {
-    Write-Host "`n💡 Skipping git commit/push (use -Push flag to enable)" -ForegroundColor Yellow
+    Write-Host "ℹ️  No changes detected" -ForegroundColor Gray
 }
+
+Pop-Location
 
 Write-Host ""
 exit 0
