@@ -104,9 +104,19 @@
         },
         "_customButtons": {
           "type": "array",
+          "description": "Custom action buttons shown on the source card",
           "items": {
             "$ref": "#/definitions/CustomButton"
           }
+        },
+        "generatorUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to a web-based generator for creating custom plugin instances. If present, shows a 'Generate' button instead of 'Install'"
+        },
+        "_nsfw": {
+          "type": "boolean",
+          "description": "Mark source as NSFW content. Will be filtered by default unless user opts in"
         },
         "iconUrl_": {
           "type": "string",
