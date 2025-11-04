@@ -1,7 +1,7 @@
 name: 🎯 Source Request
 description: Request a new source to be developed for Grayjay
 title: "[Source Request] "
-labels: ["source-request", "enhancement"]
+labels: ["source-request"]
 body:
   - type: markdown
     attributes:
