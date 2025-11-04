@@ -2311,7 +2311,7 @@
       ]
     },
     "note": "⚠️ This is a generator tool! Visit https://grayjay-sources.github.io/grayjay-source-sto-like/ to create your custom plugin",
-    "generatorUrl": "https://grayjay-sources.github.io/grayjay-source-sto-like/"
+    "_generatorUrl": "https://grayjay-sources.github.io/grayjay-source-sto-like/"
   },
   {
     "name": "Sample",

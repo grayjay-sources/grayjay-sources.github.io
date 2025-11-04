@@ -109,22 +109,40 @@
             "$ref": "#/definitions/CustomButton"
           }
         },
-        "generatorUrl": {
+        "_generatorUrl": {
           "type": "string",
           "format": "uri",
           "description": "URL to a web-based generator for creating custom plugin instances. If present, shows a 'Generate' button instead of 'Install'"
+        },
+        "_installUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://.*\\.json$",
+          "description": "Full URL to the config.json file for direct installation. Must be a valid .json URL (not relative)"
         },
         "_nsfw": {
           "type": "boolean",
           "description": "Mark source as NSFW content. Will be filtered by default unless user opts in"
         },
+        "_sourceUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Relative source URL before conversion to absolute"
+        },
+        "_iconUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Relative icon URL before conversion to absolute"
+        },
         "iconUrl_": {
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "description": "Deprecated: Use _iconUrl instead"
         },
         "sourceUrl_": {
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "description": "Deprecated: Use _sourceUrl instead"
         },
         "allowAllHttpHeaderAccess": {
           "type": "boolean"
@@ -229,8 +247,7 @@
     "DomainHeadersToFind": {
       "type": "object",
       "additionalProperties": true,
-      "properties": {
-      },
+      "properties": {},
       "required": [],
       "title": "DomainHeadersToFind"
     },

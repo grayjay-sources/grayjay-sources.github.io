@@ -155,9 +155,12 @@ function generateCard(data) {
               <p class="card-text">${data.description}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">`;
-  // Check for generatorUrl - if present, show "Generate" button instead of "Install"
-  if (varExists(data.generatorUrl)) {
-    html += `<a href="${data.generatorUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-success">🚀 Generate</button></a>&nbsp;`;
+  // Check for _generatorUrl - if present, show "Generate" button instead of "Install"
+  if (varExists(data._generatorUrl)) {
+    html += `<a href="${data._generatorUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-success">🚀 Generate</button></a>&nbsp;`;
+  } else if (varExists(data._installUrl)) {
+    // Use _installUrl if provided (full .json URL)
+    html += `<a href="grayjay://plugin/${data._installUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-primary">Install</button></a>&nbsp;`;
   } else if (varExists(installUrl)) {
     html += `<a href="${installUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-primary">Install</button></a>&nbsp;`;
   }
