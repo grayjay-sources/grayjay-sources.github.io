@@ -155,7 +155,10 @@ function generateCard (data) {
               <p class="card-text">${data.description}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">`
-  if (varExists(installUrl)) {
+  // Check for generatorUrl - if present, show "Generate" button instead of "Install"
+  if (varExists(data.generatorUrl)) {
+    html += `<a href="${data.generatorUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-success">🚀 Generate</button></a>&nbsp;`
+  } else if (varExists(installUrl)) {
     html += `<a href="${installUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-primary">Install</button></a>&nbsp;`
   }
   html += `<a href="${repoUrl}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">Source</button></a>`

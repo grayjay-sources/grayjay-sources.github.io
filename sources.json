@@ -2313,7 +2313,7 @@
     "note": "⚠️ This is a generator tool! Visit https://grayjay-sources.github.io/grayjay-source-sto-like/ to create your custom plugin",
     "_customButtons": [
       {
-        "text": "Generate Plugin",
+        "text": "Generate",
         "url": "https://grayjay-sources.github.io/grayjay-source-sto-like/",
         "classes": "btn-secondary"
       }
