@@ -1,5 +1,44 @@
 [
   {
+  "_tags": ["unofficial", "untested"],
+	"name": "Aniworld",
+	"description": "Aniworld.to integration for Grayjay",
+	"author": "Zerophire",
+	"authorUrl": "https://ahwnis.com",
+	"platformUrl": "https://aniworld.to",
+	"sourceUrl": "https://github.com/Hoell08/Grayjay-Aniworld-plugin/blob/main/AniworldConfig.json",
+	"repositoryUrl": "https://github.com/Hoell08/Grayjay-Aniworld-plugin",
+	"scriptUrl": "./AniworldScript.js",
+  	"version": 1,
+	"iconUrl": "./AniworldIcon.png",
+	"id": "ac3f49ee-f398-5cf4-ac1b-ca1aace76c83",
+	"scriptSignature": "",
+	"scriptPublicKey": "",
+	"packages": [
+		"Http"
+	],
+	"allowEval": false,
+	"allowUrls": [
+		"aniworld.to"
+	],
+	"supportedClaimTypes": [
+		3
+	],
+	"authentication": {
+		"loginUrl": "https://aniworld.to/login",
+		"userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+		"domainHeadersToFind": {
+			"aniworld.to": []
+		}
+	},
+	"settings": [],
+	"changelog": {
+		"1": [
+			"Initial version: Basic search, series listing"
+		]
+	}
+},
+  {
     "_tags": ["unofficial", "untested"],
     "name": "Adventures in Odyssey Club",
     "description": "Subscription service for the award-winning, original audio drama series enjoyed by the whole family.",
