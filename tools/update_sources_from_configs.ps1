@@ -6,20 +6,11 @@
 .DESCRIPTION
     This script fetches each source's config.json from sourceUrl and updates the entry.
     It also auto-generates _feeds from repositoryUrl and adds _installUrl where missing.
-
-.PARAMETER DryRun
-    If specified, shows what would change without modifying sources.json
+    Automatically commits and pushes changes to git.
 
 .EXAMPLE
     .\update_sources_from_configs.ps1
-    
-.EXAMPLE
-    .\update_sources_from_configs.ps1 -DryRun
 #>
-
-param(
-    [switch]$DryRun
-)
 
 $ErrorActionPreference = "Stop"
 
@@ -27,20 +18,15 @@ Write-Host "=" * 60 -ForegroundColor Cyan
 Write-Host "🔄 Updating sources from their config files" -ForegroundColor Cyan
 Write-Host "=" * 60 -ForegroundColor Cyan
 
-if ($DryRun) {
-    Write-Host "`n🔍 DRY RUN MODE - No changes will be saved" -ForegroundColor Yellow
+# Pull latest changes from git
+Write-Host "`n📥 Pulling latest changes from git..." -ForegroundColor White
+try {
+    $pullOutput = git pull --rebase 2>&1
+    Write-Host "   $pullOutput" -ForegroundColor Gray
 }
-else {
-    # Pull latest changes from git
-    Write-Host "`n📥 Pulling latest changes from git..." -ForegroundColor White
-    try {
-        $pullOutput = git pull --rebase 2>&1
-        Write-Host "   $pullOutput" -ForegroundColor Gray
-    }
-    catch {
-        Write-Host "   ⚠️  Git pull failed: $_" -ForegroundColor Yellow
-        Write-Host "   Continuing anyway..." -ForegroundColor Yellow
-    }
+catch {
+    Write-Host "   ⚠️  Git pull failed: $_" -ForegroundColor Yellow
+    Write-Host "   Continuing anyway..." -ForegroundColor Yellow
 }
 
 # Load sources.json
@@ -106,8 +92,7 @@ for ($idx = 0; $idx -lt $total; $idx++) {
                     $valueChanged = $false
                     if ($null -eq $sourceValue -and $null -ne $configValue) {
                         $valueChanged = $true
-                    }
-                    elseif ($null -ne $sourceValue -and $null -ne $configValue) {
+                    } elseif ($null -ne $sourceValue -and $null -ne $configValue) {
                         $configJson = $configValue | ConvertTo-Json -Depth 10 -Compress
                         $sourceJson = $sourceValue | ConvertTo-Json -Depth 10 -Compress
                         if ($configJson -ne $sourceJson) {
@@ -125,8 +110,7 @@ for ($idx = 0; $idx -lt $total; $idx++) {
             if ($updatedFields.Count -gt 0) {
                 Write-Host "   📝 Updated: $($updatedFields -join ', ')" -ForegroundColor Cyan
                 $updatedCount++
-            }
-            else {
+            } else {
                 Write-Host "   ℹ️  No changes needed" -ForegroundColor Gray
             }
             
@@ -138,8 +122,7 @@ for ($idx = 0; $idx -lt $total; $idx++) {
             }
         }
         
-    }
-    catch [System.Net.WebException] {
+    } catch [System.Net.WebException] {
         $statusCode = [int]$_.Exception.Response.StatusCode
         if ($statusCode -eq 404) {
             Write-Host "   ❌ 404 Not Found" -ForegroundColor Red
@@ -147,13 +130,11 @@ for ($idx = 0; $idx -lt $total; $idx++) {
                 $source._tags += 'not-found'
             }
             $errorCount++
-        }
-        else {
+        } else {
             Write-Host "   ⚠️  HTTP $statusCode" -ForegroundColor Yellow
             $errorCount++
         }
-    }
-    catch {
+    } catch {
         Write-Host "   ❌ Error: $($_.Exception.Message)" -ForegroundColor Red
         $errorCount++
     }
@@ -168,7 +149,7 @@ for ($idx = 0; $idx -lt $total; $idx++) {
             $branch = 'main'  # Default to main
             
             $feeds = [PSCustomObject]@{
-                commits  = "https://github.com/$owner/$repo/commits/$branch.atom"
+                commits = "https://github.com/$owner/$repo/commits/$branch.atom"
                 releases = "https://github.com/$owner/$repo/releases.atom"
             }
             $source | Add-Member -NotePropertyName "_feeds" -NotePropertyValue $feeds -Force
@@ -181,7 +162,7 @@ for ($idx = 0; $idx -lt $total; $idx++) {
             $repo = $Matches[2].TrimEnd('/')
             
             $feeds = [PSCustomObject]@{
-                commits  = "https://gitlab.com/$owner/$repo/-/commits/master?format=atom"
+                commits = "https://gitlab.com/$owner/$repo/-/commits/master?format=atom"
                 releases = "https://gitlab.com/$owner/$repo/-/releases.atom"
             }
             $source | Add-Member -NotePropertyName "_feeds" -NotePropertyValue $feeds -Force
@@ -197,67 +178,62 @@ Write-Host "✅ Updated: $updatedCount sources" -ForegroundColor Green
 Write-Host "❌ Errors: $errorCount sources" -ForegroundColor Red
 Write-Host "=" * 60 -ForegroundColor Cyan
 
-if (-not $DryRun) {
-    # Save updated sources.json
-    Write-Host "`n💾 Saving sources.json..." -ForegroundColor White
-    $sources | ConvertTo-Json -Depth 100 | Set-Content $sourcesPath -Encoding UTF8
-    Write-Host "✅ sources.json saved successfully" -ForegroundColor Green
+# Save updated sources.json
+Write-Host "`n💾 Saving sources.json..." -ForegroundColor White
+$sources | ConvertTo-Json -Depth 100 | Set-Content $sourcesPath -Encoding UTF8
+Write-Host "✅ sources.json saved successfully" -ForegroundColor Green
+
+# Check if there are any changes to commit
+Write-Host "`n🔍 Checking for changes..." -ForegroundColor White
+$diffResult = git diff --quiet sources.json
+$hasChanges = $LASTEXITCODE -ne 0
+
+if ($hasChanges) {
+    Write-Host "📝 Changes detected, committing..." -ForegroundColor Cyan
     
-    # Check if there are any changes to commit
-    Write-Host "`n🔍 Checking for changes..." -ForegroundColor White
-    $diffResult = git diff --quiet sources.json
-    $hasChanges = $LASTEXITCODE -ne 0
-    
-    if ($hasChanges) {
-        Write-Host "📝 Changes detected" -ForegroundColor Cyan
-        
-        # # Stage sources.json
-        # try {
-        #     git add sources.json
-        #     Write-Host "   ✅ Changes staged" -ForegroundColor Green
-        # }
-        # catch {
-        #     Write-Host "   ❌ Failed to stage changes: $_" -ForegroundColor Red
-        #     exit 1
-        # }
-        
-        # # Create commit message
-        # $commitMsg = "chore: Auto-update sources from configs`n`n"
-        # $commitMsg += "- Updated: $updatedCount sources`n"
-        # if ($errorCount -gt 0) {
-        #     $commitMsg += "- Errors: $errorCount sources`n"
-        # }
-        # $commitMsg += "`nGenerated by update_sources_from_configs.ps1"
-        
-        # # Commit changes
-        # try {
-        #     git commit -m $commitMsg
-        #     Write-Host "   ✅ Changes committed" -ForegroundColor Green
-        # }
-        # catch {
-        #     Write-Host "   ❌ Failed to commit changes: $_" -ForegroundColor Red
-        #     exit 1
-        # }
-        
-        # # Push changes
-        # Write-Host "`n📤 Pushing changes to remote..." -ForegroundColor White
-        # try {
-        #     $pushOutput = git push 2>&1
-        #     Write-Host "   $pushOutput" -ForegroundColor Gray
-        #     Write-Host "   ✅ Changes pushed successfully" -ForegroundColor Green
-        # }
-        # catch {
-        #     Write-Host "   ❌ Failed to push changes: $_" -ForegroundColor Red
-        #     Write-Host "   💡 You may need to pull and resolve conflicts manually" -ForegroundColor Yellow
-        #     exit 1
-        # }
+    # Stage sources.json
+    try {
+        git add sources.json
+        Write-Host "   ✅ Changes staged" -ForegroundColor Green
     }
-    else {
-        Write-Host "ℹ️  No changes to commit" -ForegroundColor Gray
+    catch {
+        Write-Host "   ❌ Failed to stage changes: $_" -ForegroundColor Red
+        exit 1
+    }
+    
+    # Create commit message
+    $commitMsg = "chore: Auto-update sources from configs`n`n"
+    $commitMsg += "- Updated: $updatedCount sources`n"
+    if ($errorCount -gt 0) {
+        $commitMsg += "- Errors: $errorCount sources`n"
+    }
+    $commitMsg += "`nGenerated by update_sources_from_configs.ps1"
+    
+    # Commit changes
+    try {
+        git commit -m $commitMsg
+        Write-Host "   ✅ Changes committed" -ForegroundColor Green
+    }
+    catch {
+        Write-Host "   ❌ Failed to commit changes: $_" -ForegroundColor Red
+        exit 1
+    }
+    
+    # Push changes
+    Write-Host "`n📤 Pushing changes to remote..." -ForegroundColor White
+    try {
+        $pushOutput = git push 2>&1
+        Write-Host "   $pushOutput" -ForegroundColor Gray
+        Write-Host "   ✅ Changes pushed successfully" -ForegroundColor Green
+    }
+    catch {
+        Write-Host "   ❌ Failed to push changes: $_" -ForegroundColor Red
+        Write-Host "   💡 You may need to pull and resolve conflicts manually" -ForegroundColor Yellow
+        exit 1
     }
 }
 else {
-    Write-Host "`n🔍 DRY RUN - No changes saved" -ForegroundColor Yellow
+    Write-Host "ℹ️  No changes to commit" -ForegroundColor Gray
 }
 
 Write-Host ""
