@@ -2289,10 +2289,10 @@
     "description": "Universal generator for German streaming sites using S.to/Aniworld framework - Create custom plugins for any compatible site",
     "author": "Bluscream, Cursor.AI",
     "authorUrl": "https://github.com/Bluscream",
-    "platformUrl": "https://bluscream.github.io/grayjay-source-sto-like/",
-    "sourceUrl": "https://bluscream.github.io/grayjay-source-sto-like/",
-    "repositoryUrl": "https://github.com/Bluscream/grayjay-source-sto-like",
-    "scriptUrl": "./StoLikeScript.js",
+    "platformUrl": "https://grayjay-sources.github.io/grayjay-source-sto-like/",
+    "sourceUrl": "https://grayjay-sources.github.io/grayjay-source-sto-like/",
+    "repositoryUrl": "https://github.com/grayjay-sources/grayjay-source-sto-like",
+    "scriptUrl": "./script.js",
     "version": 1,
     "iconUrl": "./docs/sto-like-icon.svg",
     "id": "8e4d9c5a-1b3f-4e2c-9d8a-7f6e5c4b3a2d",
@@ -2310,7 +2310,14 @@
         "Support for custom base URLs"
       ]
     },
-    "note": "⚠️ This is a generator tool! Visit https://bluscream.github.io/grayjay-source-sto-like/ to create your custom plugin"
+    "note": "⚠️ This is a generator tool! Visit https://grayjay-sources.github.io/grayjay-source-sto-like/ to create your custom plugin",
+    "_customButtons": [
+      {
+        "text": "Generate Plugin",
+        "url": "https://grayjay-sources.github.io/grayjay-source-sto-like/",
+        "classes": "btn-secondary"
+      }
+    ]
   },
   {
     "name": "Sample",
