@@ -1,0 +1,91 @@
+name: 🎯 Source Request
+description: Request a new source to be developed for Grayjay
+title: "[Source Request] "
+labels: ["source-request", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to request a new source! Please fill out the information below.
+
+  - type: input
+    id: source-name
+    attributes:
+      label: Source Name
+      description: What is the name of the platform/service you want a source for?
+      placeholder: e.g., YouTube, Twitch, Vimeo
+    validations:
+      required: true
+
+  - type: input
+    id: source-url
+    attributes:
+      label: Source URL
+      description: What is the main URL of the platform?
+      placeholder: e.g., https://www.example.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source-type
+    attributes:
+      label: Source Type
+      description: What type of content does this source provide?
+      options:
+        - Video
+        - Live Streaming
+        - Podcast
+        - Music
+        - Mixed/Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the platform and why you think it would be a good addition to Grayjay
+      placeholder: Tell us about the platform, its content, and why it's important to you
+    validations:
+      required: true
+
+  - type: textarea
+    id: features
+    attributes:
+      label: Key Features
+      description: What specific features or content from this platform would you like to see supported?
+      placeholder: |
+        - Feature 1
+        - Feature 2
+        - Feature 3
+    validations:
+      required: false
+
+  - type: dropdown
+    id: api-availability
+    attributes:
+      label: Does this platform have a public API?
+      options:
+        - "Yes"
+        - "No"
+        - "I don't know"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any other information that might be helpful
+      placeholder: Add any additional context, links to API documentation, or other relevant information
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our community guidelines
+      options:
+        - label: I have searched for existing source requests and this is not a duplicate
+          required: true

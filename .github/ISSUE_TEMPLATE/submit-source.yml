@@ -1,0 +1,189 @@
+name: 📦 Submit Existing Source
+description: Submit an existing Grayjay source to be added to the site
+title: "[Source Submission] "
+labels: ["source-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a source! Please provide the following information to help us review and add your source.
+        
+  - type: input
+    id: source-name
+    attributes:
+      label: Source Name
+      description: What is the name of your source?
+      placeholder: e.g., YouTube Source
+    validations:
+      required: true
+      
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      description: Which platform does this source support?
+      placeholder: e.g., YouTube, Twitch, Vimeo
+    validations:
+      required: true
+      
+  - type: input
+    id: version
+    attributes:
+      label: Source Version
+      description: What version is your source?
+      placeholder: e.g., 1.0.0
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: source-type
+    attributes:
+      label: Source Type
+      description: What type of content does this source provide?
+      options:
+        - Video
+        - Live Streaming
+        - Podcast
+        - Music
+        - Mixed/Other
+    validations:
+      required: true
+      
+  - type: input
+    id: repository-url
+    attributes:
+      label: Repository URL
+      description: Link to the source code repository (if public)
+      placeholder: https://github.com/username/source-name
+    validations:
+      required: false
+      
+  - type: input
+    id: source-file-url
+    attributes:
+      label: Source File URL
+      description: Direct link to the .grayjay source file or configuration
+      placeholder: https://example.com/source.grayjay
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe what your source does and its key features
+      placeholder: |
+        A comprehensive description of your source, including:
+        - What content it supports
+        - Key features
+        - Any limitations or known issues
+    validations:
+      required: true
+      
+  - type: textarea
+    id: features
+    attributes:
+      label: Supported Features
+      description: List the features your source supports
+      placeholder: |
+        - ✅ Video playback
+        - ✅ Search
+        - ✅ Subscriptions
+        - ✅ Comments
+        - ❌ Live streaming (not yet supported)
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: tested
+    attributes:
+      label: Testing Status
+      description: How thoroughly has this source been tested?
+      options:
+        - Extensively tested (multiple users, various scenarios)
+        - Moderately tested (single user, common scenarios)
+        - Basic testing (limited testing)
+        - Untested/Alpha
+    validations:
+      required: true
+      
+  - type: input
+    id: author-name
+    attributes:
+      label: Author/Maintainer Name
+      description: Your name or username
+      placeholder: e.g., Bluscream
+    validations:
+      required: true
+      
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Information
+      description: How can we reach you if we have questions?
+      placeholder: e.g., GitHub username, Discord, email
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      description: What license is your source released under?
+      options:
+        - MIT
+        - Apache 2.0
+        - GPL v3
+        - BSD
+        - Public Domain/Unlicense
+        - Other (specify in additional info)
+        - Proprietary/No License
+    validations:
+      required: true
+      
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List any external dependencies or requirements
+      placeholder: |
+        - Requires API key from platform
+        - Depends on library X v1.0
+        - None
+    validations:
+      required: false
+      
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Configuration Requirements
+      description: Any special configuration needed by users?
+      placeholder: Describe any setup steps users need to take
+    validations:
+      required: false
+      
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any other relevant information
+      placeholder: Add screenshots, demo videos, or any other helpful information
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I am the author or have permission to submit this source
+          required: true
+        - label: The source is functional and tested
+          required: true
+        - label: The source complies with the platform's Terms of Service
+          required: true
+        - label: I have included all necessary documentation
+          required: true
+        - label: I have searched for existing sources and this is not a duplicate
+          required: true

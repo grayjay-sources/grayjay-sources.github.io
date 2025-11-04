@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Grayjay Community Discussion
+    url: https://github.com/futo-org/grayjay-sources/discussions
+    about: Join the community discussion for questions and general topics
+  - name: 📖 Documentation
+    url: https://github.com/futo-org/grayjay-sources
+    about: Check out the documentation for guides and information
