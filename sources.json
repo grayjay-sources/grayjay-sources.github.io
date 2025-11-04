@@ -589,6 +589,40 @@
         "settings": []
     },
     {
+        "id": "c05d8742-1a3b-4c5d-9e6f-7a8b9c0d1e2f",
+        "name": "CoS.TV",
+        "description": "Watch, like, comment your favorite videos, share with friends, earn COS reward, and work with community powered by Contentos Blockchain.",
+        "version": 1,
+        "author": "Stefan Cruz",
+        "authorUrl": "",
+        "platformUrl": "https://cos.tv/",
+        "iconUrl": "https://stefancruz.github.io/grayjay-plugin-costv/CosTvIcon.png",
+        "repositoryUrl": "https://github.com/stefancruz/grayjay-plugin-costv",
+        "sourceUrl": "https://stefancruz.github.io/grayjay-plugin-costv/CosTVConfig.json",
+        "scriptUrl": "./CosTVScript.js",
+        "scriptSignature": "qWxCTc+63M5RbsWgQDw8FsNPpKt4nKkyW31UTl5DluZDMiZTiwgmlSm3wnD/NjrxzoKFlHlLYeC1/FsTieuqQ9TYuDukvlpQjHrl7KHPB/B3jItS9etM0W/pZAEFxEUmeunkDYBhfl4MHrOzJNiiqWWV3mI6N24UcQj0jWYT6L91C1OjyLbC0NNEDYWemts2txWz2ooXGZSdvcmdr73BTGxpuOU3fYaU351JlGI9knaIt/PGjXQ7RM/l8ESP0c6hpnQkU20CiXUdeFz4+4vd/liPsZIp3HOMjJLby6tiJLE4KeO9HMjDhPt+t1lIDkz5lTOHZOtdwAqAzoZ9sgnPEQ==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs5shGUhmdmWJtDag0oDSV8KiCvAOmXBOxAVzWQs4uxLJ7IG6p99YlyTHnEi3B1VuIhUz/FcSkL7g/f20JQweNLTCOGlUR44+5dbaP8ZlfdbAmXYwie7nNKJX6rnXw+G9u9QQ1DBQZttIlX+d6acwldAqftVA+GUiN5uHWgtAHnFkTNZMSF3h4vq1ucJdF1CpWcPRW74/S4r841Afs29CAICtcduDoTaX4v4b/wrzDw0coYaEwlk2Gb8rRuD7ZV7G+Df1yZtFWhnMB7VhiHGxxIqoVEFoTZ5/FNhw0HAiMlWPowxInm/zwyI0HunDFB3gwilsPBtnA1WvOvbChVh5fQIDAQAB",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "constants": {
+            "BASE_URL": "https://cos.tv"
+        },
+        "allowUrls": [
+            "cos.tv",
+            "img.contentos.io",
+            "videocdn.cos.tv",
+            "tencent.cos.tv",
+            ".vod2.myqcloud.com"
+        ],
+        "changelog": {
+            "1": [
+                "- Initial implementation;"
+            ]
+        }
+    },
+    {
         "name": "Crunchyroll (Alpha)",
         "description": "Watch the latest anime on Crunchyroll",
         "author": "FUTO",
@@ -3802,39 +3836,5 @@
             21
         ],
         "sourceUrl_": "https://plugins.grayjay.app/Niconico/NiconicoConfig.json"
-    },
-    {
-        "id": "c05d8742-1a3b-4c5d-9e6f-7a8b9c0d1e2f",
-        "name": "CoS.TV",
-        "description": "Watch, like, comment your favorite videos, share with friends, earn COS reward, and work with community powered by Contentos Blockchain.",
-        "version": 1,
-        "author": "Stefan Cruz",
-        "authorUrl": "",
-        "platformUrl": "https://cos.tv/",
-        "iconUrl": "https://stefancruz.github.io/grayjay-plugin-costv/CosTvIcon.png",
-        "repositoryUrl": "https://github.com/stefancruz/grayjay-plugin-costv",
-        "sourceUrl": "https://stefancruz.github.io/grayjay-plugin-costv/CosTVConfig.json",
-        "scriptUrl": "./CosTVScript.js",
-        "scriptSignature": "qWxCTc+63M5RbsWgQDw8FsNPpKt4nKkyW31UTl5DluZDMiZTiwgmlSm3wnD/NjrxzoKFlHlLYeC1/FsTieuqQ9TYuDukvlpQjHrl7KHPB/B3jItS9etM0W/pZAEFxEUmeunkDYBhfl4MHrOzJNiiqWWV3mI6N24UcQj0jWYT6L91C1OjyLbC0NNEDYWemts2txWz2ooXGZSdvcmdr73BTGxpuOU3fYaU351JlGI9knaIt/PGjXQ7RM/l8ESP0c6hpnQkU20CiXUdeFz4+4vd/liPsZIp3HOMjJLby6tiJLE4KeO9HMjDhPt+t1lIDkz5lTOHZOtdwAqAzoZ9sgnPEQ==",
-        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs5shGUhmdmWJtDag0oDSV8KiCvAOmXBOxAVzWQs4uxLJ7IG6p99YlyTHnEi3B1VuIhUz/FcSkL7g/f20JQweNLTCOGlUR44+5dbaP8ZlfdbAmXYwie7nNKJX6rnXw+G9u9QQ1DBQZttIlX+d6acwldAqftVA+GUiN5uHWgtAHnFkTNZMSF3h4vq1ucJdF1CpWcPRW74/S4r841Afs29CAICtcduDoTaX4v4b/wrzDw0coYaEwlk2Gb8rRuD7ZV7G+Df1yZtFWhnMB7VhiHGxxIqoVEFoTZ5/FNhw0HAiMlWPowxInm/zwyI0HunDFB3gwilsPBtnA1WvOvbChVh5fQIDAQAB",
-        "packages": [
-            "Http"
-        ],
-        "allowEval": false,
-        "constants": {
-            "BASE_URL": "https://cos.tv"
-        },
-        "allowUrls": [
-            "cos.tv",
-            "img.contentos.io",
-            "videocdn.cos.tv",
-            "tencent.cos.tv",
-            ".vod2.myqcloud.com"
-        ],
-        "changelog": {
-            "1": [
-                "- Initial implementation;"
-            ]
-        }
     }
 ]
