@@ -1780,22 +1780,24 @@
   {
     "_tags": ["unofficial", "wip", "german", "tv", "streaming"],
     "name": "Joyn",
-    "description": "Joyn streaming platform - German entertainment and live TV",
+    "description": "Joyn streaming platform - German entertainment, series, movies, and live TV",
     "author": "Bluscream, Cursor.AI",
     "authorUrl": "https://github.com/Bluscream",
     "platformUrl": "https://joyn.de",
-    "sourceUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-joyn/main/config.json",
+    "sourceUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-joyn/main/build/JoynConfig.json",
     "repositoryUrl": "https://github.com/grayjay-sources/grayjay-source-joyn",
-    "scriptUrl": "./script.js",
+    "scriptUrl": "./JoynScript.js",
     "version": 1,
-    "iconUrl": "./icon.png",
+    "iconUrl": "./JoynIcon.png",
     "id": "joyn-streaming-platform",
     "scriptSignature": "",
     "scriptPublicKey": "",
     "packages": ["Http", "DOMParser"],
     "allowEval": false,
-    "allowUrls": ["joyn.de", "www.joyn.de", "*.joyn.de"],
+    "allowUrls": ["joyn.de", "www.joyn.de", "*.joyn.de", "api.joyn.de", "auth.joyn.de", "img.joyn.de", "ffqrv35svv-dsn.algolia.net"],
     "supportedClaimTypes": [3],
+    "enablePlaylists": true,
+    "enableLiveContent": true,
     "authentication": {
       "loginUrl": "https://www.joyn.de/login",
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
@@ -1805,9 +1807,10 @@
     },
     "settings": [],
     "changelog": {
-      "1": ["Initial version: Basic plugin structure"]
+      "1": ["Initial version: TypeScript-based plugin", "GraphQL API integration", "Algolia search", "Live TV channels", "Series as playlists", "Episodes and metadata", "~70% feature complete"]
     },
-    "_installUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-joyn/main/config.json",
+    "_tags": ["unofficial", "wip", "german", "tv", "streaming", "series", "movies", "live"],
+    "_installUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-joyn/main/build/JoynConfig.json",
     "_feeds": {
       "commits": "https://github.com/grayjay-sources/grayjay-source-joyn/commits/main.atom",
       "releases": "https://github.com/grayjay-sources/grayjay-source-joyn/releases.atom"
