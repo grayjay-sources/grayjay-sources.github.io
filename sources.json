@@ -1,6 +1,9 @@
 [
   {
-    "_tags": ["unofficial", "untested"],
+    "_tags": [
+      "unofficial",
+      "untested"
+    ],
     "name": "Adventures in Odyssey Club",
     "description": "Subscription service for the award-winning, original audio drama series enjoyed by the whole family.",
     "author": "CATEIN",
@@ -13,15 +16,25 @@
     "id": "62e186ef-160d-46d7-9953-74fe84d11b40",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["fotf.my.site.com"],
+    "allowUrls": [
+      "fotf.my.site.com"
+    ],
     "authentication": {
       "loginUrl": "https://app.adventuresinodyssey.com/signin",
       "domainHeadersToFind": {
-        "fotf.my.site.com": ["Authorization", "x-viewer-id", "x-pin"]
+        "fotf.my.site.com": [
+          "Authorization",
+          "x-viewer-id",
+          "x-pin"
+        ]
       },
-      "cookiesToFind": ["idccsrf"],
+      "cookiesToFind": [
+        "idccsrf"
+      ],
       "loginWarning": "You must select a profile with a PIN for authentication to complete."
     },
     "settings": [
@@ -74,7 +87,13 @@
         "description": "Set how many comments to load on each request. Higher might be slower",
         "type": "Dropdown",
         "default": "1",
-        "options": ["10 (the club uses this)", "20", "30", "40", "50"]
+        "options": [
+          "10 (the club uses this)",
+          "20",
+          "30",
+          "40",
+          "50"
+        ]
       },
       {
         "variable": "debug",
@@ -141,7 +160,9 @@
       "12": [
         "Added support for direct media urls starting with https://media.adventuresinodyssey.com/private/audio/episode"
       ],
-      "13": ["hotfix for support for direct media urls"],
+      "13": [
+        "hotfix for support for direct media urls"
+      ],
       "14": [
         "Direct media URLs now:",
         "- Display AiOC image instead of nothing",
@@ -159,7 +180,12 @@
     }
   },
   {
-    "_tags": ["unofficial", "german", "streaming", "anime"],
+    "_tags": [
+      "unofficial",
+      "german",
+      "streaming",
+      "anime"
+    ],
     "name": "Aniworld",
     "description": "Aniworld.to integration for Grayjay",
     "author": "Zerophire, Bluscream, Cursor.AI",
@@ -173,10 +199,17 @@
     "id": "ac3f49ee-f398-5cf4-ac1b-ca1aace76c83",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
-    "allowUrls": ["aniworld.to"],
-    "supportedClaimTypes": [3],
+    "allowUrls": [
+      "aniworld.to"
+    ],
+    "supportedClaimTypes": [
+      3
+    ],
     "authentication": {
       "loginUrl": "https://aniworld.to/login",
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
@@ -186,7 +219,9 @@
     },
     "settings": [],
     "changelog": {
-      "1": ["Initial version: Basic search, series listing"]
+      "1": [
+        "Initial version: Basic search, series listing"
+      ]
     },
     "_installUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-aniworld/main/config.json",
     "_feeds": {
@@ -208,7 +243,9 @@
     "id": "a8f7e2d1-4b3c-4e5f-8a9b-1c2d3e4f5a6b",
     "scriptSignature": "JU3+BJsNLIBDNlOprqf4Z/iQ+CJcBUxJj2ZYlgfy52ikBw9dtRBgVvYJikbvWuht35Q269NwBrLI1eJbBff34PYvErcYLyDcivnLMxoU0x+O/nWQthUs7azccY/gdDCwrb2jBFGIX3RopsU99nNI3NoB2/hrbt12/DJYGi7ZhgEJkNWU2pT+FTYbGplMmkc0cYVJfclwdQdyCdRGF00rL4Og4yIvtaHgK0A2HzwhELpTlpCyKZxaB9P2T2aYLjPl3Xo63SvZyKVwAielQhfppo8gCG3lFG/T9skc49ApH1i9Rk+ro6H91rOGukINMDNTFgAi0rZ+D782qDBeg7X37g==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs5shGUhmdmWJtDag0oDSV8KiCvAOmXBOxAVzWQs4uxLJ7IG6p99YlyTHnEi3B1VuIhUz/FcSkL7g/f20JQweNLTCOGlUR44+5dbaP8ZlfdbAmXYwie7nNKJX6rnXw+G9u9QQ1DBQZttIlX+d6acwldAqftVA+GUiN5uHWgtAHnFkTNZMSF3h4vq1ucJdF1CpWcPRW74/S4r841Afs29CAICtcduDoTaX4v4b/wrzDw0coYaEwlk2Gb8rRuD7ZV7G+Df1yZtFWhnMB7VhiHGxxIqoVEFoTZ5/FNhw0HAiMlWPowxInm/zwyI0HunDFB3gwilsPBtnA1WvOvbChVh5fQIDAQAB",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowUrls": [
       "www.aparat.com",
       "shorts.aparat.com",
@@ -229,7 +266,10 @@
     }
   },
   {
-    "_tags": ["official", "working"],
+    "_tags": [
+      "official",
+      "working"
+    ],
     "_feeds": {
       "commits": "https://gitlab.futo.org/videostreaming/plugins/apple-podcasts/-/commits/master?format=atom"
     },
@@ -247,7 +287,9 @@
     "subscriptionRateLimit": 10,
     "scriptSignature": "LNhcth4OSTNnOmPL+ogR7IkG0QZKbwuJ2z1SwlT0yQadbJaCUShDVv9s/aEu4H95BRuhYJWWYL5zqjb4C8ie0YRJbVUwZh6K/6Kg5CYiY5H/6KCsntxhMSCQYTYYDegNaPCdyKY+SiZn+TtWkfhZ2aXRtdsOyXBzbELKI4vqgkB3vwVt15w9+raJ+wE7JDNcC4Dfgf1NFLx/96qslwPU63w7qawMvgKB7WFzANxfMHCrsLGqQB3VB/3GR2N+VlFndjREVR1SoUiI1tRqKdQ2OVkDBWRVkyOi2sbsh77ABKjQRlbSV18WCLEQK5FF539TDftHo5WbSIP3zfhv5PGG4g==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
     "allowUrls": [
       "itunes.apple.com",
@@ -461,12 +503,17 @@
     ],
     "authentication": {
       "loginUrl": "https://podcasts.apple.com/includes/commerce/authenticate?product=podcasts",
-      "cookiesToFind": ["media-user-token"],
+      "cookiesToFind": [
+        "media-user-token"
+      ],
       "userAgent": "Mozilla/5.0 (iPad; CPU OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Mobile/15E148 Safari/604.1"
     }
   },
   {
-    "_tags": ["unofficial", "unknown"],
+    "_tags": [
+      "unofficial",
+      "unknown"
+    ],
     "name": "Bandcamp",
     "description": "Bandcamp is an American online music distributor",
     "author": "William Vigolo",
@@ -479,9 +526,13 @@
     "id": "04a188d3-9a46-4358-9599-1ddfcc83aae0",
     "scriptSignature": "ObIgf32kLZGI78SR7CIUH2/tdikOWFk+k1VEUMTevvygAV1wfu5w0xE5NuGfS5NajMlexchgaYaHSc95vv4MTCHosySqNOj7FMH0ClAPhkea9DvcMtAjDsMEjppe0mAWeZaSa1uFD/+vEmKbuQGz5r+I628HfLYH1QhmC43vMd0zt1dFxGJNSaBPz2Hps5fD37MFXK9Aat8J6QGCr6aZ1dolJotfW7lgHWxF9x5HxPL0ZYDTBm0wbOPIhKUoyjLvo/WqNTo4XQvXqquoP6LwKaVOpeKCVyEAHukD8uJLoN8pUuAfYJrqtvDrKHsKoDTWbA0z81R4cMXeJPaEoFqepL7M46K+kemaHEgdHBzYc+mi+xiqlhX3CNwO2D8ltapjAMylrOwuhaABBhEb0f+3iAOVdaH2TxgxvhA5zcemMzQrlgoYXBuVv9efcJ9muYP0t1RuG3xQ35ETyVjuiTjqYCh1UfSZZpJag0JLiK6S99/sveba+DyidVhBAb9ztgGAOYX0leqe3aUAUSsr4cteNvyTWUW0No1ZfrvwsXE0HOHVcTAb53Hseg2Xn2jefKi4aP1JPmkSzzjfbagj7EoF6NDObxkIFf2otm2wXqeeZlcmMGL5FrVhGHKan5MStTLP4HR3SMWH8udKd+AFeTLEyObA73Wi6z6ySMczlBgoTkA=",
     "scriptPublicKey": "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA6YFYu5pKrKFqJ3Lez6tYUIU+rx9nfpimbPrRqGNwHgx2H/wXEMFrSwTp/cZipccJhqJM/ElBYTI8Z8bUowpkHFfFnwFfOHR+XCLx2deKyR9CJTsLoe0jhjRGwkFc25oeToO8gkvkoYbGH1nk+Ri5qAFNPDPxnTmmtnHyUCIVOWHTc9nrSaXNslUekz2NEpIXzvVq99L9ZdXBe61Pz7jFGJyn9Y7yTrah+unP+eC1mTMYaAz7JiuqM8sZULjk/CbBBOXnjA482/I3PbDJqgH76fIxhGwUtWaTaaAMtOS8/zaxBeL7MNalGIIG73ogu9S+4/miMOsXunMmtk2oP60EE/CFiKyZTS3peXS3MtcarNj2KKkOV03c1zqERXoUkanVBriinWLhAqwC6+sFAhyK9PBs4uNQU/mF+mmdW9aukMKqEKgqwxqmlpow0GpIZGWg8cQmrQoj41OX/ZElOEHD0B7sAUHzO0RyW3oAyMorjORyONmsobBG+Ssiop3hu/NnuVyApqWtsTBAZpo4GrW6kAWcahWUQVgg+be5dP4gDBdvgnk0ptTyDE5YyXtDINUF14hi5ZRZ8o+2WOqtbQuhmkyB0x+at1+AA+g4fbrtCbYCN/ETjAExY7ZnwE9Rre/0TtvRk9pe05EYNmVg9USWyhKudUwI5XvVBx8f8+LceScCAwEAAQ==",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["everywhere"]
+    "allowUrls": [
+      "everywhere"
+    ]
   },
   {
     "name": "Bandcamp",
@@ -494,10 +545,19 @@
     "version": 1,
     "iconUrl": "./icon.png",
     "id": "b3a35316-6c86-4d6a-92a7-be82029ad6b9",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
-    "allowUrls": ["everywhere"],
-    "_tags": ["unofficial", "maintained", "working"],
+    "allowUrls": [
+      "everywhere"
+    ],
+    "_tags": [
+      "unofficial",
+      "maintained",
+      "working"
+    ],
     "scriptSignature": "<omitted>",
     "scriptPublicKey": "<omitted>",
     "_feeds": {
@@ -517,7 +577,10 @@
     "version": 28,
     "iconUrl": "./BiliBiliIcon.png",
     "id": "cf8ea74d-ad9b-489e-a083-539b6aa8648c",
-    "packages": ["Http", "Utilities"],
+    "packages": [
+      "Http",
+      "Utilities"
+    ],
     "allowEval": false,
     "allowUrls": [
       "www.bilibili.com",
@@ -533,7 +596,11 @@
       "*.bilivideo.com",
       "space.bilibili.com"
     ],
-    "_tags": ["official", "maintained", "working"],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
+    ],
     "scriptSignature": "JxNQMfxzPIfifiNrvYV49iwicNkQwX9wsKFIiacrvr/7oqdOa5fdBKQh6ZMwgdBv6JB5tm5bU5VDRjaKSQ0cLp2Q7hrX2QJYA61AvdYl6HOQ4NWtsCEirZWUgdAwazZwbqZzm1kA8fGZUby9pd3zEyyHBu5nPf/7mpeF4Q4ApRp2p6/AqJ78EVJlTs2yQpkT4VjY9vxvu+pAr+AbliXXqhO4XuK/v7jpFBdQGA4RVHEJQMdOOe3KZYd4Y4hLSb1z7YmumFd1wGq4nH4v7aOyUZ//L6oVqHHLVJv+uhE8m6bQXROkHd8tkjplVrca1SAGiiZrPy/Se9rM8sAObjhnOA==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
@@ -542,7 +609,9 @@
     "platformUrl": "https://bilibili.com",
     "authentication": {
       "loginUrl": "https://passport.bilibili.com/h5-app/passport/login",
-      "cookiesToFind": ["SESSDATA"],
+      "cookiesToFind": [
+        "SESSDATA"
+      ],
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
     }
   },
@@ -557,10 +626,19 @@
     "version": 10,
     "iconUrl": "./BitchuteIcon.png",
     "id": "e8b1ad5f-0c6d-497d-a5fa-0a785a16d902",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
-    "allowUrls": [".bitchute.com"],
-    "_tags": ["official", "maintained", "working"],
+    "allowUrls": [
+      ".bitchute.com"
+    ],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
+    ],
     "scriptSignature": "qx5760q9EPrc6CdrnHi7uVNk94X2C28EtgQZLrFhyPMwrZSXchTdiiKoiAh7DzMHEVL5OecsVjJ4kj+77n2MD6zCTEzv80fdhhXYr0gNW0kZi/FxksvQsl7JqgIi0CIaVlAl2dDYraZFnaEVjbiwCNjDmxU6+7sHj/8t7hqzSnbMwxKMe3yHnNuj+FaR2Rhc5kSoUHKIMkk5a2E8RrsxMMnZayM7QptkRslzhSsXzIyZ1gYJ/4LZ7HHbjfsPvlB0DBDuUg1ilH/4M0HZTY3N+26pwKRJie9C+AT5ilNTL46TcPdox4Otw3bjwjY3aQWQA+3qj+6cfvz+Kx7bSmg8QA==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
@@ -570,7 +648,9 @@
     "authentication": {
       "loginUrl": "https://old.bitchute.com/accounts/login/?next=/subscriptions/",
       "completionUrl": "https://old.bitchute.com/subscriptions/",
-      "cookiesToFind": ["sessionid"],
+      "cookiesToFind": [
+        "sessionid"
+      ],
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
     }
   },
@@ -588,9 +668,13 @@
     "id": "9d10d388-e685-477d-a794-50d237257d84",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": [".brighteon.com"],
+    "allowUrls": [
+      ".brighteon.com"
+    ],
     "settings": [],
     "_tags": [],
     "_installUrl": "https://grayjay-plugin-brighteon.pages.dev/BrighteonConfig.json",
@@ -610,10 +694,20 @@
     "version": 1,
     "iconUrl": "",
     "id": "15901e70-7590-42e4-b67d-8a13ae77726e",
-    "packages": ["Http", "Utilities"],
+    "packages": [
+      "Http",
+      "Utilities"
+    ],
     "allowEval": false,
-    "allowUrls": ["api.cda.pl"],
-    "_tags": ["unofficial", "unmaintained", "unknown", "polish"],
+    "allowUrls": [
+      "api.cda.pl"
+    ],
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "unknown",
+      "polish"
+    ],
     "_feeds": {
       "commits": "https://github.com/PiotrekB416/GrayJay-CDA/commits/main.atom",
       "releases": "https://github.com/PiotrekB416/GrayJay-CDA/releases.atom"
@@ -622,11 +716,19 @@
     "authentication": {
       "loginUrl": "https://piotrekb416.github.io/GrayJay-CDA/login.html",
       "userAgent": "pl.cda 1.0",
-      "headersToFind": ["Authorization"]
+      "headersToFind": [
+        "Authorization"
+      ]
     }
   },
   {
-    "_tags": ["unofficial", "wip", "nsfw", "streaming", "adult"],
+    "_tags": [
+      "unofficial",
+      "wip",
+      "nsfw",
+      "streaming",
+      "adult"
+    ],
     "_feeds": {
       "commits": "https://github.com/grayjay-sources/grayjay-source-chaturbate/commits/main.atom",
       "releases": "https://github.com/grayjay-sources/grayjay-source-chaturbate/releases.atom"
@@ -644,7 +746,10 @@
     "version": 1,
     "iconUrl": "https://theme.zdassets.com/theme_assets/9047795/0a1509944ae68221459023756a55d2ada890acfd.png",
     "id": "82b8fefc-24ae-11ee-aa56-0242aa120002",
-    "packages": ["Http", "Utilities"],
+    "packages": [
+      "Http",
+      "Utilities"
+    ],
     "allowEval": false,
     "allowUrls": [
       "chaturbate.com",
@@ -660,7 +765,10 @@
     "_installUrl": "https://github.com/grayjay-sources/grayjay-source-chaturbate/releases/latest/download/config.json",
     "authentication": {
       "loginUrl": "https://chaturbate.com/auth/login/",
-      "cookiesToFind": ["XSRF-TOKEN", "psde_auth3"],
+      "cookiesToFind": [
+        "XSRF-TOKEN",
+        "psde_auth3"
+      ],
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
       "loginWarning": "Login does not work (yet)."
     },
@@ -680,7 +788,9 @@
     "scriptUrl": "./CosTVScript.js",
     "scriptSignature": "qWxCTc+63M5RbsWgQDw8FsNPpKt4nKkyW31UTl5DluZDMiZTiwgmlSm3wnD/NjrxzoKFlHlLYeC1/FsTieuqQ9TYuDukvlpQjHrl7KHPB/B3jItS9etM0W/pZAEFxEUmeunkDYBhfl4MHrOzJNiiqWWV3mI6N24UcQj0jWYT6L91C1OjyLbC0NNEDYWemts2txWz2ooXGZSdvcmdr73BTGxpuOU3fYaU351JlGI9knaIt/PGjXQ7RM/l8ESP0c6hpnQkU20CiXUdeFz4+4vd/liPsZIp3HOMjJLby6tiJLE4KeO9HMjDhPt+t1lIDkz5lTOHZOtdwAqAzoZ9sgnPEQ==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs5shGUhmdmWJtDag0oDSV8KiCvAOmXBOxAVzWQs4uxLJ7IG6p99YlyTHnEi3B1VuIhUz/FcSkL7g/f20JQweNLTCOGlUR44+5dbaP8ZlfdbAmXYwie7nNKJX6rnXw+G9u9QQ1DBQZttIlX+d6acwldAqftVA+GUiN5uHWgtAHnFkTNZMSF3h4vq1ucJdF1CpWcPRW74/S4r841Afs29CAICtcduDoTaX4v4b/wrzDw0coYaEwlk2Gb8rRuD7ZV7G+Df1yZtFWhnMB7VhiHGxxIqoVEFoTZ5/FNhw0HAiMlWPowxInm/zwyI0HunDFB3gwilsPBtnA1WvOvbChVh5fQIDAQAB",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
     "constants": {
       "BASE_URL": "https://cos.tv"
@@ -693,7 +803,9 @@
       ".vod2.myqcloud.com"
     ],
     "changelog": {
-      "1": ["- Initial implementation;"]
+      "1": [
+        "- Initial implementation;"
+      ]
     },
     "_tags": [],
     "_installUrl": "https://stefancruz.github.io/grayjay-plugin-costv/CosTVConfig.json",
@@ -713,7 +825,9 @@
     "version": 3,
     "iconUrl": "./crunchyroll.png",
     "id": "3af73d7b-05bc-4a1b-a142-8a8377fc9c5b",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
     "allowUrls": [
       "www.crunchyroll.com",
@@ -721,7 +835,12 @@
       "cr-play-service.prd.crunchyrollsvc.com",
       "v.vrv.co"
     ],
-    "_tags": ["unofficial", "maintained", "working", "archived"],
+    "_tags": [
+      "unofficial",
+      "maintained",
+      "working",
+      "archived"
+    ],
     "_feeds": {
       "commits": "https://github.com/DeltaEvo/GrayjayCrunchyroll/commits/main.atom",
       "releases": "https://github.com/DeltaEvo/GrayjayCrunchyroll/releases.atom"
@@ -729,7 +848,9 @@
     "authentication": {
       "loginUrl": "https://sso.crunchyroll.com/login",
       "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
-      "cookiesToFind": ["etp_rt"],
+      "cookiesToFind": [
+        "etp_rt"
+      ],
       "cookiesExclOthers": true
     }
   },
@@ -747,7 +868,10 @@
     "id": "9bb33039-8580-48d4-9849-21319ae845a4",
     "scriptSignature": "TZHVh8dfpW5o6qTPa4gipx69KyFLI+QlWJKAKK4OOl7IGxvaN0271+uhYN/5gW3NHeo3sNOMZ/n7ujQEDDwaDITRrJ4f/KiRIyfTXX2B1huOz3Qz0dUBxe8pg4yjXC3/vRUhPxDaPY/Exaj91vBVp9kfnrFFLXQj0IR0Y6L//xqVFzqlzovccGQmMRrBXHcy9ghIj2yE0dZAEstO4Xq0HEN4m6Nl7fxVaspGHvr9Q1L+wNdYYfWb/7m4sK+4iB+9dc1SkXQo3rDT1mnHAlfouDpLxwu0fN8n1UmvMu/1Iw2l5u3ftCn9gtKn8VbyfMl9QPH0pUasxvbnzrjq+m1nAg==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
-    "packages": ["Http", "Utilities"],
+    "packages": [
+      "Http",
+      "Utilities"
+    ],
     "allowEval": false,
     "allowUrls": [
       ".crunchyroll.com",
@@ -757,7 +881,9 @@
     ],
     "authentication": {
       "loginUrl": "https://sso.crunchyroll.com/login",
-      "cookiesToFind": ["etp_rt"],
+      "cookiesToFind": [
+        "etp_rt"
+      ],
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
     },
     "settings": [
@@ -767,7 +893,11 @@
         "description": "How to handle premiun content not available to current user",
         "type": "Dropdown",
         "default": "0",
-        "options": ["As regular content", "As locked Content", "Hide"]
+        "options": [
+          "As regular content",
+          "As locked Content",
+          "Hide"
+        ]
       },
       {
         "variable": "localeIndex",
@@ -875,20 +1005,36 @@
       }
     ],
     "changelog": {
-      "4": ["Add pagination to content and creators search;"],
-      "7": ["Add setting to set preferred subtitle;"],
-      "12": ["Fix playback tracking;"],
-      "13": ["Fix authenticated session issue;"],
+      "4": [
+        "Add pagination to content and creators search;"
+      ],
+      "7": [
+        "Add setting to set preferred subtitle;"
+      ],
+      "12": [
+        "Fix playback tracking;"
+      ],
+      "13": [
+        "Fix authenticated session issue;"
+      ],
       "14": [
         "Fix: error when description contains alternate streams in Japanese;"
       ],
-      "15": ["Fix: Home tab error"]
+      "15": [
+        "Fix: Home tab error"
+      ]
     },
-    "_tags": ["official", "untested"],
+    "_tags": [
+      "official",
+      "untested"
+    ],
     "_installUrl": "https://plugins.grayjay.app/Crunchyroll/CrunchyrollConfig.json"
   },
   {
-    "_tags": ["official", "working"],
+    "_tags": [
+      "official",
+      "working"
+    ],
     "name": "Curiosity Stream (Alpha)",
     "platformUrl": "https://curiositystream.com",
     "description": "Curiosity Stream has thousands of documentaries that enlighten, entertain & inspire. What are you curious about?",
@@ -902,13 +1048,20 @@
     "id": "273b6523-5438-44e2-9f5d-78e0325a8fd9",
     "scriptSignature": "Ol7ts2wjRUIVD5rTSxJu6jeXuFpBYT0N27/SqOYk5H5QKQWrcbxXr5bFOnGn/+ww/H4mK4tn6FL9L2c/ncGAu6iROrUdk/rMM6ZxegOjkrwhatwrViWiG6RCRCZHCiQJM7+8Ddg1Hi3Y1SmD2g1r0oBrmTG7vGdjUhzv9xR4JbBbayLDbvPSeFXVPfz2CT7zphEC8YOCNo+gSgmhVzmpbp0P+ZUSK6nMF7CFM0sSuo5FLrIVBtw/IpJm8i5yewIrMhU2ERl9EqrgwCdAq8c8K2OJHBnXTzI+3DB5q+TcP5zz/GqoVPy5MUAEobo7aY+GSNooRYOj02KmYNhr0A69Ew==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
-    "allowUrls": [".curiositystream.com"],
+    "allowUrls": [
+      ".curiositystream.com"
+    ],
     "authentication": {
       "loginUrl": "https://curiositystream.com/login?redirect=/",
       "completionUrl": "https://api.curiositystream.com/v1/media?*",
-      "headersToFind": ["x-auth-token"],
+      "headersToFind": [
+        "x-auth-token"
+      ],
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
     },
     "settings": [
@@ -926,12 +1079,18 @@
         "Support for browsing, searching, and playing documentaries",
         "Category-based content organization"
       ],
-      "2": ["Use series as channels;", "Improve support for desktop;"]
+      "2": [
+        "Use series as channels;",
+        "Improve support for desktop;"
+      ]
     },
     "_installUrl": "https://plugins.grayjay.app/CuriosityStream/CuriosityStreamConfig.json"
   },
   {
-    "_tags": ["unofficial", "untested"],
+    "_tags": [
+      "unofficial",
+      "untested"
+    ],
     "_feeds": {
       "commits": "https://github.com/AlexisBlade2001/Grayjay-DLive/commits/main.atom",
       "releases": "https://github.com/AlexisBlade2001/Grayjay-DLive/releases.atom"
@@ -949,7 +1108,10 @@
     "id": "06b0c2b1-67b6-4cb3-bf8f-8bf191dac0f3",
     "scriptSignature": "Xey5+9/7+Yb0g1FAXL+WufQR1VkCLlf0LOZ5PLhIV9cZLaiYBx7bPMqbJgDawpJ/1eAlfjOB2j9KmGe8LI6/SkNP5bAfwUZL9kMdr4BE7WCurUKHzXnGq+CRmuSwUYiEOh1rRgnoxaikemiTnHxT0EppdwVZnMRXgTv9VS8Avd/bf8/SHNM3LNdV6NjRL5cktvnsTS3MRiGSj9/17F8juPNfquVP/it9hICKEiGxlwmxWg5JJ6RnQodLHX7WeqyR8H2PFNhZvgoOY7q9tEvH8ZGhHDR9kNX2QNxu+oxSu9ehZ1mOvvPOu6NIeOndSf1GkM1ybi3wpiuaU2LKNFwmNBc9O3j8o8xXVZFahLssvDgxKMqEbVcTTRYrvWATxBSxbbr0viiAdJ8kE40J5Zoztwvkdt/LeWpA88Y76Lv+Fd2z4aeD1xYXcOglnAdqefwbRaL3tKQWouVOYwGrn5KC2xC+f4UP/0xbWkmB7Hm4DuGgf36kBx7+xIyo692ICBL0tz2KodaTOWouJ0zZflYCOCSWvxSvhyap1rMS006VTNHfYwevz7u+QBza9hTriDG7Y3GRVPnYcffc8ilfCXUmw9xGRrJaU5K40MMTd/nJvSP2tvsloQaWEKgJ2RGFh8XRYl3OPn+VACjybFhLQHVu+YZ7o8wXPGDZ6O9OZcpFswg=",
     "scriptPublicKey": "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAr63Yf0gjJG8rV9IhtUQgxzryQCtacKfdaErLBC4sOhcnHEqWYJoAHGytGggRSyuGZoJFX2Ovd/8bH0YRT1e1oWMgSZFHQ0k3UE94G2Jw1jmmFvZEaMVxDW7RLkkvqYlXBNDLdkxfbyZepKV5mM4Fd5kbueAdfWdhsl5FhlqHCH10kudewcFq4WBTwQW1chsdkI0Iqrgwqzs5vH5cpphxzXUb+V6rtOUystpFwsEXb6m1Kzl0Uy/9AWTdT9JJJ7H88ycO6d6xX9UUjOXCwMWHxPcZ6UVPN2Plr8UBTJvF0uaYkDhNn0rzEe7NiJ8gUmrT0UJB2E5cYv4I4eTGp6RTwKe7UVCGEo8S7vQ0yPjxk8+dta+V6ECvg7VV1Ic00dfYqPsWPsZJ/xkJLeXIeXhjDNLm0pebr6W6bXkVPvS9PcYMoId+YpghojnPnzo/vmAIo4aS90G1zwmCNonv4suy2Kl48Pxz2OO0YepTuAZxJA6vrPcHxqbeAcAvfpk9PXLRmxD/eoiTsJusxkP5h6Z00gWJiFNNSntOShaGfCtloumqFHi5HIDiipo6KvIBvSYFaK0vlcFjdk0cAkMskuGP8B98zlMP5s9C19/uC6WsDmX1oQ0tNRIifBzg1QE0RuvvfqjI3/W4MqmKllbkwj/Pl/irIaeHsTK/+bwko/jK460CAwEAAQ==",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
     "allowUrls": [
       "graphigo.prd.dlive.tv",
@@ -968,9 +1130,13 @@
     ],
     "authentication": {
       "loginUrl": "https://dlive.tv/m/home",
-      "headersToFind": ["Authorization"],
+      "headersToFind": [
+        "Authorization"
+      ],
       "domainHeadersToFind": {
-        ".dlive.tv": ["authorization"]
+        ".dlive.tv": [
+          "authorization"
+        ]
       },
       "loginButton": "#genius > .application--wrap > div:nth-child(1) > nav > div > div:nth-child(5) > div:nth-child(5) > div > .nav-login-legal > .nav-login-legal-menu > .btn-group > .loginIn"
     }
@@ -986,14 +1152,21 @@
     "version": 31,
     "iconUrl": "./DailymotionIcon.png",
     "id": "9c87e8db-e75d-48f4-afe5-2d203d4b95c5",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
     "allowUrls": [
       ".dailymotion.com",
       "graphql.api.dailymotion.com",
       "api-2-0.spot.im"
     ],
-    "_tags": ["unofficial", "maintained", "working"],
+    "_tags": [
+      "unofficial",
+      "maintained",
+      "working"
+    ],
     "scriptSignature": "mnuLkTShkl1l9cFt7l7lgMOXdSr6h+GnOskkkJlbUqxxVYH3XRzG+SI4+6Zhdbzl8HvY4Rxndmykdqi9tkWQUqLnNOYi7nhUOJovo4nXrOvb6n0cKYdDZig6QUlDsPKGYG+hXOAsMWg+gSSOxNnAxTzbV1b2TbSB5eqNKdcGkAjZ2FBWs22hMwoltAvy9bN63sZJtcfzvaFY1wVnZWn1Ozasjm4bxnQo9vvYDOzJ8QNxL6muIKjmVpTnN1Oy0n0BFmypqu08WW51IJpaKX2eN9MymGxgoURoApgdD/KM+sX4QuRIOKX7Q+M3ewM4hsN9lOW7x5Soa9rK99cLMzWdhg==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
@@ -1273,7 +1446,10 @@
     "version": 22,
     "iconUrl": "./DailymotionIcon.png",
     "id": "9c87e8db-e75d-48f4-afe5-2d203d4b95c5",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
     "allowUrls": [
       "dailymotion.com",
@@ -1285,7 +1461,12 @@
       ".dmcdn.net",
       "api-2-0.spot.im"
     ],
-    "_tags": ["unofficial", "unmaintained", "working", "archived"],
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "working",
+      "archived"
+    ],
     "scriptSignature": "MeLvuvX/SgRRMVBVyg0sSo9yV7HKcXK8/x3Kkc8a2tSRe/KBSOTmddgORkyQ4R89OQxY2BAi30HE0YXCEDRgm6J1S6giVU1t/Xn27ymkSrLqO/LmTn6Hw2V+3D8tzD33u8RjkcpY2wonOB4LSh7PWSAutkSxKklLhXgwm594lsyiJdGyE1WBltcuwkDIf8Uqh+hxlpVaWThg5OYSLNPbF6uejm4KjtDvwu80FOodMKc28KPJgvBq8sdHOPC7qmAe24E1cvoyAFCzZWuDbUMtTKkqDRV3SjEbTOztGNwD+w3i6b50Bgqht58La7v+GyGWxTxMcFumPPlcGnK/qVbNuA==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
@@ -1566,10 +1747,20 @@
     "version": 1,
     "iconUrl": "./DALogo.png",
     "id": "a82a6e4d-4e91-466e-8c46-d7895654e2d1",
-    "packages": ["Http", "DOMParser", "Utilities"],
+    "packages": [
+      "Http",
+      "DOMParser",
+      "Utilities"
+    ],
     "allowEval": false,
-    "allowUrls": ["www.deviantart.com"],
-    "_tags": ["unofficial", "maintained", "working"],
+    "allowUrls": [
+      "www.deviantart.com"
+    ],
+    "_tags": [
+      "unofficial",
+      "maintained",
+      "working"
+    ],
     "scriptSignature": "",
     "scriptPublicKey": "",
     "_feeds": {
@@ -1580,7 +1771,10 @@
     "_installUrl": "https://github.com/CodeQualIT/grayjay-source-deviantart/raw/master/DAConfig.json"
   },
   {
-    "_tags": ["unofficial", "untested"],
+    "_tags": [
+      "unofficial",
+      "untested"
+    ],
     "_feeds": {},
     "name": "Dropout",
     "description": "Independent, ad-free, uncensored comedy.",
@@ -1593,19 +1787,31 @@
     "version": 3,
     "iconUrl": "./icon.png",
     "id": "0b2d28e0-d645-4169-829f-8961a6169e68",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["www.dropout.tv", "api.vhx.com", "api.vhx.tv"],
+    "allowUrls": [
+      "www.dropout.tv",
+      "api.vhx.com",
+      "api.vhx.tv"
+    ],
     "authentication": {
       "loginUrl": "https://www.dropout.tv/login",
-      "cookiesToFind": ["_session", "_device"]
+      "cookiesToFind": [
+        "_session",
+        "_device"
+      ]
     },
     "scriptSignature": "nAAahtnzDeevU/7c16SLiML/UdKsq4a3yt2385dM8GG/xrNlOOCqbj2GEFBrXNDUghTQAMttH5dVX+0iLzSxg5rGu4dmZrZusWXMtRq+2z7jtFx+tb/LwQBqIesfOi6C8v1x+Azz5H+dYkmO4OzIeOhk1GsCp5R09ZTbXabOAc6tMlJfpaXCDdqYfbAAEsaekFco6jQnUq1K4ueCEnFSmpwvuNJGscOTkWpfwdi4JSSFB15e0JThbnBxPa+MaiamUGe4Xhd5AZT4h1jmnBlKLCUy5IbySIX067NH1q2TPlxoPnelxG5Tt6eHHSaKbE0KARXA2FbMAQZs6gYNglA+cg==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn8YLDcaY1Ua6WCehGWaLbnPjbGXOxUDXcS7tB60UZskdmTt3cO3rj8g9YKJ1IdMvFoMmMuHqSgOnIdEUF+dYiQBYG/+ehVkYmRXVAO5WM1pgmn1HKeahXxH5XxLAiBbwbdCgQSj/dcbTodSDqlJReTHWtTF5pwFEMzp3JjMCiWgbLW7hEF44vMvbQ83LM/b9D2f73kd71UG7Fj+1NfbKfkRuaclMLTSyI+j9E17i7DKFRyJ62bIJrWT1pYzWZtAX8Zo56Bb0keBYsiGWRnSNVgvMrnO00mihr+XZwuGOUk+rBPuNK5bCbYxEzRdqzJ729nCqcBfRcMABnpK+iLhprQIDAQAB",
     "_installUrl": "https://github.com/BRNMan/Dropout-Grayjay-Plugin/releases/latest/download/config.json"
   },
   {
-    "_tags": ["unofficial", "untested"],
+    "_tags": [
+      "unofficial",
+      "untested"
+    ],
     "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
     "name": "Floatplane",
     "description": "A content creation and video streaming website created by Floatplane Media Inc. and Linus Media Group.",
@@ -1618,7 +1824,9 @@
     "version": 3,
     "iconUrl": "./icon.png",
     "id": "d8643244-633f-4c71-9f45-215b2387dc2c",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
     "allowUrls": [
       "www.floatplane.com",
@@ -1641,7 +1849,11 @@
         "description": "This will reduce clutter in the source selector, especially if there are lots of attachments",
         "type": "Dropdown",
         "default": "0",
-        "options": ["HLS", "Legacy HLS", "Flat MP4"]
+        "options": [
+          "HLS",
+          "Legacy HLS",
+          "Flat MP4"
+        ]
       },
       {
         "variable": "log_toasts",
@@ -1654,7 +1866,10 @@
     "authentication": {
       "loginUrl": "https://www.floatplane.com/login",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
-      "cookiesToFind": ["sails.sid", "muxData"],
+      "cookiesToFind": [
+        "sails.sid",
+        "muxData"
+      ],
       "loginWarning": "Login and then open a video. Try using Discord login"
     },
     "scriptSignature": "Wb0PIEDWr1Y/kfPY260owVyLiZ0QUzDfeMt1I7gsLUH/NFHaz7gUBf4ovse1jm0fA1ozG9daQXYK0oylvGkJmwS+TpBuiIIuH2cf+7rg9sJ1BZRUTJkSqix04z8ivC1nGrsDE9q3g85TnRmioDy581EomqHtVzIkDNH5GHb//LBOctBsDel4egOR0vwMQGA+vPvu0i3L4fSfHQ+8X0tvSFm4IpGAU9nEl1b8Wg3gnTzj21nsk9ykpmR0AMQWNSgDsufM8JpOT1dBTlmM2+roa4u4sAiZOZ2Ven3jMcGx5jJfA208eYM/zSAbQHGRHhuhf8m4r+tOHjhUJ2m6KINZVg==",
@@ -1676,10 +1891,18 @@
     "version": 1,
     "iconUrl": "https://raw.githubusercontent.com/VoxelPrismatic/grayjay-floatplane/main/floatplane.png",
     "id": "d8643244-633f-4c71-9f45-215b2387dc2c",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["www.floatplane.com", "floatplane.com"],
-    "_tags": ["untested", "archived"],
+    "allowUrls": [
+      "www.floatplane.com",
+      "floatplane.com"
+    ],
+    "_tags": [
+      "untested",
+      "archived"
+    ],
     "scriptSignature": "<ommitted>",
     "scriptPublicKey": "<ommitted>",
     "_feeds": {
@@ -1697,10 +1920,17 @@
     "iconUrl": "https://i.pinimg.com/originals/48/a0/9f/48a09fb46e00022a692e459b917a2848.jpg",
     "id": "genius-lyrics",
     "scriptUrl": "./GeniusLyricsPlugin.js",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["https://genius.com/*", "https://api.genius.com/*"],
-    "supportedActions": ["getLyrics"]
+    "allowUrls": [
+      "https://genius.com/*",
+      "https://api.genius.com/*"
+    ],
+    "supportedActions": [
+      "getLyrics"
+    ]
   },
   {
     "name": "God Resource (Unofficial)",
@@ -1713,10 +1943,18 @@
     "version": 1,
     "iconUrl": "https://www.godresource.com/Images/Logos/GRLogo.jpg",
     "id": "482834c5-bba1-409e-a08b-4fb61d9e4232",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["everywhere"],
-    "_tags": ["unofficial", "unmaintained", "unknown"],
+    "allowUrls": [
+      "everywhere"
+    ],
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "unknown"
+    ],
     "_feeds": {
       "commits": "https://github.com/skytunnel/GodResourcePluginUnoffical/commits/dev.atom",
       "releases": "https://github.com/skytunnel/GodResourcePluginUnoffical/releases.atom"
@@ -1735,15 +1973,24 @@
     "id": "00b74d1a-f052-4ccf-b8de-9f5623efc685",
     "scriptPublicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA3bw+UjuEwXI/emCx7Ic54m/UtIXyQJ5BcFbzsN6+SbYRIrm2EUW2RUWMscQUkvu0fz9sh/3l5trS0jPYMBR1F77aZ9f76yE9bjiu590LIzLVcnc+nFyzYytn0PbSZg4Ienv7dzytpPRUHsBWqdR+w9zSByebY47pI4nxC9OeoKXCw/29I7kNzPYHlfIdM/0OqARR8UKWb8cUuw89esZVHaotJYczZJ/uJMM/dyWLFaN04HnMIg1WmYml7L3XrrtfrxrSC3xBndkCTn7BmW3tcFXTphLHXSAA+/UzfN/kk6OgnTZZpsQk8oq71KbxQWpZyi4ztKjhk+xadNgb5D5Tin1iqqAw0hHMHyB0g37+o8VQmy2E6azfo5aiIGl+Tu6SkHjTmHVUFoZIUA++iLA1ARpWm8VO3tkQUpLqdKhJdRpfKiwuCe9jVf+1m0e/QMrKAzs36XNTBbpptUUzrB9l92szjhGHZxaJ+ESh/7ZsaG0cC5xFnVItC8PbwLHXQQH9AgMBAAE=",
     "scriptSignature": "sfJuZrbkM+GG4E4Z0daEiUe17+5hP0WResLnjBdJ+HzcEBz5nEVrVbutcsAWnHW1g3QEYYSwg060U8BETzclQIz2sdox70d6Bt3+mpYbD4+7On7Tr0jDTf6j5WFbot4XNcLw8issZ1Xt8aL/H7af3pfOIJitPMl8V4yTEKgjkCPI/8+sENuXzAqYUdeTbljh46FbxP6MbjiXXhWiEhHvUDGhhXI3h/YzPdlqupne6z9E9pfyL4K8WU1OW8dUf+wOX39FRpUFrI6K89kOqTEYF74jpm7B0wuREkGwokb3XdDF4M5TaXFx1SMPb/qNgkIxu2MBzEfqVWGdKPaMAyMpbhe8JgGkB9xRTvmialzNS2Gq6S6aJ5xMZkEyRFNfkHfzCkWu/tCJJlh9F3mgv6FJ5EkN+mNoFRbnyrwD4UxgRZcWAPHoFRh7oUlvZlvFuZornTXiUd/ue9S+1TTncnK44mFKg5folEQ5PlNfxYdFuZCy9db6Ek4mZ5eBe2pChKPS",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["svc-prod.herohero.co"],
+    "allowUrls": [
+      "svc-prod.herohero.co"
+    ],
     "authentication": {
       "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
       "loginUrl": "https://herohero.co/",
-      "cookiesToFind": ["accessToken2"]
+      "cookiesToFind": [
+        "accessToken2"
+      ]
     },
-    "_tags": ["unofficial", "untested"],
+    "_tags": [
+      "unofficial",
+      "untested"
+    ],
     "_installUrl": "https://pavelzurek.github.io/grayjay-plugin-for-herohero/heroheroConfig.json",
     "_feeds": {
       "commits": "https://github.com/PavelZurek/grayjay-plugin-for-herohero/commits/main.atom",
@@ -1760,10 +2007,18 @@
     "iconUrl": "https://static-00.iconduck.com/assets.00/jellyfin-icon-2048x2048-n3v9lj7i.png",
     "iconUrl_": "https://grayjay-jellyfin-plugin.fly.dev/images/jellyfin-logo.png",
     "id": "82b8fefc-24aa-11ee-be56-0242af120ff0",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["everywhere"],
-    "_tags": ["unofficial", "unknown", "generator"],
+    "allowUrls": [
+      "everywhere"
+    ],
+    "_tags": [
+      "unofficial",
+      "unknown",
+      "generator"
+    ],
     "_feeds": {
       "commits": "https://github.com/Awlexus/grayjay-jellyfin-plugin/commits/master.atom",
       "releases": "https://github.com/Awlexus/grayjay-jellyfin-plugin/releases.atom"
@@ -1801,7 +2056,10 @@
     "id": "joyn-streaming-platform",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
     "allowUrls": [
       "joyn.de",
@@ -1812,7 +2070,9 @@
       "img.joyn.de",
       "ffqrv35svv-dsn.algolia.net"
     ],
-    "supportedClaimTypes": [3],
+    "supportedClaimTypes": [
+      3
+    ],
     "enablePlaylists": true,
     "enableLiveContent": true,
     "authentication": {
@@ -1851,10 +2111,20 @@
     "version": 19,
     "iconUrl": "./kick.png",
     "id": "4a78c2ff-c20f-43ac-8f75-34515df1d320",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["kick.com", "search.kick.com", "web.kick.com"],
-    "_tags": ["official", "maintained", "working"],
+    "allowUrls": [
+      "kick.com",
+      "search.kick.com",
+      "web.kick.com"
+    ],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
+    ],
     "scriptSignature": "or1hDO8G+z1ZC2qL+Mwzva96Gyk5Famh9flGmgbW4iXITlYng3rpfi8PeFpXB/Rl3LjuoWI+9F/CCWKa0bHQWjSK11YjTbMljUkw0HpPmmI+pUVRlGEOQtc6jpxY3M+RJ5SmFMSuxnNgsnCeeGSchHXAXNHxkhIXutEGhh3efs18JaAESK0wkJGIkVXWZ9mvck5ETHna6OgALulftD6YYeCoqB43Bp1OH2hTgUCgTvbKwQPPZD7DKGCV483rFFq61X2U8LdSdDOaboqP+DyrMVv6vpRTRx6g8wuSq+Hx2Oo8sypjxY/YBb4pulbEcCftsycqgnbex1UgeHwJzvQRXg==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
@@ -1864,12 +2134,18 @@
     "authentication": {
       "userAgent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.200 Mobile Safari/537.36",
       "loginUrl": "https://kick.com",
-      "headersToFind": ["Authorization"],
-      "cookiesToFind": ["session_token"],
+      "headersToFind": [
+        "Authorization"
+      ],
+      "cookiesToFind": [
+        "session_token"
+      ],
       "loginButton": "nav button:last-child",
       "completionUrl": "https://kick.com/broadcasting/auth"
     },
-    "supportedClaimTypes": [16]
+    "supportedClaimTypes": [
+      16
+    ]
   },
   {
     "name": "LibriVox (Alpha)",
@@ -1885,7 +2161,9 @@
     "id": "5c2f78d4-6eec-4f3f-b25b-28d885aeb147",
     "scriptSignature": "EfmgQguYiroY4frnp9oW3MEx3haSbjQALa/kOKxgeOnvrzRCdKBne9DQJEhPruMvMZmbJnKCoOpIhHRSmFW4JBR5HtP0nn5Oa8+oK46iqbeA13t3qZ5rkzNyPB7/hsBZ7rjCs1ZNWsf5KOfdrabPEaDo1rqywtpGx+Wbr1FK0Rioz3OtXzKtX3ktrd3DvSZGjM+ZE7y7qsmnOWoWBCt1zdVioR6q3keV7HOMGcOYV0Jt1FaJM5I8dpGBPmRRL0dcuHiuaqCL9BDLOxf4fC0gdy1BjZuH0ImUQvAzFcI6SzqM75tS9NVv493O6Smn+foq8nplzgA/vPO/kURPG9nV0A==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs5shGUhmdmWJtDag0oDSV8KiCvAOmXBOxAVzWQs4uxLJ7IG6p99YlyTHnEi3B1VuIhUz/FcSkL7g/f20JQweNLTCOGlUR44+5dbaP8ZlfdbAmXYwie7nNKJX6rnXw+G9u9QQ1DBQZttIlX+d6acwldAqftVA+GUiN5uHWgtAHnFkTNZMSF3h4vq1ucJdF1CpWcPRW74/S4r841Afs29CAICtcduDoTaX4v4b/wrzDw0coYaEwlk2Gb8rRuD7ZV7G+Df1yZtFWhnMB7VhiHGxxIqoVEFoTZ5/FNhw0HAiMlWPowxInm/zwyI0HunDFB3gwilsPBtnA1WvOvbChVh5fQIDAQAB",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
     "constants": {
       "baseUrl": "https://librivox-api.craftwithstefan.com"
@@ -2012,7 +2290,9 @@
       }
     ],
     "changelog": {
-      "26": ["Fix: Authors thumbnails when available;"],
+      "26": [
+        "Fix: Authors thumbnails when available;"
+      ],
       "27": [
         "Add: Genre setting for filtering home feed;",
         "Add: Genre and Language search filters (can override default settings);",
@@ -2043,9 +2323,14 @@
     "subscriptionRateLimit": 10,
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["librivox.org", "archive.org"],
+    "allowUrls": [
+      "librivox.org",
+      "archive.org"
+    ],
     "settings": [
       {
         "variable": "allowExplicit",
@@ -2077,7 +2362,10 @@
         "description": "Select the source of content recommendations",
         "type": "Dropdown",
         "default": "0",
-        "options": ["Popular audiobooks", "Recently added audiobooks"]
+        "options": [
+          "Popular audiobooks",
+          "Recently added audiobooks"
+        ]
       }
     ],
     "authentication": null,
@@ -2089,9 +2377,15 @@
         "Support for multiple languages",
         "Chapter-based navigation for audiobooks"
       ],
-      "2": ["Audiobook are now returned as playlists with chapters"],
-      "3": ["Revert playlist approach and try something else"],
-      "4": ["Added thumbnail support for audiobooks and authors"]
+      "2": [
+        "Audiobook are now returned as playlists with chapters"
+      ],
+      "3": [
+        "Revert playlist approach and try something else"
+      ],
+      "4": [
+        "Added thumbnail support for audiobooks and authors"
+      ]
     },
     "_tags": [],
     "_installUrl": "https://raw.githubusercontent.com/vijay-prema/librivox-grayjay/refs/heads/main/LibrivoxConfig.json",
@@ -2101,7 +2395,10 @@
     }
   },
   {
-    "_tags": ["unofficial", "untested"],
+    "_tags": [
+      "unofficial",
+      "untested"
+    ],
     "_feeds": {
       "commits": "https://github.com/nutstone/grayjay-manhuafast-plugin/commits/main.atom",
       "releases": "https://github.com/nutstone/grayjay-manhuafast-plugin/releases.atom"
@@ -2118,9 +2415,15 @@
     "id": "cd1dff4b-89d3-4326-8c8c-930da64cec5c",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http", "DOMParser", "Utilities"],
+    "packages": [
+      "Http",
+      "DOMParser",
+      "Utilities"
+    ],
     "allowEval": false,
-    "allowUrls": ["manhuafast.com"],
+    "allowUrls": [
+      "manhuafast.com"
+    ],
     "_installUrl": "https://nutstone.github.io/grayjay-manhuafast-plugin/ManhuaFastConfig.json"
   },
   {
@@ -2134,7 +2437,9 @@
     "version": 23,
     "iconUrl": "./mediathek.png",
     "id": "da5e25de-1a2d-22df-1612-be89ed1adee6",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
     "allowUrls": [
       "mediathekviewweb.de",
@@ -2142,14 +2447,22 @@
       "utstreaming.zdf.de",
       "everywhere"
     ],
-    "_tags": ["unofficial", "unmaintained", "broken", "german"],
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "broken",
+      "german"
+    ],
     "_feeds": {
       "commits": "https://github.com/windowsfreak/Mediathek/commits/main.atom",
       "releases": "https://github.com/windowsfreak/Mediathek/releases.atom"
     }
   },
   {
-    "_tags": ["official", "working"],
+    "_tags": [
+      "official",
+      "working"
+    ],
     "name": "Mixcloud (Alpha)",
     "platformUrl": "https://www.mixcloud.com",
     "description": "Listen to the best DJs and radio presenters in the world for free.",
@@ -2163,15 +2476,24 @@
     "id": "84331338-b045-419c-88e4-c86036f4cbf5",
     "scriptSignature": "ENHFesArWTME54KvrBsUS5QUzMYwdJehTjhsKSuQWxOzrmkegv0IOS26ED/2TU9lkMPmv3Rj8AUCD38r0zLTgK/E5uTi8Gc6tu98SnR2F0fKRGOdKzHTMJLgqfXxTe2g58GC0nf6bxQzYlOpdKQSOp1a6Kp8IpK19HslFpyWIXovRFSx238P9pPAaY/ySFYjIQ1ew2vy9H8DHoNZv4LfSWsUu9u2LS85Ydmv7CY51GFstumMKwaLS+iwUQa3cCNiTBwCXTtn8T4c6FGOib5HH499J9cXc8TuBZ5ZYwKDwLgEWORFMqEvh+rPVA30hpvmBfhILBblOhx8NOZgeirxAA==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": [".mixcloud.com", ".mixcloud.stream"],
+    "allowUrls": [
+      ".mixcloud.com",
+      ".mixcloud.stream"
+    ],
     "maxDownloadParallelism": 1,
     "authentication": {
       "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
       "loginUrl": "https://www.mixcloud.com/login/?next=%2Fhome%2Ffor-you%2F",
       "completionUrl": "https://www.mixcloud.com/home/for-you/",
-      "cookiesToFind": ["csrftoken", "mx_t", "c"]
+      "cookiesToFind": [
+        "csrftoken",
+        "mx_t",
+        "c"
+      ]
     },
     "changelog": {
       "1": [
@@ -2206,11 +2528,15 @@
         "Improvement: Improve handling Radios with multiple DJs;",
         "Improvement: Include an hyperlink in the track description to the Dj channel when playing for a Radio;"
       ],
-      "5": ["Fix: Content recommendations for live streams;"],
+      "5": [
+        "Fix: Content recommendations for live streams;"
+      ],
       "6": [
         "Improvement: Fix relationship between DJs and Radios in content description;"
       ],
-      "7": ["Improvement: Add exclusive subscriber-only content support;"],
+      "7": [
+        "Improvement: Add exclusive subscriber-only content support;"
+      ],
       "8": [
         "Fix: Not show toast for preview content when user is already subscribed artist;"
       ]
@@ -2228,7 +2554,9 @@
     "version": 14,
     "iconUrl": "./NebulaIcon.png",
     "id": "9d703ff5-c556-4962-a990-4f000829cb87",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
     "allowUrls": [
       "nebula.tv",
@@ -2237,7 +2565,12 @@
       "users.api.nebula.app",
       "starlight.nebula.tv"
     ],
-    "_tags": ["official", "maintained", "working", "paid content"],
+    "_tags": [
+      "official",
+      "maintained",
+      "working",
+      "paid content"
+    ],
     "scriptSignature": "AmLWtgd/gOPOWrPlRZCjBGvyaKAXtdX6MrE7+ke0ro9ftr747fovarPYqpkVMDvmq0HA3yX1rV4mjUtkddIcCBl+yqWoy9FjfG7jcajxyoq6jhMVpzMT1VIfLN0P0jjV+VMPI3xKcpdvUYDFDTDtTGakAJv7Tk5bQCztGnH2A+p+F+10s9ZdCZsMTbU7YcbbVt0ZBPE/qbKL8HNJ8NO8sNbKd5mXujHEc4IeS3QToEUfZ5v1kh7H2jrlVL3dw30+9nzPTDzu44Z3jhvc6n28v7G/M1XgmNTcnqM+iPmIyyt6no9afihPx84cy0Q1XlthnZ49sozaYco3dMnNUCTdoQ==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
@@ -2247,14 +2580,23 @@
     "authentication": {
       "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
       "loginUrl": "https://nebula.tv/login",
-      "headersToFind": ["Authorization"],
-      "cookiesToFind": ["nebula_auth.apiToken"],
+      "headersToFind": [
+        "Authorization"
+      ],
+      "cookiesToFind": [
+        "nebula_auth.apiToken"
+      ],
       "completionUrl": "https://users.api.nebula.app/api/v1/authorization/"
     },
-    "supportedClaimTypes": [19]
+    "supportedClaimTypes": [
+      19
+    ]
   },
   {
-    "_tags": ["unofficial", "untested"],
+    "_tags": [
+      "unofficial",
+      "untested"
+    ],
     "name": "Newgrounds",
     "description": "One of the most well known online communities",
     "author": "Lofiat",
@@ -2267,15 +2609,22 @@
     "id": "002c7f46-5a93-492d-b5e3-91b621993be8",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "authentication": {
       "loginUrl": "https://www.newgrounds.com/passport/mode/iframe",
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
-      "cookiesToFind": ["passport-auth"],
+      "cookiesToFind": [
+        "passport-auth"
+      ],
       "loginWarning": "Does not exit automatically"
     },
     "allowEval": false,
-    "allowUrls": ["everywhere"],
+    "allowUrls": [
+      "everywhere"
+    ],
     "_feeds": {
       "commits": "https://github.com/Loafiat/NewgroundsPlugin/commits/main.atom",
       "releases": "https://github.com/Loafiat/NewgroundsPlugin/releases.atom"
@@ -2292,7 +2641,10 @@
     "version": 3,
     "iconUrl": "./NiconicoIcon.png",
     "id": "94c86b48-eee9-4d49-9f2e-56c8e650936a",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
     "allowUrls": [
       "nvapi.nicovideo.jp",
@@ -2302,7 +2654,10 @@
       "www.nicovideo.jp",
       "public.nvcomment.nicovideo.jp"
     ],
-    "_tags": ["official", "working"],
+    "_tags": [
+      "official",
+      "working"
+    ],
     "scriptSignature": "VQJpVQokdiDdZ8T6Wkj0KuRtZHl9HcTUv6NL+vnadG7wnWZMNvZHa6J4MWVsQcFGObQGb/jSdvEn4Fjd3VAvbfqM9d72/LPhUhkzu646N2xj+E29lkiUox67eC0I063hPajDHfxacH5iCoc/7kShFdw0hiCJCs3LldGhfWGliBujlx5TzGYm8r+yNBz+hUA8zKRAvzaflhG5Cj5/NV+Y1TsmxasXknuFTJG4XBfLh5HvcVivUyPeJRirkpc3EisJdEPlmhBNjNDJOU2g1Wdv++Tgslp/V84Lq10VRrhGG0fPoXBEP/tsXzE+HzUUo/lx2IaDFFRVM+pQnRmZBb0y4A==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
@@ -2312,9 +2667,13 @@
     "authentication": {
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0",
       "loginUrl": "https://account.nicovideo.jp/login",
-      "cookiesToFind": ["user_session"]
+      "cookiesToFind": [
+        "user_session"
+      ]
     },
-    "supportedClaimTypes": [21],
+    "supportedClaimTypes": [
+      21
+    ],
     "sourceUrl_": "https://plugins.grayjay.app/Niconico/NiconicoConfig.json"
   },
   {
@@ -2328,7 +2687,9 @@
     "version": 56,
     "iconUrl": "./OdyseeIcon.png",
     "id": "1c05bfc3-08b9-42d0-93d3-6d52e0fd34d8",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
     "allowUrls": [
       "api.na-backend.odysee.com",
@@ -2342,17 +2703,26 @@
       "watchman.na-backend.odysee.com",
       "secure.odycdn.com"
     ],
-    "_tags": ["official", "maintained", "working"],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
+    ],
     "scriptSignature": "JPrwecQdZXNvkkcYZRDDSK6WePmdB7Vs/UxM+KOK7HTrHeSF+dJfqZTZ2jzgoEpN6dmHUPxpW8MXx+ece9IcJlQ5OdbHNLoQ5zJeia5erKmeOdkb5GNlGowa/ppohGMyd6rxhii+ids9r3z5fSTXof+W0jILzN9lBPe37Trgb97LEvcoUuecqC/qutfq9hXga3i+pTJOeE/1fTCy3Oq9GIoKSlHCjszmiqGbVaqxDreYdmLKujPD8k27BM40Ao9gDkcCJjxcX11ul8yZv9TJUh4R2bkfDOTkBLdSt/Zt6kF4j/UJZ4XkEiZbHcXOSVPbOypWW7H3pvwJ/J25mo5K1A==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
       "commits": "https://gitlab.futo.org/videostreaming/plugins/odysee/-/commits/master?format=atom"
     },
     "platformUrl": "https://odysee.com",
-    "supportedClaimTypes": [3]
+    "supportedClaimTypes": [
+      3
+    ]
   },
   {
-    "_tags": ["unofficial", "nsfw"],
+    "_tags": [
+      "unofficial",
+      "nsfw"
+    ],
     "name": "PHUB",
     "description": "PHub plugin",
     "author": "Djupz",
@@ -2366,9 +2736,14 @@
     "id": "a82a6e4d-4e91-466e-8c46-d7895654e2d0",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["www.pornhub.com", "pornhub.com"],
+    "allowUrls": [
+      "www.pornhub.com",
+      "pornhub.com"
+    ],
     "_installUrl": "https://github.com/Djupz/grayjay-source-ph/raw/master/phConfig.json",
     "_feeds": {
       "commits": "https://github.com/Djupz/grayjay-source-ph/commits/main.atom",
@@ -2386,10 +2761,21 @@
     "version": 21,
     "iconUrl": "./patreon_logo.png",
     "id": "aac9e9f0-24b5-11ee-be56-0242ac120002",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
-    "allowUrls": ["www.patreon.com", "patreon.com"],
-    "_tags": ["official", "maintained", "working", "paid content"],
+    "allowUrls": [
+      "www.patreon.com",
+      "patreon.com"
+    ],
+    "_tags": [
+      "official",
+      "maintained",
+      "working",
+      "paid content"
+    ],
     "scriptSignature": "rFIbdmXUQEjo8/hRICu3kktEGgX9fGVEEDpfDSfpX6fgKpno6EiC7HdgeoZZ9QkUEC+aFRzm/H74xrLs37e9oYNdlXZUdY/d+LV+joLbgQX4qY4DX86wgpV6o9tH2oOz1Z5NDiSWZYenh7KC3clJHnNxMXM61JAfocy6VxJbtOafZXqFaKvE9HelQ3nuYJb8FYAu2EEOS8jIFyZkHpG6urN+KZpl2Ydr+DUArqFIMbdkpzsfVoIubvYffMkU2ss82VnAlnSb6YdT99PLE6mzBb9jYJ5+uzlxf6gconvlrTIhMrS0l1Em95bK4lDMBlCZ1Ddi4cOiUse4XUNtGa0E9Q==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
@@ -2399,10 +2785,14 @@
     "authentication": {
       "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
       "loginUrl": "https://www.patreon.com/login",
-      "cookiesToFind": ["session_id"],
+      "cookiesToFind": [
+        "session_id"
+      ],
       "cookiesExclOthers": false
     },
-    "supportedClaimTypes": [12]
+    "supportedClaimTypes": [
+      12
+    ]
   },
   {
     "name": "PeerTube",
@@ -2415,10 +2805,18 @@
     "version": 14,
     "iconUrl": "./peertube.png",
     "id": "1c291164-294c-4c2d-800d-7bc6d31d0019",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["everywhere"],
-    "_tags": ["official", "maintained", "generator"],
+    "allowUrls": [
+      "everywhere"
+    ],
+    "_tags": [
+      "official",
+      "maintained",
+      "generator"
+    ],
     "scriptSignature": "YKO/jMicPZFLnJI5LfiOUh8avfQhVzsHztKqOsP9whFAWbVHxqirLCI93gvVBxrphya0s5kwauIcrSe7D3hQQYgI3S3ElxdE8m75MhysA5ktL9IbQL20lEpGDTNIp0toEWEgvkKCGWX4VfLiWBtATK0KMTI6kmPiBcnaYKrLEiGsepvPHhWAQW1mRch+/D8YR/jIG5jMv38AbxhW2P0ktr7CBcPkh73zFuTxAwvX/SDYL3B7x1qgZI82TXpdfaVvxNOjOHEnzlRVWkLSKLepAbxosfmX7LHz15lwUXFXH4kL3HvdpCyPNpNsvPsd2HuiRUBWqsQLnleD53Lw7tiu9A==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
@@ -2451,7 +2849,10 @@
     "version": 9,
     "iconUrl": "https://i.vgy.me/eHA2U5.png",
     "id": "82b8fefc-24ae-11ee-be56-0242aa120002",
-    "packages": ["Http", "Utilities"],
+    "packages": [
+      "Http",
+      "Utilities"
+    ],
     "allowEval": false,
     "allowUrls": [
       "pietsmiet.de",
@@ -2490,10 +2891,19 @@
     "version": 10,
     "iconUrl": "./pornhub.png",
     "id": "dce06efc-862e-11ee-b9d1-0242ac120002",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": true,
-    "allowUrls": [".pornhub.com"],
-    "_tags": ["unofficial", "working", "nsfw"],
+    "allowUrls": [
+      ".pornhub.com"
+    ],
+    "_tags": [
+      "unofficial",
+      "working",
+      "nsfw"
+    ],
     "scriptSignature": "",
     "scriptPublicKey": "",
     "_feeds": {
@@ -2512,10 +2922,20 @@
     "version": 59,
     "iconUrl": "./rumble.png",
     "id": "2ce7b35e-d2b2-4adb-a728-a34a30d30359",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
-    "allowUrls": ["rumble.com", "api.ipify.org"],
-    "_tags": ["official", "maintained", "working"],
+    "allowUrls": [
+      "rumble.com",
+      "api.ipify.org"
+    ],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
+    ],
     "scriptSignature": "MSXkwTgooEyFuA9PzEYWtStcwaWYrzlKZE4DZdoIxxLrVk5PbvVgxG2Uc4Jf8caszzoNM9vQGP/8OF0d62xlUV9+e+3BxMog/2EPpmqmr0YX483PciDXpfhCQvYEPcfEX6L7tkB9uBjNVfw8xhUYG6WZCjfq54RxJK/79trYRgCfEcddlfS+k/fA8To8PpEzRqGG3XNnmAXV+Bdd5mZ9W+JEdjo3KccqrraIz6GF4R8lBGotFXte8iqKgThMSeWNacUr4gL2eUCqM8WCnOVxF6BfBOWqmkUS0f4X1NnGAURysSnznVNOftBbJJ38GvWwdO0V7Ns0mNc5srmVMaxLvQ==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
@@ -2525,12 +2945,21 @@
     "authentication": {
       "loginUrl": "https://rumble.com/login.php",
       "userAgent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.200 Mobile Safari/537.36",
-      "cookiesToFind": ["u_s"]
+      "cookiesToFind": [
+        "u_s"
+      ]
     },
-    "supportedClaimTypes": [4]
+    "supportedClaimTypes": [
+      4
+    ]
   },
   {
-    "_tags": ["unofficial", "german", "streaming", "tv-series"],
+    "_tags": [
+      "unofficial",
+      "german",
+      "streaming",
+      "tv-series"
+    ],
     "name": "S.to",
     "description": "S.to integration for Grayjay - German TV Series Streaming",
     "author": "Zerophire, Bluscream, Cursor.AI",
@@ -2544,10 +2973,17 @@
     "id": "sto-german-series-streaming",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
-    "allowUrls": ["s.to"],
-    "supportedClaimTypes": [3],
+    "allowUrls": [
+      "s.to"
+    ],
+    "supportedClaimTypes": [
+      3
+    ],
     "authentication": {
       "loginUrl": "https://s.to/login",
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
@@ -2557,7 +2993,9 @@
     },
     "settings": [],
     "changelog": {
-      "1": ["Initial version: Basic search, series listing, episode browsing"]
+      "1": [
+        "Initial version: Basic search, series listing, episode browsing"
+      ]
     },
     "_installUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-sto/main/config.json",
     "_feeds": {
@@ -2566,7 +3004,12 @@
     }
   },
   {
-    "_tags": ["unofficial", "generator", "german", "framework"],
+    "_tags": [
+      "unofficial",
+      "generator",
+      "german",
+      "framework"
+    ],
     "name": "S.to-like Framework Generator",
     "description": "Universal generator for German streaming sites using S.to/Aniworld framework - Create custom plugins for any compatible site",
     "author": "Bluscream, Cursor.AI",
@@ -2580,9 +3023,14 @@
     "id": "8e4d9c5a-1b3f-4e2c-9d8a-7f6e5c4b3a2d",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
-    "supportedClaimTypes": [3],
+    "supportedClaimTypes": [
+      3
+    ],
     "settings": [],
     "changelog": {
       "1": [
@@ -2610,10 +3058,17 @@
     "version": 23,
     "iconUrl": "./sample.png",
     "id": "82b8fefc-24aa-11ee-be56-0242ac120002",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
     "allowUrls": [],
-    "_tags": ["official", "maintained", "broken", "development"],
+    "_tags": [
+      "official",
+      "maintained",
+      "broken",
+      "development"
+    ],
     "scriptSignature": "",
     "scriptPublicKey": "",
     "_feeds": {
@@ -2634,7 +3089,9 @@
     "version": 3,
     "iconUrl": "./icon.png",
     "id": "d8643244-633f-4c71-9f45-215b2387dc2c",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
     "allowUrls": [
       "www.sauceplus.com",
@@ -2657,7 +3114,11 @@
         "description": "This will reduce clutter in the source selector, especially if there are lots of attachments",
         "type": "Dropdown",
         "default": "0",
-        "options": ["HLS", "Legacy HLS", "Flat MP4"]
+        "options": [
+          "HLS",
+          "Legacy HLS",
+          "Flat MP4"
+        ]
       },
       {
         "variable": "log_toasts",
@@ -2670,7 +3131,10 @@
     "authentication": {
       "loginUrl": "https://www.sauceplus.com/login",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
-      "cookiesToFind": ["sails.sid", "muxData"],
+      "cookiesToFind": [
+        "sails.sid",
+        "muxData"
+      ],
       "loginWarning": "Login and then open a video. Try using Discord login"
     },
     "scriptSignature": "KFa9VHdIFzJyqqS3XeKa/rJBCF7YHOd0CblqQSl8IG/NItj4AnkS/k2NVrCUgetZEOa38dftIyT87Yl6vWeN3lCC9sN+TnFpL772j30BDTMhlUoUy9R8tv5sQC2hMu2WJ+m+qlhn7ipIkulmQ4RU8G6lbnqXrXH9oB7hsCkrhLCT7mkuOjJNopuKhux0KtVaeXcEeHMzEPIMs15ZKLdxniBAeeKwJ4GTDZGdYIF3D8C/BmRyrRp9wKfCwUO+a76iWaCm8k/C1WxVwdondGodFBvTaZhIK9JeMvkoSW7v9GWhVzynPekaLGDaV/RWBLLy0Wyd3f635UcF36uyKq+9MQ==",
@@ -2693,7 +3157,9 @@
     "version": 26,
     "iconUrl": "./soundcloud.png",
     "id": "5fb74e28-2fba-406a-9418-38af04f63c08",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
     "allowUrls": [
       "api-v2.soundcloud.com",
@@ -2702,14 +3168,20 @@
       "m.soundcloud.com",
       "on.soundcloud.com"
     ],
-    "_tags": ["official", "maintained", "working"],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
+    ],
     "scriptSignature": "BjiLXVZ77K0RYTfcAhnmTf64ZFdcTGAgTauepPQovYRuXNi7HswWAO6UYebpLellDzVEFkUmueyjyGic8w7VGrOA9uKhELUIKck+KicPHjR5gnZyQx4CI9HKxR+5RK2ornilnhNte5tLk0HLMsNs6jXrhG7kGjmEw5xJYr9AeHi3fGAVFH/1raHJzgACL7pp13HOO0jfr5oJtq3mDZbIGrXV2WfrkepkFzROk36FOHj6Et9kZ2mJHPLS/zSqXT1LwoY5VgbAn4RvtlOm3T/uguVKtnFai6IMy+3hEuSk0UB29DB93dvRByxRZSD4ML9mJGs8MNsAwuGSRQB1qC7n8w==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
       "commits": "https://gitlab.futo.org/videostreaming/plugins/soundcloud/-/commits/master?format=atom"
     },
     "platformUrl": "https://soundcloud.com",
-    "supportedClaimTypes": [17]
+    "supportedClaimTypes": [
+      17
+    ]
   },
   {
     "name": "Spotify",
@@ -2722,7 +3194,9 @@
     "version": 34,
     "iconUrl": "./SpotifyIcon.png",
     "id": "4e365633-6d3f-4267-8941-fdc36631d813",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
     "allowUrls": [
       "open.spotify.com",
@@ -2733,7 +3207,11 @@
       "apresolve.spotify.com",
       "open.spotifycdn.com"
     ],
-    "_tags": ["official", "maintained", "working"],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
+    ],
     "scriptSignature": "IWZ1vDCbcCuQTFHOiwLCCCV9Uupz9UhapVq69Rmm1zm9NuubV0KTkmnVSMgSpx0j0XRWxkgd/BjT/R4Vs553+NhMuM2PNSyIg+HJNfTuSklDG4YZD28hSd1a0JIVkqpqvpaqDEZLT9XL1sOFqpITuNagdrCdaiC11k06gFboAGzleW9u7SeHYVhc9dzZCz6UniqhuH7udBrb30XcJ244D+UQbZOR18tAFvT5flfe+g4+eSueK2BzXfYUQQywz+6/1nLow182KtVbinbdDpZ65gy8EHj+G8a1ufFXnZGdHtvLz13+tNMy7bJj3FV269fp2RkyLq6ykCyVnAwKsonX3Q==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
@@ -2742,12 +3220,17 @@
     "platformUrl": "https://spotify.com",
     "authentication": {
       "loginUrl": "https://accounts.spotify.com/en/login",
-      "cookiesToFind": ["sp_dc"],
+      "cookiesToFind": [
+        "sp_dc"
+      ],
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
     }
   },
   {
-    "_tags": ["official", "working"],
+    "_tags": [
+      "official",
+      "working"
+    ],
     "_feeds": {
       "commits": "https://gitlab.futo.org/videostreaming/plugins/tedtalks/-/commits/master?format=atom"
     },
@@ -2767,8 +3250,13 @@
     "maxDownloadParallelism": 1,
     "subscriptionRateLimit": 10,
     "changelog": {},
-    "packages": ["Http", "DOMParser"],
-    "allowUrls": [".ted.com"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
+    "allowUrls": [
+      ".ted.com"
+    ],
     "settings": [],
     "_installUrl": "https://plugins.grayjay.app/TedTalks/TedTalksConfig.json"
   },
@@ -2787,7 +3275,10 @@
     "id": "37b3aed3-24b8-4717-8388-dfc439908bf8",
     "scriptSignature": "NERpmW9ETbaCAF9ky1vBR37txUvQpdpCuyc+fdMSyWaWxEBSjU70JRFHSTX1jlt90NdGL8WaHI8GWcdGxuJP1ZF5XRe35rvze9hdKS1Kq1KjszvSwEPo7vcrBfklsZ8F2Ely9DeohhrofSa+nTCy9KXgS8jox6E8y6nuOUPII3fwqhj1eblqrd1OtgJtt8D1bSWKwBLJiLK7kCsq+z9q2uv2Id+k++zHp3qTCINa9WGwpyJA8ckqgSHYi5maw4TrVnq0qHREWsOJNoIgYJMxPhMg3yRzo9aIzK0RcI1fhI0Ic73lLYbuRZ1/gloAu2XLPXIHH6GdK96AzoqtDmHrhg==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
-    "packages": ["Http", "Utilities"],
+    "packages": [
+      "Http",
+      "Utilities"
+    ],
     "allowEval": false,
     "allowAllHttpHeaderAccess": true,
     "allowUrls": [
@@ -2802,9 +3293,16 @@
     "authentication": {
       "userAgent": "Mozilla/5.0 (Linux; Android 15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36",
       "loginUrl": "https://www.tiktok.com/login",
-      "cookiesToFind": ["ttwid", "sessionid"]
+      "cookiesToFind": [
+        "ttwid",
+        "sessionid"
+      ]
     },
-    "_tags": ["official", "maintained", "wip"],
+    "_tags": [
+      "official",
+      "maintained",
+      "wip"
+    ],
     "_feeds": {
       "commits": "https://github.com/futo-org/grayjay-plugin-tiktok/commits/main.atom",
       "releases": "https://github.com/futo-org/grayjay-plugin-tiktok/releases.atom"
@@ -2822,10 +3320,19 @@
     "version": 3,
     "iconUrl": "./tiktok.png",
     "id": "905bbae8-da0f-4b1a-a35b-527eb337c976",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
-    "allowUrls": ["everywhere"],
-    "_tags": ["unofficial", "maintained", "wip"],
+    "allowUrls": [
+      "everywhere"
+    ],
+    "_tags": [
+      "unofficial",
+      "maintained",
+      "wip"
+    ],
     "scriptSignature": "a2HeFaKzRW/sMwBrdagRti/vf1QF+ce47jJJTwH3iKIBdbpyAKR0QFr1xvnpEXIXKN6kBG1M9q3Eqpiyp4ztSaNUYSISXojfuP5hGh18/xfsahrW6a3PXHnQr8hPkl2tnAK7w/f62usVFilsTfhl13lpP/oeggCUE05xy/noSjBiDFdlIckh2V/sq3Dref8WpJtyaJIS/iQ3Ckq9r4aMSf0Y7rC9sNBwA0G0sJ0BQ4MQbjN08RzDAwAkwsHUqsJDLql7nQC8g/Bfnz3OmcoqHn+kcoplvIYMrv2SxQdQjFqvKBX71JRsGRJLhukfGsBgISvoVbTlz90fMY1uSMojYA==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuIEFVvy+lLHB4cQoSQu4c/4i+pdjP5RH7CxgIMIs4kqjTf6hh0smO55GVN9Cer18j2pixEPNV5i4P+9iMsrg5bK4TVhbbsCm6UIUf4ohzTr/h0pmRRjNxe6EhFEiWCQSSyNYDeTLgYstxhYO4hsZFYJ5VW8HRw7vQ7LHUwkexJ2GB3SKhtQQy9yQnWaFtaQnAW+hsUZYrQ8AQzUSihoOtrullMpv00hucgs7UybpLW2JAG7De7RbglO2r/wr9ZB6HiGAnWNOx7av5qDJIQFH4C7y9YDHdziMx3QgW+P0xwtNajFig9vM6x0HJtWnpFaKqAlmhU/AWLfwf7OEDTNRjQIDAQAB",
     "_feeds": {
@@ -2851,7 +3358,10 @@
     "id": "362458b3-f453-4f7b-b468-08591e580f89",
     "scriptSignature": "HgW/KarigyzkHonaLgRP+vkOHHP6f5xpQ3hzogJ7PG/KjjNWJuiwrnTOQJuFzwDeHfOFD4zNsc0VQaiwggzPGpmCut4poIq12e5HWCvn4sEf5ttO280qOU0wnkVikp3qjgwoKZMMFZ548Cy7ER3TOPsEK9dnsLx2ZjSpMQN9a5KZpbnOlzApfh87SFt+l+3PgHxAWnJJ0q4u0c1o0kNm/8KXkRtqB1vz09PfZNyOIvF5oT0RlWERonSkwIgufdB2bk9Ao4C5gd04MuJsh3DmTtSeftqYMKcKTivSxKAyQCvuyQaOXe0cXR1GF18esSrqOWBUURTiSVlxRN8Wm1jO3XLMnidZNLPNnuHN95yCp+DGXr5KrwpYjCCA6xZ83iuUR7QtJOFN83bO6qo86cJyuOu1+n+8eVlEhlIsO4B3zjmM7MeDXk5ahZcRU20H2xeHHZs9hmr1+bnAMXXX7jmT5wSc6mhjssNB1CDRXZBr4Vvs4C7tOGfsx36KDUqHj426Uvo8PfQpvhzc7RzbhqUZ1lg6RYBKLrXivbsPRqAnhGoMroGZ8GPgQn5H5eXsPci7+JyLiMWhhVEGfBfbJAn2hWDKwyx9eIKYKumVu5s1290/tLCi9LKfR7UyGViqzmmEufHqbzsNWyIpuGI/doGzdz93aDSg1wG2rCrDW1h9hgk=",
     "scriptPublicKey": "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAr63Yf0gjJG8rV9IhtUQgxzryQCtacKfdaErLBC4sOhcnHEqWYJoAHGytGggRSyuGZoJFX2Ovd/8bH0YRT1e1oWMgSZFHQ0k3UE94G2Jw1jmmFvZEaMVxDW7RLkkvqYlXBNDLdkxfbyZepKV5mM4Fd5kbueAdfWdhsl5FhlqHCH10kudewcFq4WBTwQW1chsdkI0Iqrgwqzs5vH5cpphxzXUb+V6rtOUystpFwsEXb6m1Kzl0Uy/9AWTdT9JJJ7H88ycO6d6xX9UUjOXCwMWHxPcZ6UVPN2Plr8UBTJvF0uaYkDhNn0rzEe7NiJ8gUmrT0UJB2E5cYv4I4eTGp6RTwKe7UVCGEo8S7vQ0yPjxk8+dta+V6ECvg7VV1Ic00dfYqPsWPsZJ/xkJLeXIeXhjDNLm0pebr6W6bXkVPvS9PcYMoId+YpghojnPnzo/vmAIo4aS90G1zwmCNonv4suy2Kl48Pxz2OO0YepTuAZxJA6vrPcHxqbeAcAvfpk9PXLRmxD/eoiTsJusxkP5h6Z00gWJiFNNSntOShaGfCtloumqFHi5HIDiipo6KvIBvSYFaK0vlcFjdk0cAkMskuGP8B98zlMP5s9C19/uC6WsDmX1oQ0tNRIifBzg1QE0RuvvfqjI3/W4MqmKllbkwj/Pl/irIaeHsTK/+bwko/jK460CAwEAAQ==",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
     "allowUrls": [
       "astatic.trovocdn.net",
@@ -2890,7 +3400,10 @@
     ],
     "authentication": {
       "loginUrl": "https://cdn.trovo.live/page/login-page.html",
-      "headersToFind": ["Authorization", "Cookie"],
+      "headersToFind": [
+        "Authorization",
+        "Cookie"
+      ],
       "cookiesToFind": [
         "uid",
         "openid",
@@ -2924,7 +3437,9 @@
         "Feature: Channel Support [Channel Details, Lives, VODs, Uploads and Clips(Disabled by default, need to come up with a better way to handle them)]",
         "Issue: Almost everything related to the Follower Count doesn't work, it is not available in the API calls for some reason. The only exception is while Searching."
       ],
-      "1": ["Feature: Comments are working. oh, SubComments too."]
+      "1": [
+        "Feature: Comments are working. oh, SubComments too."
+      ]
     },
     "_tags": [],
     "_installUrl": "https://alexisblade2001.github.io/Grayjay-Plugins/Trovo/TrovoConfig.json",
@@ -2944,7 +3459,9 @@
     "version": 28,
     "iconUrl": "./twitch.png",
     "id": "c0f315f9-0992-4508-a061-f2738724c331",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
     "allowUrls": [
       "gql.twitch.tv",
@@ -2952,7 +3469,11 @@
       "usher.ttvnw.net",
       "production.assets.clips.twitchcdn.net"
     ],
-    "_tags": ["official", "maintained", "working"],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
+    ],
     "scriptSignature": "ZMgDgXVwTKI28fskdk5KKAbT5Hjc5VxUcxZzOtkyR9HEgkPCwSLBYb2IqGpuakxN5iZEt+xVf+B/AqS90QzXjaBUsZvqMnDBhVmXjLmN2pMetjWCeh3ZAeUqkhDk8u2p3f1U2SqghRvXZj3G1jo841NixTpfquIc3xXcs4yELrca+FtOZ6iPatqRQd5RJlP3zmKV/31VuA4dYZhdUEQ4aQbLzV7kqbHKMktmf2kAaQSypcMuhMMbMD+2tFTtQ23VxiU0YTKw/AvyOFuiBDVaWC7JCKfCOOjPWshCuQe19MAZvZYOmkoOw3Z7ku1s2W5ilBST4ub598okQ4jT/ugqfw==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
@@ -2962,12 +3483,18 @@
     "authentication": {
       "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.113 Mobile Safari/537.36",
       "loginUrl": "https://www.twitch.tv/login",
-      "headersToFind": ["Authorization"],
+      "headersToFind": [
+        "Authorization"
+      ],
       "domainHeadersToFind": {
-        ".twitch.tv": ["authorization"]
+        ".twitch.tv": [
+          "authorization"
+        ]
       }
     },
-    "supportedClaimTypes": [14]
+    "supportedClaimTypes": [
+      14
+    ]
   },
   {
     "name": "Vanillo",
@@ -2980,10 +3507,18 @@
     "version": 5,
     "iconUrl": "./vanillo192.png",
     "id": "82b8fefc-24aa-11ee-be56-0242ac120ff2",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["everywhere"],
-    "_tags": ["unofficial", "unmaintained", "unknown"],
+    "allowUrls": [
+      "everywhere"
+    ],
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "unknown"
+    ],
     "scriptSignature": "",
     "scriptPublicKey": "",
     "_feeds": {
@@ -2996,7 +3531,10 @@
     "websiteUrl": "https://dw5.github.io"
   },
   {
-    "_tags": ["unofficial", "untested"],
+    "_tags": [
+      "unofficial",
+      "untested"
+    ],
     "_feeds": {},
     "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
     "name": "Vimeo",
@@ -3010,19 +3548,33 @@
     "version": 3,
     "iconUrl": "./icon.png",
     "id": "29c6b4d5-f006-402a-8ba0-97125643df63",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["vimeo.com", "api.vimeo.com", "player.vimeo.com"],
+    "allowUrls": [
+      "vimeo.com",
+      "api.vimeo.com",
+      "player.vimeo.com"
+    ],
     "authentication": {
       "loginUrl": "https://vimeo.com/login",
-      "cookiesToFind": ["vimeo"]
+      "cookiesToFind": [
+        "vimeo"
+      ]
     },
     "scriptSignature": "RS1urloXNwx08DcSwnvAI56M0Qmgp3XQdsk4O1fKMzUq134+YvTcnNAhrOdEGwbMqBfEu7usoiAxKr2Iu9qMLNH2EZiT9u3R2eODKjW7g+wKdMLGYt3GARDc5aKqyZ+IkTdH1ItvHA5+LZ0yr3sG9BHwWJL5Kr6EnK2H0ScyCTITmxGPyj1wsLqBUBxhB5kFy4BPvTGKx3pYYLZDfXm8SfcdDS+b6jDkUtjU0vuYIT9fZ9Bk/BIhY6oqVa+M6caITFRNipPvfpIgZys3GHIDQbuNDzB5z1hasmB5FQqJtrpsEibJ48ib+wyBeTLsOVaw/ZrjRWuwyllGrUap0vNQxA==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx3XblavsQV/ct8b2EdJmSgiMWPv5evi7MTmpToBoSeqcYYmoqC9y4Fwx40Mg4nYWmC8h3u/dOUnR8XYezESU2KsGhUabyiOAozJs4qjAa1eB6v+v1R+eBK43pThzJLKN+3HwXgScF5qO4z9+HzU0T9tVhURHxi+NfjDBNWGYYpWAAlZa88cT4enzfyCmCfAHabQ+nF32gvmrlijZCNa5V4bpbKKhbaFbsSPO6n4DL3gETiwHTrqM/D88a06+PJM/JFZ5ZF5OJUQ2JO0qze/EX227VUpSSfq/OIR084x9rJEVvZvtSVkeREmVK+OdY3XP9VTOfdeiq3MXFP4dbWp7ewIDAQAB",
     "_installUrl": "https://gitlab.com/kaidelorenzo/grayjay-vimeo-plugin/-/releases/permalink/latest/downloads/src/config.json"
   },
   {
-    "_tags": ["unofficial", "wip", "sports", "wrestling", "entertainment"],
+    "_tags": [
+      "unofficial",
+      "wip",
+      "sports",
+      "wrestling",
+      "entertainment"
+    ],
     "name": "WWE Network",
     "description": "WWE Network - Professional wrestling streaming service",
     "author": "Bluscream, Cursor.AI",
@@ -3036,10 +3588,20 @@
     "id": "wwe-network-streaming",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
-    "allowUrls": ["wwe.com", "www.wwe.com", "watch.wwe.com", "*.wwe.com"],
-    "supportedClaimTypes": [3],
+    "allowUrls": [
+      "wwe.com",
+      "www.wwe.com",
+      "watch.wwe.com",
+      "*.wwe.com"
+    ],
+    "supportedClaimTypes": [
+      3
+    ],
     "authentication": {
       "loginUrl": "https://watch.wwe.com/signin",
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
@@ -3049,7 +3611,9 @@
     },
     "settings": [],
     "changelog": {
-      "1": ["Initial version: Basic plugin structure"]
+      "1": [
+        "Initial version: Basic plugin structure"
+      ]
     },
     "_installUrl": "https://raw.githubusercontent.com/grayjay-sources/grayjay-source-wwe-network/main/config.json",
     "_feeds": {
@@ -3068,10 +3632,21 @@
     "version": 1,
     "iconUrl": "./Stadt_Wien_Wappen.png",
     "id": "33713163-e1c2-46ba-b65e-3f1f08b82f16",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
-    "allowUrls": ["www.wien.gv.at", "ms01.w24.at", "ms02.w24.at"],
-    "_tags": ["unofficial", "unmaintained", "broken"],
+    "allowUrls": [
+      "www.wien.gv.at",
+      "ms01.w24.at",
+      "ms02.w24.at"
+    ],
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "broken"
+    ],
     "scriptSignature": "ph0JkQ9xzV4rCy5R6OcptMuFZGoqj6cn9P/u638EehwFsD0UNEMxKNManuqSXokU+E4G6HhvTF+1bg1hFhYc6vvQan4wYWpUDDxfPsYdlFJovsszLMdSXAwd2u8z1sPDWpVmK/onlO8AQhcWzm5jIyMo5HwCAo6fqa0J1rPwc4a4YhMSaFqTEctgqEluPlFBxcoqMqjp4569Ug3XmgpqXnyJ6DAIL953yNYULv7omj7rk8zpLhxT3eZOz3853MEvZzqrvUsdiB9m9aI00WpBFKXPH2IyEHM/kzSKY6W+MWysWt+KZ4tPX83VD3uT37T1pynIk7FUBZ2mZXjCHKrFWw==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxoV9LKqeVZ+7aGirjUrMh0SXhu+qnWSCev4VQCEmjO0BR2sIkJGmflCHQBtt49qrQsBPiu+dWWGTiFPwg9T5E7+rLQ9ccOHWNKOX14o2+ZO+cad6p4xSzIcOHWCDNw1IbTLDYNa9E/cpp/Df6fIEzDqq5Ht8cus1vzmUKpRK4xkF/E2lTXb+i91a7UMEEv+VM63HmmHJnxrB69kbgmk7MqQWacAgE9Fp2y1MxYC5SLh0gZMH6OrLm4GjIPRqf/OLS7EqqfV9BhnstMCQWz2hsk+SUSvxQ34IkHqUN3tMNloamDx+/feFbUdh81yhI1kBV7Omem9b0XwMiu6SiCG6cQIDAQAB",
     "_feeds": {
@@ -3081,7 +3656,11 @@
     "_installUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases/download/current/WienAtVideosConfig.json"
   },
   {
-    "_tags": ["unofficial", "working", "nsfw"],
+    "_tags": [
+      "unofficial",
+      "working",
+      "nsfw"
+    ],
     "name": "XNXX",
     "description": "XNXX video platform plugin for Grayjay",
     "platformUrl": "https://www.xnxx.com",
@@ -3095,9 +3674,15 @@
     "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": [".xn-app1.com", ".xnxx-cdn.com", ".xnxx.com"],
+    "allowUrls": [
+      ".xn-app1.com",
+      ".xnxx-cdn.com",
+      ".xnxx.com"
+    ],
     "_installUrl": "https://grayjay-plugin-xnxx.pages.dev/XNXXConfig.json",
     "_feeds": {
       "commits": "https://github.com/GreyPluginDev/grayjay-plugin-xnxx/commits/main.atom",
@@ -3105,7 +3690,11 @@
     }
   },
   {
-    "_tags": ["unofficial", "working", "nsfw"],
+    "_tags": [
+      "unofficial",
+      "working",
+      "nsfw"
+    ],
     "name": "XVideos",
     "description": "XVideos video platform plugin for Grayjay",
     "platformUrl": "https://www.xvideos.com",
@@ -3119,9 +3708,15 @@
     "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567891",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": [".xv-app1.com", ".cdn77-pic.xvideos-cdn.com", ".xvideos.com"],
+    "allowUrls": [
+      ".xv-app1.com",
+      ".cdn77-pic.xvideos-cdn.com",
+      ".xvideos.com"
+    ],
     "_installUrl": "https://grayjay-plugin-xvideos.pages.dev/XVideosConfig.json",
     "_feeds": {
       "commits": "https://github.com/GreyPluginDev/grayjay-plugin-xvideos/commits/main.atom",
@@ -3139,10 +3734,20 @@
     "version": 2,
     "iconUrl": "https://github.com/Tsunami014/Grayjay-plugins/blob/main/YTMusic.png?raw=true",
     "id": "ff7fee60-202f-4aeb-a270-676862dd854b",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["music.youtube.com", "youtube.com", "www.youtube.com"],
-    "_tags": ["unofficial", "unmaintained", "unknown"],
+    "allowUrls": [
+      "music.youtube.com",
+      "youtube.com",
+      "www.youtube.com"
+    ],
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "unknown"
+    ],
     "scriptSignature": "A8x7FalRJ5tR5I2vUATEUFjTU2yiBkyBHuUk6wjmS47zA9JAYPz7TvAspl9tGy1EMwn2BoksSDnvRwMtE4X2DmrdHZby4XU/o5L4h4svFqIYmgXkqfbZ9PffDo1Tc5o8neK9LUFkROEpkWunXo8aUhWN/UFFutl/tg7Hbxpf6IVARTe37VXMPrTmVMPzsqmsVyH8r+ji98h5Y+K6KeqSZXhr67qMsbEglB+H3LUkzp0JQaOyYUgw82g/YOZ8P8EG8WEdLFPRkFgXvW8PkX/fjSnbDBm/LlRkjS7l/J+nvv9WW3VGyPLXBBjPlsyu20eWaf17NF/7azX52ehHsIMQsi+FHHGA58F2YCLCtJW1HUuNqG9qukypYELgO14wsyyGnEeKQ4aLES2Jk7TrK/Hh2JjWRRzOEPKGWpZx4SKPcXqpPhhpfMYGC2r9XHPbunFqGsqvtD5+s41wfW2iNA+TGR+o25G6U5VsNGUL0jYO57mxn9iy0n/jjWC5HeuWNc5X",
     "scriptPublicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAuNJJK3A0D4NhOqMZSrtEyl0JTYZxUVXqosKT7ZopuGvq+zT5LzinI8kxr+wjMHlmN1EjNkrBitkGQEvRDpXDxIpe4IiHZRkrbFDYvxsZA3h0N0sKn8pJzMHP/orFsBi0CUWck2ynyqIsHGqqF3ziHHZi4DUIMTvdaqGAwJIYo5dDS+T/L70CfyqZhJnGMAGGMGXW0JHbmtURDz0hgMWkz/eREkYbce8aYV31JBImTosFADLQ6JPSi3rDEZagwMO2ipvK3fGsDdQfJ1CsBNR/8xJLTsJYrNoMnqLvWZRkcEBpbYB+7N6aSOVO+GdJ4S93f25Deru7BkWM/wHrJtvGDT7/a9GxfFl08jU5f7JRchn+zoqyn7db1d7rtrNiW8a4X5MNqASSkzJPPZgMrqDlCilSYkkRYsUvkhmzRPUhxYG0mv69gOqKrpLoMX3Y1IkA8iG6SWNTKiCnsrKexb+pKoZWg/76jdB1UoChBqd1divqW1Te7VUvRir400D5tjg1AgMBAAE=",
     "_feeds": {
@@ -3152,12 +3757,18 @@
     "platformUrl": "https://music.youtube.com",
     "authentication": {
       "loginUrl": "https://accounts.google.com/ServiceLogin?ltmpl=music&service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fmusic.youtube.com%252F%26feature%3D__FEATURE__&hl=en",
-      "cookiesToFind": ["SIDCC"],
-      "headersToFind": ["Authorization"],
+      "cookiesToFind": [
+        "SIDCC"
+      ],
+      "headersToFind": [
+        "Authorization"
+      ],
       "cookiesExclOthers": false,
       "completionUrl": "https://music.youtube.com/",
       "domainHeadersToFind": {
-        ".youtube.com": ["authorization"]
+        ".youtube.com": [
+          "authorization"
+        ]
       }
     },
     "settings": [
@@ -3192,7 +3803,9 @@
         ]
       }
     ],
-    "supportedClaimTypes": [3]
+    "supportedClaimTypes": [
+      3
+    ]
   },
   {
     "name": "Youtube",
@@ -3205,7 +3818,11 @@
     "version": 298,
     "iconUrl": "./youtube.png",
     "id": "35ae969a-a7db-11ed-afa1-0242ac120002",
-    "packages": ["Http", "Utilities", "DOMParser"],
+    "packages": [
+      "Http",
+      "Utilities",
+      "DOMParser"
+    ],
     "allowEval": false,
     "allowUrls": [
       "youtube.com",
@@ -3225,7 +3842,11 @@
       ".googlevideo.com",
       "jnn-pa.googleapis.com"
     ],
-    "_tags": ["official", "maintained", "working"],
+    "_tags": [
+      "official",
+      "maintained",
+      "working"
+    ],
     "scriptSignature": "L/pWKLJn2EmHB+9GnuO3JuzEKh704UGpmNBYEU34kLhBAmaD35Xz7ZHEQ+/kWr+ZY+d4NyCisHGBSY4kNMpx+pChcMmx1vw79YuWkuqc4V47hh26CMS+q8PWIdH+MIpe+OKChXLER+ofJFaxI1lssSWa1u3x3TVi00qPiW5bdvX4uFEG4kW+nXAo706T4kEA6BDXTx8Y9p8oDpJV8Lmylo28SJ50hGS8pnW2+H22qJp+uMGxYCAHpqA8V+2ZrjX/0Mu9keJuSU+3ZlEa9NburgNR1pIzo1gHHktt3JU9GMa6jD/Bjz2e4eNJg2tVGmfQfrGfMb9rbGiM21IZPQ3EOA==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
@@ -3236,11 +3857,17 @@
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
       "completionUrl": "https://m.youtube.com/youtubei/v1/guide?*",
       "loginUrl": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fchannel_switcher&hl=en&ec=65620",
-      "headersToFind": ["authorization"],
+      "headersToFind": [
+        "authorization"
+      ],
       "domainHeadersToFind": {
-        ".youtube.com": ["authorization"]
+        ".youtube.com": [
+          "authorization"
+        ]
       },
-      "cookiesToFind": ["SIDCC"],
+      "cookiesToFind": [
+        "SIDCC"
+      ],
       "cookiesExclOthers": false,
       "loginWarning": "You must select a profile after login for authentication to complete.",
       "loginWarnings": [
@@ -3389,7 +4016,11 @@
         "type": "Dropdown",
         "default": "1",
         "dependency": "sponsorBlock",
-        "options": ["No skip", "Manual", "Automatic"]
+        "options": [
+          "No skip",
+          "Manual",
+          "Automatic"
+        ]
       },
       {
         "variable": "sponsorBlockCat_Intro",
@@ -3398,7 +4029,11 @@
         "type": "Dropdown",
         "default": "0",
         "dependency": "sponsorBlock",
-        "options": ["No skip", "Manual", "Automatic"]
+        "options": [
+          "No skip",
+          "Manual",
+          "Automatic"
+        ]
       },
       {
         "variable": "sponsorBlockCat_Outro",
@@ -3407,7 +4042,11 @@
         "type": "Dropdown",
         "default": "0",
         "dependency": "sponsorBlock",
-        "options": ["No skip", "Manual", "Automatic"]
+        "options": [
+          "No skip",
+          "Manual",
+          "Automatic"
+        ]
       },
       {
         "variable": "sponsorBlockCat_Self",
@@ -3416,7 +4055,11 @@
         "type": "Dropdown",
         "default": "0",
         "dependency": "sponsorBlock",
-        "options": ["No skip", "Manual", "Automatic"]
+        "options": [
+          "No skip",
+          "Manual",
+          "Automatic"
+        ]
       },
       {
         "variable": "sponsorBlockCat_Offtopic",
@@ -3425,7 +4068,11 @@
         "type": "Dropdown",
         "default": "0",
         "dependency": "sponsorBlock",
-        "options": ["No skip", "Manual", "Automatic"]
+        "options": [
+          "No skip",
+          "Manual",
+          "Automatic"
+        ]
       },
       {
         "variable": "sponsorBlockCat_Preview",
@@ -3434,7 +4081,11 @@
         "type": "Dropdown",
         "default": "0",
         "dependency": "sponsorBlock",
-        "options": ["No skip", "Manual", "Automatic"]
+        "options": [
+          "No skip",
+          "Manual",
+          "Automatic"
+        ]
       },
       {
         "variable": "sponsorBlockCat_Filler",
@@ -3443,7 +4094,11 @@
         "type": "Dropdown",
         "default": "0",
         "dependency": "sponsorBlock",
-        "options": ["No skip", "Manual", "Automatic"]
+        "options": [
+          "No skip",
+          "Manual",
+          "Automatic"
+        ]
       },
       {
         "variable": "advanced",
@@ -3516,12 +4171,16 @@
         "default": "true"
       }
     ],
-    "supportedClaimTypes": [2],
+    "supportedClaimTypes": [
+      2
+    ],
     "subscriptionRateLimit": 140,
     "captcha": {
       "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
       "captchaUrl": null,
-      "cookiesToFind": ["GOOGLE_ABUSE_EXEMPTION"]
+      "cookiesToFind": [
+        "GOOGLE_ABUSE_EXEMPTION"
+      ]
     },
     "primaryClaimFieldType": 1
   },
@@ -3536,7 +4195,11 @@
     "version": 168,
     "iconUrl": "https://pantsufan.github.io/grayspon/youtube.png",
     "id": "73b80cf3-8fa5-4969-a5a0-03713d80aeb4",
-    "packages": ["Http", "Utilities", "DOMParser"],
+    "packages": [
+      "Http",
+      "Utilities",
+      "DOMParser"
+    ],
     "allowEval": false,
     "allowUrls": [
       "youtube.com",
@@ -3554,7 +4217,11 @@
       "returnyoutubedislikeapi.com",
       "sponsor.ajay.app"
     ],
-    "_tags": ["unofficial", "unmaintained", "unknown"],
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "unknown"
+    ],
     "scriptSignature": "",
     "scriptPublicKey": "",
     "_feeds": {
@@ -3566,11 +4233,17 @@
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
       "completionUrl": "https://m.youtube.com/youtubei/v1/guide?*",
       "loginUrl": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fchannel_switcher&hl=en&ec=65620",
-      "headersToFind": ["authorization"],
+      "headersToFind": [
+        "authorization"
+      ],
       "domainHeadersToFind": {
-        ".youtube.com": ["authorization"]
+        ".youtube.com": [
+          "authorization"
+        ]
       },
-      "cookiesToFind": ["SIDCC"],
+      "cookiesToFind": [
+        "SIDCC"
+      ],
       "cookiesExclOthers": false,
       "loginWarning": "You must select a profile after login for authentication to complete."
     },
@@ -3652,15 +4325,22 @@
         "type": "Dropdown",
         "default": "0",
         "dependency": "sponsorBlock",
-        "options": ["Manual", "Automatic"]
+        "options": [
+          "Manual",
+          "Automatic"
+        ]
       }
     ],
-    "supportedClaimTypes": [2],
+    "supportedClaimTypes": [
+      2
+    ],
     "subscriptionRateLimit": 140,
     "captcha": {
       "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
       "captchaUrl": null,
-      "cookiesToFind": ["GOOGLE_ABUSE_EXEMPTION"]
+      "cookiesToFind": [
+        "GOOGLE_ABUSE_EXEMPTION"
+      ]
     },
     "primaryClaimFieldType": 1,
     "_installUrl": "https://pantsufan.github.io/grayspon/YoutubeConfig.json"
@@ -3676,7 +4356,10 @@
     "version": 168,
     "iconUrl": "https://raw.githubusercontent.com/netux/grayjay-source-youtube/52deb90661442a29767b755645d86b9965cc7da5/youtube_dearrow.png",
     "id": "35ae969a-a7db-11ed-afa1-0242ac120002",
-    "packages": ["Http", "Utilities"],
+    "packages": [
+      "Http",
+      "Utilities"
+    ],
     "allowEval": false,
     "allowUrls": [
       "youtube.com",
@@ -3694,7 +4377,11 @@
       "returnyoutubedislikeapi.com",
       "sponsor.ajay.app"
     ],
-    "_tags": ["unofficial", "unmaintained", "unknown"],
+    "_tags": [
+      "unofficial",
+      "unmaintained",
+      "unknown"
+    ],
     "scriptSignature": "",
     "scriptPublicKey": "",
     "_feeds": {
@@ -3705,12 +4392,18 @@
     "authentication": {
       "loginUrl": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fchannel_switcher&hl=en&ec=65620",
       "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
-      "cookiesToFind": ["SIDCC"],
-      "headersToFind": ["authorization"],
+      "cookiesToFind": [
+        "SIDCC"
+      ],
+      "headersToFind": [
+        "authorization"
+      ],
       "cookiesExclOthers": false,
       "completionUrl": "https://m.youtube.com/youtubei/v1/guide?*",
       "domainHeadersToFind": {
-        ".youtube.com": ["authorization"]
+        ".youtube.com": [
+          "authorization"
+        ]
       },
       "loginWarning": "You must select a profile after login for authentication to complete."
     },
@@ -3791,7 +4484,10 @@
         "description": "Change skip behavior for SponsorBlock. Automatic may cause unexpected skipping for some users, and thus not recommended.",
         "type": "Dropdown",
         "default": "0",
-        "options": ["Manual", "Automatic"],
+        "options": [
+          "Manual",
+          "Automatic"
+        ],
         "dependency": "sponsorBlock"
       },
       {
@@ -3815,12 +4511,16 @@
         "default": "true"
       }
     ],
-    "supportedClaimTypes": [2],
+    "supportedClaimTypes": [
+      2
+    ],
     "subscriptionRateLimit": 140,
     "captcha": {
       "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
       "captchaUrl": null,
-      "cookiesToFind": ["GOOGLE_ABUSE_EXEMPTION"]
+      "cookiesToFind": [
+        "GOOGLE_ABUSE_EXEMPTION"
+      ]
     },
     "primaryClaimFieldType": 1,
     "_installUrl": "https://github.com/netux/grayjay-source-youtube/releases/latest/download/YoutubeConfig.json"
@@ -3836,10 +4536,18 @@
     "version": 1,
     "iconUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/MediaCccLogo.png",
     "id": "ccc221a2-4845-4ecf-9fa4-8b12958d2455",
-    "packages": ["Http"],
+    "packages": [
+      "Http"
+    ],
     "allowEval": false,
-    "allowUrls": ["everywhere"],
-    "_tags": ["unofficial", "broken", "unmaintained"],
+    "allowUrls": [
+      "everywhere"
+    ],
+    "_tags": [
+      "unofficial",
+      "broken",
+      "unmaintained"
+    ],
     "scriptSignature": "<ommitted>",
     "scriptPublicKey": "<ommitted>",
     "_feeds": {
@@ -3847,5 +4555,77 @@
       "releases": "https://github.com/Alex-451/grayjay-media.ccc-plugin/releases.atom"
     },
     "_installUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/MediaCccConfig.json"
+  },
+  {
+    "name": "Generated",
+    "platformUrl": "https://example.com",
+    "description": "Fully featured example source generated by @grayjay-sources/source-generator",
+    "author": "GrayJay Sources",
+    "authorUrl": "https://github.com/grayjay-sources",
+    "sourceUrl": "https://github.com/grayjay-sources/grayjay-source-generated/releases/latest/download/config.json",
+    "scriptUrl": "./script.js",
+    "repositoryUrl": "https://github.com/grayjay-sources/grayjay-source-generated",
+    "version": 2,
+    "iconUrl": "https://example.com/favicon.ico",
+    "id": "3419d6b1-b6be-478f-b9f8-d2c0ba870f8e",
+    "scriptSignature": "OKMxJ379wcwWXtmqyiDQXtveW5iVOnWfV1x6RHoD6bNYqrUTgrFbSt9mkJnEjgvNhijcK9RBal5eI2TmsPICCMeSrk+rQblOCyD30DAreG/cJiGcAhYR9plBCFP+GO85PYNZnZ1YjDQA9ycr0DgwRNXdEFQVtlg2A+wcCK1LVOnVYnO+tHRsR0wrZOxpkEsVgPFmPFy0FrvcCeNkJx2Mwxd62mpOpYiT/hbN5gGk3u7zy4BBfR+kwsvDzzI4KQQyGTNzrvgXpKV9D2jIBIQ+fUUoFXNAlGTo3qxSbG6EMiI9+oP1LXJmV59e6dJdaXG+Z7vdbvBwIWXUUY2zsVoIjw==",
+    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArvwaRFojStG4x7pgX3Fe\rvuJO/hl0u+hx693mH2LBkGBmJXVz5qKqSV3Y4hp2WDRvcqZ1t26JfdWfKuYUGO5L\rTY7CZ0ig4HinH072ante4QnvPyhmf3s/4MndZET1cs1pKg2zCkeUTzjUGQEpYp46\roX+YjdR4lI7eqEQqLMxU7YFrj9+B8fOayNcFKT9hPe/Xz1YOG05JSlbVJ9iLdDF7\r1lkt6Sk2pF4zxr+dDa+jNPLvETbGSbd0TM2NB5nC1+T7hYAbm6lKXDi2PLKAuod6\rhr+WqRMFIkXZlfoGGxuGW3NPamwk4HBVJv9PklAdEMJ60L848+oRuC0/vT9rH+E3\rPQIDAQAB",
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": false,
+    "allowUrls": [
+      "example.com",
+      ".example.com",
+      "api.example.com",
+      ".api.example.com",
+      "backup.example.com",
+      ".backup.example.com"
+    ],
+    "authentication": {
+      "loginUrl": "https://example.com/login",
+      "completionUrl": "https://example.com",
+      "domainHeadersToFind": {
+        "api.example.com": [
+          "authorization",
+          "cookie"
+        ]
+      },
+      "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
+    },
+    "supportedClaimTypes": [
+      27
+    ],
+    "settings": [
+      {
+        "variable": "baseUrl",
+        "name": "API Server",
+        "description": "Select which API server to use",
+        "type": "Dropdown",
+        "default": "https://api.example.com",
+        "options": [
+          "https://api.example.com",
+          "https://backup.example.com"
+        ]
+      },
+      {
+        "variable": "enableDebugLogging",
+        "name": "Enable Debug Logging",
+        "description": "Enable detailed logging for debugging purposes",
+        "type": "Boolean",
+        "default": "false"
+      }
+    ],
+    "changelog": {
+      "1": [
+        "Initial release"
+      ]
+    },
+    "constants": {
+      "defaultHeaders": {}
+    },
+    "_installUrl": "https://github.com/grayjay-sources/grayjay-source-generated/releases/latest/download/config.json"
   }
 ]
