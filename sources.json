@@ -2128,8 +2128,8 @@
     "description": "Online media library for German television broadcasters",
     "author": "Björn Eberhardt",
     "authorUrl": "https://8bj.de",
-    "sourceUrl": "https://windowsfreak.github.io/Mediathek/MediathekConfig.json",
-    "repositoryUrl": "https://github.com/windowsfreak/Mediathek/tree/main",
+    "sourceUrl": "https://grayjay-sources.github.io/grayjay-source-mediathekview/MediathekConfig.json",
+    "repositoryUrl": "https://github.com/grayjay-sources/grayjay-source-mediathekview",
     "scriptUrl": "./MediathekScript.js",
     "version": 23,
     "iconUrl": "./mediathek.png",
@@ -2142,10 +2142,10 @@
       "utstreaming.zdf.de",
       "everywhere"
     ],
-    "_tags": ["unofficial", "unmaintained", "broken", "german"],
+    "_tags": ["unofficial", "working","german"],
     "_feeds": {
-      "commits": "https://github.com/windowsfreak/Mediathek/commits/main.atom",
-      "releases": "https://github.com/windowsfreak/Mediathek/releases.atom"
+      "commits": "https://github.com/grayjay-sources/grayjay-source-mediathekview/commits/main.atom",
+      "releases": "https://github.com/grayjay-sources/grayjay-source-mediathekview/releases.atom"
     }
   },
   {
