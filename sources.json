@@ -1872,6 +1872,30 @@
     "supportedClaimTypes": [16]
   },
   {
+    "_tags": ["unofficial", "nsfw"],
+    "name": "Kemono",
+    "description": " Grayjay Kemono Plugin ",
+    "author": "Nrwh1",
+    "authorUrl": "https://github.com/Nrwh1",
+    "platformUrl": "https://kemono.cr/",
+    "sourceUrl": "https://github.com/Nrwh1/grayjay-plugin-kemono/raw/main/KemonoConfig.json",
+    "repositoryUrl": "https://github.com/Nrwh1/grayjay-plugin-kemono",
+    "scriptUrl": "./KemonoScript.js",
+    "version": 1,
+    "iconUrl": "./kemono_logo.png",
+    "id": "ad18112a-b951-4b4c-9f7e-492ed0e8e806",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": ["Http","DOMParser"],
+    "allowEval": false,
+    "allowUrls": ["everywhere"],
+    "_installUrl": "https://github.com/Nrwh1/grayjay-plugin-kemono/raw/main/KemonoConfig.json",
+    "_feeds": {
+      "commits": "https://github.com/Nrwh1/grayjay-plugin-kemono/commits/main.atom",
+      "releases": "https://github.com/Nrwh1/grayjay-plugin-kemono/releases.atom"
+    }
+  },
+  {
     "name": "LibriVox (Alpha)",
     "description": "Acoustical liberation of books in the public domain",
     "author": "Stefan Cruz",
