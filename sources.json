@@ -3871,5 +3871,41 @@
       "releases": "https://github.com/Alex-451/grayjay-media.ccc-plugin/releases.atom"
     },
     "_installUrl": "https://raw.githubusercontent.com/Alex-451/grayjay-media.ccc-plugin/main/MediaCccConfig.json"
+  },
+  {
+    "id": "9c87a5e2-3f41-4b8a-9d2e-7f6c8a1b3d4e",
+    "_tags": ["working"],
+    "name": "PreserveTube",
+    "platformUrl": "https://preservetube.com/donate",
+    "description": "PreserveTube is a time capsule for YouTube videos! It allows you to preserve any YouTube video, creating a snapshot that will always be available even if the original video disappears or is taken down.",
+    "author": "Stefan Cruz",
+    "authorUrl": "",
+    "repositoryUrl": "https://github.com/stefancruz/grayjay-plugin-preservetube",
+    "sourceUrl": "https://stefancruz.github.io/grayjay-plugin-preservetube/PreserveTubeConfig.json",
+    "scriptUrl": "./PreserveTubeScript.js",
+    "iconUrl": "./PreserveTubeIcon.png",
+    "version": 1,
+    "scriptSignature": "VxxgkHH7He7Mj2cLTOwBnpFqtmZxhSlINvfT6v6RD1oADAOHeYO+jCtaEGx5lmQAtm7bRHuCqM/xapZum84+L73E15OnIXQ1NDH/qM/n0eNIJilAc2Xy/J7hZc5VKE7FxDHySzgC40lHpLkP9wnZoT5Kak8OgDwnBi401/0Z3r5Zeh4118gC+v+F31tu+L7E0SXLoNecuI5+eone2MvOO1RCFhN1zzDuPanopXg8LSnQDGn8pK4ZJKFetqAUSkJOfNiHTxWoH40uchK+Nz1trpcVyounQLHE1DTPlUuD+X9Dl018Upahf05tBXxy0eOb+itl5ud/hALMGbRyNXVuNA==",
+    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs5shGUhmdmWJtDag0oDSV8KiCvAOmXBOxAVzWQs4uxLJ7IG6p99YlyTHnEi3B1VuIhUz/FcSkL7g/f20JQweNLTCOGlUR44+5dbaP8ZlfdbAmXYwie7nNKJX6rnXw+G9u9QQ1DBQZttIlX+d6acwldAqftVA+GUiN5uHWgtAHnFkTNZMSF3h4vq1ucJdF1CpWcPRW74/S4r841Afs29CAICtcduDoTaX4v4b/wrzDw0coYaEwlk2Gb8rRuD7ZV7G+Df1yZtFWhnMB7VhiHGxxIqoVEFoTZ5/FNhw0HAiMlWPowxInm/zwyI0HunDFB3gwilsPBtnA1WvOvbChVh5fQIDAQAB",
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      "preservetube.com",
+      ".archive.party"
+    ],
+    "captcha": {
+      "userAgent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.200 Mobile Safari/537.36",
+      "captchaUrl": null,
+      "completionUrl": "https://preservetube.com/watch?*"
+    },
+    "settings": [],
+    "_installUrl": "https://stefancruz.github.io/grayjay-plugin-preservetube/PreserveTubeConfig.json",
+    "_feeds": {
+      "commits": "https://github.com/stefancruz/grayjay-plugin-preservetube/commits/master.atom",
+      "releases": "https://github.com/stefancruz/grayjay-plugin-preservetube/releases.atom"
+    }
   }
 ]
