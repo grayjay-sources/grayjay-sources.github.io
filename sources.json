@@ -2530,7 +2530,7 @@
     "_tags": ["working"],
     "name": "PreserveTube",
     "platformUrl": "https://preservetube.com/donate",
-    "description": "PreserveTube is a time capsule for YouTube videos! It allows you to preserve any YouTube video, creating a snapshot that will always be available.",
+    "description": "PreserveTube is a time capsule for YouTube videos!",
     "author": "Stefan Cruz",
     "authorUrl": "",
     "repositoryUrl": "https://github.com/stefancruz/grayjay-plugin-preservetube",
