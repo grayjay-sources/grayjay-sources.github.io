@@ -1,4 +1,38 @@
 [
+{
+    "_tags": ["unofficial", "untested"],
+  "name": "KAN Israel",
+  "description": "Browse and watch Kan 11 shows and podcasts from kan.org.il.",
+  "author": "Alon Ben Refael",
+  "authorUrl": "https://github.com/abrefael",
+
+  "platformUrl": "https://www.kan.org.il/",
+  "sourceUrl": "https://raw.githubusercontent.com/abrefael/kan_il_grayjay_plugin/refs/heads/main/manifest.json",
+  "repositoryUrl": "https://github.com/abrefael/kan_il_grayjay_plugin",
+
+  "scriptUrl": "./main.js",
+  "version": 4,
+  "iconUrl": "./icon.png",
+
+  "id": "b385b7a4-5524-4408-a6ae-a36a37312aff",
+
+  "packages": ["Http"],
+  "allowEval": false,
+
+  "allowUrls": [
+    "kan.org.il",
+    "www.kan.org.il",
+    "kan11webpstreaming.akamaized.net",
+    "kan11w.us-east-1.linodeobjects.com",
+    "api.kan.org.il",
+    "cdnapisec.kaltura.com"
+  ],
+
+  "settings": [],
+  "changelog": {
+    "1": ["Initial dev release"]
+  }
+},
   {
     "_tags": [
         "working",
