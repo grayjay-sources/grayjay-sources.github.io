@@ -1,5 +1,183 @@
 [
   {
+    "_tags": [
+        "working",
+        "unofficial",
+        "video",
+        "short-form"
+    ],
+    "name": "Coub",
+    "description": "Coub is a Russian video streaming platform that allows users to create and share looped audio-visual collages up to ten seconds long",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-coub",
+    "platformUrl": "https://coub.com",
+    "sourceUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-coub/raw/main/grayjay-plugin-coub.json",
+    "repositoryUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-coub",
+    "scriptUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-coub/raw/main/grayjay-plugin-coub-script.js",
+    "version": 1,
+    "iconUrl": "https://external-content.duckduckgo.com/ip3/coub.com.ico",
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser",
+        "Utilities"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": true,
+    "allowUrls": [
+        "coub.com"
+    ],
+    "supportedClaimTypes": [
+        1,
+        2,
+        16
+    ],
+    "authentication": null,
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial version",
+            "Fixed RatingLikes.likes to pass number instead of object for Android compatibility",
+            "Updated search, searchChannels, and searchSuggestions to use correct Coub API endpoints",
+            "Fixed searchChannelContents null query parameter error on Android",
+            "Implemented proper channel info fetching using timeline API",
+            "Changed plugin id to UUID format"
+        ]
+    }
+},
+{
+    "_tags": [
+        "working",
+        "unofficial",
+        "audio",
+        "music"
+    ],
+    "name": "Suno",
+    "description": "Suno is an AI music generation platform that allows users to create and share songs",
+    "author": "Grayjay Dev",
+    "authorUrl": "http://localhost",
+    "platformUrl": "https://suno.com",
+    "sourceUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-suno/raw/main/grayjay-plugin-suno-config.json",
+    "repositoryUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-suno",
+    "scriptUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-suno/raw/main/grayjay-plugin-suno-script.js",
+    "version": 1,
+    "iconUrl": "./icon.png",
+    "id": "87654321-4321-4321-4321-abcdefabcdef",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser",
+        "Utilities"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": true,
+    "allowUrls": [
+        "suno.com",
+        "cdn1.suno.ai",
+        "cdn2.suno.ai",
+        "studio-api.suno.ai",
+        "studio-api.prod.suno.com"
+    ],
+    "supportedClaimTypes": [
+        1,
+        2,
+        16
+    ],
+    "authentication": null,
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial version",
+            "Updated video sources to use MP4 URL for playback",
+            "Set MP4 as video source for proper video playback",
+            "Trimmed trailing slash from username in channel functions",
+            "Switched getChannelContents to use API endpoint for recent clips",
+            "Updated getChannel to use API for profile info",
+            "Updated getChannel and getChannelContents to use recent_clips API for profile and clips data",
+            "Updated getHome to use living_radio API for multiple songs",
+            "Updated getHome to use recent clips API",
+            "Updated getHome to use trending clips API",
+            "Updated getHome to use playlist API for home feed",
+            "Added playlist support functions",
+            "Updated getHome to use specific Suno playlist as home feed",
+            "Fixed getContentDetails to fetch clip data for accurate author and metadata",
+            "Updated API endpoint for getContentDetails to /api/clip/"
+        ]
+    }
+},
+
+{
+    "_tags": ["unofficial", "untested"],
+    "name": "Pluto.tv",
+    "description": "Pluto.tv videos",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://bitbucket.org/grayjayplugins",
+    "platformUrl": "https://pluto.tv",
+    "sourceUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-plutotv/raw/branch/main/grayjay-plugin-plutotv-config.json",
+    "repositoryUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-plutotv",
+    "scriptUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-plutotv/raw/branch/main/grayjay-plugin-plutotv-script.js",
+    "version": 3,
+    "iconUrl": "https://pluto.tv/assets/images/favicon/regular-d820a2316e4e12a928e30d5ccb4318f1.png",
+    "id": "9af8a030-9164-4981-b20f-1e1c72d11e60",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": true,
+    "allowUrls": [
+        ".pluto.tv",
+        ".plutotv.net",
+        ".prd.pluto.tv",
+        ".silo-hybrik.pluto.tv.s3.amazonaws.com",
+        ".raw.githubusercontent.com"
+    ],
+    "supportedClaimTypes": [
+        1,
+        2,
+        16
+    ],
+    "enableLiveContent": true,
+    "authentication": {
+        "type": "bearer",
+        "headerName": "authorization",
+        "helpText": "Enter your Pluto TV Bearer token (optional, for on-demand content)"
+    },
+    "settings": [
+        {
+            "variable": "enableAlternatePlutoStreams",
+            "name": "Enable Alternate Pluto Streams",
+            "description": "Allow the plugin to fall back to alternate Pluto stream URLs when the official endpoint fails.",
+            "type": "Boolean",
+            "default": "true"
+        },
+        {
+            "variable": "showFallbackToasts",
+            "name": "Show Fallback Toasts",
+            "description": "Display a toast message whenever an alternate Pluto stream is used.",
+            "type": "Boolean",
+            "default": "true"
+        }
+    ],
+    "changelog": {
+        "1": [
+            "Initial version"
+        ],
+        "2": [
+            "Added fallback streams plus user settings for alternate streams and toast notifications"",
+            "Fixed config defaults to ensure plugin installs cleanly"
+        ],
+        "3": [
+            "Home and search feeds now reuse alternates when Pluto's API fails so users still see live channels"
+        ]
+    }
+},
+  {
     "_tags": ["unofficial", "untested"],
     "name": "Adventures in Odyssey Club",
     "description": "Subscription service for the award-winning, original audio drama series enjoyed by the whole family.",
