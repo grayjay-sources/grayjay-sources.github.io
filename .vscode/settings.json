@@ -2,7 +2,7 @@
   "json.schemas": [
     {
       "fileMatch": ["sources.json"],
-      "url": "file:///C:/Users/blusc/AppData/Local/Temp/grayjay-sources.github.io/sources.schema.json"
+      "url": "./sources.schema.json"
     }
   ],
   "json.schemas.remote": [
