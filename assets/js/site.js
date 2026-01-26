@@ -218,9 +218,13 @@ function filterItems(items) {
 async function populateCardsContainer(url) {
   try {
     const response = await fetch(url);
-    const data = await response.json();
+    let data = await response.json();
     const cardsContainer = document.getElementById("cards-container");
     cardsContainer.innerHTML = "";
+    
+    // Sort data by source name case-insensitively
+    data.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
+    
     data.forEach((item) => {
       item = fixData(item);
       const cardHtml = generateCard(item);
