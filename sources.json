@@ -1,5 +1,58 @@
 [
   {
+    "_tags": [
+        "working",
+        "unofficial",
+        "meditation"
+    ],
+    "name": "earthcam-com",
+    "description": "EarthCam live webcams and streams",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://bitbucket.org/grayjayplugins",
+    "platformUrl": "https://earthcam.com",
+    "sourceUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-earthcam-com/raw/branch/main/grayjay-plugin-earthcam-com-config.json",
+    "repositoryUrl": "http://localhost:8035/grayjay-plugin-earthcam-com",
+    "scriptUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-earthcam-com/raw/branch/main/grayjay-plugin-earthcam-com-script.js",
+    "version": 1,
+    "iconUrl": "https://www.google.com/s2/favicons?domain=earthcam.com&sz=64",
+    "id": "3267523f-eadf-4541-a18c-4b18e05f9d33",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser",
+        "Utilities"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": true,
+    "allowUrls": [
+        ".earthcam.com",
+        ".earthcam.net",
+        ".myearthcam.com",
+        ".youtube.com",
+        ".youtube-nocookie.com",
+        ".youtu.be"
+    ],
+    "supportedClaimTypes": [
+        1,
+        2,
+        3,
+        16
+    ],
+    "authentication": null,
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Live stream playback support"
+            ,"Playlist-based stream extraction"
+            ,"Archive playback support"
+            ,"Timelapse support"
+            ,"Search and channel discovery"
+            ,"Detail pages link back to channel pages"
+        ]
+    }
+},
+  {
     "_tags": ["unofficial", "untested"],
     "name": "Adventures in Odyssey Club",
     "description": "Subscription service for the award-winning, original audio drama series enjoyed by the whole family.",
