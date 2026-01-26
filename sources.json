@@ -1,5 +1,76 @@
 [
     {
+    "_tags": [
+        "working",
+        "unofficial",
+        "music"
+    ],
+    "name": "Audius Music",
+    "description": "Audius music platform",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://bitbucket.org/grayjayplugins",
+    "platformUrl": "https://audius.co/",
+    "sourceUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-audius-co/raw/main/grayjay-plugin-audius-co-config.json",
+    "repositoryUrl": "http://localhost:8035/grayjay-plugin-audius-co",
+    "scriptUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-audius-co/raw/main/grayjay-plugin-audius-co-script.js",
+    "version": 1,
+    "iconUrl": "https://www.google.com/s2/favicons?domain=audius.co&sz=64",
+    "id": "9c9ed2e5-5d5f-4039-b955-b4de6a989b78",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser",
+        "Utilities"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": true,
+    "allowUrls": [
+        ".audius.co",
+        ".audius.org",
+        ".theblueprint.xyz",
+        ".figment.io",
+        ".cultur3stake.com",
+        ".audius.rickyrombo.com",
+        ".megaphone.fm",
+        ".podtrac.com",
+        ".cloudfront.net",
+        ".spreaker.com",
+        ".podigee-cdn.net",
+        ".simplecastaudio.com",
+        ".simplecastcdn.com",
+        ".transistor.fm",
+        ".transistorcdn.com",
+        ".fastcast.ai",
+        ".rss.com",
+        ".redcircle.com",
+        ".omnycontent.com",
+        ".pscrb.fm",
+        ".mgln.ai",
+        ".op3.dev",
+        ".digitalia.fm",
+        ".dgt.fm",
+        ".awesound.com",
+        ".castos.com",
+        ".barryeatonshowtime.com"
+    ],
+    "supportedClaimTypes": [
+        1,
+        2,
+        16,
+        17
+    ],
+    "authentication": null,
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial release with search, channel, playlist support",
+            "Playback fixes for gated tracks and direct stream endpoints",
+            "Expanded allowUrls for podcast media/image CDNs"
+        ]
+    }
+},
+    {
         "_tags": [
             "unofficial",
             "untested"
