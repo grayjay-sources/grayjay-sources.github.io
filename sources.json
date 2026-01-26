@@ -1,6 +1,6 @@
 [
 {
-    "_tags": ["unofficial", "untested"],
+  "_tags": ["unofficial", "untested"],
   "name": "KAN Israel",
   "description": "Browse and watch Kan 11 shows and podcasts from kan.org.il.",
   "author": "Alon Ben Refael",
@@ -32,8 +32,7 @@
   "changelog": {
     "1": ["Initial dev release"]
   }
-},
-  {
+}, {
     "_tags": [
         "working",
         "unofficial",
@@ -80,8 +79,7 @@
             "Changed plugin id to UUID format"
         ]
     }
-},
-{
+}, {
     "_tags": [
         "working",
         "unofficial",
@@ -141,9 +139,7 @@
             "Updated API endpoint for getContentDetails to /api/clip/"
         ]
     }
-},
-
-{
+}, {
     "_tags": ["unofficial", "untested"],
     "name": "Pluto.tv",
     "description": "Pluto.tv videos",
@@ -203,15 +199,14 @@
             "Initial version"
         ],
         "2": [
-            "Added fallback streams plus user settings for alternate streams and toast notifications"",
+            "Added fallback streams plus user settings for alternate streams and toast notifications",
             "Fixed config defaults to ensure plugin installs cleanly"
         ],
         "3": [
             "Home and search feeds now reuse alternates when Pluto's API fails so users still see live channels"
         ]
     }
-},
-  {
+}, {
     "_tags": ["unofficial", "untested"],
     "name": "Adventures in Odyssey Club",
     "description": "Subscription service for the award-winning, original audio drama series enjoyed by the whole family.",
