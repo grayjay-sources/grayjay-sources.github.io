@@ -1,6 +1,105 @@
 [
   {
     "_tags": ["unofficial", "untested"],
+  "name": "RuTube",
+  "description": "Russian video platform",
+  "author": "Grayjay Plugins",
+  "authorUrl": "https://codeberg.org/GrayjayPlugins",
+  "platformUrl": "https://rutube.ru",
+  "sourceUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-rutube/raw/branch/main/grayjay-plugin-rutube-config.json",
+  "repositoryUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-rutube",
+  "scriptUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-rutube/raw/branch/main/grayjay-plugin-rutube-script.js",
+  "version": 2,
+  "iconUrl": "https://www.google.com/s2/favicons?domain=rutube.ru&sz=64",
+  "id": "d4e5f6a7-b8c9-0123-def0-4567890abcde",
+  "scriptSignature": "",
+  "scriptPublicKey": "",
+  "packages": [
+    "Http",
+    "DOMParser",
+    "Utilities"
+  ],
+  "allowEval": false,
+  "allowAllHttpHeaderAccess": true,
+  "allowUrls": [
+    ".rutube.ru",
+    "rutube.ru",
+    "www.rutube.ru",
+    ".rutubecdn.ru",
+    ".rutubecdn.com",
+    "bl.rutube.ru",
+    "vd.rutube.ru"
+  ],
+  "supportedClaimTypes": [1, 2, 16],
+  "authentication": null,
+  "settings": [],
+  "changelog": {
+    "1": [
+      "Initial version with video feed and details support",
+      "Added RuTube CDN domains (rutubecdn.ru, rutubecdn.com) to allowUrls for video streaming",
+      "Fixed HLS streaming by using HLSSource instead of VideoUrlSource for m3u8 streams"
+    ],
+    "2": [
+      "Fixed Android playback by safely parsing HLS URLs and author/title fields"
+    ]
+  }
+},
+  {
+    "_tags": ["unofficial", "untested"],
+    "name": "Xumo",
+    "description": "Xumo free streaming service with 100+ live TV channels",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-xumo",
+    "platformUrl": "https://xumo.com",
+    "sourceUrl": "",
+    "repositoryUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-xumo/raw/main/grayjay-plugin-xumo-config.json",
+    "scriptUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-xumo/raw/main/grayjay-plugin-xumo-script.js",
+    "version": 1,
+    "iconUrl": "https://play.xumo.com/favicons/favicon-196x196.png",
+    "id": "5c47e6ed-ecbe-4817-9443-5fb47ff684ec",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": true,
+    "allowUrls": [
+        ".xumo.com",
+        ".xumo.tv",
+        ".api.xumo.com",
+        ".image.xumo.com",
+        ".images.xumo.com",
+        ".valencia-app-mds.xumo.com",
+        ".valencia-app.xumo.com",
+        ".live-content.xumo.com",
+        ".live-content-cf.xumo.com",
+        ".wurl.tv",
+        ".cloudfront.net",
+        ".amagi.tv",
+        ".frequency.stream",
+        ".otteravision.com",
+        ".akamaized.net",
+        "raw.githubusercontent.com"
+    ],
+    "supportedClaimTypes": [
+        1,
+        2,
+        16
+    ],
+    "enableLiveContent": true,
+    "authentication": null,
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial release",
+            "Homepage support",
+            "Partial playback support"
+        ]
+    }
+},
+  {
+    "_tags": ["unofficial", "untested"],
     "name": "Adventures in Odyssey Club",
     "description": "Subscription service for the award-winning, original audio drama series enjoyed by the whole family.",
     "author": "CATEIN",
