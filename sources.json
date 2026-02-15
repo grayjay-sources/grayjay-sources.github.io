@@ -1,4 +1,356 @@
-[
+[{
+    "_tags": [
+        "working",
+        "unofficial",
+        "podcast"
+    ],
+    "name": "podcastindex-org",
+    "description": "Podcast platform",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://bitbucket.org/grayjayplugins",
+    "platformUrl": "https://podcastindex.org",
+    "sourceUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-podcastindex-org/raw/branch/main/grayjay-plugin-podcastindex-org-config.json",
+    "repositoryUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-podcastindex-org",
+    "scriptUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-podcastindex-org/raw/branch/main/grayjay-plugin-podcastindex-org-script.js",
+    "version": 2,
+    "iconUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-podcastindex-org/raw/branch/main/favicon.png",
+    "id": "78ad78c6-c355-4ed5-901d-dbec1a262de5",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": false,
+    "allowUrls": [
+        ".podcastindex.org",
+        ".anchor.fm",
+        ".cloudfront.net",
+        ".simplecast.com",
+        ".cdn.simplecast.com",
+        ".transistor.fm",
+        ".rss.com",
+        ".blubrry.com",
+        ".podserve.fm",
+        ".op3.dev",
+        ".podtrac.com",
+        ".radiolaser.fr",
+        ".acast.com",
+        ".sphinx.acast.com",
+        ".stitcher2.acast.com",
+        ".americaoutloud.news",
+        ".www.americaoutloud.news",
+        ".animenewsnetwork.com",
+        ".www.animenewsnetwork.com",
+        ".buzzsprout.com",
+        ".audio.buzzsprout.com",
+        ".storage.buzzsprout.com",
+        ".www.buzzsprout.com",
+        ".captivate.fm",
+        ".artwork.captivate.fm",
+        ".castos.com",
+        ".episodes.castos.com",
+        ".cjsw.com",
+        ".d3cthc4vkm06yo.cloudfront.net",
+        ".d3ctxlq1ktw2nl.cloudfront.net",
+        ".d3mww1g1pfq2pt.cloudfront.net",
+        ".d3t3ozftmdmh3i.cloudfront.net",
+        ".d3wo5wojvuv7l.cloudfront.net",
+        ".fastcast.ai",
+        ".api.fastcast.ai",
+        ".audio.fastcast.ai",
+        ".image.fastcast.ai",
+        ".feedpress.com",
+        ".tracking.feedpress.com",
+        ".feedpress.me",
+        ".firstory-cdn.me",
+        ".image.firstory-cdn.me",
+        ".firstory.me",
+        ".file.cdn.firstory.me",
+        ".fm.cdn.cloudflare.net",
+        ".audio.transistor.fm.cdn.cloudflare.net",
+        ".audio.transistor.fm",
+        ".joshbersin.com",
+        ".kabbalahmedia.info",
+        ".cdn.kabbalahmedia.info",
+        ".files.kabbalahmedia.info",
+        ".libsyn.com",
+        ".content.libsyn.com",
+        ".static.libsyn.com",
+        ".traffic.libsyn.com",
+        ".pippa.io",
+        ".assets.pippa.io",
+        ".podigee-cdn.net",
+        ".adswizz.podigee-cdn.net",
+        ".audio.podigee-cdn.net",
+        ".images.podigee-cdn.net",
+        ".pscrb.fm",
+        ".radio-pub.be",
+        ".radiofrance.fr",
+        ".api.radiofrance.fr",
+        ".www.radiofrance.fr",
+        ".redcircle.com",
+        ".media.redcircle.com",
+        ".rss.com",
+        ".content.rss.com",
+        ".media.rss.com",
+        ".s3-us-west-2.amazonaws.com",
+        ".simplecastaudio.com",
+        ".injector.simplecastaudio.com",
+        ".simplecastcdn.com",
+        ".image.simplecastcdn.com",
+        ".sports56whbq.com",
+        ".transistor.fm",
+        ".audio.transistor.fm",
+        ".media.transistor.fm",
+        ".transistorcdn.com",
+        ".img.transistorcdn.com"
+    ],
+    "supportedClaimTypes": [
+        1,
+        2,
+        16,
+        19
+    ],
+    "authentication": null,
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial release with channel/podcast search and episode playback; Enclosure handling and thumbnail improvements; Expanded allowUrls for common podcast CDNs and trackers"
+        ]
+    }
+},{
+    "name": "Owncast",
+    "description": "Self-hosted live streaming platform",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://bitbucket.org/grayjayplugins",
+    "platformUrl": "https://owncast.online",
+    "sourceUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-owncast/raw/branch/main/grayjay-plugin-owncast-config.json",
+    "repositoryUrl": "http://localhost:8035/Dev%20Plugins/dev-api/grayjay-plugin-owncast",
+    "scriptUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-owncast/raw/branch/main/grayjay-plugin-owncast-script.js",
+    "version": 1,
+    "iconUrl": "./favicon.png",
+    "id": "c3b2a1e4-5678-4abc-9def-1234567890ab",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": true,
+    "allowUrls": [
+        ".silo.ffmuc.net",
+        ".owncast.online",
+        ".owncast.tv",
+        "tv.theindiebeat.fm",
+        "otcs.minuspoint.com",
+        "live.retrostrange.com",
+        "mthrbord.tv",
+        "watch.chiptune.fm",
+        "watch.vapor.fm",
+        "online.geyetv.com",
+        "wf.newscentral.ng",
+        "swimrewind.com",
+        "live.omroepnet.nl",
+        "tv.nilustv.com",
+        "owncast.mellowmountainradio.com",
+        "wochenschautv.com",
+        "watch.owncast.online",
+        "live.24hrkpop.com",
+        "stream.flash-radio.de",
+        "live.theroseburgreceiver.com",
+        "mywbai.us",
+        "leighton.prcht.host",
+        "myliveisoc.live",
+        "tv.kenobisboch.it",
+        "live.simontv.org",
+        "live.gillymomo.com",
+        "stream.radiohoogeveen.nl",
+        "video.lpam.be",
+        "cast.otternet.ca",
+        "live.smittystream.com",
+        "live.iolambc.com",
+        "tv.radio90.fm",
+        "stream.nagafm.in",
+        "live.nitetime.net",
+        "myddptv.xyz",
+        "theupperleft.thesprawl.online",
+        "live.rokjok.fm",
+        "videostream.reality-sound.de",
+        "myddptv.site",
+        "stream.lalalatvchannel.com",
+        "livestream.cobrasoft.org",
+        "livestream.rasat.tv",
+        "owncast3.zuidwest.cloud",
+        "ios.eti.br",
+        "tv.dayaya.net",
+        "owncast.dvshome.org",
+        "media.mnrails.com",
+        "stream.cosigo.io",
+        "vault.waxmuseumradio.net",
+        "event.rasat.tv",
+        "tvrestaurandovidas.ovalcast.com",
+        "owncast.afterswim.org",
+        "tv.theblaze983.com",
+        "leaderboard.sim-racing-center.de",
+        "admin.mcoctv.us",
+        "tv.mj00.top",
+        "live.otternet.se",
+        "mystream.panafricanssi.org",
+        "directory.owncast.online"
+    ],
+    "supportedClaimTypes": [
+        1,
+        2,
+        16
+    ],
+    "enableLiveContent": true,
+    "authentication": null,
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial release",
+            "Homepage support",
+            "Livestream playback"
+        ]
+    }
+},{
+    "name": "beatfly-music-xyz",
+    "description": "Music and audio platform",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://bitbucket.org/grayjayplugins",
+    "platformUrl": "https://beatfly-music.xyz/",
+    "sourceUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-beatfly-music-xyz/raw/main/grayjay-plugin-beatfly-music-xyz-config.json",
+    "repositoryUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-beatfly-music-xyz",
+    "scriptUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-beatfly-music-xyz/raw/main/grayjay-plugin-beatfly-music-xyz-script.js",
+    "version": 1,
+    "iconUrl": "https://player.beatfly-music.xyz/favicon.ico",
+    "id": "0759a307-9586-4531-84e3-303655ca2e92",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": false,
+    "allowUrls": [
+        ".beatfly-music.xyz",
+        ".player.beatfly-music.xyz"
+    ],
+    "authentication": null,
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Homepage with featured albums",
+            "Search for tracks",
+            "Album/playlist support with track playback",
+            "Direct track playback with audio streaming",
+            "Recommendations showing featured albums",
+            "Caching for homepage and playlists (5 min TTL)"
+        ]
+    }
+},{
+    "name": "DTube",
+    "description": "A decentralized video platform running on the Hive blockchain.",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://codeberg.org/GrayjayPlugins",
+    "platformUrl": "https://d.tube",
+    "sourceUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-dtube/raw/main/grayjay-plugin-dtube-config.json",
+    "repositoryUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-dtube",
+    "scriptUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-dtube/raw/main/grayjay-plugin-dtube-script.js",
+    "version": 1,
+    "iconUrl": "https://d.tube/Logo_Black.svg",
+    "id": "d2c3e4f5-a6b7-8901-cdef-2345678901ab",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+        ".d.tube",
+        "d.tube",
+        "www.d.tube",
+        ".media.d.tube",
+        "sfgwdqbfgowdasnpqndp.supabase.co",
+        ".googleusercontent.com"
+    ],
+    "supportedClaimTypes": [
+        1
+    ],
+    "authentication": null,
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial release with video playback, channel support, and search functionality"
+        ]
+    }
+},{
+    "name": "xboxclips",
+    "description": "Xbox game clips and videos",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://codeberg.org/GrayjayPlugins",
+    "platformUrl": "https://www.xboxclips.com",
+    "sourceUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-xboxclips/raw/branch/main/grayjay-plugin-xboxclips-config.json",
+    "repositoryUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-xboxclips",
+    "scriptUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-xboxclips/raw/branch/main/grayjay-plugin-xboxclips-script.js",
+    "version": 1,
+    "iconUrl": "https://www.xboxclips.com/favicon.ico",
+    "id": "8a7b2c3d-4e5f-6789-abcd-ef1234567890",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+        ".xboxclips.com",
+        ".xboxlive.com",
+        ".xbox.com"
+    ],
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
+        ]
+    }
+},{
+    "name": "TeacherTube",
+    "description": "Educational video platform",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://codeberg.org/GrayjayPlugins",
+    "platformUrl": "https://teachertube.com",
+    "sourceUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-teachertube/raw/branch/main/grayjay-plugin-teachertube-config.json",
+    "repositoryUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-teachertube",
+    "scriptUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-teachertube/raw/branch/main/grayjay-plugin-teachertube-script.js",
+    "version": 1,
+    "iconUrl": "https://www.teachertube.com/favicon.ico",
+    "id": "aaecd394-51ba-4451-9fe9-184b535e6c8a",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": false,
+    "allowUrls": [
+        ".teachertube.com"
+    ],
+    "authentication": null,
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial release with TeacherTube support",
+            "Home feed with video browsing and metadata extraction",
+            "Video playback support for TeacherTube content",
+            "Search functionality to find TeacherTube videos",
+            "Partial channel support for browsing user content"
+        ]
+    }
+},
   {
     "_tags": ["unofficial", "untested"],
     "name": "Adventures in Odyssey Club",
