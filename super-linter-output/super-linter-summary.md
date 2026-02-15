@@ -14,7 +14,7 @@
 
 Super-linter detected linting errors
 
-For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/21571452861)
+For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/22034901377)
 
 Powered by [Super-linter](https://github.com/super-linter/super-linter)
 
@@ -23,7 +23,7 @@ Powered by [Super-linter](https://github.com/super-linter/super-linter)
 <summary>BIOME_FORMAT</summary>
 
 ```text
-Checked 10 files in 498ms. No fixes applied.
+Checked 10 files in 577ms. No fixes applied.
 Found 10 errors..vscode/launch.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Formatter would have printed the following content:
@@ -1189,7 +1189,7 @@ sources.json format ━━━━━━━━━━━━━━━━━━━━
      148      │ - ················"Support·for·getHome",
      149      │ - ················"Added·Faster·Randomizer·setting·for·logged·in·users",
      150      │ - ················"Added·Content·Groupings·setting",
-  9182 more lines truncated
+  9855 more lines truncated
 
 
 sources.schema.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1364,7 +1364,7 @@ format ━━━━━━━━━━━━━━━━━━━━━━━━�
 ```text
 The number of diagnostics exceeds the limit allowed. Use --max-diagnostics to increase it.
 Diagnostics not shown: 4082.
-Checked 13 files in 79s. No fixes applied.
+Checked 13 files in 81s. No fixes applied.
 Found 277 errors.
 Found 3814 warnings.
 Found 11 infos.assets/js/site.js:77:20 lint/style/useTemplate  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1778,17 +1778,17 @@ lint ━━━━━━━━━━━━━━━━━━━━━━━━━
 <summary>SPELL_CODESPELL</summary>
 
 ```text
-/github/workspace/sources.json:1344: Nam ==> Name
-/github/workspace/sources.json:1637: Nam ==> Name
-/github/workspace/sources.json:1774: ommitted ==> omitted
-/github/workspace/sources.json:1775: ommitted ==> omitted
-/github/workspace/sources.json:3324: comming ==> coming
-/github/workspace/sources.json:3532: necesities ==> necessities
-/github/workspace/sources.json:3544: necesities ==> necessities
-/github/workspace/sources.json:3556: necesities ==> necessities
-/github/workspace/sources.json:3872: didnt ==> didn't
-/github/workspace/sources.json:4248: ommitted ==> omitted
-/github/workspace/sources.json:4249: ommitted ==> omitted
+/github/workspace/sources.json:1377: Nam ==> Name
+/github/workspace/sources.json:1670: Nam ==> Name
+/github/workspace/sources.json:1807: ommitted ==> omitted
+/github/workspace/sources.json:1808: ommitted ==> omitted
+/github/workspace/sources.json:3473: comming ==> coming
+/github/workspace/sources.json:3681: necesities ==> necessities
+/github/workspace/sources.json:3693: necesities ==> necessities
+/github/workspace/sources.json:3705: necesities ==> necessities
+/github/workspace/sources.json:4021: didnt ==> didn't
+/github/workspace/sources.json:4428: ommitted ==> omitted
+/github/workspace/sources.json:4429: ommitted ==> omitted
 ```
 
 </details>
