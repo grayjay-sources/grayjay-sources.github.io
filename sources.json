@@ -692,24 +692,25 @@
     "platformUrl": "https://brighteon.com",
     "author": "GreyPluginDev",
     "authorUrl": "https://github.com/GreyPluginDev",
-    "sourceUrl": "https://grayjay-plugin-brighteon.pages.dev/BrighteonConfig.json",
+    "sourceUrl": "https://raw.githubusercontent.com/GreyPluginDev/grayjay-plugin-brighteon/refs/heads/master/BrighteonConfig.json",
     "repositoryUrl": "https://github.com/GreyPluginDev/grayjay-plugin-brighteon",
     "scriptUrl": "./BrighteonScript.js",
-    "version": 1,
+    "version": 2,
     "iconUrl": "./BrighteonIcon.png",
     "id": "9d10d388-e685-477d-a794-50d237257d84",
     "scriptSignature": "",
     "scriptPublicKey": "",
     "packages": ["Http"],
     "allowEval": false,
-    "allowUrls": [".brighteon.com"],
-    "settings": [],
-    "_tags": [],
-    "_installUrl": "https://grayjay-plugin-brighteon.pages.dev/BrighteonConfig.json",
-    "_feeds": {
-      "commits": "https://github.com/GreyPluginDev/grayjay-plugin-brighteon/commits/main.atom",
-      "releases": "https://github.com/GreyPluginDev/grayjay-plugin-brighteon/releases.atom"
-    }
+    "allowUrls": [
+      ".brighteon.com"
+    ],
+    "changelog": {
+      "2": [
+        "Update sourceUrl"
+      ]
+    },
+    "settings": []
   },
   {
     "name": "CDA",
