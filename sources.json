@@ -1913,7 +1913,7 @@
     "packages": ["Http"],
     "allowEval": false,
     "allowUrls": ["everywhere"],
-    "_tags": ["unofficial", "unmaintained", "unknown"],
+    "_tags": ["unofficial", "unmaintained", "unknown","archived"],
     "_feeds": {
       "commits": "https://github.com/skytunnel/GodResourcePluginUnoffical/commits/dev.atom",
       "releases": "https://github.com/skytunnel/GodResourcePluginUnoffical/releases.atom"
