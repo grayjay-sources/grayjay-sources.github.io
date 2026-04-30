@@ -4859,5 +4859,79 @@
         "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
       ]
     }
+  },
+  {
+    "name": "Trilogy Plus (Beta)",
+    "platformUrl": "https://trilogyplus.com",
+    "description": "Trilogy Plus is an immersive streaming service with the best entertainment in scambaiting, scam-busting, travel and true crime.",
+    "author": "Freeb",
+    "authorUrl": "https://github.com/b-risk",
+    "sourceUrl": "https://raw.githubusercontent.com/b-risk/grayjay-trilogy-plus/refs/heads/main/TrilogyPlusConfig.json",
+    "scriptUrl": "./TrilogyPlusScript.js",
+    "repositoryUrl": "https://github.com/b-risk/grayjay-trilogy-plus",
+    "version": 1,
+    "iconUrl": "./TrilogyPlusIcon.png",
+    "id": "ca4747c0-7fff-4909-a448-545f54e7f8ee",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "Utilities",
+        "DOMParser"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": false,
+    "allowUrls": [
+        ".trilogyplus.com",
+        ".vhx.com",
+        ".vhx.tv",
+        ".vimeo.com",
+        ".vimeocdn.com",
+        ".imgix.net",
+        ".cloudfront.net",
+        ".gravatar.com",
+        "ui-avatars.com"
+    ],
+    "authentication": {
+        "loginUrl": "https://www.trilogyplus.com/login",
+        "cookiesToFind": [
+            "_session",
+            "__cf_bm"
+        ],
+        "headersToFind": [
+            "Authorization"
+        ],
+        "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
+    },
+    "captcha": {
+        "userAgent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.200 Mobile Safari/537.36",
+        "cookiesToFind": [
+            "_session",
+            "__cf_bm"
+        ],
+        "headersToFind": [
+            "Authorization"
+        ]
+    },
+    "settings": [
+        {
+            "variable": "homeHeader",
+            "name": "Home Feed",
+            "description": "Source for the home feed",
+            "type": "Header"
+        },
+        {
+            "variable": "homeFeedSource",
+            "name": "Home Feed Type",
+            "description": "Select your preferred source for the home feed",
+            "type": "Dropdown",
+            "default": "0",
+            "options": [
+                "Free Videos",
+                "New Releases",
+                "Popular"
+            ]
+        }
+    ]
   }
 ]
