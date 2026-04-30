@@ -4837,5 +4837,33 @@
         "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
       ]
     }
+  },
+  {
+    "name": "Euronews (Alpha)",
+    "platformUrl": "https://www.euronews.com",
+    "description": "Euronews live channels in multiple languages. VODs powered by Dailymotion.",
+    "author": "Stefan Cruz",
+    "authorUrl": "",
+    "sourceUrl": "https://stefancruz.github.io/grayjay-plugin-euronews/EuronewsConfig.json",
+    "scriptUrl": "./EuronewsScript.js",
+    "repositoryUrl": "https://github.com/stefancruz/grayjay-plugin-euronews",
+    "version": 1,
+    "iconUrl": "./EuronewsIcon.png",
+    "id": "2113b60d-ff05-4390-9894-485a425c04d3",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+      "Http"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      ".dailymotion.com",
+      ".dmcdn.net",
+      "stefancruz.github.io"
+    ],
+    "constants": {
+      "sourcesUrl": "https://stefancruz.github.io/grayjay-plugin-euronews/sources.json"
+    },
+    "settings": []
   }
 ]
