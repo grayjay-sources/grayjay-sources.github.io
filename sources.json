@@ -713,6 +713,34 @@
         "_installUrl": "https://raw.githubusercontent.com/romdotdog/grayjay-bandcamp/main/config.json"
     },
     {
+        "name": "BibleProject",
+        "platformUrl": "https://bibleproject.com/",
+        "description": "BibleProject is a nonprofit, crowdfunded organization that makes free resources like videos, podcasts, articles, and classes to help people experience the Bible in a way that is approachable and transformative.",
+        "author": "Freeb",
+        "authorUrl": "https://github.com/b-risk",
+        "sourceUrl": "https://raw.githubusercontent.com/b-risk/Grayjay-BibleProject/refs/heads/main/BibleProjectConfig.json",
+        "scriptUrl": "./BibleProjectScript.js",
+        "repositoryUrl": "https://github.com/b-risk/Grayjay-BibleProject",
+        "version": 1,
+        "iconUrl": "./Imgs/BibleProjectIcon.png",
+        "id": "63bcd801-fa97-4cb0-87f8-07303e8444ad",
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": [
+            "Http",
+            "Utilities",
+            "DOMParser"
+        ],
+        "allowEval": false,
+        "allowAllHttpHeaderAccess": false,
+        "allowUrls": [
+            ".bibleproject.com",
+            ".mux.com",
+            ".github.com",
+            ".imagekit.io"
+        ]
+    },
+    {
         "name": "BiliBili (CN)",
         "description": "BiliBili (CN) is the biggest video platform in China\n\nLogin to access higher video quality, subtitles, and premium content",
         "author": "FUTO",
@@ -828,34 +856,6 @@
             "commits": "https://github.com/GreyPluginDev/grayjay-plugin-brighteon/commits/main.atom",
             "releases": "https://github.com/GreyPluginDev/grayjay-plugin-brighteon/releases.atom"
         }
-    },
-    {
-        "name": "BibleProject",
-        "platformUrl": "https://bibleproject.com/",
-        "description": "BibleProject is a nonprofit, crowdfunded organization that makes free resources like videos, podcasts, articles, and classes to help people experience the Bible in a way that is approachable and transformative.",
-        "author": "Freeb",
-        "authorUrl": "https://github.com/b-risk",
-        "sourceUrl": "https://raw.githubusercontent.com/b-risk/Grayjay-BibleProject/refs/heads/main/BibleProjectConfig.json",
-        "scriptUrl": "./BibleProjectScript.js",
-        "repositoryUrl": "https://github.com/b-risk/Grayjay-BibleProject",
-        "version": 1,
-        "iconUrl": "./Imgs/BibleProjectIcon.png",
-        "id": "63bcd801-fa97-4cb0-87f8-07303e8444ad",
-        "scriptSignature": "",
-        "scriptPublicKey": "",
-        "packages": [
-            "Http",
-            "Utilities",
-            "DOMParser"
-        ],
-        "allowEval": false,
-        "allowAllHttpHeaderAccess": false,
-        "allowUrls": [
-            ".bibleproject.com",
-            ".mux.com",
-            ".github.com",
-            ".imagekit.io"
-        ]
     },
     {
         "name": "CDA",
