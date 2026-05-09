@@ -737,6 +737,46 @@
     ]
   },
   {
+    "name": "Blue Letter Bible",
+    "platformUrl": "https://blueletterbible.org/",
+    "description": "Listen to narrations of different Bible translations on Blue Letter Bible.",
+    "author": "Freeb",
+    "authorUrl": "https://github.com/b-risk",
+    "sourceUrl": "https://raw.githubusercontent.com/b-risk/Grayjay-BlueLetterBible/refs/heads/main/BlueLetterBibleConfig.json",
+    "scriptUrl": "./BlueLetterBibleScript.js",
+    "repositoryUrl": "https://github.com/b-risk/Grayjay-BlueLetterBible",
+    "version": 1,
+    "iconUrl": "./Imgs/BlueLetterBibleIcon.png",
+    "id": "c72b8d6b-5e0d-4f83-9604-f9a307abf0e6",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+      "Http",
+      "Utilities",
+      "DOMParser"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": true,
+    "allowUrls": [
+      ".blueletterbible.org"
+    ],
+    "settings": [
+      {
+        "variable": "videoPages",
+        "name": "Video Pager",
+        "description": "Video information for the page results",
+        "type": "Header"
+      },
+      {
+        "variable": "accurateDuration",
+        "name": "Accurate Duration",
+        "description": "Use audio clip duration for chapters, very slow and not recommended",
+        "type": "Boolean",
+        "default": "false"
+      }
+    ]
+  },
+  {
     "name": "CDA",
     "description": "CDA plugin",
     "author": "Piotr Bartoszewicz",
