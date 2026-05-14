@@ -4316,7 +4316,7 @@
         "allowAllHttpHeaderAccess": true
     },
     {
-        "name": "Trilogy Plus (Beta)",
+        "name": "Trilogy Plus",
         "platformUrl": "https://trilogyplus.com",
         "description": "Trilogy Plus is an immersive streaming service with the best entertainment in scambaiting, scam-busting, travel and true crime.",
         "author": "Freeb",
@@ -4324,7 +4324,7 @@
         "sourceUrl": "https://raw.githubusercontent.com/b-risk/grayjay-trilogy-plus/refs/heads/main/TrilogyPlusConfig.json",
         "scriptUrl": "./TrilogyPlusScript.js",
         "repositoryUrl": "https://github.com/b-risk/grayjay-trilogy-plus",
-        "version": 1,
+        "version": 3,
         "iconUrl": "./TrilogyPlusIcon.png",
         "id": "ca4747c0-7fff-4909-a448-545f54e7f8ee",
         "scriptSignature": "",
@@ -4541,6 +4541,38 @@
         "supportedClaimTypes": [
             14
         ]
+    },
+    {
+        "name": "Vanillo",
+        "platformUrl": "https://vanillo.tv/",
+        "description": "Video made simple. Create, share, and discover videos easily with Vanillo's intuitive platform.",
+        "author": "Freeb",
+        "authorUrl": "https://github.com/b-risk",
+        "sourceUrl": "https://raw.githubusercontent.com/b-risk/Grayjay-Vanillo/refs/heads/main/VanilloConfig.json",
+        "scriptUrl": "./VanilloScript.js",
+        "repositoryUrl": "https://github.com/b-risk/Grayjay-Vanillo",
+        "version": 1,
+        "iconUrl": "./Imgs/VanilloIcon.png",
+        "id": "b1a42787-0419-4a22-aa6e-3649e2f10a4b",
+        "scriptSignature": "fRM8RXbY4CwSvQoJ3K8nXUJoVGzrDalGOtrtGOX3+z2lHrGNmUBc2mSIt4JpnQ9a2vIuBvxqQRWtLEIZhUEi5L8XdPM8nW2XgaZUoG+yguYV5Xq7xm0d86skrvFMuAR7o9hCfPVD6fM5kKTnIAvj9Uk+tNxVdDlja1O7I0QkUhlKh8zmwq7jv6mQ8wzPexLslDbwUcFTS0vGsO/rhFFqi7jPUUJX3YDxXZg1D3UIKH7n177mLBwQoj8NANS154qzsHEW58ZcfJ79DAZaEOa7Yvx26t2j4+660RP2cH97aEznjYcMlpXuNfd3cLz07n372BlyE5vNfWom7QR1JHIBdA==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuZjqSzagaWRZFJ7pgAL5ipTKET7Bt9uef2wBT4ijz0HukLn/aVPCxX3PIf0u3T8G5DtLfuHg1JJ3eoivnwBp4keiIwl+VL1jhzLfhCTjBveLLtAKPk03RPQjz4YtBNSbiye289RfImF2LhxkH8IN6NtCbeRp7uozwPoRA4E9pKIcV27y2ykYHQCnBmuUzsShP764H5GK3U3WwThWcQkcz0tr08+X7oXhISZBfjyxhvfFNofm1iTsCPLu/89i4dTqumdG34c8qxNyYBl10Z7p6+M9WNYycI/Nnw0cUXXNY+c+PxlelwVqNsZxYPkq673LwMQ6bja+FYyS2F4fogVlAQIDAQAB",
+        "packages": [
+            "Http",
+            "Utilities",
+            "DOMParser"
+        ],
+        "allowEval": false,
+        "allowAllHttpHeaderAccess": false,
+        "allowUrls": [
+            ".vanillo.tv",
+            "us.cdn.vanillo.tv",
+            "cdnjs.cloudflare.com"
+        ],
+        "changelog": {
+            "1": [
+            "Initial release with home feed, search, channel browsing, and video playback"
+            ]
+        }
     },
     {
         "name": "Vanillo",
