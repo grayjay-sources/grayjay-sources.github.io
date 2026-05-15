@@ -2326,6 +2326,49 @@
         }
     },
     {
+        "name": "Hobune",
+        "platformUrl": "https://hobune.stream",
+        "description": "View preserved video archives hosted on Hobune.",
+        "author": "Freeb",
+        "authorUrl": "https://github.com/b-risk",
+        "sourceUrl": "https://raw.githubusercontent.com/b-risk/Grayjay-Hobune/refs/heads/main/HobuneConfig.json",
+        "scriptUrl": "./HobuneScript.js",
+        "repositoryUrl": "https://github.com/b-risk/Grayjay-Hobune",
+        "version": 1,
+        "iconUrl": "./Imgs/HobuneIcon.png",
+        "id": "86f2179f-92ff-451e-80aa-35e0aecbf528",
+        "scriptSignature": "jV2kAou6w6VDl7rqCoWvfDzLb1CMsqEGra+fb9fwkBK01Ai/u6fSjVFzlKb0gI9ygBf91BkKay7HKz4itymnpqQVedUMxRVYQfeMM4m6LIZC4zGAbw9jGjfL9gS9R39Ln57s7YoTiBeWWTQrj1oBpDJ9pVpL7WrEa3a1FcZ6Cjw36vumh7Hp4Ax2lANqnwdatTiUt0zOan9MX/doCp+mXta8q9e6JXvcmC/jg0EyBzIVmE4TUnv75DxwfAIgktiQgruejwAFaVD6M7qmgNB+Gdn2P//yMfmxyqiQdy3DopJmu1gJ92eFKXmUJza3N6GGZwn0aBfT2F/f4CaQS/0V6A==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAux1Et38cJX+GZ9aqCkqbXTm9rPLzSn63U8DH7KJRKjNr0XoJzhIUrB1VCUEDz1IwJWpk+yfq/jTZKrtGIenKkkDETnf5w4HSk78N0XF1QWnf9k4W9lLEqnt0KRbiEgAHkMO8FKE4tNH9Q4b6h0NwgV29POzSAWLHsGhOO8dkMEdgpo3Rw2iGVCuFCXn34NDE0DYyI6o33qilI+dQcQ4+6ojUQfl4Qi/vkLXhiOO0o3zKKEyGVSTR66aBpADWz7JLTbE2zm+Wkefr+D70J1Wx3y5mLFbqoRJF8F51hPII1j4lzVWzrAhCf+IZala6qb+6MwTFreNrKuHz/NmPVvSygwIDAQAB",
+        "packages": [
+            "Http",
+            "Utilities",
+            "DOMParser"
+        ],
+        "allowEval": false,
+        "allowAllHttpHeaderAccess": false,
+        "allowUrls": [
+            ".hobune.stream",
+            "ui-avatars.com",
+            ".youtube.com",
+            "yt3.googleusercontent.com"
+        ],
+        "settings": [
+            {
+            "variable": "metadata",
+            "name": "Metadata",
+            "description": "",
+            "type": "Header"
+            },
+            {
+            "variable": "useYouTubeMetadata",
+            "name": "Use YouTube metadata",
+            "description": "This will allow the plugin to extract metadata from YouTube if available for things like channel thumbnails.",
+            "type": "Boolean",
+            "default": "true"
+            }
+        ]
+    },
+    {
         "name": "Jellyfin",
         "description": "Open-source video server",
         "author": "Awlexus",
@@ -3224,6 +3267,32 @@
             21
         ],
         "sourceUrl_": "https://plugins.grayjay.app/Niconico/NiconicoConfig.json"
+    },
+    {
+        "name": "Nyane",
+        "platformUrl": "https://nyane.online",
+        "description": "Watch preserved video archives hosted on Nyane.",
+        "author": "Freeb",
+        "authorUrl": "https://github.com/b-risk",
+        "sourceUrl": "https://raw.githubusercontent.com/b-risk/Grayjay-Nyane/refs/heads/main/NyaneConfig.json",
+        "scriptUrl": "./NyaneScript.js",
+        "repositoryUrl": "https://github.com/b-risk/Grayjay-Nyane",
+        "version": 1,
+        "iconUrl": "./Imgs/NyaneIcon.png",
+        "id": "a7f3d9e1-5c62-4b81-9a0d-f8e7c6b5a432",
+        "scriptSignature": "GiKGCPdb0CMievDt3AebHsTdrA5zqvfesmLPkYvASHH4YHFBl/WH7ycDukzq0PXwUrNPx1Dv5QeyaLQVBTJ0nuC36weK55mGT4t2ZQOvm3gVoUklGSUo0yyvvQcQrk7H0JlMo5lQW/NI9iZ31tSJVf5o/4+9rIkM4dwFYrvwgo9wfLpigL8scdSBcV2RUZViKHgOQGVzSFi7sVCh4bYFH7F/OK26ulgCq3YCBZfqBO0T3DpdkDDRShH5ObSuPjoW3B8jq1z4lCVard+M/FG6KRNMum9LZNUCKZtB66jmCyft2XynjHMQBcnYF4ivIHS2wT/Hu3NNUjICCs8ArQYuTw==",
+        "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsooIdvkTkDL4+qOFA57vvV63w4lOTBkdJn/sQ0ehLI8LI/6L4da9uDWSxaa3t3uf5uF7m2Wo6qoBh5YCcR9i2+I6dI8fQfVWBCqc2VOgSdPH9AQrONetrGKCAQVEfyc28f8c6KpOV/1fYhrs8UYC8DlIgFt9H+th1k9tbg5GKkWod5lXlzOqIP1d2dhz4J9dLNmZaAX5iMWwMT2+G++/z9xl9MW2Payb7HcIe1NYRrlX90YLjIF2F6TAeOxnYTjoh7uc8UrVQbJNTMm5thScByaNmCk9rSrHGr+IKFYk29rjoT/rVtEKD4CSq4r94KxdwlfepP1zm8nX9zHyevfgjQIDAQAB",
+        "packages": [
+            "Http",
+            "Utilities",
+            "DOMParser"
+        ],
+        "allowEval": false,
+        "allowAllHttpHeaderAccess": false,
+        "allowUrls": [
+            ".nyane.online",
+            ".cdn.nyane.online"
+        ]
     },
     {
         "name": "Odysee",
