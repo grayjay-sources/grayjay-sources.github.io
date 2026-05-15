@@ -9,7 +9,7 @@
 
 Super-linter detected linting errors
 
-For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/25863210598)
+For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/25924535287)
 
 Powered by [Super-linter](https://github.com/super-linter/super-linter)
 
@@ -18,7 +18,7 @@ Powered by [Super-linter](https://github.com/super-linter/super-linter)
 <summary>BIOME_FORMAT</summary>
 
 ```text
-Checked 10 files in 586ms. No fixes applied.
+Checked 10 files in 597ms. No fixes applied.
 Found 10 errors..vscode/launch.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Formatter would have printed the following content:
@@ -1184,7 +1184,7 @@ sources.json format ━━━━━━━━━━━━━━━━━━━━
      148      │ - ················"Support·for·getHome",
      149      │ - ················"Added·Faster·Randomizer·setting·for·logged·in·users",
      150      │ - ················"Added·Content·Groupings·setting",
-  10824 more lines truncated
+  10951 more lines truncated
 
 
 sources.schema.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1359,7 +1359,7 @@ format ━━━━━━━━━━━━━━━━━━━━━━━━�
 ```text
 The number of diagnostics exceeds the limit allowed. Use --max-diagnostics to increase it.
 Diagnostics not shown: 4427.
-Checked 13 files in 1691ms. No fixes applied.
+Checked 13 files in 1817ms. No fixes applied.
 Found 547 errors.
 Found 3889 warnings.
 Found 11 infos.assets/css/site.css:78:18 lint/complexity/noImportantStyles  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
