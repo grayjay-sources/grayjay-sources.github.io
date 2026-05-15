@@ -2354,17 +2354,17 @@
         ],
         "settings": [
             {
-            "variable": "metadata",
-            "name": "Metadata",
-            "description": "",
-            "type": "Header"
+                "variable": "metadata",
+                "name": "Metadata",
+                "description": "",
+                "type": "Header"
             },
             {
-            "variable": "useYouTubeMetadata",
-            "name": "Use YouTube metadata",
-            "description": "This will allow the plugin to extract metadata from YouTube if available for things like channel thumbnails.",
-            "type": "Boolean",
-            "default": "true"
+                "variable": "useYouTubeMetadata",
+                "name": "Use YouTube metadata",
+                "description": "This will allow the plugin to extract metadata from YouTube if available for things like channel thumbnails.",
+                "type": "Boolean",
+                "default": "true"
             }
         ]
     },
