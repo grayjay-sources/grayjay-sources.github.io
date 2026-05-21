@@ -2403,34 +2403,34 @@
         ],
         "changelog": {
             "1": [
-            "Initial release"
+                "Initial release"
             ],
             "2": [
-            "Code restructure & efficiency improvements"
+                "Code restructure & efficiency improvements"
             ]
         },
         "settings": [
             {
-            "variable": "useInstagramUrlsForSharing",
-            "name": "Use Instagram URLs for Sharing",
-            "description": "When enabled, share links will use Instagram URLs instead of Kittygram URLs.",
-            "type": "Boolean",
-            "default": "false"
+                "variable": "useInstagramUrlsForSharing",
+                "name": "Use Instagram URLs for Sharing",
+                "description": "When enabled, share links will use Instagram URLs instead of Kittygram URLs.",
+                "type": "Boolean",
+                "default": "false"
             },
             {
-            "variable": "kittygramInstance",
-            "name": "Preferred Kittygram Instance",
-            "description": "Preferred Kittygram instance for fetching content. Falls back to other instances if this one fails.",
-            "type": "Dropdown",
-            "default": "0",
-            "options": [
-                "kittygram.irelephant.net (Fast)",
-                "kittygr.am",
-                "kittygram.kareem.one (Singapore)",
-                "kg.lus.lu (Luxembourg)",
-                "kg.meowing.de (Germany)",
-                "kittygram.nexussfan.cz (Czech)"
-            ]
+                "variable": "kittygramInstance",
+                "name": "Preferred Kittygram Instance",
+                "description": "Preferred Kittygram instance for fetching content. Falls back to other instances if this one fails.",
+                "type": "Dropdown",
+                "default": "0",
+                "options": [
+                    "kittygram.irelephant.net (Fast)",
+                    "kittygr.am",
+                    "kittygram.kareem.one (Singapore)",
+                    "kg.lus.lu (Luxembourg)",
+                    "kg.meowing.de (Germany)",
+                    "kittygram.nexussfan.cz (Czech)"
+                ]
             }
         ]
     },
@@ -2460,143 +2460,143 @@
         ],
         "settings": [
             {
-            "variable": "homeSortIndex",
-            "name": "Home Feed Sort",
-            "description": "How the Home feed should be ordered.",
-            "type": "Dropdown",
-            "default": "0",
-            "options": [
-                "Most downloaded",
-                "Recently added"
-            ]
+                "variable": "homeSortIndex",
+                "name": "Home Feed Sort",
+                "description": "How the Home feed should be ordered.",
+                "type": "Dropdown",
+                "default": "0",
+                "options": [
+                    "Most downloaded",
+                    "Recently added"
+                ]
             },
             {
-            "variable": "homeMediaTypeIndex",
-            "name": "Home Feed Type",
-            "description": "Restrict the Home feed to audio, video, or both.",
-            "type": "Dropdown",
-            "default": "0",
-            "options": [
-                "Mixed audio and video",
-                "Video only",
-                "Audio only"
-            ]
+                "variable": "homeMediaTypeIndex",
+                "name": "Home Feed Type",
+                "description": "Restrict the Home feed to audio, video, or both.",
+                "type": "Dropdown",
+                "default": "0",
+                "options": [
+                    "Mixed audio and video",
+                    "Video only",
+                    "Audio only"
+                ]
             },
             {
-            "variable": "maxSourceCountIndex",
-            "name": "Max Playback Sources",
-            "description": "Limit how many candidate sources are exposed for each item.",
-            "type": "Dropdown",
-            "default": "1",
-            "options": [
-                "2",
-                "4",
-                "6",
-                "8"
-            ]
+                "variable": "maxSourceCountIndex",
+                "name": "Max Playback Sources",
+                "description": "Limit how many candidate sources are exposed for each item.",
+                "type": "Dropdown",
+                "default": "1",
+                "options": [
+                    "2",
+                    "4",
+                    "6",
+                    "8"
+                ]
             },
             {
-            "variable": "strictFeedFilter",
-            "name": "Strict Feed Filter",
-            "description": "Hide low-signal items from home/search when they look less likely to contain playable media.",
-            "type": "Boolean",
-            "default": "false"
+                "variable": "strictFeedFilter",
+                "name": "Strict Feed Filter",
+                "description": "Hide low-signal items from home/search when they look less likely to contain playable media.",
+                "type": "Boolean",
+                "default": "false"
             },
             {
-            "variable": "verboseFailureDiagnostics",
-            "name": "Verbose Failure Diagnostics",
-            "description": "Log extra metadata and file candidates when an item cannot be played.",
-            "type": "Boolean",
-            "default": "false"
+                "variable": "verboseFailureDiagnostics",
+                "name": "Verbose Failure Diagnostics",
+                "description": "Log extra metadata and file candidates when an item cannot be played.",
+                "type": "Boolean",
+                "default": "false"
             }
         ],
         "changelog": {
             "1": [
-            "Initial MVP with home feed, search, collections as channels, item details, and direct playback."
+                "Initial MVP with home feed, search, collections as channels, item details, and direct playback."
             ],
             "2": [
-            "Improvement: Add home feed media-type setting;",
-            "Improvement: Add playback source count setting;",
-            "Improvement: Better media file filtering and ranking;",
-            "Improvement: Add HLS and DASH manifest support when available;",
-            "Fix: Reduce non-playable and duplicate file candidates in item details;"
+                "Improvement: Add home feed media-type setting;",
+                "Improvement: Add playback source count setting;",
+                "Improvement: Better media file filtering and ranking;",
+                "Improvement: Add HLS and DASH manifest support when available;",
+                "Fix: Reduce non-playable and duplicate file candidates in item details;"
             ],
             "3": [
-            "Improvement: Add strict feed filter setting to hide likely non-playable results;",
-            "Improvement: Add verbose failure diagnostics setting;",
-            "Improvement: Add broader fallback pass for playable source detection;",
-            "Fix: Improve no-playable-media errors with item identifiers and candidate file summaries;"
+                "Improvement: Add strict feed filter setting to hide likely non-playable results;",
+                "Improvement: Add verbose failure diagnostics setting;",
+                "Improvement: Add broader fallback pass for playable source detection;",
+                "Fix: Improve no-playable-media errors with item identifiers and candidate file summaries;"
             ],
             "4": [
-            "Sign release metadata; add scriptSignature and scriptPublicKey."
+                "Sign release metadata; add scriptSignature and scriptPublicKey."
             ],
             "5": [
-            "Improvement: Implement comments/reviews support;",
-            "Improvement: Add search suggestions;",
-            "Improvement: Add subtitle support (.srt, .vtt);",
-            "Improvement: Enhanced search capabilities with media type and 'Most Downloaded' filters;",
-            "Improvement: Include subject tags in item description."
+                "Improvement: Implement comments/reviews support;",
+                "Improvement: Add search suggestions;",
+                "Improvement: Add subtitle support (.srt, .vtt);",
+                "Improvement: Enhanced search capabilities with media type and 'Most Downloaded' filters;",
+                "Improvement: Include subject tags in item description."
             ],
             "6": [
-            "Improvement: Implement related content (More like this);",
-            "Improvement: Add 'Year' and 'Language' search filters;",
-            "Improvement: Persist filters and sorts across paginated results."
+                "Improvement: Implement related content (More like this);",
+                "Improvement: Add 'Year' and 'Language' search filters;",
+                "Improvement: Persist filters and sorts across paginated results."
             ],
             "7": [
-            "Fix: Remove invalid script signatures to fix reinstallation issues;",
-            "Fix: Sanitize documentation to remove local IP addresses and private paths."
+                "Fix: Remove invalid script signatures to fix reinstallation issues;",
+                "Fix: Sanitize documentation to remove local IP addresses and private paths."
             ],
             "8": [
-            "Fix: Re-signed with 2048-bit RSA and cleaned up JSON formatting to resolve 'Invalid JSON Config' errors."
+                "Fix: Re-signed with 2048-bit RSA and cleaned up JSON formatting to resolve 'Invalid JSON Config' errors."
             ],
             "9": [
-            "Re-signed with 2048-bit RSA key; bump version to clear cached invalid state."
+                "Re-signed with 2048-bit RSA key; bump version to clear cached invalid state."
             ],
             "10": [
-            "Fix: re-sign with correct SHA-512 + dedicated grayjay_signing RSA key per official docs."
+                "Fix: re-sign with correct SHA-512 + dedicated grayjay_signing RSA key per official docs."
             ],
             "11": [
-            "Fix: search suggestions now use reliable fulltext query (consistent results)",
-            "Fix: year filter uses IA's dedicated year: field instead of date:",
-            "Fix: language filter now also applied in collection queries",
-            "Fix: language/year/subject added to search fields so they return in results",
-            "Fix: subtitles use SubtitleSource constructor per Grayjay API"
+                "Fix: search suggestions now use reliable fulltext query (consistent results)",
+                "Fix: year filter uses IA's dedicated year: field instead of date:",
+                "Fix: language filter now also applied in collection queries",
+                "Fix: language/year/subject added to search fields so they return in results",
+                "Fix: subtitles use SubtitleSource constructor per Grayjay API"
             ],
             "12": [
-            "Fix: Type.Feed.Video/Audio -> Type.Feed.Videos (correct Grayjay enum values)",
-            "Fix: Filters use FilterGroup/FilterCapability (predefined Language options)",
-            "Fix: Subtitle uses plain object per JSSubtitleSource.kt (no SubtitleSource class)",
-            "Fix: Comment uses date field (not timestamp) per JSComment.kt",
-            "Fix: Comment rating uses RatingScaler (not Rating which does not exist)",
-            "Fix: Filter values read as Array per Map<string,Array<string>> contract"
+                "Fix: Type.Feed.Video/Audio -> Type.Feed.Videos (correct Grayjay enum values)",
+                "Fix: Filters use FilterGroup/FilterCapability (predefined Language options)",
+                "Fix: Subtitle uses plain object per JSSubtitleSource.kt (no SubtitleSource class)",
+                "Fix: Comment uses date field (not timestamp) per JSComment.kt",
+                "Fix: Comment rating uses RatingScaler (not Rating which does not exist)",
+                "Fix: Filter values read as Array per Map<string,Array<string>> contract"
             ],
             "13": [
-            "Fix: use VideoSourceDescriptor for muxed video-only files (mp4/avi with embedded audio)",
-            "Fix: use VideoSourceDescriptor for audio-only items (mp3/ogg/flac)",
-            "Fix: only use UnMuxVideoSourceDescriptor when BOTH separate video and audio tracks exist",
-            "This resolves near-universal playback failure - wrong descriptor caused silent/broken playback"
+                "Fix: use VideoSourceDescriptor for muxed video-only files (mp4/avi with embedded audio)",
+                "Fix: use VideoSourceDescriptor for audio-only items (mp3/ogg/flac)",
+                "Fix: only use UnMuxVideoSourceDescriptor when BOTH separate video and audio tracks exist",
+                "This resolves near-universal playback failure - wrong descriptor caused silent/broken playback"
             ],
             "14": [
-            "Fork maintained: keeping full feature set (audio, HLS/DASH, subtitles, comments, related content)",
-            "Upstream v14 simplified to video-only; this fork preserves all functionality"
+                "Fork maintained: keeping full feature set (audio, HLS/DASH, subtitles, comments, related content)",
+                "Upstream v14 simplified to video-only; this fork preserves all functionality"
             ]
         },
         "Testing": {
             "Search": {
-            "queries": [
-                "big buck bunny",
-                "public domain jazz"
-            ]
+                "queries": [
+                    "big buck bunny",
+                    "public domain jazz"
+                ]
             },
             "GetContentDetails": {
-            "urls": [
-                "https://archive.org/details/BigBuckBunny_124"
-            ]
+                "urls": [
+                    "https://archive.org/details/BigBuckBunny_124"
+                ]
             },
             "GetChannel": {
-            "urls": [
-                "https://archive.org/details/Linus+Tech+Tips#creator"
-            ]
+                "urls": [
+                    "https://archive.org/details/Linus+Tech+Tips#creator"
+                ]
             }
         }
     },
@@ -3962,29 +3962,29 @@
         },
         "settings": [
             {
-            "variable": "youtubeChannelSeparation",
-            "name": "Enable YouTube Channel Separation",
-            "description": "When enabled, YouTube channel URLs will be treated as PreserveTube channels with separated IDs (prefixed with 'preservetube://') to avoid conflicts with the YouTube plugin. Disable to keep YouTube channel URLs pointing to the YouTube plugin instead.",
-            "type": "Boolean",
-            "default": "true"
+                "variable": "youtubeChannelSeparation",
+                "name": "Enable YouTube Channel Separation",
+                "description": "When enabled, YouTube channel URLs will be treated as PreserveTube channels with separated IDs (prefixed with 'preservetube://') to avoid conflicts with the YouTube plugin. Disable to keep YouTube channel URLs pointing to the YouTube plugin instead.",
+                "type": "Boolean",
+                "default": "true"
             },
             {
-            "variable": "usePreserveTubeArchiving",
-            "name": "Enable Archiving to PreserveTube",
-            "description": "When enabled, unarchived YouTube videos will prompt you to archive them on PreserveTube via captcha. Disabled by default so unarchived videos open in the YouTube plugin instead.",
-            "type": "Boolean",
-            "default": "false",
-            "warningDialog": "By enabling this, you agree to only use this feature for videos that you genuinely believe should be preserved long term."
+                "variable": "usePreserveTubeArchiving",
+                "name": "Enable Archiving to PreserveTube",
+                "description": "When enabled, unarchived YouTube videos will prompt you to archive them on PreserveTube via captcha. Disabled by default so unarchived videos open in the YouTube plugin instead.",
+                "type": "Boolean",
+                "default": "false",
+                "warningDialog": "By enabling this, you agree to only use this feature for videos that you genuinely believe should be preserved long term."
             }
         ],
         "changelog": {
             "5": [
-            "Rewrote getContentDetails to scrape HTML instead of blocked JSON API",
-            "Added YouTube channel separation setting with ID prefixing",
-            "Added archiving toggle (off by default) with warning dialog",
-            "Fixed channel avatar parsing from yt3.googleusercontent.com",
-            "Rewrote parseVideoCardsFromHtml with proper depth counting",
-            "Added searchChannels support"
+                "Rewrote getContentDetails to scrape HTML instead of blocked JSON API",
+                "Added YouTube channel separation setting with ID prefixing",
+                "Added archiving toggle (off by default) with warning dialog",
+                "Fixed channel avatar parsing from yt3.googleusercontent.com",
+                "Rewrote parseVideoCardsFromHtml with proper depth counting",
+                "Added searchChannels support"
             ]
         }
     },
