@@ -4208,6 +4208,36 @@
     "websiteUrl": "https://dw5.github.io"
   },
   {
+    "name": "VidLii",
+    "platformUrl": "https://www.vidlii.com/",
+    "description": "VidLii is a video sharing platform that revives the style and spirit of old YouTube.",
+    "author": "Freeb",
+    "authorUrl": "https://github.com/b-risk",
+    "sourceUrl": "https://raw.githubusercontent.com/b-risk/Grayjay-Vidlii/refs/heads/main/VidLiiConfig.json",
+    "scriptUrl": "./VidLiiScript.js",
+    "repositoryUrl": "https://github.com/b-risk/Grayjay-Vidlii",
+    "version": 1,
+    "iconUrl": "./Imgs/VidLiiIcon.png",
+    "id": "d739055a-5d9b-489f-babe-6c9cd3ff5275",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+      "Http",
+      "Utilities",
+      "DOMParser"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": false,
+    "allowUrls": [
+      ".vidlii.com"
+    ],
+    "changelog": {
+      "1": [
+        "Initial release"
+      ]
+    }
+  },
+  {
     "_tags": ["unofficial", "untested"],
     "_feeds": {},
     "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
