@@ -1,15 +1,23 @@
 # Super-linter summary
 
-| Language     | Validation result |
-| ------------ | ----------------- |
-| BIOME_FORMAT | Fail ❌           |
-| BIOME_LINT   | Fail ❌           |
-| PRE_COMMIT   | Pass ✅           |
-| TRIVY        | Pass ✅           |
+| Language                   | Validation result |
+| -------------------------- | ----------------- |
+| BIOME_FORMAT               | Fail ❌           |
+| BIOME_LINT                 | Fail ❌           |
+| GITLEAKS                   | Pass ✅           |
+| GIT_MERGE_CONFLICT_MARKERS | Pass ✅           |
+| JSON                       | Pass ✅           |
+| JSON_PRETTIER              | Pass ✅           |
+| MARKDOWN                   | Pass ✅           |
+| MARKDOWN_PRETTIER          | Pass ✅           |
+| NATURAL_LANGUAGE           | Pass ✅           |
+| PRE_COMMIT                 | Pass ✅           |
+| SPELL_CODESPELL            | Fail ❌           |
+| TRIVY                      | Pass ✅           |
 
 Super-linter detected linting errors
 
-For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/26307998944)
+For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/26591712484)
 
 Powered by [Super-linter](https://github.com/super-linter/super-linter)
 
@@ -18,7 +26,7 @@ Powered by [Super-linter](https://github.com/super-linter/super-linter)
 <summary>BIOME_FORMAT</summary>
 
 ```text
-Checked 10 files in 485ms. No fixes applied.
+Checked 10 files in 555ms. No fixes applied.
 Found 10 errors..vscode/launch.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Formatter would have printed the following content:
@@ -1359,7 +1367,7 @@ format ━━━━━━━━━━━━━━━━━━━━━━━━�
 ```text
 The number of diagnostics exceeds the limit allowed. Use --max-diagnostics to increase it.
 Diagnostics not shown: 4427.
-Checked 13 files in 1302ms. No fixes applied.
+Checked 13 files in 1686ms. No fixes applied.
 Found 547 errors.
 Found 3889 warnings.
 Found 11 infos.assets/css/site.css:78:18 lint/complexity/noImportantStyles  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1707,6 +1715,25 @@ lint ━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Some warnings were emitted while running checks.
 
+```
+
+</details>
+
+<details>
+
+<summary>SPELL_CODESPELL</summary>
+
+```text
+/github/workspace/sources.json:1486: Nam ==> Name
+/github/workspace/sources.json:1779: Nam ==> Name
+/github/workspace/sources.json:1938: ommitted ==> omitted
+/github/workspace/sources.json:1939: ommitted ==> omitted
+/github/workspace/sources.json:4201: comming ==> coming
+/github/workspace/sources.json:4409: necesities ==> necessities
+/github/workspace/sources.json:4421: necesities ==> necessities
+/github/workspace/sources.json:4433: necesities ==> necessities
+/github/workspace/sources.json:4749: didnt ==> didn't
+/github/workspace/sources.json:5154: te ==> the, be, we, to
 ```
 
 </details>
