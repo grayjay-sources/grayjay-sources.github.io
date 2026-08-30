@@ -8,16 +8,13 @@
 | GIT_MERGE_CONFLICT_MARKERS | Pass ✅           |
 | JSON                       | Pass ✅           |
 | JSON_PRETTIER              | Pass ✅           |
-| MARKDOWN                   | Pass ✅           |
-| MARKDOWN_PRETTIER          | Pass ✅           |
-| NATURAL_LANGUAGE           | Pass ✅           |
 | PRE_COMMIT                 | Pass ✅           |
 | SPELL_CODESPELL            | Fail ❌           |
 | TRIVY                      | Pass ✅           |
 
 Super-linter detected linting errors
 
-For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/26591712484)
+For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/33322218654)
 
 Powered by [Super-linter](https://github.com/super-linter/super-linter)
 
@@ -26,7 +23,7 @@ Powered by [Super-linter](https://github.com/super-linter/super-linter)
 <summary>BIOME_FORMAT</summary>
 
 ```text
-Checked 10 files in 555ms. No fixes applied.
+Checked 10 files in 510ms. No fixes applied.
 Found 10 errors..vscode/launch.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Formatter would have printed the following content:
@@ -1192,7 +1189,7 @@ sources.json format ━━━━━━━━━━━━━━━━━━━━
      148      │ - ················"Support·for·getHome",
      149      │ - ················"Added·Faster·Randomizer·setting·for·logged·in·users",
      150      │ - ················"Added·Content·Groupings·setting",
-  11551 more lines truncated
+  11720 more lines truncated
 
 
 sources.schema.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1367,9 +1364,9 @@ format ━━━━━━━━━━━━━━━━━━━━━━━━�
 ```text
 The number of diagnostics exceeds the limit allowed. Use --max-diagnostics to increase it.
 Diagnostics not shown: 4427.
-Checked 13 files in 1686ms. No fixes applied.
-Found 547 errors.
-Found 3889 warnings.
+Checked 13 files in 1309ms. No fixes applied.
+Found 548 errors.
+Found 3888 warnings.
 Found 11 infos.assets/css/site.css:78:18 lint/complexity/noImportantStyles  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   ! Avoid the use of the !important style.
@@ -1387,21 +1384,9 @@ Found 11 infos.assets/css/site.css:78:18 lint/complexity/noImportantStyles  FIXA
     78 │ ··display:·block·!important;
        │                 -----------
 
-index.html:117:108 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  × Void elements should not have a closing tag.
-
-    115 │           <div class="col-sm-8 col-md-7 py-2">
-    116 │             <h4>About</h4>
-  > 117 │             <p class="text-body-secondary">The sources offered on this site were not scanned or verified.</br>Always make sure to check any code that you're running.</p>
-        │                                                                                                            ^^
-    118 │           </div>
-    119 │           <div class="col-sm-4 offset-md-1 py-2">
-
-
 index.html:117:106 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  × Expected a matching closing tag but instead found '</br>'.
+  × Void elements should not have a closing tag. Remove the closing tag.
 
     115 │           <div class="col-sm-8 col-md-7 py-2">
     116 │             <h4>About</h4>
@@ -1409,74 +1394,23 @@ index.html:117:106 parse ━━━━━━━━━━━━━━━━━━�
         │                                                                                                          ^^^^^
     118 │           </div>
     119 │           <div class="col-sm-4 offset-md-1 py-2">
-
-  i Expected a matching closing tag here.
-
-    115 │           <div class="col-sm-8 col-md-7 py-2">
-    116 │             <h4>About</h4>
-  > 117 │             <p class="text-body-secondary">The sources offered on this site were not scanned or verified.</br>Always make sure to check any code that you're running.</p>
-        │                                                                                                          ^^^^^
-    118 │           </div>
-    119 │           <div class="col-sm-4 offset-md-1 py-2">
-
-
-index.html:177:38 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  × Void elements should not have a closing tag.
-
-    175 │     <div class="container">
-    176 │       <p class="float-end mb-1" id="footerLinks">
-  > 177 │         <a href="#">Back to top</a></br></br>
-        │                                      ^^
-    178 │       </p>
-    179 │       <p class="mb-1">This page is not affiliated with <a href="https://grayjay.app/">GrayJay</a> or <a href="https://futo.org/">FUTO</a>!</p>
 
 
 index.html:177:36 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  × Expected a matching closing tag but instead found '</br>'.
+  × Void elements should not have a closing tag. Remove the closing tag.
 
     175 │     <div class="container">
     176 │       <p class="float-end mb-1" id="footerLinks">
   > 177 │         <a href="#">Back to top</a></br></br>
         │                                    ^^^^^
-    178 │       </p>
-    179 │       <p class="mb-1">This page is not affiliated with <a href="https://grayjay.app/">GrayJay</a> or <a href="https://futo.org/">FUTO</a>!</p>
-
-  i Expected a matching closing tag here.
-
-    175 │     <div class="container">
-    176 │       <p class="float-end mb-1" id="footerLinks">
-  > 177 │         <a href="#">Back to top</a></br></br>
-        │                                    ^^^^^
-    178 │       </p>
-    179 │       <p class="mb-1">This page is not affiliated with <a href="https://grayjay.app/">GrayJay</a> or <a href="https://futo.org/">FUTO</a>!</p>
-
-
-index.html:177:43 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  × Void elements should not have a closing tag.
-
-    175 │     <div class="container">
-    176 │       <p class="float-end mb-1" id="footerLinks">
-  > 177 │         <a href="#">Back to top</a></br></br>
-        │                                           ^^
     178 │       </p>
     179 │       <p class="mb-1">This page is not affiliated with <a href="https://grayjay.app/">GrayJay</a> or <a href="https://futo.org/">FUTO</a>!</p>
 
 
 index.html:177:41 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  × Expected a matching closing tag but instead found '</br>'.
-
-    175 │     <div class="container">
-    176 │       <p class="float-end mb-1" id="footerLinks">
-  > 177 │         <a href="#">Back to top</a></br></br>
-        │                                         ^^^^^
-    178 │       </p>
-    179 │       <p class="mb-1">This page is not affiliated with <a href="https://grayjay.app/">GrayJay</a> or <a href="https://futo.org/">FUTO</a>!</p>
-
-  i Expected a matching closing tag here.
+  × Void elements should not have a closing tag. Remove the closing tag.
 
     175 │     <div class="container">
     176 │       <p class="float-end mb-1" id="footerLinks">
@@ -1623,6 +1557,57 @@ index.html:87:11 lint/a11y/noSvgWithoutTitle ━━━━━━━━━━━�
   i For accessibility purposes, SVGs should have an alternative text, provided via title element. If the svg element has role="img", you should add the aria-label or aria-labelledby attribute.
 
 
+index.html:99:7 lint/a11y/noSvgWithoutTitle ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Alternative text title element cannot be empty
+
+     97 │     <button class="btn btn-qr-primary py-2 d-flex align-items-center" id="bd-qrcodes" type="button"
+     98 │       aria-expanded="false" aria-label="Toggle QR Codes">
+   > 99 │       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code" viewBox="0 0 16 16">
+        │       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 100 │         <path d="M2 2h2v2H2z"/>
+         ...
+  > 104 │         <path d="M7 12h1v3h4v1H7zm9 2v2h-3v-1h2v-1z"/>
+  > 105 │       </svg>
+        │       ^^^^^^
+    106 │       <span class="visually-hidden" id="bd-qrcodes-text">Toggle QR Codes</span>
+    107 │     </button>
+
+  i For accessibility purposes, SVGs should have an alternative text, provided via title element. If the svg element has role="img", you should add the aria-label or aria-labelledby attribute.
+
+
+index.html:131:12 lint/a11y/useValidAnchor ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Provide a valid value for the attribute href.
+
+    129 │     <div class="navbar navbar-dark bg-dark shadow-sm">
+    130 │       <div class="container">
+  > 131 │         <a href="#" class="navbar-brand d-flex align-items-center">
+        │            ^^^^^^^^
+    132 │           <img src="https://grayjay.app/images/webclip.png" width="32" height="32"/>&nbsp;
+    133 │           <strong>GrayJay Sources</strong>
+
+  i The href attribute should be a valid URL
+
+  i Check this thorough explanation to better understand the context.
+
+
+index.html:132:11 lint/a11y/useAltText ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Provide a text alternative through the alt, aria-label, or aria-labelledby attribute.
+
+    130 │       <div class="container">
+    131 │         <a href="#" class="navbar-brand d-flex align-items-center">
+  > 132 │           <img src="https://grayjay.app/images/webclip.png" width="32" height="32"/>&nbsp;
+        │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    133 │           <strong>GrayJay Sources</strong>
+    134 │         </a>
+
+  i Meaningful alternative text on elements helps users relying on screen readers to understand content's purpose within a page.
+
+  i If the content is decorative, redundant, or obscured, consider hiding it from assistive technologies with the aria-hidden attribute.
+
+
 repo/index.html:1:1 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Unescaped `<` bracket character. Expected a tag or escaped character.
@@ -1696,17 +1681,12 @@ repo/index.html:3:1 lint/a11y/useHtmlLang ━━━━━━━━━━━━�
 
   × Provide a lang attribute when using the html element.
 
-     1 │ <?php header('Location: https://grayjay-sources.github.io'); ?>
-     2 │ <!doctype html>
-   > 3 │ <html>
-       │ ^^^^^^
-   > 4 │   <head>
-        ...
-  > 19 │     </script>
-  > 20 │   </body>
-  > 21 │ </html>
-       │ ^^^^^^^
-    22 │
+    1 │ <?php header('Location: https://grayjay-sources.github.io'); ?>
+    2 │ <!doctype html>
+  > 3 │ <html>
+      │ ^^^^^^
+    4 │   <head>
+    5 │     <meta
 
   i Setting a lang attribute on HTML document elements configures the language used by screen readers when no user default is specified.
 
@@ -1728,12 +1708,12 @@ lint ━━━━━━━━━━━━━━━━━━━━━━━━━
 /github/workspace/sources.json:1779: Nam ==> Name
 /github/workspace/sources.json:1938: ommitted ==> omitted
 /github/workspace/sources.json:1939: ommitted ==> omitted
-/github/workspace/sources.json:4201: comming ==> coming
-/github/workspace/sources.json:4409: necesities ==> necessities
-/github/workspace/sources.json:4421: necesities ==> necessities
-/github/workspace/sources.json:4433: necesities ==> necessities
-/github/workspace/sources.json:4749: didnt ==> didn't
-/github/workspace/sources.json:5154: te ==> the, be, we, to
+/github/workspace/sources.json:4276: comming ==> coming
+/github/workspace/sources.json:4484: necesities ==> necessities
+/github/workspace/sources.json:4496: necesities ==> necessities
+/github/workspace/sources.json:4508: necesities ==> necessities
+/github/workspace/sources.json:4824: didnt ==> didn't
+/github/workspace/sources.json:5229: te ==> the, be, we, to
 ```
 
 </details>
