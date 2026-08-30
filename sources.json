@@ -2874,6 +2874,47 @@
     "_installUrl": "https://nutstone.github.io/grayjay-manhuafast-plugin/ManhuaFastConfig.json"
   },
   {
+    "_tags": ["unofficial", "untested"],
+    "_feeds": {
+      "commits": "https://github.com/cholojuanito/meanstv-grayjay-plugin/commits/main.atom",
+      "releases": "https://github.com/cholojuanito/meanstv-grayjay-plugin/releases.atom"
+    },
+    "name": "MeansTV",
+    "description": "The world's first worker-owned streaming platform",
+    "author": "cholojuanito",
+    "authorUrl": "https://github.com/cholojuanito",
+    "sourceUrl": "https://cholojuanito.github.io/meanstv-grayjay-plugin/MeansTvConfig.json",
+    "repositoryUrl": "https://github.com/cholojuanito/meanstv-grayjay-plugin",
+    "scriptUrl": "./MeansTvScript.js",
+    "version": 1,
+    "iconUrl": "./MeansTvLogo.jpg",
+    "id": "1ebbd4b9-bfab-4fb2-9e75-fdc05db284ad",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      "means.tv",
+      "www.uscreen.tv",
+      "api.uscreencdn.com",
+      "alpha.uscreencdn.com",
+      "assets-gke.uscreencdn.com",
+      "cable.uscreen.at",
+      "stream.mux.com",
+      "image.mux.com",
+      "manifest-gcp-us-east4-vop1.edgemv.mux.com",
+      "chunk-gcp-us-east4-vop1.fastly.mux.com",
+      "manifest-oci-us-ashburn-1-vop1.edgemv.mux.com",
+      "chunk-oci-us-ashburn-1-vop1.edgemv.mux.com",
+      "manifest-oci-us-phoenix-1-vop1.edgemv.mux.com",
+      "chunk-oci-us-phoenix-1-vop1.edgemv.mux.com"
+    ],
+    "_installUrl": "https://cholojuanito.github.io/meanstv-grayjay-plugin/MeansTvConfig.json"
+  },
+  {
     "name": "MediathekView",
     "description": "Online media library for German television broadcasters",
     "author": "Björn Eberhardt",
