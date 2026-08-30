@@ -2776,6 +2776,78 @@
     }
   },
   {
+    "name": "Lotus Eaters",
+    "description": "Lotus Eaters offers podcasts and content exploring cultural, political, and societal issues with diverse perspectives and thought-provoking discussions.",
+    "author": "HackerWeenie",
+    "authorUrl": "https://x.com/HackerWeenie",
+    "platformUrl": "https://www.lotuseaters.com",
+    "sourceUrl": "https://duzwoixghogbc.cloudfront.net/LotusEatersConfig.json",
+    "repositoryUrl": "https://gitlab.com/grayjayplugins/LotusEaters",
+    "scriptUrl": "./LotusEatersScript.js",
+    "iconUrl": "./LotusEatersIcon.png",
+    "id": "21a4591f-13c9-4e82-a3d2-5a11362cef8e",
+    "packages": ["Http", "DOMParser"],
+    "allowEval": false,
+    "allowUrls": [
+      "www.lotuseaters.com",
+      "cdn.lotuseaters.com",
+      "rumble.com",
+      "1a-1791.com",
+      "odysee.com",
+      "api.na-backend.odysee.com",
+      "player.odycdn.com"
+    ],
+    "authentication": {
+      "loginUrl": "https://www.lotuseaters.com/login",
+      "completionUrl": "https://www.lotuseaters.com/",
+      "cookiesToFind": [
+        "XSRF-TOKEN",
+        "laravel_session",
+        "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d"
+      ]
+    },
+    "settings": [
+      {
+        "variable": "preferredSource",
+        "name": "Alternative Video Source",
+        "description": "When videos are unavailable from the website, the plugin will prefer the selected source.",
+        "type": "Dropdown",
+        "default": "0",
+        "options": ["Odysee", "Rumble"]
+      }
+    ],
+    "version": 12,
+    "changelog": {
+      "12": ["Fixed sub-comment handling.", "Improved error messages."],
+      "11": ["Fixed page data parsing."],
+      "10": [
+        "Updated the plugin to support the new website format",
+        "Now stores an additional session token. Be sure to selected the 'Remember Me' box when logging in."
+      ],
+      "9": ["Updated the plugin to support the new website format"],
+      "8": ["Fixed urls in video descriptions"],
+      "7": [
+        "Fixed video upload times (Lotus Eaters forgot to put their clocks forward!)"
+      ],
+      "6": ["Fixed video descriptions", "Improved recommended videos load time"],
+      "5": ["Miscellaneous fixes"],
+      "4": [
+        "Odysee sources are now validated to ensure that videos which are not yet ready are not served"
+      ],
+      "3": [
+        "Added support for live chat (In Grayjay settings, be sure to enable 'Advanced Settings' and 'Live Chat Webview') for this to work",
+        "Fixed live status handling",
+        "Fixed video duration handling for the current video (durations are still not possible to provide in video feeds — sorry chaps)"
+      ],
+      "2": [
+        "Added support for Odysee sources",
+        "Added support for recommended videos",
+        "Some existing functionality has been made more robust"
+      ],
+      "1": ["Initial build"]
+    }
+  },
+  {
     "_tags": ["unofficial", "untested"],
     "_feeds": {
       "commits": "https://github.com/nutstone/grayjay-manhuafast-plugin/commits/main.atom",
