@@ -6139,5 +6139,39 @@
         "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
       ]
     }
+  },
+  {
+    "name": "NASA+",
+    "description": "Video streaming platform",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://gitlab.com/grayjay-plugins1",
+    "platformUrl": "https://plus.nasa.gov/",
+    "sourceUrl": "https://gitlab.com/grayjay-plugins1/grayjay-plugin-nasa/-/raw/main/NASAConfig.json",
+    "repositoryUrl": "https://gitlab.com/grayjay-plugins1/grayjay-plugin-nasa",
+    "scriptUrl": "https://gitlab.com/grayjay-plugins1/grayjay-plugin-nasa/-/raw/main/NASAScript.js",
+    "version": 2,
+    "iconUrl": "https://gitlab.com/grayjay-plugins1/grayjay-plugin-nasa/-/raw/main/nasa.svg",
+    "id": "5fd45fd5-1f5a-4b6e-b534-1485d402c328",
+    "scriptSignature": "",
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": false,
+    "allowUrls": [
+      ".plus.nasa.gov",
+      "nasaplus.akamaized.net"
+    ],
+    "changelog": {
+      "1": [
+        "Initial release - Homepage support and video playback",
+        "Added search support"
+      ],
+      "2": [
+        "Fixed video URL extraction",
+        "Enhanced video source detection with multiple fallback methods"
+      ]
+    }
   }
 ]
