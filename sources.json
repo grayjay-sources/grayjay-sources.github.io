@@ -6487,8 +6487,8 @@
     "changelog": {
       "1": ["Initial version"]
     }
-  },
-  {
+},
+{
     "name": "xboxclips",
     "description": "Xbox game clips and videos",
     "author": "Grayjay Plugins",
@@ -6502,14 +6502,101 @@
     "id": "8a7b2c3d-4e5f-6789-abcd-ef1234567890",
     "scriptSignature": "",
     "scriptPublicKey": "",
-    "packages": ["Http", "DOMParser"],
+    "packages": [
+        "Http",
+        "DOMParser"
+    ],
     "allowEval": false,
-    "allowUrls": [".xboxclips.com", ".xboxlive.com", ".xbox.com"],
+    "allowUrls": [
+        ".xboxclips.com",
+        ".xboxlive.com",
+        ".xbox.com"
+    ],
     "settings": [],
     "changelog": {
-      "1": [
-        "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
-      ]
+        "1": [
+            "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
+        ]
     }
-  }
+},
+{
+    "name": "TCLtv Plus",
+    "description": "TCLtv.plus free streaming service",
+    "author": "Catcall0284",
+    "authorUrl": "https://codeberg.org/Catcall0284",
+    "platformUrl": "https://tcltv.plus",
+    "sourceUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_TCLtvPlus/raw/branch/main/TCLtvConfig.json",
+    "repositoryUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_TCLtvPlus",
+    "scriptUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_TCLtvPlus/raw/branch/main/TCLtvScript.js",
+    "version": 1,
+    "iconUrl": "./favicon.ico",
+    "id": "2703c8fb-6982-4add-b501-15760a38e0e8",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": true,
+    "allowUrls": [
+        "*.tcltv.plus",
+        "*.ideonow.com",
+        "gateway-prod.ideonow.com",
+        "*.wurl.com",
+        "*.amagi.tv",
+        "*.frequency.stream",
+        "*.cloudfront.net",
+        "*.playouts.now.amagi.tv",
+        "*.playout.now3.amagi.tv",
+        "*.linear.frequency.stream",
+        "tcl-channel-cdn.ideonow.com",
+        "ip-api.com",
+        "*.global.transmit.live",
+        "*.amazonaws.com",
+        "*.lura.app",
+        "*.google.com",
+        "*.fubo.tv",
+        "*.getpublica.com",
+        "*.leiniao.com",
+        "*.ottera.tv",
+        "*.multimedios.com",
+        "*.toongoggles.com",
+        "*.afrolandtv.com",
+        "*.jubaotv.com"
+    ],
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial version"
+        ]
+    }
+},
+{
+    "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
+    "name": "DRTV",
+    "description": "Danish national broadcaster television network.",
+    "author": "Colorman",
+    "authorUrl": "https://github.com/TheColorman/grayjay-plugin-drtv",
+    "platformUrl": "https://dr.dk/drtv",
+    "sourceUrl": "https://raw.githubusercontent.com/TheColorman/grayjay-plugin-drtv/refs/heads/main/DRTVConfig.json",
+    "repositoryUrl": "https://github.com/TheColorman/grayjay-plugin-drtv",
+    "scriptUrl": "./dist/bundle.js",
+    "version": 1,
+    "iconUrl": "./DRTVIcon.png",
+    "id": "5fdac826-a7ce-4f90-ba26-d00cde1e0567",
+    "scriptSignature": "RD5wfdq4PfZRiwERX30tQc9ESzf7RX8uARqghhmPzFbYyUyi3FhJTtmKN0tvpmplMiOogxAgrIUYO+EqtDJnmzMDkgPFwhJ8sGOWXVZ0V+GDotOVzeIu8RdlM+oypjseqcXwsQ7UX+IRudFU3EuusgFF9aJejayZte4/ge3fWggg+T/LT+tw4Z/xiEbh/XI41lkgM54k2TlCzOMS9loxLBiZyH/yB87DUTlAjY91a1c8L+kfSpdPGd5Xxjqqy+ToOyYzXC5iWdDzkAA7xigGz/VSVOIs5s4tAuoWsoLVfZ8cOyqIrF00/KlaT22FT6njY4NbiiEiZ8pc7jko9QLXdAt6w1ajt2O6/IuCCdpE49lC70MYM+uLOODxrOTgSJunZQJJgn2IyGGNIMF/A5Ov1fVNht60ahiY894UV1Lyo2dy2DjE7Lv7h0IpciKaOIX8b1OKZzQrHJ793H7c5V2omxsGTf0Hsime5ZwwYhyoIm/VTnOhLdYjREYUJNxqbmxe",
+    "scriptPublicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAxybSYz6Ia8GXZDyolNJow33MAHCzIFAqUHTDCf14e5WEhh01hWvKZJeq6E4VI+K0Di/zqwoLUsyA+qQHbuW9S6Y/3kdHhAv/jEsLn5vcH+pcK/+2KMuShoJtNt2lSY0Lp+Bjz52tXlLhxIEinK4NILHzJntiozkpMD2iQSHQGmiSRkNMWRl2CS37/Woarhk0dwzba43QdZINpFSGiyf0UVdaVLxxuyNN5yp915B8IJk8MDVrhJp4GVd//ewcS6Hg2kO/ARikVLoH+Rez/IPicm6hhEdRTu4gntS5Yl5ofWrD1Z2VMGSzNTgIXfXXT0Qm+1k4+zDjU2bkoHw2Bh3f1hUaSUDooIPpWXsHekoG9y+Mhzsk/j/DxmvQsF1gCBWsmPpQ496KwlRMVRmU4Rtf9YhjyU7JZQaixGfc69TZHmaZf7STFSJPvJqHX+0QQdIlLh+3VFFMIjeGjyxRmz1ajPR8sbVhPL+rlO8TTpHgNkE8jpmMjJcrWN5IpGcozl4dAgMBAAE=",
+    "packages": [
+        "Http"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+        "dr.dk",
+        "production-cdn.dr-massive.com",
+        "production-static.dr-massive.com",
+        "prod95-cdn.dr-massive.com",
+        "prod95-static.dr-massive.com"
+    ]
+}
 ]
