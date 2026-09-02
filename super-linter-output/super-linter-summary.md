@@ -14,7 +14,7 @@
 
 Super-linter detected linting errors
 
-For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/33669625768)
+For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/33696699397)
 
 Powered by [Super-linter](https://github.com/super-linter/super-linter)
 
@@ -23,7 +23,7 @@ Powered by [Super-linter](https://github.com/super-linter/super-linter)
 <summary>BIOME_FORMAT</summary>
 
 ```text
-Checked 10 files in 606ms. No fixes applied.
+Checked 10 files in 322ms. No fixes applied.
 Found 10 errors..vscode/launch.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Formatter would have printed the following content:
@@ -1040,156 +1040,156 @@ sources.json format ━━━━━━━━━━━━━━━━━━━━
   × Formatter would have printed the following content:
 
        1    1 │   [
-       2      │ - ··{
-       3      │ - ····"_tags":·["unofficial",·"untested"],
-       4      │ - ····"name":·"Adventures·in·Odyssey·Club",
-       5      │ - ····"description":·"Subscription·service·for·the·award-winning,·original·audio·drama·series·enjoyed·by·the·whole·family.",
-       6      │ - ····"author":·"CATEIN",
-       7      │ - ····"authorUrl":·"https://catein.xyz",
-       8      │ - ····"sourceUrl":·"https://raw.githubusercontent.com/CATEIN/adventures-in-odyssey-club-plugin/refs/heads/main/AdventuresInOdysseyClubConfig.json",
-       9      │ - ····"repositoryUrl":·"https://github.com/CATEIN/adventures-in-odyssey-club-plugin",
-      10      │ - ····"scriptUrl":·"./AIOScript.js",
-      11      │ - ····"version":·14,
-      12      │ - ····"iconUrl":·"./AIOC.png",
-      13      │ - ····"id":·"62e186ef-160d-46d7-9953-74fe84d11b40",
-      14      │ - ····"scriptSignature":·"",
-      15      │ - ····"scriptPublicKey":·"",
-      16      │ - ····"packages":·["Http"],
-      17      │ - ····"allowEval":·false,
-      18      │ - ····"allowUrls":·["fotf.my.site.com"],
-      19      │ - ····"authentication":·{
-      20      │ - ······"loginUrl":·"https://app.adventuresinodyssey.com/signin",
-      21      │ - ······"domainHeadersToFind":·{
-      22      │ - ········"fotf.my.site.com":·["Authorization",·"x-viewer-id",·"x-pin"]
-      23      │ - ······},
-      24      │ - ······"cookiesToFind":·["idccsrf"],
-      25      │ - ······"loginWarning":·"You·must·select·a·profile·with·a·PIN·for·authentication·to·complete."
-      26      │ - ····},
-      27      │ - ····"settings":·[
-      28      │ - ······{
-      29      │ - ········"variable":·"podcasts",
-      30      │ - ········"name":·"Podcasts",
-      31      │ - ········"description":·"Show·new·podcasts·in·subscription·feed",
-      32      │ - ········"type":·"Boolean",
-      33      │ - ········"default":·"false"
-      34      │ - ······},
-      35      │ - ······{
-      36      │ - ········"variable":·"fetchRandomEpisode",
-      37      │ - ········"name":·"Randomizer·via·Recommended",
-      38      │ - ········"description":·"Puts·a·random·episode·at·the·top·of·recommendations·(Recommendations·may·take·longer·to·load)",
-      39      │ - ········"type":·"Boolean",
-      40      │ - ········"default":·"false"
-      41      │ - ······},
-      42      │ - ······{
-      43      │ - ········"variable":·"fasterRandom",
-      44      │ - ········"name":·"Faster·Randomizer",
-      45      │ - ········"description":·"Cache·episodes·instead·of·using·the·random·API.·Might·not·include·the·newest·episodes.·Default·when·not·logged·in.",
-      46      │ - ········"type":·"Boolean",
-      47      │ - ········"default":·"false",
-      48      │ - ········"dependency":·"fetchRandomEpisode"
-      49      │ - ······},
-      50      │ - ······{
-      51      │ - ········"variable":·"groupings",
-      52      │ - ········"name":·"Content·Groupings",
-      53      │ - ········"description":·"Choose·which·content·groups·appear·on·the·playlists·tab",
-      54      │ - ········"type":·"Dropdown",
-      55      │ - ········"default":·"0",
-      56      │ - ········"options":·[
-      57      │ - ··········"Albums",
-      58      │ - ··········"Playlists·(Club)",
-      59      │ - ··········"Series",
-      60      │ - ··········"Collections",
-      61      │ - ··········"Bonus·Videos",
-      62      │ - ··········"Life·Lessons"
-      63      │ - ········]
-      64      │ - ······},
-      65      │ - ······{
-      66      │ - ········"variable":·"advancedHeader",
-      67      │ - ········"name":·"Advanced·settings",
-      68      │ - ········"description":·"Advanced/Experimental·settings",
-      69      │ - ········"type":·"Header"
-      70      │ - ······},
-      71      │ - ······{
-      72      │ - ········"variable":·"commentPageSize",
-      73      │ - ········"name":·"Comment·page·size",
-      74      │ - ········"description":·"Set·how·many·comments·to·load·on·each·request.·Higher·might·be·slower",
-      75      │ - ········"type":·"Dropdown",
-      76      │ - ········"default":·"1",
-      77      │ - ········"options":·["10·(the·club·uses·this)",·"20",·"30",·"40",·"50"]
-      78      │ - ······},
-      79      │ - ······{
-      80      │ - ········"variable":·"debug",
-      81      │ - ········"name":·"Show·additional·info",
-      82      │ - ········"description":·"Show·additional·info·in·description",
-      83      │ - ········"type":·"Boolean",
-      84      │ - ········"default":·"false"
-      85      │ - ······},
-      86      │ - ······{
-      87      │ - ········"variable":·"secretVariable",
-      88      │ - ········"name":·"Enable·Experimental·Ambient·Playback·Rerouting",
-      89      │ - ········"description":·"Only·enable·if·you·are·not·logged·in",
-      90      │ - ········"type":·"Boolean",
-      91      │ - ········"default":·"false"
-      92      │ - ······}
-      93      │ - ····],
-      94      │ - ····"changelog":·{
-      95      │ - ······"5":·[
-      96      │ - ········"Comment·Update!",
-      97      │ - ········"Finding·comments·should·now·use·less·requests",
-      98      │ - ········"Replies·now·show·up",
-      99      │ - ········"Added·setting·for·comment·page·size",
-     100      │ - ········"Increased·EpisodeHomePage·size·to·30·instead·of·25"
-     101      │ - ······],
-     102      │ - ······"6":·[
-     103      │ - ········"Small·lil·update",
-     104      │ - ········"Changed·EpisodeHomePage·API·url·to·one·the·club·might·like·better",
-     105      │ - ········"Loading·comments·might·show·toast·messages·when·searching·for·a·page·maybe?",
-     106      │ - ········"Added·themes·support·-·issue·#2·on·github",
-     107      │ - ········"Added·weird·video·URL·support·-·issue·#3·on·github"
-     108      │ - ······],
-     109      │ - ······"7":·[
-     110      │ - ········"Another·small·lil·update",
-     111      │ - ········"Changed·EpisodeHomePage·endpoint·again·to·one·that·gives·both·video·and·audio·content",
-     112      │ - ········"Support·for·badge·content·(loads·the·first·content·id·in·the·badge)"
-     113      │ - ······],
-     114      │ - ······"8":·[
-     115      │ - ········"Very·lil·update",
-     116      │ - ········"Fixed·older·club·videos·not·loading",
-     117      │ - ········"Support·for·playlist·URLs·(currently·no·way·to·get·to·them·on·grayjay)",
-     118      │ - ········"Slightly·better·search"
-     119      │ - ······],
-     120      │ - ······"9":·[
-     121      │ - ········"u·p·d·a·t·e",
-     122      │ - ········"content·with·null·download_url·throws·UnavailableException",
-     123      │ - ········"Randomizer·now·works·for·logged·out·users·via·episode·cache·system",
-     124      │ - ········"Minor·changes·to·recommendations"
-     125      │ - ······],
-     126      │ - ······"10":·[
-     127      │ - ········"Support·for·content·urls·with·contentGroup·in·them",
-     128      │ - ········"Simplifyed·isFreeEpisode·logic",
-     129      │ - ········"Support·for·getHome",
-     130      │ - ········"Added·Faster·Randomizer·setting·for·logged·in·users",
-     131      │ - ········"Added·Content·Groupings·setting",
-     132      │ - ········"Added·Show·additional·info·setting",
-     133      │ - ········"Added·Podcasts·setting"
-     134      │ - ······],
-     135      │ - ······"11":·[
-     136      │ - ········"Fixed·upcoming·free·episodes·attempting·to·play",
-     137      │ - ········"Badges·are·now·platform·playlist·instead·of·content",
-     138      │ - ········"Description·now·includes·content_body·and·themes",
-     139      │ - ········"Description·now·includes·links·for·Themes·and·Characters"
-     140      │ - ······],
-     141      │ - ······"12":·[
-     142      │ - ········"Added·support·for·direct·media·urls·starting·with·https://media.adventuresinodyssey.com/private/audio/episode"
-     143      │ - ······],
-     144      │ - ······"13":·["hotfix·for·support·for·direct·media·urls"],
-     145      │ - ······"14":·[
-     146      │ - ········"Direct·media·URLs·now:",
-     147      │ - ········"-·Display·AiOC·image·instead·of·nothing",
-     148      │ - ········"-·Show·URL·in·description",
-     149      │ - ········"-·Random·episode·in·description·(if·setting·enabled)",
-     150      │ - ········"Description·now·includes·image·links",
-  12815 more lines truncated
+       2      │ - ····{
+       3      │ - ········"_tags":·[
+       4      │ - ············"unofficial",
+       5      │ - ············"untested"
+       6      │ - ········],
+       7      │ - ········"name":·"Adventures·in·Odyssey·Club",
+       8      │ - ········"description":·"Subscription·service·for·the·award-winning,·original·audio·drama·series·enjoyed·by·the·whole·family.",
+       9      │ - ········"author":·"CATEIN",
+      10      │ - ········"authorUrl":·"https://catein.xyz",
+      11      │ - ········"sourceUrl":·"https://raw.githubusercontent.com/CATEIN/adventures-in-odyssey-club-plugin/refs/heads/main/AdventuresInOdysseyClubConfig.json",
+      12      │ - ········"repositoryUrl":·"https://github.com/CATEIN/adventures-in-odyssey-club-plugin",
+      13      │ - ········"scriptUrl":·"./AIOScript.js",
+      14      │ - ········"version":·14,
+      15      │ - ········"iconUrl":·"./AIOC.png",
+      16      │ - ········"id":·"62e186ef-160d-46d7-9953-74fe84d11b40",
+      17      │ - ········"scriptSignature":·"",
+      18      │ - ········"scriptPublicKey":·"",
+      19      │ - ········"packages":·[
+      20      │ - ············"Http"
+      21      │ - ········],
+      22      │ - ········"allowEval":·false,
+      23      │ - ········"allowUrls":·[
+      24      │ - ············"fotf.my.site.com"
+      25      │ - ········],
+      26      │ - ········"authentication":·{
+      27      │ - ············"loginUrl":·"https://app.adventuresinodyssey.com/signin",
+      28      │ - ············"domainHeadersToFind":·{
+      29      │ - ················"fotf.my.site.com":·[
+      30      │ - ····················"Authorization",
+      31      │ - ····················"x-viewer-id",
+      32      │ - ····················"x-pin"
+      33      │ - ················]
+      34      │ - ············},
+      35      │ - ············"cookiesToFind":·[
+      36      │ - ················"idccsrf"
+      37      │ - ············],
+      38      │ - ············"loginWarning":·"You·must·select·a·profile·with·a·PIN·for·authentication·to·complete."
+      39      │ - ········},
+      40      │ - ········"settings":·[
+      41      │ - ············{
+      42      │ - ················"variable":·"podcasts",
+      43      │ - ················"name":·"Podcasts",
+      44      │ - ················"description":·"Show·new·podcasts·in·subscription·feed",
+      45      │ - ················"type":·"Boolean",
+      46      │ - ················"default":·"false"
+      47      │ - ············},
+      48      │ - ············{
+      49      │ - ················"variable":·"fetchRandomEpisode",
+      50      │ - ················"name":·"Randomizer·via·Recommended",
+      51      │ - ················"description":·"Puts·a·random·episode·at·the·top·of·recommendations·(Recommendations·may·take·longer·to·load)",
+      52      │ - ················"type":·"Boolean",
+      53      │ - ················"default":·"false"
+      54      │ - ············},
+      55      │ - ············{
+      56      │ - ················"variable":·"fasterRandom",
+      57      │ - ················"name":·"Faster·Randomizer",
+      58      │ - ················"description":·"Cache·episodes·instead·of·using·the·random·API.·Might·not·include·the·newest·episodes.·Default·when·not·logged·in.",
+      59      │ - ················"type":·"Boolean",
+      60      │ - ················"default":·"false",
+      61      │ - ················"dependency":·"fetchRandomEpisode"
+      62      │ - ············},
+      63      │ - ············{
+      64      │ - ················"variable":·"groupings",
+      65      │ - ················"name":·"Content·Groupings",
+      66      │ - ················"description":·"Choose·which·content·groups·appear·on·the·playlists·tab",
+      67      │ - ················"type":·"Dropdown",
+      68      │ - ················"default":·"0",
+      69      │ - ················"options":·[
+      70      │ - ····················"Albums",
+      71      │ - ····················"Playlists·(Club)",
+      72      │ - ····················"Series",
+      73      │ - ····················"Collections",
+      74      │ - ····················"Bonus·Videos",
+      75      │ - ····················"Life·Lessons"
+      76      │ - ················]
+      77      │ - ············},
+      78      │ - ············{
+      79      │ - ················"variable":·"advancedHeader",
+      80      │ - ················"name":·"Advanced·settings",
+      81      │ - ················"description":·"Advanced/Experimental·settings",
+      82      │ - ················"type":·"Header"
+      83      │ - ············},
+      84      │ - ············{
+      85      │ - ················"variable":·"commentPageSize",
+      86      │ - ················"name":·"Comment·page·size",
+      87      │ - ················"description":·"Set·how·many·comments·to·load·on·each·request.·Higher·might·be·slower",
+      88      │ - ················"type":·"Dropdown",
+      89      │ - ················"default":·"1",
+      90      │ - ················"options":·[
+      91      │ - ····················"10·(the·club·uses·this)",
+      92      │ - ····················"20",
+      93      │ - ····················"30",
+      94      │ - ····················"40",
+      95      │ - ····················"50"
+      96      │ - ················]
+      97      │ - ············},
+      98      │ - ············{
+      99      │ - ················"variable":·"debug",
+     100      │ - ················"name":·"Show·additional·info",
+     101      │ - ················"description":·"Show·additional·info·in·description",
+     102      │ - ················"type":·"Boolean",
+     103      │ - ················"default":·"false"
+     104      │ - ············},
+     105      │ - ············{
+     106      │ - ················"variable":·"secretVariable",
+     107      │ - ················"name":·"Enable·Experimental·Ambient·Playback·Rerouting",
+     108      │ - ················"description":·"Only·enable·if·you·are·not·logged·in",
+     109      │ - ················"type":·"Boolean",
+     110      │ - ················"default":·"false"
+     111      │ - ············}
+     112      │ - ········],
+     113      │ - ········"changelog":·{
+     114      │ - ············"5":·[
+     115      │ - ················"Comment·Update!",
+     116      │ - ················"Finding·comments·should·now·use·less·requests",
+     117      │ - ················"Replies·now·show·up",
+     118      │ - ················"Added·setting·for·comment·page·size",
+     119      │ - ················"Increased·EpisodeHomePage·size·to·30·instead·of·25"
+     120      │ - ············],
+     121      │ - ············"6":·[
+     122      │ - ················"Small·lil·update",
+     123      │ - ················"Changed·EpisodeHomePage·API·url·to·one·the·club·might·like·better",
+     124      │ - ················"Loading·comments·might·show·toast·messages·when·searching·for·a·page·maybe?",
+     125      │ - ················"Added·themes·support·-·issue·#2·on·github",
+     126      │ - ················"Added·weird·video·URL·support·-·issue·#3·on·github"
+     127      │ - ············],
+     128      │ - ············"7":·[
+     129      │ - ················"Another·small·lil·update",
+     130      │ - ················"Changed·EpisodeHomePage·endpoint·again·to·one·that·gives·both·video·and·audio·content",
+     131      │ - ················"Support·for·badge·content·(loads·the·first·content·id·in·the·badge)"
+     132      │ - ············],
+     133      │ - ············"8":·[
+     134      │ - ················"Very·lil·update",
+     135      │ - ················"Fixed·older·club·videos·not·loading",
+     136      │ - ················"Support·for·playlist·URLs·(currently·no·way·to·get·to·them·on·grayjay)",
+     137      │ - ················"Slightly·better·search"
+     138      │ - ············],
+     139      │ - ············"9":·[
+     140      │ - ················"u·p·d·a·t·e",
+     141      │ - ················"content·with·null·download_url·throws·UnavailableException",
+     142      │ - ················"Randomizer·now·works·for·logged·out·users·via·episode·cache·system",
+     143      │ - ················"Minor·changes·to·recommendations"
+     144      │ - ············],
+     145      │ - ············"10":·[
+     146      │ - ················"Support·for·content·urls·with·contentGroup·in·them",
+     147      │ - ················"Simplifyed·isFreeEpisode·logic",
+     148      │ - ················"Support·for·getHome",
+     149      │ - ················"Added·Faster·Randomizer·setting·for·logged·in·users",
+     150      │ - ················"Added·Content·Groupings·setting",
+  14081 more lines truncated
 
 
 sources.schema.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1364,7 +1364,7 @@ format ━━━━━━━━━━━━━━━━━━━━━━━━�
 ```text
 The number of diagnostics exceeds the limit allowed. Use --max-diagnostics to increase it.
 Diagnostics not shown: 4427.
-Checked 13 files in 1581ms. No fixes applied.
+Checked 13 files in 825ms. No fixes applied.
 Found 548 errors.
 Found 3888 warnings.
 Found 11 infos.assets/css/site.css:78:18 lint/complexity/noImportantStyles  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
