@@ -6154,6 +6154,50 @@
         "_installUrl": "https://github.com/Matti-Koopa/grayjay_wienat_videos/releases/download/current/WienAtVideosConfig.json"
     },
     {
+        "name": "X / Twitter",
+        "description": "Browse X (Twitter) via xcancel.com — a privacy-friendly Nitter frontend. Supports user profiles, video playback, and search.",
+        "author": "upgradingmaster",
+        "authorUrl": "https://github.com/upgradingmaster",
+        "platformUrl": "https://xcancel.com",
+        "sourceUrl": "https://raw.githubusercontent.com/upgradingmaster/grayjay-xcancel/main/config.json",
+        "repositoryUrl": "https://github.com/upgradingmaster/grayjay-xcancel",
+        "scriptUrl": "./XPlugin.js",
+        "version": 1,
+        "iconUrl": "./icon.png",
+        "id": "9c4b5d6e-7f8a-4b1c-9d2e-3f4a5b6c7d8e",
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": [
+            "Http",
+            "DOMParser"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "everywhere"
+        ],
+        "settings": [
+            {
+                "variable": "mediaOnly",
+                "name": "Media-only channel feed",
+                "description": "When browsing a user's profile, show only tweets that contain video or images (recommended for a video-player experience).",
+                "type": "Boolean",
+                "default": "true"
+            },
+            {
+                "variable": "searchVideosOnly",
+                "name": "Search: videos only",
+                "description": "When searching, return only tweets that contain videos.",
+                "type": "Boolean",
+                "default": "false"
+            }
+        ],
+        "changelog": {
+            "1": [
+                "Initial release: channel content via RSS, search, and video extraction from tweet pages."
+            ]
+        }
+    },
+    {
         "_tags": [
             "unofficial",
             "working",
@@ -7421,50 +7465,6 @@
         "changelog": {
             "1": [
                 "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
-            ]
-        }
-    },
-    {
-        "name": "X / Twitter",
-        "description": "Browse X (Twitter) via xcancel.com — a privacy-friendly Nitter frontend. Supports user profiles, video playback, and search.",
-        "author": "upgradingmaster",
-        "authorUrl": "https://github.com/upgradingmaster",
-        "platformUrl": "https://xcancel.com",
-        "sourceUrl": "https://raw.githubusercontent.com/upgradingmaster/grayjay-xcancel/main/config.json",
-        "repositoryUrl": "https://github.com/upgradingmaster/grayjay-xcancel",
-        "scriptUrl": "./XPlugin.js",
-        "version": 1,
-        "iconUrl": "./icon.png",
-        "id": "9c4b5d6e-7f8a-4b1c-9d2e-3f4a5b6c7d8e",
-        "scriptSignature": "",
-        "scriptPublicKey": "",
-        "packages": [
-            "Http",
-            "DOMParser"
-        ],
-        "allowEval": false,
-        "allowUrls": [
-            "everywhere"
-        ],
-        "settings": [
-            {
-                "variable": "mediaOnly",
-                "name": "Media-only channel feed",
-                "description": "When browsing a user's profile, show only tweets that contain video or images (recommended for a video-player experience).",
-                "type": "Boolean",
-                "default": "true"
-            },
-            {
-                "variable": "searchVideosOnly",
-                "name": "Search: videos only",
-                "description": "When searching, return only tweets that contain videos.",
-                "type": "Boolean",
-                "default": "false"
-            }
-        ],
-        "changelog": {
-            "1": [
-                "Initial release: channel content via RSS, search, and video extraction from tweet pages."
             ]
         }
     }
