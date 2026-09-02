@@ -6186,9 +6186,103 @@
     "allowUrls": [".xboxclips.com", ".xboxlive.com", ".xbox.com"],
     "settings": [],
     "changelog": {
-      "1": [
-        "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
-      ]
+        "1": [
+            "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
+        ]
     }
-  }
+},
+{
+    "name": "IMDb",
+    "description": "Internet Movie Database - Movies, TV, and Celebrity Information",
+    "author": "Grayjay Community",
+    "authorUrl": "https://grayjay.app",
+    "platformUrl": "https://imdb.com",
+    "sourceUrl": "https://gitgud.io/aptly/IMDB-Grayjay-Plugin/-/raw/master/IMDbConfig.json",
+    "scriptUrl": "https://gitgud.io/aptly/IMDB-Grayjay-Plugin/-/raw/master/IMDbScript.js",
+    "repositoryUrl": "https://github.com/",
+    "version": 1,
+    "iconUrl": "https://m.media-amazon.com/images/G/01/imdb/images-ANDW73HA/favicon_desktop_32x32._CB468655813_.png",
+    "id": "8f4a2b1c-6d3e-4f5a-9b8c-2d1e3f4a5b6c",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser"
+    ],
+    "packagesOptional": [
+        "HttpImp"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": false,
+    "allowUrls": [
+        "imdb.com",
+        "*.imdb.com",
+        "www.imdb.com",
+        "m.imdb.com",
+        "ia.media-imdb.com",
+        "m.media-amazon.com",
+        "media-imdb.com",
+        "imdb-video.media-imdb.com",
+        "caching.graphql.imdb.com",
+        "api.graphql.imdb.com",
+        "api.imdbws.com"
+    ],
+    "settings": [
+        {
+            "variable": "homepageFeed",
+            "name": "Homepage Feed",
+            "description": "Choose which feed to display on the homepage",
+            "type": "Dropdown",
+            "default": "0",
+            "options": [
+                "Top 250 Chart",
+                "Popular Movies",
+                "Box Office",
+                "Showtimes",
+                "Top 10 This Week",
+                "Top Picks",
+                "Coming Soon",
+                "Featured Today"
+            ]
+        },
+        {
+            "variable": "showToasts",
+            "name": "Show Toast Notifications",
+            "description": "Display toast messages for API fallback and errors",
+            "type": "Boolean",
+            "default": "true"
+        },
+        {
+            "variable": "apiPlatform",
+            "name": "API Platform",
+            "description": "Choose which platform API to use (for fallback/redundancy)",
+            "type": "Dropdown",
+            "default": "0",
+            "options": [
+                "Auto (Try All)",
+                "Android",
+                "iOS",
+                "Web"
+            ]
+        },
+        {
+            "variable": "searchType",
+            "name": "Search Type",
+            "description": "Filter search results by content type",
+            "type": "Dropdown",
+            "default": "0",
+            "options": [
+                "All",
+                "Movies",
+                "TV Shows",
+                "People"
+            ]
+        }
+    ],
+    "changelog": {
+        "1": [
+            "Initial version"
+        ]
+    }
+}
 ]
