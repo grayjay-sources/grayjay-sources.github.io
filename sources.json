@@ -5443,5 +5443,768 @@
         "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
       ]
     }
+  },
+  {
+    "_tags": [
+      "official",
+      "working"
+    ],
+    "id": "a1b2c3d4-5e6f-7890-abcd-ef1234567890",
+    "name": "NASA+",
+    "description": "Explore the unknown in air and space. Watch original series, documentaries, and features from NASA's streaming service.",
+    "version": 5,
+    "author": "FUTO",
+    "authorUrl": "https://futo.tech",
+    "platformUrl": "https://plus.nasa.gov",
+    "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/nasa-plus",
+    "sourceUrl": "https://plugins.grayjay.app/NASA-Plus/NASA-PlusConfig.json",
+    "scriptUrl": "./NASA-PlusScript.js",
+    "iconUrl": "https://plugins.grayjay.app/NASA-Plus/NASA-PlusIcon.png",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+      "Http"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      "plus.nasa.gov"
+    ],
+    "settings": [],
+    "testing": {
+      "GetContentDetails": {
+        "urls": [
+          "https://plus.nasa.gov/video/moonbound-for-all-humanity/",
+          "https://plus.nasa.gov/video/far-out-sailing-on-sunlight/",
+          "https://plus.nasa.gov/video/cosmic-dawn-the-untold-story-of-the-james-webb-space-telescope/"
+        ]
+      },
+      "GetChannel": {
+        "urls": [
+          "https://plus.nasa.gov",
+          "https://plus.nasa.gov/series/moonbound/",
+          "https://plus.nasa.gov/series/nasa-explorers/",
+          "https://plus.nasa.gov/topics/earth/"
+        ]
+      }
+    },
+    "changelog": {
+      "5": [
+        "Fix: Live event detection when end time is unknown;",
+        "Fix: Hide empty series and topics from channel search results;",
+        "Fix: Use GMT timestamps so upload dates are consistent across timezones;",
+        "Improvement: Reliable pagination via WordPress _envelope responses;",
+        "Improvement: Decode additional HTML entities in titles and descriptions;"
+      ],
+      "4": [
+        "Improvement: Show past live events;"
+      ],
+      "3": [
+        "Improvement: Search playlists;",
+        "Improvement: Add series information to video descriptions;"
+      ],
+      "2": [
+        "Fix: Missing thumbnails on scheduled/live videos;",
+        "Improvement: Show live/upcoming events on NASA channel page;",
+        "Improvement: Add thumbnails to series playlists;"
+      ],
+      "1": [
+        "Initial implementation;"
+      ]
+    }
+  },
+  {
+    "_tags": [
+      "official",
+      "working"
+    ],
+    "id": "902c1d65-0a2a-4ee9-be3b-cc5ac76e3df0",
+    "name": "Internet Archive (Alpha)",
+    "version": 10,
+    "platformUrl": "https://archive.org",
+    "description": "Digital library with historical videos, documentaries, educational content, and archived media",
+    "author": "FUTO",
+    "authorUrl": "https://futo.tech/",
+    "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/internet-archive",
+    "sourceUrl": "https://plugins.grayjay.app/InternetArchive/InternetArchiveConfig.json",
+    "scriptUrl": "./InternetArchiveScript.js",
+    "iconUrl": "https://plugins.grayjay.app/InternetArchive/InternetArchiveIcon.png",
+    "scriptSignature": "ehPSfWwkwW3remyxYcQuhsL0ZNzf9E5llP5plYzgFez6fszlBj8+z34VWy9rjIKQXbuj9b3MjFcoOK8Nj9WkosCIPomBP+x+TGRB8YY5gff+Z42Nfyv92zwBm7ynWM0emRWXkGZoenDCsB4ykjNamAHYe6YGuhj/XwBLYJjbAoRpt19IylUniGh7YRR/tzbXJLhvMEBeidXu9dkdgt8h9PxCNwVLgP+iFZFdFURDcjHDrWgKf9xuBNnkezBcKBU3YTqQjl4Hb7+INhToQ25BJN4vtpmUKdX8IT4T3XbWZWkeRHaXZUwDbyiYyMWnF/RXSY1991j8FRjGdtzts8GqyA==",
+    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+    "packages": [
+      "Http"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      "archive.org",
+      ".archive.org",
+      ".us.archive.org"
+    ],
+    "settings": [
+      {
+        "variable": "sortingFilterHeader",
+        "name": "Sorting & Filters",
+        "description": "Default sort order and filters applied to home, channels, and search",
+        "type": "Header"
+      },
+      {
+        "variable": "sortBy",
+        "name": "Sort By",
+        "description": "Default order for home, channel and search results (matches Internet Archive's own sort options)",
+        "type": "Dropdown",
+        "default": "3",
+        "options": [
+          "All-time views",
+          "Weekly views",
+          "Title",
+          "Date published",
+          "Date archived",
+          "Date reviewed",
+          "Date added",
+          "Creator"
+        ]
+      },
+      {
+        "variable": "displayDate",
+        "name": "Item Date",
+        "description": "Which date to show on items in feeds: when it was added to Archive.org, or the media's original/production date.",
+        "type": "Dropdown",
+        "default": "0",
+        "options": [
+          "Upload date",
+          "Original date"
+        ]
+      },
+      {
+        "variable": "mediaType",
+        "name": "Media Type",
+        "description": "Type of media to show",
+        "type": "Dropdown",
+        "default": "0",
+        "options": [
+          "all",
+          "movies",
+          "television",
+          "news",
+          "education",
+          "documentaries",
+          "concerts",
+          "audio"
+        ]
+      },
+      {
+        "variable": "yearFilter",
+        "name": "Decade",
+        "description": "Filter content by decade",
+        "type": "Dropdown",
+        "default": "0",
+        "options": [
+          "all",
+          "2020s",
+          "2010s",
+          "2000s",
+          "1990s",
+          "1980s",
+          "1970s",
+          "1960s",
+          "older"
+        ]
+      },
+      {
+        "variable": "languageFilter",
+        "name": "Language",
+        "description": "Filter by content language",
+        "type": "Dropdown",
+        "default": "7",
+        "options": [
+          "All",
+          "Arabic",
+          "Bengali",
+          "Chinese",
+          "Czech",
+          "Danish",
+          "Dutch",
+          "English",
+          "Finnish",
+          "French",
+          "German",
+          "Greek",
+          "Hebrew",
+          "Hindi",
+          "Hungarian",
+          "Indonesian",
+          "Italian",
+          "Japanese",
+          "Korean",
+          "Latin",
+          "Marathi",
+          "Norwegian",
+          "Persian",
+          "Polish",
+          "Portuguese",
+          "Romanian",
+          "Russian",
+          "Sanskrit",
+          "Spanish",
+          "Swedish",
+          "Tamil",
+          "Telugu",
+          "Thai",
+          "Turkish",
+          "Ukrainian",
+          "Urdu",
+          "Vietnamese"
+        ]
+      },
+      {
+        "variable": "showPublicDomain",
+        "name": "Show Public Domain Only",
+        "description": "Only show public domain content",
+        "type": "Boolean",
+        "default": "false"
+      },
+      {
+        "variable": "contentSafetyHeader",
+        "name": "Content Safety",
+        "description": "Filters that hide explicit, sensitive, unmoderated, and preview-less content. Each is on by default; turn any off to include that kind of content. Designed so the plugin is safe out of the box.",
+        "type": "Header"
+      },
+      {
+        "variable": "hideAdultContent",
+        "name": "Hide Explicit Content",
+        "description": "Exclude sexually explicit items",
+        "type": "Boolean",
+        "default": "true"
+      },
+      {
+        "variable": "hideSensitiveContent",
+        "name": "Hide Sensitive Content",
+        "description": "Exclude items Archive.org flags as potentially inappropriate or sensitive (graphic news, violence, controversial content). Independent of the explicit-content filter.",
+        "type": "Boolean",
+        "default": "true"
+      },
+      {
+        "variable": "curatedOnly",
+        "name": "Curated Content Only",
+        "description": "Hide unmoderated community uploads (opensource collections). Turn off to include all community-uploaded content.",
+        "type": "Boolean",
+        "default": "true"
+      },
+      {
+        "variable": "hideNoPreview",
+        "name": "Hide Items Without Previews",
+        "description": "Exclude items Archive.org keeps in its no-preview (thumbnail-less / blurred) bucket. Catches suppressed explicit content that has no descriptive keywords. Turn off to include items without previews.",
+        "type": "Boolean",
+        "default": "true"
+      }
+    ],
+    "testing": {
+      "GetContentDetails": {
+        "urls": [
+          "https://archive.org/details/AboutBan1935?isArchiveContent=1",
+          "https://archive.org/details/CRZ376?isArchiveContent=1",
+          "https://archive.org/details/racemexico2022?isArchiveContent=1"
+        ]
+      },
+      "GetChannel": {
+        "urls": [
+          "https://archive.org/search.php?query=creator:Castle%20Films",
+          "https://archive.org/search.php?query=creator%3ACRZ"
+        ]
+      }
+    },
+    "changelog": {
+      "10": [
+        "Fix: Remove opt-in search autocomplete due to Internet Archive's backend performance reasons;"
+      ],
+      "9": [
+        "Fix: Show content duration (when available) on home, channel, and search results, and on each track and part of multi-file audio and video items;",
+        "Fix: Date items by their Archive.org upload date instead of the media's original date;",
+        "Fix: Show thumbnails for audio and other items that were appearing blank or as a placeholder;",
+        "Fix: Show the Internet Archive icon for creators without an avatar instead of a blank author image;",
+        "Feature: 'Item Date' setting to show the media's original date instead of the Archive.org upload date on feed items;",
+        "Feature: Enrich Internet Archive detail descriptions;",
+        "Feature: Play HLS stream archives (.m3u8);"
+      ],
+      "8": [
+        "Fix: Keep multi-word channel names instead of truncating to the first word;"
+      ],
+      "7": [
+        "Fix: Cast .mov videos as MP4 so FCast plays them instead of prompting a download;"
+      ],
+      "6": [
+        "Fix: Show the plugin icon for channels without their own avatar;"
+      ],
+      "5": [
+        "Fix: Paginate field-sorted feeds via Scrape API cursor to avoid duplicate or missing items;",
+        "Fix: Report withdrawn (dark) Archive.org items as unavailable;"
+      ],
+      "4": [
+        "Fix: Correctly parse Archive.org file durations stored as clock strings;",
+        "Fix: Accept encoded and shared Archive.org channel URLs;",
+        "Fix: Malformed file parameters no longer crash URL detection;",
+        "Fix: Play media and subtitles even when an item's primary Archive.org storage server is offline, by loading files through Archive.org's redirecting download links instead of one fixed server;",
+        "Fix: When Archive.org is busy or rate-limiting, retry the request once at reduced priority (Archive.org queues it instead of rejecting it), so searches and playback fail less often under load;"
+      ],
+      "3": [
+        "Fix: Correctly detect file extensions in names with special characters;",
+        "Fix: Remove duplicate subtitle tracks;",
+        "Fix: Open @account channels correctly when opened or shared;",
+        "Fix: Long search queries no longer silently return no results;",
+        "Fix: Show correct audio bitrate labels;",
+        "Fix: Show correct video quality labels;",
+        "Fix: Clearer subtitle labels with correct languages;",
+        "Fix: Show a clearer message when an item is temporarily unavailable on Archive.org;"
+      ],
+      "2": [
+        "Fix: Play items that failed to load due to special characters in their file names;"
+      ],
+      "1": [
+        "Initial release;",
+        "Feature: Home feed and search across movies, audio, and live music;",
+        "Feature: Sort and filter by media type, decade, and language;",
+        "Feature: Creator, uploader, and @account channels, with channel and in-channel search;",
+        "Feature: Collections open as playlists;",
+        "Feature: Video playback with multiple qualities;",
+        "Feature: Multi-part videos and multi-track audio shown as content recommendations;",
+        "Feature: Subtitles with SRT-to-WebVTT conversion;",
+        "Feature: Comments and ratings from reviews;",
+        "Feature: Related recommendations by creator and collection;",
+        "Feature: Optional search suggestions  (Opt-in in plugin settings);",
+        "Feature: Content-safety filters on by default (Opt-out in plugin settings);"
+      ]
+    }
+  },
+  {
+    "_tags": [
+      "official",
+      "working"
+    ],
+    "id": "d890ff43-7d9f-4f0e-a52d-239014fd512d",
+    "name": "FOSDEM (Alpha)",
+    "description": "FOSDEM is a two-day event organised by volunteers to promote the widespread use of free and open source software.",
+    "version": 4,
+    "author": "FUTO",
+    "authorUrl": "https://futo.org",
+    "platformUrl": "https://fosdem.org",
+    "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/fosdem",
+    "sourceUrl": "https://plugins.grayjay.app/FOSDEM/FOSDEMConfig.json",
+    "scriptUrl": "./FOSDEMScript.js",
+    "iconUrl": "./FOSDEMIcon.png",
+    "scriptSignature": "NDHhQ4V+JM3DGcKfoT0ObAl6e4DLjTCgol+RZmPzxpqz66ufirJwlFay+meD6fUVhCKRd9Q6RMCMhESktyj0poVOFLDo/i1WQ3tPTNllBc/dypQkD43hQ+owxf+j0UkT3+UztcSg7RRGM59E2ArVEpXd6+WbGVBHpwl7ISWh+6togNXNp6IWpR9RXKiiTDbjKh5vqMdB2a/TqcTs+3abf6ZTYE12BF7ppvux9XY3VCubnf0U2Y6b1LrtcLropsdnclZzm/BSRhiEbgTmOuEebD/74x1xZphBBxdZ7XGqoyMsRn7i1TraqscrMC4IQb+lU6lqUc+erNgVf8cvoPH+eA==",
+    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+    "packages": [
+      "Http"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      "api.opensource-tv.com"
+    ],
+    "settings": [
+      {
+        "variable": "enableMp4",
+        "name": "MP4",
+        "description": "Enable MP4 (H.264) video source",
+        "type": "Boolean",
+        "default": "true"
+      },
+      {
+        "variable": "enableWebm",
+        "name": "WebM",
+        "description": "Enable WebM (AV1/VP9) video source",
+        "type": "Boolean",
+        "default": "true"
+      },
+      {
+        "variable": "prioritySource",
+        "name": "Priority Source",
+        "description": "Auto-select this format for playback. MP4 (H.264): widest hardware decode support, lower CPU usage, best for older devices. WebM (AV1): ~30% smaller files at same quality, sharper at low bitrates, requires newer hardware for smooth decode.",
+        "type": "Dropdown",
+        "default": "1",
+        "options": [
+          "MP4 (H.264)",
+          "WebM (AV1)"
+        ]
+      },
+      {
+        "variable": "playlistSort",
+        "name": "Playlist Content Sorting",
+        "description": "Controls the order of talks within playlists. Oldest first shows talks in chronological order. Newest first shows the most recent talks first.",
+        "type": "Dropdown",
+        "default": "0",
+        "options": [
+          "Oldest First",
+          "Newest First"
+        ]
+      }
+    ],
+    "changelog": {
+      "4": [
+        "Improvement: Videos from a FOSDEM edition now show that edition's channel as their author;",
+        "Improvement: Per-edition channels (FOSDEM 2026, 2025, ...) in channel search;"
+      ],
+      "3": [
+        "Fix: Decode percent-encoded speaker slugs to prevent double-encoding;"
+      ],
+      "1": [
+        "- Initial implementation;"
+      ]
+    }
+  },
+  {
+    "_tags": [
+      "official",
+      "working"
+    ],
+    "id": "5f6658bb-96cc-4965-ba04-c81f8686ab67",
+    "name": "Red Bull TV",
+    "description": "Watch all the action from the world of Red Bull.",
+    "author": "FUTO",
+    "authorUrl": "https://futo.org",
+    "platformUrl": "https://www.redbull.com/int-en/discover",
+    "version": 6,
+    "iconUrl": "./RedBullTvIcon.png",
+    "scriptUrl": "./RedBullTvScript.js",
+    "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/redbull-tv",
+    "sourceUrl": "https://plugins.grayjay.app/RedbullTv/RedBullTvConfig.json",
+    "scriptSignature": "BuvlPY1jkavCpSGpRFBaRTtIXOyZ1nOVQtP7w2wBxhI9/RrecDatdOdijbGYDAitjJnxq9flL/gfYCGXfCDG2MEo9fL3WCEtg73nbRlT0n2BnbY28GZlM1tWjXTwyZ5kBIX4+E5Uqa6yevwfUQoHl5yCfN/MEi8s1uZl/QtEl3JmtUuZRBSMUnlAyDUp7v+Pyh07TNn0ztXM/pY7i6BmE/Tj5xJOmuyHqMRIMvOWeVhbmSdfxmDKxaWoFU7ol0UkS+VnjnSQyzhlCkMnIRmhoicwUU4FaQVMOQowaMyhlNl+rgZ8Tw18IIxEiPfGD5uRqYaSmtYP5sH0jLl85ygEaA==",
+    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+    "packages": [
+      "Http"
+    ],
+    "packagesOptional": [
+      "HttpImp"
+    ],
+    "allowUrls": [
+      ".redbull.com"
+    ],
+    "changelog": {
+      "6": [
+        "Fix: Episodes with zero duration no longer filtered from playlists",
+        "Fix: Athlete search no longer requests duplicate pages (API ignores pagination)",
+        "Fix: Stop fetching empty pages when last page is partial"
+      ],
+      "5": [
+        "Improvement: Use browser impersonation;"
+      ]
+    }
+  },
+  {
+    "_tags": [
+      "official",
+      "working"
+    ],
+    "name": "Radio Browser (Alpha)",
+    "description": "Access over 50,000 radio stations from around the world through the community-driven radio-browser.info directory",
+    "author": "FUTO",
+    "authorUrl": "https://futo.org/",
+    "platformUrl": "https://radio-browser.info",
+    "sourceUrl": "https://plugins.grayjay.app/RadioBrowser/RadioBrowserConfig.json",
+    "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/radiobrowser",
+    "scriptUrl": "./RadioBrowserScript.js",
+    "version": 16,
+    "iconUrl": "./RadioBrowserIcon.png",
+    "id": "009775f8-9173-48a2-8df3-d730d08d198d",
+    "scriptSignature": "CbQdtp5dLyuko3xpDNKqrnsj8q0oWOAXmGG54HGiv671SDzopisYjCtAzKBofadIIQOKwa4X9d30q74Ca6PsMSpHjjJFxvZM/ptJb6t8QAM18Yd77g2iiiWTPgXIvd0ROcv3yLFa9JC6yMQBqzOvXcVRLELsyjjMkbwbpacyd8yMrLHLDOjBVBuNNKMDmJ7H+xRky4FR5TaWy7eWqE3OTytAadAaQFLoreFux/AWwTpmPxXrUz5XQPXeTDeoWpX7SfteBklQlS+ije/CugdyXUVYYLiYgp8nDDNj+jSsZCbQSrGjEyKr33lHLimtjdIYGWix+uO8fe9Go4Wup5fARA==",
+    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+    "packages": [
+      "Http"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      ".api.radio-browser.info",
+      "api.radiodb.fr"
+    ],
+    "changelog": {
+      "16": [
+        "Fix: Update API server to fallback list;"
+      ],
+      "10": [
+        "Improvement: Add plugin setting filter the Home tab stations to a specific country;"
+      ],
+      "11": [
+        "Fix: Request retry mechanism now correctly rotates to alternate servers on failure;"
+      ],
+      "12": [
+        "Fix: Server rotation on request failure;"
+      ],
+      "13": [
+        "Improvement: Search inside channels;"
+      ],
+      "14": [
+        "Improvement: Remove some custom thumbnails for radio stations which users can select in the plugin settings."
+      ],
+      "15": [
+        "Improvement: Use browser-compatible URLs for country channels;"
+      ]
+    },
+    "settings": [
+      {
+        "variable": "submitActivity",
+        "name": "Submit Activity",
+        "description": "Submit activity to radio-browser.info to improve recommendations",
+        "type": "Boolean",
+        "default": "false"
+      },
+      {
+        "variable": "thumbnailMode",
+        "name": "Station Thumbnail Source",
+        "description": "Choose which image source to use for station thumbnails",
+        "type": "Dropdown",
+        "default": "0",
+        "options": [
+          "Soundbar",
+          "Platform Logo (Radio Browser)",
+          "Country Flag",
+          "Station Favicon (low quality)"
+        ]
+      },
+      {
+        "variable": "homeCountry",
+        "name": "Home Country",
+        "description": "Choose which country to show on the home page.",
+        "type": "Dropdown",
+        "default": "1",
+        "options": [
+          "all - Global (All Countries)",
+          "US - The United States Of America",
+          "AF - Afghanistan",
+          "AX - Aland Islands",
+          "AL - Albania",
+          "DZ - Algeria",
+          "AS - American Samoa",
+          "AD - Andorra",
+          "AO - Angola",
+          "AI - Anguilla",
+          "AQ - Antarctica",
+          "AG - Antigua And Barbuda",
+          "AR - Argentina",
+          "AM - Armenia",
+          "AW - Aruba",
+          "SH - Ascension And Tristan Da Cunha Saint Helena",
+          "AU - Australia",
+          "AT - Austria",
+          "AZ - Azerbaijan",
+          "BH - Bahrain",
+          "BD - Bangladesh",
+          "BB - Barbados",
+          "BY - Belarus",
+          "BE - Belgium",
+          "BZ - Belize",
+          "BJ - Benin",
+          "BM - Bermuda",
+          "BT - Bhutan",
+          "VE - Bolivarian Republic Of Venezuela",
+          "BO - Bolivia",
+          "BQ - Bonaire",
+          "BA - Bosnia And Herzegovina",
+          "BW - Botswana",
+          "BR - Brazil",
+          "IO - British Indian Ocean Territory",
+          "VG - British Virgin Islands",
+          "BN - Brunei Darussalam",
+          "BG - Bulgaria",
+          "BF - Burkina Faso",
+          "BI - Burundi",
+          "CV - Cabo Verde",
+          "KH - Cambodia",
+          "CM - Cameroon",
+          "CA - Canada",
+          "TD - Chad",
+          "CL - Chile",
+          "CN - China",
+          "CX - Christmas Island",
+          "CO - Colombia",
+          "CR - Costa Rica",
+          "CI - Coted Ivoire",
+          "HR - Croatia",
+          "CU - Cuba",
+          "CW - Curacao",
+          "CY - Cyprus",
+          "CZ - Czechia",
+          "DK - Denmark",
+          "DJ - Djibouti",
+          "DM - Dominica",
+          "EC - Ecuador",
+          "EG - Egypt",
+          "SV - El Salvador",
+          "GQ - Equatorial Guinea",
+          "ER - Eritrea",
+          "EE - Estonia",
+          "SZ - Eswatini",
+          "ET - Ethiopia",
+          "FM - Federated States Of Micronesia",
+          "FJ - Fiji",
+          "FI - Finland",
+          "FR - France",
+          "GF - French Guiana",
+          "PF - French Polynesia",
+          "GA - Gabon",
+          "GE - Georgia",
+          "DE - Germany",
+          "GH - Ghana",
+          "GI - Gibraltar",
+          "GR - Greece",
+          "GL - Greenland",
+          "GD - Grenada",
+          "GP - Guadeloupe",
+          "GU - Guam",
+          "GT - Guatemala",
+          "GG - Guernsey",
+          "GN - Guinea",
+          "GW - Guinea Bissau",
+          "GY - Guyana",
+          "HT - Haiti",
+          "HN - Honduras",
+          "HK - Hong Kong",
+          "HU - Hungary",
+          "IS - Iceland",
+          "IN - India",
+          "ID - Indonesia",
+          "IQ - Iraq",
+          "IE - Ireland",
+          "IR - Islamic Republic Of Iran",
+          "IM - Isle Of Man",
+          "IL - Israel",
+          "IT - Italy",
+          "JM - Jamaica",
+          "JP - Japan",
+          "JO - Jordan",
+          "KZ - Kazakhstan",
+          "KE - Kenya",
+          "KI - Kiribati",
+          "XK - Kosovo",
+          "KW - Kuwait",
+          "KG - Kyrgyzstan",
+          "LV - Latvia",
+          "LB - Lebanon",
+          "LS - Lesotho",
+          "LR - Liberia",
+          "LY - Libya",
+          "LI - Liechtenstein",
+          "LT - Lithuania",
+          "LU - Luxembourg",
+          "MO - Macao",
+          "MG - Madagascar",
+          "MW - Malawi",
+          "MY - Malaysia",
+          "MV - Maldives",
+          "ML - Mali",
+          "MT - Malta",
+          "MQ - Martinique",
+          "MR - Mauritania",
+          "MU - Mauritius",
+          "YT - Mayotte",
+          "MX - Mexico",
+          "MC - Monaco",
+          "MN - Mongolia",
+          "ME - Montenegro",
+          "MS - Montserrat",
+          "MA - Morocco",
+          "MZ - Mozambique",
+          "MM - Myanmar",
+          "NA - Namibia",
+          "NR - Nauru",
+          "NP - Nepal",
+          "NC - New Caledonia",
+          "NZ - New Zealand",
+          "NI - Nicaragua",
+          "NG - Nigeria",
+          "NU - Niue",
+          "NO - Norway",
+          "OM - Oman",
+          "PK - Pakistan",
+          "PW - Palau",
+          "PA - Panama",
+          "PG - Papua New Guinea",
+          "PY - Paraguay",
+          "PE - Peru",
+          "PL - Poland",
+          "PT - Portugal",
+          "PR - Puerto Rico",
+          "QA - Qatar",
+          "MK - Republic Of North Macedonia",
+          "RE - Reunion",
+          "RO - Romania",
+          "RW - Rwanda",
+          "KN - Saint Kitts And Nevis",
+          "LC - Saint Lucia",
+          "PM - Saint Pierre And Miquelon",
+          "VC - Saint Vincent And The Grenadines",
+          "SM - San Marino",
+          "ST - Sao Tome And Principe",
+          "SA - Saudi Arabia",
+          "SN - Senegal",
+          "RS - Serbia",
+          "SC - Seychelles",
+          "SL - Sierra Leone",
+          "SG - Singapore",
+          "SK - Slovakia",
+          "SI - Slovenia",
+          "SB - Solomon Islands",
+          "SO - Somalia",
+          "ZA - South Africa",
+          "SS - South Sudan",
+          "ES - Spain",
+          "LK - Sri Lanka",
+          "PS - State Of Palestine",
+          "SR - Suriname",
+          "SJ - Svalbard And Jan Mayen",
+          "SE - Sweden",
+          "CH - Switzerland",
+          "SY - Syrian Arab Republic",
+          "TW - Taiwan, Republic Of China",
+          "TJ - Tajikistan",
+          "TH - Thailand",
+          "BS - The Bahamas",
+          "KY - The Cayman Islands",
+          "CF - The Central African Republic",
+          "CC - The Cocos Keeling Islands",
+          "KM - The Comoros",
+          "CG - The Congo",
+          "CK - The Cook Islands",
+          "KP - The Democratic Peoples Republic Of Korea",
+          "CD - The Democratic Republic Of The Congo",
+          "DO - The Dominican Republic",
+          "FK - The Falkland Islands Malvinas",
+          "FO - The Faroe Islands",
+          "TF - The French Southern Territories",
+          "GM - The Gambia",
+          "VA - The Holy See",
+          "LA - The Lao Peoples Democratic Republic",
+          "MH - The Marshall Islands",
+          "NL - The Netherlands",
+          "NE - The Niger",
+          "PH - The Philippines",
+          "KR - The Republic Of Korea",
+          "MD - The Republic Of Moldova",
+          "RU - The Russian Federation",
+          "SD - The Sudan",
+          "TC - The Turks And Caicos Islands",
+          "AE - The United Arab Emirates",
+          "GB - The United Kingdom Of Great Britain And Northern Ireland",
+          "UM - The United States Minor Outlying Islands",
+          "TL - Timor Leste",
+          "TG - Togo",
+          "TO - Tonga",
+          "TT - Trinidad And Tobago",
+          "TN - Tunisia",
+          "TM - Turkmenistan",
+          "TV - Tuvalu",
+          "TR - Türkiye",
+          "VI - US Virgin Islands",
+          "UG - Uganda",
+          "UA - Ukraine",
+          "TZ - United Republic Of Tanzania",
+          "UY - Uruguay",
+          "UZ - Uzbekistan",
+          "VU - Vanuatu",
+          "VN - Vietnam",
+          "WF - Wallis And Futuna",
+          "YE - Yemen",
+          "ZM - Zambia",
+          "ZW - Zimbabwe"
+        ]
+      }
+    ]
   }
 ]
