@@ -6306,5 +6306,101 @@
         "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
       ]
     }
-  }
+  },
+  {
+        "_tags": [
+            "unofficial",
+            "unmaintained",
+            "working",
+            "archived"
+        ],
+        "name": "X",
+        "platformUrl": "https://x.com/",
+        "description": "X (Twitter) is a social networking and microblogging platform where users can post and interact",
+        "author": "Freeb",
+        "authorUrl": "https://github.com/b-risk",
+        "sourceUrl": "https://raw.githubusercontent.com/b-risk/Grayjay-X/refs/heads/main/Grayjay%20X/XConfig.json",
+        "scriptUrl": "./XScript.js",
+        "repositoryUrl": "https://github.com/b-risk/Grayjay-X",
+        "version": 1,
+        "iconUrl": "./Imgs/XIcon.png",
+        "id": "79493455-7ec6-4a7e-943d-95e022ef2fdc",
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": [
+            "Http",
+            "Utilities",
+            "DOMParser"
+        ],
+        "allowEval": false,
+        "allowAllHttpHeaderAccess": false,
+        "allowUrls": [
+            ".nitter.net",
+            ".nitter.catsarch.com",
+            ".nitter.tiekoetter.com",
+            ".nuku.trabun.org",
+            ".xcancel.com",
+            ".lightbrd.com",
+            ".nitter.space",
+            ".nitter.poast.org",
+            ".nitter.privacyredirect.com",
+            ".nitter.kareem.one",
+            ".twimg.com",
+            ".x.com",
+            ".twitter.com"
+        ],
+        "settings": [
+            {
+                "variable": "instanceHeader",
+                "name": "Nitter Instance",
+                "description": "Nitter is a privacy-friendly alternative front-end for X/Twitter.\n\nSelect the instance you'd like to use.\n\nInstance health status available at https://status.d420.de",
+                "type": "Header"
+            },
+            {
+                "variable": "nitterInstance",
+                "name": "Preferred Instance",
+                "description": "Choose which Nitter instance to use for fetching X/Twitter content",
+                "type": "Dropdown",
+                "default": "0",
+                "options": [
+                    "nitter.net",
+                    "nitter.catsarch.com",
+                    "nitter.tiekoetter.com",
+                    "nuku.trabun.org",
+                    "xcancel.com",
+                    "lightbrd.com",
+                    "nitter.space",
+                    "nitter.poast.org",
+                    "nitter.privacyredirect.com",
+                    "nitter.kareem.one"
+                ]
+            },
+            {
+                "variable": "homeHeader",
+                "name": "Home Feed",
+                "description": "Source for the home feed",
+                "type": "Header"
+            },
+            {
+                "variable": "homeFeedSource",
+                "name": "Home Feed Type",
+                "description": "Select your preferred source for the home feed",
+                "type": "Dropdown",
+                "default": "0",
+                "options": [
+                    "Trending / Explore",
+                    "Latest Tweets"
+                ]
+            }
+        ],
+        "changelog": {
+            "1": [
+                "Initial release",
+                "Support for browsing user profiles and tweets via Nitter",
+                "Video detection and playback support",
+                "Configurable Nitter instance selection",
+                "Mixed feed with posts and videos"
+            ]
+        }
+    }
 ]
