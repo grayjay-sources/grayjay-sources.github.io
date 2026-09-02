@@ -5273,6 +5273,73 @@
         "_installUrl": "https://github.com/Bluscream/GrayJay/raw/master/sources/grayjay-sample/SampleConfig.json"
     },
     {
+        "name": "Samsung TV Plus",
+        "description": "Samsung TV Plus free streaming service",
+        "author": "RooftopMiner",
+        "authorUrl": "https://codeberg.org/RooftopMiner",
+        "platformUrl": "https://www.samsungtvplus.com",
+        "sourceUrl": "https://codeberg.org/RooftopMiner/Samsung-TV-Plus-Grayjay-Plugin/raw/main/SamsungTVPlusConfig.json",
+        "repositoryUrl": "https://codeberg.org/RooftopMiner/Samsung-TV-Plus-Grayjay-Plugin",
+        "scriptUrl": "https://codeberg.org/RooftopMiner/Samsung-TV-Plus-Grayjay-Plugin/raw/main/SamsungTVPlusScript.js",
+        "version": 1,
+        "iconUrl": "./favicon.png",
+        "id": "7c5f3a2b-9d4e-4f1a-8c2b-5e6d8f9a0b1c",
+        "scriptSignature": "",
+        "scriptPublicKey": "",
+        "packages": [
+            "Http",
+            "DOMParser"
+        ],
+        "allowEval": false,
+        "allowAllHttpHeaderAccess": true,
+        "allowUrls": [
+            ".samsungtvplus.com",
+            "api.samsungtvplus.com",
+            "stg-api.samsungtvplus.com",
+            "beta-api.samsungtvplus.com",
+            ".samsung.com",
+            ".samsungsvc.co.kr",
+            ".samsungcloud.tv",
+            ".di.atlas.samsung.com",
+            ".samsungapps.com",
+            ".samsungrs.com",
+            "sspapi-prd.samsungrs.com",
+            ".cloudfront.net",
+            ".akamaized.net",
+            ".amagi.tv",
+            ".wurl.tv",
+            ".wurl.com",
+            ".transmit.live",
+            ".githubusercontent.com",
+            ".github.com",
+            ".raw.githubusercontent.com",
+            "ads.its-newid.net"
+        ],
+        "settings": [],
+        "testing": {
+            "Channel4UV": {
+                "urls": [
+                    "https://www.samsungtvplus.com/channels/4uv"
+                ]
+            },
+            "ABC2020": {
+                "urls": [
+                    "https://www.samsungtvplus.com/channels/abc-20-20"
+                ]
+            },
+            "StreamTest": {
+                "urls": [
+                    "https://www.samsungtvplus.com/channels/abc-news-live"
+                ]
+            }
+        },
+        "changelog": {
+            "1": [
+                "Initial version - Samsung TV Plus streaming support"
+            ]
+        }
+    },
+    {
         "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
         "name": "Sauceplus",
         "description": "A content creation and video streaming website created by Open Sauce Inc.",
@@ -7599,73 +7666,6 @@
         "changelog": {
             "1": [
                 "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
-            ]
-        }
-    },
-    {
-        "name": "Samsung TV Plus",
-        "description": "Samsung TV Plus free streaming service",
-        "author": "RooftopMiner",
-        "authorUrl": "https://codeberg.org/RooftopMiner",
-        "platformUrl": "https://www.samsungtvplus.com",
-        "sourceUrl": "https://codeberg.org/RooftopMiner/Samsung-TV-Plus-Grayjay-Plugin/raw/main/SamsungTVPlusConfig.json",
-        "repositoryUrl": "https://codeberg.org/RooftopMiner/Samsung-TV-Plus-Grayjay-Plugin",
-        "scriptUrl": "https://codeberg.org/RooftopMiner/Samsung-TV-Plus-Grayjay-Plugin/raw/main/SamsungTVPlusScript.js",
-        "version": 1,
-        "iconUrl": "./favicon.png",
-        "id": "7c5f3a2b-9d4e-4f1a-8c2b-5e6d8f9a0b1c",
-        "scriptSignature": "",
-        "scriptPublicKey": "",
-        "packages": [
-            "Http",
-            "DOMParser"
-        ],
-        "allowEval": false,
-        "allowAllHttpHeaderAccess": true,
-        "allowUrls": [
-            ".samsungtvplus.com",
-            "api.samsungtvplus.com",
-            "stg-api.samsungtvplus.com",
-            "beta-api.samsungtvplus.com",
-            ".samsung.com",
-            ".samsungsvc.co.kr",
-            ".samsungcloud.tv",
-            ".di.atlas.samsung.com",
-            ".samsungapps.com",
-            ".samsungrs.com",
-            "sspapi-prd.samsungrs.com",
-            ".cloudfront.net",
-            ".akamaized.net",
-            ".amagi.tv",
-            ".wurl.tv",
-            ".wurl.com",
-            ".transmit.live",
-            ".githubusercontent.com",
-            ".github.com",
-            ".raw.githubusercontent.com",
-            "ads.its-newid.net"
-        ],
-        "settings": [],
-        "testing": {
-            "Channel4UV": {
-                "urls": [
-                    "https://www.samsungtvplus.com/channels/4uv"
-                ]
-            },
-            "ABC2020": {
-                "urls": [
-                    "https://www.samsungtvplus.com/channels/abc-20-20"
-                ]
-            },
-            "StreamTest": {
-                "urls": [
-                    "https://www.samsungtvplus.com/channels/abc-news-live"
-                ]
-            }
-        },
-        "changelog": {
-            "1": [
-                "Initial version - Samsung TV Plus streaming support"
             ]
         }
     }
