@@ -7792,5 +7792,49 @@
                 "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
             ]
         }
+    },
+    {
+        "name": "Audiobookshelf",
+        "description": "Access your Audiobookshelf server content - Stream audiobooks from your personal server",
+        "author": "Plugin Developer",
+        "authorUrl": "https://github.com/KUKARAF",
+        "sourceUrl": "https://raw.githubusercontent.com/KUKARAF/grayjay-audiobookshelf/main/config.json",
+        "repositoryUrl": "https://github.com/KUKARAF/grayjay-audiobookshelf",
+        "scriptUrl": "./plugin.mjs",
+        "version": 1,
+        "iconUrl": "./icon.png",
+        "id": "c0e25171-755f-4da8-9f9d-b5e4868a72d2",
+        "scriptSignature": "LS0tLS1CRUdJTiBQR1AgU0lHTkFUVVJFLS0tLS0KCmlIVUVBQllLQUIwV0lRU1hCc25tRHhJVVpSc0EwRDRWRWliYnRQeDcrQVVDWjdvZUdRQUtDUkFWRWliYnRQeDcKK0toZ0FQOTNubVdZYnhZNktVQi91a1lYZGV3Y3dSeTlVRVk5RGtXNWx2RWxUbGlYelFFQTVrbGY1ZnVRWDhyQQpBNmdJT1JIaEhrY29SbkFjRG00UExTdklZdCtVand3PQo9VzdLTAotLS0tLUVORCBQR1AgU0lHTkFUVVJFLS0tLS0K",
+        "scriptPublicKey": "",
+        "packages": [
+            "Http"
+        ],
+        "allowEval": false,
+        "allowUrls": [
+            "audiobooks.osmosis.page"
+        ],
+        "config": {
+            "serverUrl": {
+                "type": "text",
+                "label": "Server URL",
+                "placeholder": "https://audiobooks.osmosis.page",
+                "description": "Your Audiobookshelf server URL (e.g., https://books.example.com)",
+                "required": true
+            },
+            "username": {
+                "type": "text",
+                "label": "Username",
+                "placeholder": "Your Audiobookshelf username",
+                "description": "Your Audiobookshelf server username",
+                "required": true
+            },
+            "password": {
+                "type": "password",
+                "label": "Password",
+                "placeholder": "Your Audiobookshelf password",
+                "description": "Your Audiobookshelf server password",
+                "required": true
+            }
+        }
     }
 ]
