@@ -6167,5 +6167,36 @@
         "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
       ]
     }
-  }
+},
+{
+    "name": "iCivics",
+    "description": "Educational videos from iCivics - teaching civics and government concepts",
+    "author": "andytorres",
+    "authorUrl": "https://gitea.com/andytorres",
+    "platformUrl": "https://ed.icivics.org",
+    "sourceUrl": "https://gitea.com/api/v1/repos/andytorres/iCivics.Grayjay.Plugin/raw/icivics.json",
+    "repositoryUrl": "https://gitea.com/andytorres/iCivics.Grayjay.Plugin",
+    "scriptUrl": "https://gitea.com/api/v1/repos/andytorres/iCivics.Grayjay.Plugin/raw/icivics.js",
+    "version": 1,
+    "iconUrl": "https://gitea.com/api/v1/repos/andytorres/iCivics.Grayjay.Plugin/raw/icivics.png",
+    "id": "7f3af34e-b6b9-4f9d-a248-b4c514aafce4",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+        ".ed.icivics.org",
+        ".icvx-makematic.s3.amazonaws.com"
+    ],
+    "authentication": null,
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial version"
+        ]
+    }
+}
 ]
