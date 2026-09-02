@@ -14,7 +14,7 @@
 
 Super-linter detected linting errors
 
-For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/33665865623)
+For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/33666309792)
 
 Powered by [Super-linter](https://github.com/super-linter/super-linter)
 
@@ -23,7 +23,7 @@ Powered by [Super-linter](https://github.com/super-linter/super-linter)
 <summary>BIOME_FORMAT</summary>
 
 ```text
-Checked 10 files in 608ms. No fixes applied.
+Checked 10 files in 590ms. No fixes applied.
 Found 10 errors..vscode/launch.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Formatter would have printed the following content:
@@ -1189,7 +1189,7 @@ sources.json format ━━━━━━━━━━━━━━━━━━━━
      148      │ - ················"Support·for·getHome",
      149      │ - ················"Added·Faster·Randomizer·setting·for·logged·in·users",
      150      │ - ················"Added·Content·Groupings·setting",
-  13261 more lines truncated
+  13323 more lines truncated
 
 
 sources.schema.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1364,7 +1364,7 @@ format ━━━━━━━━━━━━━━━━━━━━━━━━�
 ```text
 The number of diagnostics exceeds the limit allowed. Use --max-diagnostics to increase it.
 Diagnostics not shown: 4427.
-Checked 13 files in 1658ms. No fixes applied.
+Checked 13 files in 1611ms. No fixes applied.
 Found 548 errors.
 Found 3888 warnings.
 Found 11 infos.assets/css/site.css:78:18 lint/complexity/noImportantStyles  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1708,13 +1708,13 @@ lint ━━━━━━━━━━━━━━━━━━━━━━━━━
 /github/workspace/sources.json:1779: Nam ==> Name
 /github/workspace/sources.json:1999: ommitted ==> omitted
 /github/workspace/sources.json:2000: ommitted ==> omitted
-/github/workspace/sources.json:4169: FO ==> OF, FOR, TO, DO, GO
-/github/workspace/sources.json:5010: comming ==> coming
-/github/workspace/sources.json:5218: necesities ==> necessities
-/github/workspace/sources.json:5230: necesities ==> necessities
-/github/workspace/sources.json:5242: necesities ==> necessities
-/github/workspace/sources.json:5558: didnt ==> didn't
-/github/workspace/sources.json:5963: te ==> the, be, we, to
+/github/workspace/sources.json:4197: FO ==> OF, FOR, TO, DO, GO
+/github/workspace/sources.json:5038: comming ==> coming
+/github/workspace/sources.json:5246: necesities ==> necessities
+/github/workspace/sources.json:5258: necesities ==> necessities
+/github/workspace/sources.json:5270: necesities ==> necessities
+/github/workspace/sources.json:5586: didnt ==> didn't
+/github/workspace/sources.json:5991: te ==> the, be, we, to
 ```
 
 </details>
