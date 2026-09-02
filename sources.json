@@ -6479,5 +6479,49 @@
         "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
       ]
     }
+  },
+  {
+    "name": "wevidi",
+    "description": "Video streaming platform",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://rocketgit.com/user/wevidiGrayjayPlugin/wevidiGrayjayPlugin",
+    "platformUrl": "https://wevidi.net/",
+    "sourceUrl": "https://rocketgit.com/user/wevidiGrayjayPlugin/wevidiGrayjayPlugin/source/tree/branch/raw/blob_download/grayjay-plugin-wevidi-config.json",
+    "repositoryUrl": "https://rocketgit.com/user/wevidiGrayjayPlugin/wevidiGrayjayPlugin",
+    "scriptUrl": "https://rocketgit.com/user/wevidiGrayjayPlugin/wevidiGrayjayPlugin/source/tree/branch/raw/blob_download/grayjay-plugin-wevidi-script.js",
+    "version": 1,
+    "iconUrl": "https://www.google.com/s2/favicons?domain=wevidi.net&sz=64",
+    "id": "c931d05d-ac2e-4726-b3bb-e19092f6bdb7",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+      "Http",
+      "DOMParser",
+      "Utilities"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": true,
+    "allowUrls": [
+      ".wevidi.net"
+    ],
+    "settings": [
+      {
+        "variable": "recommendationSource",
+        "name": "Recommendation Source",
+        "description": "Choose which videos to show as recommendations",
+        "type": "Dropdown",
+        "default": "0",
+        "options": [
+          "Related Videos",
+          "More From Author",
+          "Both"
+        ]
+      }
+    ],
+    "changelog": {
+      "1": [
+        "Initial version"
+      ]
+    }
   }
 ]
