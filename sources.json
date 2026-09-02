@@ -6390,5 +6390,43 @@
         "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
       ]
     }
-  }
+  },
+{
+    "name": "Tubi",
+    "description": "Tubi free streaming service with movies and TV shows",
+    "author": "Catcall0284",
+    "authorUrl": "https://codeberg.org/Catcall0284/",
+    "platformUrl": "https://tubitv.com",
+    "sourceUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_Tubi/raw/branch/main/TubiConfig.json",
+    "repositoryUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_Tubi",
+    "scriptUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_Tubi/raw/branch/main/TubiScript.js",
+    "version": 1,
+    "iconUrl": "./favicon.png",
+    "id": "84860cfa-3423-429a-882a-490f964d4818",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": true,
+    "allowUrls": [
+        ".commondatastorage.googleapis.com",
+        ".storage.googleapis.com",
+        ".tubitv.com",
+        ".tubi.io",
+        "production-public.tubi.io",
+        "live-manifest.production-public.tubi.io",
+        "mcdn.tubitv.com",
+        "md0.tubitv.com",
+        "*.tubitv.com"
+    ],
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial version"
+        ]
+    }
+}
 ]
