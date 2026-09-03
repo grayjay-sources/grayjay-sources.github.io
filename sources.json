@@ -6624,5 +6624,44 @@
         "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
       ]
     }
+  },
+  {
+    "id": "711a1489-2d1c-4131-8a96-ea80f6d8b5dc",
+    "name": "Streamable Viewer",
+    "description": "Reproduce videos from Streamable",
+    "version": 1,
+    "author": "Stefan Cruz",
+    "authorUrl": "",
+    "platformUrl": "https://streamable.com",
+    "repositoryUrl": "https://codeberg.org/stefancruz/grayjay-plugin-streamable-viewer",
+    "sourceUrl": "https://codeberg.org/stefancruz/grayjay-plugin-streamable-viewer/raw/branch/master/StreamableConfig.json",
+    "scriptUrl": "./StreamableScript.js",
+    "iconUrl": "https://codeberg.org/stefancruz/grayjay-plugin-streamable-viewer/raw/branch/master/StreamableIcon.png",
+    "packages": [
+      "Http"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      "streamable.com",
+      "ajax.streamable.com",
+      "api-f.streamable.com",
+      "cdn-cf-east.streamable.com"
+    ],
+    "constants": {
+      "BASE_URL": "https://streamable.com"
+    },
+    "settings": [],
+    "changelog": {
+      "1": [
+        "- Initial implementation (viewer-only: video details)"
+      ]
+    },
+    "testing": {
+      "GetContentDetails": {
+        "urls": [
+          "https://streamable.com/xbel1y"
+        ]
+      }
+    }
   }
 ]
