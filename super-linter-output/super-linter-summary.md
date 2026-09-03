@@ -14,7 +14,7 @@
 
 Super-linter detected linting errors
 
-For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/33697122925)
+For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/33698709924)
 
 Powered by [Super-linter](https://github.com/super-linter/super-linter)
 
@@ -23,7 +23,7 @@ Powered by [Super-linter](https://github.com/super-linter/super-linter)
 <summary>BIOME_FORMAT</summary>
 
 ```text
-Checked 10 files in 764ms. No fixes applied.
+Checked 10 files in 639ms. No fixes applied.
 Found 10 errors..vscode/launch.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Formatter would have printed the following content:
@@ -1189,7 +1189,7 @@ sources.json format ━━━━━━━━━━━━━━━━━━━━
      148      │ - ················"Support·for·getHome",
      149      │ - ················"Added·Faster·Randomizer·setting·for·logged·in·users",
      150      │ - ················"Added·Content·Groupings·setting",
-  14318 more lines truncated
+  14390 more lines truncated
 
 
 sources.schema.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1709,12 +1709,12 @@ lint ━━━━━━━━━━━━━━━━━━━━━━━━━
 /github/workspace/sources.json:2064: ommitted ==> omitted
 /github/workspace/sources.json:2065: ommitted ==> omitted
 /github/workspace/sources.json:4339: FO ==> OF, FOR, TO, DO, GO
-/github/workspace/sources.json:5317: comming ==> coming
-/github/workspace/sources.json:5648: necesities ==> necessities
-/github/workspace/sources.json:5660: necesities ==> necessities
-/github/workspace/sources.json:5672: necesities ==> necessities
-/github/workspace/sources.json:5988: didnt ==> didn't
-/github/workspace/sources.json:6416: te ==> the, be, we, to
+/github/workspace/sources.json:5350: comming ==> coming
+/github/workspace/sources.json:5681: necesities ==> necessities
+/github/workspace/sources.json:5693: necesities ==> necessities
+/github/workspace/sources.json:5705: necesities ==> necessities
+/github/workspace/sources.json:6021: didnt ==> didn't
+/github/workspace/sources.json:6449: te ==> the, be, we, to
 ```
 
 </details>
