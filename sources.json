@@ -3606,40 +3606,59 @@
     }
   },
   {
+    "_tags": ["official", "working"],
+    "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
     "name": "Niconico",
     "description": "Niconico is the biggest video platform in Japan",
     "author": "FUTO",
     "authorUrl": "https://futo.org",
+    "platformUrl": "https://www.nicovideo.jp",
     "sourceUrl": "https://plugins.grayjay.app/Niconico/NiconicoConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico",
     "scriptUrl": "./NiconicoScript.js",
-    "version": 3,
+    "version": 4,
     "iconUrl": "./NiconicoIcon.png",
-    "id": "94c86b48-eee9-4d49-9f2e-56c8e650936a",
-    "packages": ["Http", "DOMParser"],
+    "id": "99224109-ac6d-426f-a1c1-4c8051f946fd",
+    "scriptSignature": "K+OjrdYoXfr6MFGChxvMvLPuDz0gJls+eYoYuP1r5nhVeBoIWuPGnDqg9exOqDx/U5Reb9lci8BaEtOFHmyHSJeFwAFUDppyfY8ZCo0aNaxw76MXJKqt6mFrPKforTYMtbhHbIMFO5cxvliiFLbrb/uXvclqJHGi5KKtYnwCL0HslE0NVRZOE7N3nbqAFaGMYbYkqjxlq2mNmULiO03QPaCJCeeUSKPNq2Xe01/AuZG+bIsmSjJDM3SwyAZww+K1yRbgXTZtqjjMknCp49xlQ5iFElRmjqSetTmUkS9ue9D0YfjkxPNDR2yhNlbLXJFBbOAEfdzmptPnEsc5wyHWXQ==",
+    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
     "allowEval": false,
+    "allowAllHttpHeaderAccess": false,
     "allowUrls": [
       "nvapi.nicovideo.jp",
       "sug.search.nicovideo.jp",
       "api.search.nicovideo.jp",
       "live.nicovideo.jp",
       "www.nicovideo.jp",
+      "ch.nicovideo.jp",
       "public.nvcomment.nicovideo.jp"
     ],
-    "_tags": ["official", "working"],
-    "scriptSignature": "VQJpVQokdiDdZ8T6Wkj0KuRtZHl9HcTUv6NL+vnadG7wnWZMNvZHa6J4MWVsQcFGObQGb/jSdvEn4Fjd3VAvbfqM9d72/LPhUhkzu646N2xj+E29lkiUox67eC0I063hPajDHfxacH5iCoc/7kShFdw0hiCJCs3LldGhfWGliBujlx5TzGYm8r+yNBz+hUA8zKRAvzaflhG5Cj5/NV+Y1TsmxasXknuFTJG4XBfLh5HvcVivUyPeJRirkpc3EisJdEPlmhBNjNDJOU2g1Wdv++Tgslp/V84Lq10VRrhGG0fPoXBEP/tsXzE+HzUUo/lx2IaDFFRVM+pQnRmZBb0y4A==",
-    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
-    "_feeds": {
-      "commits": "https://gitlab.futo.org/videostreaming/plugins/niconico/-/commits/master?format=atom"
-    },
-    "platformUrl": "https://www.nicovideo.jp",
     "authentication": {
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0",
       "loginUrl": "https://account.nicovideo.jp/login",
-      "cookiesToFind": ["user_session"]
+      "cookiesToFind": [
+        "user_session"
+      ]
     },
-    "supportedClaimTypes": [21],
-    "sourceUrl_": "https://plugins.grayjay.app/Niconico/NiconicoConfig.json"
+    "changelog": {
+      "4": [
+        "Fix: Playback of videos uploaded by channels;",
+        "Fix: Author links on videos and playlists owned by channels;",
+        "Fix: Unavailable videos failing with a type error instead of explaining why;",
+        "Fix: Failed Niconico API responses reported as a type error;",
+        "Fix: Videos failing to load when their comments are unavailable;",
+        "Fix: Video search returning no results;",
+        "Fix: Older so video links not recognized as Niconico content;",
+        "Fix: Videos with nm and legacy numeric ids not recognized as Niconico content;",
+        "Feature: Add support for browsing channel pages on ch.nicovideo.jp;"
+      ],
+      "3": [
+        "Fix login"
+      ]
+    }
   },
   {
     "name": "Nyane",
