@@ -9,7 +9,7 @@ on:
         default: "true"
         type: boolean
   schedule:
-    - cron: '0 2 * * 0' # Run weekly on Sundays at 2 AM UTC
+    - cron: "0 2 * * 0" # Run weekly on Sundays at 2 AM UTC
 
 permissions:
   contents: write
