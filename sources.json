@@ -1,5 +1,857 @@
 [
   {
+	"name": "Youtube (Unstable)",
+	"description": "One of the biggest video platforms owned by Google",
+	"author": "FUTO",
+	"authorUrl": "https://futo.org",
+	"platformUrl": "https://youtube.com",
+	"sourceUrl": "https://plugins.grayjay.app/YoutubeUnstable/YoutubeConfig.json",
+	"repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/youtube",
+	"scriptUrl": "./YoutubeScript.js",
+
+	"version": 364,
+	"iconUrl": "./youtube.png",
+	"id": "35ae969a-a7db-11ed-afa1-0242ac120003",
+
+	"scriptSignature": "",
+	"scriptPublicKey": "",
+	"packages": ["Http", "Utilities", "DOMParser"],
+	"packagesOptional": ["Browser"],
+
+	"subscriptionRateLimit": 140,
+
+	"reduceFunctionsInLimitedVersion": true,
+
+	"allowEval": false,
+	"allowUrls": [
+		"youtube.com",
+		"m.youtube.com",
+		"www.youtube.com",
+		"youtu.be",
+		"www.youtu.be",
+		"m.youtu.be",
+		"s.youtube.com",
+		"consent.youtube.com",
+		"suggestqueries-clients6.youtube.com",
+		"youtubei.googleapis.com",
+		"www.google.com",
+		"google.com",
+		"returnyoutubedislikeapi.com",
+		"sponsor.ajay.app",
+		".googlevideo.com",
+		"jnn-pa.googleapis.com",
+		".c.youtube.com",
+		"solver.grayjay.app",
+		"solutions.grayjay.app"
+	],
+
+	"settings": [
+		{
+			"variable": "authChannels",
+			"name": "Use Login for Channels",
+			"description": "Use authenticated client for channel (videos) requests. (eg. for member videos)",
+			"type": "Boolean",
+			"default": "false",
+			"warningDialog": "Only enable this if you need it for channel membership content.\n\nTry disabling if you have issues when loading channels."
+		},
+		{
+			"variable": "authDetails",
+			"name": "Use Login for video details",
+			"description": "Use authenticated client for video requests. (eg. for member videos)",
+			"type": "Boolean",
+			"default": "false",
+			"warningDialog": "Only enable this if you need it for channel membership content.\n\nTry disabling if you have issues when loading videos and comments."
+		},
+		{
+			"variable": "allowLoginFallback",
+			"name": "Allow Loginfallback",
+			"description": "Allow usage of login in case where login required (eg. bot check, age restriction, controversial)",
+			"type": "Boolean",
+			"default": "true"
+		},
+		{
+			"variable": "youtubeActivity",
+			"name": "Provide Youtube Activity",
+			"description": "Use authenticated client for playback, telling Youtube what you watched.",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "notifyAIContent",
+			"name": "Notify On AI Content",
+			"description": "Show a message when you open a video marked as AI content.",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "channelRssOnly",
+			"name": "Only Use Channel RSS Feeds (Inferior)",
+			"description": "Exclusively use channel RSS feeds for channel content, may result in inferior results, and only recent videos. But may be faster and reduce rate limiting.",
+			"type": "Boolean",
+			"default": "false",
+			"warningDialog": "Using RSS feeds will have inferior results, and may add shorts in the channel videos and subscriptions.\n\nOld videos may also be unavailable."
+		},
+		{
+			"variable": "allowAgeRestricted",
+			"name": "Allow Age Restricted",
+			"description": "Allow watching of age restricted videos",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "allowControversialRestricted",
+			"name": "Allow Controversial Restricted",
+			"description": "Allow watching of controversial restricted videos",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "allowMemberContent",
+			"name": "Allow Member Content",
+			"description": "Allow listing of member content (will prefix \"[MEMBER]\")",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "useVisionOS",
+			"name": "Enable VisionOS Streams",
+			"description": "Attempts to use VisionOS streams if available, may be smoother experience. May not always be available.",
+			"type": "Boolean",
+			"default": "true"
+		},
+		{
+			"variable": "useUMP",
+			"name": "Force UMP Streams",
+			"description": "Force usage of experimental implementation of UMP. May be unstable and cost more performance.",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "useAggressiveUMPRecovery",
+			"name": "Use Aggressive UMP Recovery",
+			"description": "This feature allows UMP to refetch the entire page to recover from ip changes and such.",
+			"type": "Boolean",
+			"default": "true"
+		},
+		{
+			"variable": "verifyIOSPlayback",
+			"name": "Verify IOS Playback",
+			"description": "This feature will check if iOS sources are playable beyond 60 seconds, or else fallback to other sources.\nMay add a minor delay on video load (< 0.2s)",
+			"type": "Boolean",
+			"default": "true"
+		},
+		{
+			"variable": "showVerboseToasts",
+			"name": "Show Verbose Messages",
+			"description": "Show messages that give more information about what is happening, might be considered annoying for some.",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "youtubeDislikerHeader",
+			"name": "Return Youtube Dislike",
+			"description": "This is a third-party database of video dislikes that combines historic data, crowd-sourced data, and estimations, and may not be accurate.\n\n(Using https://returnyoutubedislike.com)",
+			"type": "Header"
+		},
+		{
+			"variable": "youtubeDislikes",
+			"name": "Enable",
+			"description": "Use Return YoutubeDislike to provide dislikes for videos",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "sponsorBlockHeader",
+			"name": "SponsorBlock",
+			"description": "This is NOT Adblock. SponsorBlock allows you to (automatically) skip in-video sponsor segments.\nIt will harm creators.\n\n(Using https://sponsor.ajay.app)\n\nFUTO respects your decision to use SponsorBlock. But only if you're supporting creators in other ways.",
+			"type": "Header"
+		},
+		{
+			"variable": "sponsorBlock",
+			"name": "Enable",
+			"description": "If enabled support creators in other ways.\nDo not freeload.",
+			"type": "Boolean",
+			"default": "false",
+			"warningDialog": "SponsorBlock will harm creators.\nDo not freeload, support creators in other ways."
+		},
+		{
+			"variable": "sponsorBlockNoVotes",
+			"name": "Allow No Vote Segments",
+			"description": "Allow segments without votes, this may cause questionable video skips.",
+			"type": "Boolean",
+			"default": "false",
+			"dependency": "sponsorBlock"
+		},
+		{
+			"variable": "sponsorBlockCat_Sponsor",
+			"name": "Skip Sponsors",
+			"description": "Skip segments labeled as sponsors",
+			"type": "Dropdown",
+			"default": "1",
+			"dependency": "sponsorBlock",
+			"options": ["No skip", "Manual", "Automatic"]
+		},
+		{
+			"variable": "sponsorBlockCat_Intro",
+			"name": "Skip Intros",
+			"description": "Skip segments labeled as intros",
+			"type": "Dropdown",
+			"default": "0",
+			"dependency": "sponsorBlock",
+			"options": ["No skip", "Manual", "Automatic"]
+		},
+		{
+			"variable": "sponsorBlockCat_Outro",
+			"name": "Skip Outros",
+			"description": "Skip segments labeled as outros",
+			"type": "Dropdown",
+			"default": "0",
+			"dependency": "sponsorBlock",
+			"options": ["No skip", "Manual", "Automatic"]
+		},
+		{
+			"variable": "sponsorBlockCat_Self",
+			"name": "Skip Self-Promos",
+			"description": "Skip segments labeled as self-promos",
+			"type": "Dropdown",
+			"default": "0",
+			"dependency": "sponsorBlock",
+			"options": ["No skip", "Manual", "Automatic"]
+		},
+		{
+			"variable": "sponsorBlockCat_Offtopic",
+			"name": "Skip Music-Offtopic",
+			"description": "Skip segments labeled as music-offtopic",
+			"type": "Dropdown",
+			"default": "0",
+			"dependency": "sponsorBlock",
+			"options": ["No skip", "Manual", "Automatic"]
+		},
+		{
+			"variable": "sponsorBlockCat_Preview",
+			"name": "Skip Preview",
+			"description": "Skip segments labeled as previews",
+			"type": "Dropdown",
+			"default": "0",
+			"dependency": "sponsorBlock",
+			"options": ["No skip", "Manual", "Automatic"]
+		},
+		{
+			"variable": "sponsorBlockCat_Filler",
+			"name": "Skip Fillers",
+			"description": "Skip segments labeled as fillers",
+			"type": "Dropdown",
+			"default": "0",
+			"dependency": "sponsorBlock",
+			"options": ["No skip", "Manual", "Automatic"]
+		},
+		{
+			"variable": "deArrowHeader",
+			"name": "DeArrow",
+			"description": "A crowdsourced alternative for thumbnails and titles. These may not be endorsed by creators and are sourced by a third party.\n\n(Using https://sponsor.ajay.app)",
+			"type": "Header"
+		},
+		{
+			"variable": "deArrow",
+			"name": "Enable",
+			"description": "Changes video thumbnails and titles to less 'clickbait' variants. These titles are crowdsources, and may not be endorsed by creators.",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "deArrowAllowNoVotes",
+			"name": "Allow 0 Votes",
+			"description": "Allow un-verified titles/thumbnails that have no votes or confirmation",
+			"type": "Boolean",
+			"default": "false",
+			"dependency": "deArrow"
+		},
+		{
+			"variable": "deArrowOverview",
+			"name": "Use for lists",
+			"description": "Will request data for video lists (eg. Home, channels, etc).\nThis requires a lot of requests, and can lead to slow down.",
+			"type": "Boolean",
+			"default": "false",
+			"dependency": "deArrow",
+			"warningDialog": "This can cause slowdown in loading of video lists."
+		},
+		{
+			"variable": "deArrowThumbnails",
+			"name": "Change Thumbnails",
+			"description": "Changes thumbnails when deArrow is enabled.",
+			"type": "Boolean",
+			"default": "true",
+			"dependency": "deArrow"
+		},
+		{
+			"variable": "deArrowTitles",
+			"name": "Change Titles",
+			"description": "Changes titles when deArrow is enabled.",
+			"type": "Boolean",
+			"default": "false",
+			"dependency": "deArrow"
+		},
+		{
+			"variable": "advanced",
+			"name": "Advanced",
+			"description": "These are settings not intended for most users, but may help development or power users.",
+			"type": "Header"
+		},
+		{
+			"variable": "allow_av1",
+			"name": "Allow AV1",
+			"description": "Adds AV1 option when available, MAY NOT BE SUPPORTED YET!",
+			"type": "Boolean",
+			"default": "false",
+			"warningDialog": "AV1 support might not work yet, this allows you to return the stream even if its not supported (for testing)"
+		},
+		{
+			"variable": "notify_cipher",
+			"name": "Show Cipher every Video",
+			"description": "Shows a toast with the cipher when loading a video",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "notify_bg",
+			"name": "Show every new Botguard Token",
+			"description": "Shows a toast with the botguard token used changed",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "notify_ump_recovery",
+			"name": "Show every time UMP disconnects",
+			"description": "Shows a toast whenever UMP goes into a reconnection mode",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "allow_ump_plugin_reloads",
+			"name": "Allow UMP to reload plugin",
+			"description": "Allows the UMP protocol to reload a plugin if it deems required and supported.",
+			"type": "Boolean",
+			"default": "true"
+		},
+		{
+			"variable": "fallback_home_trending",
+			"name": "Fallback to Trending if Home unavailable",
+			"description": "Will fallback to Trending if home is unavailable (eg. no login)",
+			"type": "Boolean",
+			"default": "true"
+		},
+		{
+			"variable": "detect_session_pot",
+			"name": "Detect Session POT",
+			"description": "Try to detect if a session or video pot is required, from our experience this can backfire.",
+			"type": "Boolean",
+			"default": "true"
+		},
+		{
+			"variable": "use_html5_livestreams",
+			"name": "Use HTML5 Livestreams instead of iOS",
+			"description": "We recently found that iOS livestreams sometimes misbehave, html5 sometimes didnt have that issue",
+			"type": "Boolean",
+			"default": "true"
+		},
+		{
+			"variable": "use_html5_livestreams_pot",
+			"name": "Use HTML5 Livestreams POT Tokens",
+			"description": "Adds POT to livestream urls",
+			"type": "Boolean",
+			"default": "true"
+		},
+		{
+			"variable": "use_secondry_ump_temp",
+			"name": "Use Secondary UMP",
+			"description": "Will load a seperate UMP source for audio, may be required as a temporary solution",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "allow_player_response_reloading",
+			"name": "Allow UMP Player Response Reloading",
+			"description": "Experimental feature to reload player responses on request",
+			"type": "Boolean",
+			"default": "true"
+		},
+		{
+			"variable": "use_native_ump",
+			"name": "Native UMP Player (Experimental)",
+			"description": "Play VOD through the native SABR/UMP player instead of the generated DASH path",
+			"type": "Boolean",
+			"default": "true",
+			"isAdvanced": "true"
+		},
+		{
+			"variable": "use_combined_ump_audio",
+			"name": "Use Combined UMP",
+			"description": "Experimental feature to use merged streams, which is theoretically better and more compatible",
+			"type": "Boolean",
+			"default": "true"
+		}
+	],
+
+	"developerSubmitUrl": "https://dev.grayjay.app/api/Dev/Submit",
+
+	"captcha": {
+		"userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.153 Mobile Safari/537.36",
+		"captchaUrl": null,
+		"cookiesToFind": ["GOOGLE_ABUSE_EXEMPTION"]
+	},
+
+	"authentication": {
+		"userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+		"completionUrl": "https://m.youtube.com/youtubei/v1/guide?*",
+		"loginUrl": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fchannel_switcher&hl=en&ec=65620",
+		"headersToFind": ["authorization"],
+		"domainHeadersToFind": {
+			".youtube.com": ["authorization"]
+		},
+		"cookiesToFind": ["SIDCC"],
+		"cookiesExclOthers": false,
+		"loginWarning": "You must select a profile after login for authentication to complete."
+	},
+
+	"supportedClaimTypes": [2],
+	"primaryClaimFieldType": 1,
+
+	"changelog": {
+		"364": [
+     		"Fix: Various methods (getHome/getPlaylist/getChannel etc)"
+     	],
+		"363": [
+     		"Others: Fix parameter pass"
+     	],
+		"362": [
+     		"Others: Additional logging"
+     	],
+		"361": [
+     		"Others: Add additional logging for certain issues"
+     	],
+		"360": [
+     		"Fix: Live stream fix for some streams"
+     	],
+		"359": [
+     		"Fix: Shorts fix",
+			"Feature: Optional setting to show AI disclosure when opening AI video."
+     	],
+		"358": [
+     		"Feature/Fix: VisionOS streaming sources support"
+     	],
+		"356": [
+     		"Fix: Channels not showing new videos (when premiere is there)"
+     	],
+		"354": [
+     		"Fix: PeekChannelResults fix for phones"
+     	],
+        "353": [
+            "Feature: Native UMP"
+    	],  
+		"343": [
+			"Fix: Live streams"
+        ],
+		"342": [
+			"Fix: Channel livestreams not showing",
+			"Fix: Planned badges not always showing",
+			"Fix: Live stream auto-reloading (when waiting for streamer)"
+        ],
+		"341": [
+			"Fix: LIVE badge for livestream videos",
+			"Fix: Loading playlists"
+        ],
+        "340": [
+			"Fix: Membership first video detection"
+        ],
+		"339": [
+			"Fix: Added Android VR sources",
+			"Fix: Shorts work again",
+			"Fix: Membership video detection"
+		],
+		"338": [
+			"Fix: Membership video detection from VideoLockupModel"
+		],
+		"337": [
+			"Fix: Fixed issue causing date to be empty and videos missing from channel"
+		],
+		"336": [
+			"Fix: Sig solver optional"
+		],
+		"335": [
+			"Fix: Removed legacy code"
+		],
+		"334": [
+			"Fix: Possible Audio noise fix",
+			"Fix: DeArrow search fix",
+			"Fix: Shows should now work (limited metadata)",
+			"Improvement: Change no comments error"
+		],
+		"333": [
+			"Fix: Android Sources"
+		],
+		"332": [
+			"Fix: Added solutions"
+		],
+		"330": [
+			"Fix: Adding remote solver for n ciphers"
+		],
+		"329": [
+			"Fix: Cipher fix"
+		],
+		"328": [
+			"Fix: Browser Botguard re-enabled"
+		],
+		"324": [
+			"Fix: Temporarily disable Browser Botguard for legacy solution till better fix"
+		],
+		"322": [
+			"Fix: Possible initial UMP stream fetching"
+		],
+		"321": [
+			"Fix: Possible fix for cipher issue [4e51e895]"
+		],
+		"320": [
+			"Fix: Possible fix for cipher issue [3510b6ff]",
+			"Fix: Race condition with token generator initialization"
+		],
+		"318": [
+			"Fix: Possible fix for cipher issue [5d93cfdb]"
+		],
+		"317": [
+			"Feature: In-Browser token generation now a setting",
+			"Feature: Advanced settings field are now hidden for supported runtimes behind a toggle"
+		],
+		"316": [
+			"Feature: In-Browser token generation now a setting"
+		],
+		"315": [
+			"Feature: In-Browser token generation (on supported versions)",
+			"Fix: UMP Fix"
+		],
+		"314": [
+			"Fix: Cipher fix"
+		],
+		"313": [
+			"Fix: Fixed Android sources on desktop"
+		],
+		"312": [
+			"Fix: Livestreams fixed using n-parameter challenge"
+		],
+		"311": [
+			"Improvement: Reintroduce language selection for combined UMP",
+			"Improvement: Language now specified on combined video sources"
+		],
+		"310": [
+			"Improvement: Make combined UMP sources default",
+			"Improvement: Reload Required exception on UMP ReloadPlayerResponse request"
+		],
+		"309": [
+			"Fix: Cipher fix",
+			"Fix: Playlist import for non-english languages",
+			"Improvement: Clearer error for logged in users with disabled login fallback"
+		],
+		"307": [
+			"Fix: Improved combined UMP stream support"
+		],
+		"306": [
+			"Fix: More strict container compatibility check in UMP combined stream"
+		],
+		"305": [
+			"Fix: Added UMP combined stream support"
+		],
+		"301": [
+			"Fix: Temporary workaround for UMP fallback"
+		],
+		"300": [
+			"Fix: DeArrow not working"
+		],
+		"299": [
+			"Feature: Support for private videos (if logged in)",
+			"Feature: DeArrow support",
+			"Improvement: Added language codes to subtitles",
+			"Fix: Cipher fix (hXO not defined)"
+		],
+		"298": [
+			"HOTFIX: Videos getting cut off at end",
+			"Improvement: Better video sources fallback (Android CDN)",
+			"Improvement: New Trending page for non-logged in users",
+			"Improvement: Removed some old redundant settings",
+			"Improvement: Variable POT now on by default (helps some users)",
+			"Fix: Recommendations not working for logged in users",
+			"Fix: Content-checked content showing as 'Unavailable'",
+			"Fix: Comment likes sometimes being 0"
+		],
+		"297": [
+			"Improvement: Better video sources fallback (Android CDN)",
+			"Improvement: New Trending page for non-logged in users",
+			"Improvement: Removed some old redundant settings",
+			"Improvement: Variable POT now on by default (helps some users)",
+			"Fix: Recommendations not working for logged in users",
+			"Fix: Content-checked content showing as 'Unavailable'",
+			"Fix: Comment likes sometimes being 0"
+		],
+		"296": [
+			"Improvement: Better video sources fallback (Android CDN)",
+			"Improvement: New Trending page for non-logged in users",
+			"Improvement: Removed some old redundant settings",
+			"Improvement: Variable POT now on by default (helps some users)"
+		],
+		"295": [
+			"Fix: Cipher fix"
+		],
+		"294": [
+			"Fix: Cipher fix",
+			"Fix: POT for Livestreams"
+		],
+		"293": [
+			"Fix: Cipher fix",
+			"Fix: Alternative livestream source in settings (off by default)"
+		],
+		"292": [
+			"Fix: Livestreams fixed using temporary alternative method"
+		],
+		"291": [
+			"Fix: Cipher Fix (Intl not defined)"
+		],
+		"290": [
+			"Fix: Cipher Fix"
+		],
+		"289": [
+			"Fix: Cipher Fix",
+			"Improvement: Better STS error handling"
+		],
+		"288": [
+			"Improvement: Automatic login fallback support for membership content",
+			"Fix: Cipher Fix"
+		],
+		"287": [
+			"Improvement: No longer allow notify about fallback to virtualized player, and remove option to disable (almost always required)",
+			"Improvement: PlaybackTracker failures are now handled less obstructively (no huge dialog)",
+			"Fix: Subtitles for users that use login for details",
+			"Fix: Cipher fix (x.reverse not defined)",
+			"Fix: Cipher fix (player caller)",
+			"Fix: Import subscriptions not showing all if account has memberships subscriptions"
+		],
+		"286": [
+			"Fix: UMP Fix",
+			"Fix: Multi-author videos"
+		],
+		"285": [
+			"HOTFIX: Fix playback tracker",
+			"Fix: Cipher fix",
+			"Fix: UMP Fixed (More testing required)"
+		],
+		"284": [
+			"Fix: Cipher fix",
+			"Fix: UMP Fixed (More testing required)"
+		],
+		"283": [
+			"Fix: Temporarily disable session client to fix UMP"
+		],
+		"282": [
+			"Fix: Cipher fix"
+		],
+		"281": [
+			"Featured: Normalized audio labeling",
+			"Fix: Cipher fix",
+			"Fix: Fixed no viewcount, date, rating, channel thumbnails, subscriber count on video details using login"
+		],
+		"280": [
+			"Featured: Normalized audio labeling"
+		],
+		"279": [
+			"Improvement: Detect expired cookies",
+			"Improvement: Allow searching for scary topics",
+			"Improvement: Support opening urls with http instead of https schema",
+			"Improvement: Support opening urls with /v/{id} format"
+		],
+		"278": [
+			"Fix: Cipher fix for new system"
+		],
+		"277": [
+			"HotFix: Exception handling for new cipher system",
+			"Fix: Cipher fix",
+			"Improvement: New Cipher system, currently only used as fallback"
+		],
+		"276": [
+			"Fix: Cipher fix",
+			"Improvement: New Cipher system, currently only used as fallback"
+		],
+		"275": [
+			"Fix: Cipher fix",
+			"Fix: Race condition related to bgData fixed"
+		],
+		"274": [
+			"HOTFIX: Fix ReturnYoutubeDislikes enabled causing video error",
+			"Feature: Shorts feed support",
+			"Feature: Historic/VOD live chat",
+			"Improvement: UMP compatibility changes",
+			"Improvement: Login now gives warning telling you to select a profile after login",
+			"Fix: Home trending fallback fixed and improved",
+			"Fix: Subtitles should work again",
+			"Fix: Remove old trending fallback setting",
+			"Fix: Possible fix 'YTSessionClient not initialized'"
+		],
+		"273": [
+			"Feature: Shorts feed support",
+			"Feature: Historic/VOD live chat",
+			"Improvement: UMP compatibility changes",
+			"Improvement: Login now gives warning telling you to select a profile after login",
+			"Fix: Home trending fallback fixed and improved",
+			"Fix: Subtitles should work again",
+			"Fix: Remove old trending fallback setting",
+			"Fix: Possible fix 'YTSessionClient not initialized'"
+		],
+		"272": [
+			"Feature: Shorts feed support",
+			"Feature: Historic/VOD live chat",
+			"Improvement: UMP compatibility changes",
+			"Improvement: Login now gives warning telling you to select a profile after login",
+			"Fix: Home trending fallback fixed and improved",
+			"Fix: Subtitles should work again",
+			"Fix: Remove old trending fallback setting",
+			"Fix: Possible fix 'YTSessionClient not initialized'"
+		],
+		"271": [
+			"Feature: Shorts feed support",
+			"Feature: Historic/VOD live chat",
+			"Improvement: UMP compatibility changes",
+			"Fix: Home trending fallback fixed and improved",
+			"Fix: Subtitles should work again",
+			"Fix: Remove old trending fallback setting",
+			"Fix: Possible fix 'YTSessionClient not initialized'"
+		],
+		"270": [
+			"HOTFIX: Fix home page not parsing for some users",
+			"HOTFIX: Fix 'batch.POST is not a function'",
+			"Improvement: Improved performance for fetching video details (through Youtube session client)",
+			"Improvement: Improved compatibility for fetching video details (through Youtube session client)",
+			"Fix: Time/viewcount for recommendation videos"
+		],
+		"269": [
+			"HOTFIX: Fix 'batch.POST is not a function'",
+			"Improvement: Improved performance for fetching video details (through Youtube session client)",
+			"Improvement: Improved compatibility for fetching video details (through Youtube session client)",
+			"Fix: Time/viewcount for recommendation videos"
+		],
+		"268": [
+			"Improvement: Improved performance for fetching video details (through Youtube session client)",
+			"Improvement: Improved compatibility for fetching video details (through Youtube session client)",
+			"Fix: Time/viewcount for recommendation videos"
+		],
+		"267": [
+			"Improvement: Improved performance for fetching video details (through Youtube session client)",
+			"Improvement: Improved compatibility for fetching video details (through Youtube session client)"
+		],
+		"266": [
+			"Improvement: Youtube Session client, may improve overall experience, but may still contain bugs"
+		],
+		"265": [
+			"Improvement: New Youtube detail request flow with session retention (WIP)"
+		],
+		"262": [
+			"Fix: Cipher fix",
+			"Improvement: Backoff always if less than 5 seconds",
+			"Improvement: Reusing tokens if possible for backoff",
+			"Improvement: Reload once instead of twice",
+			"Improvement: isInlinePlaybackNoAd off by default"
+		],
+		"261": [
+			"Improvement: Async support for generate calls",
+			"Fix: Fix issue where backoff streams would not load further",
+			"Fix: Livechat colors now use RGBA instead of ARGB (Needs newest app to view correctly)",
+			"Fix: Livestream raids now apply the isOutgoing properly, instead of everything being outgoing"
+		],
+		"260": [
+			"FIX: Fix for undefined global functions (eg. hRx)"
+		],
+		"259": [
+			"Logging: Adding additional logging for edgecase"
+		],
+		"258": [
+			"Hotfix: Fix handling of invalid PlayerData from isInlinePlaybackNoAd after reload"
+		],
+		"257": [
+			"Improvement: Fallback without setting if fails",
+			"Improvement: Hide certain messages behind verbose toasts"
+		],
+		"256": [
+			"HOTFIX: Request optimalization",
+			"Improvement: Reduce/Resolve playback blocked"
+		],
+		"255": [
+			"Improvement: Reduce/Resolve playback blocked"
+		],
+		"254": [
+			"Improvement: Experimental UMP Backoff setting"
+		],
+		"253": [
+			"Improvement: Attempted bypassing of blocked playback",
+			"Fixed: Short-only playlists are now loadable",
+			"Fixed: No author names for playlist search"
+		],
+		"252": [
+			"Improvement: Detect Youtube messages"
+		],
+		"251": [
+			"Fix: Fixed wrong offsets for UMP (affects downloaded videos)",
+			"Fix: Fixed UMP not being able to load if opened with a timestamp",
+			"Fix: Fixed planned videos not loading properly",
+			"Fix: Fixed playlists not appearing if using authentication for channels in some cases",
+			"Improvement: Error when comments are disabled"
+		],
+		"250": [
+			"Fix: Consent form for search (with spaces)"
+		],
+		"249": [
+			"Fix: Cipher fix",
+			"Improvement: Better recommendation author parsing"
+		],
+		"248": [
+			"Fix: Potential cipher edgecase fix"
+		],
+		"244": [
+			"Fix: Support additional video models (may fix home page for some)"
+		],
+		"239": [
+			"Fix: More advanced cipher fixes"
+		],
+		"238": [
+			"Fix: Cipher edgecase"
+		],
+		"237": [
+			"Fix: Import Subscriptions on some accounts",
+			"Improvement: Playback tracker optimalization in certain scenarios",
+			"Improvement: Warning when toggling AV1 setting that it requires UMP for now"
+		],
+		"236": [
+			"Fix Android 9 error (remove query hardware codecs)"
+		],
+		"235": [
+			"Fix Cipher"
+		],
+		"234": [
+			"Improvement: Filter member-only videos from channel contents",
+			"Improvement: Possible UMP redirect fix"
+		],
+		"233": [
+			"Minor hotfix"
+		],
+		"232": [
+			"Feature: Verify IOS Playback setting (true by default), checks if iOS sources can be played beyond 60 seconds, or fallback to others.",
+			"Feature: Channel shorts fetching support (may require app update to view new channel tab)"
+		],
+		"231": [
+			"Fix: UMP failing on initial load"
+		],
+		"227": [
+			"Feature: Opt-in AV1 support",
+			"Feature: UMP MP4 support (fixes no audio or only 360p for older videos)",
+			"Improve: UMP Disconnect toasts now optional"
+		]
+	}
+},
+  {
     "_tags": ["unofficial", "untested"],
     "name": "Adventures in Odyssey Club",
     "description": "Subscription service for the award-winning, original audio drama series enjoyed by the whole family.",
