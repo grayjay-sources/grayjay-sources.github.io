@@ -623,12 +623,12 @@
         "- Initial implementation"
       ]
     },
-    "_tags": [],
     "_installUrl": "https://stefancruz.github.io/grayjay-plugin-arazu/ArazuConfig.json",
     "_feeds": {
       "commits": "https://github.com/stefancruz/grayjay-plugin-arazu/commits/main.atom",
       "releases": "https://github.com/stefancruz/grayjay-plugin-arazu/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "name": "Audiobookshelf",
@@ -673,11 +673,11 @@
         "required": true
       }
     },
-    "_tags": [],
     "_feeds": {
       "commits": "https://github.com/KUKARAF/grayjay-audiobookshelf/commits/main.atom",
       "releases": "https://github.com/KUKARAF/grayjay-audiobookshelf/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "_tags": [
@@ -836,7 +836,6 @@
       ".github.com",
       ".imagekit.io"
     ],
-    "_tags": [],
     "settings": [
       {
         "variable": "useVideoFeedPublishedDate",
@@ -863,7 +862,8 @@
     "_feeds": {
       "commits": "https://github.com/b-risk/Grayjay-BibleProject/commits/main.atom",
       "releases": "https://github.com/b-risk/Grayjay-BibleProject/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "name": "BiliBili (CN)",
@@ -1139,12 +1139,12 @@
         "default": "false"
       }
     ],
-    "_tags": [],
     "_installUrl": "https://raw.githubusercontent.com/b-risk/Grayjay-BlueLetterBible/refs/heads/main/BlueLetterBibleConfig.json",
     "_feeds": {
       "commits": "https://github.com/b-risk/Grayjay-BlueLetterBible/commits/main.atom",
       "releases": "https://github.com/b-risk/Grayjay-BlueLetterBible/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "name": "Brighteon",
@@ -1173,12 +1173,12 @@
       ]
     },
     "settings": [],
-    "_tags": [],
     "_installUrl": "https://raw.githubusercontent.com/GreyPluginDev/grayjay-plugin-brighteon/refs/heads/master/BrighteonConfig.json",
     "_feeds": {
       "commits": "https://github.com/GreyPluginDev/grayjay-plugin-brighteon/commits/main.atom",
       "releases": "https://github.com/GreyPluginDev/grayjay-plugin-brighteon/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "name": "CDA",
@@ -1412,10 +1412,10 @@
     "sourceUrl": "https://plugins.grayjay.app/Crunchyroll/CrunchyrollConfig.json",
     "scriptUrl": "./CrunchyrollScript.js",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/crunchyroll",
-    "version": 18,
+    "version": 19,
     "iconUrl": "./CrunchyrollIcon.png",
     "id": "9bb33039-8580-48d4-9849-21319ae845a4",
-    "scriptSignature": "Bw90ra1quw+nMAXXTZqlmydyko2T2dyCA7m6kfEbM4Dhh/L6FpbLZYYIRyFwZADAba8buE95GyyXOxXogq3pOzmheK8FWqFfpnXoHOGqF30fsT7RPtuWnQoOK/0wiiuJzdMk+Dohdi9K2jKLXIXTg6xU4dc5twGzBOZIwBPIOuyRvsY/LpL8ZCAMyet5NTcHI2S4NMwUAxmsKlWgM5E703YPO/vHJm0dtWWaYmY9y/EhQSblK4rRychA3wR9w+9xcKhMWCuXgGvvbVXTPTsuswZU9ug/INXkG9Yp+2G0y4DLSam6BatOvALz493srCaNX/xGej8I0Fszkjt784l2Ig==",
+    "scriptSignature": "p26bLErmR04unQbiT8AeK5pp1XYL/hhsawHhh/tQ0jROol4bywliyKf8sYPI7MrpDS/5tSm/ZEfkRgVIBsO6xLZI6/OLNqmCgXEDG9SHD09TKtS3yos9/PkL9+FaDo0bnKGHPUp6c94sLqIr0MHp7qbewVSif9cR3bjcivzlUKKWt2aIhhGx+zNs44shlgRiZ6vIcbdJO+ptBiNwmF5Sse8rbprCaXskCw1UFmdyxsJjqa05+V5QFfznpR+IRqbJRW3nDJiv/+qAAEz0RL+Vghy9TSkxnjfQ7Km1m2ZcAgzl4mTEkD+fUwjRkwXioyiosKg3p5hPvBakkPEqKzmSSA==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "packages": [
       "Http",
@@ -1440,7 +1440,7 @@
       {
         "variable": "premiumContentUnavailableIndex",
         "name": "Premium Content Unavailable",
-        "description": "How to handle premiun content not available to current user",
+        "description": "How to handle premium content not available to the current user, and episodes that are not available",
         "type": "Dropdown",
         "default": "0",
         "options": [
@@ -1586,6 +1586,11 @@
       ],
       "18": [
         "Add: Desktop support (requires a desktop build with Widevine);"
+      ],
+      "19": [
+        "Fix: Error when opening an episode that has not aired yet;",
+        "Improvement: Show upcoming episodes as planned on desktop;",
+        "Improvement: Show unavailable episodes as locked or hide them, following the premium content setting;"
       ]
     },
     "_tags": [
@@ -1837,12 +1842,12 @@
       "prod95-cdn.dr-massive.com",
       "prod95-static.dr-massive.com"
     ],
-    "_tags": [],
     "_installUrl": "https://raw.githubusercontent.com/TheColorman/grayjay-plugin-drtv/refs/heads/main/DRTVConfig.json",
     "_feeds": {
       "commits": "https://github.com/TheColorman/grayjay-plugin-drtv/commits/main.atom",
       "releases": "https://github.com/TheColorman/grayjay-plugin-drtv/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "name": "DTube",
@@ -1881,8 +1886,8 @@
         "Initial release with video playback, channel support, and search functionality"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-dtube/raw/main/grayjay-plugin-dtube-config.json"
+    "_installUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-dtube/raw/main/grayjay-plugin-dtube-config.json",
+    "_tags": []
   },
   {
     "name": "Dailymotion",
@@ -2789,12 +2794,12 @@
       "sourcesUrl": "https://stefancruz.github.io/grayjay-plugin-euronews/sources.json"
     },
     "settings": [],
-    "_tags": [],
     "_installUrl": "https://stefancruz.github.io/grayjay-plugin-euronews/EuronewsConfig.json",
     "_feeds": {
       "commits": "https://github.com/stefancruz/grayjay-plugin-euronews/commits/main.atom",
       "releases": "https://github.com/stefancruz/grayjay-plugin-euronews/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "_tags": [
@@ -3154,7 +3159,6 @@
         "default": "true"
       }
     ],
-    "_tags": [],
     "changelog": {
       "2": [
         "Removed YouTube URL detection"
@@ -3164,7 +3168,8 @@
     "_feeds": {
       "commits": "https://github.com/b-risk/Grayjay-Hobune/commits/main.atom",
       "releases": "https://github.com/b-risk/Grayjay-Hobune/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "name": "IMDb",
@@ -3259,8 +3264,8 @@
         "Initial version"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://gitgud.io/aptly/IMDB-Grayjay-Plugin/-/raw/master/IMDbConfig.json"
+    "_installUrl": "https://gitgud.io/aptly/IMDB-Grayjay-Plugin/-/raw/master/IMDbConfig.json",
+    "_tags": []
   },
   {
     "name": "Instagram",
@@ -3342,12 +3347,12 @@
         ]
       }
     ],
-    "_tags": [],
     "_installUrl": "https://raw.githubusercontent.com/b-risk/Grayjay-Instagram/refs/heads/main/InstagramConfig.json",
     "_feeds": {
       "commits": "https://github.com/b-risk/Grayjay-Instagram/commits/main.atom",
       "releases": "https://github.com/b-risk/Grayjay-Instagram/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "name": "Internet Archive",
@@ -3514,12 +3519,12 @@
         ]
       }
     },
-    "_tags": [],
     "_installUrl": "https://raw.githubusercontent.com/b-risk/grayjay-source-internet-archive/refs/heads/main/InternetArchiveConfig.json",
     "_feeds": {
       "commits": "https://github.com/b-risk/grayjay-source-internet-archive/commits/main.atom",
       "releases": "https://github.com/b-risk/grayjay-source-internet-archive/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "_tags": [
@@ -4165,8 +4170,8 @@
         "POTENTIAL FIX for video playback"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_LG_Channels/raw/main/LGChannelsConfig.json"
+    "_installUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_LG_Channels/raw/main/LGChannelsConfig.json",
+    "_tags": []
   },
   {
     "name": "LibriVox (Alpha)",
@@ -4524,12 +4529,12 @@
         ]
       }
     },
-    "_tags": [],
     "_installUrl": "https://stefancruz.github.io/grayjay-plugin-livestreamfails/LivestreamfailsConfig.json",
     "_feeds": {
       "commits": "https://github.com/stefancruz/grayjay-plugin-livestreamfails/commits/main.atom",
       "releases": "https://github.com/stefancruz/grayjay-plugin-livestreamfails/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "name": "Lotus Eaters",
@@ -4643,14 +4648,14 @@
         "Initial build"
       ]
     },
-    "_tags": [],
     "scriptSignature": "aFjP5HNFYFL8UvhXAPDXK+qq1lpNaxWQg95X9DA5cTs7jiZZ2dura4AUHaW3UZMKwgEG7Xu+a1UQpOYhBH7nTCHS5RsMFlOJYs+aTjyG3J403+7ZsbEaABAJw5ZDObdObDBpT+DXn3/w3hiD3Gx3A5qQabciIB7tgZQFNR6CnaQtlr+pta8etdNtwoHC8w0g9aH1VyGTyNshIabOFpaX8D9BCJyHOBbSf1f3sebza2itf8QV6DOx5OS/552MGrj3UHLRN2S1nHoZz7WPABKSO0GiUqIqyOano+r59wzu7+2oER2bpQhcLOlmqJUaOgLHhTQQGTV+SKQvhiYCJ2rSAOwcDydQzUs/Rk1tQ2hCqVdeAJp/gXCJo6/G8QVzZi7B+w7T0DrvjY6yliAm/qgV/38eWEcEdUgNTk9mOdRaHB7E2rxu3zkaLAcXkV3rNuHxSxM/MnUY3TJsAWitLZ84+ScUDX4SSMNX/ZCYxnZe9CbRb4HYFdPbojFsqiF7lUccQYYKT4IyI/VCCpoaoj1pg08Im/MX1tKzPLLly4hAw+zWM4FRgigQ5esH/OIG4SH9PPQ4AVqHzn150jCTlDjU0Pz+0zcBDuP/6SSyqZ856s2eM4/lfdeUB3DY2S3cVi6UD06iT3gYDcqeQKfYip4QuCeH9HIQpm+LMrKM6t80bik=",
     "scriptPublicKey": "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAqc9oxXymnkAwwrmzOeUXjkIzbXPnWwVWTQtaZYe4t10cUXjDRWznkzSq0GwjJw/PJjAWO35wRLBIipBIvSxvciUX1BtZD1QO7qTU1liLnqMpPsqwCD60kITxXisrl2tzlo6QyyQwNCAWL8WBvV1zhH3DOTRQiWhcanFeTHB+yAY8pYj3QBFsdJFXGHJnJr3w/CZZ9MX/kbvgDCDahU98ls6YpK1ksCOZOKD1UERlWlG/BKdXB7C9jAGj2tZVr67egHGjmtMQGj1zXL3yRbHbYH0Zc0XGcrQXu1cc0/TI0Tdvad+xp61kZXi62hmZXnnWFQ1LZxk3ozLRQ+bU9g4IwyG7FV3UQVVAwGTIimBE+9QID2WaDKuUMGEztu9t2gyUi1387oQbdU0taGW4yqpdt+ewUaty1Y0rqfHTkdq636+C4VU3IHczoAYMyE4Nrgu5DKw61nK5MWmFBJi+jFITeqZk4+m1wUTORK1JdZHaN/5u8d9IfPamo22tbo+B1FOJ6pH/Tugwrm8cN4QMLFg3KtyF+FiP6uD/xhsvdDVbX1TABsRb8RRLVScViLZ0IFW3BUIc3745faZznZmhzcMdASqrk5FxffEronJrM8LxBrnXX/uRr575z5JPoPXba6KtCa3R6eO6ooHfs7Lf+fIZFy5Zkg9Cfvr5ffpoM3GRvmkCAwEAAQ==",
     "_installUrl": "https://duzwoixghogbc.cloudfront.net/LotusEatersConfig.json",
     "_feeds": {
       "commits": "https://gitlab.com/grayjayplugins/LotusEaters/-/commits/master?format=atom",
       "releases": "https://gitlab.com/grayjayplugins/LotusEaters/-/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "_tags": [
@@ -4895,7 +4900,7 @@
     "id": "a1b2c3d4-5e6f-7890-abcd-ef1234567890",
     "name": "NASA+",
     "description": "Explore the unknown in air and space. Watch original series, documentaries, and features from NASA's streaming service.",
-    "version": 5,
+    "version": 6,
     "author": "FUTO",
     "authorUrl": "https://futo.tech",
     "platformUrl": "https://plus.nasa.gov",
@@ -4903,7 +4908,7 @@
     "sourceUrl": "https://plugins.grayjay.app/NASA-Plus/NASA-PlusConfig.json",
     "scriptUrl": "./NASA-PlusScript.js",
     "iconUrl": "./NASA-PlusIcon.png",
-    "scriptSignature": "FZYz4r5H1Hh5pPvRgT5oS009PIrYgaPt6cIN74Ul02H6qcT7Ys1hXmxqvGxfxrLyjvWGrStLEYp44tnuoe8pt+G/byyWH1/E4O5PSfBfgw1S89aVVxIhR6OnPG/J0brp5F4FS+D+rbkzlcYUdqcvLzXM1ZMkEUzDqNicFgf68oz1sDinNJyO18b3CZFkFGxuAGagW3q+Se2jeRqEEbyl3AjocGd0nQumbu6b5v/7H82/iGgB65xB6JUs+L3zW5FBRraF+kHDi0wrk9QXQS3z0jpKBITc0SyCNTLBQohq9RvqtnlRO8B68y8jIHpFB1QgUlAshhvvcGO7Ha16xdao+A==",
+    "scriptSignature": "DSDi+c+d+n4cMHpx+aR0WJyGE7PcjyX55TioESXfv4MIctA7PVj0IuKeLjev7i2XeI2kUxAu6NNtQ7eU6ptSEMQA/NtzQSDBUibFAb0/MpEfj+DImsYxpfTp6wpQJ0YbV5Eddut4I4WmaQtoCsYiF4D8v7AxUHKKxjXgDkuuMjyHPPKE7i4boK02bQn1tQKRQF0SiGvJZis5zj4tXYIu4+oZIem+yT86f2bawOXpwJlqYCtItXL3kLH7hCMv+b0uMDsp0nEgS+OlUcm+kDcNit442zkkEUY6rtSTw2HYFm7RGIwhqc7gt56lugqg1iqPIw0daeUTF6E7slhwVNoeaw==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "packages": [
       "Http"
@@ -4931,6 +4936,9 @@
       }
     },
     "changelog": {
+      "6": [
+        "Fix: Upcoming events show as planned instead of failing to play;"
+      ],
       "5": [
         "Fix: Live event detection when end time is unknown;",
         "Fix: Hide empty series and topics from channel search results;",
@@ -4989,12 +4997,12 @@
         "Enhanced video source detection with multiple fallback methods"
       ]
     },
-    "_tags": [],
     "_installUrl": "https://gitlab.com/grayjay-plugins1/grayjay-plugin-nasa/-/raw/main/NASAConfig.json",
     "_feeds": {
       "commits": "https://gitlab.com/grayjay-plugins1/grayjay-plugin-nasa/-/commits/master?format=atom",
       "releases": "https://gitlab.com/grayjay-plugins1/grayjay-plugin-nasa/-/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "name": "Nebula",
@@ -5139,10 +5147,10 @@
     "sourceUrl": "https://plugins.grayjay.app/Niconico/NiconicoConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico",
     "scriptUrl": "./NiconicoScript.js",
-    "version": 4,
+    "version": 5,
     "iconUrl": "./NiconicoIcon.png",
     "id": "99224109-ac6d-426f-a1c1-4c8051f946fd",
-    "scriptSignature": "K+OjrdYoXfr6MFGChxvMvLPuDz0gJls+eYoYuP1r5nhVeBoIWuPGnDqg9exOqDx/U5Reb9lci8BaEtOFHmyHSJeFwAFUDppyfY8ZCo0aNaxw76MXJKqt6mFrPKforTYMtbhHbIMFO5cxvliiFLbrb/uXvclqJHGi5KKtYnwCL0HslE0NVRZOE7N3nbqAFaGMYbYkqjxlq2mNmULiO03QPaCJCeeUSKPNq2Xe01/AuZG+bIsmSjJDM3SwyAZww+K1yRbgXTZtqjjMknCp49xlQ5iFElRmjqSetTmUkS9ue9D0YfjkxPNDR2yhNlbLXJFBbOAEfdzmptPnEsc5wyHWXQ==",
+    "scriptSignature": "RvnFU5FJcQiuqKDjzT3//LyuK7+7YgiD0mnIubtrjY9ocmxQgyFsLSq7Ql7Vy6WvbE1LUUSumK/WPFvh7b2k1QbVQ5FJA5M3Xq15styRzY5ijY8RF7V6F0VnegrWnc/whsid5sauCUSz5Nzc4Lj/LNmq1P5INDUAofmW+z1FvArpQA/TarpChGKcJlAC+4szENf6aBP7jSzFYo566EupH9pbBUD+hE4GU3+LNU+Gba/xmW4kX6AxzFIIlL51GP2ruDtpPafiHj7yfJD37rKnOza25LpenNpx0tlgJ7b4YX2ydiAPbWXVJA2+nU30+dqWmU2kdTqlQmi1lC8DcvnvUQ==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "packages": [
       "Http",
@@ -5167,6 +5175,9 @@
       ]
     },
     "changelog": {
+      "5": [
+        "Fix: Search failing on desktop when no filters are selected;"
+      ],
       "4": [
         "Fix: Playback of videos uploaded by channels;",
         "Fix: Author links on videos and playlists owned by channels;",
@@ -5209,7 +5220,6 @@
       ".nyane.online",
       ".cdn.nyane.online"
     ],
-    "_tags": [],
     "changelog": {
       "2": [
         "Removed YouTube URL detection"
@@ -5219,7 +5229,8 @@
     "_feeds": {
       "commits": "https://github.com/b-risk/Grayjay-Nyane/commits/main.atom",
       "releases": "https://github.com/b-risk/Grayjay-Nyane/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "name": "Odysee",
@@ -5608,8 +5619,8 @@
         "Livestream playback"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-owncast/raw/branch/main/grayjay-plugin-owncast-config.json"
+    "_installUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-owncast/raw/branch/main/grayjay-plugin-owncast-config.json",
+    "_tags": []
   },
   {
     "_tags": [
@@ -6622,12 +6633,12 @@
         "Improved channel fetching"
       ]
     },
-    "_tags": [],
     "_installUrl": "https://raw.githubusercontent.com/b-risk/grayjay-plugin-preservetube/refs/heads/master/PreserveTubeConfig.json",
     "_feeds": {
       "commits": "https://github.com/b-risk/grayjay-plugin-preservetube/commits/main.atom",
       "releases": "https://github.com/b-risk/grayjay-plugin-preservetube/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "id": "9c87a5e2-3f41-4b8a-9d2e-7f6c8a1b3d4e",
@@ -6998,12 +7009,12 @@
     "author": "FUTO",
     "authorUrl": "https://futo.org",
     "platformUrl": "https://www.redbull.com/int-en/discover",
-    "version": 6,
+    "version": 7,
     "iconUrl": "./RedBullTvIcon.png",
     "scriptUrl": "./RedBullTvScript.js",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/redbull-tv",
     "sourceUrl": "https://plugins.grayjay.app/RedbullTv/RedBullTvConfig.json",
-    "scriptSignature": "BuvlPY1jkavCpSGpRFBaRTtIXOyZ1nOVQtP7w2wBxhI9/RrecDatdOdijbGYDAitjJnxq9flL/gfYCGXfCDG2MEo9fL3WCEtg73nbRlT0n2BnbY28GZlM1tWjXTwyZ5kBIX4+E5Uqa6yevwfUQoHl5yCfN/MEi8s1uZl/QtEl3JmtUuZRBSMUnlAyDUp7v+Pyh07TNn0ztXM/pY7i6BmE/Tj5xJOmuyHqMRIMvOWeVhbmSdfxmDKxaWoFU7ol0UkS+VnjnSQyzhlCkMnIRmhoicwUU4FaQVMOQowaMyhlNl+rgZ8Tw18IIxEiPfGD5uRqYaSmtYP5sH0jLl85ygEaA==",
+    "scriptSignature": "HrfhjOFP0sJLJXYXge9dMhBRVYz+xjDNOtNknWpSlf0l4fZ9VVvcrHTu8bft0czbhhu5NutC3Gi9rb18LLisu9AyXpWz+fE3KtRKYwf2KBYxF+wwm8gORNZnZjRxK+AgdnwapKj5lSe+l2AVghXabJTmAFmNfsP2evYB36rEq+L9SDnntArjrcWrIekG3V8l9ZR/sHihLO0cCOLG+xuRLDfnwFcacBE3IycxzlGVmoEqJEooFEq8UlWo/vNdLrz0dYRuLS62BMw3nvNObE0dNUdyYGEiTwVyQJZ3K/zx4cFqXHohh7/3lX8k9PAPhoq2qI3Cgj4+lY9EQ/ieG+QFQQ==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "packages": [
       "Http"
@@ -7015,6 +7026,9 @@
       ".redbull.com"
     ],
     "changelog": {
+      "7": [
+        "Fix: Live events failing to open from home"
+      ],
       "6": [
         "Fix: Episodes with zero duration no longer filtered from playlists",
         "Fix: Athlete search no longer requests duplicate pages (API ignores pagination)",
@@ -7467,8 +7481,8 @@
         "Initial version - Samsung TV Plus streaming support"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://codeberg.org/RooftopMiner/Samsung-TV-Plus-Grayjay-Plugin/raw/main/SamsungTVPlusConfig.json"
+    "_installUrl": "https://codeberg.org/RooftopMiner/Samsung-TV-Plus-Grayjay-Plugin/raw/main/SamsungTVPlusConfig.json",
+    "_tags": []
   },
   {
     "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
@@ -7578,8 +7592,8 @@
         "Initial version"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://codeberg.org/safapoc449/ScreenRant-Plugin-Grayjay/raw/branch/main/grayjay-plugin-screenrant-com-videos-config.json"
+    "_installUrl": "https://codeberg.org/safapoc449/ScreenRant-Plugin-Grayjay/raw/branch/main/grayjay-plugin-screenrant-com-videos-config.json",
+    "_tags": []
   },
   {
     "name": "SoundCloud",
@@ -7798,8 +7812,8 @@
         ]
       }
     },
-    "_tags": [],
-    "_installUrl": "https://codeberg.org/stefancruz/grayjay-plugin-streamable-viewer/raw/branch/master/StreamableConfig.json"
+    "_installUrl": "https://codeberg.org/stefancruz/grayjay-plugin-streamable-viewer/raw/branch/master/StreamableConfig.json",
+    "_tags": []
   },
   {
     "_tags": [
@@ -7900,8 +7914,8 @@
         "Initial version"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_SuperCartoons/raw/main/SuperCartoonsConfig.json"
+    "_installUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_SuperCartoons/raw/main/SuperCartoonsConfig.json",
+    "_tags": []
   },
   {
     "name": "TCLtv Plus",
@@ -7955,8 +7969,8 @@
         "Initial version"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_TCLtvPlus/raw/branch/main/TCLtvConfig.json"
+    "_installUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_TCLtvPlus/raw/branch/main/TCLtvConfig.json",
+    "_tags": []
   },
   {
     "name": "TeacherTube",
@@ -7992,8 +8006,8 @@
         "Partial channel support for browsing user content"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-teachertube/raw/branch/main/grayjay-plugin-teachertube-config.json"
+    "_installUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-teachertube/raw/branch/main/grayjay-plugin-teachertube-config.json",
+    "_tags": []
   },
   {
     "_tags": [
@@ -8259,7 +8273,6 @@
         ]
       }
     ],
-    "_tags": [],
     "changelog": {
       "2": [
         "Added support for free videos, default page"
@@ -8288,7 +8301,8 @@
     "_feeds": {
       "commits": "https://github.com/b-risk/grayjay-trilogy-plus/commits/main.atom",
       "releases": "https://github.com/b-risk/grayjay-trilogy-plus/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "$schema": "https://github.com/MithrilGoat/GrayJay-Plugin-Schema/releases/latest/download/Schema.json",
@@ -8432,8 +8446,8 @@
         "Initial version"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_Tubi/raw/branch/main/TubiConfig.json"
+    "_installUrl": "https://codeberg.org/Catcall0284/Grayjay_Plugin_Tubi/raw/branch/main/TubiConfig.json",
+    "_tags": []
   },
   {
     "name": "Twitch",
@@ -8641,12 +8655,12 @@
         "Initial release with home feed, search, channel browsing, and video playback"
       ]
     },
-    "_tags": [],
     "_installUrl": "https://raw.githubusercontent.com/b-risk/Grayjay-Vanillo/refs/heads/main/VanilloConfig.json",
     "_feeds": {
       "commits": "https://github.com/b-risk/Grayjay-Vanillo/commits/main.atom",
       "releases": "https://github.com/b-risk/Grayjay-Vanillo/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "name": "Vanillo",
@@ -8714,12 +8728,12 @@
         "Fixed bug with the URL detection being positive for YouTube URLs"
       ]
     },
-    "_tags": [],
     "_installUrl": "https://raw.githubusercontent.com/b-risk/Grayjay-Vidlii/refs/heads/main/VidLiiConfig.json",
     "_feeds": {
       "commits": "https://github.com/b-risk/Grayjay-Vidlii/commits/main.atom",
       "releases": "https://github.com/b-risk/Grayjay-Vidlii/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "_tags": [
@@ -8989,11 +9003,11 @@
         "Initial release: channel content via RSS, search, and video extraction from tweet pages."
       ]
     },
-    "_tags": [],
     "_feeds": {
       "commits": "https://github.com/upgradingmaster/grayjay-xcancel/commits/main.atom",
       "releases": "https://github.com/upgradingmaster/grayjay-xcancel/releases.atom"
-    }
+    },
+    "_tags": []
   },
   {
     "_tags": [
@@ -9222,7 +9236,7 @@
     "sourceUrl": "https://plugins.grayjay.app/Youtube/YoutubeConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/youtube",
     "scriptUrl": "./YoutubeScript.js",
-    "version": 364,
+    "version": 366,
     "iconUrl": "./youtube.png",
     "id": "35ae969a-a7db-11ed-afa1-0242ac120002",
     "packages": [
@@ -9257,7 +9271,7 @@
       "maintained",
       "working"
     ],
-    "scriptSignature": "ivcttk97EOkFun/QJIV6cPp0asr13bhHp+2wg5xQNcoiS4Pu7G+Iz8g8EwfDaDuDT+Ze+cq5Xvx5OIAEPgAJHDO/HQw5igzNf47f5ylWab7ohVzc1O6hE2OOzPFaI2yUJeAorW5yle/dVd9Gh3QZxN3+LQyBTSa3i1OQAUPUOtnnpD7CaOejpgIIJzC9Agqnp4crrn6SV9ryKM6eb2FC29h5lFrs0DvPRo0TR8pcuIWXtHQCZbzBAYJLnSHYK18R/zLIjArX/JbSW0CyajstxKh372V1JgT3g6LddFvQizc9dFsJejHOsga8oegmIztEJQz0zHgYsAzinJpKEhQnxA==",
+    "scriptSignature": "Zol0/Xwke8pSC+ajsnMrqm1ra5BcGLPpCnMAg/P9IMDxLFr3kjvPikoLqlcTfEHC/uIydEjhdoHTNnA0GmgPVwWRixOe8HNr0o8ZEGGwRWDpOhWvL3bsYP/3szefs/VJ5/jWafcFqAAlNmJkCq03KbvNuuu2V7jxhq577LCEwNVrp9d9Sc6sKOiAuW+uVNuElocJFHU6AHMLbd0RPGdqKMvQuYrITG+C3hUpD7FPZULRV84Qbk6RjULZTvjSnJDKEYq9E8pHiZdFonzn77lL2ys8NserDYRHE9F1jKAMD8xDaLVhC20C1944EUDd7rwtzwCIVLLxhuGHcpaveY9Gcg==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
       "commits": "https://gitlab.futo.org/videostreaming/plugins/youtube/-/commits/master?format=atom"
@@ -9671,6 +9685,12 @@
     },
     "primaryClaimFieldType": 1,
     "changelog": {
+      "366": [
+        "Fix: View counts on channels"
+      ],
+      "365": [
+        "Fix: Force UMP properly respected"
+      ],
       "364": [
         "Fix: Various methods (getHome/getPlaylist/getChannel etc)"
       ],
@@ -10132,10 +10152,10 @@
     "sourceUrl": "https://plugins.grayjay.app/YoutubeUnstable/YoutubeConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/youtube",
     "scriptUrl": "./YoutubeScript.js",
-    "version": 364,
+    "version": 366,
     "iconUrl": "./youtube.png",
     "id": "35ae969a-a7db-11ed-afa1-0242ac120003",
-    "scriptSignature": "JPAfwvuI1GAPmCvESUtGQHM9p8O1XaVb+j7LrRzZWpZSBGMHOcczbwnvtvdLH0dK2SG94NYcDT0dpcPSN+V7e1kZud24pZwu+SrMK/+JmsNAhc6HC+lG4QZJz83azYRVmX83UcgbQQtjiDknvB/wVsAfw4gSlMakhNNW3U/b7vl98OflZ/7/5XL2+IKfYXLiH4SZkZ4e0CDHHf99LYIMeIFz8lMKR9q6tS/cT/zgZvoTxEmRSVBrRnlho4D51PROzy66NYXJKyOoPnYBUMzPcRHQgO+S4A97HZVXRO3DoizXQTpq9IdMq3uDK9SfwW7PXbh9HypDZAFM92hPVcjiQA==",
+    "scriptSignature": "Zol0/Xwke8pSC+ajsnMrqm1ra5BcGLPpCnMAg/P9IMDxLFr3kjvPikoLqlcTfEHC/uIydEjhdoHTNnA0GmgPVwWRixOe8HNr0o8ZEGGwRWDpOhWvL3bsYP/3szefs/VJ5/jWafcFqAAlNmJkCq03KbvNuuu2V7jxhq577LCEwNVrp9d9Sc6sKOiAuW+uVNuElocJFHU6AHMLbd0RPGdqKMvQuYrITG+C3hUpD7FPZULRV84Qbk6RjULZTvjSnJDKEYq9E8pHiZdFonzn77lL2ys8NserDYRHE9F1jKAMD8xDaLVhC20C1944EUDd7rwtzwCIVLLxhuGHcpaveY9Gcg==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "packages": [
       "Http",
@@ -10574,6 +10594,12 @@
     ],
     "primaryClaimFieldType": 1,
     "changelog": {
+      "366": [
+        "Fix: View counts on channels"
+      ],
+      "365": [
+        "Fix: Force UMP properly respected"
+      ],
       "364": [
         "Fix: Various methods (getHome/getPlaylist/getChannel etc)"
       ],
@@ -11007,8 +11033,8 @@
         "Improve: UMP Disconnect toasts now optional"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://plugins.grayjay.app/YoutubeUnstable/YoutubeConfig.json"
+    "_installUrl": "https://plugins.grayjay.app/YoutubeUnstable/YoutubeConfig.json",
+    "_tags": []
   },
   {
     "name": "Youtube SB",
@@ -11386,8 +11412,8 @@
         "Caching for homepage and playlists (5 min TTL)"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-beatfly-music-xyz/raw/main/grayjay-plugin-beatfly-music-xyz-config.json"
+    "_installUrl": "https://bitbucket.org/grayjayplugins/grayjay-plugin-beatfly-music-xyz/raw/main/grayjay-plugin-beatfly-music-xyz-config.json",
+    "_tags": []
   },
   {
     "_tags": [
@@ -11478,8 +11504,8 @@
         "Initial version"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://gitea.com/api/v1/repos/andytorres/iCivics.Grayjay.Plugin/raw/icivics.json"
+    "_installUrl": "https://gitea.com/api/v1/repos/andytorres/iCivics.Grayjay.Plugin/raw/icivics.json",
+    "_tags": []
   },
   {
     "name": "media.ccc.de",
@@ -11758,7 +11784,7 @@
         "Initial release with support for Xbox Clips homepage, game pages, channel pages, and video playback"
       ]
     },
-    "_tags": [],
-    "_installUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-xboxclips/raw/branch/main/grayjay-plugin-xboxclips-config.json"
+    "_installUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-xboxclips/raw/branch/main/grayjay-plugin-xboxclips-config.json",
+    "_tags": []
   }
 ]
