@@ -6585,8 +6585,8 @@
     "sourceUrl": "https://raw.githubusercontent.com/b-risk/grayjay-plugin-preservetube/refs/heads/master/PreserveTubeConfig.json",
     "scriptUrl": "./PreserveTubeScript.js",
     "iconUrl": "./Imgs/PreserveTubeIcon.png",
-    "version": 6,
-    "scriptSignature": "fVDtNkUcNLbzvy0eIFrpkH7EfUdICw9nczVObn6lB37WPgnrgYTWWWdzkewsrYeQyuD19KwGN/v+A73FBTTVRovtFejmLhDKG10cN8IF6LaDlJK/z0H/xFMdFAXHGp3Q47RDQ/rqjqHA0OSWQiM72wPzDBqNgKVAnVPVV8cKdyWnvJsZS5eGStc9h+oT6SkYmPLxCSOinwR1NrHiO02ePMDF55/lBKZe5Raq6wY93ij/8P25YnIlBdmGok9wDWxsVT0okENgU6+KjrQ9GWIY0yjsUvXIwIrH8SqjEBcPspUYybvjZNvjSxGP+uJM1fRDiHsNaCtK9YJNi04ul7myVg==",
+    "version": 8,
+    "scriptSignature": "sVuqd8iuNwmObtJffHm9/fpDPzj1+ofKNVon9VNyClJvt3OmJZpgTJOoolSAzM2Ye3txDCn0H/fdRSC8Fxzrpc5aeUyxD75KUx6VkPod7AnS7yrFB8nY4Hf6GeLe+HWkWoz0EyJRyHi91W4Ifzk0a9pve02t65Et+crj0GpsOS0iFdP2BqD88rIgvxpvVz5iCZBkHt5XfjkiA/oowPemrEah6ARNN8qIi/youycL7wyNdYgBEUctZ4nuHXD2H1kqSEkWUfSa37rBR14IvN1m2QQY3UkK4/Jag4FCTC/uVqh6l4LSZAgAOF8sGxcEhJDfNFaVpbOKxJyk0cqqQKCNdQ==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtwo1/yQ2mfRRAt9zIoU134jom/fwIl02cH36Uy/D9viN9pGCfCBtI2pYyng8hqPZDqZkN5Bv6+aD0w1Ei2FUdX7dqiEByciUqWMbKfd8oDyr/vwPA9ajTy7BkOkjEXloxk/zvKMl/2MDcVA3+Zwt3dmampWBooXHehLROgwrQyTXCSjP7PjPv7MZwE0afsrt0UgpctYgQ3Sj/5r+kYWTBsLp7IXcHyltfXDixVFAsOUKlxkmXO10UTtSRz5y0EFy9iNhfrxwCQy0+d6mr28xOW43+hByztXrHh9On4sniNP+p9VxTz7ZfXV5WTRWOuQUzUeek/a0fj9mKu4r3kqerwIDAQAB",
     "packages": [
       "Http",
@@ -6631,6 +6631,17 @@
       ],
       "6": [
         "Improved channel fetching"
+      ],
+      "7": [
+        "Fixed channel name and thumbnail lookup by reading the channel profile from a video watch page (channel pages are now Cloudflare challenged and no longer contain the header)",
+        "Fixed videos failing to load: the source container and codec now follow the archived file (mp4 vs webm) instead of always claiming video/mp4 + h264",
+        "Removed the stale s0.archive.party/.webm fallback url; the <video> source, its <source> or the download link is used instead",
+        "Added Cloudflare challenge detection with retries so challenge pages are never parsed or cached as content"
+      ],
+      "8": [
+        "Added a local media relay: when the plugin is loaded from a private address, thumbnails, channel avatars and video sources are fetched through that origin's /relay endpoint, so ISP content filters that block the s*.archive.party CDN (e.g. Xfinity Advanced Security / safebrowse.io) no longer break images or playback",
+        "The relay is only used when it is part of the plugin's own origin, so a plugin hosted normally keeps using PreserveTube's CDN directly",
+        "Thumbnails of older archives still pointed at the retired minio.lain.la mirror, which serves nothing any more; they now point at the same file on the host that serves their media"
       ]
     },
     "_installUrl": "https://raw.githubusercontent.com/b-risk/grayjay-plugin-preservetube/refs/heads/master/PreserveTubeConfig.json",
