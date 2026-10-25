@@ -2809,7 +2809,7 @@
     "id": "d890ff43-7d9f-4f0e-a52d-239014fd512d",
     "name": "FOSDEM",
     "description": "FOSDEM is a two-day event organised by volunteers to promote the widespread use of free and open source software.",
-    "version": 4,
+    "version": 5,
     "author": "FUTO",
     "authorUrl": "https://futo.org",
     "platformUrl": "https://fosdem.org",
@@ -2817,7 +2817,7 @@
     "sourceUrl": "https://plugins.grayjay.app/FOSDEM/FOSDEMConfig.json",
     "scriptUrl": "./FOSDEMScript.js",
     "iconUrl": "./FOSDEMIcon.png",
-    "scriptSignature": "NDHhQ4V+JM3DGcKfoT0ObAl6e4DLjTCgol+RZmPzxpqz66ufirJwlFay+meD6fUVhCKRd9Q6RMCMhESktyj0poVOFLDo/i1WQ3tPTNllBc/dypQkD43hQ+owxf+j0UkT3+UztcSg7RRGM59E2ArVEpXd6+WbGVBHpwl7ISWh+6togNXNp6IWpR9RXKiiTDbjKh5vqMdB2a/TqcTs+3abf6ZTYE12BF7ppvux9XY3VCubnf0U2Y6b1LrtcLropsdnclZzm/BSRhiEbgTmOuEebD/74x1xZphBBxdZ7XGqoyMsRn7i1TraqscrMC4IQb+lU6lqUc+erNgVf8cvoPH+eA==",
+    "scriptSignature": "OnxCSpBSq9XckjdbL9C9i0YeM8P6bc5l1bjWkU9yPNdi/lkle1uEfSwxnvkIM7HSPUnHI1uVKa+GKXl4d0IgYnPbrhPJ+FgeNPhsQbxH+Sk5WDlNGVrcAXfadm4Jvusj2TxYnyUFEdiHXHZEkDV8w+TYCjlewtcQmMUcpqumyF63OEWHuOOTL9vWgkzoGs7uAlw5w7nzctni1nRocitlQ40hIp+Y7FnfKLFsYFtSA5ir2Dd7FR5/8UR6F0pYTIFCRsooZZw0gZgsS6/5+mo59AWTO8MOhrkxQDNBI8l6KnNWtDP0fSY8A156Pm/IsahyPqUhPnVAv7epLiPGLZ1b2w==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "packages": [
       "Http"
@@ -2865,6 +2865,18 @@
       }
     ],
     "changelog": {
+      "5": [
+        "Fix: Timeouts, rate limits and server errors are retried;",
+        "Fix: Lists that fail to load offer a retry instead of showing nothing;",
+        "Fix: Search in a speaker channel returns only that speaker's talks;",
+        "Fix: Talk and video file links with percent-encoded names open the talk;",
+        "Fix: Edition playlists pick up new tracks, rooms and types;",
+        "Fix: Talks only in formats turned off in the settings show a clear error;",
+        "Feature: FOSDEM news posts in the home feed, FOSDEM and edition channels, and search;",
+        "Feature: News posts in subscriptions, when the subscription's Posts setting is on;",
+        "Feature: Talk and speaker links in posts open in the app when they have videos;",
+        "Feature: The next edition shows in the year filter and channel search before its schedule is out;"
+      ],
       "4": [
         "Improvement: Videos from a FOSDEM edition now show that edition's channel as their author;",
         "Improvement: Per-edition channels (FOSDEM 2026, 2025, ...) in channel search;"
