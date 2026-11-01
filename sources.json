@@ -4014,7 +4014,7 @@
     "sourceUrl": "https://plugins.grayjay.app/Kick/KickConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/kick",
     "scriptUrl": "./KickScript.js",
-    "version": 24,
+    "version": 25,
     "iconUrl": "./kick.png",
     "id": "4a78c2ff-c20f-43ac-8f75-34515df1d320",
     "packages": [
@@ -4031,7 +4031,7 @@
       "maintained",
       "working"
     ],
-    "scriptSignature": "OG1hK76C6VmjD40q4sGnCKoIeBE6SVQhvBmmPqFTou7HkicJyaRdHBsw5ast1ZkKWVLa4KGp3ukiCZJ6EoDYlY5Z3V57WN7euNLyqRyReaHTTkezSspIrsedcFvBMerCnyD7c7bSMYKeyHIsm4Yw3T41V3GZeQQ+H5QaJYffRTLRQmENjpKoPCEhu+JrHeIf5i2tpysAGbrz8VeMWw51o2+6TABXztb5cmWNnKZXDtV1WRWoak/hCqZ3SG1vKUfBytWNs9OuLYMTUDcnaEn3P6xsjHW6HuKgVFOzbMwLvhCZCU7NPWX0oCJWsYMjMp36tQFH/t3lT8YqWJZepx0VNw==",
+    "scriptSignature": "c7j8I+IE8RhSi1hk4GSTJz5+cNDAfWv0LCxfzVrDrgNXP7z9jSo0GUr0aMG1voL3LH1TnYmmJCexL7B17XUWGcVJuIMSFdjBp+cU/5h1h3jRNkLMZFLGtjUGdD6GtEjSE3ArxyjKJQjcDlJ4bMCYh499zeTekI0CteAh3CdHyRbsmiTm7aZs1EdfWVClMdqe44W5aLGHBgyT5uaeqy/Oj1ZFbvcz74IE2LHp2MdaLt6K3TPRarC8KfwiVLI8t/OxOgB0OUrO4DMCiVkDA0/VpOJlm1Ml+8+D7KK7pONfwoUrU4yIHwUPvoJnbHBp8/v8nhtqLaAhXncBijULJgIHLQ==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
       "commits": "https://gitlab.futo.org/videostreaming/plugins/kick/-/commits/master?format=atom"
@@ -4090,6 +4090,10 @@
       }
     ],
     "changelog": {
+      "25": [
+        "Fix: VOD links shared from Grayjay opening a not-found page on kick.com;",
+        "Fix: VOD links copied from kick.com not opening;"
+      ],
       "24": [
         "Fix: some VODs not playing when opened from a channel page (channels with capitals or spaces in their name);",
         "Fix: channel search with special characters;"
@@ -5252,7 +5256,7 @@
     "sourceUrl": "https://plugins.grayjay.app/Odysee/OdyseeConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/odysee",
     "scriptUrl": "./OdyseeScript.js",
-    "version": 63,
+    "version": 64,
     "iconUrl": "./OdyseeIcon.png",
     "id": "1c05bfc3-08b9-42d0-93d3-6d52e0fd34d8",
     "packages": [
@@ -5278,7 +5282,7 @@
       "maintained",
       "working"
     ],
-    "scriptSignature": "HQUH3FdIgg7TO4yyzbzX9fz3VPfcVTQRyqJ3XIm1rnr/hfZ7v+4KR3a8ANsaglsou6zS4MIfydsKd6TTyaKsIZeB6Dc1Qu/oUOmzJmsGVaMS/QXaX1sVqrKACchWCv8+sR6spc/xXs6+HJKHyUzs8bQRdRZ1JkdE4i7rkxj9WaK+4BjL7kE+LWcqh+jrWERhuABRUNV93Mqd5KLlU9Ty5NQ2mEL7DwHTiDMK3HWniA6KoL/oO+NF5px5nz14+wxR3IMXaIT/t2JeA4hYrvymS9C0QhJqQ4dAInqbSbzo7N3WW+t0JyYXTkI1XuFccFzl5s68yvs3T2+n5i7HwLCILA==",
+    "scriptSignature": "SqN3nzv6cdiM+gkvSwiCUy4wBDeCUy5BWrkij+giSJmACr9huh3MuOYkWg5vBc/MgA2OASU3ml0MRx/iLYuX2iwx1FRqciCk+wDn3wxe7o8+09vlMcR20rN/ysbugjjMk5o865cjmEsqWiqlf3kc8HDlPmUv1hAtC+9d85w7qku0Pp61U/RNhBfDa5XRfomAk/v6VGhlbeydFbY8Ut3r13yAhqJu3By5jA1sewvtgh3KLI9iMhf+fR8vHIJwP715RHKbuPVOy33tkDNuznUBsTxwYUiQaqPnQNzxsn4kAddGrH3/yP0wyhH2hmqxIQhcFRa22m8mu6WlawaDsrAigg==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "_feeds": {
       "commits": "https://gitlab.futo.org/videostreaming/plugins/odysee/-/commits/master?format=atom"
@@ -5462,6 +5466,19 @@
       }
     ],
     "changelog": {
+      "64": [
+        "Fix: Videos failing to open or play, or needing a second open, most often new uploads and on mobile networks;",
+        "Fix: Paid, blocked and deleted videos and audio tracks reported as a generic playback error;",
+        "Fix: Offline live streams opening to a playback error instead of reporting the stream as offline;",
+        "Fix: Reposted videos missing from feeds and failing to open from links;",
+        "Fix: Landscape videos appearing in the Shorts feed and the channel Shorts tab;",
+        "Fix: Text posts in feeds showing the wrong content, or failing to load on channels with many posts;",
+        "Fix: Search showing an error for queries under 3 characters, repeating the first page, or ignoring the channel, sorting and date filters;",
+        "Fix: Related videos out of relevance order, and missing for videos opened from an odysee.com link;",
+        "Fix: Playlists stopping at 50 videos and showing deleted entries as empty items;",
+        "Fix: Comments stuck loading forever when the comment server returned an error;",
+        "Fix: Odysee links with uppercase domains or a trailing slash not recognized;"
+      ],
       "63": [
         "Fix: Handle special and non-ASCII characters in Odysee links;",
         "Fix: Channel links resolving to a different channel with the same handle;",
@@ -10175,10 +10192,10 @@
     "sourceUrl": "https://plugins.grayjay.app/YoutubeUnstable/YoutubeConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/youtube",
     "scriptUrl": "./YoutubeScript.js",
-    "version": 366,
+    "version": 367,
     "iconUrl": "./youtube.png",
     "id": "35ae969a-a7db-11ed-afa1-0242ac120003",
-    "scriptSignature": "Zol0/Xwke8pSC+ajsnMrqm1ra5BcGLPpCnMAg/P9IMDxLFr3kjvPikoLqlcTfEHC/uIydEjhdoHTNnA0GmgPVwWRixOe8HNr0o8ZEGGwRWDpOhWvL3bsYP/3szefs/VJ5/jWafcFqAAlNmJkCq03KbvNuuu2V7jxhq577LCEwNVrp9d9Sc6sKOiAuW+uVNuElocJFHU6AHMLbd0RPGdqKMvQuYrITG+C3hUpD7FPZULRV84Qbk6RjULZTvjSnJDKEYq9E8pHiZdFonzn77lL2ys8NserDYRHE9F1jKAMD8xDaLVhC20C1944EUDd7rwtzwCIVLLxhuGHcpaveY9Gcg==",
+    "scriptSignature": "cNbH/z/hLcBd/5ZMaP1VMwY0P+HgV0TphuNzP/TC0w/ZhCB7+Cd+Vcc9kenqJekDLNyP486C07PWE/xWaPusw9z0ao8BoPYSf+uecKVMm+7rYvbUvRS3fRWDEfrov3FmsKxUb39FvTI9v5PyIYV3Z8avrsUWPqiNQF0frEwFbiHvaPZEcKG2YltVRTHCSE/CELBBPvxmyCWcqPe8+wffDhO4cOf6Lr6iBUUlfg0dQhJ/rgh31WsGTSN1U61usGB9UnwlANk9rAjxYZf4DeMqUFmLbfe3TMPol7WBLUX0iK92EBl/1h+tA3o9oikjkLxhZhQeMyYa3Nlui2knDfXqWA==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "packages": [
       "Http",
@@ -10617,6 +10634,9 @@
     ],
     "primaryClaimFieldType": 1,
     "changelog": {
+      "367": [
+        "Feature: Seek Thumbnail support"
+      ],
       "366": [
         "Fix: View counts on channels"
       ],
