@@ -1601,6 +1601,223 @@
   },
   {
     "_tags": [
+      "unofficial",
+      "working",
+      "maintained",
+      "anime",
+      "streaming"
+    ],
+    "name": "Crunchyroll",
+    "description": "Fork of the official FUTO Crunchyroll plugin with search filters by audio (dub) and subtitle language (incl. pt-BR), default-language shortcuts and media/creator modes. Tested on Android and Desktop (Widevine).",
+    "author": "mzramna (fork do plugin da FUTO)",
+    "authorUrl": "https://github.com/mzramna",
+    "platformUrl": "https://crunchyroll.com",
+    "sourceUrl": "https://raw.githubusercontent.com/mzramna/GrayjayCrunchyroll/main/CrunchyrollConfig.json",
+    "scriptUrl": "./CrunchyrollScript.js",
+    "repositoryUrl": "https://github.com/mzramna/GrayjayCrunchyroll",
+    "version": 24,
+    "iconUrl": "./CrunchyrollIcon.png",
+    "id": "d9d7bb6c-fd47-4141-b411-54290e54aa15",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+      "Http",
+      "Utilities"
+    ],
+    "packagesOptional": [
+      "HttpImp"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+      ".crunchyroll.com",
+      ".crunchyrollcdn.com",
+      "cr-play-service.prd.crunchyrollsvc.com",
+      "cr-license-proxy.prd.crunchyrollsvc.com",
+      "v.vrv.co"
+    ],
+    "authentication": {
+      "loginUrl": "https://sso.crunchyroll.com/login",
+      "cookiesToFind": [
+        "etp_rt"
+      ],
+      "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
+    },
+    "settings": [
+      {
+        "variable": "premiumContentUnavailableIndex",
+        "name": "Premium Content Unavailable",
+        "description": "How to handle premium content not available to the current user, and episodes that are not available",
+        "type": "Dropdown",
+        "default": "0",
+        "options": [
+          "As regular content",
+          "As locked Content",
+          "Hide"
+        ]
+      },
+      {
+        "variable": "localeIndex",
+        "name": "Display Language",
+        "description": "",
+        "type": "Dropdown",
+        "default": "0",
+        "options": [
+          "en-US - English",
+          "en-IN - English (India)",
+          "id-ID - Bahasa Indonesia",
+          "ms-MY - Bahasa Melayu",
+          "ca-ES - Català",
+          "de-DE - Deutsch",
+          "es-419 - Español (América Latina)",
+          "es-ES - Español (España)",
+          "fr-FR - Français",
+          "it-IT - Italiano",
+          "pl-PL - Polski",
+          "pt-BR - Português (Brasil)",
+          "pt-PT - Português (Portugal)",
+          "vi-VN - Tiếng Việt",
+          "tr-TR - Türkçe",
+          "ru-RU - Русский",
+          "ar-SA - العربية",
+          "hi-IN - हिंदी",
+          "ta-IN - தமிழ்",
+          "te-IN - తెలుగు",
+          "zh-CN - 中文 (普通话)",
+          "zh-HK - 中文 (粵語)",
+          "zh-TW - 中文 (國語)",
+          "ko-KR - 한국어",
+          "th-TH - ไทย"
+        ]
+      },
+      {
+        "variable": "preferredAudioLanguageOptionIndex",
+        "name": "Audio Language",
+        "description": "Preferred audio language for the videos",
+        "type": "Dropdown",
+        "default": "0",
+        "options": [
+          "ja-JP - 日本語",
+          "en-US - English",
+          "en-IN - English (India)",
+          "id-ID - Bahasa Indonesia",
+          "ms-MY - Bahasa Melayu",
+          "ca-ES - Català",
+          "de-DE - Deutsch",
+          "es-419 - Español (América Latina)",
+          "es-ES - Español (España)",
+          "fr-FR - Français",
+          "it-IT - Italiano",
+          "pl-PL - Polski",
+          "pt-BR - Português (Brasil)",
+          "pt-PT - Português (Portugal)",
+          "vi-VN - Tiếng Việt",
+          "tr-TR - Türkçe",
+          "ru-RU - Русский",
+          "ar-SA - العربية",
+          "hi-IN - हिंदी",
+          "ta-IN - தமிழ்",
+          "te-IN - తెలుగు",
+          "zh-CN - 中文 (普通话)",
+          "zh-HK - 中文 (粵語)",
+          "zh-TW - 中文 (國語)",
+          "ko-KR - 한국어",
+          "th-TH - ไทย"
+        ]
+      },
+      {
+        "variable": "subtitlesLanguageOptionIndex",
+        "name": "Subtitles/CC Language",
+        "description": "",
+        "type": "Dropdown",
+        "default": "0",
+        "options": [
+          "en-US - English",
+          "en-IN - English (India)",
+          "id-ID - Bahasa Indonesia",
+          "ms-MY - Bahasa Melayu",
+          "ca-ES - Català",
+          "de-DE - Deutsch",
+          "es-419 - Español (América Latina)",
+          "es-ES - Español (España)",
+          "fr-FR - Français",
+          "it-IT - Italiano",
+          "pl-PL - Polski",
+          "pt-BR - Português (Brasil)",
+          "pt-PT - Português (Portugal)",
+          "vi-VN - Tiếng Việt",
+          "tr-TR - Türkçe",
+          "ru-RU - Русский",
+          "ar-SA - العربية",
+          "hi-IN - हिंदी",
+          "ta-IN - தமிழ்",
+          "te-IN - తెలుగు",
+          "zh-CN - 中文 (普通话)",
+          "zh-HK - 中文 (粵語)",
+          "zh-TW - 中文 (國語)",
+          "ko-KR - 한국어",
+          "th-TH - ไทย",
+          "None"
+        ]
+      }
+    ],
+    "changelog": {
+      "4": [
+        "Add pagination to content and creators search;"
+      ],
+      "7": [
+        "Add setting to set preferred subtitle;"
+      ],
+      "12": [
+        "Fix playback tracking;"
+      ],
+      "13": [
+        "Fix authenticated session issue;"
+      ],
+      "14": [
+        "Fix: error when description contains alternate streams in Japanese;"
+      ],
+      "15": [
+        "Fix: Home tab error;"
+      ],
+      "16": [
+        "Fix: Subtitles not properly escaping commas;",
+        "Fix: Sort skip events by start time in content chapters;",
+        "Improvement: Support deep linking from localized URLs (e.g. fr-fr, en-us) for video and series pages;",
+        "Improvement: Include closed captions (cc) as subtitles when available;",
+        "Improvement: Categorize skip events as skippable or normal in content chapters;",
+        "Configuration: Update author URL from futo.org to futo.tech;"
+      ],
+      "17": [
+        "Fix: Playback failing because the license is now returned as binary instead of base64;"
+      ],
+      "18": [
+        "Add: Desktop support (requires a desktop build with Widevine);"
+      ],
+      "19": [
+        "Fix: Error when opening an episode that has not aired yet;",
+        "Improvement: Show upcoming episodes as planned on desktop;",
+        "Improvement: Show unavailable episodes as locked or hide them, following the premium content setting;"
+      ],
+      "20": [
+        "Fork: remove assinatura da FUTO, novo id e sourceUrl"
+      ],
+      "21": [
+        "Busca: filtros de idioma padrão, modo (mídia/criador), áudio e legenda (apenas interface, sem filtrar ainda)"
+      ],
+      "22": [
+        "Corrige rótulos dos filtros (mostravam o id)"
+      ],
+      "23": [
+        "Busca: filtra por áudio/legenda (idioma padrão ou lista), por mídia ou criador; também na busca de criadores"
+      ],
+      "24": [
+        "Renomeia o plugin para Crunchyroll"
+      ]
+    },
+    "_installUrl": "https://raw.githubusercontent.com/mzramna/GrayjayCrunchyroll/main/CrunchyrollConfig.json"
+  },
+  {
+    "_tags": [
       "official",
       "working"
     ],
