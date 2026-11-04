@@ -7979,7 +7979,7 @@
     "packages": ["Http"],
     "allowEval": false,
     "allowUrls": [".xn-app1.com", ".xnxx-cdn.com", ".xnxx.com"],
-    "_installUrl": "https://grayjay-plugin-xnxx.pages.dev/XNXXConfig.json",
+    "_installUrl": "https://raw.githubusercontent.com/GreyPluginDev/grayjay-plugin-xnxx/refs/heads/master/XNXXConfig.json",
     "_feeds": {
       "commits": "https://github.com/GreyPluginDev/grayjay-plugin-xnxx/commits/main.atom",
       "releases": "https://github.com/GreyPluginDev/grayjay-plugin-xnxx/releases.atom"
@@ -8006,7 +8006,7 @@
     "packages": ["Http"],
     "allowEval": false,
     "allowUrls": [".xv-app1.com", ".cdn77-pic.xvideos-cdn.com", ".xvideos.com"],
-    "_installUrl": "https://grayjay-plugin-xvideos.pages.dev/XVideosConfig.json",
+    "_installUrl": "https://raw.githubusercontent.com/GreyPluginDev/grayjay-plugin-xvideos/refs/heads/master/XVideosConfig.json",
     "_feeds": {
       "commits": "https://github.com/GreyPluginDev/grayjay-plugin-xvideos/commits/main.atom",
       "releases": "https://github.com/GreyPluginDev/grayjay-plugin-xvideos/releases.atom"
@@ -10240,5 +10240,31 @@
     },
     "_installUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-xboxclips/raw/branch/main/grayjay-plugin-xboxclips-config.json",
     "_tags": []
+  },
+  {
+    "_tags": [
+      "unofficial",
+      "working",
+      "nsfw"
+    ],
+    "id": "c1f5ffac-739a-4e17-8dac-e3ea02be30c6",
+    "name": "PlayVids",
+    "description": "PlayVids.com is the only oldest, largest and absolutely free porn tube site on the Internet",
+    "version": 4,
+    "author": "GreyPluginDev",
+    "authorUrl": "https://github.com/GreyPluginDev",
+    "platformUrl": "https://www.playvids.com",
+    "repositoryUrl": "https://github.com/GreyPluginDev/grayjay-plugin-playvids",
+    "sourceUrl": "https://raw.githubusercontent.com/GreyPluginDev/grayjay-plugin-playvids/refs/heads/master/PlayVidsConfig.json",
+    "scriptUrl": "./PlayVidsScript.js",
+    "iconUrl": "./PlayVidsIcon.png",
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
+    "allowUrls": [
+      ".playvids.com",
+      ".userscontent.net"
+    ]
   }
 ]
