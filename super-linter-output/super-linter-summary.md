@@ -4,28 +4,28 @@
 | -------------------------- | ----------------- |
 | BIOME_FORMAT               | Fail ❌           |
 | BIOME_LINT                 | Fail ❌           |
-| GITHUB_ACTIONS             | Fail ❌           |
-| GITHUB_ACTIONS_ZIZMOR      | Fail ❌           |
 | GITLEAKS                   | Pass ✅           |
 | GIT_MERGE_CONFLICT_MARKERS | Pass ✅           |
+| JSON                       | Pass ✅           |
+| JSON_PRETTIER              | Pass ✅           |
 | PRE_COMMIT                 | Pass ✅           |
-| SPELL_CODESPELL            | Pass ✅           |
+| SPELL_CODESPELL            | Fail ❌           |
 | TRIVY                      | Pass ✅           |
-| YAML                       | Pass ✅           |
-| YAML_PRETTIER              | Pass ✅           |
 
 Super-linter detected linting errors
 
-For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/36775140454)
+For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/41917000896)
 
-Powered by [Super-linter](https://github.com/super-linter/super-linter)
+Powered by [Super-linter](https://github.com/super-linter/super-linter)\
+Super-linter revision: `2da136927bd4a73596db63044b504547c62cb854`\
+Super-linter version: `9.0.0`
 
 <details>
 
 <summary>BIOME_FORMAT</summary>
 
 ```text
-Checked 10 files in 485ms. No fixes applied.
+Checked 10 files in 458ms. No fixes applied.
 Found 10 errors..vscode/launch.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Formatter would have printed the following content:
@@ -1041,157 +1041,157 @@ sources.json format ━━━━━━━━━━━━━━━━━━━━
 
   × Formatter would have printed the following content:
 
-       1    1 │   [
-       2      │ - ··{
-       3      │ - ····"_tags":·["unofficial",·"untested"],
-       4      │ - ····"name":·"Adventures·in·Odyssey·Club",
-       5      │ - ····"description":·"Subscription·service·for·the·award-winning,·original·audio·drama·series·enjoyed·by·the·whole·family.",
-       6      │ - ····"author":·"CATEIN",
-       7      │ - ····"authorUrl":·"https://catein.xyz",
-       8      │ - ····"sourceUrl":·"https://raw.githubusercontent.com/CATEIN/adventures-in-odyssey-club-plugin/refs/heads/main/AdventuresInOdysseyClubConfig.json",
-       9      │ - ····"repositoryUrl":·"https://github.com/CATEIN/adventures-in-odyssey-club-plugin",
-      10      │ - ····"scriptUrl":·"./AIOScript.js",
-      11      │ - ····"version":·14,
-      12      │ - ····"iconUrl":·"./AIOC.png",
-      13      │ - ····"id":·"62e186ef-160d-46d7-9953-74fe84d11b40",
-      14      │ - ····"scriptSignature":·"",
-      15      │ - ····"scriptPublicKey":·"",
-      16      │ - ····"packages":·["Http"],
-      17      │ - ····"allowEval":·false,
-      18      │ - ····"allowUrls":·["fotf.my.site.com"],
-      19      │ - ····"authentication":·{
-      20      │ - ······"loginUrl":·"https://app.adventuresinodyssey.com/signin",
-      21      │ - ······"domainHeadersToFind":·{
-      22      │ - ········"fotf.my.site.com":·["Authorization",·"x-viewer-id",·"x-pin"]
-      23      │ - ······},
-      24      │ - ······"cookiesToFind":·["idccsrf"],
-      25      │ - ······"loginWarning":·"You·must·select·a·profile·with·a·PIN·for·authentication·to·complete."
-      26      │ - ····},
-      27      │ - ····"settings":·[
-      28      │ - ······{
-      29      │ - ········"variable":·"podcasts",
-      30      │ - ········"name":·"Podcasts",
-      31      │ - ········"description":·"Show·new·podcasts·in·subscription·feed",
-      32      │ - ········"type":·"Boolean",
-      33      │ - ········"default":·"false"
-      34      │ - ······},
-      35      │ - ······{
-      36      │ - ········"variable":·"fetchRandomEpisode",
-      37      │ - ········"name":·"Randomizer·via·Recommended",
-      38      │ - ········"description":·"Puts·a·random·episode·at·the·top·of·recommendations·(Recommendations·may·take·longer·to·load)",
-      39      │ - ········"type":·"Boolean",
-      40      │ - ········"default":·"false"
-      41      │ - ······},
-      42      │ - ······{
-      43      │ - ········"variable":·"fasterRandom",
-      44      │ - ········"name":·"Faster·Randomizer",
-      45      │ - ········"description":·"Cache·episodes·instead·of·using·the·random·API.·Might·not·include·the·newest·episodes.·Default·when·not·logged·in.",
-      46      │ - ········"type":·"Boolean",
-      47      │ - ········"default":·"false",
-      48      │ - ········"dependency":·"fetchRandomEpisode"
-      49      │ - ······},
-      50      │ - ······{
-      51      │ - ········"variable":·"groupings",
-      52      │ - ········"name":·"Content·Groupings",
-      53      │ - ········"description":·"Choose·which·content·groups·appear·on·the·playlists·tab",
-      54      │ - ········"type":·"Dropdown",
-      55      │ - ········"default":·"0",
-      56      │ - ········"options":·[
-      57      │ - ··········"Albums",
-      58      │ - ··········"Playlists·(Club)",
-      59      │ - ··········"Series",
-      60      │ - ··········"Collections",
-      61      │ - ··········"Bonus·Videos",
-      62      │ - ··········"Life·Lessons"
-      63      │ - ········]
-      64      │ - ······},
-      65      │ - ······{
-      66      │ - ········"variable":·"advancedHeader",
-      67      │ - ········"name":·"Advanced·settings",
-      68      │ - ········"description":·"Advanced/Experimental·settings",
-      69      │ - ········"type":·"Header"
-      70      │ - ······},
-      71      │ - ······{
-      72      │ - ········"variable":·"commentPageSize",
-      73      │ - ········"name":·"Comment·page·size",
-      74      │ - ········"description":·"Set·how·many·comments·to·load·on·each·request.·Higher·might·be·slower",
-      75      │ - ········"type":·"Dropdown",
-      76      │ - ········"default":·"1",
-      77      │ - ········"options":·["10·(the·club·uses·this)",·"20",·"30",·"40",·"50"]
-      78      │ - ······},
-      79      │ - ······{
-      80      │ - ········"variable":·"debug",
-      81      │ - ········"name":·"Show·additional·info",
-      82      │ - ········"description":·"Show·additional·info·in·description",
-      83      │ - ········"type":·"Boolean",
-      84      │ - ········"default":·"false"
-      85      │ - ······},
-      86      │ - ······{
-      87      │ - ········"variable":·"secretVariable",
-      88      │ - ········"name":·"Enable·Experimental·Ambient·Playback·Rerouting",
-      89      │ - ········"description":·"Only·enable·if·you·are·not·logged·in",
-      90      │ - ········"type":·"Boolean",
-      91      │ - ········"default":·"false"
-      92      │ - ······}
-      93      │ - ····],
-      94      │ - ····"changelog":·{
-      95      │ - ······"5":·[
-      96      │ - ········"Comment·Update!",
-      97      │ - ········"Finding·comments·should·now·use·less·requests",
-      98      │ - ········"Replies·now·show·up",
-      99      │ - ········"Added·setting·for·comment·page·size",
-     100      │ - ········"Increased·EpisodeHomePage·size·to·30·instead·of·25"
-     101      │ - ······],
-     102      │ - ······"6":·[
-     103      │ - ········"Small·lil·update",
-     104      │ - ········"Changed·EpisodeHomePage·API·url·to·one·the·club·might·like·better",
-     105      │ - ········"Loading·comments·might·show·toast·messages·when·searching·for·a·page·maybe?",
-     106      │ - ········"Added·themes·support·-·issue·#2·on·github",
-     107      │ - ········"Added·weird·video·URL·support·-·issue·#3·on·github"
-     108      │ - ······],
-     109      │ - ······"7":·[
-     110      │ - ········"Another·small·lil·update",
-     111      │ - ········"Changed·EpisodeHomePage·endpoint·again·to·one·that·gives·both·video·and·audio·content",
-     112      │ - ········"Support·for·badge·content·(loads·the·first·content·id·in·the·badge)"
-     113      │ - ······],
-     114      │ - ······"8":·[
-     115      │ - ········"Very·lil·update",
-     116      │ - ········"Fixed·older·club·videos·not·loading",
-     117      │ - ········"Support·for·playlist·URLs·(currently·no·way·to·get·to·them·on·grayjay)",
-     118      │ - ········"Slightly·better·search"
-     119      │ - ······],
-     120      │ - ······"9":·[
-     121      │ - ········"u·p·d·a·t·e",
-     122      │ - ········"content·with·null·download_url·throws·UnavailableException",
-     123      │ - ········"Randomizer·now·works·for·logged·out·users·via·episode·cache·system",
-     124      │ - ········"Minor·changes·to·recommendations"
-     125      │ - ······],
-     126      │ - ······"10":·[
-     127      │ - ········"Support·for·content·urls·with·contentGroup·in·them",
-     128      │ - ········"Simplifyed·isFreeEpisode·logic",
-     129      │ - ········"Support·for·getHome",
-     130      │ - ········"Added·Faster·Randomizer·setting·for·logged·in·users",
-     131      │ - ········"Added·Content·Groupings·setting",
-     132      │ - ········"Added·Show·additional·info·setting",
-     133      │ - ········"Added·Podcasts·setting"
-     134      │ - ······],
-     135      │ - ······"11":·[
-     136      │ - ········"Fixed·upcoming·free·episodes·attempting·to·play",
-     137      │ - ········"Badges·are·now·platform·playlist·instead·of·content",
-     138      │ - ········"Description·now·includes·content_body·and·themes",
-     139      │ - ········"Description·now·includes·links·for·Themes·and·Characters"
-     140      │ - ······],
-     141      │ - ······"12":·[
-     142      │ - ········"Added·support·for·direct·media·urls·starting·with·https://media.adventuresinodyssey.com/private/audio/episode"
-     143      │ - ······],
-     144      │ - ······"13":·["hotfix·for·support·for·direct·media·urls"],
-     145      │ - ······"14":·[
-     146      │ - ········"Direct·media·URLs·now:",
-     147      │ - ········"-·Display·AiOC·image·instead·of·nothing",
-     148      │ - ········"-·Show·URL·in·description",
-     149      │ - ········"-·Random·episode·in·description·(if·setting·enabled)",
-     150      │ - ········"Description·now·includes·image·links",
-  14643 more lines truncated
+        1     1 │   [
+        2       │ - ····{
+        3       │ - ········"_tags":·[
+        4       │ - ············"unofficial",
+        5       │ - ············"untested"
+        6       │ - ········],
+        7       │ - ········"name":·"Adventures·in·Odyssey·Club",
+        8       │ - ········"description":·"Subscription·service·for·the·award-winning,·original·audio·drama·series·enjoyed·by·the·whole·family.",
+        9       │ - ········"author":·"CATEIN",
+       10       │ - ········"authorUrl":·"https://catein.xyz",
+       11       │ - ········"sourceUrl":·"https://raw.githubusercontent.com/CATEIN/adventures-in-odyssey-club-plugin/refs/heads/main/AdventuresInOdysseyClubConfig.json",
+       12       │ - ········"repositoryUrl":·"https://github.com/CATEIN/adventures-in-odyssey-club-plugin",
+       13       │ - ········"scriptUrl":·"./AIOScript.js",
+       14       │ - ········"version":·16,
+       15       │ - ········"iconUrl":·"./AIOC.png",
+       16       │ - ········"id":·"62e186ef-160d-46d7-9953-74fe84d11b40",
+       17       │ - ········"scriptSignature":·"",
+       18       │ - ········"scriptPublicKey":·"",
+       19       │ - ········"packages":·[
+       20       │ - ············"Http"
+       21       │ - ········],
+       22       │ - ········"allowEval":·false,
+       23       │ - ········"allowUrls":·[
+       24       │ - ············"fotf.my.site.com"
+       25       │ - ········],
+       26       │ - ········"authentication":·{
+       27       │ - ············"loginUrl":·"https://app.adventuresinodyssey.com/signin",
+       28       │ - ············"domainHeadersToFind":·{
+       29       │ - ················"fotf.my.site.com":·[
+       30       │ - ····················"Authorization",
+       31       │ - ····················"x-viewer-id",
+       32       │ - ····················"x-pin"
+       33       │ - ················]
+       34       │ - ············},
+       35       │ - ············"cookiesToFind":·[
+       36       │ - ················"idccsrf"
+       37       │ - ············],
+       38       │ - ············"loginWarning":·"You·must·select·a·profile·with·a·PIN·for·authentication·to·complete."
+       39       │ - ········},
+       40       │ - ········"settings":·[
+       41       │ - ············{
+       42       │ - ················"variable":·"aioActivity",
+       43       │ - ················"name":·"Send·Activity",
+       44       │ - ················"description":·"Send·content·progress·to·the·club·(requires·login)",
+       45       │ - ················"type":·"Boolean",
+       46       │ - ················"default":·"false"
+       47       │ - ············},
+       48       │ - ············{
+       49       │ - ················"variable":·"podcasts",
+       50       │ - ················"name":·"Podcasts",
+       51       │ - ················"description":·"Show·new·podcasts·in·subscription·feed",
+       52       │ - ················"type":·"Boolean",
+       53       │ - ················"default":·"false"
+       54       │ - ············},
+       55       │ - ············{
+       56       │ - ················"variable":·"fetchRandomEpisode",
+       57       │ - ················"name":·"Randomizer·via·Recommended",
+       58       │ - ················"description":·"Puts·a·random·episode·at·the·top·of·recommendations·(Recommendations·may·take·longer·to·load)",
+       59       │ - ················"type":·"Boolean",
+       60       │ - ················"default":·"false"
+       61       │ - ············},
+       62       │ - ············{
+       63       │ - ················"variable":·"fasterRandom",
+       64       │ - ················"name":·"Faster·Randomizer",
+       65       │ - ················"description":·"Cache·episodes·instead·of·using·the·random·API.·Might·not·include·the·newest·episodes.·Default·when·not·logged·in.",
+       66       │ - ················"type":·"Boolean",
+       67       │ - ················"default":·"false",
+       68       │ - ················"dependency":·"fetchRandomEpisode"
+       69       │ - ············},
+       70       │ - ············{
+       71       │ - ················"variable":·"groupings",
+       72       │ - ················"name":·"Content·Groupings",
+       73       │ - ················"description":·"Choose·which·content·groups·appear·on·the·playlists·tab",
+       74       │ - ················"type":·"Dropdown",
+       75       │ - ················"default":·"0",
+       76       │ - ················"options":·[
+       77       │ - ····················"Albums",
+       78       │ - ····················"Playlists·(Club)",
+       79       │ - ····················"Series",
+       80       │ - ····················"Collections",
+       81       │ - ····················"Bonus·Videos",
+       82       │ - ····················"Life·Lessons"
+       83       │ - ················]
+       84       │ - ············},
+       85       │ - ············{
+       86       │ - ················"variable":·"advancedHeader",
+       87       │ - ················"name":·"Advanced·settings",
+       88       │ - ················"description":·"Advanced/Experimental·settings",
+       89       │ - ················"type":·"Header"
+       90       │ - ············},
+       91       │ - ············{
+       92       │ - ················"variable":·"commentPageSize",
+       93       │ - ················"name":·"Comment·page·size",
+       94       │ - ················"description":·"Set·how·many·comments·to·load·on·each·request.·Higher·might·be·slower",
+       95       │ - ················"type":·"Dropdown",
+       96       │ - ················"default":·"1",
+       97       │ - ················"options":·[
+       98       │ - ····················"10·(the·club·uses·this)",
+       99       │ - ····················"20",
+      100       │ - ····················"30",
+      101       │ - ····················"40",
+      102       │ - ····················"50"
+      103       │ - ················]
+      104       │ - ············},
+      105       │ - ············{
+      106       │ - ················"variable":·"debug",
+      107       │ - ················"name":·"Show·additional·info",
+      108       │ - ················"description":·"Show·additional·info·in·description",
+      109       │ - ················"type":·"Boolean",
+      110       │ - ················"default":·"false"
+      111       │ - ············},
+      112       │ - ············{
+      113       │ - ················"variable":·"secretVariable",
+      114       │ - ················"name":·"Enable·Experimental·Ambient·Playback·Rerouting",
+      115       │ - ················"description":·"Only·enable·if·you·are·not·logged·in",
+      116       │ - ················"type":·"Boolean",
+      117       │ - ················"default":·"false"
+      118       │ - ············}
+      119       │ - ········],
+      120       │ - ········"changelog":·{
+      121       │ - ············"8":·[
+      122       │ - ················"Very·lil·update",
+      123       │ - ················"Fixed·older·club·videos·not·loading",
+      124       │ - ················"Support·for·playlist·URLs·(currently·no·way·to·get·to·them·on·grayjay)",
+      125       │ - ················"Slightly·better·search"
+      126       │ - ············],
+      127       │ - ············"9":·[
+      128       │ - ················"u·p·d·a·t·e",
+      129       │ - ················"content·with·null·download_url·throws·UnavailableException",
+      130       │ - ················"Randomizer·now·works·for·logged·out·users·via·episode·cache·system",
+      131       │ - ················"Minor·changes·to·recommendations"
+      132       │ - ············],
+      133       │ - ············"10":·[
+      134       │ - ················"Support·for·content·urls·with·contentGroup·in·them",
+      135       │ - ················"Simplifyed·isFreeEpisode·logic",
+      136       │ - ················"Support·for·getHome",
+      137       │ - ················"Added·Faster·Randomizer·setting·for·logged·in·users",
+      138       │ - ················"Added·Content·Groupings·setting",
+      139       │ - ················"Added·Show·additional·info·setting",
+      140       │ - ················"Added·Podcasts·setting"
+      141       │ - ············],
+      142       │ - ············"11":·[
+      143       │ - ················"Fixed·upcoming·free·episodes·attempting·to·play",
+      144       │ - ················"Badges·are·now·platform·playlist·instead·of·content",
+      145       │ - ················"Description·now·includes·content_body·and·themes",
+      146       │ - ················"Description·now·includes·links·for·Themes·and·Characters"
+      147       │ - ············],
+      148       │ - ············"12":·[
+      149       │ - ················"Added·support·for·direct·media·urls·starting·with·https://media.adventuresinodyssey.com/private/audio/episode"
+      150       │ - ············],
+  22144 more lines truncated
 
 
 sources.schema.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1365,11 +1365,22 @@ format ━━━━━━━━━━━━━━━━━━━━━━━━�
 
 ```text
 The number of diagnostics exceeds the limit allowed. Use --max-diagnostics to increase it.
-Diagnostics not shown: 4427.
-Checked 13 files in 1210ms. No fixes applied.
-Found 548 errors.
-Found 3888 warnings.
-Found 11 infos.assets/css/site.css:78:18 lint/complexity/noImportantStyles  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Diagnostics not shown: 4504.
+Checked 12 files in 1701ms. No fixes applied.
+Found 543 errors.
+Found 3969 warnings.
+Found 11 infos.Biome encountered an unexpected error
+
+This is a bug in Biome, not an error in your code, and we would appreciate it if you could report it to https://github.com/biomejs/biome/issues/ along with the following information to help us fixing the issue.
+
+When opening the issue, please provide a minimal reproduction, or identify and share the file/code that triggers it. Without a way to reproduce the error, the error can't be fixed:
+
+Source Location: crates/biome_rowan/src/ast/mod.rs:210:13
+Thread Name: biome::workspace_worker_1
+Message: Tried to cast node with kind HTML_BOGUS as `"biome_html_syntax::generated::nodes::HtmlRoot"` but was unable to cast
+Stack Trace: Re-run with `RUST_BACKTRACE=1` to capture the stack trace
+
+assets/css/site.css:78:18 lint/complexity/noImportantStyles  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   ! Avoid the use of the !important style.
 
@@ -1610,87 +1621,77 @@ index.html:132:11 lint/a11y/useAltText ━━━━━━━━━━━━━�
   i If the content is decorative, redundant, or obscured, consider hiding it from assistive technologies with the aria-hidden attribute.
 
 
-repo/index.html:1:1 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+index.html:136:56 lint/a11y/useSemanticElements ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  × Unescaped `<` bracket character. Expected a tag or escaped character.
+  × The elements with this role can be changed to semantic elements.
 
-  > 1 │ <?php header('Location: https://grayjay-sources.github.io'); ?>
-      │ ^
-    2 │ <!doctype html>
-    3 │ <html>
+    134 │         </a>
+    135 │           <li class="nav-item dropdown">
+  > 136 │           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Miscellaneous</a>
+        │                                                        ^^^^^^^^^^^^^
+    137 │           <ul class="dropdown-menu">
+    138 │             <li><a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://chat.futo.org/#narrow/stream/46-Grayjay">Official Zulip Chat</a></li>
 
-  i Replace this character with `&lt;` to escape it.
+  i For examples and more information, see WAI-ARIA Roles
 
+  i Replace with one of these elements:
 
-repo/index.html:2:2 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  × Expected an element name but instead found '!'.
-
-    1 │ <?php header('Location: https://grayjay-sources.github.io'); ?>
-  > 2 │ <!doctype html>
-      │  ^
-    3 │ <html>
-    4 │   <head>
-
-  i Expected an element name here.
-
-    1 │ <?php header('Location: https://grayjay-sources.github.io'); ?>
-  > 2 │ <!doctype html>
-      │  ^
-    3 │ <html>
-    4 │   <head>
+  - <button>
 
 
-repo/index.html:3:1 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+index.html:136:47 lint/a11y/useValidAnchor ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  × Expected an attribute but instead found '<'.
+  × Provide a valid value for the attribute href.
 
-    1 │ <?php header('Location: https://grayjay-sources.github.io'); ?>
-    2 │ <!doctype html>
-  > 3 │ <html>
-      │ ^
-    4 │   <head>
-    5 │     <meta
+    134 │         </a>
+    135 │           <li class="nav-item dropdown">
+  > 136 │           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Miscellaneous</a>
+        │                                               ^^^^^^^^
+    137 │           <ul class="dropdown-menu">
+    138 │             <li><a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://chat.futo.org/#narrow/stream/46-Grayjay">Official Zulip Chat</a></li>
 
-  i Expected an attribute here.
+  i The href attribute should be a valid URL
 
-    1 │ <?php header('Location: https://grayjay-sources.github.io'); ?>
-    2 │ <!doctype html>
-  > 3 │ <html>
-      │ ^
-    4 │   <head>
-    5 │     <meta
+  i Check this thorough explanation to better understand the context.
 
 
-repo/index.html:22:1 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+index.html:177:12 lint/a11y/useValidAnchor ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  × Expected a closing tag but instead found the end of the file.
+  × Provide a valid value for the attribute href.
 
-    20 │   </body>
-    21 │ </html>
-  > 22 │
-       │
+    175 │     <div class="container">
+    176 │       <p class="float-end mb-1" id="footerLinks">
+  > 177 │         <a href="#">Back to top</a></br></br>
+        │            ^^^^^^^^
+    178 │       </p>
+    179 │       <p class="mb-1">This page is not affiliated with <a href="https://grayjay.app/">GrayJay</a> or <a href="https://futo.org/">FUTO</a>!</p>
 
-  i Expected a closing tag here.
+  i The href attribute should be a valid URL
 
-    20 │   </body>
-    21 │ </html>
-  > 22 │
-       │
+  i Check this thorough explanation to better understand the context.
 
 
-repo/index.html:3:1 lint/a11y/useHtmlLang ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+index.html:189:3 lint/a11y/useAltText ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  × Provide a lang attribute when using the html element.
+  × Provide a text alternative through the alt, aria-label, or aria-labelledby attribute.
 
-    1 │ <?php header('Location: https://grayjay-sources.github.io'); ?>
-    2 │ <!doctype html>
-  > 3 │ <html>
-      │ ^^^^^^
-    4 │   <head>
-    5 │     <meta
+    187 │   <!-- endregion body scripts -->
+    188 │   <!-- region analytics (feel free to block) -->
+  > 189 │   <img src="https://analytics.minopia.de/grayjay-sources.github.io" width="0" height="0" style="display:none!important;"/>
+        │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    190 │   <!-- endregion analytics -->
+    191 │ </body>
 
-  i Setting a lang attribute on HTML document elements configures the language used by screen readers when no user default is specified.
+  i Meaningful alternative text on elements helps users relying on screen readers to understand content's purpose within a page.
+
+  i If the content is decorative, redundant, or obscured, consider hiding it from assistive technologies with the aria-hidden attribute.
+
+
+repo/index.html internalError/panic  INTERNAL  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × processing panicked: Tried to cast node with kind HTML_BOGUS as `"biome_html_syntax::generated::nodes::HtmlRoot"` but was unable to cast
+
+  ! This diagnostic was derived from an internal Biome error. Potential bug, please report it if necessary.
 
 
 lint ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1703,75 +1704,26 @@ lint ━━━━━━━━━━━━━━━━━━━━━━━━━
 
 <details>
 
-<summary>GITHUB_ACTIONS</summary>
+<summary>SPELL_CODESPELL</summary>
 
 ```text
-.github/workflows/update-sources-from-configs.yml:31:9: shellcheck reported issue in this script: SC2086:info:2:27: Double quote to prevent globbing and word splitting [shellcheck]
-   |
-31 |         run: |
-   |         ^~~~
-.github/workflows/update-sources-from-configs.yml:31:9: shellcheck reported issue in this script: SC2086:info:5:26: Double quote to prevent globbing and word splitting [shellcheck]
-   |
-31 |         run: |
-   |         ^~~~
-```
-
-</details>
-
-<details>
-
-<summary>GITHUB_ACTIONS_ZIZMOR</summary>
-
-```text
-[1m[33mwarning[artipacked][0m[1m: credential persistence through GitHub Actions artifacts[0m
-  [1m[94m--> [0m/github/workspace/.github/workflows/update-sources-from-configs.yml:22:9
-   [1m[94m|[0m
-[1m[94m22[0m [1m[94m|[0m         - name: Checkout repository
-   [1m[94m|[0m [1m[33m _________^[0m
-[1m[94m23[0m [1m[94m|[0m [1m[33m|[0m         uses: actions/checkout@v4
-   [1m[94m|[0m [1m[33m|_________________________________^[0m [1m[33mdoes not set persist-credentials: false[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: audit confidence → Low
-   [1m[94m= [0m[1mnote[0m: this finding has an auto-fix
-   [1m[94m= [0m[1mhelp[0m: audit documentation → [32mhttps://docs.zizmor.sh/audits/#artipacked[39m
-
-[1m[91merror[template-injection][0m[1m: code injection via template expansion[0m
-  [1m[94m--> [0m/github/workspace/.github/workflows/update-sources-from-configs.yml:58:21
-   [1m[94m|[0m
-[1m[94m57[0m [1m[94m|[0m         run: |
-   [1m[94m|[0m         [1m[94m---[0m [1m[94mthis run block[0m
-[1m[94m58[0m [1m[94m|[0m           if [ "${{ github.event.inputs.push }}" = "false" ]; then
-   [1m[94m|[0m                     [1m[91m^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[91mmay expand into attacker-controllable code[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: audit confidence → High
-   [1m[94m= [0m[1mnote[0m: this finding has an auto-fix
-   [1m[94m= [0m[1mhelp[0m: audit documentation → [32mhttps://docs.zizmor.sh/audits/#template-injection[39m
-
-[1m[94minfo[template-injection][0m[1m: code injection via template expansion[0m
-  [1m[94m--> [0m/github/workspace/.github/workflows/update-sources-from-configs.yml:60:23
-   [1m[94m|[0m
-[1m[94m57[0m [1m[94m|[0m         run: |
-   [1m[94m|[0m         [1m[94m---[0m [1m[94mthis run block[0m
-[1m[94m...[0m
-[1m[94m60[0m [1m[94m|[0m           elif [ "${{ steps.check_changes.outputs.changed }}" = "true" ]; then
-   [1m[94m|[0m                       [1m[94m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[94mmay expand into attacker-controllable code[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: audit confidence → Low
-   [1m[94m= [0m[1mnote[0m: this finding has an auto-fix
-   [1m[94m= [0m[1mhelp[0m: audit documentation → [32mhttps://docs.zizmor.sh/audits/#template-injection[39m
-
-[1m[91merror[unpinned-uses][0m[1m: unpinned action reference[0m
-  [1m[94m--> [0m/github/workspace/.github/workflows/update-sources-from-configs.yml:23:15
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         uses: actions/checkout@v4
-   [1m[94m|[0m               [1m[91m^^^^^^^^^^^^^^^^^^^[0m [1m[91maction is not pinned to a hash (required by blanket policy)[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: audit confidence → High
-   [1m[94m= [0m[1mnote[0m: this finding has an auto-fix
-   [1m[94m= [0m[1mhelp[0m: audit documentation → [32mhttps://docs.zizmor.sh/audits/#unpinned-uses[39m
-
-[32m8[39m findings ([1m[93m4[39m suppressed, [91m4[39m unsafe fixes[0m): [35m1[39m informational, [36m0[39m low, [33m1[39m medium, [31m2[39m high[32m INFO[0m [2mzizmor[0m[2m:[0m 🌈 zizmor v1.25.2
-[32m INFO[0m [1maudit[0m[2m:[0m [2mzizmor[0m[2m:[0m 🌈 completed /github/workspace/.github/workflows/update-sources-from-configs.yml
+/github/workspace/sources.json:823: openning ==> opening
+/github/workspace/sources.json:1948: FO ==> OF, FOR, TO, DO, GO
+/github/workspace/sources.json:2326: FO ==> OF, FOR, TO, DO, GO
+/github/workspace/sources.json:3041: dependancy ==> dependency
+/github/workspace/sources.json:3722: streammed ==> streamed
+/github/workspace/sources.json:6263: FO ==> OF, FOR, TO, DO, GO
+/github/workspace/sources.json:7752: comming ==> coming
+/github/workspace/sources.json:8098: necesities ==> necessities
+/github/workspace/sources.json:8110: necesities ==> necessities
+/github/workspace/sources.json:8122: necesities ==> necessities
+/github/workspace/sources.json:8492: didnt ==> didn't
+/github/workspace/sources.json:8508: seperate ==> separate
+/github/workspace/sources.json:8637: disfunctional ==> dysfunctional
+/github/workspace/sources.json:9219: didnt ==> didn't
+/github/workspace/sources.json:9233: seperate ==> separate
+/github/workspace/sources.json:10020: te ==> the, be, we, to
+/github/workspace/sources.json:10062: didnt ==> didn't
 ```
 
 </details>
