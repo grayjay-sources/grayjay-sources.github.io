@@ -1367,7 +1367,7 @@
   {
     "_tags": ["unofficial", "working", "maintained", "anime", "streaming"],
     "name": "Crunchyroll",
-    "description": "Fork of the official FUTO Crunchyroll plugin with search filters by audio (dub) and subtitle language (incl. pt-BR), default-language shortcuts and media/creator modes. Tested on Android and Desktop (Widevine).",
+    "description": "Fork of FUTO’s Crunchyroll plugin with dub/subtitle filters (incl. pt-BR), language shortcuts, and media/creator modes.",
     "author": "mzramna (fork do plugin da FUTO)",
     "authorUrl": "https://github.com/mzramna",
     "platformUrl": "https://crunchyroll.com",
