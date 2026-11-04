@@ -14,7 +14,7 @@
 
 Super-linter detected linting errors
 
-For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/41917000896)
+For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/41919283516)
 
 Powered by [Super-linter](https://github.com/super-linter/super-linter)\
 Super-linter revision: `2da136927bd4a73596db63044b504547c62cb854`\
@@ -25,7 +25,7 @@ Super-linter version: `9.0.0`
 <summary>BIOME_FORMAT</summary>
 
 ```text
-Checked 10 files in 458ms. No fixes applied.
+Checked 10 files in 274ms. No fixes applied.
 Found 10 errors..vscode/launch.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Formatter would have printed the following content:
@@ -1366,7 +1366,7 @@ format ━━━━━━━━━━━━━━━━━━━━━━━━�
 ```text
 The number of diagnostics exceeds the limit allowed. Use --max-diagnostics to increase it.
 Diagnostics not shown: 4504.
-Checked 12 files in 1701ms. No fixes applied.
+Checked 12 files in 1267ms. No fixes applied.
 Found 543 errors.
 Found 3969 warnings.
 Found 11 infos.Biome encountered an unexpected error
@@ -1376,7 +1376,7 @@ This is a bug in Biome, not an error in your code, and we would appreciate it if
 When opening the issue, please provide a minimal reproduction, or identify and share the file/code that triggers it. Without a way to reproduce the error, the error can't be fixed:
 
 Source Location: crates/biome_rowan/src/ast/mod.rs:210:13
-Thread Name: biome::workspace_worker_1
+Thread Name: biome::workspace_worker_3
 Message: Tried to cast node with kind HTML_BOGUS as `"biome_html_syntax::generated::nodes::HtmlRoot"` but was unable to cast
 Stack Trace: Re-run with `RUST_BACKTRACE=1` to capture the stack trace
 
