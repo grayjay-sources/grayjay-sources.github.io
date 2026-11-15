@@ -118,35 +118,17 @@
       }
     ],
     "changelog": {
-      "16": [
-        "Added support for direct urls with private/video/episode",
-        "Better contentGrouping search for logged in users",
-        "Minor changes"
+      "8": [
+        "Very lil update",
+        "Fixed older club videos not loading",
+        "Support for playlist URLs (currently no way to get to them on grayjay)",
+        "Slightly better search"
       ],
-      "15": [
-        "Added playback tracker support",
-        "Added Send Activity setting"
-      ],
-      "14": [
-        "Direct media URLs now:",
-        "- Display AiOC image instead of nothing",
-        "- Show URL in description",
-        "- Random episode in description (if setting enabled)",
-        "Description now includes image links",
-        "Show additional info now includes signed_cookie",
-        "Removed from allowUrls media.adventuresinodyssey.com (not needed)"
-      ],
-      "13": [
-        "hotfix for support for direct media urls"
-      ],
-      "12": [
-        "Added support for direct media urls starting with https://media.adventuresinodyssey.com/private/audio/episode"
-      ],
-      "11": [
-        "Fixed upcoming free episodes attempting to play",
-        "Badges are now platform playlist instead of content",
-        "Description now includes content_body and themes",
-        "Description now includes links for Themes and Characters"
+      "9": [
+        "u p d a t e",
+        "content with null download_url throws UnavailableException",
+        "Randomizer now works for logged out users via episode cache system",
+        "Minor changes to recommendations"
       ],
       "10": [
         "Support for content urls with contentGroup in them",
@@ -157,17 +139,35 @@
         "Added Show additional info setting",
         "Added Podcasts setting"
       ],
-      "9": [
-        "u p d a t e",
-        "content with null download_url throws UnavailableException",
-        "Randomizer now works for logged out users via episode cache system",
-        "Minor changes to recommendations"
+      "11": [
+        "Fixed upcoming free episodes attempting to play",
+        "Badges are now platform playlist instead of content",
+        "Description now includes content_body and themes",
+        "Description now includes links for Themes and Characters"
       ],
-      "8": [
-        "Very lil update",
-        "Fixed older club videos not loading",
-        "Support for playlist URLs (currently no way to get to them on grayjay)",
-        "Slightly better search"
+      "12": [
+        "Added support for direct media urls starting with https://media.adventuresinodyssey.com/private/audio/episode"
+      ],
+      "13": [
+        "hotfix for support for direct media urls"
+      ],
+      "14": [
+        "Direct media URLs now:",
+        "- Display AiOC image instead of nothing",
+        "- Show URL in description",
+        "- Random episode in description (if setting enabled)",
+        "Description now includes image links",
+        "Show additional info now includes signed_cookie",
+        "Removed from allowUrls media.adventuresinodyssey.com (not needed)"
+      ],
+      "15": [
+        "Added playback tracker support",
+        "Added Send Activity setting"
+      ],
+      "16": [
+        "Added support for direct urls with private/video/episode",
+        "Better contentGrouping search for logged in users",
+        "Minor changes"
       ]
     },
     "_installUrl": "https://raw.githubusercontent.com/CATEIN/adventures-in-odyssey-club-plugin/refs/heads/main/AdventuresInOdysseyClubConfig.json",
@@ -507,35 +507,8 @@
       "userAgent": "Mozilla/5.0 (iPad; CPU OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Mobile/15E148 Safari/604.1"
     },
     "changelog": {
-      "19": [
-        "Performance: Stop fetching podcast pages when building episode lists;"
-      ],
-      "18": [
-        "Fix: Authorization token extraction causing playback errors;",
-        "Improvement: Change authorUrl from futo.org to futo.tech;"
-      ],
-      "17": [
-        "Fix: Use http impersonation to request media files;",
-        "Improvement: Add iTunes API fallbacks for episode listings and episode details;",
-        "Improvement: Add iTunes API fallbacks for regular podcast channel details;",
-        "Improvement: Add best-effort iTunes API fallbacks for publisher channel playlists and episodes;"
-      ],
-      "16": [
-        "Fix: Episodes pagination issue;",
-        "Fix: Subscriber-only detection incorrectly checked duration instead of assetUrl;"
-      ],
-      "15": [
-        "Fix: Update script filename regex to support new naming convention;",
-        "Improvement: Add fallback to iTunes API for popular podcasts;"
-      ],
-      "14": [
-        "Fix: Some subscriptions not being recognized as subscribed in channel details and media details;",
-        "Improvement: Add support for embed channel URLs (embed.podcasts.apple.com);",
-        "Improvement: Standardizes Apple Podcasts URL handling;"
-      ],
-      "13": [
-        "Improvement: Add search autocomplete;",
-        "Improvement: Include podcast channels (networks) in channel search results;"
+      "11": [
+        "Use container type as source name;"
       ],
       "12": [
         "Improvement: Add content recommendations and plugin setting to select source;",
@@ -546,8 +519,35 @@
         "Improvement: Add podcast information in episode description and podcast channels description;",
         "Improvement: Implement retry mechanism for improved network reliability;"
       ],
-      "11": [
-        "Use container type as source name;"
+      "13": [
+        "Improvement: Add search autocomplete;",
+        "Improvement: Include podcast channels (networks) in channel search results;"
+      ],
+      "14": [
+        "Fix: Some subscriptions not being recognized as subscribed in channel details and media details;",
+        "Improvement: Add support for embed channel URLs (embed.podcasts.apple.com);",
+        "Improvement: Standardizes Apple Podcasts URL handling;"
+      ],
+      "15": [
+        "Fix: Update script filename regex to support new naming convention;",
+        "Improvement: Add fallback to iTunes API for popular podcasts;"
+      ],
+      "16": [
+        "Fix: Episodes pagination issue;",
+        "Fix: Subscriber-only detection incorrectly checked duration instead of assetUrl;"
+      ],
+      "17": [
+        "Fix: Use http impersonation to request media files;",
+        "Improvement: Add iTunes API fallbacks for episode listings and episode details;",
+        "Improvement: Add iTunes API fallbacks for regular podcast channel details;",
+        "Improvement: Add best-effort iTunes API fallbacks for publisher channel playlists and episodes;"
+      ],
+      "18": [
+        "Fix: Authorization token extraction causing playback errors;",
+        "Improvement: Change authorUrl from futo.org to futo.tech;"
+      ],
+      "19": [
+        "Performance: Stop fetching podcast pages when building episode lists;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/ApplePodcasts/ApplePodcastsConfig.json"
@@ -934,15 +934,23 @@
       }
     ],
     "changelog": {
-      "34": [
-        "Fix: Content recommendations in desktop;",
-        "Improvement: Auto-detect when a video is part of a collection and show other episodes as recommendations;"
+      "27": [
+        "Fix user subscriptions import when the user has more than 20 subscriptions"
       ],
-      "33": [
-        "Fix: Handle subscriptions import pagination and subscription page load failures gracefully;",
-        "Fix: Loading comment replies;",
-        "Improvement: Add multi-part video support as recommendations;",
-        "Improvement: Adjust build system;"
+      "28": [
+        "Fix: extracting mixin_constant;",
+        "Fix: live videos;",
+        "Improvement: add channel URL as a channel link which can be opened externally;"
+      ],
+      "29": [
+        "Improvement: Handle videos no longer available;"
+      ],
+      "30": [
+        "Improvement: Support openning b23.tv content URLs;",
+        "Fix: Loading channel contents;"
+      ],
+      "31": [
+        "Fix: loading initial data;"
       ],
       "32": [
         "Fix: Loading home content;",
@@ -951,23 +959,15 @@
         "Improvement: Add browser impersonation fallback;",
         "Improvement: Add notifications setting, and trace logging;"
       ],
-      "31": [
-        "Fix: loading initial data;"
+      "33": [
+        "Fix: Handle subscriptions import pagination and subscription page load failures gracefully;",
+        "Fix: Loading comment replies;",
+        "Improvement: Add multi-part video support as recommendations;",
+        "Improvement: Adjust build system;"
       ],
-      "30": [
-        "Improvement: Support openning b23.tv content URLs;",
-        "Fix: Loading channel contents;"
-      ],
-      "29": [
-        "Improvement: Handle videos no longer available;"
-      ],
-      "28": [
-        "Fix: extracting mixin_constant;",
-        "Fix: live videos;",
-        "Improvement: add channel URL as a channel link which can be opened externally;"
-      ],
-      "27": [
-        "Fix user subscriptions import when the user has more than 20 subscriptions"
+      "34": [
+        "Fix: Content recommendations in desktop;",
+        "Improvement: Auto-detect when a video is part of a collection and show other episodes as recommendations;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/Bilibili/BiliBiliConfig.json"
@@ -1087,18 +1087,18 @@
       }
     ],
     "changelog": {
-      "11": [
-        "Improvement: Show channel join date, last upload date, video count, total views and category in the channel description;",
-        "Improvement: Show a clear error message when a channel cannot be fetched (e.g. removed or non-existent);",
-        "Improvement: Update plugin authorUrl from futo.org to futo.tech;"
+      "9": [
+        "Fix: Resolved issue where videos in channel and subscription feeds were displaying without channel names and avatars;"
       ],
       "10": [
         "Fix: Fix search;",
         "Improvement: Add live chat support;",
         "Improvement: Improved playlist URL handling;"
       ],
-      "9": [
-        "Fix: Resolved issue where videos in channel and subscription feeds were displaying without channel names and avatars;"
+      "11": [
+        "Improvement: Show channel join date, last upload date, video count, total views and category in the channel description;",
+        "Improvement: Show a clear error message when a channel cannot be fetched (e.g. removed or non-existent);",
+        "Improvement: Update plugin authorUrl from futo.org to futo.tech;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/Bitchute/BitchuteConfig.json"
@@ -1867,18 +1867,18 @@
       }
     ],
     "changelog": {
-      "13": [
-        "Fix: Authentication;",
-        "Fix: Content recommendation;"
+      "1": [
+        "Initial release of CuriosityStream plugin",
+        "Support for browsing, searching, and playing documentaries",
+        "Category-based content organization"
       ],
       "2": [
         "Use series as channels;",
         "Improve support for desktop;"
       ],
-      "1": [
-        "Initial release of CuriosityStream plugin",
-        "Support for browsing, searching, and playing documentaries",
-        "Category-based content organization"
+      "13": [
+        "Fix: Authentication;",
+        "Fix: Content recommendation;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/CuriosityStream/CuriosityStreamConfig.json"
@@ -2005,8 +2005,25 @@
       }
     ],
     "changelog": {
-      "7": [
-        "Hotfix: Subcomments have been fixed"
+      "1": [
+        "Initial Release"
+      ],
+      "2": [
+        "Feature: Subcomments support",
+        "Feature: Clips support"
+      ],
+      "3": [
+        "Fix: Filter errors",
+        "Fix: Missing Query while fetching Channel Videos"
+      ],
+      "4": [
+        "Fix: Banner and Description for Channels",
+        "Fix: Quality Options for Replays",
+        "Fix: Missing Channel Avatar while fetching Videos and Replays",
+        "Refactor: New Queries for Videos, Replays and Livestreams"
+      ],
+      "5": [
+        "Feature:  Livestreams are working now"
       ],
       "6": [
         "Refactor: URL Regexes",
@@ -2017,25 +2034,8 @@
         "Feature: Homepage can now load more content",
         "Feature: Channels can now load more content"
       ],
-      "5": [
-        "Feature:  Livestreams are working now"
-      ],
-      "4": [
-        "Fix: Banner and Description for Channels",
-        "Fix: Quality Options for Replays",
-        "Fix: Missing Channel Avatar while fetching Videos and Replays",
-        "Refactor: New Queries for Videos, Replays and Livestreams"
-      ],
-      "3": [
-        "Fix: Filter errors",
-        "Fix: Missing Query while fetching Channel Videos"
-      ],
-      "2": [
-        "Feature: Subcomments support",
-        "Feature: Clips support"
-      ],
-      "1": [
-        "Initial Release"
+      "7": [
+        "Hotfix: Subcomments have been fixed"
       ]
     },
     "_installUrl": "https://github.com/AlexisBlade2001/Grayjay-DLive/raw/refs/heads/main/DLiveConfig.json"
@@ -3089,6 +3089,16 @@
       }
     ],
     "changelog": {
+      "1": [
+        "- Initial implementation;"
+      ],
+      "3": [
+        "Fix: Decode percent-encoded speaker slugs to prevent double-encoding;"
+      ],
+      "4": [
+        "Improvement: Videos from a FOSDEM edition now show that edition's channel as their author;",
+        "Improvement: Per-edition channels (FOSDEM 2026, 2025, ...) in channel search;"
+      ],
       "5": [
         "Fix: Timeouts, rate limits and server errors are retried;",
         "Fix: Lists that fail to load offer a retry instead of showing nothing;",
@@ -3100,16 +3110,6 @@
         "Feature: News posts in subscriptions, when the subscription's Posts setting is on;",
         "Feature: Talk and speaker links in posts open in the app when they have videos;",
         "Feature: The next edition shows in the year filter and channel search before its schedule is out;"
-      ],
-      "4": [
-        "Improvement: Videos from a FOSDEM edition now show that edition's channel as their author;",
-        "Improvement: Per-edition channels (FOSDEM 2026, 2025, ...) in channel search;"
-      ],
-      "3": [
-        "Fix: Decode percent-encoded speaker slugs to prevent double-encoding;"
-      ],
-      "1": [
-        "- Initial implementation;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/FOSDEM/FOSDEMConfig.json"
@@ -3963,51 +3963,6 @@
       }
     },
     "changelog": {
-      "10": [
-        "Fix: Remove opt-in search autocomplete due to Internet Archive's backend performance reasons;"
-      ],
-      "9": [
-        "Fix: Show content duration (when available) on home, channel, and search results, and on each track and part of multi-file audio and video items;",
-        "Fix: Date items by their Archive.org upload date instead of the media's original date;",
-        "Fix: Show thumbnails for audio and other items that were appearing blank or as a placeholder;",
-        "Fix: Show the Internet Archive icon for creators without an avatar instead of a blank author image;",
-        "Feature: 'Item Date' setting to show the media's original date instead of the Archive.org upload date on feed items;",
-        "Feature: Enrich Internet Archive detail descriptions;",
-        "Feature: Play HLS stream archives (.m3u8);"
-      ],
-      "8": [
-        "Fix: Keep multi-word channel names instead of truncating to the first word;"
-      ],
-      "7": [
-        "Fix: Cast .mov videos as MP4 so FCast plays them instead of prompting a download;"
-      ],
-      "6": [
-        "Fix: Show the plugin icon for channels without their own avatar;"
-      ],
-      "5": [
-        "Fix: Paginate field-sorted feeds via Scrape API cursor to avoid duplicate or missing items;",
-        "Fix: Report withdrawn (dark) Archive.org items as unavailable;"
-      ],
-      "4": [
-        "Fix: Correctly parse Archive.org file durations stored as clock strings;",
-        "Fix: Accept encoded and shared Archive.org channel URLs;",
-        "Fix: Malformed file parameters no longer crash URL detection;",
-        "Fix: Play media and subtitles even when an item's primary Archive.org storage server is offline, by loading files through Archive.org's redirecting download links instead of one fixed server;",
-        "Fix: When Archive.org is busy or rate-limiting, retry the request once at reduced priority (Archive.org queues it instead of rejecting it), so searches and playback fail less often under load;"
-      ],
-      "3": [
-        "Fix: Correctly detect file extensions in names with special characters;",
-        "Fix: Remove duplicate subtitle tracks;",
-        "Fix: Open @account channels correctly when opened or shared;",
-        "Fix: Long search queries no longer silently return no results;",
-        "Fix: Show correct audio bitrate labels;",
-        "Fix: Show correct video quality labels;",
-        "Fix: Clearer subtitle labels with correct languages;",
-        "Fix: Show a clearer message when an item is temporarily unavailable on Archive.org;"
-      ],
-      "2": [
-        "Fix: Play items that failed to load due to special characters in their file names;"
-      ],
       "1": [
         "Initial release;",
         "Feature: Home feed and search across movies, audio, and live music;",
@@ -4021,6 +3976,51 @@
         "Feature: Related recommendations by creator and collection;",
         "Feature: Optional search suggestions  (Opt-in in plugin settings);",
         "Feature: Content-safety filters on by default (Opt-out in plugin settings);"
+      ],
+      "2": [
+        "Fix: Play items that failed to load due to special characters in their file names;"
+      ],
+      "3": [
+        "Fix: Correctly detect file extensions in names with special characters;",
+        "Fix: Remove duplicate subtitle tracks;",
+        "Fix: Open @account channels correctly when opened or shared;",
+        "Fix: Long search queries no longer silently return no results;",
+        "Fix: Show correct audio bitrate labels;",
+        "Fix: Show correct video quality labels;",
+        "Fix: Clearer subtitle labels with correct languages;",
+        "Fix: Show a clearer message when an item is temporarily unavailable on Archive.org;"
+      ],
+      "4": [
+        "Fix: Correctly parse Archive.org file durations stored as clock strings;",
+        "Fix: Accept encoded and shared Archive.org channel URLs;",
+        "Fix: Malformed file parameters no longer crash URL detection;",
+        "Fix: Play media and subtitles even when an item's primary Archive.org storage server is offline, by loading files through Archive.org's redirecting download links instead of one fixed server;",
+        "Fix: When Archive.org is busy or rate-limiting, retry the request once at reduced priority (Archive.org queues it instead of rejecting it), so searches and playback fail less often under load;"
+      ],
+      "5": [
+        "Fix: Paginate field-sorted feeds via Scrape API cursor to avoid duplicate or missing items;",
+        "Fix: Report withdrawn (dark) Archive.org items as unavailable;"
+      ],
+      "6": [
+        "Fix: Show the plugin icon for channels without their own avatar;"
+      ],
+      "7": [
+        "Fix: Cast .mov videos as MP4 so FCast plays them instead of prompting a download;"
+      ],
+      "8": [
+        "Fix: Keep multi-word channel names instead of truncating to the first word;"
+      ],
+      "9": [
+        "Fix: Show content duration (when available) on home, channel, and search results, and on each track and part of multi-file audio and video items;",
+        "Fix: Date items by their Archive.org upload date instead of the media's original date;",
+        "Fix: Show thumbnails for audio and other items that were appearing blank or as a placeholder;",
+        "Fix: Show the Internet Archive icon for creators without an avatar instead of a blank author image;",
+        "Feature: 'Item Date' setting to show the media's original date instead of the Archive.org upload date on feed items;",
+        "Feature: Enrich Internet Archive detail descriptions;",
+        "Feature: Play HLS stream archives (.m3u8);"
+      ],
+      "10": [
+        "Fix: Remove opt-in search autocomplete due to Internet Archive's backend performance reasons;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/InternetArchive/InternetArchiveConfig.json"
@@ -4318,6 +4318,51 @@
       }
     ],
     "changelog": {
+      "14": [
+        "Improvement: Add captcha support;"
+      ],
+      "15": [
+        "Improvement: Use live chat popout;"
+      ],
+      "16": [
+        "Improvement: Add social links;"
+      ],
+      "17": [
+        "Improvement: Add content recommendations;",
+        "Fix: Error playing some livestreams;",
+        "Fix: Livestream title;",
+        "Fix: Safer username extraction from URLs;",
+        "Fix: Proper URL generation while sharing previous streamed videos;",
+        "Fix: Deeplinking previous streammed videos from Kick's website;"
+      ],
+      "18": [
+        "Improvement: When playing livestreams show featured streams as recommendations. Otherwise show previous streams from the channel;"
+      ],
+      "19": [
+        "Fix: desktop authentication;",
+        "Fix: importing user subscriptions;",
+        "Improvement: retry all requests at least 3 times;"
+      ],
+      "20": [
+        "Fix: check for optional package;"
+      ],
+      "21": [
+        "Fix: duration while casting;"
+      ],
+      "22": [
+        "Fix: reflexion issue logging exceptions in desktop;"
+      ],
+      "23": [
+        "Fix: Captcha issues;"
+      ],
+      "24": [
+        "Fix: some VODs not playing when opened from a channel page (channels with capitals or spaces in their name);",
+        "Fix: channel search with special characters;"
+      ],
+      "25": [
+        "Fix: VOD links shared from Grayjay opening a not-found page on kick.com;",
+        "Fix: VOD links copied from kick.com not opening;"
+      ],
       "26": [
         "Fix: the recording of a running livestream missing from the channel's videos;",
         "Fix: channel search with names of more than one word;",
@@ -4334,51 +4379,6 @@
         "Fix: error when searching channels with only spaces;",
         "Fix: removed the channel page search box, which always failed (Kick has no search within a channel);",
         "Improvement: search for livestreams;"
-      ],
-      "25": [
-        "Fix: VOD links shared from Grayjay opening a not-found page on kick.com;",
-        "Fix: VOD links copied from kick.com not opening;"
-      ],
-      "24": [
-        "Fix: some VODs not playing when opened from a channel page (channels with capitals or spaces in their name);",
-        "Fix: channel search with special characters;"
-      ],
-      "23": [
-        "Fix: Captcha issues;"
-      ],
-      "22": [
-        "Fix: reflexion issue logging exceptions in desktop;"
-      ],
-      "21": [
-        "Fix: duration while casting;"
-      ],
-      "20": [
-        "Fix: check for optional package;"
-      ],
-      "19": [
-        "Fix: desktop authentication;",
-        "Fix: importing user subscriptions;",
-        "Improvement: retry all requests at least 3 times;"
-      ],
-      "18": [
-        "Improvement: When playing livestreams show featured streams as recommendations. Otherwise show previous streams from the channel;"
-      ],
-      "17": [
-        "Improvement: Add content recommendations;",
-        "Fix: Error playing some livestreams;",
-        "Fix: Livestream title;",
-        "Fix: Safer username extraction from URLs;",
-        "Fix: Proper URL generation while sharing previous streamed videos;",
-        "Fix: Deeplinking previous streammed videos from Kick's website;"
-      ],
-      "16": [
-        "Improvement: Add social links;"
-      ],
-      "15": [
-        "Improvement: Use live chat popout;"
-      ],
-      "14": [
-        "Improvement: Add captcha support;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/Kick/KickConfig.json"
@@ -4868,59 +4868,59 @@
     ],
     "version": 15,
     "changelog": {
-      "15": [
-        "Improved handling of special characters in URLs — this fixes some previously broken thumbnails."
-      ],
-      "14": [
-        "Added support for viewing articles",
-        "Articles can now be hidden from the feed in the plugin settings",
-        "Fixed handling of Odysee videos"
-      ],
-      "13": [
-        "Fixed live chat."
-      ],
-      "12": [
-        "Fixed sub-comment handling.",
-        "Improved error messages."
-      ],
-      "11": [
-        "Fixed page data parsing."
-      ],
-      "10": [
-        "Updated the plugin to support the new website format",
-        "Now stores an additional session token. Be sure to selected the 'Remember Me' box when logging in."
-      ],
-      "9": [
-        "Updated the plugin to support the new website format"
-      ],
-      "8": [
-        "Fixed urls in video descriptions"
-      ],
-      "7": [
-        "Fixed video upload times (Lotus Eaters forgot to put their clocks forward!)"
-      ],
-      "6": [
-        "Fixed video descriptions",
-        "Improved recommended videos load time"
-      ],
-      "5": [
-        "Miscellaneous fixes"
-      ],
-      "4": [
-        "Odysee sources are now validated to ensure that videos which are not yet ready are not served"
-      ],
-      "3": [
-        "Added support for live chat (In Grayjay settings, be sure to enable 'Advanced Settings' and 'Live Chat Webview') for this to work",
-        "Fixed live status handling",
-        "Fixed video duration handling for the current video (durations are still not possible to provide in video feeds — sorry chaps)"
+      "1": [
+        "Initial build"
       ],
       "2": [
         "Added support for Odysee sources",
         "Added support for recommended videos",
         "Some existing functionality has been made more robust"
       ],
-      "1": [
-        "Initial build"
+      "3": [
+        "Added support for live chat (In Grayjay settings, be sure to enable 'Advanced Settings' and 'Live Chat Webview') for this to work",
+        "Fixed live status handling",
+        "Fixed video duration handling for the current video (durations are still not possible to provide in video feeds — sorry chaps)"
+      ],
+      "4": [
+        "Odysee sources are now validated to ensure that videos which are not yet ready are not served"
+      ],
+      "5": [
+        "Miscellaneous fixes"
+      ],
+      "6": [
+        "Fixed video descriptions",
+        "Improved recommended videos load time"
+      ],
+      "7": [
+        "Fixed video upload times (Lotus Eaters forgot to put their clocks forward!)"
+      ],
+      "8": [
+        "Fixed urls in video descriptions"
+      ],
+      "9": [
+        "Updated the plugin to support the new website format"
+      ],
+      "10": [
+        "Updated the plugin to support the new website format",
+        "Now stores an additional session token. Be sure to selected the 'Remember Me' box when logging in."
+      ],
+      "11": [
+        "Fixed page data parsing."
+      ],
+      "12": [
+        "Fixed sub-comment handling.",
+        "Improved error messages."
+      ],
+      "13": [
+        "Fixed live chat."
+      ],
+      "14": [
+        "Added support for viewing articles",
+        "Articles can now be hidden from the feed in the plugin settings",
+        "Fixed handling of Odysee videos"
+      ],
+      "15": [
+        "Improved handling of special characters in URLs — this fixes some previously broken thumbnails."
       ]
     },
     "scriptSignature": "aFjP5HNFYFL8UvhXAPDXK+qq1lpNaxWQg95X9DA5cTs7jiZZ2dura4AUHaW3UZMKwgEG7Xu+a1UQpOYhBH7nTCHS5RsMFlOJYs+aTjyG3J403+7ZsbEaABAJw5ZDObdObDBpT+DXn3/w3hiD3Gx3A5qQabciIB7tgZQFNR6CnaQtlr+pta8etdNtwoHC8w0g9aH1VyGTyNshIabOFpaX8D9BCJyHOBbSf1f3sebza2itf8QV6DOx5OS/552MGrj3UHLRN2S1nHoZz7WPABKSO0GiUqIqyOano+r59wzu7+2oER2bpQhcLOlmqJUaOgLHhTQQGTV+SKQvhiYCJ2rSAOwcDydQzUs/Rk1tQ2hCqVdeAJp/gXCJo6/G8QVzZi7B+w7T0DrvjY6yliAm/qgV/38eWEcEdUgNTk9mOdRaHB7E2rxu3zkaLAcXkV3rNuHxSxM/MnUY3TJsAWitLZ84+ScUDX4SSMNX/ZCYxnZe9CbRb4HYFdPbojFsqiF7lUccQYYKT4IyI/VCCpoaoj1pg08Im/MX1tKzPLLly4hAw+zWM4FRgigQ5esH/OIG4SH9PPQ4AVqHzn150jCTlDjU0Pz+0zcBDuP/6SSyqZ856s2eM4/lfdeUB3DY2S3cVi6UD06iT3gYDcqeQKfYip4QuCeH9HIQpm+LMrKM6t80bik=",
@@ -5211,8 +5211,20 @@
       }
     },
     "changelog": {
-      "6": [
-        "Fix: Upcoming events show as planned instead of failing to play;"
+      "1": [
+        "Initial implementation;"
+      ],
+      "2": [
+        "Fix: Missing thumbnails on scheduled/live videos;",
+        "Improvement: Show live/upcoming events on NASA channel page;",
+        "Improvement: Add thumbnails to series playlists;"
+      ],
+      "3": [
+        "Improvement: Search playlists;",
+        "Improvement: Add series information to video descriptions;"
+      ],
+      "4": [
+        "Improvement: Show past live events;"
       ],
       "5": [
         "Fix: Live event detection when end time is unknown;",
@@ -5221,20 +5233,8 @@
         "Improvement: Reliable pagination via WordPress _envelope responses;",
         "Improvement: Decode additional HTML entities in titles and descriptions;"
       ],
-      "4": [
-        "Improvement: Show past live events;"
-      ],
-      "3": [
-        "Improvement: Search playlists;",
-        "Improvement: Add series information to video descriptions;"
-      ],
-      "2": [
-        "Fix: Missing thumbnails on scheduled/live videos;",
-        "Improvement: Show live/upcoming events on NASA channel page;",
-        "Improvement: Add thumbnails to series playlists;"
-      ],
-      "1": [
-        "Initial implementation;"
+      "6": [
+        "Fix: Upcoming events show as planned instead of failing to play;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/NASA-Plus/NASA-PlusConfig.json"
@@ -5337,16 +5337,16 @@
       }
     ],
     "changelog": {
-      "18": [
-        "Fix: Subtitles;",
-        "Fix: Watch Later and Saved Episodes playlist author;",
-        "Fix: Automatically recover from expired sessions;",
-        "Fix: Minor code improvements;",
-        "Improvement: Faster channel search and subscription import using parallel requests;",
-        "Improvement: Search now includes podcast episodes and series;"
+      "13": [
+        "Fix importing long watch later and saved episodes playlists"
       ],
-      "17": [
-        "Fix: Playback on desktop;"
+      "14": [
+        "Add support for content recommendations;",
+        "Fix channel links in the channel's About tab;",
+        "Use the channel's banner image or avatar as the thumbnail for channel playlists;"
+      ],
+      "15": [
+        "Fix: Missing audio in some downloads;"
       ],
       "16": [
         "Fix: playing content requiring login when already logged-in;",
@@ -5355,16 +5355,16 @@
         "Fix: Podcast episodes;",
         "Fix: Minor code improvements;"
       ],
-      "15": [
-        "Fix: Missing audio in some downloads;"
+      "17": [
+        "Fix: Playback on desktop;"
       ],
-      "14": [
-        "Add support for content recommendations;",
-        "Fix channel links in the channel's About tab;",
-        "Use the channel's banner image or avatar as the thumbnail for channel playlists;"
-      ],
-      "13": [
-        "Fix importing long watch later and saved episodes playlists"
+      "18": [
+        "Fix: Subtitles;",
+        "Fix: Watch Later and Saved Episodes playlist author;",
+        "Fix: Automatically recover from expired sessions;",
+        "Fix: Minor code improvements;",
+        "Improvement: Faster channel search and subscription import using parallel requests;",
+        "Improvement: Search now includes podcast episodes and series;"
       ]
     },
     "subscriptionRateLimit": 15,
@@ -5450,15 +5450,8 @@
       ]
     },
     "changelog": {
-      "6": [
-        "Fix: Videos failing to open;",
-        "Fix: Playlists failing to open when they contain videos with a hidden uploader;",
-        "Fix: Search suggestions for queries containing / ? # or other reserved characters;",
-        "Fix: Playlists and series loading empty pages endlessly after their last video;",
-        "Fix: Videos with ss ids not opening;"
-      ],
-      "5": [
-        "Fix: Search failing on desktop when no filters are selected;"
+      "3": [
+        "Fix login"
       ],
       "4": [
         "Fix: Playback of videos uploaded by channels;",
@@ -5471,8 +5464,15 @@
         "Fix: Videos with nm and legacy numeric ids not recognized as Niconico content;",
         "Feature: Add support for browsing channel pages on ch.nicovideo.jp;"
       ],
-      "3": [
-        "Fix login"
+      "5": [
+        "Fix: Search failing on desktop when no filters are selected;"
+      ],
+      "6": [
+        "Fix: Videos failing to open;",
+        "Fix: Playlists failing to open when they contain videos with a hidden uploader;",
+        "Fix: Search suggestions for queries containing / ? # or other reserved characters;",
+        "Fix: Playlists and series loading empty pages endlessly after their last video;",
+        "Fix: Videos with ss ids not opening;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/Niconico/NiconicoConfig.json"
@@ -5732,60 +5732,6 @@
       }
     ],
     "changelog": {
-      "64": [
-        "Fix: Videos failing to open or play, or needing a second open, most often new uploads and on mobile networks;",
-        "Fix: Paid, blocked and deleted videos and audio tracks reported as a generic playback error;",
-        "Fix: Offline live streams opening to a playback error instead of reporting the stream as offline;",
-        "Fix: Reposted videos missing from feeds and failing to open from links;",
-        "Fix: Landscape videos appearing in the Shorts feed and the channel Shorts tab;",
-        "Fix: Text posts in feeds showing the wrong content, or failing to load on channels with many posts;",
-        "Fix: Search showing an error for queries under 3 characters, repeating the first page, or ignoring the channel, sorting and date filters;",
-        "Fix: Related videos out of relevance order, and missing for videos opened from an odysee.com link;",
-        "Fix: Playlists stopping at 50 videos and showing deleted entries as empty items;",
-        "Fix: Comments stuck loading forever when the comment server returned an error;",
-        "Fix: Odysee links with uppercase domains or a trailing slash not recognized;"
-      ],
-      "63": [
-        "Fix: Handle special and non-ASCII characters in Odysee links;",
-        "Fix: Channel links resolving to a different channel with the same handle;",
-        "Fix: Creator search failing on unresolvable results;",
-        "Fix: Unresolvable content reported as an unsupported live stream;",
-        "Fix: Newest-first sorting when searching within a channel;",
-        "Fix: Videos with no playable source reported as members-only;",
-        "Fix: Paid videos reported as a generic playback error;",
-        "Fix: Loading comments on members-only videos;",
-        "Fix: Text posts opening in an empty video player (Desktop);",
-        "Fix: Rendering blockquotes, images, links and plain text in posts;"
-      ],
-      "62": [
-        "Fix: comments pagination issue;"
-      ],
-      "61": [
-        "Fix: Handle expired or invalid Odysee sessions gracefully instead of crashing;",
-        "Fix: Handle unresolvable videos, playlists, and sources;",
-        "Fix: Loading comment across share links and paginated replies;",
-        "Fix: Playback progress tracking (opt-in in plugin settings);",
-        "Feature: Add live stream support (opt-out in plugin settings);",
-        "Feature: Add plugin settings to toggle live streams and shorts in Home feed;",
-        "Feature: Add plugin settings to toggle individual video source variants (HLS v6/v4, MP4 v6/v4/v3);",
-        "Feature: Preferred-source setting for Adaptive (HLS when available) or Fixed quality (MP4 v6);",
-        "Performance: Source URLs resolved past CDN redirects to skip 308 round-trips on every playback request;",
-        "Improvement: Shorts feed respects configured duration;",
-        "Improvement: update author url from futo.org to futo.tech;",
-        "Performance: Faster loading via parallel batching;"
-      ],
-      "60": [
-        "Fix: loading channel playlists;"
-      ],
-      "59": [
-        "Feature: Add support for tags as playlists;",
-        "Improvement: Add support for download URL v3 in video details;",
-        "Fix: Check for planned videos;",
-        "Fix: Issue playing and casting some videos;"
-      ],
-      "57": [
-        "Improvement: Improve casting compatibility;"
-      ],
       "51": [
         "Feature: Add support for audio streams;",
         "Feature: Add content recommendation support;",
@@ -5815,6 +5761,60 @@
       ],
       "56": [
         "Improvement: get content for Shorts tab;"
+      ],
+      "57": [
+        "Improvement: Improve casting compatibility;"
+      ],
+      "59": [
+        "Feature: Add support for tags as playlists;",
+        "Improvement: Add support for download URL v3 in video details;",
+        "Fix: Check for planned videos;",
+        "Fix: Issue playing and casting some videos;"
+      ],
+      "60": [
+        "Fix: loading channel playlists;"
+      ],
+      "61": [
+        "Fix: Handle expired or invalid Odysee sessions gracefully instead of crashing;",
+        "Fix: Handle unresolvable videos, playlists, and sources;",
+        "Fix: Loading comment across share links and paginated replies;",
+        "Fix: Playback progress tracking (opt-in in plugin settings);",
+        "Feature: Add live stream support (opt-out in plugin settings);",
+        "Feature: Add plugin settings to toggle live streams and shorts in Home feed;",
+        "Feature: Add plugin settings to toggle individual video source variants (HLS v6/v4, MP4 v6/v4/v3);",
+        "Feature: Preferred-source setting for Adaptive (HLS when available) or Fixed quality (MP4 v6);",
+        "Performance: Source URLs resolved past CDN redirects to skip 308 round-trips on every playback request;",
+        "Improvement: Shorts feed respects configured duration;",
+        "Improvement: update author url from futo.org to futo.tech;",
+        "Performance: Faster loading via parallel batching;"
+      ],
+      "62": [
+        "Fix: comments pagination issue;"
+      ],
+      "63": [
+        "Fix: Handle special and non-ASCII characters in Odysee links;",
+        "Fix: Channel links resolving to a different channel with the same handle;",
+        "Fix: Creator search failing on unresolvable results;",
+        "Fix: Unresolvable content reported as an unsupported live stream;",
+        "Fix: Newest-first sorting when searching within a channel;",
+        "Fix: Videos with no playable source reported as members-only;",
+        "Fix: Paid videos reported as a generic playback error;",
+        "Fix: Loading comments on members-only videos;",
+        "Fix: Text posts opening in an empty video player (Desktop);",
+        "Fix: Rendering blockquotes, images, links and plain text in posts;"
+      ],
+      "64": [
+        "Fix: Videos failing to open or play, or needing a second open, most often new uploads and on mobile networks;",
+        "Fix: Paid, blocked and deleted videos and audio tracks reported as a generic playback error;",
+        "Fix: Offline live streams opening to a playback error instead of reporting the stream as offline;",
+        "Fix: Reposted videos missing from feeds and failing to open from links;",
+        "Fix: Landscape videos appearing in the Shorts feed and the channel Shorts tab;",
+        "Fix: Text posts in feeds showing the wrong content, or failing to load on channels with many posts;",
+        "Fix: Search showing an error for queries under 3 characters, repeating the first page, or ignoring the channel, sorting and date filters;",
+        "Fix: Related videos out of relevance order, and missing for videos opened from an odysee.com link;",
+        "Fix: Playlists stopping at 50 videos and showing deleted entries as empty items;",
+        "Fix: Comments stuck loading forever when the comment server returned an error;",
+        "Fix: Odysee links with uppercase domains or a trailing slash not recognized;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/Odysee/OdyseeConfig.json"
@@ -6049,42 +6049,21 @@
       }
     ],
     "changelog": {
-      "30": [
-        "Fix: Opening posts (video, audio, image, embed, members-only) on desktop;",
-        "Fix: Comments failing to load;",
-        "Fix: Recommendations failing to load;",
-        "Fix: Image post thumbnails;",
-        "Fix: Content failing to load during rate limits or captchas;",
-        "Fix: Recognizing channels opened via alternate or redirected URLs;",
-        "Feature: Add support for creators using custom domains;",
-        "Improvement: Show downloadable file attachments on posts;",
-        "Improvement: Load more content on Home;"
+      "18": [
+        "support podcast post types;",
+        "fix comments pagination;",
+        "fix channel details description, banner and thumbnail for some creators;"
       ],
-      "29": [
-        "Fix: Home failing in some circumstances under VPNs;",
-        "Fix: Channel and channel content failing to load under VPNs;",
-        "Improvement: search within a creator's content",
-        "Improvement: expose creator collections as channel playlists (android);"
+      "19": [
+        "fix playing content;"
       ],
-      "28": [
-        "Fix: Audio-only posts (podcasts) not playing due to missing media container type;",
-        "Fix: Comment replies;"
+      "20": [
+        "Improvement: Load content on home;",
+        "Improvement: Support deep linking to audio and video content types;",
+        "Improvement: Add captcha resolution support;"
       ],
-      "27": [
-        "Fix: Post content (text) support on Desktop;",
-        "Improvement: Enable article support for text and image posts (richer content) on Android app builds 381+;"
-      ],
-      "26": [
-        "Fix: Change authorUrl from futo.org to futo.tech;",
-        "Fix: Missing post (text) content details;",
-        "Improvement: Prepare article support;"
-      ],
-      "25": [
-        "Improvement: Show unavailable message for members-only content;",
-        "Fix: Use webview's user-agent instead of hardcoded one to avoid bot detection;"
-      ],
-      "24": [
-        "Fix: Video playback for podcast posts containing video streams;"
+      "21": [
+        "Fix: Adjust channel parsing;"
       ],
       "23": [
         "Fix: Thumbnail for Nested Content (example Youtube);",
@@ -6098,21 +6077,42 @@
         "Improvement: Handle removed and non-existent pages;",
         "Improvement: Extract social links;"
       ],
-      "21": [
-        "Fix: Adjust channel parsing;"
+      "24": [
+        "Fix: Video playback for podcast posts containing video streams;"
       ],
-      "20": [
-        "Improvement: Load content on home;",
-        "Improvement: Support deep linking to audio and video content types;",
-        "Improvement: Add captcha resolution support;"
+      "25": [
+        "Improvement: Show unavailable message for members-only content;",
+        "Fix: Use webview's user-agent instead of hardcoded one to avoid bot detection;"
       ],
-      "19": [
-        "fix playing content;"
+      "26": [
+        "Fix: Change authorUrl from futo.org to futo.tech;",
+        "Fix: Missing post (text) content details;",
+        "Improvement: Prepare article support;"
       ],
-      "18": [
-        "support podcast post types;",
-        "fix comments pagination;",
-        "fix channel details description, banner and thumbnail for some creators;"
+      "27": [
+        "Fix: Post content (text) support on Desktop;",
+        "Improvement: Enable article support for text and image posts (richer content) on Android app builds 381+;"
+      ],
+      "28": [
+        "Fix: Audio-only posts (podcasts) not playing due to missing media container type;",
+        "Fix: Comment replies;"
+      ],
+      "29": [
+        "Fix: Home failing in some circumstances under VPNs;",
+        "Fix: Channel and channel content failing to load under VPNs;",
+        "Improvement: search within a creator's content",
+        "Improvement: expose creator collections as channel playlists (android);"
+      ],
+      "30": [
+        "Fix: Opening posts (video, audio, image, embed, members-only) on desktop;",
+        "Fix: Comments failing to load;",
+        "Fix: Recommendations failing to load;",
+        "Fix: Image post thumbnails;",
+        "Fix: Content failing to load during rate limits or captchas;",
+        "Fix: Recognizing channels opened via alternate or redirected URLs;",
+        "Feature: Add support for creators using custom domains;",
+        "Improvement: Show downloadable file attachments on posts;",
+        "Improvement: Load more content on Home;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/Patreon/PatreonConfig.json"
@@ -6587,14 +6587,50 @@
       }
     ],
     "changelog": {
-      "27": [
-        "Improvement: Support PeerTube federated video redirect to origin instance;",
-        "Improvement: Improve error handling for content details;",
-        "Improvement: Add opt-in setting to show instance info in channel and content descriptions;"
+      "16": [
+        "Use host instances from https://instances.joinpeertube.org/instances to support channels and videos from other peertube instances;",
+        "Add a setting to switch the content and channels search from an instance to sepiasearch.org;",
+        "Improve support for older peertube server versions;",
+        "Fix bugs with channel avatars and video thumbnails in some peertube server versions;"
       ],
-      "26": [
-        "Improvement: Sync known instances with SepiaSearch, fediverse.observer and fedidb.org;",
-        "Improvement: Update plugin configuration authorUrl from https://futo.org to https://futo.tech;"
+      "17": [
+        "Fixed issue when opening federated content or a channel without opening the Home tab first;",
+        "Fixed issue with deep-linking from an indexed instance while the app is closed;"
+      ],
+      "18": [
+        "Fix plugin repositoryUrl and add platformUrl configurations;",
+        "Sync known instances from https://instances.joinpeertube.org and user requests;",
+        "Fix playback issues for some videos;",
+        "Add recommendations support;"
+      ],
+      "19": [
+        "Sync known instances with https://instances.joinpeertube.org"
+      ],
+      "20": [
+        "Add view reporting to PeerTube instances with a plugin setting to disable it.",
+        "Sync known instances with https://instances.joinpeertube.org"
+      ],
+      "21": [
+        "Fix resolving instances with ports;",
+        "Sync known instances with https://instances.joinpeertube.org"
+      ],
+      "22": [
+        "Add support for channel playlists;",
+        "Search online playlists on the playlist tab using current instance or Sepia Search;",
+        "Add subtitles support (when available);",
+        "Improve handling media sources with audio only, and videos with split audio and video;",
+        "Improved URL recognition with hints for all content types;",
+        "Map likes and dislikes display for videos;",
+        "Sync known instances with https://instances.joinpeertube.org;"
+      ],
+      "23": [
+        "Fix commenter avatar in federated videos;",
+        "Fix comment replies not showing up;",
+        "Fix channel subscription not being recognized as subscribed;"
+      ],
+      "24": [
+        "Fix existing subscription not being recognized as subscribed in video details;",
+        "Sync known instances with https://instances.joinpeertube.org;"
       ],
       "25": [
         "Improvement: Add instance authentication;",
@@ -6618,50 +6654,14 @@
         "Fix: Handle older instances that truncate video descriptions at 250 characters and need an additional request;",
         "Fix: Viewer count for livestreams;"
       ],
-      "24": [
-        "Fix existing subscription not being recognized as subscribed in video details;",
-        "Sync known instances with https://instances.joinpeertube.org;"
+      "26": [
+        "Improvement: Sync known instances with SepiaSearch, fediverse.observer and fedidb.org;",
+        "Improvement: Update plugin configuration authorUrl from https://futo.org to https://futo.tech;"
       ],
-      "23": [
-        "Fix commenter avatar in federated videos;",
-        "Fix comment replies not showing up;",
-        "Fix channel subscription not being recognized as subscribed;"
-      ],
-      "22": [
-        "Add support for channel playlists;",
-        "Search online playlists on the playlist tab using current instance or Sepia Search;",
-        "Add subtitles support (when available);",
-        "Improve handling media sources with audio only, and videos with split audio and video;",
-        "Improved URL recognition with hints for all content types;",
-        "Map likes and dislikes display for videos;",
-        "Sync known instances with https://instances.joinpeertube.org;"
-      ],
-      "21": [
-        "Fix resolving instances with ports;",
-        "Sync known instances with https://instances.joinpeertube.org"
-      ],
-      "20": [
-        "Add view reporting to PeerTube instances with a plugin setting to disable it.",
-        "Sync known instances with https://instances.joinpeertube.org"
-      ],
-      "19": [
-        "Sync known instances with https://instances.joinpeertube.org"
-      ],
-      "18": [
-        "Fix plugin repositoryUrl and add platformUrl configurations;",
-        "Sync known instances from https://instances.joinpeertube.org and user requests;",
-        "Fix playback issues for some videos;",
-        "Add recommendations support;"
-      ],
-      "17": [
-        "Fixed issue when opening federated content or a channel without opening the Home tab first;",
-        "Fixed issue with deep-linking from an indexed instance while the app is closed;"
-      ],
-      "16": [
-        "Use host instances from https://instances.joinpeertube.org/instances to support channels and videos from other peertube instances;",
-        "Add a setting to switch the content and channels search from an instance to sepiasearch.org;",
-        "Improve support for older peertube server versions;",
-        "Fix bugs with channel avatars and video thumbnails in some peertube server versions;"
+      "27": [
+        "Improvement: Support PeerTube federated video redirect to origin instance;",
+        "Improvement: Improve error handling for content details;",
+        "Improvement: Add opt-in setting to show instance info in channel and content descriptions;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/PeerTube/PeerTubeConfig.json"
@@ -6850,41 +6850,6 @@
     },
     "platformUrl": "https://www.pornhub.com",
     "changelog": {
-      "21": [
-        "Accept numeric and textual interaction counters in current video metadata;"
-      ],
-      "20": [
-        "Open shared playlist links and expose their available videos;"
-      ],
-      "19": [
-        "Encode search parameters and handle searches with no results without an error;"
-      ],
-      "18": [
-        "Refresh stale CDN links before playback and preserve media request headers;"
-      ],
-      "17": [
-        "Repair comment loading and tolerate current comment identifiers;"
-      ],
-      "16": [
-        "Expose declarative browse entries on compatible clients;"
-      ],
-      "15": [
-        "Fix filtered search requests;"
-      ],
-      "14": [
-        "Limit declarative filters to search;"
-      ],
-      "13": [
-        "Declare image request headers for reliable thumbnails;"
-      ],
-      "12": [
-        "Add declarative Grayjoy filters;",
-        "Improve lazy thumbnail extraction and paging;"
-      ],
-      "11": [
-        "Fix playing videos, isChannelUrl check;",
-        "Fix loading some channels;"
-      ],
       "10": [
         "Remove invalid Signature;",
         "Added channel statistics to description (total videos, views, subscribers);",
@@ -6896,6 +6861,41 @@
         "Added content recommendations;",
         "Implemented shorts tab;",
         "Fixed autocomplete search suggestions;"
+      ],
+      "11": [
+        "Fix playing videos, isChannelUrl check;",
+        "Fix loading some channels;"
+      ],
+      "12": [
+        "Add declarative Grayjoy filters;",
+        "Improve lazy thumbnail extraction and paging;"
+      ],
+      "13": [
+        "Declare image request headers for reliable thumbnails;"
+      ],
+      "14": [
+        "Limit declarative filters to search;"
+      ],
+      "15": [
+        "Fix filtered search requests;"
+      ],
+      "16": [
+        "Expose declarative browse entries on compatible clients;"
+      ],
+      "17": [
+        "Repair comment loading and tolerate current comment identifiers;"
+      ],
+      "18": [
+        "Refresh stale CDN links before playback and preserve media request headers;"
+      ],
+      "19": [
+        "Encode search parameters and handle searches with no results without an error;"
+      ],
+      "20": [
+        "Open shared playlist links and expose their available videos;"
+      ],
+      "21": [
+        "Accept numeric and textual interaction counters in current video metadata;"
       ]
     },
     "_installUrl": "https://github.com/paaspaas00/pornhubGrayjay/raw/main/PornhubConfig.json"
@@ -7042,9 +7042,6 @@
       "api.radiodb.fr"
     ],
     "changelog": {
-      "16": [
-        "Fix: Update API server to fallback list;"
-      ],
       "10": [
         "Improvement: Add plugin setting filter the Home tab stations to a specific country;"
       ],
@@ -7062,6 +7059,9 @@
       ],
       "15": [
         "Improvement: Use browser-compatible URLs for country channels;"
+      ],
+      "16": [
+        "Fix: Update API server to fallback list;"
       ]
     },
     "settings": [
@@ -7363,16 +7363,16 @@
       ".redbull.com"
     ],
     "changelog": {
-      "7": [
-        "Fix: Live events failing to open from home"
+      "5": [
+        "Improvement: Use browser impersonation;"
       ],
       "6": [
         "Fix: Episodes with zero duration no longer filtered from playlists",
         "Fix: Athlete search no longer requests duplicate pages (API ignores pagination)",
         "Fix: Stop fetching empty pages when last page is partial"
       ],
-      "5": [
-        "Improvement: Use browser impersonation;"
+      "7": [
+        "Fix: Live events failing to open from home"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/RedbullTv/RedBullTvConfig.json"
@@ -8013,35 +8013,35 @@
       }
     ],
     "changelog": {
-      "30": [
-        "Improvement: Play DRM protected tracks on clients that support HLS Widevine;"
+      "21": [
+        "Add login support, SoundCloud Go+ support, playlist search, and track search filtering"
       ],
-      "29": [
-        "Improvement: Improve error type and message for unavailable tracks;",
-        "Fix: Search playlist pagination;"
+      "22": [
+        "Prevent login expiration and add profile links"
+      ],
+      "24": [
+        "Fixed TODO in search without any filter on GrayJay desktop"
+      ],
+      "25": [
+        "Fix playing some tracks"
+      ],
+      "26": [
+        "Fix regression where tracks with no views would not work"
+      ],
+      "27": [
+        "Fix issue when deeplinking to HLS sources;"
       ],
       "28": [
         "Fix: Loading artists and their tracks;",
         "Fix: Thumbnail quality;",
         "Improvement: Support tags as playlists;"
       ],
-      "27": [
-        "Fix issue when deeplinking to HLS sources;"
+      "29": [
+        "Improvement: Improve error type and message for unavailable tracks;",
+        "Fix: Search playlist pagination;"
       ],
-      "26": [
-        "Fix regression where tracks with no views would not work"
-      ],
-      "25": [
-        "Fix playing some tracks"
-      ],
-      "24": [
-        "Fixed TODO in search without any filter on GrayJay desktop"
-      ],
-      "22": [
-        "Prevent login expiration and add profile links"
-      ],
-      "21": [
-        "Add login support, SoundCloud Go+ support, playlist search, and track search filtering"
+      "30": [
+        "Improvement: Play DRM protected tracks on clients that support HLS Widevine;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/Soundcloud/SoundcloudConfig.json"
@@ -8370,6 +8370,26 @@
     "maxDownloadParallelism": 1,
     "subscriptionRateLimit": 10,
     "changelog": {
+      "2": [
+        "Improvement: add playlist support;",
+        "improvement: improve performance opening videos;",
+        "Improvement: add support for TED topics as playlists;",
+        "Improvement: add subtitles support;"
+      ],
+      "3": [
+        "Fix: Extracting profile videos;",
+        "Fix: Handling external content (podcasts hosted on youtube);",
+        "Improvement: Add setting to control external content visibility;",
+        "Fix: Searching channels (speakers);"
+      ],
+      "4": [
+        "Improvement: Add browser impersonation (HttpImp) for SSL resilience;",
+        "Improvement: New web-based home feed that avoids SSL-problematic search API;"
+      ],
+      "5": [
+        "Fix: Home tab pagination;",
+        "Improvement: Set HLS as priority source;"
+      ],
       "6": [
         "Fix: Some speakers showing no talks;",
         "Fix: Missing talks on speakers with more than 50 talks;",
@@ -8382,26 +8402,6 @@
         "Fix: Playlist talks not linking to their speaker, and showing a generic image;",
         "Performance: Faster Home loading;",
         "Performance: Faster opening of speakers without a public profile;"
-      ],
-      "5": [
-        "Fix: Home tab pagination;",
-        "Improvement: Set HLS as priority source;"
-      ],
-      "4": [
-        "Improvement: Add browser impersonation (HttpImp) for SSL resilience;",
-        "Improvement: New web-based home feed that avoids SSL-problematic search API;"
-      ],
-      "3": [
-        "Fix: Extracting profile videos;",
-        "Fix: Handling external content (podcasts hosted on youtube);",
-        "Improvement: Add setting to control external content visibility;",
-        "Fix: Searching channels (speakers);"
-      ],
-      "2": [
-        "Improvement: add playlist support;",
-        "improvement: improve performance opening videos;",
-        "Improvement: add support for TED topics as playlists;",
-        "Improvement: add subtitles support;"
       ]
     },
     "packages": [
@@ -8728,15 +8728,15 @@
       }
     ],
     "changelog": {
-      "1": [
-        "Feature: Comments are working. oh, SubComments too."
-      ],
       "0": [
         "Initial Release",
         "Feature: Search Support [Suggestions, Contents(Lives) and Channels]",
         "Feature: Content Support [Lives(Experimental), Clips, VODs and Uploads]",
         "Feature: Channel Support [Channel Details, Lives, VODs, Uploads and Clips(Disabled by default, need to come up with a better way to handle them)]",
         "Issue: Almost everything related to the Follower Count doesn't work, it is not available in the API calls for some reason. The only exception is while Searching."
+      ],
+      "1": [
+        "Feature: Comments are working. oh, SubComments too."
       ]
     },
     "_installUrl": "https://alexisblade2001.github.io/Grayjay-Plugins/Trovo/TrovoConfig.json",
@@ -8893,25 +8893,41 @@
       }
     ],
     "changelog": {
-      "38": [
-        "Fix: Channel and subscription feeds no longer fail when Twitch's clips request errors, and channel clips keep loading page after page;",
-        "Fix: Channel feeds stop at the end instead of requesting empty pages when a channel hides its clips from discovery;",
-        "Fix: Channel feeds return regular video items, which desktop could not read back from its subscription cache;",
-        "Fix: Live channels keep their newest video in the channel feed;",
-        "Fix: Subscriber-only videos are detected reliably and their feed entries carry their video link and thumbnail;",
-        "Improvement: Search results load more pages instead of stopping after the first;"
+      "25": [
+        "Fix: solve playback errors in some clips;"
       ],
-      "37": [
-        "Fix: Channels, streams, VODs, search, and chat no longer fail with 'persistedQuery sha256 hash does not match query body';",
-        "Fix: VOD chat replay no longer depends on a rotating persisted query hash;"
+      "26": [
+        "Fix: home error;"
       ],
-      "36": [
-        "Fix: Channel pages no longer crash on an unavailable clip;"
+      "27": [
+        "Fix: Channel social links;",
+        "Improvement: Initial content recommendation implementation;",
+        "Improvement: Switch to CBR bitrate to resolve automatic resolution drops"
       ],
-      "35": [
-        "Fix: Clips now show all available video qualities;",
-        "Fix: Use login webview's own user agent;",
-        "Fix: Increase subscription import from 100 up to 200 followed channels;"
+      "28": [
+        "Improvement: Add 1440p stream support for logged-in users in supported regions;"
+      ],
+      "29": [
+        "Fix: Home tab;",
+        "Fix: Search;",
+        "Fix: Content Details;",
+        "Fix: Playing saved videos;",
+        "Fix: Content recommendations;"
+      ],
+      "30": [
+        "Fix: Playing VODs;"
+      ],
+      "31": [
+        "Fix: Playing clips;",
+        "Improvement: Support subscriber only content;",
+        "Improvement: Remove dead code and improve performance;",
+        "Improvement: Optimize VOD loading from channel pages;"
+      ],
+      "32": [
+        "Fix: Detect subscriber-only VODs and show proper error instead of broken playback;"
+      ],
+      "33": [
+        "Fix: Channel with query strings;"
       ],
       "34": [
         "Fix: Update thumbnails of livestreams after some time;",
@@ -8922,41 +8938,25 @@
         "Feature: Support channel panel links in channel About tab (opt-in in plugin settings);",
         "Feature: Add browser impersonation support (opt-in in plugin settings);"
       ],
-      "33": [
-        "Fix: Channel with query strings;"
+      "35": [
+        "Fix: Clips now show all available video qualities;",
+        "Fix: Use login webview's own user agent;",
+        "Fix: Increase subscription import from 100 up to 200 followed channels;"
       ],
-      "32": [
-        "Fix: Detect subscriber-only VODs and show proper error instead of broken playback;"
+      "36": [
+        "Fix: Channel pages no longer crash on an unavailable clip;"
       ],
-      "31": [
-        "Fix: Playing clips;",
-        "Improvement: Support subscriber only content;",
-        "Improvement: Remove dead code and improve performance;",
-        "Improvement: Optimize VOD loading from channel pages;"
+      "37": [
+        "Fix: Channels, streams, VODs, search, and chat no longer fail with 'persistedQuery sha256 hash does not match query body';",
+        "Fix: VOD chat replay no longer depends on a rotating persisted query hash;"
       ],
-      "30": [
-        "Fix: Playing VODs;"
-      ],
-      "29": [
-        "Fix: Home tab;",
-        "Fix: Search;",
-        "Fix: Content Details;",
-        "Fix: Playing saved videos;",
-        "Fix: Content recommendations;"
-      ],
-      "28": [
-        "Improvement: Add 1440p stream support for logged-in users in supported regions;"
-      ],
-      "27": [
-        "Fix: Channel social links;",
-        "Improvement: Initial content recommendation implementation;",
-        "Improvement: Switch to CBR bitrate to resolve automatic resolution drops"
-      ],
-      "26": [
-        "Fix: home error;"
-      ],
-      "25": [
-        "Fix: solve playback errors in some clips;"
+      "38": [
+        "Fix: Channel and subscription feeds no longer fail when Twitch's clips request errors, and channel clips keep loading page after page;",
+        "Fix: Channel feeds stop at the end instead of requesting empty pages when a channel hides its clips from discovery;",
+        "Fix: Channel feeds return regular video items, which desktop could not read back from its subscription cache;",
+        "Fix: Live channels keep their newest video in the channel feed;",
+        "Fix: Subscriber-only videos are detected reliably and their feed entries carry their video link and thumbnail;",
+        "Improvement: Search results load more pages instead of stopping after the first;"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/Twitch/TwitchConfig.json"
@@ -10022,279 +10022,159 @@
     },
     "primaryClaimFieldType": 1,
     "changelog": {
-      "366": [
-        "Fix: View counts on channels"
+      "227": [
+        "Feature: Opt-in AV1 support",
+        "Feature: UMP MP4 support (fixes no audio or only 360p for older videos)",
+        "Improve: UMP Disconnect toasts now optional"
       ],
-      "365": [
-        "Fix: Force UMP properly respected"
+      "231": [
+        "Fix: UMP failing on initial load"
       ],
-      "364": [
-        "Fix: Various methods (getHome/getPlaylist/getChannel etc)"
+      "232": [
+        "Feature: Verify IOS Playback setting (true by default), checks if iOS sources can be played beyond 60 seconds, or fallback to others.",
+        "Feature: Channel shorts fetching support (may require app update to view new channel tab)"
       ],
-      "361": [
-        "Others: Add additional logging for certain issues"
+      "233": [
+        "Minor hotfix"
       ],
-      "360": [
-        "Fix: Live stream fix for some streams"
+      "234": [
+        "Improvement: Filter member-only videos from channel contents",
+        "Improvement: Possible UMP redirect fix"
       ],
-      "359": [
-        "Fix: Shorts fix",
-        "Feature: Optional setting to show AI disclosure when opening AI video."
+      "235": [
+        "Fix Cipher"
       ],
-      "358": [
-        "Feature/Fix: VisionOS streaming sources support"
+      "236": [
+        "Fix Android 9 error (remove query hardware codecs)"
       ],
-      "356": [
-        "Fix: Channels not showing new videos (when premiere is there)"
+      "237": [
+        "Fix: Import Subscriptions on some accounts",
+        "Improvement: Playback tracker optimalization in certain scenarios",
+        "Improvement: Warning when toggling AV1 setting that it requires UMP for now"
       ],
-      "354": [
-        "Fix: PeekChannelResults fix for phones"
+      "238": [
+        "Fix: Cipher edgecase"
       ],
-      "353": [
-        "Feature: Native UMP"
+      "239": [
+        "Fix: More advanced cipher fixes"
       ],
-      "343": [
-        "Fix: Live streams"
+      "240": [
+        "Fix: Cipher fix (hopefully final one for a while)",
+        "Fix: Replacing & Unicode in author titles",
+        "Fix: 'simpleText' parsing failures fallback to empty values for now",
+        "Fix: Correct repo url"
       ],
-      "342": [
-        "Fix: Channel livestreams not showing",
-        "Fix: Planned badges not always showing",
-        "Fix: Live stream auto-reloading (when waiting for streamer)"
-      ],
-      "341": [
-        "Fix: LIVE badge for livestream videos",
-        "Fix: Loading playlists"
-      ],
-      "340": [
-        "Fix: Membership first video detection"
-      ],
-      "339": [
-        "Fix: Added Android VR sources",
-        "Fix: Shorts work again",
-        "Fix: Membership video detection"
-      ],
-      "338": [
-        "Fix: Membership video detection from VideoLockupModel"
-      ],
-      "337": [
-        "Fix: Fixed issue causing date to be empty and videos missing from channel"
-      ],
-      "336": [
-        "Fix: Sig solver optional"
-      ],
-      "335": [
-        "Fix: Removed legacy code"
-      ],
-      "334": [
-        "Fix: Possible Audio noise fix",
-        "Fix: DeArrow search fix",
-        "Fix: Shows should now work (limited metadata)",
-        "Improvement: Change no comments error"
-      ],
-      "333": [
-        "Fix: Android Sources"
-      ],
-      "332": [
-        "Fix: Added solutions"
-      ],
-      "330": [
-        "Fix: Adding remote solver for n ciphers"
-      ],
-      "329": [
+      "241": [
         "Fix: Cipher fix"
       ],
-      "328": [
-        "Fix: Browser Botguard re-enabled"
+      "242": [
+        "Fix: Not all members only videos being filtered out",
+        "Fix: Certain playlist urls not being detected properly",
+        "Feature: Setting 'Allow Member Content' which will show channel member content (prefixed with [MEMBER])",
+        "Feature: Mark which audio track is the 'original' audio (will be used in upcoming Grayjay version)"
       ],
-      "324": [
-        "Fix: Temporarily disable Browser Botguard for legacy solution till better fix"
+      "243": [
+        "Fix: Cipher fix",
+        "Fix: Various possible 'runs' errors",
+        "Debug: Add additional logging for solving home issue"
       ],
-      "322": [
-        "Fix: Possible initial UMP stream fetching"
+      "244": [
+        "Fix: Support additional video models (may fix home page for some)"
       ],
-      "321": [
-        "Fix: Possible fix for cipher issue [4e51e895]"
+      "245": [
+        "Fix: Fix view counts for videos on home page for some users"
       ],
-      "320": [
-        "Fix: Possible fix for cipher issue [3510b6ff]",
-        "Fix: Race condition with token generator initialization"
-      ],
-      "317": [
-        "Feature: In-Browser token generation now a setting",
-        "Feature: Advanced settings field are now hidden for supported runtimes behind a toggle"
-      ],
-      "316": [
-        "Feature: In-Browser token generation now a setting"
-      ],
-      "315": [
-        "Feature: In-Browser token generation (on supported versions)",
-        "Fix: UMP Fix"
-      ],
-      "314": [
+      "246": [
         "Fix: Cipher fix"
       ],
-      "313": [
-        "Fix: Fixed Android sources on desktop"
+      "247": [
+        "Fix: Better cipher reporting"
       ],
-      "312": [
-        "Fix: Livestreams fixed using n-parameter challenge"
+      "248": [
+        "Fix: Potential cipher edgecase fix"
       ],
-      "311": [
-        "Improvement: Reintroduce language selection for combined UMP",
-        "Improvement: Language now specified on combined video sources"
-      ],
-      "310": [
-        "Improvement: Make combined UMP sources default",
-        "Improvement: Reload Required exception on UMP ReloadPlayerResponse request"
-      ],
-      "309": [
+      "249": [
         "Fix: Cipher fix",
-        "Fix: Playlist import for non-english languages",
-        "Improvement: Clearer error for logged in users with disabled login fallback"
+        "Improvement: Better recommendation author parsing"
       ],
-      "307": [
-        "Fix: Improved combined UMP stream support"
+      "250": [
+        "Fix: Consent form for search (with spaces)"
       ],
-      "306": [
-        "Fix: More strict container compatibility check in UMP combined stream"
+      "251": [
+        "Fix: Fixed wrong offsets for UMP (affects downloaded videos)",
+        "Fix: Fixed UMP not being able to load if opened with a timestamp",
+        "Fix: Fixed planned videos not loading properly",
+        "Fix: Fixed playlists not appearing if using authentication for channels in some cases",
+        "Improvement: Error when comments are disabled"
       ],
-      "305": [
-        "Fix: Added UMP combined stream support"
+      "252": [
+        "Improvement: Detect Youtube messages"
       ],
-      "301": [
-        "Fix: Temporary workaround for UMP fallback"
+      "253": [
+        "Improvement: Attempted bypassing of blocked playback",
+        "Fixed: Short-only playlists are now loadable",
+        "Fixed: No author names for playlist search"
       ],
-      "300": [
-        "Fix: DeArrow not working"
+      "254": [
+        "Improvement: Experimental UMP Backoff setting"
       ],
-      "299": [
-        "Feature: Support for private videos (if logged in)",
-        "Feature: DeArrow support",
-        "Improvement: Added language codes to subtitles",
-        "Fix: Cipher fix (hXO not defined)"
+      "255": [
+        "Improvement: Reduce/Resolve playback blocked"
       ],
-      "298": [
-        "HOTFIX: Videos getting cut off at end",
-        "Improvement: Better video sources fallback (Android CDN)",
-        "Improvement: New Trending page for non-logged in users",
-        "Improvement: Removed some old redundant settings",
-        "Improvement: Variable POT now on by default (helps some users)",
-        "Fix: Recommendations not working for logged in users",
-        "Fix: Content-checked content showing as 'Unavailable'",
-        "Fix: Comment likes sometimes being 0"
+      "256": [
+        "HOTFIX: Request optimalization",
+        "Improvement: Reduce/Resolve playback blocked"
       ],
-      "297": [
-        "Improvement: Better video sources fallback (Android CDN)",
-        "Improvement: New Trending page for non-logged in users",
-        "Improvement: Removed some old redundant settings",
-        "Improvement: Variable POT now on by default (helps some users)",
-        "Fix: Recommendations not working for logged in users",
-        "Fix: Content-checked content showing as 'Unavailable'",
-        "Fix: Comment likes sometimes being 0"
+      "257": [
+        "Improvement: Fallback without setting if fails",
+        "Improvement: Hide certain messages behind verbose toasts"
       ],
-      "296": [
-        "Improvement: Better video sources fallback (Android CDN)",
-        "Improvement: New Trending page for non-logged in users",
-        "Improvement: Removed some old redundant settings",
-        "Improvement: Variable POT now on by default (helps some users)"
+      "258": [
+        "Hotfix: Fix handling of invalid PlayerData from isInlinePlaybackNoAd after reload"
       ],
-      "295": [
-        "Fix: Cipher fix"
+      "259": [
+        "Logging: Adding additional logging for edgecase"
       ],
-      "294": [
+      "260": [
+        "FIX: Fix for undefined global functions (eg. hRx)"
+      ],
+      "261": [
+        "Improvement: Async support for generate calls",
+        "Fix: Fix issue where backoff streams would not load further",
+        "Fix: Livechat colors now use RGBA instead of ARGB (Needs newest app to view correctly)",
+        "Fix: Livestream raids now apply the isOutgoing properly, instead of everything being outgoing"
+      ],
+      "262": [
         "Fix: Cipher fix",
-        "Fix: POT for Livestreams"
+        "Improvement: Backoff always if less than 5 seconds",
+        "Improvement: Reusing tokens if possible for backoff",
+        "Improvement: Reload once instead of twice",
+        "Improvement: isInlinePlaybackNoAd off by default"
       ],
-      "293": [
-        "Fix: Cipher fix",
-        "Fix: Alternative livestream source in settings (off by default)"
+      "264": [
+        "Fix: Recommendations not showing",
+        "Fix: Fix scenario where Login Fallback would not work for some users (Video unavailable)",
+        "Improvement: Remove disfunctional setting"
       ],
-      "292": [
-        "Fix: Livestreams fixed using temporary alternative method"
+      "265": [
+        "Improvement: New Youtube detail request flow with session retention (WIP)"
       ],
-      "291": [
-        "Fix: Cipher Fix (Intl not defined)"
+      "266": [
+        "Improvement: Youtube Session client, may improve overall experience, but may still contain bugs"
       ],
-      "290": [
-        "Fix: Cipher Fix"
+      "268": [
+        "Improvement: Improved performance for fetching video details (through Youtube session client)",
+        "Improvement: Improved compatibility for fetching video details (through Youtube session client)",
+        "Fix: Time/viewcount for recommendation videos"
       ],
-      "289": [
-        "Fix: Cipher Fix",
-        "Improvement: Better STS error handling"
+      "270": [
+        "HOTFIX: Fix home page not parsing for some users",
+        "HOTFIX: Fix 'batch.POST is not a function'",
+        "Improvement: Improved performance for fetching video details (through Youtube session client)",
+        "Improvement: Improved compatibility for fetching video details (through Youtube session client)",
+        "Fix: Time/viewcount for recommendation videos"
       ],
-      "288": [
-        "Improvement: Automatic login fallback support for membership content",
-        "Fix: Cipher Fix"
-      ],
-      "287": [
-        "Improvement: No longer allow notify about fallback to virtualized player, and remove option to disable (almost always required)",
-        "Improvement: PlaybackTracker failures are now handled less obstructively (no huge dialog)",
-        "Fix: Subtitles for users that use login for details",
-        "Fix: Cipher fix (x.reverse not defined)",
-        "Fix: Cipher fix (player caller)",
-        "Fix: Import subscriptions not showing all if account has memberships subscriptions"
-      ],
-      "286": [
-        "Fix: UMP Fix",
-        "Fix: Multi-author videos"
-      ],
-      "285": [
-        "HOTFIX: Fix playback tracker",
-        "Fix: Cipher fix",
-        "Fix: UMP Fixed (More testing required)"
-      ],
-      "284": [
-        "Fix: Cipher fix",
-        "Fix: UMP Fixed (More testing required)"
-      ],
-      "283": [
-        "Fix: Temporarily disable session client to fix UMP"
-      ],
-      "282": [
-        "Fix: Cipher mistake"
-      ],
-      "281": [
-        "Featured: Normalized audio labeling",
-        "Fix: Cipher fix",
-        "Fix: Fixed no viewcount, date, rating, channel thumbnails, subscriber count on video details using login"
-      ],
-      "280": [
-        "Featured: Normalized audio labeling"
-      ],
-      "279": [
-        "Improvement: Detect expired cookies",
-        "Improvement: Allow searching for scary topics",
-        "Improvement: Support opening urls with http instead of https schema",
-        "Improvement: Support opening urls with /v/{id} format"
-      ],
-      "278": [
-        "Fix: Cipher fix for new system"
-      ],
-      "277": [
-        "HotFix: Exception handling for new cipher system",
-        "Fix: Cipher fix",
-        "Improvement: New Cipher system, currently only used as fallback"
-      ],
-      "276": [
-        "Fix: Cipher fix",
-        "Improvement: New Cipher system, currently only used as fallback"
-      ],
-      "275": [
-        "Fix: Cipher fix",
-        "Fix: Race condition related to bgData fixed"
-      ],
-      "274": [
-        "HOTFIX: Fix ReturnYoutubeDislikes enabled causing video error",
-        "Feature: Shorts feed support",
-        "Feature: Historic/VOD live chat",
-        "Improvement: UMP compatibility changes",
-        "Improvement: Login now gives warning telling you to select a profile after login",
-        "Fix: Home trending fallback fixed and improved",
-        "Fix: Subtitles should work again",
-        "Fix: Remove old trending fallback setting",
-        "Fix: Possible fix 'YTSessionClient not initialized'"
-      ],
-      "273": [
+      "271": [
         "Feature: Shorts feed support",
         "Feature: Historic/VOD live chat",
         "Improvement: UMP compatibility changes",
@@ -10315,7 +10195,7 @@
         "Fix: Remove old trending fallback setting",
         "Fix: Possible fix 'YTSessionClient not initialized'"
       ],
-      "271": [
+      "273": [
         "Feature: Shorts feed support",
         "Feature: Historic/VOD live chat",
         "Improvement: UMP compatibility changes",
@@ -10325,157 +10205,277 @@
         "Fix: Remove old trending fallback setting",
         "Fix: Possible fix 'YTSessionClient not initialized'"
       ],
-      "270": [
-        "HOTFIX: Fix home page not parsing for some users",
-        "HOTFIX: Fix 'batch.POST is not a function'",
-        "Improvement: Improved performance for fetching video details (through Youtube session client)",
-        "Improvement: Improved compatibility for fetching video details (through Youtube session client)",
-        "Fix: Time/viewcount for recommendation videos"
+      "274": [
+        "HOTFIX: Fix ReturnYoutubeDislikes enabled causing video error",
+        "Feature: Shorts feed support",
+        "Feature: Historic/VOD live chat",
+        "Improvement: UMP compatibility changes",
+        "Improvement: Login now gives warning telling you to select a profile after login",
+        "Fix: Home trending fallback fixed and improved",
+        "Fix: Subtitles should work again",
+        "Fix: Remove old trending fallback setting",
+        "Fix: Possible fix 'YTSessionClient not initialized'"
       ],
-      "268": [
-        "Improvement: Improved performance for fetching video details (through Youtube session client)",
-        "Improvement: Improved compatibility for fetching video details (through Youtube session client)",
-        "Fix: Time/viewcount for recommendation videos"
-      ],
-      "266": [
-        "Improvement: Youtube Session client, may improve overall experience, but may still contain bugs"
-      ],
-      "265": [
-        "Improvement: New Youtube detail request flow with session retention (WIP)"
-      ],
-      "264": [
-        "Fix: Recommendations not showing",
-        "Fix: Fix scenario where Login Fallback would not work for some users (Video unavailable)",
-        "Improvement: Remove disfunctional setting"
-      ],
-      "262": [
+      "275": [
         "Fix: Cipher fix",
-        "Improvement: Backoff always if less than 5 seconds",
-        "Improvement: Reusing tokens if possible for backoff",
-        "Improvement: Reload once instead of twice",
-        "Improvement: isInlinePlaybackNoAd off by default"
+        "Fix: Race condition related to bgData fixed"
       ],
-      "261": [
-        "Improvement: Async support for generate calls",
-        "Fix: Fix issue where backoff streams would not load further",
-        "Fix: Livechat colors now use RGBA instead of ARGB (Needs newest app to view correctly)",
-        "Fix: Livestream raids now apply the isOutgoing properly, instead of everything being outgoing"
-      ],
-      "260": [
-        "FIX: Fix for undefined global functions (eg. hRx)"
-      ],
-      "259": [
-        "Logging: Adding additional logging for edgecase"
-      ],
-      "258": [
-        "Hotfix: Fix handling of invalid PlayerData from isInlinePlaybackNoAd after reload"
-      ],
-      "257": [
-        "Improvement: Fallback without setting if fails",
-        "Improvement: Hide certain messages behind verbose toasts"
-      ],
-      "256": [
-        "HOTFIX: Request optimalization",
-        "Improvement: Reduce/Resolve playback blocked"
-      ],
-      "255": [
-        "Improvement: Reduce/Resolve playback blocked"
-      ],
-      "254": [
-        "Improvement: Experimental UMP Backoff setting"
-      ],
-      "253": [
-        "Improvement: Attempted bypassing of blocked playback",
-        "Fixed: Short-only playlists are now loadable",
-        "Fixed: No author names for playlist search"
-      ],
-      "252": [
-        "Improvement: Detect Youtube messages"
-      ],
-      "251": [
-        "Fix: Fixed wrong offsets for UMP (affects downloaded videos)",
-        "Fix: Fixed UMP not being able to load if opened with a timestamp",
-        "Fix: Fixed planned videos not loading properly",
-        "Fix: Fixed playlists not appearing if using authentication for channels in some cases",
-        "Improvement: Error when comments are disabled"
-      ],
-      "250": [
-        "Fix: Consent form for search (with spaces)"
-      ],
-      "249": [
+      "276": [
         "Fix: Cipher fix",
-        "Improvement: Better recommendation author parsing"
+        "Improvement: New Cipher system, currently only used as fallback"
       ],
-      "248": [
-        "Fix: Potential cipher edgecase fix"
+      "277": [
+        "HotFix: Exception handling for new cipher system",
+        "Fix: Cipher fix",
+        "Improvement: New Cipher system, currently only used as fallback"
       ],
-      "247": [
-        "Fix: Better cipher reporting"
+      "278": [
+        "Fix: Cipher fix for new system"
       ],
-      "246": [
+      "279": [
+        "Improvement: Detect expired cookies",
+        "Improvement: Allow searching for scary topics",
+        "Improvement: Support opening urls with http instead of https schema",
+        "Improvement: Support opening urls with /v/{id} format"
+      ],
+      "280": [
+        "Featured: Normalized audio labeling"
+      ],
+      "281": [
+        "Featured: Normalized audio labeling",
+        "Fix: Cipher fix",
+        "Fix: Fixed no viewcount, date, rating, channel thumbnails, subscriber count on video details using login"
+      ],
+      "282": [
+        "Fix: Cipher mistake"
+      ],
+      "283": [
+        "Fix: Temporarily disable session client to fix UMP"
+      ],
+      "284": [
+        "Fix: Cipher fix",
+        "Fix: UMP Fixed (More testing required)"
+      ],
+      "285": [
+        "HOTFIX: Fix playback tracker",
+        "Fix: Cipher fix",
+        "Fix: UMP Fixed (More testing required)"
+      ],
+      "286": [
+        "Fix: UMP Fix",
+        "Fix: Multi-author videos"
+      ],
+      "287": [
+        "Improvement: No longer allow notify about fallback to virtualized player, and remove option to disable (almost always required)",
+        "Improvement: PlaybackTracker failures are now handled less obstructively (no huge dialog)",
+        "Fix: Subtitles for users that use login for details",
+        "Fix: Cipher fix (x.reverse not defined)",
+        "Fix: Cipher fix (player caller)",
+        "Fix: Import subscriptions not showing all if account has memberships subscriptions"
+      ],
+      "288": [
+        "Improvement: Automatic login fallback support for membership content",
+        "Fix: Cipher Fix"
+      ],
+      "289": [
+        "Fix: Cipher Fix",
+        "Improvement: Better STS error handling"
+      ],
+      "290": [
+        "Fix: Cipher Fix"
+      ],
+      "291": [
+        "Fix: Cipher Fix (Intl not defined)"
+      ],
+      "292": [
+        "Fix: Livestreams fixed using temporary alternative method"
+      ],
+      "293": [
+        "Fix: Cipher fix",
+        "Fix: Alternative livestream source in settings (off by default)"
+      ],
+      "294": [
+        "Fix: Cipher fix",
+        "Fix: POT for Livestreams"
+      ],
+      "295": [
         "Fix: Cipher fix"
       ],
-      "245": [
-        "Fix: Fix view counts for videos on home page for some users"
+      "296": [
+        "Improvement: Better video sources fallback (Android CDN)",
+        "Improvement: New Trending page for non-logged in users",
+        "Improvement: Removed some old redundant settings",
+        "Improvement: Variable POT now on by default (helps some users)"
       ],
-      "244": [
-        "Fix: Support additional video models (may fix home page for some)"
+      "297": [
+        "Improvement: Better video sources fallback (Android CDN)",
+        "Improvement: New Trending page for non-logged in users",
+        "Improvement: Removed some old redundant settings",
+        "Improvement: Variable POT now on by default (helps some users)",
+        "Fix: Recommendations not working for logged in users",
+        "Fix: Content-checked content showing as 'Unavailable'",
+        "Fix: Comment likes sometimes being 0"
       ],
-      "243": [
+      "298": [
+        "HOTFIX: Videos getting cut off at end",
+        "Improvement: Better video sources fallback (Android CDN)",
+        "Improvement: New Trending page for non-logged in users",
+        "Improvement: Removed some old redundant settings",
+        "Improvement: Variable POT now on by default (helps some users)",
+        "Fix: Recommendations not working for logged in users",
+        "Fix: Content-checked content showing as 'Unavailable'",
+        "Fix: Comment likes sometimes being 0"
+      ],
+      "299": [
+        "Feature: Support for private videos (if logged in)",
+        "Feature: DeArrow support",
+        "Improvement: Added language codes to subtitles",
+        "Fix: Cipher fix (hXO not defined)"
+      ],
+      "300": [
+        "Fix: DeArrow not working"
+      ],
+      "301": [
+        "Fix: Temporary workaround for UMP fallback"
+      ],
+      "305": [
+        "Fix: Added UMP combined stream support"
+      ],
+      "306": [
+        "Fix: More strict container compatibility check in UMP combined stream"
+      ],
+      "307": [
+        "Fix: Improved combined UMP stream support"
+      ],
+      "309": [
         "Fix: Cipher fix",
-        "Fix: Various possible 'runs' errors",
-        "Debug: Add additional logging for solving home issue"
+        "Fix: Playlist import for non-english languages",
+        "Improvement: Clearer error for logged in users with disabled login fallback"
       ],
-      "242": [
-        "Fix: Not all members only videos being filtered out",
-        "Fix: Certain playlist urls not being detected properly",
-        "Feature: Setting 'Allow Member Content' which will show channel member content (prefixed with [MEMBER])",
-        "Feature: Mark which audio track is the 'original' audio (will be used in upcoming Grayjay version)"
+      "310": [
+        "Improvement: Make combined UMP sources default",
+        "Improvement: Reload Required exception on UMP ReloadPlayerResponse request"
       ],
-      "241": [
+      "311": [
+        "Improvement: Reintroduce language selection for combined UMP",
+        "Improvement: Language now specified on combined video sources"
+      ],
+      "312": [
+        "Fix: Livestreams fixed using n-parameter challenge"
+      ],
+      "313": [
+        "Fix: Fixed Android sources on desktop"
+      ],
+      "314": [
         "Fix: Cipher fix"
       ],
-      "240": [
-        "Fix: Cipher fix (hopefully final one for a while)",
-        "Fix: Replacing & Unicode in author titles",
-        "Fix: 'simpleText' parsing failures fallback to empty values for now",
-        "Fix: Correct repo url"
+      "315": [
+        "Feature: In-Browser token generation (on supported versions)",
+        "Fix: UMP Fix"
       ],
-      "239": [
-        "Fix: More advanced cipher fixes"
+      "316": [
+        "Feature: In-Browser token generation now a setting"
       ],
-      "238": [
-        "Fix: Cipher edgecase"
+      "317": [
+        "Feature: In-Browser token generation now a setting",
+        "Feature: Advanced settings field are now hidden for supported runtimes behind a toggle"
       ],
-      "237": [
-        "Fix: Import Subscriptions on some accounts",
-        "Improvement: Playback tracker optimalization in certain scenarios",
-        "Improvement: Warning when toggling AV1 setting that it requires UMP for now"
+      "320": [
+        "Fix: Possible fix for cipher issue [3510b6ff]",
+        "Fix: Race condition with token generator initialization"
       ],
-      "236": [
-        "Fix Android 9 error (remove query hardware codecs)"
+      "321": [
+        "Fix: Possible fix for cipher issue [4e51e895]"
       ],
-      "235": [
-        "Fix Cipher"
+      "322": [
+        "Fix: Possible initial UMP stream fetching"
       ],
-      "234": [
-        "Improvement: Filter member-only videos from channel contents",
-        "Improvement: Possible UMP redirect fix"
+      "324": [
+        "Fix: Temporarily disable Browser Botguard for legacy solution till better fix"
       ],
-      "233": [
-        "Minor hotfix"
+      "328": [
+        "Fix: Browser Botguard re-enabled"
       ],
-      "232": [
-        "Feature: Verify IOS Playback setting (true by default), checks if iOS sources can be played beyond 60 seconds, or fallback to others.",
-        "Feature: Channel shorts fetching support (may require app update to view new channel tab)"
+      "329": [
+        "Fix: Cipher fix"
       ],
-      "231": [
-        "Fix: UMP failing on initial load"
+      "330": [
+        "Fix: Adding remote solver for n ciphers"
       ],
-      "227": [
-        "Feature: Opt-in AV1 support",
-        "Feature: UMP MP4 support (fixes no audio or only 360p for older videos)",
-        "Improve: UMP Disconnect toasts now optional"
+      "332": [
+        "Fix: Added solutions"
+      ],
+      "333": [
+        "Fix: Android Sources"
+      ],
+      "334": [
+        "Fix: Possible Audio noise fix",
+        "Fix: DeArrow search fix",
+        "Fix: Shows should now work (limited metadata)",
+        "Improvement: Change no comments error"
+      ],
+      "335": [
+        "Fix: Removed legacy code"
+      ],
+      "336": [
+        "Fix: Sig solver optional"
+      ],
+      "337": [
+        "Fix: Fixed issue causing date to be empty and videos missing from channel"
+      ],
+      "338": [
+        "Fix: Membership video detection from VideoLockupModel"
+      ],
+      "339": [
+        "Fix: Added Android VR sources",
+        "Fix: Shorts work again",
+        "Fix: Membership video detection"
+      ],
+      "340": [
+        "Fix: Membership first video detection"
+      ],
+      "341": [
+        "Fix: LIVE badge for livestream videos",
+        "Fix: Loading playlists"
+      ],
+      "342": [
+        "Fix: Channel livestreams not showing",
+        "Fix: Planned badges not always showing",
+        "Fix: Live stream auto-reloading (when waiting for streamer)"
+      ],
+      "343": [
+        "Fix: Live streams"
+      ],
+      "353": [
+        "Feature: Native UMP"
+      ],
+      "354": [
+        "Fix: PeekChannelResults fix for phones"
+      ],
+      "356": [
+        "Fix: Channels not showing new videos (when premiere is there)"
+      ],
+      "358": [
+        "Feature/Fix: VisionOS streaming sources support"
+      ],
+      "359": [
+        "Fix: Shorts fix",
+        "Feature: Optional setting to show AI disclosure when opening AI video."
+      ],
+      "360": [
+        "Fix: Live stream fix for some streams"
+      ],
+      "361": [
+        "Others: Add additional logging for certain issues"
+      ],
+      "364": [
+        "Fix: Various methods (getHome/getPlaylist/getChannel etc)"
+      ],
+      "365": [
+        "Fix: Force UMP properly respected"
+      ],
+      "366": [
+        "Fix: View counts on channels"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/Youtube/YoutubeConfig.json"
@@ -10938,292 +10938,144 @@
     ],
     "primaryClaimFieldType": 1,
     "changelog": {
-      "371": [
-        "Feature: SamsungTV sources support",
-        "Feature: Batch source-checking, speed up video loads",
-        "Fix: N decryption fix"
+      "227": [
+        "Feature: Opt-in AV1 support",
+        "Feature: UMP MP4 support (fixes no audio or only 360p for older videos)",
+        "Improve: UMP Disconnect toasts now optional"
       ],
-      "369": [
-        "Fix: N decryption fix"
+      "231": [
+        "Fix: UMP failing on initial load"
       ],
-      "368": [
-        "Feature: SamsungTV sources support"
+      "232": [
+        "Feature: Verify IOS Playback setting (true by default), checks if iOS sources can be played beyond 60 seconds, or fallback to others.",
+        "Feature: Channel shorts fetching support (may require app update to view new channel tab)"
       ],
-      "367": [
-        "Feature: Seek Thumbnail support"
+      "233": [
+        "Minor hotfix"
       ],
-      "366": [
-        "Fix: View counts on channels"
+      "234": [
+        "Improvement: Filter member-only videos from channel contents",
+        "Improvement: Possible UMP redirect fix"
       ],
-      "365": [
-        "Fix: Force UMP properly respected"
+      "235": [
+        "Fix Cipher"
       ],
-      "364": [
-        "Fix: Various methods (getHome/getPlaylist/getChannel etc)"
+      "236": [
+        "Fix Android 9 error (remove query hardware codecs)"
       ],
-      "363": [
-        "Others: Fix parameter pass"
+      "237": [
+        "Fix: Import Subscriptions on some accounts",
+        "Improvement: Playback tracker optimalization in certain scenarios",
+        "Improvement: Warning when toggling AV1 setting that it requires UMP for now"
       ],
-      "362": [
-        "Others: Additional logging"
+      "238": [
+        "Fix: Cipher edgecase"
       ],
-      "361": [
-        "Others: Add additional logging for certain issues"
+      "239": [
+        "Fix: More advanced cipher fixes"
       ],
-      "360": [
-        "Fix: Live stream fix for some streams"
+      "244": [
+        "Fix: Support additional video models (may fix home page for some)"
       ],
-      "359": [
-        "Fix: Shorts fix",
-        "Feature: Optional setting to show AI disclosure when opening AI video."
+      "248": [
+        "Fix: Potential cipher edgecase fix"
       ],
-      "358": [
-        "Feature/Fix: VisionOS streaming sources support"
-      ],
-      "356": [
-        "Fix: Channels not showing new videos (when premiere is there)"
-      ],
-      "354": [
-        "Fix: PeekChannelResults fix for phones"
-      ],
-      "353": [
-        "Feature: Native UMP"
-      ],
-      "343": [
-        "Fix: Live streams"
-      ],
-      "342": [
-        "Fix: Channel livestreams not showing",
-        "Fix: Planned badges not always showing",
-        "Fix: Live stream auto-reloading (when waiting for streamer)"
-      ],
-      "341": [
-        "Fix: LIVE badge for livestream videos",
-        "Fix: Loading playlists"
-      ],
-      "340": [
-        "Fix: Membership first video detection"
-      ],
-      "339": [
-        "Fix: Added Android VR sources",
-        "Fix: Shorts work again",
-        "Fix: Membership video detection"
-      ],
-      "338": [
-        "Fix: Membership video detection from VideoLockupModel"
-      ],
-      "337": [
-        "Fix: Fixed issue causing date to be empty and videos missing from channel"
-      ],
-      "336": [
-        "Fix: Sig solver optional"
-      ],
-      "335": [
-        "Fix: Removed legacy code"
-      ],
-      "334": [
-        "Fix: Possible Audio noise fix",
-        "Fix: DeArrow search fix",
-        "Fix: Shows should now work (limited metadata)",
-        "Improvement: Change no comments error"
-      ],
-      "333": [
-        "Fix: Android Sources"
-      ],
-      "332": [
-        "Fix: Added solutions"
-      ],
-      "330": [
-        "Fix: Adding remote solver for n ciphers"
-      ],
-      "329": [
-        "Fix: Cipher fix"
-      ],
-      "328": [
-        "Fix: Browser Botguard re-enabled"
-      ],
-      "324": [
-        "Fix: Temporarily disable Browser Botguard for legacy solution till better fix"
-      ],
-      "322": [
-        "Fix: Possible initial UMP stream fetching"
-      ],
-      "321": [
-        "Fix: Possible fix for cipher issue [4e51e895]"
-      ],
-      "320": [
-        "Fix: Possible fix for cipher issue [3510b6ff]",
-        "Fix: Race condition with token generator initialization"
-      ],
-      "318": [
-        "Fix: Possible fix for cipher issue [5d93cfdb]"
-      ],
-      "317": [
-        "Feature: In-Browser token generation now a setting",
-        "Feature: Advanced settings field are now hidden for supported runtimes behind a toggle"
-      ],
-      "316": [
-        "Feature: In-Browser token generation now a setting"
-      ],
-      "315": [
-        "Feature: In-Browser token generation (on supported versions)",
-        "Fix: UMP Fix"
-      ],
-      "314": [
-        "Fix: Cipher fix"
-      ],
-      "313": [
-        "Fix: Fixed Android sources on desktop"
-      ],
-      "312": [
-        "Fix: Livestreams fixed using n-parameter challenge"
-      ],
-      "311": [
-        "Improvement: Reintroduce language selection for combined UMP",
-        "Improvement: Language now specified on combined video sources"
-      ],
-      "310": [
-        "Improvement: Make combined UMP sources default",
-        "Improvement: Reload Required exception on UMP ReloadPlayerResponse request"
-      ],
-      "309": [
+      "249": [
         "Fix: Cipher fix",
-        "Fix: Playlist import for non-english languages",
-        "Improvement: Clearer error for logged in users with disabled login fallback"
+        "Improvement: Better recommendation author parsing"
       ],
-      "307": [
-        "Fix: Improved combined UMP stream support"
+      "250": [
+        "Fix: Consent form for search (with spaces)"
       ],
-      "306": [
-        "Fix: More strict container compatibility check in UMP combined stream"
+      "251": [
+        "Fix: Fixed wrong offsets for UMP (affects downloaded videos)",
+        "Fix: Fixed UMP not being able to load if opened with a timestamp",
+        "Fix: Fixed planned videos not loading properly",
+        "Fix: Fixed playlists not appearing if using authentication for channels in some cases",
+        "Improvement: Error when comments are disabled"
       ],
-      "305": [
-        "Fix: Added UMP combined stream support"
+      "252": [
+        "Improvement: Detect Youtube messages"
       ],
-      "301": [
-        "Fix: Temporary workaround for UMP fallback"
+      "253": [
+        "Improvement: Attempted bypassing of blocked playback",
+        "Fixed: Short-only playlists are now loadable",
+        "Fixed: No author names for playlist search"
       ],
-      "300": [
-        "Fix: DeArrow not working"
+      "254": [
+        "Improvement: Experimental UMP Backoff setting"
       ],
-      "299": [
-        "Feature: Support for private videos (if logged in)",
-        "Feature: DeArrow support",
-        "Improvement: Added language codes to subtitles",
-        "Fix: Cipher fix (hXO not defined)"
+      "255": [
+        "Improvement: Reduce/Resolve playback blocked"
       ],
-      "298": [
-        "HOTFIX: Videos getting cut off at end",
-        "Improvement: Better video sources fallback (Android CDN)",
-        "Improvement: New Trending page for non-logged in users",
-        "Improvement: Removed some old redundant settings",
-        "Improvement: Variable POT now on by default (helps some users)",
-        "Fix: Recommendations not working for logged in users",
-        "Fix: Content-checked content showing as 'Unavailable'",
-        "Fix: Comment likes sometimes being 0"
+      "256": [
+        "HOTFIX: Request optimalization",
+        "Improvement: Reduce/Resolve playback blocked"
       ],
-      "297": [
-        "Improvement: Better video sources fallback (Android CDN)",
-        "Improvement: New Trending page for non-logged in users",
-        "Improvement: Removed some old redundant settings",
-        "Improvement: Variable POT now on by default (helps some users)",
-        "Fix: Recommendations not working for logged in users",
-        "Fix: Content-checked content showing as 'Unavailable'",
-        "Fix: Comment likes sometimes being 0"
+      "257": [
+        "Improvement: Fallback without setting if fails",
+        "Improvement: Hide certain messages behind verbose toasts"
       ],
-      "296": [
-        "Improvement: Better video sources fallback (Android CDN)",
-        "Improvement: New Trending page for non-logged in users",
-        "Improvement: Removed some old redundant settings",
-        "Improvement: Variable POT now on by default (helps some users)"
+      "258": [
+        "Hotfix: Fix handling of invalid PlayerData from isInlinePlaybackNoAd after reload"
       ],
-      "295": [
-        "Fix: Cipher fix"
+      "259": [
+        "Logging: Adding additional logging for edgecase"
       ],
-      "294": [
+      "260": [
+        "FIX: Fix for undefined global functions (eg. hRx)"
+      ],
+      "261": [
+        "Improvement: Async support for generate calls",
+        "Fix: Fix issue where backoff streams would not load further",
+        "Fix: Livechat colors now use RGBA instead of ARGB (Needs newest app to view correctly)",
+        "Fix: Livestream raids now apply the isOutgoing properly, instead of everything being outgoing"
+      ],
+      "262": [
         "Fix: Cipher fix",
-        "Fix: POT for Livestreams"
+        "Improvement: Backoff always if less than 5 seconds",
+        "Improvement: Reusing tokens if possible for backoff",
+        "Improvement: Reload once instead of twice",
+        "Improvement: isInlinePlaybackNoAd off by default"
       ],
-      "293": [
-        "Fix: Cipher fix",
-        "Fix: Alternative livestream source in settings (off by default)"
+      "265": [
+        "Improvement: New Youtube detail request flow with session retention (WIP)"
       ],
-      "292": [
-        "Fix: Livestreams fixed using temporary alternative method"
+      "266": [
+        "Improvement: Youtube Session client, may improve overall experience, but may still contain bugs"
       ],
-      "291": [
-        "Fix: Cipher Fix (Intl not defined)"
+      "267": [
+        "Improvement: Improved performance for fetching video details (through Youtube session client)",
+        "Improvement: Improved compatibility for fetching video details (through Youtube session client)"
       ],
-      "290": [
-        "Fix: Cipher Fix"
+      "268": [
+        "Improvement: Improved performance for fetching video details (through Youtube session client)",
+        "Improvement: Improved compatibility for fetching video details (through Youtube session client)",
+        "Fix: Time/viewcount for recommendation videos"
       ],
-      "289": [
-        "Fix: Cipher Fix",
-        "Improvement: Better STS error handling"
+      "269": [
+        "HOTFIX: Fix 'batch.POST is not a function'",
+        "Improvement: Improved performance for fetching video details (through Youtube session client)",
+        "Improvement: Improved compatibility for fetching video details (through Youtube session client)",
+        "Fix: Time/viewcount for recommendation videos"
       ],
-      "288": [
-        "Improvement: Automatic login fallback support for membership content",
-        "Fix: Cipher Fix"
+      "270": [
+        "HOTFIX: Fix home page not parsing for some users",
+        "HOTFIX: Fix 'batch.POST is not a function'",
+        "Improvement: Improved performance for fetching video details (through Youtube session client)",
+        "Improvement: Improved compatibility for fetching video details (through Youtube session client)",
+        "Fix: Time/viewcount for recommendation videos"
       ],
-      "287": [
-        "Improvement: No longer allow notify about fallback to virtualized player, and remove option to disable (almost always required)",
-        "Improvement: PlaybackTracker failures are now handled less obstructively (no huge dialog)",
-        "Fix: Subtitles for users that use login for details",
-        "Fix: Cipher fix (x.reverse not defined)",
-        "Fix: Cipher fix (player caller)",
-        "Fix: Import subscriptions not showing all if account has memberships subscriptions"
+      "271": [
+        "Feature: Shorts feed support",
+        "Feature: Historic/VOD live chat",
+        "Improvement: UMP compatibility changes",
+        "Fix: Home trending fallback fixed and improved",
+        "Fix: Subtitles should work again",
+        "Fix: Remove old trending fallback setting",
+        "Fix: Possible fix 'YTSessionClient not initialized'"
       ],
-      "286": [
-        "Fix: UMP Fix",
-        "Fix: Multi-author videos"
-      ],
-      "285": [
-        "HOTFIX: Fix playback tracker",
-        "Fix: Cipher fix",
-        "Fix: UMP Fixed (More testing required)"
-      ],
-      "284": [
-        "Fix: Cipher fix",
-        "Fix: UMP Fixed (More testing required)"
-      ],
-      "283": [
-        "Fix: Temporarily disable session client to fix UMP"
-      ],
-      "282": [
-        "Fix: Cipher fix"
-      ],
-      "281": [
-        "Featured: Normalized audio labeling",
-        "Fix: Cipher fix",
-        "Fix: Fixed no viewcount, date, rating, channel thumbnails, subscriber count on video details using login"
-      ],
-      "280": [
-        "Featured: Normalized audio labeling"
-      ],
-      "279": [
-        "Improvement: Detect expired cookies",
-        "Improvement: Allow searching for scary topics",
-        "Improvement: Support opening urls with http instead of https schema",
-        "Improvement: Support opening urls with /v/{id} format"
-      ],
-      "278": [
-        "Fix: Cipher fix for new system"
-      ],
-      "277": [
-        "HotFix: Exception handling for new cipher system",
-        "Fix: Cipher fix",
-        "Improvement: New Cipher system, currently only used as fallback"
-      ],
-      "276": [
-        "Fix: Cipher fix",
-        "Improvement: New Cipher system, currently only used as fallback"
-      ],
-      "275": [
-        "Fix: Cipher fix",
-        "Fix: Race condition related to bgData fixed"
-      ],
-      "274": [
-        "HOTFIX: Fix ReturnYoutubeDislikes enabled causing video error",
+      "272": [
         "Feature: Shorts feed support",
         "Feature: Historic/VOD live chat",
         "Improvement: UMP compatibility changes",
@@ -11243,7 +11095,8 @@
         "Fix: Remove old trending fallback setting",
         "Fix: Possible fix 'YTSessionClient not initialized'"
       ],
-      "272": [
+      "274": [
+        "HOTFIX: Fix ReturnYoutubeDislikes enabled causing video error",
         "Feature: Shorts feed support",
         "Feature: Historic/VOD live chat",
         "Improvement: UMP compatibility changes",
@@ -11253,142 +11106,289 @@
         "Fix: Remove old trending fallback setting",
         "Fix: Possible fix 'YTSessionClient not initialized'"
       ],
-      "271": [
-        "Feature: Shorts feed support",
-        "Feature: Historic/VOD live chat",
-        "Improvement: UMP compatibility changes",
-        "Fix: Home trending fallback fixed and improved",
-        "Fix: Subtitles should work again",
-        "Fix: Remove old trending fallback setting",
-        "Fix: Possible fix 'YTSessionClient not initialized'"
-      ],
-      "270": [
-        "HOTFIX: Fix home page not parsing for some users",
-        "HOTFIX: Fix 'batch.POST is not a function'",
-        "Improvement: Improved performance for fetching video details (through Youtube session client)",
-        "Improvement: Improved compatibility for fetching video details (through Youtube session client)",
-        "Fix: Time/viewcount for recommendation videos"
-      ],
-      "269": [
-        "HOTFIX: Fix 'batch.POST is not a function'",
-        "Improvement: Improved performance for fetching video details (through Youtube session client)",
-        "Improvement: Improved compatibility for fetching video details (through Youtube session client)",
-        "Fix: Time/viewcount for recommendation videos"
-      ],
-      "268": [
-        "Improvement: Improved performance for fetching video details (through Youtube session client)",
-        "Improvement: Improved compatibility for fetching video details (through Youtube session client)",
-        "Fix: Time/viewcount for recommendation videos"
-      ],
-      "267": [
-        "Improvement: Improved performance for fetching video details (through Youtube session client)",
-        "Improvement: Improved compatibility for fetching video details (through Youtube session client)"
-      ],
-      "266": [
-        "Improvement: Youtube Session client, may improve overall experience, but may still contain bugs"
-      ],
-      "265": [
-        "Improvement: New Youtube detail request flow with session retention (WIP)"
-      ],
-      "262": [
+      "275": [
         "Fix: Cipher fix",
-        "Improvement: Backoff always if less than 5 seconds",
-        "Improvement: Reusing tokens if possible for backoff",
-        "Improvement: Reload once instead of twice",
-        "Improvement: isInlinePlaybackNoAd off by default"
+        "Fix: Race condition related to bgData fixed"
       ],
-      "261": [
-        "Improvement: Async support for generate calls",
-        "Fix: Fix issue where backoff streams would not load further",
-        "Fix: Livechat colors now use RGBA instead of ARGB (Needs newest app to view correctly)",
-        "Fix: Livestream raids now apply the isOutgoing properly, instead of everything being outgoing"
-      ],
-      "260": [
-        "FIX: Fix for undefined global functions (eg. hRx)"
-      ],
-      "259": [
-        "Logging: Adding additional logging for edgecase"
-      ],
-      "258": [
-        "Hotfix: Fix handling of invalid PlayerData from isInlinePlaybackNoAd after reload"
-      ],
-      "257": [
-        "Improvement: Fallback without setting if fails",
-        "Improvement: Hide certain messages behind verbose toasts"
-      ],
-      "256": [
-        "HOTFIX: Request optimalization",
-        "Improvement: Reduce/Resolve playback blocked"
-      ],
-      "255": [
-        "Improvement: Reduce/Resolve playback blocked"
-      ],
-      "254": [
-        "Improvement: Experimental UMP Backoff setting"
-      ],
-      "253": [
-        "Improvement: Attempted bypassing of blocked playback",
-        "Fixed: Short-only playlists are now loadable",
-        "Fixed: No author names for playlist search"
-      ],
-      "252": [
-        "Improvement: Detect Youtube messages"
-      ],
-      "251": [
-        "Fix: Fixed wrong offsets for UMP (affects downloaded videos)",
-        "Fix: Fixed UMP not being able to load if opened with a timestamp",
-        "Fix: Fixed planned videos not loading properly",
-        "Fix: Fixed playlists not appearing if using authentication for channels in some cases",
-        "Improvement: Error when comments are disabled"
-      ],
-      "250": [
-        "Fix: Consent form for search (with spaces)"
-      ],
-      "249": [
+      "276": [
         "Fix: Cipher fix",
-        "Improvement: Better recommendation author parsing"
+        "Improvement: New Cipher system, currently only used as fallback"
       ],
-      "248": [
-        "Fix: Potential cipher edgecase fix"
+      "277": [
+        "HotFix: Exception handling for new cipher system",
+        "Fix: Cipher fix",
+        "Improvement: New Cipher system, currently only used as fallback"
       ],
-      "244": [
-        "Fix: Support additional video models (may fix home page for some)"
+      "278": [
+        "Fix: Cipher fix for new system"
       ],
-      "239": [
-        "Fix: More advanced cipher fixes"
+      "279": [
+        "Improvement: Detect expired cookies",
+        "Improvement: Allow searching for scary topics",
+        "Improvement: Support opening urls with http instead of https schema",
+        "Improvement: Support opening urls with /v/{id} format"
       ],
-      "238": [
-        "Fix: Cipher edgecase"
+      "280": [
+        "Featured: Normalized audio labeling"
       ],
-      "237": [
-        "Fix: Import Subscriptions on some accounts",
-        "Improvement: Playback tracker optimalization in certain scenarios",
-        "Improvement: Warning when toggling AV1 setting that it requires UMP for now"
+      "281": [
+        "Featured: Normalized audio labeling",
+        "Fix: Cipher fix",
+        "Fix: Fixed no viewcount, date, rating, channel thumbnails, subscriber count on video details using login"
       ],
-      "236": [
-        "Fix Android 9 error (remove query hardware codecs)"
+      "282": [
+        "Fix: Cipher fix"
       ],
-      "235": [
-        "Fix Cipher"
+      "283": [
+        "Fix: Temporarily disable session client to fix UMP"
       ],
-      "234": [
-        "Improvement: Filter member-only videos from channel contents",
-        "Improvement: Possible UMP redirect fix"
+      "284": [
+        "Fix: Cipher fix",
+        "Fix: UMP Fixed (More testing required)"
       ],
-      "233": [
-        "Minor hotfix"
+      "285": [
+        "HOTFIX: Fix playback tracker",
+        "Fix: Cipher fix",
+        "Fix: UMP Fixed (More testing required)"
       ],
-      "232": [
-        "Feature: Verify IOS Playback setting (true by default), checks if iOS sources can be played beyond 60 seconds, or fallback to others.",
-        "Feature: Channel shorts fetching support (may require app update to view new channel tab)"
+      "286": [
+        "Fix: UMP Fix",
+        "Fix: Multi-author videos"
       ],
-      "231": [
-        "Fix: UMP failing on initial load"
+      "287": [
+        "Improvement: No longer allow notify about fallback to virtualized player, and remove option to disable (almost always required)",
+        "Improvement: PlaybackTracker failures are now handled less obstructively (no huge dialog)",
+        "Fix: Subtitles for users that use login for details",
+        "Fix: Cipher fix (x.reverse not defined)",
+        "Fix: Cipher fix (player caller)",
+        "Fix: Import subscriptions not showing all if account has memberships subscriptions"
       ],
-      "227": [
-        "Feature: Opt-in AV1 support",
-        "Feature: UMP MP4 support (fixes no audio or only 360p for older videos)",
-        "Improve: UMP Disconnect toasts now optional"
+      "288": [
+        "Improvement: Automatic login fallback support for membership content",
+        "Fix: Cipher Fix"
+      ],
+      "289": [
+        "Fix: Cipher Fix",
+        "Improvement: Better STS error handling"
+      ],
+      "290": [
+        "Fix: Cipher Fix"
+      ],
+      "291": [
+        "Fix: Cipher Fix (Intl not defined)"
+      ],
+      "292": [
+        "Fix: Livestreams fixed using temporary alternative method"
+      ],
+      "293": [
+        "Fix: Cipher fix",
+        "Fix: Alternative livestream source in settings (off by default)"
+      ],
+      "294": [
+        "Fix: Cipher fix",
+        "Fix: POT for Livestreams"
+      ],
+      "295": [
+        "Fix: Cipher fix"
+      ],
+      "296": [
+        "Improvement: Better video sources fallback (Android CDN)",
+        "Improvement: New Trending page for non-logged in users",
+        "Improvement: Removed some old redundant settings",
+        "Improvement: Variable POT now on by default (helps some users)"
+      ],
+      "297": [
+        "Improvement: Better video sources fallback (Android CDN)",
+        "Improvement: New Trending page for non-logged in users",
+        "Improvement: Removed some old redundant settings",
+        "Improvement: Variable POT now on by default (helps some users)",
+        "Fix: Recommendations not working for logged in users",
+        "Fix: Content-checked content showing as 'Unavailable'",
+        "Fix: Comment likes sometimes being 0"
+      ],
+      "298": [
+        "HOTFIX: Videos getting cut off at end",
+        "Improvement: Better video sources fallback (Android CDN)",
+        "Improvement: New Trending page for non-logged in users",
+        "Improvement: Removed some old redundant settings",
+        "Improvement: Variable POT now on by default (helps some users)",
+        "Fix: Recommendations not working for logged in users",
+        "Fix: Content-checked content showing as 'Unavailable'",
+        "Fix: Comment likes sometimes being 0"
+      ],
+      "299": [
+        "Feature: Support for private videos (if logged in)",
+        "Feature: DeArrow support",
+        "Improvement: Added language codes to subtitles",
+        "Fix: Cipher fix (hXO not defined)"
+      ],
+      "300": [
+        "Fix: DeArrow not working"
+      ],
+      "301": [
+        "Fix: Temporary workaround for UMP fallback"
+      ],
+      "305": [
+        "Fix: Added UMP combined stream support"
+      ],
+      "306": [
+        "Fix: More strict container compatibility check in UMP combined stream"
+      ],
+      "307": [
+        "Fix: Improved combined UMP stream support"
+      ],
+      "309": [
+        "Fix: Cipher fix",
+        "Fix: Playlist import for non-english languages",
+        "Improvement: Clearer error for logged in users with disabled login fallback"
+      ],
+      "310": [
+        "Improvement: Make combined UMP sources default",
+        "Improvement: Reload Required exception on UMP ReloadPlayerResponse request"
+      ],
+      "311": [
+        "Improvement: Reintroduce language selection for combined UMP",
+        "Improvement: Language now specified on combined video sources"
+      ],
+      "312": [
+        "Fix: Livestreams fixed using n-parameter challenge"
+      ],
+      "313": [
+        "Fix: Fixed Android sources on desktop"
+      ],
+      "314": [
+        "Fix: Cipher fix"
+      ],
+      "315": [
+        "Feature: In-Browser token generation (on supported versions)",
+        "Fix: UMP Fix"
+      ],
+      "316": [
+        "Feature: In-Browser token generation now a setting"
+      ],
+      "317": [
+        "Feature: In-Browser token generation now a setting",
+        "Feature: Advanced settings field are now hidden for supported runtimes behind a toggle"
+      ],
+      "318": [
+        "Fix: Possible fix for cipher issue [5d93cfdb]"
+      ],
+      "320": [
+        "Fix: Possible fix for cipher issue [3510b6ff]",
+        "Fix: Race condition with token generator initialization"
+      ],
+      "321": [
+        "Fix: Possible fix for cipher issue [4e51e895]"
+      ],
+      "322": [
+        "Fix: Possible initial UMP stream fetching"
+      ],
+      "324": [
+        "Fix: Temporarily disable Browser Botguard for legacy solution till better fix"
+      ],
+      "328": [
+        "Fix: Browser Botguard re-enabled"
+      ],
+      "329": [
+        "Fix: Cipher fix"
+      ],
+      "330": [
+        "Fix: Adding remote solver for n ciphers"
+      ],
+      "332": [
+        "Fix: Added solutions"
+      ],
+      "333": [
+        "Fix: Android Sources"
+      ],
+      "334": [
+        "Fix: Possible Audio noise fix",
+        "Fix: DeArrow search fix",
+        "Fix: Shows should now work (limited metadata)",
+        "Improvement: Change no comments error"
+      ],
+      "335": [
+        "Fix: Removed legacy code"
+      ],
+      "336": [
+        "Fix: Sig solver optional"
+      ],
+      "337": [
+        "Fix: Fixed issue causing date to be empty and videos missing from channel"
+      ],
+      "338": [
+        "Fix: Membership video detection from VideoLockupModel"
+      ],
+      "339": [
+        "Fix: Added Android VR sources",
+        "Fix: Shorts work again",
+        "Fix: Membership video detection"
+      ],
+      "340": [
+        "Fix: Membership first video detection"
+      ],
+      "341": [
+        "Fix: LIVE badge for livestream videos",
+        "Fix: Loading playlists"
+      ],
+      "342": [
+        "Fix: Channel livestreams not showing",
+        "Fix: Planned badges not always showing",
+        "Fix: Live stream auto-reloading (when waiting for streamer)"
+      ],
+      "343": [
+        "Fix: Live streams"
+      ],
+      "353": [
+        "Feature: Native UMP"
+      ],
+      "354": [
+        "Fix: PeekChannelResults fix for phones"
+      ],
+      "356": [
+        "Fix: Channels not showing new videos (when premiere is there)"
+      ],
+      "358": [
+        "Feature/Fix: VisionOS streaming sources support"
+      ],
+      "359": [
+        "Fix: Shorts fix",
+        "Feature: Optional setting to show AI disclosure when opening AI video."
+      ],
+      "360": [
+        "Fix: Live stream fix for some streams"
+      ],
+      "361": [
+        "Others: Add additional logging for certain issues"
+      ],
+      "362": [
+        "Others: Additional logging"
+      ],
+      "363": [
+        "Others: Fix parameter pass"
+      ],
+      "364": [
+        "Fix: Various methods (getHome/getPlaylist/getChannel etc)"
+      ],
+      "365": [
+        "Fix: Force UMP properly respected"
+      ],
+      "366": [
+        "Fix: View counts on channels"
+      ],
+      "367": [
+        "Feature: Seek Thumbnail support"
+      ],
+      "368": [
+        "Feature: SamsungTV sources support"
+      ],
+      "369": [
+        "Fix: N decryption fix"
+      ],
+      "371": [
+        "Feature: SamsungTV sources support",
+        "Feature: Batch source-checking, speed up video loads",
+        "Fix: N decryption fix"
       ]
     },
     "_installUrl": "https://plugins.grayjay.app/YoutubeUnstable/YoutubeConfig.json",
@@ -12144,5 +12144,63 @@
     },
     "_installUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-xboxclips/raw/branch/main/grayjay-plugin-xboxclips-config.json",
     "_tags": []
+  },
+  {
+    "name": "kshow123",
+    "platformUrl": "https://kshow123.tv",
+    "description": "KShow123 plugin fro GrayJay.",
+    "author": "Nox",
+    "authorUrl": "",
+    "sourceUrl": "https://github.com/releases/latest/download/config.json",
+    "scriptUrl": "./script.js",
+    "repositoryUrl": "https://github.com",
+    "version": 1,
+    "iconUrl": "https://kshow123.tv/favicon.ico",
+    "id": "8eafa868-6116-4484-b3e5-c34366b79a04",
+    "scriptSignature": "c0Yd4AOhbS2gesv78c0hUG6ryEC9JFw1Q8BY6DxAdvq8I+xolbI59vrfexAGC93m5153Iv7Fdi0VRcy7VqD2UbPDkxWGi5AkVs9uEAKQY04rUfVTXJViuvJIqEEXWYmvQxmb3f0MZglZdSqLoh0+9CZZgJf15A0ddaZhnU4f/02GqySOI8IHZUSmqSsfBkHj1QYwawz6DwoVTGmqZ5btk93bsnHlD+MRu0BvoMmlnwysdz7FM6Qf0GBy7XugC3NAXHMOK/zyVRS3rSlcBJeRT2ezmtwnxkPK8ZxfzFE+1RpirfB+Qpt6tMaYsqlQwsqLULWg0p+0/1QAlmowpGp7XA==",
+    "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyJmSDZN42N5rGYiOQIFSdEa/iCdcriKN38JZPDNlw+dkeiqHlsj9OQswgyGQkDjzDUrCY+Rd37PK7vPubvUPyjFEDb3XGuCYA7fxwA4kMSM5cbABJgZ5DuwK2aLEssH8h1y2Ctj8wBFsZOGICRkDJamUgvp7ky1NZXTUBrPo9KYkzcjW7ZYZO73r1bB6J443FK4/FbRNf8FkWb+gCp9di8zTrsgW2A1xJrd7JjZ/zzyV7ZUtzDKrQnZV5ffq2vdj4GC7KJJ30pSggtpuVtMr+JfqJEai3VVCLxer0crbmpwsb+aUE/6azUR0QBDlbE/erQntDYQGlTXly2cD73jV0QIDAQAB",
+    "packages": [
+      "Http",
+      "DOMParser"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": false,
+    "allowUrls": [
+      "kshow123.tv",
+      ".kshow123.tv",
+      "api.kshow123.tv",
+      ".api.kshow123.tv"
+    ],
+    "supportedClaimTypes": [
+      27
+    ],
+    "settings": [
+      {
+        "variable": "baseUrl",
+        "name": "API Server",
+        "description": "API server endpoint",
+        "type": "Dropdown",
+        "default": "https://api.kshow123.tv",
+        "options": [
+          "https://api.kshow123.tv"
+        ]
+      },
+      {
+        "variable": "enableDebugLogging",
+        "name": "Enable Debug Logging",
+        "description": "Enable detailed logging for debugging purposes",
+        "type": "Boolean",
+        "default": "false"
+      }
+    ],
+    "changelog": {
+      "1": [
+        "Initial release"
+      ]
+    },
+    "constants": {
+      "defaultHeaders": {}
+    },
+    "_installUrl": "https://github.com/releases/latest/download/config.json"
   }
 ]
