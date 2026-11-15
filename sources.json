@@ -277,12 +277,12 @@
     "sourceUrl": "https://plugins.grayjay.app/ApplePodcasts/ApplePodcastsConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/apple-podcasts",
     "scriptUrl": "./ApplePodcastsScript.js",
-    "version": 18,
+    "version": 19,
     "iconUrl": "./ApplePodcastsIcon.png",
     "authorUrl": "https://futo.tech",
     "id": "89ae4889-0420-4d16-ad6c-19c776b28f99",
     "subscriptionRateLimit": 10,
-    "scriptSignature": "gbRwIPIdENjfOZbVlmHmTRzQmPZOkG7YCswjHvMXSNAgIhqiQw7G0udofnUn6wbifbGKp26n1CBS4ErfGkQgGlaxD0EXXdKizb0DudMR4JGDSkJIpMcELbl0/b0Ilx6gn3TBnRLWiatQpvIgk5jMGSnPQBQrxQNTsq4kxJyDcGpRQB7NToo6xxeRPLT/kLTZh/mk2Xv1m+SQdCb7NW0SHIHRP18yvRFhDD9nQRQcPHO+tV8XIh3Zqj2d6htDOXlRKULjIe9AQZ1N9V85qlQt4JKlamjsFjEsbLOR4EiHPXsQwaEUHJ437Wfku8A9Vfp477sRMiaSqOiT/uOuISOEZA==",
+    "scriptSignature": "p4X+T4l6SlVDtem8C/TX5EZH2HEm47wJejsc+9pVbRt02ElR+/z5YzdsI0zcOhzC8L/K203WpGYSJcIHZQjdRN4KVTLTN9LPRyAp+FQb3bibZPyD6rYnCPV07GgE0X9qIF15INmGGZk1BxV+TBroil4VDWIBCq/0LLguTseyE8oCBnYTnY+RoDzDC365GkWGCzu26Yt95PLsMw4tN4NF+aKP69mBuLYPlL/L96+hdPKZpHfieEl30aAmYSYZSyfLWczb6/JKezyZHFwXO2T543sO5mjCBpKrKentG7/BY+VHp87FOL1kBNc6UGeRzqz2sT6FG91UfX0VXDEiJaYrSg==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "packages": [
       "Http"
@@ -507,6 +507,9 @@
       "userAgent": "Mozilla/5.0 (iPad; CPU OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Mobile/15E148 Safari/604.1"
     },
     "changelog": {
+      "19": [
+        "Performance: Stop fetching podcast pages when building episode lists;"
+      ],
       "18": [
         "Fix: Authorization token extraction causing playback errors;",
         "Improvement: Change authorUrl from futo.org to futo.tech;"
@@ -2002,25 +2005,8 @@
       }
     ],
     "changelog": {
-      "1": [
-        "Initial Release"
-      ],
-      "2": [
-        "Feature: Subcomments support",
-        "Feature: Clips support"
-      ],
-      "3": [
-        "Fix: Filter errors",
-        "Fix: Missing Query while fetching Channel Videos"
-      ],
-      "4": [
-        "Fix: Banner and Description for Channels",
-        "Fix: Quality Options for Replays",
-        "Fix: Missing Channel Avatar while fetching Videos and Replays",
-        "Refactor: New Queries for Videos, Replays and Livestreams"
-      ],
-      "5": [
-        "Feature:  Livestreams are working now"
+      "7": [
+        "Hotfix: Subcomments have been fixed"
       ],
       "6": [
         "Refactor: URL Regexes",
@@ -2031,8 +2017,25 @@
         "Feature: Homepage can now load more content",
         "Feature: Channels can now load more content"
       ],
-      "7": [
-        "Hotfix: Subcomments have been fixed"
+      "5": [
+        "Feature:  Livestreams are working now"
+      ],
+      "4": [
+        "Fix: Banner and Description for Channels",
+        "Fix: Quality Options for Replays",
+        "Fix: Missing Channel Avatar while fetching Videos and Replays",
+        "Refactor: New Queries for Videos, Replays and Livestreams"
+      ],
+      "3": [
+        "Fix: Filter errors",
+        "Fix: Missing Query while fetching Channel Videos"
+      ],
+      "2": [
+        "Feature: Subcomments support",
+        "Feature: Clips support"
+      ],
+      "1": [
+        "Initial Release"
       ]
     },
     "_installUrl": "https://github.com/AlexisBlade2001/Grayjay-DLive/raw/refs/heads/main/DLiveConfig.json"
@@ -4440,7 +4443,7 @@
     "sourceUrl": "https://grayjay-plugin-librivox.craftwithstefan.com/LibriVoxConfig.json",
     "repositoryUrl": "https://github.com/stefancruz/grayjay-plugin-librivox",
     "scriptUrl": "./LibriVoxScript.js",
-    "version": 28,
+    "version": 29,
     "iconUrl": "https://grayjay-plugin-librivox.craftwithstefan.com/LibriVoxIcon.png",
     "id": "5c2f78d4-6eec-4f3f-b25b-28d885aeb147",
     "scriptSignature": "l8jjdq4T8sDPMugIhyXj/jDOdJG3rqTm3AaMhtFrympJLTPRbAv76p/d7sYHtOEz6/+MuYLZrSRyV08AJu/wDY6zpoP0NP1YPRm0EzeUzL5bc+UYVRhENC/xb3w13H4cCrC3rGlc/zd0TflqGpoIAix7qU++NNXeIwcVh2FElIPZvHOSw8Lchp4/FmEs6Oet6vAuBD9werpWvCkMTMPpMs+mhKyhFavMuXLUOspo06IkDTqRuVKuSM64Jim+XmTEOHtBlVMB+zYH8nscBk8hTfaXYUSq9jFI1YaX1uxUytrcHA4ZWr2gkjWjDEndz5AD88FMFDo0UJZONiYT85nq4w==",
@@ -4450,12 +4453,12 @@
     ],
     "allowEval": false,
     "constants": {
-      "baseUrl": "https://librivox-api.craftwithstefan.com"
+      "baseUrl": "https://librivox.opensource-tv.com"
     },
     "allowUrls": [
       ".librivox.org",
       ".archive.org",
-      "librivox-api.craftwithstefan.com"
+      "librivox.opensource-tv.com"
     ],
     "settings": [
       {
@@ -4594,6 +4597,9 @@
         "Fix: Audio tracks are labelled MP3 instead of AAC;",
         "Improvement: Author search loads more results when scrolling;",
         "Improvement: Requests are retried only after timeouts, rate limiting (with a pause) and server errors;"
+      ],
+      "29": [
+        "Improvement: Requests go to the LibriVox API at librivox.opensource-tv.com;"
       ]
     },
     "_installUrl": "https://grayjay-plugin-librivox.craftwithstefan.com/LibriVoxConfig.json",
@@ -5416,10 +5422,10 @@
     "sourceUrl": "https://plugins.grayjay.app/Niconico/NiconicoConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/niconico",
     "scriptUrl": "./NiconicoScript.js",
-    "version": 5,
+    "version": 6,
     "iconUrl": "./NiconicoIcon.png",
     "id": "99224109-ac6d-426f-a1c1-4c8051f946fd",
-    "scriptSignature": "RvnFU5FJcQiuqKDjzT3//LyuK7+7YgiD0mnIubtrjY9ocmxQgyFsLSq7Ql7Vy6WvbE1LUUSumK/WPFvh7b2k1QbVQ5FJA5M3Xq15styRzY5ijY8RF7V6F0VnegrWnc/whsid5sauCUSz5Nzc4Lj/LNmq1P5INDUAofmW+z1FvArpQA/TarpChGKcJlAC+4szENf6aBP7jSzFYo566EupH9pbBUD+hE4GU3+LNU+Gba/xmW4kX6AxzFIIlL51GP2ruDtpPafiHj7yfJD37rKnOza25LpenNpx0tlgJ7b4YX2ydiAPbWXVJA2+nU30+dqWmU2kdTqlQmi1lC8DcvnvUQ==",
+    "scriptSignature": "oZHCRXyOnmEq3iDlBs8lX+nJU/aRYAIXUVNAKU427mKwI/IYnhvyQzAyTpQ8Nx7Bi62CEfxmkCar4FNN00NfNNBvPvGlbpi+JaQP1C4z1n2zDwgg7596BoE3j7Z0FFxDqfuLklQwvEAmWl5ClbmAEi8nsi2Q4dPTateOWtJ2NW8S/YQYO4nW4Kid/54bm51uDqq12umTSH6vLsggUfh0GGr2/sq9K2Qq/dDH5bZzfS9O1UKNioQqcBC8c9+qnthLPr1iXeFUx5PXoo64yNsXWA8MBHk6knrbzSfyqfhlmizX3rBdvlHw86BQfvV4hIF4KbE+DCWDvr32NFwxGtYmnA==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "packages": [
       "Http",
@@ -5444,6 +5450,13 @@
       ]
     },
     "changelog": {
+      "6": [
+        "Fix: Videos failing to open;",
+        "Fix: Playlists failing to open when they contain videos with a hidden uploader;",
+        "Fix: Search suggestions for queries containing / ? # or other reserved characters;",
+        "Fix: Playlists and series loading empty pages endlessly after their last video;",
+        "Fix: Videos with ss ids not opening;"
+      ],
       "5": [
         "Fix: Search failing on desktop when no filters are selected;"
       ],
@@ -6837,6 +6850,41 @@
     },
     "platformUrl": "https://www.pornhub.com",
     "changelog": {
+      "21": [
+        "Accept numeric and textual interaction counters in current video metadata;"
+      ],
+      "20": [
+        "Open shared playlist links and expose their available videos;"
+      ],
+      "19": [
+        "Encode search parameters and handle searches with no results without an error;"
+      ],
+      "18": [
+        "Refresh stale CDN links before playback and preserve media request headers;"
+      ],
+      "17": [
+        "Repair comment loading and tolerate current comment identifiers;"
+      ],
+      "16": [
+        "Expose declarative browse entries on compatible clients;"
+      ],
+      "15": [
+        "Fix filtered search requests;"
+      ],
+      "14": [
+        "Limit declarative filters to search;"
+      ],
+      "13": [
+        "Declare image request headers for reliable thumbnails;"
+      ],
+      "12": [
+        "Add declarative Grayjoy filters;",
+        "Improve lazy thumbnail extraction and paging;"
+      ],
+      "11": [
+        "Fix playing videos, isChannelUrl check;",
+        "Fix loading some channels;"
+      ],
       "10": [
         "Remove invalid Signature;",
         "Added channel statistics to description (total videos, views, subscribers);",
@@ -6848,41 +6896,6 @@
         "Added content recommendations;",
         "Implemented shorts tab;",
         "Fixed autocomplete search suggestions;"
-      ],
-      "11": [
-        "Fix playing videos, isChannelUrl check;",
-        "Fix loading some channels;"
-      ],
-      "12": [
-        "Add declarative Grayjoy filters;",
-        "Improve lazy thumbnail extraction and paging;"
-      ],
-      "13": [
-        "Declare image request headers for reliable thumbnails;"
-      ],
-      "14": [
-        "Limit declarative filters to search;"
-      ],
-      "15": [
-        "Fix filtered search requests;"
-      ],
-      "16": [
-        "Expose declarative browse entries on compatible clients;"
-      ],
-      "17": [
-        "Repair comment loading and tolerate current comment identifiers;"
-      ],
-      "18": [
-        "Refresh stale CDN links before playback and preserve media request headers;"
-      ],
-      "19": [
-        "Encode search parameters and handle searches with no results without an error;"
-      ],
-      "20": [
-        "Open shared playlist links and expose their available videos;"
-      ],
-      "21": [
-        "Accept numeric and textual interaction counters in current video metadata;"
       ]
     },
     "_installUrl": "https://github.com/paaspaas00/pornhubGrayjay/raw/main/PornhubConfig.json"
@@ -10476,10 +10489,10 @@
     "sourceUrl": "https://plugins.grayjay.app/YoutubeUnstable/YoutubeConfig.json",
     "repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/youtube",
     "scriptUrl": "./YoutubeScript.js",
-    "version": 367,
+    "version": 371,
     "iconUrl": "./youtube.png",
     "id": "35ae969a-a7db-11ed-afa1-0242ac120003",
-    "scriptSignature": "cNbH/z/hLcBd/5ZMaP1VMwY0P+HgV0TphuNzP/TC0w/ZhCB7+Cd+Vcc9kenqJekDLNyP486C07PWE/xWaPusw9z0ao8BoPYSf+uecKVMm+7rYvbUvRS3fRWDEfrov3FmsKxUb39FvTI9v5PyIYV3Z8avrsUWPqiNQF0frEwFbiHvaPZEcKG2YltVRTHCSE/CELBBPvxmyCWcqPe8+wffDhO4cOf6Lr6iBUUlfg0dQhJ/rgh31WsGTSN1U61usGB9UnwlANk9rAjxYZf4DeMqUFmLbfe3TMPol7WBLUX0iK92EBl/1h+tA3o9oikjkLxhZhQeMyYa3Nlui2knDfXqWA==",
+    "scriptSignature": "ZLQt2y96QjBe1njzRMCcZjxfVWKC+FUeV1ulzXk9hrGfqjWmV7VKVDwFuTeXbPPOnX+VlFCHZfMRmHhDjF4I3uCjqtbqFSG+1e590MXp27EaI8a/MOAkkFSz/KXYMMrV4ksp+cDPqTZtaQIuhf6eMN54LBQ3P2PcC57L6u+yGgvsALpemXSF8DUNKpSqJwcmW4Ftv8BcB1I6TVl2xq6kj1azQVCjUvSsLmnmYyk4CZMgThMXIO4TIRoZFvn5ELyJheEiE4KndkkgRBxhaWS3HI7qUSSLDI8e4e+Zb0At6evP6k4vbA0uSRhprhfn1y6TUoGNtPXGn7HTzra8D2XcNA==",
     "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsoFJU4AReDyUnSQI9A99UjLCwkY8OH+1o8cdtf2EjSb+fO2qmP8MGMTAvfvgmq5d2QBJE2XHRkRO3JKcTlcc1j0WlOlU8P9W272DYCeX6oYaavpKNqGKoGEuodp9wtiyNwyH46++JfpU/uIUacZbZKkHv9gIGchmNvpKYZQjFd/8pUqXGpcXZP54tGSC9PLcY+5TozZThK7Oy1+3YEf1bZ44UinRYYATbLk/wNuAfsupvlt6nxZOcJhABhdo9V+gY0FE6Ayg5+1cd1noWhnRtLF+sPdEr3z8Nt15JEK5a/524t25FMhwz8yKxlGW5qW3QLJHSUgLQncL6a1zlZ1s8QIDAQAB",
     "packages": [
       "Http",
@@ -10579,6 +10592,13 @@
         "description": "Allow listing of member content (will prefix \"[MEMBER]\")",
         "type": "Boolean",
         "default": "false"
+      },
+      {
+        "variable": "useTvSamsung",
+        "name": "Enable Samsung TV Streams",
+        "description": "Attempts to use Samsung TV streams if available, may be smoother experience. May not always be available.",
+        "type": "Boolean",
+        "default": "true"
       },
       {
         "variable": "useVisionOS",
@@ -10918,6 +10938,17 @@
     ],
     "primaryClaimFieldType": 1,
     "changelog": {
+      "371": [
+        "Feature: SamsungTV sources support",
+        "Feature: Batch source-checking, speed up video loads",
+        "Fix: N decryption fix"
+      ],
+      "369": [
+        "Fix: N decryption fix"
+      ],
+      "368": [
+        "Feature: SamsungTV sources support"
+      ],
       "367": [
         "Feature: Seek Thumbnail support"
       ],
