@@ -1,5 +1,45 @@
 [
   {
+  "name": "SRF Sport",
+  "description": "Plugin for events broadcasted by SRF Sport",
+  "author": "Fabian",
+  "authorUrl": "http://github.com/fabianL1310",
+  "platformUrl": "https://www.srf.ch/sport",
+  "sourceUrl": "https://raw.githubusercontent.com/fabianL1310/grayjay-source-srf-sport/refs/heads/main/config.json",
+  "repositoryUrl": "https://github.com/fabianL1310/grayjay-source-srf-sport",
+  "scriptUrl": "./dist/script.js",
+  "version": 10,
+  "iconUrl": "./icon.png",
+  "id": "3eed670d-c893-4688-9ac8-cb02a0c13f3e",
+  "scriptSignature": "DYEjssY5Xf6+CdXOCE2CGrkwjXEAtDpoNIaTov29Ihl+ZBrX0WG1y1YRNf61eivy5qDQIJMBp4dqzOO259LlpHinRtLHIZWcnh2bZi5D1ZPF2EsMaizPpS7VC+iwJdzOLcHrpygI4LPM6ohm85muJCoZ1gZWuOi0cO7q4MXuQAFWaOlKfGpqO9VqLreW9fV4FZUjK5cCRKycIqZW+MzClf1Qop39v12X2MDufhpq52a4KrMiYqi+M1rl4/ces5+h71bBwVnIjXJnkdl5FQ+Cje3rvye3yfHVB+zen70jrBoT1lAyXXwn9Bmf7MXsrtn6oXNCk15WOxXmxtGHbc47GCttL0Mz1s57G2CMaLXsVODvyjV9HGaAqZMyYljUPAqxXO1saqaxEMrJAWJoY+WdA/croPt2o0DycysngukgwebFyPZQYMHoTH5i9WTev4cODi8sYahFmkIlCL4L40753JHe4+72JXFnhp6AJYWqsG8LA0m+6+TZeAFWZ2noXF2O4OTKiRFhTSxaGP42r0UVI1nVAO21cXlBBl8iObFHMnN7GZWBPTA1umANBa8W53NTLuoTyw9hePeSTISt45RQJGPHbJtLRuyeIMAqUTCQ0hpZVmU7c9Lmb5qsRA+bOzE5r3fS21ZRU34lXnEaW7VF+sz7l5bLR1y+WEPTyrbcAkg=",
+  "scriptPublicKey": "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAs7OnHhT24EgrqaUdYeS/LXtmuhlSCLnHvK8rt4No4OPwgKx6Pr1aMvtlnfrVuqL9+VYcAm1RJgWqh5uVMoBY/cFSAi6cFgyom1mclwEsLYxO6040RVvCz1vFiAHoyLK2pxHllAtSr2b5NMCp2HyOpES5g9dzQRX4bx68I1ceUSPYYP5hsJ9wFn5a1Zo0fuQMM2QuXTlF3iW/dFdGfTx1j6gg+fckMkUZgBb+iqbEqx7O5weKQBvqNmbBpBuE4mN7UkA+ojzrUwT9QWKTlQAAR+mJXJ44yDuja5eJndbEJRV0ojPcZgW/+N+YJlREbLpwoxBcnVBiS8u/jjmfi1177jTaSAtaNbppzgubEUyLZANHp0iaVqDlgvz4MiUQgr61mStYfNsXs8WLYXReN8ktOHrTHUHfDgbF9kb3QCRChP1ACfJM45FELnV5ymv7j/Hry00qRF0eky0+e0rZvFd8pUVlPJxyhvkb1MKCrKO9D/JPvtqO4LfDBcS2r5YE/adxeTzZX+ACl97iysqkfCj6GKD2z9GG+6yLQABdjPryCDI0Kn5HqVVg0jmUZGOhDqqBoDSjXh9QdYB65h0CAJTvdVX20BYT1bDRoAzcE6ozxlbw9Q/XLJhFzxF62ND2tmy/fqnTqaj1KhrvW9u+NaWwtONf+zmGUmcV7O/19z+ROEkCAwEAAQ==",
+  "packages": ["Http"],
+  "allowEval": false,
+  "allowUrls": [
+    "sport.api.swisstxt.ch",
+    "event.api.swisstxt.ch",
+    "tp.srgssr.ch",
+    "srgssrlsvech-d.akamaized.net",
+    "raw.githubusercontent.com"
+  ],
+  "settings": [
+    {
+      "variable": "showLiveFirst",
+      "name": "Show live events first",
+      "description": "Show events that are currently live at the top",
+      "type": "Boolean",
+      "default": "true"
+    },
+    {
+      "variable": "showStartTimeInTitle",
+      "name": "Show event start time in event title",
+      "description": "Show the start time of events in their titles, e.g. '[20:00] Event Name'",
+      "type": "Boolean",
+      "default": "true"
+    }
+  ]
+},
+  {
     "_tags": ["unofficial", "untested"],
     "name": "Adventures in Odyssey Club",
     "description": "Subscription service for the award-winning, original audio drama series enjoyed by the whole family.",
