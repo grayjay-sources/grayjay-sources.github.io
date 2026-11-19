@@ -10344,5 +10344,69 @@
     },
     "_installUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-xboxclips/raw/branch/main/grayjay-plugin-xboxclips-config.json",
     "_tags": []
-  }
+  },
+  {
+	"name": "Vaughn Live",
+	"description": "Live streams from vaughn.live: home, search, channel pages, HLS playback, and live chat.",
+	"author": "jigglenilly",
+	"authorUrl": "https://github.com/jigglenilly",
+	"platformUrl": "https://vaughn.live/",
+	"sourceUrl": "https://raw.githubusercontent.com/jigglenilly/grayjay-vaughnlive/main/VaughnLiveConfig.json",
+	"repositoryUrl": "https://github.com/jigglenilly/grayjay-vaughnlive",
+	"scriptUrl": "./VaughnLiveScript.js",
+	"version": 7,
+	"iconUrl": "./VaughnLiveIcon.png",
+	"id": "a3e5e2d9-8a86-4704-be0e-c32bca484265",
+	"scriptSignature": "",
+	"scriptPublicKey": "",
+	"packages": [
+		"Http"
+	],
+	"allowEval": false,
+	"allowUrls": [
+		"vaughn.live",
+		"www.vaughn.live",
+		"vaughnsoft.net",
+		".vaughnsoft.net"
+	],
+	"authentication": {
+		"loginUrl": "https://vaughn.live/",
+		"completionUrl": "https://vaughn.live/",
+		"loginButton": ".vs_v9_header_menu_item4 .vs_v9_header_button",
+		"cookiesToFind": [
+			"vsk1",
+			"vsk2",
+			"vsk3"
+		],
+		"cookiesExclOthers": false,
+		"userAgent": null
+	},
+	"changelog": {
+		"1": [
+			"Initial source: home, search, channels, HLS playback, live chat, and subscription import."
+		],
+		"2": [
+			"Home accepts Cloudflare's normal jsd script, retries a first 403, and keeps live chat across slow polls."
+		],
+		"3": [
+			"Home titles decode HTML entities, and the events card is not listed as a channel."
+		],
+		"4": [
+			"Login completes on vsk1, vsk2, and vsk3. vsk0 stays a visitor cookie."
+		],
+		"5": [
+			"Live chat uses the pop-out chat page."
+		],
+		"6": [
+			"Added backup stream servers so channels that wouldn't load play again."
+		],
+		"7": [
+			"Channel links with capital letters work properly now",
+			"Chat shows up even when a stream falls back to the backup server",
+			"Quiet channels skip half-loaded streams so they don't stall",
+			"You can switch between the main and backup stream if one acts up",
+			"Chat connects to the right server for every channel"
+		]
+	}
+}
 ]
