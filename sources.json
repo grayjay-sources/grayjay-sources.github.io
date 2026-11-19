@@ -1,5 +1,36 @@
 [
   {
+	"name": "PumpFun",
+	"description": "Unofficial access to pump.fun livestreams (not affiliated with pump.fun).",
+	"author": "canardleteer",
+	"authorUrl": "https://github.com/canardleteer/grayjay-pumpfun",
+
+	"sourceUrl": "https://raw.githubusercontent.com/canardleteer/grayjay-pumpfun/main/PumpFunConfig.json",
+	"repositoryUrl": "https://github.com/canardleteer/grayjay-pumpfun",
+	"scriptUrl": "https://raw.githubusercontent.com/canardleteer/grayjay-pumpfun/main/PumpFunScript.js",
+	"iconUrl": "https://raw.githubusercontent.com/canardleteer/grayjay-pumpfun/main/images/pumpfun-icon.png",
+	"version": 2,
+
+	"id": "c4a8f2b1-9d3e-4f71-8c2a-1e9b7f6d5a30",
+
+	"scriptSignature": "",
+	"scriptPublicKey": "",
+
+	"packages": ["Http"],
+
+	"allowEval": false,
+
+	"allowUrls": [
+		"pump.fun",
+		"www.pump.fun",
+		"frontend-api-v3.pump.fun",
+		"livechat.pump.fun",
+		"clips.pump.fun",
+		"pump.mypinata.cloud",
+		"ipfs.io"
+	]
+},
+  {
     "_tags": ["unofficial", "untested"],
     "name": "Adventures in Odyssey Club",
     "description": "Subscription service for the award-winning, original audio drama series enjoyed by the whole family.",
