@@ -14,7 +14,7 @@
 
 Super-linter detected linting errors
 
-For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/42016460865)
+For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/44427343749)
 
 Powered by [Super-linter](https://github.com/super-linter/super-linter)\
 Super-linter revision: `2da136927bd4a73596db63044b504547c62cb854`\
@@ -25,7 +25,7 @@ Super-linter version: `9.0.0`
 <summary>BIOME_FORMAT</summary>
 
 ```text
-Checked 10 files in 456ms. No fixes applied.
+Checked 10 files in 586ms. No fixes applied.
 Found 10 errors..vscode/launch.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Formatter would have printed the following content:
@@ -1191,7 +1191,7 @@ sources.json format ━━━━━━━━━━━━━━━━━━━━
       148       │ - ············"12":·[
       149       │ - ················"Added·support·for·direct·media·urls·starting·with·https://media.adventuresinodyssey.com/private/audio/episode"
       150       │ - ············],
-  22186 more lines truncated
+  22370 more lines truncated
 
 
 sources.schema.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1366,7 +1366,7 @@ format ━━━━━━━━━━━━━━━━━━━━━━━━�
 ```text
 The number of diagnostics exceeds the limit allowed. Use --max-diagnostics to increase it.
 Diagnostics not shown: 4504.
-Checked 12 files in 1790ms. No fixes applied.
+Checked 12 files in 3s. No fixes applied.
 Found 543 errors.
 Found 3969 warnings.
 Found 11 infos.Biome encountered an unexpected error
@@ -1376,7 +1376,7 @@ This is a bug in Biome, not an error in your code, and we would appreciate it if
 When opening the issue, please provide a minimal reproduction, or identify and share the file/code that triggers it. Without a way to reproduce the error, the error can't be fixed:
 
 Source Location: crates/biome_rowan/src/ast/mod.rs:210:13
-Thread Name: biome::workspace_worker_0
+Thread Name: biome::workspace_worker_1
 Message: Tried to cast node with kind HTML_BOGUS as `"biome_html_syntax::generated::nodes::HtmlRoot"` but was unable to cast
 Stack Trace: Re-run with `RUST_BACKTRACE=1` to capture the stack trace
 
@@ -1707,23 +1707,23 @@ lint ━━━━━━━━━━━━━━━━━━━━━━━━━
 <summary>SPELL_CODESPELL</summary>
 
 ```text
-/github/workspace/sources.json:823: openning ==> opening
-/github/workspace/sources.json:1948: FO ==> OF, FOR, TO, DO, GO
-/github/workspace/sources.json:2326: FO ==> OF, FOR, TO, DO, GO
-/github/workspace/sources.json:3041: dependancy ==> dependency
-/github/workspace/sources.json:3722: streammed ==> streamed
-/github/workspace/sources.json:6279: FO ==> OF, FOR, TO, DO, GO
-/github/workspace/sources.json:7768: comming ==> coming
-/github/workspace/sources.json:8114: necesities ==> necessities
-/github/workspace/sources.json:8126: necesities ==> necessities
-/github/workspace/sources.json:8138: necesities ==> necessities
-/github/workspace/sources.json:8508: didnt ==> didn't
-/github/workspace/sources.json:8524: seperate ==> separate
-/github/workspace/sources.json:8653: disfunctional ==> dysfunctional
-/github/workspace/sources.json:9235: didnt ==> didn't
-/github/workspace/sources.json:9249: seperate ==> separate
-/github/workspace/sources.json:10036: te ==> the, be, we, to
-/github/workspace/sources.json:10078: didnt ==> didn't
+/github/workspace/sources.json:826: openning ==> opening
+/github/workspace/sources.json:1977: FO ==> OF, FOR, TO, DO, GO
+/github/workspace/sources.json:2355: FO ==> OF, FOR, TO, DO, GO
+/github/workspace/sources.json:3070: dependancy ==> dependency
+/github/workspace/sources.json:3753: streammed ==> streamed
+/github/workspace/sources.json:6353: FO ==> OF, FOR, TO, DO, GO
+/github/workspace/sources.json:7842: comming ==> coming
+/github/workspace/sources.json:8188: necesities ==> necessities
+/github/workspace/sources.json:8200: necesities ==> necessities
+/github/workspace/sources.json:8212: necesities ==> necessities
+/github/workspace/sources.json:8582: didnt ==> didn't
+/github/workspace/sources.json:8598: seperate ==> separate
+/github/workspace/sources.json:8727: disfunctional ==> dysfunctional
+/github/workspace/sources.json:9316: didnt ==> didn't
+/github/workspace/sources.json:9330: seperate ==> separate
+/github/workspace/sources.json:10124: te ==> the, be, we, to
+/github/workspace/sources.json:10166: didnt ==> didn't
 ```
 
 </details>
