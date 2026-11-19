@@ -14,7 +14,7 @@
 
 Super-linter detected linting errors
 
-For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/44438985283)
+For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/44439659138)
 
 Powered by [Super-linter](https://github.com/super-linter/super-linter)\
 Super-linter revision: `2da136927bd4a73596db63044b504547c62cb854`\
@@ -25,7 +25,7 @@ Super-linter version: `9.0.0`
 <summary>BIOME_FORMAT</summary>
 
 ```text
-Checked 10 files in 547ms. No fixes applied.
+Checked 10 files in 602ms. No fixes applied.
 Found 10 errors..vscode/launch.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Formatter would have printed the following content:
@@ -1043,155 +1043,155 @@ sources.json format ━━━━━━━━━━━━━━━━━━━━
 
         1     1 │   [
         2       │ - ····{
-        3       │ - ········"_tags":·[
-        4       │ - ············"unofficial",
-        5       │ - ············"untested"
-        6       │ - ········],
-        7       │ - ········"name":·"Adventures·in·Odyssey·Club",
-        8       │ - ········"description":·"Subscription·service·for·the·award-winning,·original·audio·drama·series·enjoyed·by·the·whole·family.",
-        9       │ - ········"author":·"CATEIN",
-       10       │ - ········"authorUrl":·"https://catein.xyz",
-       11       │ - ········"sourceUrl":·"https://raw.githubusercontent.com/CATEIN/adventures-in-odyssey-club-plugin/refs/heads/main/AdventuresInOdysseyClubConfig.json",
-       12       │ - ········"repositoryUrl":·"https://github.com/CATEIN/adventures-in-odyssey-club-plugin",
-       13       │ - ········"scriptUrl":·"./AIOScript.js",
-       14       │ - ········"version":·16,
-       15       │ - ········"iconUrl":·"./AIOC.png",
-       16       │ - ········"id":·"62e186ef-160d-46d7-9953-74fe84d11b40",
-       17       │ - ········"scriptSignature":·"",
-       18       │ - ········"scriptPublicKey":·"",
-       19       │ - ········"packages":·[
-       20       │ - ············"Http"
-       21       │ - ········],
-       22       │ - ········"allowEval":·false,
+        3       │ - ········"name":·"3Speak",
+        4       │ - ········"description":·"Decentralized·video·platform·on·Hive·blockchain",
+        5       │ - ········"author":·"Grayjay·Plugins",
+        6       │ - ········"authorUrl":·"https://codeberg.org/GrayjayPlugins",
+        7       │ - ········"platformUrl":·"https://3speak.tv",
+        8       │ - ········"sourceUrl":·"https://codeberg.org/GrayjayPlugins/grayjay-plugin-3speak/raw/branch/main/grayjay-plugin-3speak-config.json",
+        9       │ - ········"repositoryUrl":·"https://codeberg.org/GrayjayPlugins/grayjay-plugin-3speak",
+       10       │ - ········"scriptUrl":·"https://codeberg.org/GrayjayPlugins/grayjay-plugin-3speak/raw/branch/main/grayjay-plugin-3speak-script.js",
+       11       │ - ········"version":·1,
+       12       │ - ········"iconUrl":·"https://www.google.com/s2/favicons?domain=3speak.tv&sz=64",
+       13       │ - ········"id":·"b2c3d4e5-f6a7-8901-bcde-f234567890ab",
+       14       │ - ········"scriptSignature":·"",
+       15       │ - ········"scriptPublicKey":·"",
+       16       │ - ········"packages":·[
+       17       │ - ············"Http",
+       18       │ - ············"DOMParser",
+       19       │ - ············"Utilities"
+       20       │ - ········],
+       21       │ - ········"allowEval":·false,
+       22       │ - ········"allowAllHttpHeaderAccess":·true,
        23       │ - ········"allowUrls":·[
-       24       │ - ············"fotf.my.site.com"
-       25       │ - ········],
-       26       │ - ········"authentication":·{
-       27       │ - ············"loginUrl":·"https://app.adventuresinodyssey.com/signin",
-       28       │ - ············"domainHeadersToFind":·{
-       29       │ - ················"fotf.my.site.com":·[
-       30       │ - ····················"Authorization",
-       31       │ - ····················"x-viewer-id",
-       32       │ - ····················"x-pin"
-       33       │ - ················]
-       34       │ - ············},
-       35       │ - ············"cookiesToFind":·[
-       36       │ - ················"idccsrf"
-       37       │ - ············],
-       38       │ - ············"loginWarning":·"You·must·select·a·profile·with·a·PIN·for·authentication·to·complete."
-       39       │ - ········},
-       40       │ - ········"settings":·[
-       41       │ - ············{
-       42       │ - ················"variable":·"aioActivity",
-       43       │ - ················"name":·"Send·Activity",
-       44       │ - ················"description":·"Send·content·progress·to·the·club·(requires·login)",
-       45       │ - ················"type":·"Boolean",
-       46       │ - ················"default":·"false"
-       47       │ - ············},
-       48       │ - ············{
-       49       │ - ················"variable":·"podcasts",
-       50       │ - ················"name":·"Podcasts",
-       51       │ - ················"description":·"Show·new·podcasts·in·subscription·feed",
-       52       │ - ················"type":·"Boolean",
-       53       │ - ················"default":·"false"
-       54       │ - ············},
-       55       │ - ············{
-       56       │ - ················"variable":·"fetchRandomEpisode",
-       57       │ - ················"name":·"Randomizer·via·Recommended",
-       58       │ - ················"description":·"Puts·a·random·episode·at·the·top·of·recommendations·(Recommendations·may·take·longer·to·load)",
-       59       │ - ················"type":·"Boolean",
-       60       │ - ················"default":·"false"
-       61       │ - ············},
-       62       │ - ············{
-       63       │ - ················"variable":·"fasterRandom",
-       64       │ - ················"name":·"Faster·Randomizer",
-       65       │ - ················"description":·"Cache·episodes·instead·of·using·the·random·API.·Might·not·include·the·newest·episodes.·Default·when·not·logged·in.",
-       66       │ - ················"type":·"Boolean",
-       67       │ - ················"default":·"false",
-       68       │ - ················"dependency":·"fetchRandomEpisode"
-       69       │ - ············},
-       70       │ - ············{
-       71       │ - ················"variable":·"groupings",
-       72       │ - ················"name":·"Content·Groupings",
-       73       │ - ················"description":·"Choose·which·content·groups·appear·on·the·playlists·tab",
-       74       │ - ················"type":·"Dropdown",
-       75       │ - ················"default":·"0",
-       76       │ - ················"options":·[
-       77       │ - ····················"Albums",
-       78       │ - ····················"Playlists·(Club)",
-       79       │ - ····················"Series",
-       80       │ - ····················"Collections",
-       81       │ - ····················"Bonus·Videos",
-       82       │ - ····················"Life·Lessons"
-       83       │ - ················]
-       84       │ - ············},
-       85       │ - ············{
-       86       │ - ················"variable":·"advancedHeader",
-       87       │ - ················"name":·"Advanced·settings",
-       88       │ - ················"description":·"Advanced/Experimental·settings",
-       89       │ - ················"type":·"Header"
-       90       │ - ············},
-       91       │ - ············{
-       92       │ - ················"variable":·"commentPageSize",
-       93       │ - ················"name":·"Comment·page·size",
-       94       │ - ················"description":·"Set·how·many·comments·to·load·on·each·request.·Higher·might·be·slower",
-       95       │ - ················"type":·"Dropdown",
-       96       │ - ················"default":·"1",
-       97       │ - ················"options":·[
-       98       │ - ····················"10·(the·club·uses·this)",
-       99       │ - ····················"20",
-      100       │ - ····················"30",
-      101       │ - ····················"40",
-      102       │ - ····················"50"
-      103       │ - ················]
-      104       │ - ············},
-      105       │ - ············{
-      106       │ - ················"variable":·"debug",
-      107       │ - ················"name":·"Show·additional·info",
-      108       │ - ················"description":·"Show·additional·info·in·description",
-      109       │ - ················"type":·"Boolean",
-      110       │ - ················"default":·"false"
-      111       │ - ············},
-      112       │ - ············{
-      113       │ - ················"variable":·"secretVariable",
-      114       │ - ················"name":·"Enable·Experimental·Ambient·Playback·Rerouting",
-      115       │ - ················"description":·"Only·enable·if·you·are·not·logged·in",
-      116       │ - ················"type":·"Boolean",
-      117       │ - ················"default":·"false"
-      118       │ - ············}
-      119       │ - ········],
-      120       │ - ········"changelog":·{
-      121       │ - ············"8":·[
-      122       │ - ················"Very·lil·update",
-      123       │ - ················"Fixed·older·club·videos·not·loading",
-      124       │ - ················"Support·for·playlist·URLs·(currently·no·way·to·get·to·them·on·grayjay)",
-      125       │ - ················"Slightly·better·search"
-      126       │ - ············],
-      127       │ - ············"9":·[
-      128       │ - ················"u·p·d·a·t·e",
-      129       │ - ················"content·with·null·download_url·throws·UnavailableException",
-      130       │ - ················"Randomizer·now·works·for·logged·out·users·via·episode·cache·system",
-      131       │ - ················"Minor·changes·to·recommendations"
-      132       │ - ············],
-      133       │ - ············"10":·[
-      134       │ - ················"Support·for·content·urls·with·contentGroup·in·them",
-      135       │ - ················"Simplifyed·isFreeEpisode·logic",
-      136       │ - ················"Support·for·getHome",
-      137       │ - ················"Added·Faster·Randomizer·setting·for·logged·in·users",
-      138       │ - ················"Added·Content·Groupings·setting",
-      139       │ - ················"Added·Show·additional·info·setting",
-      140       │ - ················"Added·Podcasts·setting"
-      141       │ - ············],
-      142       │ - ············"11":·[
-      143       │ - ················"Fixed·upcoming·free·episodes·attempting·to·play",
-      144       │ - ················"Badges·are·now·platform·playlist·instead·of·content",
-      145       │ - ················"Description·now·includes·content_body·and·themes",
-      146       │ - ················"Description·now·includes·links·for·Themes·and·Characters"
-      147       │ - ············],
-      148       │ - ············"12":·[
-      149       │ - ················"Added·support·for·direct·media·urls·starting·with·https://media.adventuresinodyssey.com/private/audio/episode"
-      150       │ - ············],
-  22624 more lines truncated
+       24       │ - ············".3speak.tv",
+       25       │ - ············".hive.blog",
+       26       │ - ············".threespeak.co",
+       27       │ - ············"play.3speak.tv",
+       28       │ - ············"api.hive.blog",
+       29       │ - ············".ipfs.3speak.tv",
+       30       │ - ············".cdn.3speakcontent.co",
+       31       │ - ············".b-cdn.net",
+       32       │ - ············"hotipfs-3speak.b-cdn.net",
+       33       │ - ············"ipfs-3speak.b-cdn.net"
+       34       │ - ········],
+       35       │ - ········"supportedClaimTypes":·[
+       36       │ - ············1,
+       37       │ - ············2,
+       38       │ - ············16
+       39       │ - ········],
+       40       │ - ········"authentication":·null,
+       41       │ - ········"settings":·[],
+       42       │ - ········"changelog":·{
+       43       │ - ············"1":·[
+       44       │ - ················"Initial·release"
+       45       │ - ············]
+       46       │ - ········}
+       47       │ - ····},
+       48       │ - ····{
+       49       │ - ········"_tags":·[
+       50       │ - ············"unofficial",
+       51       │ - ············"untested"
+       52       │ - ········],
+       53       │ - ········"name":·"Adventures·in·Odyssey·Club",
+       54       │ - ········"description":·"Subscription·service·for·the·award-winning,·original·audio·drama·series·enjoyed·by·the·whole·family.",
+       55       │ - ········"author":·"CATEIN",
+       56       │ - ········"authorUrl":·"https://catein.xyz",
+       57       │ - ········"sourceUrl":·"https://raw.githubusercontent.com/CATEIN/adventures-in-odyssey-club-plugin/refs/heads/main/AdventuresInOdysseyClubConfig.json",
+       58       │ - ········"repositoryUrl":·"https://github.com/CATEIN/adventures-in-odyssey-club-plugin",
+       59       │ - ········"scriptUrl":·"./AIOScript.js",
+       60       │ - ········"version":·16,
+       61       │ - ········"iconUrl":·"./AIOC.png",
+       62       │ - ········"id":·"62e186ef-160d-46d7-9953-74fe84d11b40",
+       63       │ - ········"scriptSignature":·"",
+       64       │ - ········"scriptPublicKey":·"",
+       65       │ - ········"packages":·[
+       66       │ - ············"Http"
+       67       │ - ········],
+       68       │ - ········"allowEval":·false,
+       69       │ - ········"allowUrls":·[
+       70       │ - ············"fotf.my.site.com"
+       71       │ - ········],
+       72       │ - ········"authentication":·{
+       73       │ - ············"loginUrl":·"https://app.adventuresinodyssey.com/signin",
+       74       │ - ············"domainHeadersToFind":·{
+       75       │ - ················"fotf.my.site.com":·[
+       76       │ - ····················"Authorization",
+       77       │ - ····················"x-viewer-id",
+       78       │ - ····················"x-pin"
+       79       │ - ················]
+       80       │ - ············},
+       81       │ - ············"cookiesToFind":·[
+       82       │ - ················"idccsrf"
+       83       │ - ············],
+       84       │ - ············"loginWarning":·"You·must·select·a·profile·with·a·PIN·for·authentication·to·complete."
+       85       │ - ········},
+       86       │ - ········"settings":·[
+       87       │ - ············{
+       88       │ - ················"variable":·"aioActivity",
+       89       │ - ················"name":·"Send·Activity",
+       90       │ - ················"description":·"Send·content·progress·to·the·club·(requires·login)",
+       91       │ - ················"type":·"Boolean",
+       92       │ - ················"default":·"false"
+       93       │ - ············},
+       94       │ - ············{
+       95       │ - ················"variable":·"podcasts",
+       96       │ - ················"name":·"Podcasts",
+       97       │ - ················"description":·"Show·new·podcasts·in·subscription·feed",
+       98       │ - ················"type":·"Boolean",
+       99       │ - ················"default":·"false"
+      100       │ - ············},
+      101       │ - ············{
+      102       │ - ················"variable":·"fetchRandomEpisode",
+      103       │ - ················"name":·"Randomizer·via·Recommended",
+      104       │ - ················"description":·"Puts·a·random·episode·at·the·top·of·recommendations·(Recommendations·may·take·longer·to·load)",
+      105       │ - ················"type":·"Boolean",
+      106       │ - ················"default":·"false"
+      107       │ - ············},
+      108       │ - ············{
+      109       │ - ················"variable":·"fasterRandom",
+      110       │ - ················"name":·"Faster·Randomizer",
+      111       │ - ················"description":·"Cache·episodes·instead·of·using·the·random·API.·Might·not·include·the·newest·episodes.·Default·when·not·logged·in.",
+      112       │ - ················"type":·"Boolean",
+      113       │ - ················"default":·"false",
+      114       │ - ················"dependency":·"fetchRandomEpisode"
+      115       │ - ············},
+      116       │ - ············{
+      117       │ - ················"variable":·"groupings",
+      118       │ - ················"name":·"Content·Groupings",
+      119       │ - ················"description":·"Choose·which·content·groups·appear·on·the·playlists·tab",
+      120       │ - ················"type":·"Dropdown",
+      121       │ - ················"default":·"0",
+      122       │ - ················"options":·[
+      123       │ - ····················"Albums",
+      124       │ - ····················"Playlists·(Club)",
+      125       │ - ····················"Series",
+      126       │ - ····················"Collections",
+      127       │ - ····················"Bonus·Videos",
+      128       │ - ····················"Life·Lessons"
+      129       │ - ················]
+      130       │ - ············},
+      131       │ - ············{
+      132       │ - ················"variable":·"advancedHeader",
+      133       │ - ················"name":·"Advanced·settings",
+      134       │ - ················"description":·"Advanced/Experimental·settings",
+      135       │ - ················"type":·"Header"
+      136       │ - ············},
+      137       │ - ············{
+      138       │ - ················"variable":·"commentPageSize",
+      139       │ - ················"name":·"Comment·page·size",
+      140       │ - ················"description":·"Set·how·many·comments·to·load·on·each·request.·Higher·might·be·slower",
+      141       │ - ················"type":·"Dropdown",
+      142       │ - ················"default":·"1",
+      143       │ - ················"options":·[
+      144       │ - ····················"10·(the·club·uses·this)",
+      145       │ - ····················"20",
+      146       │ - ····················"30",
+      147       │ - ····················"40",
+      148       │ - ····················"50"
+      149       │ - ················]
+      150       │ - ············},
+  22706 more lines truncated
 
 
 sources.schema.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1707,23 +1707,23 @@ lint ━━━━━━━━━━━━━━━━━━━━━━━━━
 <summary>SPELL_CODESPELL</summary>
 
 ```text
-/github/workspace/sources.json:826: openning ==> opening
-/github/workspace/sources.json:1977: FO ==> OF, FOR, TO, DO, GO
-/github/workspace/sources.json:2355: FO ==> OF, FOR, TO, DO, GO
-/github/workspace/sources.json:3070: dependancy ==> dependency
-/github/workspace/sources.json:3753: streammed ==> streamed
-/github/workspace/sources.json:6378: FO ==> OF, FOR, TO, DO, GO
-/github/workspace/sources.json:7963: comming ==> coming
-/github/workspace/sources.json:8309: necesities ==> necessities
-/github/workspace/sources.json:8321: necesities ==> necessities
-/github/workspace/sources.json:8333: necesities ==> necessities
-/github/workspace/sources.json:8703: didnt ==> didn't
-/github/workspace/sources.json:8719: seperate ==> separate
-/github/workspace/sources.json:8848: disfunctional ==> dysfunctional
-/github/workspace/sources.json:9437: didnt ==> didn't
-/github/workspace/sources.json:9451: seperate ==> separate
-/github/workspace/sources.json:10245: te ==> the, be, we, to
-/github/workspace/sources.json:10287: didnt ==> didn't
+/github/workspace/sources.json:862: openning ==> opening
+/github/workspace/sources.json:2013: FO ==> OF, FOR, TO, DO, GO
+/github/workspace/sources.json:2391: FO ==> OF, FOR, TO, DO, GO
+/github/workspace/sources.json:3106: dependancy ==> dependency
+/github/workspace/sources.json:3789: streammed ==> streamed
+/github/workspace/sources.json:6414: FO ==> OF, FOR, TO, DO, GO
+/github/workspace/sources.json:7999: comming ==> coming
+/github/workspace/sources.json:8345: necesities ==> necessities
+/github/workspace/sources.json:8357: necesities ==> necessities
+/github/workspace/sources.json:8369: necesities ==> necessities
+/github/workspace/sources.json:8739: didnt ==> didn't
+/github/workspace/sources.json:8755: seperate ==> separate
+/github/workspace/sources.json:8884: disfunctional ==> dysfunctional
+/github/workspace/sources.json:9473: didnt ==> didn't
+/github/workspace/sources.json:9487: seperate ==> separate
+/github/workspace/sources.json:10281: te ==> the, be, we, to
+/github/workspace/sources.json:10323: didnt ==> didn't
 ```
 
 </details>
