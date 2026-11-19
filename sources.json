@@ -1,5 +1,51 @@
 [
   {
+    "name": "3Speak",
+    "description": "Decentralized video platform on Hive blockchain",
+    "author": "Grayjay Plugins",
+    "authorUrl": "https://codeberg.org/GrayjayPlugins",
+    "platformUrl": "https://3speak.tv",
+    "sourceUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-3speak/raw/branch/main/grayjay-plugin-3speak-config.json",
+    "repositoryUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-3speak",
+    "scriptUrl": "https://codeberg.org/GrayjayPlugins/grayjay-plugin-3speak/raw/branch/main/grayjay-plugin-3speak-script.js",
+    "version": 1,
+    "iconUrl": "https://www.google.com/s2/favicons?domain=3speak.tv&sz=64",
+    "id": "b2c3d4e5-f6a7-8901-bcde-f234567890ab",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http",
+        "DOMParser",
+        "Utilities"
+    ],
+    "allowEval": false,
+    "allowAllHttpHeaderAccess": true,
+    "allowUrls": [
+        ".3speak.tv",
+        ".hive.blog",
+        ".threespeak.co",
+        "play.3speak.tv",
+        "api.hive.blog",
+        ".ipfs.3speak.tv",
+        ".cdn.3speakcontent.co",
+        ".b-cdn.net",
+        "hotipfs-3speak.b-cdn.net",
+        "ipfs-3speak.b-cdn.net"
+    ],
+    "supportedClaimTypes": [
+        1,
+        2,
+        16
+    ],
+    "authentication": null,
+    "settings": [],
+    "changelog": {
+        "1": [
+            "Initial release"
+        ]
+    }
+},
+  {
     "_tags": ["unofficial", "untested"],
     "name": "Adventures in Odyssey Club",
     "description": "Subscription service for the award-winning, original audio drama series enjoyed by the whole family.",
