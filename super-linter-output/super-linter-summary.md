@@ -14,7 +14,7 @@
 
 Super-linter detected linting errors
 
-For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/44436307842)
+For more information, see the [GitHub Actions workflow run](https://github.com/grayjay-sources/grayjay-sources.github.io/actions/runs/44438985283)
 
 Powered by [Super-linter](https://github.com/super-linter/super-linter)\
 Super-linter revision: `2da136927bd4a73596db63044b504547c62cb854`\
@@ -25,7 +25,7 @@ Super-linter version: `9.0.0`
 <summary>BIOME_FORMAT</summary>
 
 ```text
-Checked 10 files in 470ms. No fixes applied.
+Checked 10 files in 547ms. No fixes applied.
 Found 10 errors..vscode/launch.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Formatter would have printed the following content:
@@ -1191,7 +1191,7 @@ sources.json format ━━━━━━━━━━━━━━━━━━━━
       148       │ - ············"12":·[
       149       │ - ················"Added·support·for·direct·media·urls·starting·with·https://media.adventuresinodyssey.com/private/audio/episode"
       150       │ - ············],
-  22572 more lines truncated
+  22624 more lines truncated
 
 
 sources.schema.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1366,7 +1366,7 @@ format ━━━━━━━━━━━━━━━━━━━━━━━━�
 ```text
 The number of diagnostics exceeds the limit allowed. Use --max-diagnostics to increase it.
 Diagnostics not shown: 4504.
-Checked 12 files in 1991ms. No fixes applied.
+Checked 12 files in 2s. No fixes applied.
 Found 543 errors.
 Found 3969 warnings.
 Found 11 infos.Biome encountered an unexpected error
@@ -1712,18 +1712,18 @@ lint ━━━━━━━━━━━━━━━━━━━━━━━━━
 /github/workspace/sources.json:2355: FO ==> OF, FOR, TO, DO, GO
 /github/workspace/sources.json:3070: dependancy ==> dependency
 /github/workspace/sources.json:3753: streammed ==> streamed
-/github/workspace/sources.json:6353: FO ==> OF, FOR, TO, DO, GO
-/github/workspace/sources.json:7938: comming ==> coming
-/github/workspace/sources.json:8284: necesities ==> necessities
-/github/workspace/sources.json:8296: necesities ==> necessities
-/github/workspace/sources.json:8308: necesities ==> necessities
-/github/workspace/sources.json:8678: didnt ==> didn't
-/github/workspace/sources.json:8694: seperate ==> separate
-/github/workspace/sources.json:8823: disfunctional ==> dysfunctional
-/github/workspace/sources.json:9412: didnt ==> didn't
-/github/workspace/sources.json:9426: seperate ==> separate
-/github/workspace/sources.json:10220: te ==> the, be, we, to
-/github/workspace/sources.json:10262: didnt ==> didn't
+/github/workspace/sources.json:6378: FO ==> OF, FOR, TO, DO, GO
+/github/workspace/sources.json:7963: comming ==> coming
+/github/workspace/sources.json:8309: necesities ==> necessities
+/github/workspace/sources.json:8321: necesities ==> necessities
+/github/workspace/sources.json:8333: necesities ==> necessities
+/github/workspace/sources.json:8703: didnt ==> didn't
+/github/workspace/sources.json:8719: seperate ==> separate
+/github/workspace/sources.json:8848: disfunctional ==> dysfunctional
+/github/workspace/sources.json:9437: didnt ==> didn't
+/github/workspace/sources.json:9451: seperate ==> separate
+/github/workspace/sources.json:10245: te ==> the, be, we, to
+/github/workspace/sources.json:10287: didnt ==> didn't
 ```
 
 </details>
